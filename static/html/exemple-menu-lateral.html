@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Accessible Hamburger Menu Demo for Responsive Web Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    :root {
+      --MENU-BACKGROUND-color: #161616;
+      --MENU-color: #FFF;
+      --MENU-FOCUS-color: #FFD700;
+      --FOCUS-color: #135784;
+    }
+
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    *:focus {
+      outline: 3px solid var(--FOCUS-color);
+      outline-offset: 1px;
+    }
+
+    .sr-only {
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    button {
+      background: none;
+      border: 0;
+      color: inherit;
+      /* cursor: default; */
+      font: inherit;
+      line-height: normal;
+      overflow: visible;
+      padding: 0;
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: var(--MENU-BACKGROUND-color);
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 4em;
+      visibility: hidden;
+    }
+
+    .sidenav a,
+    .sidenav button {
+      padding: .5em;
+      text-decoration: none;
+      font-size: 1.2em;
+      color: #818181;
+      display: block;
+    }
+
+    .sidenav button {
+      padding: 0 .5em;
+    }
+
+    .sidenav a:hover,
+    .sidenav a:focus,
+    .sidenav button:hover,
+    .sidenav button:focus {
+      color: var(--MENU-color);
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: .35em;
+      right: .5em;
+      font-size: 2em;
+    }
+
+    .sidenav .closebtn:focus {
+      outline: 3px solid var(--MENU-FOCUS-color);
+    }
+
+    #main {
+      transition: margin-left .5s;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+
+    .sidenav ul {
+      margin: 2em 0 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    #opennav {
+    color: navy;
+}
+  </style>
+</head>
+
+<body>
+  <header role="header">
+  <nav id="mySidenav" class="sidenav">
+    <button id="closenav" class="closebtn" onclick="closeNav()" aria-label="Close Navigation Menu">
+      <span aria-hidden="true">&times;</span>
+      <span class="sr-only">Fermer le menu latéral</span>
+    </button>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li> <a href="#">Clients</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+  <main role="main" id="main">
+
+    <button id="opennav" style="font-size:30px;cursor:pointer" onclick="openNav()" aria-expanded="false">
+      <span aria-hidden="true">&#9776;</span>
+      <span class="sr-only">Ouvrir le menu latéral</span>
+    </button>
+
+    <p>Cliquez sur l'icône hamburger pour ouvrir le menu de navigation latéral et poussez ce contenu vers la droite.</p>
+   
+
+  </main>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      document.getElementById("mySidenav").style.visibility = "visible";
+      document.getElementById("main").setAttribute('aria-hidden', 'true');
+      var mainLinks = document.getElementById("main").getElementsByTagName("a");
+      for (var i = 0; i < mainLinks.length; i++) {
+        mainLinks[i].setAttribute('tabindex', '-1');
+      }
+      var mainButtons = document.getElementById("main").getElementsByTagName("button");
+      for (var i = 0; i < mainButtons.length; i++) {
+        mainButtons[i].setAttribute('disabled', 'true');
+      }
+      setTimeout(function () { document.getElementById("closenav").focus(); }, 500);
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+      document.body.style.backgroundColor = "white";
+      document.getElementById("mySidenav").style.visibility = "hidden";
+      document.getElementById("main").removeAttribute('aria-hidden');
+      var mainLinks = document.getElementById("main").getElementsByTagName("a");
+      for (var i = 0; i < mainLinks.length; i++) {
+        mainLinks[i].removeAttribute('tabindex');
+      }
+      var mainButtons = document.getElementById("main").getElementsByTagName("button");
+      for (var i = 0; i < mainButtons.length; i++) {
+        mainButtons[i].removeAttribute('disabled');
+      }
+      document.getElementById("opennav").focus();
+    }
+  </script>
+
+
+</body>
+
+</html>

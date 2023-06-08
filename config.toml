@@ -1,0 +1,161 @@
+baseURL = "https://sofeve-concept.github.io"
+languageCode = 'fr-FR'
+title = 'Sofève Concept'
+theme = "sofeve"
+paginate = "10"
+removePathAccents = true
+enableRobotsTXT = false
+summaryLength = 15
+
+[params]
+author = "Sophie Gounon"
+description = "Conseil et formation pour des sites web accessibles"
+
+[markup]
+
+[markup.goldmark]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.tableOfContents]
+endLevel = 4
+ordered = false
+startLevel = 2
+
+
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+hl_Lines = ""
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+tabWidth = 4
+noClasses = false
+pygmentsCodefences = true
+pygmentsStyle = "monokai"
+
+[menu]
+
+[[menu.main]]
+name = "Accueil"
+url = "/"
+identifier = "accueil"
+weight = 1
+
+[[menu.main]]
+name = "Coder accessible"
+identifier = "coder"
+url = "/coder/"
+weight = 2
+          
+
+          [[menu.main]]
+          name       = "Structure générale"
+          url        = "/coder/structure/"
+          weight     = 1
+          parent     = "coder"
+
+          [[menu.main]]
+          name       = "Contenu"
+          url        = "/coder/contenu/"
+          weight     = 2
+          parent     = "coder"
+
+          [[menu.main]]
+          name       = "Couleurs"
+          url        = "/coder/couleurs/"
+          weight     = 3
+          parent     = "coder"
+
+          [[menu.main]]
+          name       = "Navigation"
+          url        = "/coder/navigation/"
+          weight     = 4
+          parent     = "coder"
+
+          [[menu.main]]
+          name       = "Liens et boutons"
+          url        = "/coder/lien-bouton/"
+          weight     = 5
+          parent     = "coder"
+
+          [[menu.main]]
+          name       = "Images et icônes"
+          url        = "/coder/image-icone/"
+          weight     = 6
+          parent     = "coder"
+          
+          [[menu.main]]
+          name       = "Tableaux"
+          url        = "/coder/tableaux/"
+          weight     = 7
+          parent     = "coder"
+
+          [[menu.main]]
+          name       = "Formulaires"
+          url        = "/coder/formulaire/"
+          weight     = 8
+          parent     = "coder"
+          
+          [[menu.main]]
+          name       = "Composants d'interface riche"
+          url        = "/coder/scripts/"
+          weight     = 9
+          parent     = "coder"
+
+          # [[menu.main]]
+          # name       = "Multimédia"
+          # url        = "/coder/multimedia/"
+          # weight     = 10
+          # parent     = "coder"
+
+[[menu.main]]
+name = "Motifs de conception"
+identifier = "motifs"
+url = '/motifs/'
+weight = 3
+
+# [[menu.main]]
+# name = "Ressources"
+# identifier = "ressources"
+# url = '/ressources/'
+# weight = 4
+
+[[menu.main]]
+name = "À propos"
+identifier = "a-propos"
+url = "/a-propos/"
+weight = 4
+
+# [[menu.main]]
+# name = "Contact"
+# identifier = "contact"
+# url = "/contact/"
+# weight = 6
+
+
+
+[[menu.social]]
+name = "GitLab"
+url = "https://gitlab.com/sofeve-concept"
+pre = "<i class='fab fa-gitlab'></i>"
+
+[[menu.social]]
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/sophie-gounon-41396b56/"
+pre = "<i class='fab fa-linkedin'></i>"
+
+[[menu.footer]]
+name = "Mentions légales et crédits"
+url = "/mentions-legales"
+weight = 1
+
+# [[menu.footer]]
+# name = "Accessibilité"
+# url = "/ally"
+# weight = 2
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
