@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	
+	
+	<title>
+		
+		 Code de base - Motifs de conception
+		 
+		
+		- Sofève Concept</title>
+	<meta name="description" content="Code de base d&#39;une page HTML valide selon le W3C et les critères d&#39;accessibilité numérique.">
+	<meta name="author" content="Sophie Gounon">
+	<link href="/images/favicon.ico" rel="icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Poppins&family=Righteous&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/print.css" media="print">
+	<link rel="stylesheet" href="/css/fontawesome.css">
+	<link rel="stylesheet" href="/css/sofeve.css" media="screen">
+		
+	
+	
+</head>
+<body>
+	<a class="evitement" href="#contenu">Aller au contenu</a>
+
+<header role="banner">
+	<div class="logo">
+		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
+	</div>
+	<nav role='navigation' class="navbar" aria-label="Menu principal">
+		<a role="button" aria-haspopup="true" aria-expanded="false" id="hamburger" aria-controls="menu"><span class="sr-only">Menu</span></a>
+		<ul id="menu">
+		
+		
+		 
+			
+			<li  class="accueil">
+				<a href="/" 
+				
+				
+				> Accueil</a></li>
+			
+		
+		 
+				
+			<li class="coder">
+				<a role="button" aria-haspopup="true" aria-expanded="false" aria-controls="coder" 
+				
+				> 
+				Coder accessible</a>
+				   <ul id="coder">
+					 		
+					
+					
+										
+              				<li><a href="/coder/structure/" 
+							
+							> Structure générale</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/contenu/" 
+							
+							> Contenu</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/couleurs/" 
+							
+							> Couleurs</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/navigation/" 
+							
+							> Navigation</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/lien-bouton/" 
+							
+							> Liens et boutons</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/image-icone/" 
+							
+							> Images et icônes</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/tableaux/" 
+							
+							> Tableaux</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/formulaire/" 
+							
+							> Formulaires</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/scripts/" 
+							
+							> Composants d&#39;interface riche</a></li>
+              			
+				   </ul>
+			    </li>
+			
+		
+		 
+			
+			<li  class="motifs">
+				<a href="/motifs/" 
+				
+				aria-current="page"
+				> Motifs de conception</a></li>
+			
+		
+		 
+			
+			<li  class="a-propos">
+				<a href="/a-propos/" 
+				
+				
+				> À propos</a></li>
+			
+		
+		</ul>
+	</nav>	
+	<form action="/rechercher" method="GET" role="search">
+    <label for="search-query" class="sr-only">Rechercher sur le site</label>
+    <input type="search" name="q" id="search-query" placeholder="Rechercher sur le site....">
+    <button type="reset">
+        <span class="fa fa-times" aria-hidden="true"></span>
+        <span class="sr-only">Effacer</span>
+    </button>
+    <button type="submit">
+        <span class="fa fa-search" aria-hidden="true"></span>
+        <span class="sr-only">Rechercher</span>
+    </button>
+</form>
+</header>
+
+	
+<main role="main" class="container">
+     
+<nav aria-label="Vous êtes ici" class="ariane">
+<ol>
+  
+  
+    
+  
+    
+  
+  
+  <li>
+    
+    <a href="/">Accueil</a>
+   
+  </li>
+  
+
+  
+  
+  <li>
+    
+    <a href="/motifs/">Motifs de conception</a>
+   
+  </li>
+  
+
+  
+  
+  <li aria-current="page" tabindex="-1">
+     Code de base
+  </li>
+  
+
+</ol>
+</nav>
+<button onclick="window.print();" class="print">
+  <span class="fa fa-print" aria-hidden="true"></span>
+  Imprimer
+</button>
+
+
+
+     <div class="flex">
+          <aside class="item-20">
+               
+               
+
+	
+	
+     
+	<nav role="navigation" aria-label="navigation contextuelle">
+          <p class="rubrique"><a href="/motifs/">Motifs de conception</a></p>
+          <ul>
+               
+               <li><a href="/motifs/code-de-base/">
+                    
+				 <strong> Code de base</strong> 
+               </a></li>
+               
+               <li><a href="/motifs/accordeon/">
+                    
+				
+				Accordéon 
+               </a></li>
+               
+               <li><a href="/motifs/bordure-texte/">
+                    
+				
+				Bordure de texte 
+               </a></li>
+               
+               <li><a href="/motifs/carrousel/">
+                    
+				
+				Carrousel 
+               </a></li>
+               
+               <li><a href="/motifs/carte-cliquable/">
+                    
+				
+				Carte cliquable 
+               </a></li>
+               
+               <li><a href="/motifs/modale/">
+                    
+				
+				Fenêtre modale 
+               </a></li>
+               
+               <li><a href="/motifs/ariane/">
+                    
+				
+				Fil d&#39;ariane 
+               </a></li>
+               
+               <li><a href="/motifs/infobulle/">
+                    
+				
+				Infobulle 
+               </a></li>
+               
+               <li><a href="/motifs/lien-evitement/">
+                    
+				
+				Lien d&#39;évitement 
+               </a></li>
+               
+               <li><a href="/motifs/menu-de-navigation/">
+                    
+				
+				Menu de navigation 
+               </a></li>
+               
+               <li><a href="/motifs/menu-lateral-glissant/">
+                    
+				
+				Menu latéral glissant 
+               </a></li>
+               
+               <li><a href="/motifs/onglets/">
+                    
+				
+				Onglets 
+               </a></li>
+               
+               <li><a href="/motifs/placeholder/">
+                    
+				
+				Placeholder 
+               </a></li>
+               
+               <li><a href="/motifs/stepper/">
+                    
+				
+				Processus par étape 
+               </a></li>
+               
+               <li><a href="/motifs/tableau-responsive/">
+                    
+				
+				Tableau 
+               </a></li>
+               
+          </ul>
+
+
+		
+	</nav>
+
+               
+          </aside>
+          <section class="item-80">
+               <h1> Code de base</h1>
+               <p>Code de base d&#39;une page HTML valide selon le W3C et les critères d&#39;accessibilité numérique.</p>
+               <div class="toc">
+                    <h2>Dans cette rubrique</h2>
+                    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#extraits-de-code">Extraits de code</a>
+      <ul>
+        <li><a href="#code-html-commenté">Code HTML commenté</a></li>
+        <li><a href="#code-html-non-commenté">Code HTML non commenté</a></li>
+        <li><a href="#code-css-pour-le-lien-dévitement">Code CSS pour le lien d&rsquo;évitement</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+               </div>
+
+               <p>Deux extraits de code sont présentés. Le premier est commenté ; le deuxième ne l&rsquo;est pas et est suivi du code CSS pour le lien d&rsquo;évitement.</p>
+<h2 id="extraits-de-code">Extraits de code</h2>
+<h3 id="code-html-commenté">Code HTML commenté</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;fr-FR&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- encodage --&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- affichage responsive du site --&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1&#34;</span><span class="p">&gt;</span>  
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- compatibilité avec Edge --&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&#34;X-UA-Compatible&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;IE=edge&#34;</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- Titre de la page --&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Titre de la page - Nom du site<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- Informations facultatives --&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;description&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;description du site...&#34;</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;keywords&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;mot-clé 1, mot-clé 2...&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;author&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;Auteur du site&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- affichage d&#39;une icône personnalisée dans l&#39;onglet du navigateur --&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/images/favicon.ico&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;icon&#34;</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- feuille de style externe utilisée pour l&#39;impression --&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/css/print.css&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;print&#34;</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- feuille de style externe utilisée pour l&#39;affichage à &#39;écran --&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/css/votre-feuille-de-style.css&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;screen&#34;</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- lien d&#39;accès rapide au contenu de la page --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;evitement&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#contenu&#34;</span><span class="p">&gt;</span>Aller au contenu<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- zone d&#39;entête de la page ; accueille généralement le logo du site et la barre de navigation principale --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">header</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;banner&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;mon-logo.png&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;Logo de mon site&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">nav</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;navigation&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;navbar&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Menu principal&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>Menu 1<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>Menu 2<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>Menu 3<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- zone de contenu de la page --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">main</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;main&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;contenu&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Titre de niveau 1<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        ...
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Titre de niveau 2<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        ...
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- pied de page --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">footer</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;contentinfo&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        ...
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h3 id="code-html-non-commenté">Code HTML non commenté</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;fr-FR&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1&#34;</span><span class="p">&gt;</span>  
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&#34;X-UA-Compatible&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;IE=edge&#34;</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Accueil - Site<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;description&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;keywords&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;author&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/images/favicon.ico&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;icon&#34;</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/css/print.css&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;print&#34;</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/css/votre-feuille-de-style.css&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;screen&#34;</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;evitement&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#contenu&#34;</span><span class="p">&gt;</span>Aller au contenu<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">header</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;banner&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;mon-logo.png&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;Logo de mon site&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">nav</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;navigation&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;navbar&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Menu principal&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">main</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;main&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;contenu&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">footer</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;contentinfo&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h3 id="code-css-pour-le-lien-dévitement">Code CSS pour le lien d&rsquo;évitement</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">a</span><span class="p">.</span><span class="nc">evitement</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="k">color</span><span class="p">:</span> <span class="mh">#555</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="k">background</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="k">padding</span><span class="p">:</span> <span class="mf">.5</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="k">left</span><span class="p">:</span> <span class="mi">-99999</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="k">z-index</span><span class="p">:</span> <span class="mi">100</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nt">a</span><span class="p">.</span><span class="nc">evitement</span><span class="p">:</span><span class="nd">focus</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="k">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>
+          </section>
+     </div>
+</main>
+
+	<footer role="contentinfo">
+	
+	<div class="pied">
+		<ul>
+			
+			<li><a href="https://gitlab.com/sofeve-concept"  title="GitLab"><span
+				   class="icon"><i class='fab fa-gitlab'></i></span></a></li>
+			
+			<li><a href="https://www.linkedin.com/in/sophie-gounon-41396b56/"  title="LinkedIn"><span
+				   class="icon"><i class='fab fa-linkedin'></i></span></a></li>
+			
+		</ul>
+		<ul>
+			
+		    <li><a href="/mentions-legales" class="">Mentions légales et crédits</a></li>
+		    
+		    <li><a class="courriel" data-courriel="sc.gounonchezgmailrondcom"></a></li>
+		</ul>
+		<p class="copyr">&copy; 2023 Sofève Concept - <span>By</span> Sofève Concept</p>
+	 </div>
+</footer>
+<a id="RetourEnHaut" class="cInvisible" href="#top">
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"
+	    aria-hidden="true">
+	    <path
+		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+	</svg>
+	<span class="sr-only">Retour haut de page</span></a>
+ <script src="/js/script.js"></script>
+ <script src="/js/utils.js"></script>
+ 
+ <script src="/js/clipboard.js"></script>
+
+<script src="/js/search.js"></script>
+	
+	
+	
+</body>
+</html>

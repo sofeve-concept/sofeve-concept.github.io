@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	
+	
+	<title>
+		
+		Les liens - Liens et boutons
+		 
+		
+		- Coder accessible
+		
+		- Sofève Concept</title>
+	<meta name="description" content="Les liens sont des éléments qui permettent d&#39;atteindre un endroit précis à l&#39;intérieur d&#39;une même page, de passer d&#39;une page à une autre à l&#39;intérieur d&#39;un site ou de pointer vers un autre site. Ils sont aussi utilisés pour télécharger un fichier.">
+	<meta name="author" content="Sophie Gounon">
+	<link href="/images/favicon.ico" rel="icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Poppins&family=Righteous&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/print.css" media="print">
+	<link rel="stylesheet" href="/css/fontawesome.css">
+	<link rel="stylesheet" href="/css/sofeve.css" media="screen">
+		
+	
+	
+</head>
+<body>
+	<a class="evitement" href="#contenu">Aller au contenu</a>
+
+<header role="banner">
+	<div class="logo">
+		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
+	</div>
+	<nav role='navigation' class="navbar" aria-label="Menu principal">
+		<a role="button" aria-haspopup="true" aria-expanded="false" id="hamburger" aria-controls="menu"><span class="sr-only">Menu</span></a>
+		<ul id="menu">
+		
+		
+		 
+			
+			<li  class="accueil">
+				<a href="/" 
+				
+				
+				> Accueil</a></li>
+			
+		
+		 
+				
+			<li class="coder">
+				<a role="button" aria-haspopup="true" aria-expanded="false" aria-controls="coder" 
+				
+				aria-current="true"
+				
+				> 
+				Coder accessible</a>
+				   <ul id="coder">
+					 		
+					
+					
+										
+              				<li><a href="/coder/structure/" 
+							
+							> Structure générale</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/contenu/" 
+							
+							> Contenu</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/couleurs/" 
+							
+							> Couleurs</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/navigation/" 
+							
+							> Navigation</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/lien-bouton/" 
+							
+							aria-current="page"> Liens et boutons</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/image-icone/" 
+							
+							> Images et icônes</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/tableaux/" 
+							
+							> Tableaux</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/formulaire/" 
+							
+							> Formulaires</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/scripts/" 
+							
+							> Composants d&#39;interface riche</a></li>
+              			
+				   </ul>
+			    </li>
+			
+		
+		 
+			
+			<li  class="motifs">
+				<a href="/motifs/" 
+				
+				
+				> Motifs de conception</a></li>
+			
+		
+		 
+			
+			<li  class="a-propos">
+				<a href="/a-propos/" 
+				
+				
+				> À propos</a></li>
+			
+		
+		</ul>
+	</nav>	
+	<form action="/rechercher" method="GET" role="search">
+    <label for="search-query" class="sr-only">Rechercher sur le site</label>
+    <input type="search" name="q" id="search-query" placeholder="Rechercher sur le site....">
+    <button type="reset">
+        <span class="fa fa-times" aria-hidden="true"></span>
+        <span class="sr-only">Effacer</span>
+    </button>
+    <button type="submit">
+        <span class="fa fa-search" aria-hidden="true"></span>
+        <span class="sr-only">Rechercher</span>
+    </button>
+</form>
+</header>
+
+	
+<main role="main" class="container">
+     
+<nav aria-label="Vous êtes ici" class="ariane">
+<ol>
+  
+  
+    
+  
+    
+  
+    
+  
+  
+  <li>
+    
+    <a href="/">Accueil</a>
+   
+  </li>
+  
+
+  
+  
+  <li>
+    
+    <a href="/coder/">Coder accessible</a>
+   
+  </li>
+  
+
+  
+  
+  <li>
+    
+    <a href="/coder/lien-bouton/">Liens et boutons</a>
+   
+  </li>
+  
+
+  
+  
+  <li aria-current="page" tabindex="-1">
+    Les liens
+  </li>
+  
+
+</ol>
+</nav>
+<button onclick="window.print();" class="print">
+  <span class="fa fa-print" aria-hidden="true"></span>
+  Imprimer
+</button>
+
+
+
+     <div class="flex">
+          <aside class="item-20">
+               
+               
+	
+	
+	
+				
+			<nav role="navigation" aria-label="Navigation contextuelle">
+				<p class="rubrique">Coder accessible</p>
+			<ul>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/structure/" 
+				 >
+					Structure générale 
+				</a>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/contenu/" 
+				 >
+					Contenu 
+				</a>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/couleurs/" 
+				 >
+					Couleurs 
+				</a>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/navigation/" 
+				 >
+					Navigation 
+				</a>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/lien-bouton/" 
+				 aria-current="true"  >
+					Liens et boutons 
+				</a>
+				
+				
+				<ul>
+					
+					
+					<li>
+						<a href="https://sofeve-concept.github.io/coder/lien-bouton/liens/"  aria-current="page" >	
+							Les liens
+						</a>
+					</li>
+					
+					
+					<li>
+						<a href="https://sofeve-concept.github.io/coder/lien-bouton/boutons/" >	
+							Les boutons
+						</a>
+					</li>
+					
+				</ul>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/image-icone/" 
+				 >
+					Images et icônes 
+				</a>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/tableaux/" 
+				 >
+					Tableaux 
+				</a>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/formulaire/" 
+				 >
+					Formulaires 
+				</a>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/scripts/" 
+				 >
+					Composants d&#39;interface riche 
+				</a>
+				
+			</li>
+			
+			</ul>
+		</nav>
+	
+
+               
+               </aside>
+          <section class="item-80">
+               <h1>Les liens</h1>
+               <p>Les liens sont des éléments qui permettent d&#39;atteindre un endroit précis à l&#39;intérieur d&#39;une même page, de passer d&#39;une page à une autre à l&#39;intérieur d&#39;un site ou de pointer vers un autre site. Ils sont aussi utilisés pour télécharger un fichier.</p>
+               <div class="toc">
+                    <h2>Dans cette rubrique</h2>
+               <nav id="TableOfContents">
+  <ul>
+    <li><a href="#règles-dimplémentation-dun-lien">Règles d&rsquo;implémentation d&rsquo;un lien</a>
+      <ul>
+        <li><a href="#ce-quil-faut-retenir">Ce qu&rsquo;il faut retenir</a></li>
+      </ul>
+    </li>
+    <li><a href="#règles-daccessibilité-dun-lien">Règles d&rsquo;accessibilité d&rsquo;un lien</a>
+      <ul>
+        <li><a href="#lien-explicite">Lien explicite</a>
+          <ul>
+            <li><a href="#lien-texte-explicite">Lien texte explicite</a></li>
+            <li><a href="#lien-de-téléchargement">Lien de téléchargement</a></li>
+          </ul>
+        </li>
+        <li><a href="#lien-non-explicite">Lien non explicite</a>
+          <ul>
+            <li><a href="#lien-texte-non-explicite">Lien texte non explicite.</a></li>
+            <li><a href="#lien-posé-sur-une-image">Lien posé sur une image</a></li>
+          </ul>
+        </li>
+        <li><a href="#lien-composite">Lien composite</a>
+          <ul>
+            <li><a href="#lien-texte-et-image-de-décoration">Lien texte et image de décoration</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+               </div>
+
+               <h2 id="règles-dimplémentation-dun-lien">Règles d&rsquo;implémentation d&rsquo;un lien</h2>
+<p>Les liens permettent de naviguer dans une page ou entre pages web.<br>
+Un lien s&rsquo;implémente avec l&rsquo;élément HTML <code>a</code> (&ldquo;a&rdquo; pour &ldquo;ancre&rdquo;) et est composé :</p>
+<ul>
+<li>d&rsquo;un intitulé de lien (du texte ou une image) placé entre les balises <code>a</code> : <code>&lt;a...&gt;Intitulé du lien&lt;/a&gt;</code></li>
+<li>d&rsquo;attributs, placés dans la balise <code>a</code>
+<ul>
+<li><code>href</code> qui permet d&rsquo;indiquer l&rsquo;adresse du lien ;</li>
+<li><code>title</code> ; cet attribut est facultatif et permet de donner du sens au lien si son intitulé n&rsquo;est pas explicite ;</li>
+<li><code>target</code> ; cet attribut est facultatif et permet de définir la cible du lien (notamment lorqu&rsquo;on veut ouvrir un lien dans une nouvelle fenêtre).</li>
+</ul>
+</li>
+</ul>
+<h3 id="ce-quil-faut-retenir">Ce qu&rsquo;il faut retenir</h3>
+<p>les liens sont utilisés pour :</p>
+<ul>
+<li>pointer vers une autre page ;</li>
+<li>afficher la page suivante ou précédente dans un système de pagination ;</li>
+<li>pointer vers une zone précise de la page courante ;</li>
+<li>envoyer un mail ;</li>
+<li>télécharger un fichier.</li>
+</ul>
+<p><strong><em>Un lien sur lequel le programmeur souhaite poser un événement jasvascript (<code>onClick</code>, par exemple) n&rsquo;est pas un lien mais un bouton.</em></strong></p>
+<h2 id="règles-daccessibilité-dun-lien">Règles d&rsquo;accessibilité d&rsquo;un lien</h2>
+<p>Pour l&rsquo;accessibilité, on veillera à faire la différence entre un lien explicite et un lien non explicite.</p>
+<h3 id="lien-explicite">Lien explicite</h3>
+<p>Un lien explicite est un lien dont l&rsquo;intitulé, dans le contecte où il se trouve, a du sens en soi.</p>
+<h4 id="lien-texte-explicite">Lien texte explicite</h4>
+<p>Lorsque l&rsquo;intitulé du lien suffit à en compredre le sens, le lien sera implémenté de la manière suivante (sans attribut <code>title</code>) :</p>
+<ul>
+<li><code>&lt;a href=&quot;motifs.html&quot;&gt;Motifs de conception&lt;/a&gt;</code></li>
+<li><code>&lt;a href=&quot;mailto:monadresse@domaine.fr&quot;&gt;monadresse@domaine.fr&lt;/a&gt;</code></li>
+</ul>
+<h4 id="lien-de-téléchargement">Lien de téléchargement</h4>
+<p>Dans le cas d&rsquo;un lien proposant le téléchargement du fichier, une bonne pratique d&rsquo;accessibilité consiste à préciser le format et le poids du fichier.
+<code>&lt;a href=&quot;fichier.pdf&quot;&gt;Télécharger la notice (PDF - 102Ko)&lt;/a&gt;</code></p>
+<h3 id="lien-non-explicite">Lien non explicite</h3>
+<p>Un lien non explicite est un lien qui,</p>
+<ul>
+<li>sorti de son contexte, n&rsquo;a pas de sens en soi ;</li>
+<li>est posé uniquement sur une image ;</li>
+<li>ouvre par défaut dans une nouvelle fenêtre.</li>
+</ul>
+<p>Dans certains cas, on pourra recourir à l&rsquo;attribut <code>title</code> pour le rendre explicite. Un autre technique consiste à utiliser l&rsquo;attribut <code>aria-label</code>.<br>
+<strong>Attention</strong> On utilisera soit l&rsquo;attribut <code>title</code>, soit l&rsquo;attribut <code>aria-label</code> mais pas les deux ensembles !</p>
+<h4 id="lien-texte-non-explicite">Lien texte non explicite.</h4>
+<p>Lorsque le libellé du lien n&rsquo;est pas suffisemment explicite, on rajoutera l&rsquo;attribut <code>title</code>. Attention ! Cet attribut title doit reprendre impérativement au début l&rsquo;intitulé du lien.
+<code>&lt;a href=&quot;navigation.html&quot; title=&quot;Lire la suite sur le système de navigation&quot;&gt;Lire la suite&lt;/a&gt;</code></p>
+<h4 id="lien-posé-sur-une-image">Lien posé sur une image</h4>
+<p>Lorsque le lien est posé sur une image, on ne renseignera pas l&rsquo;attribut <code>title</code> du lien et mais on renseignera l&rsquo;attribut <code>alt</code> de l&rsquo;image.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;index.html&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;imges/logo.png&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;Mon Site Web - Accueil du site&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Autre exemple :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;archive/page-1.html&#34;</span><span class="p">&gt;&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;fleche-gauche.png&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;Page précédente&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;archive/page-3.html&#34;</span><span class="p">&gt;&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;flèche-droite.png&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;Page suivante&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h3 id="lien-composite">Lien composite</h3>
+<p>On parle de lien composite lorsque le lien porte sur plusieurs éléments HTML en même temps. On veillera à faire porter le lien sur l&rsquo;ensemble des éléments et non pas à dupliquer le lien sur chacun des éléments.</p>
+<h4 id="lien-texte-et-image-de-décoration">Lien texte et image de décoration</h4>
+<p>Si l&rsquo;intitulé du lien est suffisamment explicite, il n&rsquo;y aura pas besoin de rajouter l&rsquo;attribut <code>title</code> ni de renseigner l&rsquo;attribut <code>alt</code>de l&rsquo;image.</p>
+<p><strong>Exemple de code HTML pour un rendu visuel de ce type :</strong> <img src="/images/bouton-composite-1.png" alt="exemple de lien compositive vers l&amp;rsquo;accueil"></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bouton-accueil&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;img/home.png&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">Accueil
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p><strong>Exemple de code HTML pour un rendu visuel de ce type :</strong>   <img src="/images/bouton-composite-2.png" alt="exemple de lien compositive vers l&amp;rsquo;accueil"></p>
+<p>Dans cet exemple, l&rsquo;image est insérée via CSS et le texte est caché via CSS ; il n&rsquo;y a pas besoin de rajouter l&rsquo;attribut <code>title</code>.<br>
+Si on teste ce code HTML en désactivant les CSS, on aura une implémentation conforme puisque l&rsquo;image, certes, disparaîtra mais le texte, lui, apparaîtra.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn home&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sr-only&#34;</span><span class="p">&gt;</span>Accueil<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">sr-only</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">position</span><span class="p">:</span><span class="kc">absolute</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">top</span><span class="p">:</span><span class="mi">-10000</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">home</span><span class="p">:</span><span class="nd">before</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">content</span><span class="p">:</span><span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">display</span><span class="p">:</span><span class="kc">inline-block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">background</span><span class="p">:</span><span class="nb">url</span><span class="p">(</span><span class="s2">&#34;../images/home.png&#34;</span><span class="p">)</span> <span class="kc">no-repeat</span> <span class="kc">center</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">height</span><span class="p">:</span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">width</span><span class="p">:</span><span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>
+          </section>
+          
+     </div>
+</main>
+
+	<footer role="contentinfo">
+	
+	<div class="pied">
+		<ul>
+			
+			<li><a href="https://gitlab.com/sofeve-concept"  title="GitLab"><span
+				   class="icon"><i class='fab fa-gitlab'></i></span></a></li>
+			
+			<li><a href="https://www.linkedin.com/in/sophie-gounon-41396b56/"  title="LinkedIn"><span
+				   class="icon"><i class='fab fa-linkedin'></i></span></a></li>
+			
+		</ul>
+		<ul>
+			
+		    <li><a href="/mentions-legales" class="">Mentions légales et crédits</a></li>
+		    
+		    <li><a class="courriel" data-courriel="sc.gounonchezgmailrondcom"></a></li>
+		</ul>
+		<p class="copyr">&copy; 2023 Sofève Concept - <span>By</span> Sofève Concept</p>
+	 </div>
+</footer>
+<a id="RetourEnHaut" class="cInvisible" href="#top">
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"
+	    aria-hidden="true">
+	    <path
+		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+	</svg>
+	<span class="sr-only">Retour haut de page</span></a>
+ <script src="/js/script.js"></script>
+ <script src="/js/utils.js"></script>
+ 
+ <script src="/js/clipboard.js"></script>
+
+<script src="/js/search.js"></script>
+	
+	
+	
+</body>
+</html>

@@ -1,0 +1,8 @@
+header[role="banner"],
+footer[role="contentinfo"],
+aside,
+.evitement,
+.ariane,
+.print {
+    display: none;
+}

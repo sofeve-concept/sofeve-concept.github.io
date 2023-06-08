@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Accueil on Sofève Concept</title>
+    <link>https://sofeve-concept.github.io/</link>
+    <description>Recent content in Accueil on Sofève Concept</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <lastBuildDate>Mon, 06 Apr 2020 11:00:27 +0200</lastBuildDate><atom:link href="https://sofeve-concept.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> Code de base</title>
+      <link>https://sofeve-concept.github.io/motifs/code-de-base/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/code-de-base/</guid>
+      <description>Deux extraits de code sont présentés. Le premier est commenté ; le deuxième ne l&amp;rsquo;est pas et est suivi du code CSS pour le lien d&amp;rsquo;évitement.</description>
+    </item>
+    
+    <item>
+      <title>À propos de la navigation</title>
+      <link>https://sofeve-concept.github.io/coder/navigation/a-propos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/navigation/a-propos/</guid>
+      <description>Ce qu&amp;rsquo;il faut retenir Pour un site qui comporte plus de 5 pages différentes, il faut veiller à prévoir au moins 2 systèmes de navigation parmi :</description>
+    </item>
+    
+    <item>
+      <title>Bordure de texte</title>
+      <link>https://sofeve-concept.github.io/motifs/bordure-texte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/bordure-texte/</guid>
+      <description>Cette technique de bordure de texte en css permet de rendre le contraste entre le texte et l&amp;rsquo;image conforme aux critères d&amp;rsquo;accessibilité.</description>
+    </item>
+    
+    <item>
+      <title>Fil d&#39;ariane</title>
+      <link>https://sofeve-concept.github.io/motifs/ariane/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/ariane/</guid>
+      <description>Une bonne pratique d&#39;accessibilité pour le fil d&#39;ariane (&#34;breadcrumb&#34;, en anglais) consiste à ne pas rendre le lien de la page active cliquable.</description>
+    </item>
+    
+    <item>
+      <title>Formatage du contenu</title>
+      <link>https://sofeve-concept.github.io/coder/contenu/formatage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/contenu/formatage/</guid>
+      <description>Bien structurer sa page et proposer un visuel homogène et cohérent entre les pages permet de faciliter la navigation et la compréhension du contenu du site.</description>
+    </item>
+    
+    <item>
+      <title>Les liens</title>
+      <link>https://sofeve-concept.github.io/coder/lien-bouton/liens/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/lien-bouton/liens/</guid>
+      <description>Règles d&amp;rsquo;implémentation d&amp;rsquo;un lien Les liens permettent de naviguer dans une page ou entre pages web.</description>
+    </item>
+    
+    <item>
+      <title>Processus par étape</title>
+      <link>https://sofeve-concept.github.io/motifs/stepper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/stepper/</guid>
+      <description>Visuel IdentificationPanierLivraisonPaiementFinIdentificationRechercheTéléchargementExtraits de code Code HTML &amp;lt;nav class=&amp;#34;stepper&amp;#34; aria-label=&amp;#34;Étapes de votre commande&amp;#34; class=&amp;#34;stepper&amp;#34;&amp;gt; &amp;lt;ol&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title>Sémantique HTML</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/semantique-html-formulaire/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/semantique-html-formulaire/</guid>
+      <description>Ce qu&amp;rsquo;il faut retenir Un formulaire HTML est composé de plusieurs éléments : zones de texte (sur une seule ligne ou plusieurs lignes), liste de sélection déroulante, cases à cocher, boutons radio et boutons d&amp;rsquo;action (soumission du formulaire ou effacement des champs).</description>
+    </item>
+    
+    <item>
+      <title>Sémantique HTML</title>
+      <link>https://sofeve-concept.github.io/coder/tableaux/semantique-html-tableaux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/tableaux/semantique-html-tableaux/</guid>
+      <description>Ce qu&amp;rsquo;il faut retenir Un tableau HTML permet de présenter des données de manière organisée.</description>
+    </item>
+    
+    <item>
+      <title>Code HTML global</title>
+      <link>https://sofeve-concept.github.io/coder/structure/code-base/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/structure/code-base/</guid>
+      <description>Une page web doit comporter différents éléments pour être valide :
+Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page HTML 5 ; Une déclaration de langue Une entête contenant des meta informations comme le titre de la page (qui apparaitra dans l&amp;rsquo;onglet du navigateur) et diverses déclarations comme l&amp;rsquo;encodage de la page, les liens vers des feuilles de style&amp;hellip; ; Le corps du document (c&amp;rsquo;est cette partie du code qui sera affichée dans le navigateur) contenant des balises sémantiques permettant de structurer la page.</description>
+    </item>
+    
+    <item>
+      <title>Contraste de couleurs</title>
+      <link>https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs/</guid>
+      <description>Contraste suffisant entre les textes et l’arrière-plan Texte normal non gras inférieur à 18pt : rapport de 4,5 pour 1 Texte normal gras inférieur à 14pt : rapport de 4,5 pour 1 Grand texte non gras inférieur à 18pt : rapport de 3 pour 1 Grand texte gras inférieur à 14pt : rapport de 3 pour 1 Information compréhensible même en l’absence de couleurs</description>
+    </item>
+    
+    <item>
+      <title>Étiquette de champ</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</guid>
+      <description>remarque Pour présenter l&#39;étiquette de champ, les exemples de cette page associent l&#39;étiquette à un champ de type `input`.</description>
+    </item>
+    
+    <item>
+      <title>Formatage du contenu</title>
+      <link>https://sofeve-concept.github.io/coder/structure/formatage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/structure/formatage/</guid>
+      <description>Bien structurer sa page et proposer un visuel homogène et cohérent entre les pages permet de faciliter la navigation et la compréhension du contenu du site.</description>
+    </item>
+    
+    <item>
+      <title>Images img et svg</title>
+      <link>https://sofeve-concept.github.io/coder/image-icone/images-img-svg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/image-icone/images-img-svg/</guid>
+      <description>Les images s&amp;rsquo;implémentent avec l&amp;rsquo;élément HTML &amp;lt;img src=&amp;quot;...&amp;quot;&amp;gt; ou &amp;lt;svg ...&amp;gt;...&amp;lt;/svg&amp;gt;.
+Image sans alternative textuelle Quand les images ou les icônes sont décoratives, on n&amp;rsquo;ajoute pas d&amp;rsquo;alternative textuelle (alt).</description>
+    </item>
+    
+    <item>
+      <title>Les boutons</title>
+      <link>https://sofeve-concept.github.io/coder/lien-bouton/boutons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/lien-bouton/boutons/</guid>
+      <description>Règles d&amp;rsquo;implémentation d&amp;rsquo;un bouton Les boutons déclenchent des actions. Ils sont implémentés avec les balises &amp;lt;input type=&amp;quot;.</description>
+    </item>
+    
+    <item>
+      <title>Les images</title>
+      <link>https://sofeve-concept.github.io/coder/image-icone/images/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/image-icone/images/</guid>
+      <description>Ce qu&amp;rsquo;il faut retenir On n&amp;rsquo;utilisera pas le style CSS pour afficher les images porteuses d’informations telles que :</description>
+    </item>
+    
+    <item>
+      <title>Lien d&#39;accès rapide</title>
+      <link>https://sofeve-concept.github.io/coder/navigation/lien-acces-rapide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/navigation/lien-acces-rapide/</guid>
+      <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;un lien d&amp;rsquo;accès rapide ? Un lien d&amp;rsquo;accès rapide (ou lien de raccourci, lien d&amp;rsquo;évitement) est un lien qui permet d&amp;rsquo;accéder directement à une partie du document ; l&amp;rsquo;objectif est de permettre aux utilisateurs naviguant au clavier (dont notamment les utilisateurs de logiciel de synthèse vocale) d’accéder plus rapidement à des zones précises de la page sans dérouler la lecture des items précédents.</description>
+    </item>
+    
+    <item>
+      <title>Lien d&#39;accès rapide</title>
+      <link>https://sofeve-concept.github.io/coder/navigation/lien-evitement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/navigation/lien-evitement/</guid>
+      <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;un lien d’évitement ? Un lien d&amp;rsquo;évitement (ou lien de raccourci, lien d&amp;rsquo;accès rapide) est un lien qui permet d&amp;rsquo;accéder directement à une partie du document ; l&amp;rsquo;objectif est de permettre aux utilisateurs naviguant au clavier (dont notamment les utilisateurs de logiciel de synthèse vocale) d’accéder plus rapidement à des zones précises de la page sans dérouler la lecture des items précédents.</description>
+    </item>
+    
+    <item>
+      <title>Menu de navigation</title>
+      <link>https://sofeve-concept.github.io/motifs/menu-de-navigation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/menu-de-navigation/</guid>
+      <description>Présentation L&amp;rsquo;exemple présenté ici est celui d&amp;rsquo;un menu hamburger avec menu déroulant (rubriques parentes et sous-rubriques).</description>
+    </item>
+    
+    <item>
+      <title>Menu latéral glissant</title>
+      <link>https://sofeve-concept.github.io/motifs/menu-lateral-glissant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/menu-lateral-glissant/</guid>
+      <description>Visuel Extraits de code Code HTML &amp;lt;header role=&amp;#34;header&amp;#34;&amp;gt; &amp;lt;nav id=&amp;#34;mySidenav&amp;#34; class=&amp;#34;sidenav&amp;#34;&amp;gt; &amp;lt;button id=&amp;#34;closenav&amp;#34; class=&amp;#34;closebtn&amp;#34; onclick=&amp;#34;closeNav()&amp;#34; aria-label=&amp;#34;Close Navigation Menu&amp;#34;&amp;gt; &amp;lt;span aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;amp;times;&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Fermer le menu latéral&amp;lt;/span&amp;gt; &amp;lt;/button&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;About&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;Services&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;Clients&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;Contact&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/nav&amp;gt; &amp;lt;/header&amp;gt; &amp;lt;main role=&amp;#34;main&amp;#34; id=&amp;#34;main&amp;#34;&amp;gt; &amp;lt;button id=&amp;#34;opennav&amp;#34; style=&amp;#34;font-size:30px;cursor:pointer&amp;#34; onclick=&amp;#34;openNav()&amp;#34; aria-expanded=&amp;#34;false&amp;#34;&amp;gt; &amp;lt;span aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;amp;#9776;&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Ouvrir le menu latéral&amp;lt;/span&amp;gt; &amp;lt;/button&amp;gt; &amp;lt;p&amp;gt;Cliquez sur l&amp;#39;icône hamburger pour ouvrir le menu de navigation latéral et poussez ce contenu vers la droite.</description>
+    </item>
+    
+    <item>
+      <title>Saisie et contrôle du formulaire</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/</guid>
+      <description>Champ obligatoire Si le champ est obligatoire, on utilisera un signe distinctif intégré dans la balise &amp;lt;label&amp;gt;.</description>
+    </item>
+    
+    <item>
+      <title>Tableaux</title>
+      <link>https://sofeve-concept.github.io/coder/tableaux/tableaux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/tableaux/tableaux/</guid>
+      <description>Ce qu&amp;rsquo;il faut retenir On veillera à ce que tous les contenus et toutes les fonctionnalités du tableau soient disponibles quelle que soit la taille de l’écran.</description>
+    </item>
+    
+    <item>
+      <title>Tableaux accessibles</title>
+      <link>https://sofeve-concept.github.io/coder/tableaux/tableaux-accessibles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/tableaux/tableaux-accessibles/</guid>
+      <description>Ce qu&amp;rsquo;il faut retenir On veillera à ce que tous les contenus et toutes les fonctionnalités du tableau soient disponibles quelle que soit la taille de l’écran.</description>
+    </item>
+    
+    <item>
+      <title>Titraille</title>
+      <link>https://sofeve-concept.github.io/coder/contenu/titraille/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/contenu/titraille/</guid>
+      <description>Balises de titraille, éléments html h1 à h6 Le contenu du document est hiérarchisé à l&amp;rsquo;aide déléments de titraille (balises allant de &amp;lt;h1&amp;gt;.</description>
+    </item>
+    
+    <item>
+      <title>Image légendée</title>
+      <link>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</guid>
+      <description>Implémentation HTML Les images légendées doivent être balisées avec &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; et &amp;lt;figcaption&amp;gt;.
+La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</description>
+    </item>
+    
+    <item>
+      <title>Menu de navigation</title>
+      <link>https://sofeve-concept.github.io/coder/navigation/menu-navigation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/navigation/menu-navigation/</guid>
+      <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;un menu de navigation ? Un menu de navigation regroupe un ensemble de liens permettant d&amp;rsquo;afficher les différentes pages du site web ou d&amp;rsquo;atteindre un endroit spécifique de la page affichée.</description>
+    </item>
+    
+    <item>
+      <title>Police symbolique</title>
+      <link>https://sofeve-concept.github.io/coder/image-icone/police-icone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/image-icone/police-icone/</guid>
+      <description>Les polices d&amp;rsquo;icônes symboliques Parmi les polices de cacractères symboliques, les plus connues sont :</description>
+    </item>
+    
+    <item>
+      <title>Texte</title>
+      <link>https://sofeve-concept.github.io/coder/contenu/texte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/contenu/texte/</guid>
+      <description>Formatage du texte À faire Utiliser des tailles relatives pour les polices de caractères : (em, rem, %, small&amp;hellip;) ; Veiller à déclarer une interligne de 1,5 via la déclaration css line-height: 1.</description>
+    </item>
+    
+    <item>
+      <title>Fil d&#39;Ariane</title>
+      <link>https://sofeve-concept.github.io/coder/navigation/fil-ariane/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/navigation/fil-ariane/</guid>
+      <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;un fil d&amp;rsquo;Ariane ? Le terme &amp;ldquo;fil d&amp;rsquo;Ariane&amp;rdquo; provient du mythe de l&amp;rsquo;antiquité racontant comment Ariane tendit à son aimé Thésée un fil pour qu&amp;rsquo;il puisse retrouver son chemin après avoir pénétré le labyrinthe dans lequel était enfermé le Minautore.</description>
+    </item>
+    
+    <item>
+      <title>Listes</title>
+      <link>https://sofeve-concept.github.io/coder/contenu/liste/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/contenu/liste/</guid>
+      <description>Listes Il existe 3 façons différentes d&amp;rsquo;implémenter des listes. Les listes servent à présenter des élements sous forme de liste mais aussi les éléments d&amp;rsquo;un menu : menu de navigation, fils d&amp;rsquo;ariane, processus par étape, pagination.</description>
+    </item>
+    
+    <item>
+      <title>Regroupement de champs</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/</guid>
+      <description>Implémentation HTML Les champs de même nature sont regroupés et titré avec fieldset et legend</description>
+    </item>
+    
+    <item>
+      <title>Liste déroulante</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/</guid>
+      <description>Règles générales Les options proposées dans une liste déroulante doivent être ordonnées de manière logique :</description>
+    </item>
+    
+    <item>
+      <title>Processus par étapes</title>
+      <link>https://sofeve-concept.github.io/coder/navigation/processus-etapes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/navigation/processus-etapes/</guid>
+      <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;un processus par étapes ? Les processus par étapes affichent la progression à travers une séquence d&amp;rsquo;étapes logiques et numérotées.</description>
+    </item>
+    
+    <item>
+      <title>Validité du code</title>
+      <link>https://sofeve-concept.github.io/coder/structure/validite-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/structure/validite-code/</guid>
+      <description>Code HTML de base d&amp;rsquo;une page web Une page web HTML doit comporter a minima les éléments suivants pour être valide :</description>
+    </item>
+    
+    <item>
+      <title>Accordéon</title>
+      <link>https://sofeve-concept.github.io/motifs/accordeon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/accordeon/</guid>
+      <description>Visuel Rubrique1Consectetur cupidatat nisi amet exercitation quis mollit. Incididunt labore voluptate laborenostrud incididunt fugiat labore est anim tempor et Lorem dolor ea.</description>
+    </item>
+    
+    <item>
+      <title>Carrousel</title>
+      <link>https://sofeve-concept.github.io/motifs/carrousel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/carrousel/</guid>
+      <description>Visuel Première imagelorem ipsum
+Deuxième imagelorem ipsum
+Troisième imagelorem ipsum
+Quatrième imagelorem ipsum</description>
+    </item>
+    
+    <item>
+      <title>Carte cliquable</title>
+      <link>https://sofeve-concept.github.io/motifs/carte-cliquable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/carte-cliquable/</guid>
+      <description>Visuel Carte cliquableExtrait de code pour créer une carte cliquable valide selon le W3C et les critères d&#39;accessibilité numérique.</description>
+    </item>
+    
+    <item>
+      <title>Fenêtre modale</title>
+      <link>https://sofeve-concept.github.io/motifs/modale/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/modale/</guid>
+      <description>Visuel Ouvrir la fenêtre modaleTitre de la fenêtre modale&amp;times;Labore sit invidunt amet sit sanctus justo tempor sea amet, accusam nonumy et et nonumy aliquyam dolor ipsum vero duo.</description>
+    </item>
+    
+    <item>
+      <title>Infobulle</title>
+      <link>https://sofeve-concept.github.io/motifs/infobulle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/infobulle/</guid>
+      <description>Les infobulles (tooltip en anglais) ne sont pas accessibles au clavier. Nous allons donc recourir au CSS et à l&#39;attribut aria-label pour les simuler.</description>
+    </item>
+    
+    <item>
+      <title>Lien d&#39;évitement</title>
+      <link>https://sofeve-concept.github.io/motifs/lien-evitement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/lien-evitement/</guid>
+      <description>Le lien d&#39;évitement (&#34;skip link&#34;, en anglais), est invisible par défaut sur la page et n&#39;apparaît qu&#39;à la prise de focus pour une navigation au clavier.</description>
+    </item>
+    
+    <item>
+      <title>Onglets</title>
+      <link>https://sofeve-concept.github.io/motifs/onglets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/onglets/</guid>
+      <description>Visuel Liste d&#39;onglets activables au clavierPremier ongletDeuxième ongletTroisième ongletQuatrième ongletSunt veniam ad reprehenderit exercitation non dolore exercitation labore deserunt laboris deserunt.</description>
+    </item>
+    
+    <item>
+      <title>Placeholder</title>
+      <link>https://sofeve-concept.github.io/motifs/placeholder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/placeholder/</guid>
+      <description>Visuel PrénomNomAdresse mailEnvoyerExtraits de code Code HTML &amp;lt;form id=&amp;#34;motif-placeholder&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;prenom&amp;#34; name=&amp;#34;prenomTextField&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;prenom&amp;#34;&amp;gt;Prénom&amp;lt;/label&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;nom&amp;#34; name=&amp;#34;nomTextField&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;nom&amp;#34;&amp;gt;Nom&amp;lt;/label&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;email&amp;#34; name=&amp;#34;emailTextField&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;email&amp;#34;&amp;gt;Adresse mail&amp;lt;/label&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;button&amp;gt;Envoyer&amp;lt;/button&amp;gt; &amp;lt;/form&amp;gt; Code CSS Pour adapter la couleur de la barre de navigation et des liens, modifier les codes couleurs dans la déclaration :root.</description>
+    </item>
+    
+    <item>
+      <title>Tableau</title>
+      <link>https://sofeve-concept.github.io/motifs/tableau-responsive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/tableau-responsive/</guid>
+      <description>Visuel Répartition en pourcentage des animaux selon la &#34;classification chinoise des Animaux&#34;.AnimauxConfusianistesConfusAppartenant à l’Empereur125Embaumés7545Apprivoisés524Cochons de lait8914Sirènes689Fabuleux9645Chiens en liberté7538Inclus dans la présente classification1006Qui s’agitent comme des fous3228Innombrables119Dessinés avec un pinceau très fin en poils de chameau4298Et cætera2167Qui viennent de casser la cruche462Qui de loin semblent des mouches.</description>
+    </item>
+    
+  </channel>
+</rss>

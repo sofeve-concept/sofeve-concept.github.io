@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tableaux on Sofève Concept</title>
+    <link>https://sofeve-concept.github.io/coder/tableaux/</link>
+    <description>Recent content in Tableaux on Sofève Concept</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/coder/tableaux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sémantique HTML</title>
+      <link>https://sofeve-concept.github.io/coder/tableaux/semantique-html-tableaux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/tableaux/semantique-html-tableaux/</guid>
+      <description>Ce qu&amp;rsquo;il faut retenir Un tableau HTML permet de présenter des données de manière organisée.</description>
+    </item>
+    
+    <item>
+      <title>Tableaux</title>
+      <link>https://sofeve-concept.github.io/coder/tableaux/tableaux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/tableaux/tableaux/</guid>
+      <description>Ce qu&amp;rsquo;il faut retenir On veillera à ce que tous les contenus et toutes les fonctionnalités du tableau soient disponibles quelle que soit la taille de l’écran.</description>
+    </item>
+    
+    <item>
+      <title>Tableaux accessibles</title>
+      <link>https://sofeve-concept.github.io/coder/tableaux/tableaux-accessibles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/tableaux/tableaux-accessibles/</guid>
+      <description>Ce qu&amp;rsquo;il faut retenir On veillera à ce que tous les contenus et toutes les fonctionnalités du tableau soient disponibles quelle que soit la taille de l’écran.</description>
+    </item>
+    
+  </channel>
+</rss>

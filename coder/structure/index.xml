@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Structure générale on Sofève Concept</title>
+    <link>https://sofeve-concept.github.io/coder/structure/</link>
+    <description>Recent content in Structure générale on Sofève Concept</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/coder/structure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code HTML global</title>
+      <link>https://sofeve-concept.github.io/coder/structure/code-base/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/structure/code-base/</guid>
+      <description>Une page web doit comporter différents éléments pour être valide :
+Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page HTML 5 ; Une déclaration de langue Une entête contenant des meta informations comme le titre de la page (qui apparaitra dans l&amp;rsquo;onglet du navigateur) et diverses déclarations comme l&amp;rsquo;encodage de la page, les liens vers des feuilles de style&amp;hellip; ; Le corps du document (c&amp;rsquo;est cette partie du code qui sera affichée dans le navigateur) contenant des balises sémantiques permettant de structurer la page.</description>
+    </item>
+    
+    <item>
+      <title>Formatage du contenu</title>
+      <link>https://sofeve-concept.github.io/coder/structure/formatage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/structure/formatage/</guid>
+      <description>Bien structurer sa page et proposer un visuel homogène et cohérent entre les pages permet de faciliter la navigation et la compréhension du contenu du site.</description>
+    </item>
+    
+    <item>
+      <title>Validité du code</title>
+      <link>https://sofeve-concept.github.io/coder/structure/validite-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/structure/validite-code/</guid>
+      <description>Code HTML de base d&amp;rsquo;une page web Une page web HTML doit comporter a minima les éléments suivants pour être valide :</description>
+    </item>
+    
+  </channel>
+</rss>

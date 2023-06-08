@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HTML on Sofève Concept</title>
+    <link>https://sofeve-concept.github.io/tags/html/</link>
+    <description>Recent content in HTML on Sofève Concept</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> Code de base</title>
+      <link>https://sofeve-concept.github.io/motifs/code-de-base/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/code-de-base/</guid>
+      <description>Deux extraits de code sont présentés. Le premier est commenté ; le deuxième ne l&amp;rsquo;est pas et est suivi du code CSS pour le lien d&amp;rsquo;évitement.</description>
+    </item>
+    
+    <item>
+      <title>Bordure de texte</title>
+      <link>https://sofeve-concept.github.io/motifs/bordure-texte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/bordure-texte/</guid>
+      <description>Cette technique de bordure de texte en css permet de rendre le contraste entre le texte et l&amp;rsquo;image conforme aux critères d&amp;rsquo;accessibilité.</description>
+    </item>
+    
+    <item>
+      <title>Fil d&#39;ariane</title>
+      <link>https://sofeve-concept.github.io/motifs/ariane/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/ariane/</guid>
+      <description>Une bonne pratique d&#39;accessibilité pour le fil d&#39;ariane (&#34;breadcrumb&#34;, en anglais) consiste à ne pas rendre le lien de la page active cliquable.</description>
+    </item>
+    
+    <item>
+      <title>Processus par étape</title>
+      <link>https://sofeve-concept.github.io/motifs/stepper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/stepper/</guid>
+      <description>Visuel IdentificationPanierLivraisonPaiementFinIdentificationRechercheTéléchargementExtraits de code Code HTML &amp;lt;nav class=&amp;#34;stepper&amp;#34; aria-label=&amp;#34;Étapes de votre commande&amp;#34; class=&amp;#34;stepper&amp;#34;&amp;gt; &amp;lt;ol&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title>Menu de navigation</title>
+      <link>https://sofeve-concept.github.io/motifs/menu-de-navigation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/menu-de-navigation/</guid>
+      <description>Présentation L&amp;rsquo;exemple présenté ici est celui d&amp;rsquo;un menu hamburger avec menu déroulant (rubriques parentes et sous-rubriques).</description>
+    </item>
+    
+    <item>
+      <title>Menu latéral glissant</title>
+      <link>https://sofeve-concept.github.io/motifs/menu-lateral-glissant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/menu-lateral-glissant/</guid>
+      <description>Visuel Extraits de code Code HTML &amp;lt;header role=&amp;#34;header&amp;#34;&amp;gt; &amp;lt;nav id=&amp;#34;mySidenav&amp;#34; class=&amp;#34;sidenav&amp;#34;&amp;gt; &amp;lt;button id=&amp;#34;closenav&amp;#34; class=&amp;#34;closebtn&amp;#34; onclick=&amp;#34;closeNav()&amp;#34; aria-label=&amp;#34;Close Navigation Menu&amp;#34;&amp;gt; &amp;lt;span aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;amp;times;&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Fermer le menu latéral&amp;lt;/span&amp;gt; &amp;lt;/button&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;About&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;Services&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;Clients&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;Contact&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/nav&amp;gt; &amp;lt;/header&amp;gt; &amp;lt;main role=&amp;#34;main&amp;#34; id=&amp;#34;main&amp;#34;&amp;gt; &amp;lt;button id=&amp;#34;opennav&amp;#34; style=&amp;#34;font-size:30px;cursor:pointer&amp;#34; onclick=&amp;#34;openNav()&amp;#34; aria-expanded=&amp;#34;false&amp;#34;&amp;gt; &amp;lt;span aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;amp;#9776;&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Ouvrir le menu latéral&amp;lt;/span&amp;gt; &amp;lt;/button&amp;gt; &amp;lt;p&amp;gt;Cliquez sur l&amp;#39;icône hamburger pour ouvrir le menu de navigation latéral et poussez ce contenu vers la droite.</description>
+    </item>
+    
+    <item>
+      <title>Accordéon</title>
+      <link>https://sofeve-concept.github.io/motifs/accordeon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/accordeon/</guid>
+      <description>Visuel Rubrique1Consectetur cupidatat nisi amet exercitation quis mollit. Incididunt labore voluptate laborenostrud incididunt fugiat labore est anim tempor et Lorem dolor ea.</description>
+    </item>
+    
+    <item>
+      <title>Carrousel</title>
+      <link>https://sofeve-concept.github.io/motifs/carrousel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/carrousel/</guid>
+      <description>Visuel Première imagelorem ipsum
+Deuxième imagelorem ipsum
+Troisième imagelorem ipsum
+Quatrième imagelorem ipsum</description>
+    </item>
+    
+    <item>
+      <title>Carte cliquable</title>
+      <link>https://sofeve-concept.github.io/motifs/carte-cliquable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/carte-cliquable/</guid>
+      <description>Visuel Carte cliquableExtrait de code pour créer une carte cliquable valide selon le W3C et les critères d&#39;accessibilité numérique.</description>
+    </item>
+    
+    <item>
+      <title>Fenêtre modale</title>
+      <link>https://sofeve-concept.github.io/motifs/modale/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/modale/</guid>
+      <description>Visuel Ouvrir la fenêtre modaleTitre de la fenêtre modale&amp;times;Labore sit invidunt amet sit sanctus justo tempor sea amet, accusam nonumy et et nonumy aliquyam dolor ipsum vero duo.</description>
+    </item>
+    
+    <item>
+      <title>Infobulle</title>
+      <link>https://sofeve-concept.github.io/motifs/infobulle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/infobulle/</guid>
+      <description>Les infobulles (tooltip en anglais) ne sont pas accessibles au clavier. Nous allons donc recourir au CSS et à l&#39;attribut aria-label pour les simuler.</description>
+    </item>
+    
+    <item>
+      <title>Lien d&#39;évitement</title>
+      <link>https://sofeve-concept.github.io/motifs/lien-evitement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/lien-evitement/</guid>
+      <description>Le lien d&#39;évitement (&#34;skip link&#34;, en anglais), est invisible par défaut sur la page et n&#39;apparaît qu&#39;à la prise de focus pour une navigation au clavier.</description>
+    </item>
+    
+    <item>
+      <title>Onglets</title>
+      <link>https://sofeve-concept.github.io/motifs/onglets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/onglets/</guid>
+      <description>Visuel Liste d&#39;onglets activables au clavierPremier ongletDeuxième ongletTroisième ongletQuatrième ongletSunt veniam ad reprehenderit exercitation non dolore exercitation labore deserunt laboris deserunt.</description>
+    </item>
+    
+    <item>
+      <title>Placeholder</title>
+      <link>https://sofeve-concept.github.io/motifs/placeholder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/placeholder/</guid>
+      <description>Visuel PrénomNomAdresse mailEnvoyerExtraits de code Code HTML &amp;lt;form id=&amp;#34;motif-placeholder&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;prenom&amp;#34; name=&amp;#34;prenomTextField&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;prenom&amp;#34;&amp;gt;Prénom&amp;lt;/label&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;nom&amp;#34; name=&amp;#34;nomTextField&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;nom&amp;#34;&amp;gt;Nom&amp;lt;/label&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;email&amp;#34; name=&amp;#34;emailTextField&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;email&amp;#34;&amp;gt;Adresse mail&amp;lt;/label&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;button&amp;gt;Envoyer&amp;lt;/button&amp;gt; &amp;lt;/form&amp;gt; Code CSS Pour adapter la couleur de la barre de navigation et des liens, modifier les codes couleurs dans la déclaration :root.</description>
+    </item>
+    
+    <item>
+      <title>Tableau</title>
+      <link>https://sofeve-concept.github.io/motifs/tableau-responsive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/tableau-responsive/</guid>
+      <description>Visuel Répartition en pourcentage des animaux selon la &#34;classification chinoise des Animaux&#34;.AnimauxConfusianistesConfusAppartenant à l’Empereur125Embaumés7545Apprivoisés524Cochons de lait8914Sirènes689Fabuleux9645Chiens en liberté7538Inclus dans la présente classification1006Qui s’agitent comme des fous3228Innombrables119Dessinés avec un pinceau très fin en poils de chameau4298Et cætera2167Qui viennent de casser la cruche462Qui de loin semblent des mouches.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	
+	
+	<title>
+		
+		Formatage du contenu - Structure générale
+		 
+		
+		- Coder accessible
+		
+		- Sofève Concept</title>
+	<meta name="description" content="Bien structurer sa page et proposer un visuel homogène et cohérent entre les pages permet de faciliter la navigation et la compréhension du contenu du site.">
+	<meta name="author" content="Sophie Gounon">
+	<link href="/images/favicon.ico" rel="icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Poppins&family=Righteous&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/print.css" media="print">
+	<link rel="stylesheet" href="/css/fontawesome.css">
+	<link rel="stylesheet" href="/css/sofeve.css" media="screen">
+		
+	
+	
+</head>
+<body>
+	<a class="evitement" href="#contenu">Aller au contenu</a>
+
+<header role="banner">
+	<div class="logo">
+		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
+	</div>
+	<nav role='navigation' class="navbar" aria-label="Menu principal">
+		<a role="button" aria-haspopup="true" aria-expanded="false" id="hamburger" aria-controls="menu"><span class="sr-only">Menu</span></a>
+		<ul id="menu">
+		
+		
+		 
+			
+			<li  class="accueil">
+				<a href="/" 
+				
+				
+				> Accueil</a></li>
+			
+		
+		 
+				
+			<li class="coder">
+				<a role="button" aria-haspopup="true" aria-expanded="false" aria-controls="coder" 
+				
+				aria-current="true"
+				
+				> 
+				Coder accessible</a>
+				   <ul id="coder">
+					 		
+					
+					
+										
+              				<li><a href="/coder/structure/" 
+							
+							aria-current="page"> Structure générale</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/contenu/" 
+							
+							> Contenu</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/couleurs/" 
+							
+							> Couleurs</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/navigation/" 
+							
+							> Navigation</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/lien-bouton/" 
+							
+							> Liens et boutons</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/image-icone/" 
+							
+							> Images et icônes</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/tableaux/" 
+							
+							> Tableaux</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/formulaire/" 
+							
+							> Formulaires</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/scripts/" 
+							
+							> Composants d&#39;interface riche</a></li>
+              			
+				   </ul>
+			    </li>
+			
+		
+		 
+			
+			<li  class="motifs">
+				<a href="/motifs/" 
+				
+				
+				> Motifs de conception</a></li>
+			
+		
+		 
+			
+			<li  class="a-propos">
+				<a href="/a-propos/" 
+				
+				
+				> À propos</a></li>
+			
+		
+		</ul>
+	</nav>	
+	<form action="/rechercher" method="GET" role="search">
+    <label for="search-query" class="sr-only">Rechercher sur le site</label>
+    <input type="search" name="q" id="search-query" placeholder="Rechercher sur le site....">
+    <button type="reset">
+        <span class="fa fa-times" aria-hidden="true"></span>
+        <span class="sr-only">Effacer</span>
+    </button>
+    <button type="submit">
+        <span class="fa fa-search" aria-hidden="true"></span>
+        <span class="sr-only">Rechercher</span>
+    </button>
+</form>
+</header>
+
+	
+<main role="main" class="container">
+     
+<nav aria-label="Vous êtes ici" class="ariane">
+<ol>
+  
+  
+    
+  
+    
+  
+    
+  
+  
+  <li>
+    
+    <a href="/">Accueil</a>
+   
+  </li>
+  
+
+  
+  
+  <li>
+    
+    <a href="/coder/">Coder accessible</a>
+   
+  </li>
+  
+
+  
+  
+  <li>
+    
+    <a href="/coder/structure/">Structure générale</a>
+   
+  </li>
+  
+
+  
+  
+  <li aria-current="page" tabindex="-1">
+    Formatage du contenu
+  </li>
+  
+
+</ol>
+</nav>
+<button onclick="window.print();" class="print">
+  <span class="fa fa-print" aria-hidden="true"></span>
+  Imprimer
+</button>
+
+
+
+     <div class="flex">
+          <aside class="item-20">
+               
+               
+	
+	
+	
+				
+			<nav role="navigation" aria-label="Navigation contextuelle">
+				<p class="rubrique">Coder accessible</p>
+			<ul>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/structure/" 
+				 aria-current="true"  >
+					Structure générale 
+				</a>
+				
+				
+				<ul>
+					
+					
+					<li>
+						<a href="https://sofeve-concept.github.io/coder/structure/code-base/" >	
+							Code HTML global
+						</a>
+					</li>
+					
+					
+					<li>
+						<a href="https://sofeve-concept.github.io/coder/structure/formatage/"  aria-current="page" >	
+							Formatage du contenu
+						</a>
+					</li>
+					
+					
+					<li>
+						<a href="https://sofeve-concept.github.io/coder/structure/validite-code/" >	
+							Validité du code
+						</a>
+					</li>
+					
+				</ul>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/contenu/" 
+				 >
+					Contenu 
+				</a>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/couleurs/" 
+				 >
+					Couleurs 
+				</a>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/navigation/" 
+				 >
+					Navigation 
+				</a>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/lien-bouton/" 
+				 >
+					Liens et boutons 
+				</a>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/image-icone/" 
+				 >
+					Images et icônes 
+				</a>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/tableaux/" 
+				 >
+					Tableaux 
+				</a>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/formulaire/" 
+				 >
+					Formulaires 
+				</a>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/scripts/" 
+				 >
+					Composants d&#39;interface riche 
+				</a>
+				
+			</li>
+			
+			</ul>
+		</nav>
+	
+
+               
+               </aside>
+          <section class="item-80">
+               <h1>Formatage du contenu</h1>
+               <p>Bien structurer sa page et proposer un visuel homogène et cohérent entre les pages permet de faciliter la navigation et la compréhension du contenu du site.</p>
+               <div class="toc">
+                    <h2>Dans cette rubrique</h2>
+               <nav id="TableOfContents">
+  <ul>
+    <li><a href="#les-points-essentiels-à-retenir">Les points essentiels à retenir</a></li>
+    <li><a href="#structurer-le-texte">Structurer le texte</a>
+      <ul>
+        <li><a href="#balises-de-titraille-éléments-html-h1-à-h6">Balises de titraille, éléments html <code>h1</code> à <code>h6</code></a></li>
+        <li><a href="#formatage-du-texte">Formatage du texte</a>
+          <ul>
+            <li><a href="#agrave-faire">À faire</a></li>
+            <li><a href="#agrave-ne-pas-faire">À ne pas faire</a></li>
+          </ul>
+        </li>
+        <li><a href="#citations">Citations</a></li>
+        <li><a href="#changement-de-langue-ou-de-direction">Changement de langue ou de direction</a></li>
+        <li><a href="#listes">Listes</a>
+          <ul>
+            <li><a href="#liste-non-ordonnée-balises-ulul">Liste non ordonnée, balises <code>&lt;ul&gt;...&lt;/ul&gt;</code></a></li>
+            <li><a href="#liste-ordonnée-balises-olol">Liste ordonnée, balises <code>&lt;ol&gt;...&lt;/ol&gt;</code></a></li>
+            <li><a href="#liste-de-définitions-ou-de-descriptions-balises-dldl-et-sous-balises-dtdt-et-dddd">Liste de définitions ou de descriptions, balises <code>&lt;dl&gt;...&lt;/dl&gt;</code> et sous-balises <code>&lt;dt&gt;...&lt;/dt&gt;</code> et <code>&lt;dd&gt;...&lt;/dd&gt;</code></a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#halte-au-détournement-de-code-">Halte au détournement de code !</a>
+      <ul>
+        <li><a href="#confusion-entre-liens-et-boutons">Confusion entre liens et boutons</a></li>
+        <li><a href="#utiliser-la-balise-hr-pour-créer-une-ligne-horizontale-de-séparation">Utiliser la balise <code>&lt;hr&gt;</code> pour créer une ligne horizontale de séparation.</a></li>
+        <li><a href="#utilisation-de-fieldsetfieldset-pour-obtenir-une-bordure">Utilisation de <code>&lt;fieldset&gt;...&lt;/fieldset&gt;</code> pour obtenir une bordure.</a></li>
+        <li><a href="#utiliser-des-éléments-html-à-des-fons-de-mise-en-forme">Utiliser des éléments HTML à des fons de mise en forme</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+               </div>
+
+               <p>Bien structurer sa page et proposer un visuel homogène et cohérent entre les pages permet de faciliter la navigation et la compréhension du contenu du site. Comme il n&rsquo;est pas possible d&rsquo;être exhaustif, nous allons parcourir ici les éléments sur lesquels être vigilants car bien souvent source de non conformité en terme d&rsquo;accessibilité numérique.</p>
+<h2 id="les-points-essentiels-à-retenir">Les points essentiels à retenir</h2>
+<ul>
+<li>La présentation des pages (menu de navigation, contenu) doit rester cohérente d&rsquo;une page à l&rsquo;autre.</li>
+<li>Une information ne doit pas être donnée uniquement par la forme, la taille ou la position.</li>
+<li>La prise de focus doit être bien visible.<br>
+Pour cela, déplacez-vous dans la page uniquement à l&rsquo;aide du clavier (touche &ldquo;tabulation&rdquo;). Si vous ne savez pas où se trouve votre curseur, c&rsquo;est que cette règle n&rsquo;est pas respectée. Ajoutez alors un style spécifique pour l&rsquo;état &ldquo;focus&rdquo; dans votre feuille de style.<br>
+Exemple :</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">:</span><span class="nd">focus</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">outline</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">purple</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><ul>
+<li>Veiller à rendre l&rsquo;information compréhensible quand les feuilles de style sont désactivées.<br>
+Pour cela, utiliser l&rsquo;extension &ldquo;Web Developper&rdquo; préalablement ajoutée à votre navigateur et choisissez &ldquo;Disabled All Styles&rdquo; dans l&rsquo;onglet &ldquo;styles&rdquo;.</li>
+</ul>
+<p><img src="/images/web-developper-css.jpg" alt="Web developper - onglet CSS"></p>
+<ul>
+<li>Veiller à ce que tout le texte soit visible en cas de :
+<ul>
+<li>fort grossissement - Appuyer sur les touches Ctrl et + à 6 reprises.</li>
+<li>changement d&rsquo;orientation de l&rsquo;écran (site responsive) - Dans firefox, vous pouvez afficher une vue adaptative de votre fenêtre via la combinaison de touches Ctrl + Maj + M</li>
+<li>zoom de la page html - utiliser la loupe de Windows par exemple.</li>
+</ul>
+</li>
+</ul>
+<h2 id="structurer-le-texte">Structurer le texte</h2>
+<p><strong>En bref</strong></p>
+<ul>
+<li>les titres seront balisés balises avec les balises allant de <code>&lt;h1&gt;...&lt;/h1&gt;</code> à <code>&lt;h6&gt;...&lt;/h6&gt;</code></li>
+<li>Le paragraphe sera balisé avec <code>&lt;p&gt;...&lt;/p&gt;</code></li>
+<li>Le bloc de citation avec <code>&lt;blockquote&gt;...&lt;/blockquote&gt;</code></li>
+<li>Un extrait de citation (inséré dans un paragraphe) sera balisé par <code>&lt;q&gt;...&lt;/q&gt;</code></li>
+<li>Un lien sera balisé avec <code>&lt;a href=&quot;url-vers-la-page&quot;&gt;...&lt;/a&gt;</code> ou <code>&lt;a href=&quot;#emplacement-dans-la-page&quot;&gt;...&lt;/a&gt;</code></li>
+<li>Un bouton sera balisé par <code>&lt;button&gt;...&lt;/button&gt;</code></li>
+<li>Une image sera balisée par <code>&lt;img src=&quot;lien-vers-l-image/nom-de-l-image&quot; alt=&quot;&quot;&gt;</code></li>
+</ul>
+<h3 id="balises-de-titraille-éléments-html-h1-à-h6">Balises de titraille, éléments html <code>h1</code> à <code>h6</code></h3>
+<p>Le contenu du document est hiérarchisé à l&rsquo;aide déléments de titraille (balises allant de <code>&lt;h1&gt;...&lt;/h1&gt;</code> à <code>&lt;h6&gt;...&lt;/h6&gt;</code>); S&rsquo;il est possible d&rsquo;aller au delà du niveau 6, mieux vaut repenser la hériarchisation de sa page avant de rajouter un titre de niveau 7 ou plus&hellip;:
+- <code>&lt;h1&gt;Titre de niveau 1&lt;/h1&gt;</code>
+- <code>&lt;h2&gt;Titre de niveau 2&lt;/h2&gt;</code>
+- <code>&lt;h3&gt;Titre de niveau 3&lt;/h3&gt;</code>
+- <code>&lt;h4&gt;Titre de niveau 4&lt;/h4&gt;</code>
+- <code>&lt;h5&gt;Titre de niveau 5&lt;/h5&gt;</code>
+- <code>&lt;h6&gt;Titre de niveau 6&lt;/h6&gt;</code></p>
+<ul>
+<li>La hiérarchie de titres sera logique et exhaustive ; on veillera notamment à ce qu&rsquo;il n&rsquo;y ait pas de &ldquo;trous&rdquo; entre les niveaux de titre (on passerait de h1 à h3, par exemple sans mettre de h2).</li>
+<li>Les balises de titraille seront utilisées pour créer des titres et non pas à des fins de mise en forme ou de présentation du texte.</li>
+</ul>
+<h3 id="formatage-du-texte">Formatage du texte</h3>
+<h4 id="agrave-faire">À faire</h4>
+<ul>
+<li>Utiliser des tailles relatives pour les polices de caractères : (em, rem, %, small&hellip;) ;</li>
+<li>Veiller à déclarer une interligne de 1,5 via la déclaration css <code>line-height: 1.5;</code> ;</li>
+<li>Utiliser la balise <code>&lt;strong&gt;...&lt;/strong&gt;</code> pour signaler du contenu important et non pas pour mettre du texte en gras. Dans ce cas, on utilisera plutôt la déclaration css <code>font-weight: bold;</code> ;</li>
+</ul>
+<h4 id="agrave-ne-pas-faire">À ne pas faire</h4>
+<ul>
+<li>Utiliser les balises de titraille à des fins de mise en forme ;</li>
+<li>Justifier le texte - cela rend la lecture très difficile pour les personnes dyslexiques ;</li>
+<li>Écrire tout en majuscules - on utilisera plutôt la déclaration CSS <code>text-transform: uppercase;</code> ; et le &ldquo;tout majuscules&rdquo; sera réservé à des portions de texte très courtes ou aux titres ;</li>
+<li>Utiliser la balise <code>&lt;br&gt;</code> (ou pire plusieurs fois cette balise) pour espacer une ligne ; de même on n&rsquo;utilisera pas des balises de parapgraphes vides <code>&lt;p&gt;&lt;/p&gt;</code> pour espacer les lignes. Au lieu de cela, on utilisera des styles CSS avec des déclarations du type <code>margin-bottom: 1.5rem;</code> ;</li>
+</ul>
+<h3 id="citations">Citations</h3>
+<ul>
+<li>Un bloc complet de citation sera inséré entre les balises <code>&lt;blokquote&gt;...&lt;/blokquote&gt;</code> ;</li>
+<li>Un extrait de citation, à l&rsquo;intérieur d&rsquo;un paragraphe, sera inséré entre les balises <code>&lt;q&gt;...&lt;/q&gt;</code>.</li>
+<li>L&rsquo;élément <code>&lt;cite&gt;</code> contiendra le titre d&rsquo;une œuvre telle qu&rsquo;un livre, une chanson, un film, une sculpture&hellip;</li>
+</ul>
+<div class="notice attention" >   
+     <p> attention </p>
+     <p>
+La spécification WHATWG proscrit l'utilisation de <code>cite</code> pour inclure le nom de l'auteur d'une œuvre... alors que la spécification W3C l'autorise. &Agrave; vous de voir...
+</p>
+</div>
+<h3 id="changement-de-langue-ou-de-direction">Changement de langue ou de direction</h3>
+<ul>
+<li>Lorsque une portion de texte est écrite dans une langue différente de celle déclarée en entête de page (déclaration <code>&lt;html lang=&quot;fr-FR&quot;&gt;</code>, par exemple), il faudra mentionner le changement de langue avec l&rsquo;attribut <code>lang</code>.<br>
+Exemple :</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Nous allons maintenant aborder des notions de <span class="p">&lt;</span><span class="nt">span</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>design thinking<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span></code></pre></div><ul>
+<li>De même, en cas de changment de sens de lecture (le document se lit de gauche à droite et une portion de texte se lit de droite à gauche, par exemple) ; ce changement de sens de lecture sera mentionné via l&rsquo;attribut <code>dir</code>.</li>
+</ul>
+<h3 id="listes">Listes</h3>
+<p>Il existe 3 façons différentes d&rsquo;implémenter des listes. Les listes servent à présenter des élements sous forme de liste mais aussi les éléments d&rsquo;un menu : menu de navigation, fils d&rsquo;ariane, processus par étape, pagination.</p>
+<h4 id="liste-non-ordonnée-balises-ulul">Liste non ordonnée, balises <code>&lt;ul&gt;...&lt;/ul&gt;</code></h4>
+<ul>
+<li>On utilisera une liste non ordonnée quand l&rsquo;ordre des items de la liste (balisée avec <code>&lt;li&gt;...&lt;/li&gt;</code>) n&rsquo;a pas d&rsquo;importance.</li>
+<li><strong>À ne pas faire</strong> : créer une liste en écrivant &ldquo;à la main&rdquo; un tiret ou en insérant une image de puce et en séparant chaque item par <code>&lt;br&gt;</code> ou en écrivant chaque item dans un paragraphe (dans des balises <code>&lt;p&gt;...&lt;/p&gt;</code>).</li>
+</ul>
+<h4 id="liste-ordonnée-balises-olol">Liste ordonnée, balises <code>&lt;ol&gt;...&lt;/ol&gt;</code></h4>
+<p>On utilisera une liste ordonnée quand l&rsquo;ordre des items de la liste (balisée avec <code>&lt;li&gt;...&lt;/li&gt;</code>) a de l&rsquo;importance.<br>
+Les balises de liste ordonnée seront utilisées notamment pour présenter :
+- un fil d&rsquo;ariane ;
+- un processus par étape ;
+- un système de pagination.</p>
+<h4 id="liste-de-définitions-ou-de-descriptions-balises-dldl-et-sous-balises-dtdt-et-dddd">Liste de définitions ou de descriptions, balises <code>&lt;dl&gt;...&lt;/dl&gt;</code> et sous-balises <code>&lt;dt&gt;...&lt;/dt&gt;</code> et <code>&lt;dd&gt;...&lt;/dd&gt;</code></h4>
+<ul>
+<li>Une liste de définitions correspond à une association de clés/valeurs comme dans la présentation d&rsquo;un glossaire ou d&rsquo;un événement, par exemple.</li>
+<li>Il est possible d&rsquo;associer plusieurs éléments <code>&lt;dd&gt;...&lt;/dd&gt;</code> pour un même élément <code>&lt;dt&gt;...&lt;/dt&gt;</code></li>
+<li>En cas de présentation sur 2 colonnes, on veillera à aligner les élément <code>dt</code> à droite et <code>dd</code> à gauche afin de faciliter la lecture aux personnes déficients visuels qui utilisent une loupe et aux dyslexiques.</li>
+</ul>
+<p>Exemple :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">dl</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">dt</span><span class="p">&gt;</span>Wifi :<span class="p">&lt;/</span><span class="nt">dt</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">	    <span class="p">&lt;</span><span class="nt">dd</span><span class="p">&gt;</span>Technique qui permet la communication sans fil entre divers appareils (ordinateur, périphérique, téléviseur…) 
+</span></span><span class="line"><span class="cl">        grâce aux ondes radioélectriques.<span class="p">&lt;/</span><span class="nt">dd</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">	    <span class="p">&lt;</span><span class="nt">dd</span><span class="p">&gt;</span>Cas d&#39;usage : Hier, il y a eu une panne de Wifi. Les enfants sont sortis de leur chambre.
+</span></span><span class="line"><span class="cl">        On a discuté. Ils avaient l&#39;air sympa.<span class="p">&lt;/</span><span class="nt">dd</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">dl</span><span class="p">&gt;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">dl</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">dt</span><span class="p">&gt;</span>Adresse<span class="p">&lt;/</span><span class="nt">dt</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">dd</span><span class="p">&gt;</span>2 rue des petits pas - 44000 nantes<span class="p">&lt;/</span><span class="nt">dd</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">dt</span><span class="p">&gt;</span>Jours et heures d&#39;ouverture<span class="p">&lt;/</span><span class="nt">dt</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">dd</span><span class="p">&gt;</span>Lundi, mardi, jeudi, vendredi : 9h30 - 12h30 / 14h -  19h<span class="p">&lt;/</span><span class="nt">dd</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">dd</span><span class="p">&gt;</span>Samedi : 9h30 - 12h30<span class="p">&lt;/</span><span class="nt">dd</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">dl</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h2 id="halte-au-détournement-de-code-">Halte au détournement de code !</h2>
+<p>Certains éléments HTML sont détournés de leur usage sémantique ; cela est bien entendu proscrit. Voivi les cas de &ldquo;détournement de code&rdquo; les plus fréquents.</p>
+<h3 id="confusion-entre-liens-et-boutons">Confusion entre liens et boutons</h3>
+<p>Il existe deux types de détournement de code :</p>
+<ul>
+<li>Utilisation des balises de lien <code>&lt;a&gt;...&lt;/a&gt;</code>, pour obtenir des bouton sans arrière-plan ni bordure.</li>
+<li>Utilisation d&rsquo;un lien au lieu d&rsquo;un bouton : <code>&lt;a href=&quot;#&quot; onClick=&quot;...&quot;&gt;...&lt;/a&gt;</code>.<br>
+Ici, une action javascript a été posé sur le lien via un <code>onClick</code>. Un lien sur lequel on pose un <code>onClick</code> n&rsquo;est pas un lien, c&rsquo;est un bouton. La bonne façon de faire sera : <code>&lt;button onClick=&quot;...&quot;&gt;...&lt;/button&gt;</code>, quitte à donner ensuite à son bouton l&rsquo;allure d&rsquo;un lien hypertexte via du CSS.</li>
+</ul>
+<p>Pour plus d&rsquo;informations sur la différences entre liens et boutons, <a href="/code/lien-bouton/">se référer à la rubrique Liens et boutons</a></p>
+<h3 id="utiliser-la-balise-hr-pour-créer-une-ligne-horizontale-de-séparation">Utiliser la balise <code>&lt;hr&gt;</code> pour créer une ligne horizontale de séparation.</h3>
+<p>La balise <code>&lt;hr&gt;</code> ne peut être utilisée qu&rsquo;entre deux balises de type paragraphe <code>&lt;p&gt;...&lt;/p&gt;</code> et sert à représenter un changement thématique entre deux paragraphes. On ne pourra donc utiliser <code>&lt;hr /&gt;</code> que dans le contexte suivant :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Quand je mange du chocolat, tout va.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Quand je dessine avec un pinceau en poils de chameau, tout est beau.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Pour créer une ligne de séparation, on utilisera donc un style CSS déclaré, par exemple, via <code>border-top: 1 px solid black;</code></p>
+<h3 id="utilisation-de-fieldsetfieldset-pour-obtenir-une-bordure">Utilisation de <code>&lt;fieldset&gt;...&lt;/fieldset&gt;</code> pour obtenir une bordure.</h3>
+<p><code>&lt;fieldset&gt;...&lt;/fieldset&gt;</code> est une balise spécifique au formulaire (balise <code>&lt;form&gt;...&lt;/form&gt;</code>). La balise <code>&lt;fieldset&gt;</code> doit toujours est suivie ddes balises <code>&lt;legend&gt;...&lt;/legend&gt;</code> pour que le code soit conforme.<br>
+Les balises <code>&lt;fieldset&gt;...&lt;/fieldset&gt;</code> ne doivent être utilisées que dans les formulaire pour regrouper des champs de même nature.</p>
+<p><strong>Exemple</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">form</span> <span class="err">...</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Invité 1<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;prenom1&#34;</span><span class="p">&gt;</span>Prénom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;prenom1&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;prenom1&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;nom1&#34;</span><span class="p">&gt;</span>Nom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;nom1&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;nom1&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Invité 2<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;prenom2&#34;</span><span class="p">&gt;</span>Prénom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;prenom2&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;prenom2&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;nom2&#34;</span><span class="p">&gt;</span>Nom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;nom2&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;nom2&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Pour plus d&rsquo;informations sur les formulaires, <a href="/code/formulaire/">se référer à la rubrique Formulaire</a>.</p>
+<h3 id="utiliser-des-éléments-html-à-des-fons-de-mise-en-forme">Utiliser des éléments HTML à des fons de mise en forme</h3>
+<p>Les balises <code>&lt;q&gt;...&lt;/q&gt;</code> sont parfois utilisées pour obtenir un texte entre guillemets (mise en forme par défaut des navigateurs).<br>
+Comme vu au début de cette page, les balises <code>&lt;q&gt;...&lt;/q&gt;</code> servent à indiquer une citation courte à l&rsquo;intérieur d&rsquo;un paragraphe.</p>
+
+          </section>
+          
+     </div>
+</main>
+
+	<footer role="contentinfo">
+	
+	<div class="pied">
+		<ul>
+			
+			<li><a href="https://gitlab.com/sofeve-concept"  title="GitLab"><span
+				   class="icon"><i class='fab fa-gitlab'></i></span></a></li>
+			
+			<li><a href="https://www.linkedin.com/in/sophie-gounon-41396b56/"  title="LinkedIn"><span
+				   class="icon"><i class='fab fa-linkedin'></i></span></a></li>
+			
+		</ul>
+		<ul>
+			
+		    <li><a href="/mentions-legales" class="">Mentions légales et crédits</a></li>
+		    
+		    <li><a class="courriel" data-courriel="sc.gounonchezgmailrondcom"></a></li>
+		</ul>
+		<p class="copyr">&copy; 2023 Sofève Concept - <span>By</span> Sofève Concept</p>
+	 </div>
+</footer>
+<a id="RetourEnHaut" class="cInvisible" href="#top">
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"
+	    aria-hidden="true">
+	    <path
+		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+	</svg>
+	<span class="sr-only">Retour haut de page</span></a>
+ <script src="/js/script.js"></script>
+ <script src="/js/utils.js"></script>
+ 
+ <script src="/js/clipboard.js"></script>
+
+<script src="/js/search.js"></script>
+	
+	
+	
+</body>
+</html>

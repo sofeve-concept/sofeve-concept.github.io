@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Formulaires on Sofève Concept</title>
+    <link>https://sofeve-concept.github.io/coder/formulaire/</link>
+    <description>Recent content in Formulaires on Sofève Concept</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/coder/formulaire/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sémantique HTML</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/semantique-html-formulaire/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/semantique-html-formulaire/</guid>
+      <description>Ce qu&amp;rsquo;il faut retenir Un formulaire HTML est composé de plusieurs éléments : zones de texte (sur une seule ligne ou plusieurs lignes), liste de sélection déroulante, cases à cocher, boutons radio et boutons d&amp;rsquo;action (soumission du formulaire ou effacement des champs).</description>
+    </item>
+    
+    <item>
+      <title>Étiquette de champ</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</guid>
+      <description>remarque Pour présenter l&#39;étiquette de champ, les exemples de cette page associent l&#39;étiquette à un champ de type `input`.</description>
+    </item>
+    
+    <item>
+      <title>Saisie et contrôle du formulaire</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/</guid>
+      <description>Champ obligatoire Si le champ est obligatoire, on utilisera un signe distinctif intégré dans la balise &amp;lt;label&amp;gt;.</description>
+    </item>
+    
+    <item>
+      <title>Regroupement de champs</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/</guid>
+      <description>Implémentation HTML Les champs de même nature sont regroupés et titré avec fieldset et legend</description>
+    </item>
+    
+    <item>
+      <title>Liste déroulante</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/</guid>
+      <description>Règles générales Les options proposées dans une liste déroulante doivent être ordonnées de manière logique :</description>
+    </item>
+    
+  </channel>
+</rss>

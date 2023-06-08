@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Liens et boutons on Sofève Concept</title>
+    <link>https://sofeve-concept.github.io/coder/lien-bouton/</link>
+    <description>Recent content in Liens et boutons on Sofève Concept</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/coder/lien-bouton/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Les liens</title>
+      <link>https://sofeve-concept.github.io/coder/lien-bouton/liens/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/lien-bouton/liens/</guid>
+      <description>Règles d&amp;rsquo;implémentation d&amp;rsquo;un lien Les liens permettent de naviguer dans une page ou entre pages web.</description>
+    </item>
+    
+    <item>
+      <title>Les boutons</title>
+      <link>https://sofeve-concept.github.io/coder/lien-bouton/boutons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/lien-bouton/boutons/</guid>
+      <description>Règles d&amp;rsquo;implémentation d&amp;rsquo;un bouton Les boutons déclenchent des actions. Ils sont implémentés avec les balises &amp;lt;input type=&amp;quot;.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	
+	
+	<title>
+		
+		Tableau - Motifs de conception
+		 
+		
+		- Sofève Concept</title>
+	<meta name="description" content="Extrait de code pour créer un tableau permettant d&#39;avoir une vue sans ascenseur horizontal lors d&#39;un affichage en 320px de large.">
+	<meta name="author" content="Sophie Gounon">
+	<link href="/images/favicon.ico" rel="icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Poppins&family=Righteous&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/print.css" media="print">
+	<link rel="stylesheet" href="/css/fontawesome.css">
+	<link rel="stylesheet" href="/css/sofeve.css" media="screen">
+		
+	
+	<link rel="stylesheet" href="/css/tableau.css" media="screen">
+	
+	
+</head>
+<body>
+	<a class="evitement" href="#contenu">Aller au contenu</a>
+
+<header role="banner">
+	<div class="logo">
+		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
+	</div>
+	<nav role='navigation' class="navbar" aria-label="Menu principal">
+		<a role="button" aria-haspopup="true" aria-expanded="false" id="hamburger" aria-controls="menu"><span class="sr-only">Menu</span></a>
+		<ul id="menu">
+		
+		
+		 
+			
+			<li  class="accueil">
+				<a href="/" 
+				
+				
+				> Accueil</a></li>
+			
+		
+		 
+				
+			<li class="coder">
+				<a role="button" aria-haspopup="true" aria-expanded="false" aria-controls="coder" 
+				
+				> 
+				Coder accessible</a>
+				   <ul id="coder">
+					 		
+					
+					
+										
+              				<li><a href="/coder/structure/" 
+							
+							> Structure générale</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/contenu/" 
+							
+							> Contenu</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/couleurs/" 
+							
+							> Couleurs</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/navigation/" 
+							
+							> Navigation</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/lien-bouton/" 
+							
+							> Liens et boutons</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/image-icone/" 
+							
+							> Images et icônes</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/tableaux/" 
+							
+							> Tableaux</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/formulaire/" 
+							
+							> Formulaires</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/scripts/" 
+							
+							> Composants d&#39;interface riche</a></li>
+              			
+				   </ul>
+			    </li>
+			
+		
+		 
+			
+			<li  class="motifs">
+				<a href="/motifs/" 
+				
+				aria-current="page"
+				> Motifs de conception</a></li>
+			
+		
+		 
+			
+			<li  class="a-propos">
+				<a href="/a-propos/" 
+				
+				
+				> À propos</a></li>
+			
+		
+		</ul>
+	</nav>	
+	<form action="/rechercher" method="GET" role="search">
+    <label for="search-query" class="sr-only">Rechercher sur le site</label>
+    <input type="search" name="q" id="search-query" placeholder="Rechercher sur le site....">
+    <button type="reset">
+        <span class="fa fa-times" aria-hidden="true"></span>
+        <span class="sr-only">Effacer</span>
+    </button>
+    <button type="submit">
+        <span class="fa fa-search" aria-hidden="true"></span>
+        <span class="sr-only">Rechercher</span>
+    </button>
+</form>
+</header>
+
+	
+<main role="main" class="container">
+     
+<nav aria-label="Vous êtes ici" class="ariane">
+<ol>
+  
+  
+    
+  
+    
+  
+  
+  <li>
+    
+    <a href="/">Accueil</a>
+   
+  </li>
+  
+
+  
+  
+  <li>
+    
+    <a href="/motifs/">Motifs de conception</a>
+   
+  </li>
+  
+
+  
+  
+  <li aria-current="page" tabindex="-1">
+    Tableau
+  </li>
+  
+
+</ol>
+</nav>
+<button onclick="window.print();" class="print">
+  <span class="fa fa-print" aria-hidden="true"></span>
+  Imprimer
+</button>
+
+
+
+     <div class="flex">
+          <aside class="item-20">
+               
+               
+
+	
+	
+     
+	<nav role="navigation" aria-label="navigation contextuelle">
+          <p class="rubrique"><a href="/motifs/">Motifs de conception</a></p>
+          <ul>
+               
+               <li><a href="/motifs/code-de-base/">
+                    
+				
+				 Code de base 
+               </a></li>
+               
+               <li><a href="/motifs/accordeon/">
+                    
+				
+				Accordéon 
+               </a></li>
+               
+               <li><a href="/motifs/bordure-texte/">
+                    
+				
+				Bordure de texte 
+               </a></li>
+               
+               <li><a href="/motifs/carrousel/">
+                    
+				
+				Carrousel 
+               </a></li>
+               
+               <li><a href="/motifs/carte-cliquable/">
+                    
+				
+				Carte cliquable 
+               </a></li>
+               
+               <li><a href="/motifs/modale/">
+                    
+				
+				Fenêtre modale 
+               </a></li>
+               
+               <li><a href="/motifs/ariane/">
+                    
+				
+				Fil d&#39;ariane 
+               </a></li>
+               
+               <li><a href="/motifs/infobulle/">
+                    
+				
+				Infobulle 
+               </a></li>
+               
+               <li><a href="/motifs/lien-evitement/">
+                    
+				
+				Lien d&#39;évitement 
+               </a></li>
+               
+               <li><a href="/motifs/menu-de-navigation/">
+                    
+				
+				Menu de navigation 
+               </a></li>
+               
+               <li><a href="/motifs/menu-lateral-glissant/">
+                    
+				
+				Menu latéral glissant 
+               </a></li>
+               
+               <li><a href="/motifs/onglets/">
+                    
+				
+				Onglets 
+               </a></li>
+               
+               <li><a href="/motifs/placeholder/">
+                    
+				
+				Placeholder 
+               </a></li>
+               
+               <li><a href="/motifs/stepper/">
+                    
+				
+				Processus par étape 
+               </a></li>
+               
+               <li><a href="/motifs/tableau-responsive/">
+                    
+				 <strong>Tableau</strong> 
+               </a></li>
+               
+          </ul>
+
+
+		
+	</nav>
+
+               
+          </aside>
+          <section class="item-80">
+               <h1>Tableau</h1>
+               <p>Extrait de code pour créer un tableau permettant d&#39;avoir une vue sans ascenseur horizontal lors d&#39;un affichage en 320px de large.</p>
+               <div class="toc">
+                    <h2>Dans cette rubrique</h2>
+                    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#visuel">Visuel</a></li>
+    <li><a href="#extraits-de-code">Extraits de code</a>
+      <ul>
+        <li><a href="#code-html">Code HTML</a></li>
+        <li><a href="#code-css">Code CSS</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+               </div>
+
+               <h2 id="visuel">Visuel</h2>
+
+<div class="marges">
+<table class="resp">
+        <caption>Répartition en pourcentage des animaux selon la "classification chinoise des Animaux".</caption>
+        <thead>
+           <tr>
+                <th scope="col">Animaux</th>
+                <th scope="col">Confusianistes</th>
+                <th scope="col">Confus</th>
+            </tr>
+        </thead> 
+        <tbody>
+            <tr>
+                <th scope="row" data-label="Animaux">Appartenant à l’Empereur</th>
+                <td data-label="Confusianistes">12</td>
+                <td data-label="Confus">5</td>
+            </tr>
+            <tr>
+                <th scope="row" data-label="Animaux">Embaumés</th>
+                <td data-label="Confusianistes">75</td>
+                <td data-label="Confus">45</td>
+            </tr>
+            <tr>
+                <th scope="row" data-label="Animaux">Apprivoisés</th>
+                <td data-label="Confusianistes">5</td>
+                <td data-label="Confus">24</td>
+            </tr>
+            <tr>
+                <th scope="row" data-label="Animaux">Cochons de lait</th>
+                <td data-label="Confusianistes">89</td>
+                <td data-label="Confus">14</td>
+            </tr>
+            <tr>
+                <th scope="row" data-label="Animaux">Sirènes</th>
+                <td data-label="Confusianistes">68</td>
+                <td data-label="Confus">9</td>
+            </tr>
+            <tr>
+                <th scope="row" data-label="Animaux">Fabuleux</th>
+                <td data-label="Confusianistes">96</td>
+                <td data-label="Confus">45</td>
+            </tr>
+            <tr>
+                <th scope="row" data-label="Animaux">Chiens en liberté</th>
+                <td data-label="Confusianistes">75</td>
+                <td data-label="Confus">38</td>
+            </tr>
+            <tr>
+                <th scope="row" data-label="Animaux">Inclus dans la présente classification</th>
+                <td data-label="Confusianistes">100</td>
+                <td data-label="Confus">6</td>
+            </tr>
+            <tr>
+                <th scope="row" data-label="Animaux">Qui s’agitent comme des fous</th>
+                <td data-label="Confusianistes">32</td>
+                <td data-label="Confus">28</td>
+            </tr>
+            <tr>
+                <th scope="row" data-label="Animaux">Innombrables</th>
+                <td data-label="Confusianistes">11</td>
+                <td data-label="Confus">9</td>
+            </tr>
+            <tr>
+                <th scope="row" data-label="Animaux">Dessinés avec un pinceau très fin en poils de chameau</th>
+                <td data-label="Confusianistes">42</td>
+                <td data-label="Confus">98</td>
+            </tr>
+            <tr>
+                <th scope="row" data-label="Animaux">Et cætera</th>
+                <td data-label="Confusianistes">21</td>
+                <td data-label="Confus">67</td>
+            </tr>
+            <tr>
+                <th scope="row" data-label="Animaux">Qui viennent de casser la cruche</th>
+                <td data-label="Confusianistes">46</td>
+                <td data-label="Confus">2</td>
+            </tr>
+            <tr>
+                <th scope="row" data-label="Animaux">Qui de loin semblent des mouches.</th>
+                <td data-label="Confusianistes">8</td>
+                <td data-label="Confus">77</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2 id="extraits-de-code">Extraits de code</h2>
+<h3 id="code-html">Code HTML</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">caption</span><span class="p">&gt;</span>Répartition en pourcentage des animaux selon la &#34;classification chinoise des Animaux&#34;.<span class="p">&lt;/</span><span class="nt">caption</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">           <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>Animaux<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>Confusianistes<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>Confus<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Animaux&#34;</span><span class="p">&gt;</span>Appartenant à l’Empereur<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confusianistes&#34;</span><span class="p">&gt;</span>12<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confus&#34;</span><span class="p">&gt;</span>5<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Animaux&#34;</span><span class="p">&gt;</span>Embaumés<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confusianistes&#34;</span><span class="p">&gt;</span>75<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confus&#34;</span><span class="p">&gt;</span>45<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Animaux&#34;</span><span class="p">&gt;</span>Apprivoisés<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confusianistes&#34;</span><span class="p">&gt;</span>5<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confus&#34;</span><span class="p">&gt;</span>24<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Animaux&#34;</span><span class="p">&gt;</span>Cochons de lait<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confusianistes&#34;</span><span class="p">&gt;</span>89<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confus&#34;</span><span class="p">&gt;</span>14<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Animaux&#34;</span><span class="p">&gt;</span>Sirènes<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confusianistes&#34;</span><span class="p">&gt;</span>68<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confus&#34;</span><span class="p">&gt;</span>9<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Animaux&#34;</span><span class="p">&gt;</span>Fabuleux<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confusianistes&#34;</span><span class="p">&gt;</span>96<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confus&#34;</span><span class="p">&gt;</span>45<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Animaux&#34;</span><span class="p">&gt;</span>Chiens en liberté<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confusianistes&#34;</span><span class="p">&gt;</span>75<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confus&#34;</span><span class="p">&gt;</span>38<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Animaux&#34;</span><span class="p">&gt;</span>Inclus dans la présente classification<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confusianistes&#34;</span><span class="p">&gt;</span>100<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confus&#34;</span><span class="p">&gt;</span>6<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Animaux&#34;</span><span class="p">&gt;</span>Qui s’agitent comme des fous<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confusianistes&#34;</span><span class="p">&gt;</span>32<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confus&#34;</span><span class="p">&gt;</span>28<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Animaux&#34;</span><span class="p">&gt;</span>Innombrables<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confusianistes&#34;</span><span class="p">&gt;</span>11<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confus&#34;</span><span class="p">&gt;</span>9<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Animaux&#34;</span><span class="p">&gt;</span>Dessinés avec un pinceau très fin en poils de chameau<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confusianistes&#34;</span><span class="p">&gt;</span>42<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confus&#34;</span><span class="p">&gt;</span>98<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Animaux&#34;</span><span class="p">&gt;</span>Et cætera<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confusianistes&#34;</span><span class="p">&gt;</span>21<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confus&#34;</span><span class="p">&gt;</span>67<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Animaux&#34;</span><span class="p">&gt;</span>Qui viennent de casser la cruche<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confusianistes&#34;</span><span class="p">&gt;</span>46<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confus&#34;</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Animaux&#34;</span><span class="p">&gt;</span>Qui de loin semblent des mouches.<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confusianistes&#34;</span><span class="p">&gt;</span>8<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">td</span> <span class="na">data-label</span><span class="o">=</span><span class="s">&#34;Confus&#34;</span><span class="p">&gt;</span>77<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h3 id="code-css">Code CSS</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">:</span><span class="nd">root</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">--BORDER-color</span><span class="p">:</span> <span class="mh">#333333</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">--THEAD-BACKGROUND-color</span><span class="p">:</span> <span class="mh">#191919</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">--THEAD-color</span><span class="p">:</span> <span class="mh">#FFF</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">--LIGNE-PAIR-color</span><span class="p">:</span> <span class="mh">#DBDBDB</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">--LIGNE-HOVER-color</span><span class="p">:</span> <span class="mh">#93c0eb</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nt">table</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="kc">auto</span><span class="p">;</span> <span class="c">/** centre le tableau*/</span>
+</span></span><span class="line"><span class="cl">     <span class="k">border-collapse</span><span class="p">:</span> <span class="kc">collapse</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">     <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">2</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"> <span class="nt">table</span> <span class="nt">caption</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="k">caption-side</span><span class="p">:</span> <span class="kc">top</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> <span class="nt">table</span> <span class="nt">th</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl"> <span class="nt">table</span> <span class="nt">td</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="k">padding</span><span class="p">:</span> <span class="mf">0.75</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">     <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">BORDER</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"> <span class="nt">table</span> <span class="nt">thead</span> <span class="nt">tr</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">THEAD</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">     <span class="k">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">THEAD</span><span class="o">-</span><span class="n">BACKGROUND</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"> <span class="nt">table</span> <span class="nt">tbody</span> <span class="nt">tr</span><span class="p">:</span><span class="nd">nth-child</span><span class="o">(</span><span class="nt">even</span><span class="o">)</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="k">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">LIGNE</span><span class="o">-</span><span class="n">PAIR</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> <span class="nt">table</span> <span class="nt">tbody</span> <span class="nt">tr</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="k">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">LIGNE</span><span class="o">-</span><span class="n">HOVER</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"> <span class="nt">table</span> <span class="nt">tbody</span> <span class="nt">th</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="k">text-align</span><span class="p">:</span> <span class="kc">right</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> <span class="nt">table</span> <span class="nt">tbody</span> <span class="nt">td</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="k">text-align</span><span class="p">:</span> <span class="kc">right</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"> <span class="p">@</span><span class="k">media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">992px</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="nt">table</span> <span class="nt">td</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">     <span class="nt">table</span> <span class="nt">th</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="k">font-size</span><span class="p">:</span> <span class="mf">0.9</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"> <span class="p">@</span><span class="k">media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">576px</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="nt">table</span> <span class="nt">thead</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">}</span>
+</span></span><span class="line"><span class="cl">     <span class="nt">table</span> <span class="nt">tr</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">         <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">}</span>
+</span></span><span class="line"><span class="cl">     <span class="nt">table</span> <span class="nt">td</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">         <span class="k">text-align</span><span class="p">:</span> <span class="kc">left</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">}</span>
+</span></span><span class="line"><span class="cl">     <span class="nt">table</span> <span class="nt">td</span><span class="p">::</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="k">content</span><span class="p">:</span> <span class="nb">attr</span><span class="p">(</span><span class="n">data</span><span class="o">-</span><span class="n">label</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="k">float</span><span class="p">:</span> <span class="kc">left</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">         <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">         <span class="k">padding-right</span><span class="p">:</span> <span class="mf">0.25</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"> <span class="p">@</span><span class="k">media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">550px</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="nt">table</span> <span class="nt">tr</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">BORDER</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">     <span class="p">}</span>
+</span></span><span class="line"><span class="cl">     <span class="nt">table</span> <span class="nt">th</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">     <span class="nt">table</span> <span class="nt">td</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="k">padding</span><span class="p">:</span> <span class="mf">0.75</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">         <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">}</span>  
+</span></span><span class="line"><span class="cl">     <span class="nt">table</span> <span class="nt">tbody</span> <span class="nt">th</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">         <span class="k">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">THEAD</span><span class="o">-</span><span class="n">BACKGROUND</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">THEAD</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span></code></pre></div>
+          </section>
+     </div>
+</main>
+
+	<footer role="contentinfo">
+	
+	<div class="pied">
+		<ul>
+			
+			<li><a href="https://gitlab.com/sofeve-concept"  title="GitLab"><span
+				   class="icon"><i class='fab fa-gitlab'></i></span></a></li>
+			
+			<li><a href="https://www.linkedin.com/in/sophie-gounon-41396b56/"  title="LinkedIn"><span
+				   class="icon"><i class='fab fa-linkedin'></i></span></a></li>
+			
+		</ul>
+		<ul>
+			
+		    <li><a href="/mentions-legales" class="">Mentions légales et crédits</a></li>
+		    
+		    <li><a class="courriel" data-courriel="sc.gounonchezgmailrondcom"></a></li>
+		</ul>
+		<p class="copyr">&copy; 2023 Sofève Concept - <span>By</span> Sofève Concept</p>
+	 </div>
+</footer>
+<a id="RetourEnHaut" class="cInvisible" href="#top">
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"
+	    aria-hidden="true">
+	    <path
+		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+	</svg>
+	<span class="sr-only">Retour haut de page</span></a>
+ <script src="/js/script.js"></script>
+ <script src="/js/utils.js"></script>
+ 
+ <script src="/js/clipboard.js"></script>
+
+<script src="/js/search.js"></script>
+	
+	
+	
+</body>
+</html>

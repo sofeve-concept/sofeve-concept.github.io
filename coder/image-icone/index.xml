@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Images et icônes on Sofève Concept</title>
+    <link>https://sofeve-concept.github.io/coder/image-icone/</link>
+    <description>Recent content in Images et icônes on Sofève Concept</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/coder/image-icone/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Images img et svg</title>
+      <link>https://sofeve-concept.github.io/coder/image-icone/images-img-svg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/image-icone/images-img-svg/</guid>
+      <description>Les images s&amp;rsquo;implémentent avec l&amp;rsquo;élément HTML &amp;lt;img src=&amp;quot;...&amp;quot;&amp;gt; ou &amp;lt;svg ...&amp;gt;...&amp;lt;/svg&amp;gt;.
+Image sans alternative textuelle Quand les images ou les icônes sont décoratives, on n&amp;rsquo;ajoute pas d&amp;rsquo;alternative textuelle (alt).</description>
+    </item>
+    
+    <item>
+      <title>Les images</title>
+      <link>https://sofeve-concept.github.io/coder/image-icone/images/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/image-icone/images/</guid>
+      <description>Ce qu&amp;rsquo;il faut retenir On n&amp;rsquo;utilisera pas le style CSS pour afficher les images porteuses d’informations telles que :</description>
+    </item>
+    
+    <item>
+      <title>Image légendée</title>
+      <link>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</guid>
+      <description>Implémentation HTML Les images légendées doivent être balisées avec &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; et &amp;lt;figcaption&amp;gt;.
+La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</description>
+    </item>
+    
+    <item>
+      <title>Police symbolique</title>
+      <link>https://sofeve-concept.github.io/coder/image-icone/police-icone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/image-icone/police-icone/</guid>
+      <description>Les polices d&amp;rsquo;icônes symboliques Parmi les polices de cacractères symboliques, les plus connues sont :</description>
+    </item>
+    
+  </channel>
+</rss>

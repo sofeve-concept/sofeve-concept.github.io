@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	
+	
+	<title>
+		
+		Formulaires
+		 
+		
+		- Coder accessible
+		
+		- Sofève Concept</title>
+	<meta name="description" content="Les formulaires sont un incontournable dans l&#39;interaction de notre site avec l&#39;utilisateur. Découvrez les principes d&#39;accessibilité numérique qui régissent la présentation des formulaires.">
+	<meta name="author" content="Sophie Gounon">
+	<link href="/images/favicon.ico" rel="icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Poppins&family=Righteous&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/print.css" media="print">
+	<link rel="stylesheet" href="/css/fontawesome.css">
+	<link rel="stylesheet" href="/css/sofeve.css" media="screen">
+		
+	
+	<link rel="alternate" type="application/rss+xml" href="/coder/formulaire/index.xml" title="Sofève Concept">
+</head>
+<body>
+	<a class="evitement" href="#contenu">Aller au contenu</a>
+
+<header role="banner">
+	<div class="logo">
+		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
+	</div>
+	<nav role='navigation' class="navbar" aria-label="Menu principal">
+		<a role="button" aria-haspopup="true" aria-expanded="false" id="hamburger" aria-controls="menu"><span class="sr-only">Menu</span></a>
+		<ul id="menu">
+		
+		
+		 
+			
+			<li  class="accueil">
+				<a href="/" 
+				
+				
+				> Accueil</a></li>
+			
+		
+		 
+				
+			<li class="coder">
+				<a role="button" aria-haspopup="true" aria-expanded="false" aria-controls="coder" 
+				
+				aria-current="true"
+				
+				> 
+				Coder accessible</a>
+				   <ul id="coder">
+					 		
+					
+					
+										
+              				<li><a href="/coder/structure/" 
+							
+							> Structure générale</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/contenu/" 
+							
+							> Contenu</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/couleurs/" 
+							
+							> Couleurs</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/navigation/" 
+							
+							> Navigation</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/lien-bouton/" 
+							
+							> Liens et boutons</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/image-icone/" 
+							
+							> Images et icônes</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/tableaux/" 
+							
+							> Tableaux</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/formulaire/" 
+							aria-current="page"
+							> Formulaires</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/coder/scripts/" 
+							
+							> Composants d&#39;interface riche</a></li>
+              			
+				   </ul>
+			    </li>
+			
+		
+		 
+			
+			<li  class="motifs">
+				<a href="/motifs/" 
+				
+				
+				> Motifs de conception</a></li>
+			
+		
+		 
+			
+			<li  class="a-propos">
+				<a href="/a-propos/" 
+				
+				
+				> À propos</a></li>
+			
+		
+		</ul>
+	</nav>	
+	<form action="/rechercher" method="GET" role="search">
+    <label for="search-query" class="sr-only">Rechercher sur le site</label>
+    <input type="search" name="q" id="search-query" placeholder="Rechercher sur le site....">
+    <button type="reset">
+        <span class="fa fa-times" aria-hidden="true"></span>
+        <span class="sr-only">Effacer</span>
+    </button>
+    <button type="submit">
+        <span class="fa fa-search" aria-hidden="true"></span>
+        <span class="sr-only">Rechercher</span>
+    </button>
+</form>
+</header>
+
+	
+	<main role="main" class="container">
+		
+<nav aria-label="Vous êtes ici" class="ariane">
+<ol>
+  
+  
+    
+  
+    
+  
+  
+  <li>
+    
+    <a href="/">Accueil</a>
+   
+  </li>
+  
+
+  
+  
+  <li>
+    
+    <a href="/coder/">Coder accessible</a>
+   
+  </li>
+  
+
+  
+  
+  <li aria-current="page" tabindex="-1">
+    Formulaires
+  </li>
+  
+
+</ol>
+</nav>
+<button onclick="window.print();" class="print">
+  <span class="fa fa-print" aria-hidden="true"></span>
+  Imprimer
+</button>
+
+
+	
+		<div class="flex">
+			
+		
+	<aside class="item-20">	
+		
+	
+	
+	
+				
+			<nav role="navigation" aria-label="Navigation contextuelle">
+				<p class="rubrique">Coder accessible</p>
+			<ul>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/structure/" 
+				 >
+					Structure générale 
+				</a>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/contenu/" 
+				 >
+					Contenu 
+				</a>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/couleurs/" 
+				 >
+					Couleurs 
+				</a>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/navigation/" 
+				 >
+					Navigation 
+				</a>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/lien-bouton/" 
+				 >
+					Liens et boutons 
+				</a>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/image-icone/" 
+				 >
+					Images et icônes 
+				</a>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/tableaux/" 
+				 >
+					Tableaux 
+				</a>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/formulaire/" 
+				 aria-current="true"   aria-current="page" >
+					Formulaires 
+				</a>
+				
+				
+				<ul>
+					
+					
+					<li>
+						<a href="https://sofeve-concept.github.io/coder/formulaire/semantique-html-formulaire/" >	
+							Sémantique HTML
+						</a>
+					</li>
+					
+					
+					<li>
+						<a href="https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/" >	
+							Étiquette de champ
+						</a>
+					</li>
+					
+					
+					<li>
+						<a href="https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/" >	
+							Saisie et contrôle du formulaire
+						</a>
+					</li>
+					
+					
+					<li>
+						<a href="https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/" >	
+							Regroupement de champs
+						</a>
+					</li>
+					
+					
+					<li>
+						<a href="https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/" >	
+							Liste déroulante
+						</a>
+					</li>
+					
+				</ul>
+				
+			</li>
+			
+			
+			<li>
+				<a href="https://sofeve-concept.github.io/coder/scripts/" 
+				 >
+					Composants d&#39;interface riche 
+				</a>
+				
+			</li>
+			
+			</ul>
+		</nav>
+	
+
+	</aside>
+	<section class="item-80">	
+		<h1>Formulaires</h1>
+		<p class="intro">Les formulaires sont un incontournable dans l&#39;interaction de notre site avec l&#39;utilisateur. Découvrez les principes d&#39;accessibilité numérique qui régissent la présentation des formulaires.</p>
+		
+	
+		<article class="summary">
+	<h2>Sémantique HTML</h2>
+
+	<div class="extrait">
+		<p>Les formulaires HTML permettent d&#39;envoyer des données qui seront ensuite traitées côté serveur.</p>	
+			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/coder/formulaire/semantique-html-formulaire/" class="btn" title="Lire la suite de l'article Sémantique HTML">Lire la suite...</a></p>
+	</div>
+</article>
+
+	
+		<article class="summary">
+	<h2>Étiquette de champ</h2>
+
+	<div class="extrait">
+		<p>Les étiquettes doivent décrire le rôle de chaque champ du formulaire et être correctement associées à leur champ.</p>	
+			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/" class="btn" title="Lire la suite de l'article Étiquette de champ">Lire la suite...</a></p>
+	</div>
+</article>
+
+	
+		<article class="summary">
+	<h2>Saisie et contrôle du formulaire</h2>
+
+	<div class="extrait">
+		<p>La mise en place d&#39;aide à la saisie et la gestion des erreurs doivent respecter des règles d&#39;accessibilité.</p>	
+			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/" class="btn" title="Lire la suite de l'article Saisie et contrôle du formulaire">Lire la suite...</a></p>
+	</div>
+</article>
+
+	
+		<article class="summary">
+	<h2>Regroupement de champs</h2>
+
+	<div class="extrait">
+		<p>Lorsque des champs de même nature sont présentés dans un formulaire, une bonne pratique d&#39;accessibilité consiste à les regrouper.</p>	
+			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/" class="btn" title="Lire la suite de l'article Regroupement de champs">Lire la suite...</a></p>
+	</div>
+</article>
+
+	
+		<article class="summary">
+	<h2>Liste déroulante</h2>
+
+	<div class="extrait">
+		<p>Dans les formulaires, les listes déroulantes doivent respecter certaines règles.</p>	
+			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/" class="btn" title="Lire la suite de l'article Liste déroulante">Lire la suite...</a></p>
+	</div>
+</article>
+
+	
+
+		
+	
+
+
+
+	
+</section>
+</div>
+	</main>
+
+	<footer role="contentinfo">
+	
+	<div class="pied">
+		<ul>
+			
+			<li><a href="https://gitlab.com/sofeve-concept"  title="GitLab"><span
+				   class="icon"><i class='fab fa-gitlab'></i></span></a></li>
+			
+			<li><a href="https://www.linkedin.com/in/sophie-gounon-41396b56/"  title="LinkedIn"><span
+				   class="icon"><i class='fab fa-linkedin'></i></span></a></li>
+			
+		</ul>
+		<ul>
+			
+		    <li><a href="/mentions-legales" class="">Mentions légales et crédits</a></li>
+		    
+		    <li><a class="courriel" data-courriel="sc.gounonchezgmailrondcom"></a></li>
+		</ul>
+		<p class="copyr">&copy; 2023 Sofève Concept - <span>By</span> Sofève Concept</p>
+	 </div>
+</footer>
+<a id="RetourEnHaut" class="cInvisible" href="#top">
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"
+	    aria-hidden="true">
+	    <path
+		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+	</svg>
+	<span class="sr-only">Retour haut de page</span></a>
+ <script src="/js/script.js"></script>
+ <script src="/js/utils.js"></script>
+ 
+<script src="/js/search.js"></script>
+	
+	
+	
+</body>
+</html>
