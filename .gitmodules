@@ -1,0 +1,3 @@
+[submodule "themes/sofeve"]
+	path = themes/sofeve
+	url = https://github.com/sofeve-concept/sofeve.git
