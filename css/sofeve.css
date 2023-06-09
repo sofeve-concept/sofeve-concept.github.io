@@ -4,8 +4,6 @@
     "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   --FONT-FAMILY-title: "Righteous", cursive;
   --FONT-SYMBOLIC: "Font Awesome 6 Free";
-  /** couleur de base  dégradé : #09062d à #027dc7 */
-  /** Construction de l'harmonie - contraste blanc */
   --WHITE-color: #ffffff;
   --WHITE-SOFT-color: #f8f8f8;
   --HARMONIE-GRAY-SWEET-color: #e3e3e3;
@@ -167,9 +165,11 @@ a:visited {
 .bold {
   font-weight: bold;
 }
+
 .mb-0 {
   margin-bottom: 0 !important
 }
+
 /** Float */
 .float-left {
   float: left;
@@ -695,10 +695,6 @@ a.evitement:focus {
   left: 0;
 }
 
-.print:hover {
-  text-decoration: underline;
-}
-
 ol,
 ul {
   margin-left: 1.5em;
@@ -879,7 +875,7 @@ h2:first-of-type {
 .btn {
   background: var(--HARMONIE-DARK-transparent-color);
   color: var(--WHITE-SOFT-color) !important;
-  border-bottom:none;
+  border-bottom: none;
   text-decoration: none;
   display: inline-block;
   font-size: 0.9em;
@@ -897,7 +893,7 @@ h2:first-of-type {
   background: var(--HARMONIE-DARK-color);
   text-decoration: none;
   outline: 3px solid var(--HARMONIE-DARK-color);
-  border-bottom:none;
+  border-bottom: none;
 }
 
 .btn:visited {
@@ -1386,10 +1382,12 @@ aside ul ul li:last-of-type {
   justify-content: center;
   text-align: center;
 }
+
 #erreur {
   margin: -5em 0 0 0;
   height: 95.6vh;
 }
+
 #accueil div.titre,
 #erreur div.titre {
   display: flex;
@@ -1417,7 +1415,7 @@ aside ul ul li:last-of-type {
 }
 
 #accueil h1::after,
-#erreur h1::after  {
+#erreur h1::after {
   background: none;
   width: 0;
 }
@@ -1450,12 +1448,15 @@ span.gold.trait::after {
   background: var(--HARMONIE-GOLD-color);
   margin: 1px 10px;
 }
+
 #erreur p {
-  font-size: 2em;;
+  font-size: 2em;
+  ;
 }
+
 #erreur a {
   background: var(--WHITE-color);
-  border-bottom:none;
+  border-bottom: none;
   color: var(--HARMONIE-DARK-color) !important;
   text-decoration: none;
   display: inline-block;
@@ -1474,8 +1475,9 @@ span.gold.trait::after {
   background-color: var(--HARMONIE-GRAY-SWEET-color);
   text-decoration: none;
   outline: 3px solid var(--HARMONIE-GOLD-color);
-  border-bottom:none;
+  border-bottom: none;
 }
+
 /************************************************
 conseil
   *************************************************/
@@ -1619,15 +1621,24 @@ footer[role="contentinfo"] .pied p span {
 }
 
 /** Bouton imprimer */
-.print {
-  float: right;
-  margin-top: -2.5em;
+.ligneHaut {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ligneHaut button {
   border: 0;
   background-color: transparent;
   cursor: pointer;
   color: var(--HARMONIE-BASE-DARK-color);
   font-family: var(--FONT-FAMILY-sans-serif);
   font-size: 1em;
+}
+
+.ligneHaut button:hover {
+  text-decoration: underline;
 }
 
 /*--------------------------------------------------------------
@@ -2210,7 +2221,7 @@ mark {
 }
 
 form[role="search"] {
-  margin-right: 1em;
+  padding-right: 1em;
   display: flex;
 }
 
@@ -2336,7 +2347,7 @@ form[role="search"] button:focus {
   }
 
   header[role="banner"] nav[role="navigation"] {
-    flex: 50% 1 0;
+    flex: 0 0 30%;
   }
 
   header[role="banner"] nav[role="navigation"] a#hamburger {
@@ -2482,10 +2493,6 @@ form[role="search"] button:focus {
     flex: 0 0 33%;
   }
 
-  .print {
-    margin-top: -3em;
-  }
-
   h2 {
     font-size: 1.5em;
   }
@@ -2501,12 +2508,10 @@ form[role="search"] button:focus {
   .flex .item-25 {
     flex: 0 0 33%;
   }
+
   .flex .item-30,
   .flex .item-70 {
     flex: 0 0 100%;
-  }
-  .print {
-    margin-top: -3em;
   }
 
   h2 {
@@ -2523,6 +2528,36 @@ form[role="search"] button:focus {
 @media screen and (width <=576px) {
   header[role="banner"] nav[role="navigation"] {
     flex: 30% 1 0;
+  }
+
+  header[role="banner"] form[role="search"] {
+    display: none;
+  }
+
+  .toSearch {
+    display: inline-block;
+    margin-right: .75em;
+  }
+
+  .toSearch * {
+    color: var(--WHITE-color);
+  }
+
+  .ariane {
+    flex: 0 0 100%;
+    padding-bottom: 0;
+  }
+  .ariane ol {
+    flex-wrap: wrap;
+  }
+
+  .ligneHaut div {
+    flex: 0 0 100%;
+    text-align: right;
+  }
+
+  .ligneHaut div button {
+    padding: 0;
   }
 
   #accueil {
@@ -2564,20 +2599,6 @@ form[role="search"] button:focus {
     flex: auto 1 0;
   }
 
-  header[role="banner"] form[role="search"] {
-    display: none;
-  }
-
-  .toSearch {
-    display: inline-block;
-    margin-right: .75em;
-    ;
-  }
-
-  .toSearch * {
-    color: var(--WHITE-color);
-  }
-
   .ariane ol {
     flex-wrap: wrap;
   }
@@ -2585,11 +2606,6 @@ form[role="search"] button:focus {
   .ariane ol li {
     font-size: .8em;
     line-height: 1.25;
-  }
-
-  .print {
-    margin-top: 0;
-    font-size: .9em;
   }
 
   .flex {
