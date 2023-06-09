@@ -7,16 +7,17 @@
 	
 	
 	
-	<title>
-		
-		À propos de la navigation - Navigation
-		 
-		
-		- Coder accessible
-		
-		- Sofève Concept</title>
+	<title>À propos de la navigation - Navigation	- Coder accessible - Sofève Concept</title>
 	<meta name="description" content="Informations générales à savoir sur les systèmes de navigation">
 	<meta name="author" content="Sophie Gounon">
+	<meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sofève Concept" />
+    <meta property="og:description"
+        content="Sofève Concept est un site web de conseil et de documentation pour créer des sites web accessibles" />
+    <meta property="og:url" content="https://sofeve-concept.github.io" />
+    <meta property="og:site_name" content="Sofève Concept" />
+    <meta property="og:image" content="https://sofeve-concept.github.io/images/sofeve-concept.jpg" />
 	<link href="/images/favicon.ico" rel="icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +31,6 @@
 </head>
 <body>
 	<a class="evitement" href="#contenu">Aller au contenu</a>
-
 <header role="banner">
 	<div class="logo">
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
@@ -159,6 +159,9 @@
         <span class="sr-only">Rechercher</span>
     </button>
 </form>
+<div class="toSearch">
+    <a href="/rechercher"><i class="fa fa-search" aria-label="Aller à la recherche surt le site"></i></a>
+</div>
 </header>
 
 	
@@ -226,7 +229,8 @@
 				
 			<nav role="navigation" aria-label="Navigation contextuelle">
 				<p class="rubrique">Coder accessible</p>
-			<ul>
+				<a role="button" aria-haspopup="true" aria-expanded="false" id="sandwitch" aria-controls="sousMenu"><span class="sr-only">Menu</span></a>
+			<ul id="sousMenu">
 			
 			
 			<li>
@@ -374,8 +378,8 @@
     <li><a href="#différencier-visuellement-la-position-courante">Différencier visuellement la position courante</a></li>
     <li><a href="#sémantique-html">Sémantique HTML</a>
       <ul>
-        <li><a href="#dans-quel-cas-utiliser-lélément-html-nav-">Dans quel cas utiliser l&rsquo;élément html <code>nav</code> ?</a></li>
-        <li><a href="#dans-quel-cas-ne-pas-utiliser-lélément-html-nav-">Dans quel cas ne pas utiliser l&rsquo;élément html <code>nav</code> ?</a></li>
+        <li><a href="#dans-quel-cas-utiliser-lélément-html-navnbsp">Dans quel cas utiliser l&rsquo;élément html <code>nav</code> ?</a></li>
+        <li><a href="#dans-quel-cas-ne-pas-utiliser-lélément-html-navnbsp">Dans quel cas ne pas utiliser l&rsquo;élément html <code>nav</code> ?</a></li>
       </ul>
     </li>
   </ul>
@@ -400,7 +404,7 @@
 <h2 id="différencier-visuellement-la-position-courante">Différencier visuellement la position courante</h2>
 <p>Dans un menu de navigation principale ou secondaire, il faut veiller à indiquer la position courante pas uniquement par la couleur mais aussi par une autre mise en forme telle que : une mise en gras, une taille de police différente des items non actifs, de l&rsquo;italique&hellip;</p>
 <h2 id="sémantique-html">Sémantique HTML</h2>
-<h3 id="dans-quel-cas-utiliser-lélément-html-nav-">Dans quel cas utiliser l&rsquo;élément html <code>nav</code> ?</h3>
+<h3 id="dans-quel-cas-utiliser-lélément-html-navnbsp">Dans quel cas utiliser l&rsquo;élément html <code>nav</code> ?</h3>
 <p>Les menus de navigation seront implémentés avec l&rsquo;élément html <code>nav</code> auquel on pourra rajouter l&rsquo;attribut aria <code>role</code> : <code>&lt;nav role=&quot;navigation&quot;&gt;...&lt;/nav&gt;</code>.<br>
 À cette balise on posera aussi un attribut <code>aria-label</code> pour préciser de quel type de navigation il s&rsquo;agit. Exemple :</p>
 <ul>
@@ -409,7 +413,7 @@
 <li><code>&lt;nav role=&quot;navigation&quot; aria-label=&quot;Vous êtes ici : &quot;&gt;...&lt;/nav&gt;</code>, pour un fil d&rsquo;ariane ;</li>
 <li><code>&lt;nav role=&quot;navigation&quot; aria-label=&quot;Étapes de la démarche&quot;&gt;...&lt;/nav&gt;</code>, pour un processus par étapes.</li>
 </ul>
-<h3 id="dans-quel-cas-ne-pas-utiliser-lélément-html-nav-">Dans quel cas ne pas utiliser l&rsquo;élément html <code>nav</code> ?</h3>
+<h3 id="dans-quel-cas-ne-pas-utiliser-lélément-html-navnbsp">Dans quel cas ne pas utiliser l&rsquo;élément html <code>nav</code> ?</h3>
 <p>Tous les groupes de liens d&rsquo;une page n&rsquo;ont pas besoin d&rsquo;être dans un élément de navigation — l&rsquo;élément est principalement destiné aux sections constituées de blocs de navigation majeurs. En particulier, il est courant que les pieds de page contiennent une courte liste de liens vers diverses pages d&rsquo;un site, telles que les conditions d&rsquo;utilisation, la page d&rsquo;accueil et une page de copyright. L&rsquo;élément de pied de page suffit à lui seul dans de tels cas ; bien qu&rsquo;un élément de navigation puisse être utilisé dans de tels cas, il est généralement inutile.</p>
 <p>L&rsquo;élément <code>nav</code>ne sera donc pas utilisé :</p>
 <ul>
@@ -427,6 +431,9 @@
 	<div class="pied">
 		<ul>
 			
+			<li><a href="mailto:sc.gounon%28a%29gmail.com"  title="Courriel"><span
+				   class="icon"><i class='fa fa-envelope'></i></span></a></li>
+			
 			<li><a href="https://github.com/sofeve-concept"  title="GitHub"><span
 				   class="icon"><i class='fab fa-github'></i></span></a></li>
 			
@@ -438,7 +445,7 @@
 			
 		    <li><a href="/mentions-legales" class="">Mentions légales et crédits</a></li>
 		    
-		    <li><a class="courriel" data-courriel="sc.gounonchezgmailrondcom"></a></li>
+		   
 		</ul>
 		<p class="copyr">&copy; 2023 Sofève Concept - <span>By</span> Sofève Concept</p>
 	 </div>
@@ -456,6 +463,10 @@
 <script src="/js/search.js"></script>
 	
 	
-	
+
+<script>
+	sandwitch();
+</script>	
+
 </body>
 </html>

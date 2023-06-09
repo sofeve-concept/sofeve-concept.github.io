@@ -27,9 +27,10 @@ if (inputBox !== null) {
         executeSearch(searchQuery, false);
     } 
 }
-
+hide(document.querySelector('.search-loading'));
 function executeSearch(searchQuery) {
-
+    
+    hide(document.querySelector('.search-first'));
     show(document.querySelector('.search-loading'));
 
     fetch('/index.json').then(function (response) {

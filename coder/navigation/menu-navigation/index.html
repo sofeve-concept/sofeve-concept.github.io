@@ -7,16 +7,17 @@
 	
 	
 	
-	<title>
-		
-		Menu de navigation - Navigation
-		 
-		
-		- Coder accessible
-		
-		- Sofève Concept</title>
+	<title>Menu de navigation - Navigation	- Coder accessible - Sofève Concept</title>
 	<meta name="description" content="Un menu de navigation regroupe un ensemble de liens permettant d&#39;afficher les différentes pages du site web ou d&#39;atteindre un endroit spécifique de la page affichée. Il traduit l&#39;arborescence du site web.">
 	<meta name="author" content="Sophie Gounon">
+	<meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sofève Concept" />
+    <meta property="og:description"
+        content="Sofève Concept est un site web de conseil et de documentation pour créer des sites web accessibles" />
+    <meta property="og:url" content="https://sofeve-concept.github.io" />
+    <meta property="og:site_name" content="Sofève Concept" />
+    <meta property="og:image" content="https://sofeve-concept.github.io/images/sofeve-concept.jpg" />
 	<link href="/images/favicon.ico" rel="icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +31,6 @@
 </head>
 <body>
 	<a class="evitement" href="#contenu">Aller au contenu</a>
-
 <header role="banner">
 	<div class="logo">
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
@@ -159,6 +159,9 @@
         <span class="sr-only">Rechercher</span>
     </button>
 </form>
+<div class="toSearch">
+    <a href="/rechercher"><i class="fa fa-search" aria-label="Aller à la recherche surt le site"></i></a>
+</div>
 </header>
 
 	
@@ -226,7 +229,8 @@
 				
 			<nav role="navigation" aria-label="Navigation contextuelle">
 				<p class="rubrique">Coder accessible</p>
-			<ul>
+				<a role="button" aria-haspopup="true" aria-expanded="false" id="sandwitch" aria-controls="sousMenu"><span class="sr-only">Menu</span></a>
+			<ul id="sousMenu">
 			
 			
 			<li>
@@ -369,7 +373,7 @@
                     <h2>Dans cette rubrique</h2>
                <nav id="TableOfContents">
   <ul>
-    <li><a href="#quest-ce-quun-menu-de-navigation-">Qu&rsquo;est-ce qu&rsquo;un menu de navigation ?</a></li>
+    <li><a href="#quest-ce-quun-menu-de-navigationnbsp">Qu&rsquo;est-ce qu&rsquo;un menu de navigation ?</a></li>
     <li><a href="#règles-dimplémentation-dun-menu-de-navigation">Règles d&rsquo;implémentation d&rsquo;un menu de navigation</a></li>
     <li><a href="#règles-daccessibilité-du-menu-de-navigation">Règles d&rsquo;accessibilité du menu de navigation</a>
       <ul>
@@ -382,7 +386,7 @@
 </nav>
                </div>
 
-               <h2 id="quest-ce-quun-menu-de-navigation-">Qu&rsquo;est-ce qu&rsquo;un menu de navigation ?</h2>
+               <h2 id="quest-ce-quun-menu-de-navigationnbsp">Qu&rsquo;est-ce qu&rsquo;un menu de navigation ?</h2>
 <p>Un menu de navigation regroupe un ensemble de liens permettant d&rsquo;afficher les différentes pages du site web ou d&rsquo;atteindre un endroit spécifique de la page affichée. Il traduit l&rsquo;arborescence du site web.</p>
 <p>On veillera a bien faite la distinction entre &ldquo;un menu de navigation&rdquo; qui regroupe les <strong>liens internes</strong> au site et une &ldquo;collection de liens&rdquo; qui regroupe des liens pointant vers des sites autres que le sien.</p>
 <p>Enfin, on parlera de menu <em>hamburger</em> pour désigner un bouton représenté par trois lignes horizontales parallèles (☰), représentant de manière imagée un steack entre deux tranches de pain, qui révèlera au clic le menu de navigation complet. Le menu <em>hamburger</em> est notamment utilisé pour des sites devant s&rsquo;afficher sur de petites résolutions, type résolutions de smartphones ou tablettes.</p>
@@ -464,6 +468,9 @@
 	<div class="pied">
 		<ul>
 			
+			<li><a href="mailto:sc.gounon%28a%29gmail.com"  title="Courriel"><span
+				   class="icon"><i class='fa fa-envelope'></i></span></a></li>
+			
 			<li><a href="https://github.com/sofeve-concept"  title="GitHub"><span
 				   class="icon"><i class='fab fa-github'></i></span></a></li>
 			
@@ -475,7 +482,7 @@
 			
 		    <li><a href="/mentions-legales" class="">Mentions légales et crédits</a></li>
 		    
-		    <li><a class="courriel" data-courriel="sc.gounonchezgmailrondcom"></a></li>
+		   
 		</ul>
 		<p class="copyr">&copy; 2023 Sofève Concept - <span>By</span> Sofève Concept</p>
 	 </div>
@@ -495,6 +502,10 @@
 <script src="/js/search.js"></script>
 	
 	
-	
+
+<script>
+	sandwitch();
+</script>	
+
 </body>
 </html>

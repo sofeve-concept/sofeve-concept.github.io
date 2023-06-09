@@ -7,16 +7,17 @@
 	
 	
 	
-	<title>
-		
-		Lien d&#39;accès rapide - Navigation
-		 
-		
-		- Coder accessible
-		
-		- Sofève Concept</title>
+	<title>Lien d&#39;accès rapide - Navigation	- Coder accessible - Sofève Concept</title>
 	<meta name="description" content="Le lien d&#39;accès rapide est un lien d&#39;accès rapide qui permet d’accéder directement à la zone de contenu principal de la page afin d&#39;optimiser la navigation au clavier.">
 	<meta name="author" content="Sophie Gounon">
+	<meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sofève Concept" />
+    <meta property="og:description"
+        content="Sofève Concept est un site web de conseil et de documentation pour créer des sites web accessibles" />
+    <meta property="og:url" content="https://sofeve-concept.github.io" />
+    <meta property="og:site_name" content="Sofève Concept" />
+    <meta property="og:image" content="https://sofeve-concept.github.io/images/sofeve-concept.jpg" />
 	<link href="/images/favicon.ico" rel="icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +31,6 @@
 </head>
 <body>
 	<a class="evitement" href="#contenu">Aller au contenu</a>
-
 <header role="banner">
 	<div class="logo">
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
@@ -159,6 +159,9 @@
         <span class="sr-only">Rechercher</span>
     </button>
 </form>
+<div class="toSearch">
+    <a href="/rechercher"><i class="fa fa-search" aria-label="Aller à la recherche surt le site"></i></a>
+</div>
 </header>
 
 	
@@ -226,7 +229,8 @@
 				
 			<nav role="navigation" aria-label="Navigation contextuelle">
 				<p class="rubrique">Coder accessible</p>
-			<ul>
+				<a role="button" aria-haspopup="true" aria-expanded="false" id="sandwitch" aria-controls="sousMenu"><span class="sr-only">Menu</span></a>
+			<ul id="sousMenu">
 			
 			
 			<li>
@@ -369,7 +373,7 @@
                     <h2>Dans cette rubrique</h2>
                <nav id="TableOfContents">
   <ul>
-    <li><a href="#quest-ce-quun-lien-daccès-rapide-">Qu&rsquo;est-ce qu&rsquo;un lien d&rsquo;accès rapide ?</a>
+    <li><a href="#quest-ce-quun-lien-daccès-rapidenbsp">Qu&rsquo;est-ce qu&rsquo;un lien d&rsquo;accès rapide ?</a>
       <ul>
         <li><a href="#règles-dimplémentation-dun-lien-daccès-rapide">Règles d’implémentation d’un lien d&rsquo;accès rapide</a></li>
       </ul>
@@ -384,7 +388,7 @@
 </nav>
                </div>
 
-               <h2 id="quest-ce-quun-lien-daccès-rapide-">Qu&rsquo;est-ce qu&rsquo;un lien d&rsquo;accès rapide ?</h2>
+               <h2 id="quest-ce-quun-lien-daccès-rapidenbsp">Qu&rsquo;est-ce qu&rsquo;un lien d&rsquo;accès rapide ?</h2>
 <p>Un lien d&rsquo;accès rapide (ou lien de raccourci, lien d&rsquo;évitement) est un lien qui permet d&rsquo;accéder directement à une partie du document ; l&rsquo;objectif est de permettre aux utilisateurs naviguant au clavier (dont notamment les utilisateurs de logiciel de synthèse vocale) d’accéder plus rapidement à des zones précises de la page sans dérouler la lecture des items précédents.</p>
 <p>Il existe 3 sortes de liens d&rsquo;accès rapide :</p>
 <ul>
@@ -426,6 +430,9 @@
 	<div class="pied">
 		<ul>
 			
+			<li><a href="mailto:sc.gounon%28a%29gmail.com"  title="Courriel"><span
+				   class="icon"><i class='fa fa-envelope'></i></span></a></li>
+			
 			<li><a href="https://github.com/sofeve-concept"  title="GitHub"><span
 				   class="icon"><i class='fab fa-github'></i></span></a></li>
 			
@@ -437,7 +444,7 @@
 			
 		    <li><a href="/mentions-legales" class="">Mentions légales et crédits</a></li>
 		    
-		    <li><a class="courriel" data-courriel="sc.gounonchezgmailrondcom"></a></li>
+		   
 		</ul>
 		<p class="copyr">&copy; 2023 Sofève Concept - <span>By</span> Sofève Concept</p>
 	 </div>
@@ -457,6 +464,10 @@
 <script src="/js/search.js"></script>
 	
 	
-	
+
+<script>
+	sandwitch();
+</script>	
+
 </body>
 </html>

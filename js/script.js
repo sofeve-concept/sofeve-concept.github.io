@@ -14,6 +14,15 @@ function hamburger() {
 
 hamburger();
 
+function sandwitch() {
+  var hamb = document.getElementById("sandwitch");
+  hamb.addEventListener('click', function (e) {
+    let state = hamb.getAttribute('aria-expanded');
+    state === 'false' ? hamb.setAttribute('aria-expanded', 'true') : hamb.setAttribute('aria-expanded', 'false');
+  });
+}
+
+
 function menuEtSousMenuDeroulant() {
 
   var theButtons = document.querySelectorAll('.navbar a[aria-expanded]:not(#hamburger)');

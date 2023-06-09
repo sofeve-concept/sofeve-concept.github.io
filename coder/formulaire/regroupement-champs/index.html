@@ -7,16 +7,17 @@
 	
 	
 	
-	<title>
-		
-		Regroupement de champs - Formulaires
-		 
-		
-		- Coder accessible
-		
-		- Sofève Concept</title>
+	<title>Regroupement de champs - Formulaires	- Coder accessible - Sofève Concept</title>
 	<meta name="description" content="Lorsque des champs de même nature sont présentés dans un formulaire, une bonne pratique d&#39;accessibilité consiste à les regrouper.">
 	<meta name="author" content="Sophie Gounon">
+	<meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sofève Concept" />
+    <meta property="og:description"
+        content="Sofève Concept est un site web de conseil et de documentation pour créer des sites web accessibles" />
+    <meta property="og:url" content="https://sofeve-concept.github.io" />
+    <meta property="og:site_name" content="Sofève Concept" />
+    <meta property="og:image" content="https://sofeve-concept.github.io/images/sofeve-concept.jpg" />
 	<link href="/images/favicon.ico" rel="icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +31,6 @@
 </head>
 <body>
 	<a class="evitement" href="#contenu">Aller au contenu</a>
-
 <header role="banner">
 	<div class="logo">
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
@@ -159,6 +159,9 @@
         <span class="sr-only">Rechercher</span>
     </button>
 </form>
+<div class="toSearch">
+    <a href="/rechercher"><i class="fa fa-search" aria-label="Aller à la recherche surt le site"></i></a>
+</div>
 </header>
 
 	
@@ -226,7 +229,8 @@
 				
 			<nav role="navigation" aria-label="Navigation contextuelle">
 				<p class="rubrique">Coder accessible</p>
-			<ul>
+				<a role="button" aria-haspopup="true" aria-expanded="false" id="sandwitch" aria-controls="sousMenu"><span class="sr-only">Menu</span></a>
+			<ul id="sousMenu">
 			
 			
 			<li>
@@ -440,7 +444,7 @@
 
 <h3 id="exemple-avec-des-boutons-radios">Exemple avec des boutons radios</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">fieldset</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Aimez-vous le chocolat ?<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Aimez-vous le chocolat<span class="ni">&amp;nbsp;</span>?<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;oui&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;oui&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;chocolat&#34;</span> <span class="p">/&gt;</span>
@@ -454,7 +458,7 @@
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
 </span></span></code></pre></div>
 <fieldset>
-    <legend>Aimez-vous le chocolat ?</legend>
+    <legend>Aimez-vous le chocolat&nbsp;?</legend>
 	<ul class="no-liste">
             <li>
                 <input type="radio" id="oui" value="oui" name="chocolat" />
@@ -478,6 +482,9 @@
 	<div class="pied">
 		<ul>
 			
+			<li><a href="mailto:sc.gounon%28a%29gmail.com"  title="Courriel"><span
+				   class="icon"><i class='fa fa-envelope'></i></span></a></li>
+			
 			<li><a href="https://github.com/sofeve-concept"  title="GitHub"><span
 				   class="icon"><i class='fab fa-github'></i></span></a></li>
 			
@@ -489,7 +496,7 @@
 			
 		    <li><a href="/mentions-legales" class="">Mentions légales et crédits</a></li>
 		    
-		    <li><a class="courriel" data-courriel="sc.gounonchezgmailrondcom"></a></li>
+		   
 		</ul>
 		<p class="copyr">&copy; 2023 Sofève Concept - <span>By</span> Sofève Concept</p>
 	 </div>
@@ -509,6 +516,10 @@
 <script src="/js/search.js"></script>
 	
 	
-	
+
+<script>
+	sandwitch();
+</script>	
+
 </body>
 </html>

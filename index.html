@@ -8,14 +8,17 @@
 	
 	
 	
-	<title>
-		
-		Accueil
-		 
-		
-		- Sofève Concept</title>
+	<title>Accueil - Sofève Concept</title>
 	<meta name="description" content="Sofève concept, Conseil &amp; formation pour des sites web accessibles">
 	<meta name="author" content="Sophie Gounon">
+	<meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sofève Concept" />
+    <meta property="og:description"
+        content="Sofève Concept est un site web de conseil et de documentation pour créer des sites web accessibles" />
+    <meta property="og:url" content="https://sofeve-concept.github.io" />
+    <meta property="og:site_name" content="Sofève Concept" />
+    <meta property="og:image" content="https://sofeve-concept.github.io/images/sofeve-concept.jpg" />
 	<link href="/images/favicon.ico" rel="icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +32,6 @@
 </head>
 <body>
 	<a class="evitement" href="#contenu">Aller au contenu</a>
-
 <header role="banner">
 	<div class="logo">
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
@@ -156,6 +158,9 @@
         <span class="sr-only">Rechercher</span>
     </button>
 </form>
+<div class="toSearch">
+    <a href="/rechercher"><i class="fa fa-search" aria-label="Aller à la recherche surt le site"></i></a>
+</div>
 </header>
 
 	
@@ -173,8 +178,11 @@
 
 <h2>La naissance du concept</h2>
 <p class="intro">Parce que la création de sites web n'a rien de magique et que c'est un métier.</p>
-     <img src="/images/naissance.jpg" alt="" class="img-fluid shadow float-left f-30p">
-<div>
+<div class="flex">
+
+ <img src="/images/naissance.jpg" alt="" class="img-fluid shadow item-30">
+
+<div class="item-70">
     <p>Le concept est né des constats suivants : </p>
     <ul class="coche">
     <li>Aujourd'hui, disposer d'un site internet pour présenter sa société est devenu un incoutournable ;</li>
@@ -185,9 +193,9 @@
     <li>L'utilisation des services numériques à un impact écologique qui peut être réduit par l'application de certaines techniques de conception.</li>
     </ul>
 </div>
+</div>
 
-
-<h2>Qu'est-ce que l'accessibilité numérique ?</h2>
+<h2>Qu'est-ce que l'accessibilité numérique&nbsp;?</h2>
 
 <p>Initialement, le web et son langage, le HTML, ont été conçus pour s'affranchir des problèmes de compatibilité entre les différents matériels.
 <br>Le but : disposer d’un Web accessible à tous quelque soit :</p>
@@ -236,6 +244,9 @@ L'organisation mondiale de la santé considère qu'il existe 5 grandes catégori
 	<div class="pied">
 		<ul>
 			
+			<li><a href="mailto:sc.gounon%28a%29gmail.com"  title="Courriel"><span
+				   class="icon"><i class='fa fa-envelope'></i></span></a></li>
+			
 			<li><a href="https://github.com/sofeve-concept"  title="GitHub"><span
 				   class="icon"><i class='fab fa-github'></i></span></a></li>
 			
@@ -247,7 +258,7 @@ L'organisation mondiale de la santé considère qu'il existe 5 grandes catégori
 			
 		    <li><a href="/mentions-legales" class="">Mentions légales et crédits</a></li>
 		    
-		    <li><a class="courriel" data-courriel="sc.gounonchezgmailrondcom"></a></li>
+		   
 		</ul>
 		<p class="copyr">&copy; 2023 Sofève Concept - <span>By</span> Sofève Concept</p>
 	 </div>
@@ -265,6 +276,6 @@ L'organisation mondiale de la santé considère qu'il existe 5 grandes catégori
 <script src="/js/search.js"></script>
 	
 	
-	
+
 </body>
 </html>

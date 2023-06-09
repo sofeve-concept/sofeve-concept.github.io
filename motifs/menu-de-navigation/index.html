@@ -7,14 +7,17 @@
 	
 	
 	
-	<title>
-		
-		Menu de navigation - Motifs de conception
-		 
-		
-		- Sofève Concept</title>
+	<title>Menu de navigation - Motifs de conception - Sofève Concept</title>
 	<meta name="description" content="Extrait de code pour un menu déroulant horizontal, déroulant et responsive avec bouton hamburger.">
 	<meta name="author" content="Sophie Gounon">
+	<meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sofève Concept" />
+    <meta property="og:description"
+        content="Sofève Concept est un site web de conseil et de documentation pour créer des sites web accessibles" />
+    <meta property="og:url" content="https://sofeve-concept.github.io" />
+    <meta property="og:site_name" content="Sofève Concept" />
+    <meta property="og:image" content="https://sofeve-concept.github.io/images/sofeve-concept.jpg" />
 	<link href="/images/favicon.ico" rel="icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +31,6 @@
 </head>
 <body>
 	<a class="evitement" href="#contenu">Aller au contenu</a>
-
 <header role="banner">
 	<div class="logo">
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
@@ -155,6 +157,9 @@
         <span class="sr-only">Rechercher</span>
     </button>
 </form>
+<div class="toSearch">
+    <a href="/rechercher"><i class="fa fa-search" aria-label="Aller à la recherche surt le site"></i></a>
+</div>
 </header>
 
 	
@@ -696,7 +701,7 @@
 </span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">hamburger</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="kd">var</span> <span class="nx">hamb</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;hamburger&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">state</span> <span class="o">=</span> <span class="nx">hamb</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s1">&#39;aria-expanded&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">state</span> <span class="o">===</span> <span class="s1">&#39;false&#39;</span> <span class="o">?</span> <span class="nx">hamb</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;aria-expanded&#39;</span><span class="p">,</span> <span class="s1">&#39;true&#39;</span><span class="p">)</span> <span class="o">:</span> <span class="nx">hamb</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;aria-expanded&#39;</span><span class="p">,</span> <span class="s1">&#39;false&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">state</span> <span class="o">===</span> <span class="s1">&#39;false&#39;</span><span class="o">&amp;</span><span class="nx">nbsp</span><span class="p">;</span><span class="o">?</span> <span class="nx">hamb</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;aria-expanded&#39;</span><span class="p">,</span> <span class="s1">&#39;true&#39;</span><span class="p">)</span> <span class="o">:</span> <span class="nx">hamb</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;aria-expanded&#39;</span><span class="p">,</span> <span class="s1">&#39;false&#39;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
@@ -713,7 +718,7 @@
 </span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="nx">thisButton</span> <span class="o">!==</span> <span class="nx">theButtons</span><span class="p">[</span><span class="nx">j</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl">          <span class="nx">theButtons</span><span class="p">[</span><span class="nx">j</span><span class="p">].</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;aria-expanded&#39;</span><span class="p">,</span> <span class="s1">&#39;false&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">      <span class="p">}</span>
-</span></span><span class="line"><span class="cl">      <span class="kd">var</span> <span class="nx">stateButton</span> <span class="o">=</span> <span class="nx">thisButton</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s1">&#39;aria-expanded&#39;</span><span class="p">)</span> <span class="o">===</span> <span class="s1">&#39;false&#39;</span> <span class="o">?</span> <span class="kc">true</span> <span class="o">:</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="kd">var</span> <span class="nx">stateButton</span> <span class="o">=</span> <span class="nx">thisButton</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s1">&#39;aria-expanded&#39;</span><span class="p">)</span> <span class="o">===</span> <span class="s1">&#39;false&#39;</span><span class="o">&amp;</span><span class="nx">nbsp</span><span class="p">;</span><span class="o">?</span> <span class="kc">true</span> <span class="o">:</span> <span class="kc">false</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">      <span class="nx">thisButton</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;aria-expanded&#39;</span><span class="p">,</span> <span class="nx">stateButton</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="p">});</span>
 </span></span><span class="line"><span class="cl">
@@ -771,6 +776,9 @@
 	<div class="pied">
 		<ul>
 			
+			<li><a href="mailto:sc.gounon%28a%29gmail.com"  title="Courriel"><span
+				   class="icon"><i class='fa fa-envelope'></i></span></a></li>
+			
 			<li><a href="https://github.com/sofeve-concept"  title="GitHub"><span
 				   class="icon"><i class='fab fa-github'></i></span></a></li>
 			
@@ -782,7 +790,7 @@
 			
 		    <li><a href="/mentions-legales" class="">Mentions légales et crédits</a></li>
 		    
-		    <li><a class="courriel" data-courriel="sc.gounonchezgmailrondcom"></a></li>
+		   
 		</ul>
 		<p class="copyr">&copy; 2023 Sofève Concept - <span>By</span> Sofève Concept</p>
 	 </div>
@@ -802,6 +810,10 @@
 <script src="/js/search.js"></script>
 	
 	
-	
+
+<script>
+	sandwitch();
+</script>	
+
 </body>
 </html>

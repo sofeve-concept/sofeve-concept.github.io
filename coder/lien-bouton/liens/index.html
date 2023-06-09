@@ -7,16 +7,17 @@
 	
 	
 	
-	<title>
-		
-		Les liens - Liens et boutons
-		 
-		
-		- Coder accessible
-		
-		- Sofève Concept</title>
+	<title>Les liens - Liens et boutons	- Coder accessible - Sofève Concept</title>
 	<meta name="description" content="Les liens sont des éléments qui permettent d&#39;atteindre un endroit précis à l&#39;intérieur d&#39;une même page, de passer d&#39;une page à une autre à l&#39;intérieur d&#39;un site ou de pointer vers un autre site. Ils sont aussi utilisés pour télécharger un fichier.">
 	<meta name="author" content="Sophie Gounon">
+	<meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sofève Concept" />
+    <meta property="og:description"
+        content="Sofève Concept est un site web de conseil et de documentation pour créer des sites web accessibles" />
+    <meta property="og:url" content="https://sofeve-concept.github.io" />
+    <meta property="og:site_name" content="Sofève Concept" />
+    <meta property="og:image" content="https://sofeve-concept.github.io/images/sofeve-concept.jpg" />
 	<link href="/images/favicon.ico" rel="icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +31,6 @@
 </head>
 <body>
 	<a class="evitement" href="#contenu">Aller au contenu</a>
-
 <header role="banner">
 	<div class="logo">
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
@@ -159,6 +159,9 @@
         <span class="sr-only">Rechercher</span>
     </button>
 </form>
+<div class="toSearch">
+    <a href="/rechercher"><i class="fa fa-search" aria-label="Aller à la recherche surt le site"></i></a>
+</div>
 </header>
 
 	
@@ -226,7 +229,8 @@
 				
 			<nav role="navigation" aria-label="Navigation contextuelle">
 				<p class="rubrique">Coder accessible</p>
-			<ul>
+				<a role="button" aria-haspopup="true" aria-expanded="false" id="sandwitch" aria-controls="sousMenu"><span class="sr-only">Menu</span></a>
+			<ul id="sousMenu">
 			
 			
 			<li>
@@ -399,7 +403,7 @@ Un lien s&rsquo;implémente avec l&rsquo;élément HTML <code>a</code> (&ldquo;a
 <h3 id="lien-explicite">Lien explicite</h3>
 <p>Un lien explicite est un lien dont l&rsquo;intitulé, dans le contecte où il se trouve, a du sens en soi.</p>
 <h4 id="lien-texte-explicite">Lien texte explicite</h4>
-<p>Lorsque l&rsquo;intitulé du lien suffit à en compredre le sens, le lien sera implémenté de la manière suivante (sans attribut <code>title</code>) :</p>
+<p>Lorsque l&rsquo;intitulé du lien suffit à en comprendre le sens, le lien sera implémenté de la manière suivante (sans attribut <code>title</code>) :</p>
 <ul>
 <li><code>&lt;a href=&quot;motifs.html&quot;&gt;Motifs de conception&lt;/a&gt;</code></li>
 <li><code>&lt;a href=&quot;mailto:monadresse@domaine.fr&quot;&gt;monadresse@domaine.fr&lt;/a&gt;</code></li>
@@ -465,6 +469,9 @@ Si on teste ce code HTML en désactivant les CSS, on aura une implémentation co
 	<div class="pied">
 		<ul>
 			
+			<li><a href="mailto:sc.gounon%28a%29gmail.com"  title="Courriel"><span
+				   class="icon"><i class='fa fa-envelope'></i></span></a></li>
+			
 			<li><a href="https://github.com/sofeve-concept"  title="GitHub"><span
 				   class="icon"><i class='fab fa-github'></i></span></a></li>
 			
@@ -476,7 +483,7 @@ Si on teste ce code HTML en désactivant les CSS, on aura une implémentation co
 			
 		    <li><a href="/mentions-legales" class="">Mentions légales et crédits</a></li>
 		    
-		    <li><a class="courriel" data-courriel="sc.gounonchezgmailrondcom"></a></li>
+		   
 		</ul>
 		<p class="copyr">&copy; 2023 Sofève Concept - <span>By</span> Sofève Concept</p>
 	 </div>
@@ -496,6 +503,10 @@ Si on teste ce code HTML en désactivant les CSS, on aura une implémentation co
 <script src="/js/search.js"></script>
 	
 	
-	
+
+<script>
+	sandwitch();
+</script>	
+
 </body>
 </html>
