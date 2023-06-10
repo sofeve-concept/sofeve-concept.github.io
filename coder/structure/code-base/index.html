@@ -36,7 +36,7 @@
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
 	</div>
 	<nav role="navigation" class="navbar" aria-label="Menu principal">
-		<a role="button" aria-haspopup="true" aria-expanded="false" id="hamburger" aria-controls="menu"><span class="sr-only">Menu</span></a>
+		<button aria-haspopup="true" aria-expanded="false" id="hamburger" aria-controls="menu"><span class="sr-only">Menu</span></button>
 		<ul id="menu">
 		
 		
@@ -52,12 +52,12 @@
 		 
 				
 			<li class="coder">
-				<a role="button" aria-haspopup="true" aria-expanded="false" aria-controls="coder" 
+				<button aria-haspopup="true" aria-expanded="false" aria-controls="coder" 
 				
 				aria-current="true"
 				
 				> 
-				Coder accessible</a>
+				Coder accessible</button>
 				   <ul id="coder">
 					 		
 					
@@ -231,7 +231,10 @@
 				
 			<nav role="navigation" aria-label="Navigation contextuelle">
 				<p class="rubrique">Coder accessible</p>
-				<a role="button" aria-haspopup="true" aria-expanded="false" id="sandwitch" aria-controls="sousMenu"><span class="sr-only">Menu</span></a>
+				<button aria-haspopup="true" aria-expanded="false" id="sandwitch" aria-controls="sousMenu">
+					<i class="fa fa-square-plus" aria-hidden="true"></i>
+					<span class="sr-only">Menu</span>
+				</button>
 			<ul id="sousMenu">
 			
 			
@@ -483,13 +486,13 @@ Dans le cas où une liste de liens est proposé dans le `footer`, ceux-ci <stron
 		<ul>
 			
 			<li><a href="mailto:sc.gounon%28a%29gmail.com"  title="Courriel"><span
-				   class="icon"><i class='fa fa-envelope'></i></span></a></li>
+				   class="icon"><i class="fab fa-envelope" aria-label="Courriel"></i></span></a></li>
 			
 			<li><a href="https://github.com/sofeve-concept"  title="GitHub"><span
-				   class="icon"><i class='fab fa-github'></i></span></a></li>
+				   class="icon"><i class="fab fa-github" aria-label="Github"></i></span></a></li>
 			
 			<li><a href="https://www.linkedin.com/in/sophie-gounon/"  title="LinkedIn"><span
-				   class="icon"><i class='fab fa-linkedin'></i></span></a></li>
+				   class="icon"><i class="fab fa-linkedin" aria-label="LinkedIn"></i></span></a></li>
 			
 		</ul>
 		<ul>

@@ -25,7 +25,7 @@ function sandwitch() {
 
 function menuEtSousMenuDeroulant() {
 
-  var theButtons = document.querySelectorAll('.navbar a[aria-expanded]:not(#hamburger)');
+  var theButtons = document.querySelectorAll('.navbar button[aria-expanded]:not(#hamburger)');
 
   for (i = 0; i < theButtons.length; i++) {
 
@@ -70,13 +70,13 @@ function menuEtSousMenuDeroulant() {
   };
 
 }
-menuEtSousMenuDeroulant();
+menuEtSousMenuDeroulant()
 
 
 // Fermeture de tous les sous-menus via clic dans le body
 function fermerMenuViaClicBody(event) {
-  var theButtons = document.querySelectorAll('.navbar a[aria-expanded]');
-  if (!event.target.matches('.navbar a[aria-expanded]')) {
+  var theButtons = document.querySelectorAll('.navbar button[aria-expanded]');
+  if (!event.target.matches('.navbar button[aria-expanded]')) {
     for (i = 0; i < theButtons.length; i++) {
       theButtons[i].setAttribute('aria-expanded', 'false');
     }
