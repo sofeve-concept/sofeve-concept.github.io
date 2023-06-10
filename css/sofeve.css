@@ -1347,34 +1347,6 @@ aside button#sandwitch {
   display: none;
 }
 
-aside button#sandwitch {
-  color: var(--WHITE-color);
-  background-color: transparent;
-  border: 0;
-  margin-top: -2em;
-  margin-right: .5em;
-  font-size: 1.5em;
-}
-
-aside button#sandwitch:hover,
-aside button#sandwitch:focus {
-  color: var(--HARMONIE-GOLD-color) !important;
-}
-
-aside button[aria-expanded="true"]#sandwitch+ul {
-  display: block;
-  box-shadow: none;
-  background-color: var(--HEADER-background-color);
-  position: relative;
-  left: 0;
-  top: 0;
-  z-index: 50;
-}
-
-aside a[aria-expanded="true"]#sandwitch::before {
-  content: "\f146";
-}
-
 .flex>aside[class*="item-"] h3 {
   padding-top: 6em;
   padding-bottom: 0.5em;
@@ -1388,12 +1360,10 @@ aside a[aria-expanded="true"]#sandwitch::before {
 
 aside .rubrique {
   font-size: 1.5em;
-  padding-left: .5em;
+  padding-left: 0;
   margin-bottom: 0 !important;
   text-shadow: none;
-  color: var(--WHITE-color);
-  background-color: var(--HARMONIE-GRAY-DARK-color);
-  border-radius: 0.25em 0.25em 0 0;
+  color: var(--HARMONIE-BASE-DARK-color);
   font-family: var(--FONT-FAMILY-title);
 }
 
@@ -1416,8 +1386,8 @@ aside ul {
 aside ul li {
   display: block;
   padding: 0.5em;
-  background-color: var(--HARMONIE-GRAY-SWEET-color);
-  border: 1px solid var(--HARMONIE-GRAY-LIGHT-color);
+  background-color: var(--WHITE-SOFT-color);
+  border-bottom: 1px dotted var(--HARMONIE-color);
 }
 
 aside ul ul li {
@@ -2557,7 +2527,55 @@ outline: 0;
 
 }
 
+@media screen and (max-width: 1024px) {
+  #accueil h1, #erreur h1 {
+    padding: 0 10%;
+  }
+  .flex .item-20,
+  .flex .item-25 {
+    flex: 0 0 50%;
+  }
 
+  .flex aside.item-20,
+  .flex section.item-80 {
+    flex: 0 0 100%;
+  }
+  aside .rubrique {
+    padding-left: 1.5em;
+  }
+  aside button#sandwitch {
+    display: block;
+    color: var(--HARMONIE-BASE-DARK-color);
+    background-color: transparent;
+    border: 0;
+    font-size: 1em;
+    margin-top: -2.35em;
+  }
+  
+  aside button#sandwitch:hover,
+  aside button#sandwitch:focus {
+    color: var(--HARMONIE-DARK-color) !important;
+  }
+  
+  aside button[aria-expanded="true"]#sandwitch+ul {
+    display: block;
+    box-shadow: none;
+    background-color: var(--HEADER-background-color);
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 50;
+  }
+  
+  aside a[aria-expanded="true"]#sandwitch::before {
+    content: "\f146";
+  }
+  
+  aside button#sandwitch+ul {
+    display: none;
+  }
+
+}
 @media screen and (width <=992px) {
   #accueil div.titre img {
     margin-right: -1.75em;
@@ -2607,30 +2625,11 @@ outline: 0;
     height: auto;
   }
 
-  aside button#sandwitch {
-    display: block;
-  }
-
-  aside button#sandwitch+ul {
-    display: none;
-  }
-
-  aside .rubrique {
-    padding-left: 1.75em !important;
-  }
-
-  .flex .item-25 {
-    flex: 0 0 33%;
-  }
-
+ 
   h2 {
     font-size: 1.5em;
   }
 
-  .flex .item-20,
-  .flex .item-80 {
-    flex: 0 0 100%;
-  }
 }
 
 
@@ -2638,12 +2637,12 @@ outline: 0;
   .flex .item-25 {
     flex: 0 0 33%;
   }
-
   .flex .item-30,
-  .flex .item-70 {
+  .flex .item-70,
+  .flex .item-50,
+  .flex .item-25 {
     flex: 0 0 100%;
   }
-
   h2 {
     font-size: 1.5em;
   }
@@ -2706,6 +2705,16 @@ outline: 0;
   }
 }
 
+@media screen and (width <=576px) {
+  #www h2 {
+    font-size: 1.75em;
+  }
+ 
+  .img-resp {
+    width: 100%;
+  }
+ 
+}
 @media screen and (width <=320px) {
 
   header[role="banner"] nav[role="navigation"] {
