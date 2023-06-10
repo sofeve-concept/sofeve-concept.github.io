@@ -2160,12 +2160,23 @@ table th {
   background-color: var(--HARMONIE-GRAY-SWEET-color);
   border: 0.25rem solid var(--HARMONIE-GRAY-DARK-color);
 }
-
+#TableOfContents ul {
+  margin:0;
+  padding: 0;
+}
+#TableOfContents li:last-of-type {
+  margin-bottom:0;
+}
 #TableOfContents li ul {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-
+#TableOfContents ul ul {
+margin-left: .5em;
+}
+#TableOfContents ul ul li {
+  margin-left: .75em;
+  }
 #TableOfContents code {
   font-family: var(--FONT-FAMILY-sans-serif);
   border-radius: 0;
@@ -2174,7 +2185,10 @@ table th {
   padding: 0;
   vertical-align: bottom;
 }
-
+.rubCode img,
+.rubMotif img {
+  max-width: 100%;
+}
 /** infobulle */
 
 .infobulle {
@@ -2634,9 +2648,7 @@ outline: 0;
 
 
 @media screen and (width <=768px) {
-  .flex .item-25 {
-    flex: 0 0 33%;
-  }
+ 
   .flex .item-30,
   .flex .item-70,
   .flex .item-50,
@@ -2682,9 +2694,6 @@ outline: 0;
     padding: 0 5%;
   }
 
-  .flex .item-25 {
-    flex: 0 0 50%;
-  }
 
   h1::after {
     display: none;
