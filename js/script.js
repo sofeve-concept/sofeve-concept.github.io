@@ -4,15 +4,12 @@
  */
 
 
+
 function hamburger() {
   var hamb = document.getElementById("hamburger");
-  hamb.addEventListener('click', function (e) {
-    let state = hamb.getAttribute('aria-expanded');
-    state === 'false' ? hamb.setAttribute('aria-expanded', 'true') : hamb.setAttribute('aria-expanded', 'false');
-  });
+  let state = hamb.getAttribute('aria-expanded');
+  state === 'false' ? hamb.setAttribute('aria-expanded', 'true') : hamb.setAttribute('aria-expanded', 'false');
 }
-
-hamburger();
 
 function sandwitch() {
   var hamb = document.getElementById("sandwitch");
@@ -115,53 +112,32 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 });
 
+/** */
 
-/************************************* PORTFOLIO - FILTRE ***********************************/
+var fancyInputElements = document.querySelectorAll('.fancy-input input');
 
-// filterSelection("all")
-//    function filterSelection(c) {
-//      var x, i;
-//      x = document.getElementsByClassName("vignette");
-//      if (c == "all") c = "";
-//      for (i = 0; i < x.length; i++) {
-//        filtreRemoveClass(x[i], "show");
-//        if (x[i].className.indexOf(c) > -1) filtreAddClass(x[i], "show");
-//      }
-//    }
-   
-//    function filtreAddClass(element, name) {
-//      var i, arr1, arr2;
-//      arr1 = element.className.split(" ");
-//      arr2 = name.split(" ");
-//      for (i = 0; i < arr2.length; i++) {
-//        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-//      }
-//    }
-   
-//    function filtreRemoveClass(element, name) {
-//      var i, arr1, arr2;
-//      arr1 = element.className.split(" ");
-//      arr2 = name.split(" ");
-//      for (i = 0; i < arr2.length; i++) {
-//        while (arr1.indexOf(arr2[i]) > -1) {
-//          arr1.splice(arr1.indexOf(arr2[i]), 1);     
-//        }
-//      }
-//      element.className = arr1.join(" ");
-//    }
-   
-   
-//    // Add active class to the current button (highlight it)
-//    var btnContainer = document.getElementById("myFilter");
-//    var btns = btnContainer.getElementsByClassName("btn-outline");
-//    for (var i = 0; i < btns.length; i++) {
-//      btns[i].addEventListener("click", function(){
-//        var current = document.getElementsByClassName("active");
-//        current[0].className = current[0].className.replace(" active", "");
-//        this.className += " active";
-//      });
-//    }
+for (var i = 0; i < fancyInputElements.length; i++)
+{
+	scaleLabel(fancyInputElements[i], true);
+	
+	fancyInputElements[i].addEventListener('focus', function () { scaleLabel(this, false) });
+	fancyInputElements[i].addEventListener('blur', function () { scaleLabel(this, true) });
+}
 
+function scaleLabel(element, isLikePlaceholder)
+{
+	if (isLikePlaceholder)
+	{
+		if (element.value === '')
+		{
+			element.parentNode.querySelector('label').classList.add('like-placeholder');
+		}
+	}
+	else
+	{
+		element.parentNode.querySelector('label').classList.remove('like-placeholder');
+	}
+}
 /************************************* DIALOG ***********************************/
 /*
  *   This content is licensed according to the W3C Software License at

@@ -37,8 +37,10 @@
 	<div class="logo">
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
 	</div>
-	<nav role="navigation" class="navbar" aria-label="Menu principal">
-		<button aria-haspopup="true" aria-expanded="false" id="hamburger" aria-controls="menu"><span class="sr-only">Menu</span></button>
+	<nav role='navigation' class="navbar" aria-label="Menu principal">
+		<button aria-expanded="false" id="hamburger" aria-controls="menu" onclick="hamburger(this)">
+		     <span class="sr-only">Menu</span>
+		</button>
 		<ul id="menu">
 		
 		
@@ -147,9 +149,11 @@
 		
 		</ul>
 	</nav>	
-	<form action="/rechercher" method="GET" role="search">
-    <label for="search-query" class="sr-only">Rechercher sur le site</label>
-    <input type="search" name="q" id="search-query" placeholder="Rechercher sur le site....">
+	<form action="/rechercher" method="GET" role="search" class="search">
+    <div class="fancy-input">
+    <label for="search-query">Rechercher</label>
+    <input type="search" name="q" id="search-query" >
+    </div>
     <button type="reset">
         <span class="fa fa-times" aria-hidden="true"></span>
         <span class="sr-only">Effacer</span>
@@ -162,6 +166,8 @@
 <div class="toSearch">
     <a href="/rechercher"><i class="fa fa-search" aria-label="Aller à la recherche surt le site"></i></a>
 </div>
+
+
 </header>
 
 	
@@ -413,14 +419,11 @@
 	<div class="pied">
 		<ul>
 			
-			<li><a href="mailto:sc.gounon%28a%29gmail.com"  title="Courriel"><span
-				   class="icon"><i class="fab fa-envelope" aria-label="Courriel"></i></span></a></li>
+			<li><a href="mailto:sc.gounon%28a%29gmail.com"  title="Courriel"><i class="fab fa-envelope" aria-hidden="true"></i><span class="sr-only">Courriel</span></a></li>
 			
-			<li><a href="https://github.com/sofeve-concept"  title="GitHub"><span
-				   class="icon"><i class="fab fa-github" aria-label="Github"></i></span></a></li>
+			<li><a href="https://github.com/sofeve-concept"  title="GitHub"><i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">GitHub</span></a></li>
 			
-			<li><a href="https://www.linkedin.com/in/sophie-gounon/"  title="LinkedIn"><span
-				   class="icon"><i class="fab fa-linkedin" aria-label="LinkedIn"></i></span></a></li>
+			<li><a href="https://www.linkedin.com/in/sophie-gounon/"  title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a></li>
 			
 		</ul>
 		<ul>
