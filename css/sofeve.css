@@ -1021,8 +1021,6 @@ nav[role="navigation"].navbar  ul li button[aria-current="true"] {
   font-weight: bold;
   text-transform: uppercase;
 }
-
-
 nav[role="navigation"].navbar ul li button {
   background-color: transparent;
   border: 0;
@@ -1031,7 +1029,9 @@ nav[role="navigation"].navbar ul li button {
   text-align: left;
   border-bottom: 5px solid transparent;
 }
-
+nav[role="navigation"].navbar ul li button[aria-expanded="false"] {
+height: 100%;
+}
 nav[role="navigation"].navbar ul li button::after {
   font-family: 'FontAwesome';
   content: "\f078";
@@ -2458,10 +2458,6 @@ outline: 0;
 }
 
 /** RESPONSIVE */
-
-/** Responsive */
-
-/** Responsive */
 @media screen and (max-width: 1200px) {
   header[role="banner"]  {
     justify-content: flex-start;
@@ -2506,6 +2502,9 @@ outline: 0;
   color: var(--WHITE-color);
   position: absolute;
   flex-direction: column;
+ }
+ nav[role="navigation"].navbar ul#menu {
+  min-width: 300px;
  }
  nav[role="navigation"].navbar ul li:not(:last-of-type) {
       text-align: left;
@@ -2716,10 +2715,10 @@ outline: 0;
 }
 @media screen and (width <=320px) {
 
-  header[role="banner"] nav[role="navigation"] {
-    flex: auto 1 0;
-   
-  }
+ 
+  nav[role="navigation"].navbar ul#menu {
+    min-width: 200px;
+   }
   header[role="banner"] nav[role="navigation"].navbar li,
   header[role="banner"] nav[role="navigation"].navbar li a,
   header[role="banner"] nav[role="navigation"].navbar ul li a[aria-current="page"], 
