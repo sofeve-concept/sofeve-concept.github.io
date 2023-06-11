@@ -831,10 +831,15 @@ FLEXBOX
   flex: 0 0 33%;
 }
 
+.flex .item-40 {
+  flex: 0 0 40%;
+}
 .flex .item-50 {
   flex: 0 0 50%;
 }
-
+.flex .item-60 {
+  flex: 0 0 60%;
+}
 .flex .item-70 {
   flex: 0 0 70%;
 }
@@ -850,7 +855,9 @@ FLEXBOX
 .flex .item-100 {
   flex: 0 0 100%;
 }
-
+.flex .item-auto {
+  flex: 0 0 auto;
+}
 .flex>[class*="item-"] h2,
 .flex>[class*="item-"] h3 {
   margin-top: 0;
