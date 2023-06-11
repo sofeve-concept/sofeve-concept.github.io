@@ -1166,7 +1166,31 @@ main section nav a:focus {
   text-decoration: underline;
   border-bottom: none;
 }
+main section ul.children {
+  list-style: none;
+}
 
+ul.children li::before {
+  font-family: 'FontAwesome';
+  content: "\f560";
+  color: var(--PAON-BLEU-color);
+  padding-right: .5em;
+}
+ul.children li + ul {
+  list-style: none;
+}
+ul.children li + ul li{
+  line-height: 1.5;
+}
+ul.children li + ul li::before {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+  color: var(--PAON-BLEU-color);
+  padding-right: .5em;
+}
+main section ul.children a {
+  border-bottom: 0;
+}
 #www {
   width: 100%;
   min-height: 300px;
