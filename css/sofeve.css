@@ -939,15 +939,8 @@ header[role="banner"] .logo {
   margin: 0;
   padding: 0;
 }
-
-header[role="banner"] .logo img {
-  margin: 0;
-  padding: 0.25em 0 0 0;
-  height: 77px;
-}
-
 header[role="banner"] .logo a {
-  margin: 0;
+  margin: .5em 0 0 .25em;
   padding: 0;
   display: block;
   height:100%;
@@ -955,6 +948,17 @@ header[role="banner"] .logo a {
 }
 header[role="banner"] .logo a:focus {
   outline: 3px solid var(--HARMONIE-GOLD-color)
+}
+
+header[role="banner"] .logo img.big-logo {
+  margin: 0;
+  padding: 0.25em 0 0 0;
+  height: 77px;
+}
+header[role="banner"] .logo img.mini-logo {
+  display: none;
+  margin: 0;
+  padding: 0.25em 0 0 0;
 }
 /*****************************
  HEADER NAV 
@@ -2461,11 +2465,23 @@ outline: 0;
 @media screen and (max-width: 1200px) {
   header[role="banner"]  {
     justify-content: flex-start;
-    height: 2.5em;
+    height: 2.75em;
   }
-  header[role="banner"] .logo img {
-   height: 37px;
-   padding-right: .5em;
+  header[role="banner"] .logo {
+    margin-right: .5em;
+  }
+  header[role="banner"] .logo a {
+    margin: .15em 0 0 .25em;
+    display: block;
+    height:100%;
+    width: 100%;
+  }
+  header[role="banner"] .logo img.big-logo {
+    display: none;
+  }
+  header[role="banner"] .logo img.mini-logo {
+    display: inline-block;
+    height: 32px;
   }
   
   header[role="banner"] form[role="search"] {
@@ -2474,13 +2490,21 @@ outline: 0;
 
   .toSearch {
   display: block;
-  margin-left: 1.5em;
+  margin-left: .5em;
   }
-
-  .toSearch * {
+  .toSearch a {
+    display: block;
     color: var(--WHITE-color);
+    text-align: center;
+    padding:.5em .5em;
+    margin:0;
   }
-
+  .toSearch a i {
+    font-size: 1em;
+  }
+  .toSearch a:focus {
+    outline: 3px solid var(--HARMONIE-GOLD-color)
+  }
  nav[role="navigation"].navbar button#hamburger {
       display: block;
       background-color: var(--HARMONIE-DARK-color);
