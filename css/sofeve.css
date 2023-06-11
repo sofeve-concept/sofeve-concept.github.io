@@ -1123,6 +1123,8 @@ nav[role="navigation"].navbar ul button[aria-expanded='true'] + ul li a[aria-cur
   background-color: var(--LINK-color);
 }
 
+
+
 /********************************************
   MAIN
 *********************************************/
@@ -1163,31 +1165,6 @@ main section nav a:hover,
 main section nav a:focus {
   text-decoration: underline;
   border-bottom: none;
-}
-main section ul.children {
-  list-style: none;
-}
-
-ul.children li::before {
-  font-family: 'FontAwesome';
-  content: "\f560";
-  color: var(--PAON-BLEU-color);
-  padding-right: .5em;
-}
-ul.children li + ul {
-  list-style: none;
-}
-ul.children li + ul li{
-  line-height: 1.5;
-}
-ul.children li + ul li::before {
-  font-family: 'FontAwesome';
-  content: "\f00c";
-  color: var(--PAON-BLEU-color);
-  padding-right: .5em;
-}
-main section ul.children a {
-  border-bottom: 0;
 }
 #www {
   width: 100%;
@@ -2155,6 +2132,32 @@ table th {
   padding: 0.5em;
 }
 
+/** listOfChapterContent */
+
+ul.listOfChapterContent {
+  list-style: none;
+}
+ul.listOfChapterContent a{
+  border-bottom: none;
+}
+ul.listOfChapterContent li::before {
+  font-family: 'FontAwesome';
+  content: "\f560";
+  color: var(--PAON-BLEU-color);
+  padding-right: .5em;
+}
+ul.listOfChapterContent li  ul {
+  list-style: none;
+}
+ul.listOfChapterContent li  ul li{
+  line-height: 1.5;
+}
+ul.listOfChapterContent li  ul li::before {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+  color: var(--PAON-BLEU-color);
+  padding-right: .5em;
+}
 /** TableOfContents  */
 .toc h2 {
   font-size: 1.5em;
