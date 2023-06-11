@@ -1004,7 +1004,7 @@ nav[role="navigation"].navbar ul button[aria-expanded='false']+ul {
 nav[role="navigation"].navbar ul li a[aria-current="page"],
 nav[role="navigation"].navbar ul li a,
 nav[role="navigation"].navbar ul li button {
-  padding: 0.75rem 1.5rem .5rem 1.5rem;
+  padding: 0.75rem 1rem .5rem 1rem;
   font-family: var(--FONT-FAMILY-texte);
   font-size: 1rem;
   line-height: 1em;
@@ -1040,7 +1040,7 @@ nav[role="navigation"].navbar ul li button::after {
   font-family: 'FontAwesome';
   content: "\f078";
   float: right;
-  padding-left: .5em;
+  padding-left: .25em;
 }
 
 nav[role="navigation"].navbar ul li a:hover,
@@ -1064,9 +1064,11 @@ nav[role="navigation"].navbar ul button[aria-expanded='true']+ul {
   box-shadow: var(--SHADOW);
   background-color: white;
   position: absolute;
+  margin-left: -3px;
   margin-top: -5px;
   z-index: 1030;
-  border-top: 5px solid var(--HARMONIE-GOLD-color)
+  border-top: 5px solid var(--HARMONIE-GOLD-color);
+  border-left: 5px solid var(--HARMONIE-GOLD-color);
 }
 /*si on veut un triangle vers le bas*/
 nav[role="navigation"].navbar ul button[aria-expanded='true']+ul::before {
@@ -2679,10 +2681,14 @@ outline: 0;
   .flex .item-80 {
     flex: 0 0 100%;
   }
+  footer[role="contentinfo"] .pied {
+    flex-direction: column;
+  }
 }
 
 
 @media screen and (width <=576px) {
+  
   .ariane {
     flex: 0 0 100%;
     padding-bottom: 0;
@@ -2723,11 +2729,6 @@ outline: 0;
   aside ul ul li {
     padding: .15em .5em;
   }
-
-  footer[role="contentinfo"] .pied,
-  footer[role="contentinfo"] .pied ul:not(:first-of-type) {
-    flex-direction: column;
-  }
   #www h2 {
     font-size: 1.75em;
   }
@@ -2738,7 +2739,9 @@ outline: 0;
  
 }
 @media screen and (width <=320px) {
-
+  footer[role="contentinfo"] .pied ul:not(:first-of-type) {
+    flex-direction: column;
+  }
  
   nav[role="navigation"].navbar ul#menu {
     min-width: 200px;

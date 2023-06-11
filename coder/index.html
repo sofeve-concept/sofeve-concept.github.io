@@ -7,8 +7,8 @@
 	
 	
 	
-	<title>Coder accessible - Sofève Concept</title>
-	<meta name="description" content="Pas à pas des codes HTML et CSS respectueux des principes d&#39;accessibilité numérique.">
+	<title>Web accessible - Sofève Concept</title>
+	<meta name="description" content="Ce chapitre est un pas à pas des codes HTML et CSS respectueux des principes d&#39;accessibilité numérique.">
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
     <meta property="og:type" content="website" />
@@ -62,9 +62,16 @@
 				aria-current="true"
 				
 				> 
-				Coder accessible</button>
+				Web accessible</button>
 				   <ul id="coder">
 					 		
+					
+					
+										
+              				<li><a href="/coder/" 
+							aria-current="page"
+							> Vue d&#39;ensemble</a></li>
+              			 		
 					
 					
 										
@@ -138,16 +145,69 @@
 				<a href="/motifs/" 
 				
 				
-				> Motifs de conception</a></li>
+				> Composants web</a></li>
 			
 		
 		 
-			
-			<li  class="a-propos">
-				<a href="/a-propos/" 
 				
+			<li class="bureautique">
+				<button aria-haspopup="true" aria-expanded="false" aria-controls="bureautique" 
 				
-				> À propos</a></li>
+				> 
+				Bureautique accessible</button>
+				   <ul id="bureautique">
+					 		
+					
+					
+										
+              				<li><a href="/bureautique/" 
+							
+							> Introduction</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/bureautique/structure/" 
+							
+							> Structure du document</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/bureautique/presentation/" 
+							
+							> Présentaton du texte</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/bureautique/liens/" 
+							
+							> Lien hypertexte</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/bureautique/images/" 
+							
+							> Image</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/bureautique/couleur/" 
+							
+							> Couleur et contraste</a></li>
+              			 		
+					
+					
+										
+              				<li><a href="/bureautique/finaliser/" 
+							
+							> Tags et export PDF</a></li>
+              			
+				   </ul>
+			    </li>
 			
 		
 		</ul>
@@ -193,7 +253,7 @@
   
   
   <li aria-current="page" tabindex="-1">
-    Coder accessible
+    Web accessible
   </li>
   
 
@@ -209,8 +269,6 @@
 
 	
 		<div class="flex">
-			
-		
 	<aside class="item-20">	
 		
 	
@@ -218,7 +276,7 @@
 	
 				
 			<nav role="navigation" aria-label="Navigation contextuelle">
-				<p class="rubrique">Coder accessible</p>
+				<p class="rubrique">Web accessible</p>
 				<button aria-haspopup="true" aria-expanded="false" id="sandwitch" aria-controls="sousMenu">
 					<i class="fa fa-bars" aria-hidden="true"></i>
 					<span class="sr-only">Menu</span>
@@ -312,9 +370,28 @@
 
 	</aside>
 	<section class="item-80">	
-		<h1>Coder accessible</h1>
-		<p class="intro">Pas à pas des codes HTML et CSS respectueux des principes d&#39;accessibilité numérique.</p>
-		<ul>
+		<h1>Web accessible</h1>
+		<p class="intro">Ce chapitre est un pas à pas des codes HTML et CSS respectueux des principes d&#39;accessibilité numérique.</p>
+		
+
+<blockquote>Mettre le Web et ses services à la disposition de tous les individus, quel que soit leur matériel ou logiciel, leur infrastructure réseau, leur langue maternelle, leur culture, leur localisation géographique, ou leurs aptitudes physiques ou mentales.</blockquote>
+<p class="auteur"><cite>Tim Berners-Lee, inventeur du web.</cite></p>
+
+
+<p class="mt-3">L'accessibilité numérique consiste à rendre les supports numériques (web, applications mobiles, documents bureautiques)</p>
+            <ol class="mb-3">
+              <li><strong>Perceptible</strong>&nbsp;:&nbsp;
+                L'information et les composants de l'interface utilisateur doivent être présentés à l'utilisateur de façon à ce qu'il puisse les percevoir&nbsp;;</li>
+              <li><strong>Utilisable</strong> simplement&nbsp;: Les composants de l'interface utilisateur et de navigation doivent être fonctionnels et utilisables simplement&nbsp;;</li>
+              <li><strong>Compréhensible</strong>&nbsp;: Les informations et l'utilisation de l'interface
+                utilisateur doivent être compréhensibles&nbsp;;</li>
+              <li><strong>Robuste</strong>&nbsp;: Optimiser la compatibilité avec les agents utilisateurs actuels
+                et futurs, y compris les <strong>technologies d'assistance</strong>.</li>
+            </ol>
+<p class="mb-3">Dans ce chapitre, nous allons explorer quelques principes et règles à appliquer au cours de l'élaboration des pages web.</p>
+
+<h2 id="dans-ce-chapitre">Dans ce chapitre</h2>
+<ul>
 <li>
 <a href="/coder/structure/" >Structure générale</a>
 </li>
@@ -469,6 +546,8 @@
 		</ul>
 		<ul>
 			
+		    <li><a href="/a-propos/" class="">À propos</a></li>
+		    
 		    <li><a href="/mentions-legales" class="">Mentions légales et crédits</a></li>
 		    
 		   

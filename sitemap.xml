@@ -8,11 +8,21 @@
   </url><url>
     <loc>https://sofeve-concept.github.io/motifs/bordure-texte/</loc>
   </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/couleur/contraste/</loc>
+  </url><url>
     <loc>https://sofeve-concept.github.io/motifs/ariane/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/contenu/formatage/</loc>
   </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/images/image/</loc>
+  </url><url>
     <loc>https://sofeve-concept.github.io/coder/lien-bouton/liens/</loc>
+  </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/liens/libelle/</loc>
+  </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/finaliser/meta/</loc>
+  </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/presentation/police-caractere/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/motifs/stepper/</loc>
   </url><url>
@@ -20,7 +30,11 @@
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/tableaux/semantique-html-tableaux/</loc>
   </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/structure/</loc>
+  </url><url>
     <loc>https://sofeve-concept.github.io/coder/structure/</loc>
+  </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/structure/titraille/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/structure/code-base/</loc>
   </url><url>
@@ -28,7 +42,11 @@
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs/</loc>
   </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/couleur/information/</loc>
+  </url><url>
     <loc>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</loc>
+  </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/finaliser/export/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/structure/formatage/</loc>
   </url><url>
@@ -38,11 +56,19 @@
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/image-icone/images/</loc>
   </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/presentation/capitales-sigles/</loc>
+  </url><url>
     <loc>https://sofeve-concept.github.io/coder/navigation/lien-evitement/</loc>
+  </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/liens/telechargement/</loc>
+  </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/structure/listes/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/motifs/menu-de-navigation/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/motifs/menu-lateral-glissant/</loc>
+  </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/presentation/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/</loc>
   </url><url>
@@ -52,23 +78,39 @@
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/contenu/titraille/</loc>
   </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/structure/colonnes/</loc>
+  </url><url>
     <loc>https://sofeve-concept.github.io/coder/couleurs/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</loc>
+  </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/liens/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/navigation/menu-navigation/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/image-icone/police-icone/</loc>
   </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/presentation/saut-ligne/</loc>
+  </url><url>
     <loc>https://sofeve-concept.github.io/coder/contenu/texte/</loc>
   </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/presentation/alignement/</loc>
+  </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/structure/citation/</loc>
+  </url><url>
     <loc>https://sofeve-concept.github.io/coder/navigation/fil-ariane/</loc>
+  </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/images/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/contenu/liste/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/navigation/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/</loc>
+  </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/couleur/</loc>
+  </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/structure/langue/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/lien-bouton/</loc>
   </url><url>
@@ -79,6 +121,8 @@
     <loc>https://sofeve-concept.github.io/coder/image-icone/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/tableaux/</loc>
+  </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/finaliser/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/formulaire/</loc>
   </url><url>
@@ -96,13 +140,15 @@
   </url><url>
     <loc>https://sofeve-concept.github.io/motifs/accordeon/</loc>
   </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/</loc>
+  </url><url>
     <loc>https://sofeve-concept.github.io/motifs/carrousel/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/motifs/carte-cliquable/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/categories/</loc>
   </url><url>
-    <loc>https://sofeve-concept.github.io/coder/</loc>
+    <loc>https://sofeve-concept.github.io/motifs/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/tags/css/</loc>
   </url><url>
@@ -118,8 +164,6 @@
   </url><url>
     <loc>https://sofeve-concept.github.io/mentions-legales/</loc>
   </url><url>
-    <loc>https://sofeve-concept.github.io/motifs/</loc>
-  </url><url>
     <loc>https://sofeve-concept.github.io/motifs/onglets/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/404.html</loc>
@@ -132,5 +176,7 @@
     <loc>https://sofeve-concept.github.io/motifs/tableau-responsive/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/tags/</loc>
+  </url><url>
+    <loc>https://sofeve-concept.github.io/coder/</loc>
   </url>
 </urlset>

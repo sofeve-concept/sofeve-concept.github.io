@@ -35,6 +35,15 @@
     </item>
     
     <item>
+      <title>Contraste de couleur</title>
+      <link>https://sofeve-concept.github.io/bureautique/couleur/contraste/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/bureautique/couleur/contraste/</guid>
+      <description>Règles Le contraste entre le texte et la couleur de fond doit être suffisamment élevée. Le ratio de couleur minimum est de 4.</description>
+    </item>
+    
+    <item>
       <title>Fil d&#39;ariane</title>
       <link>https://sofeve-concept.github.io/motifs/ariane/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -53,12 +62,49 @@
     </item>
     
     <item>
+      <title>Image</title>
+      <link>https://sofeve-concept.github.io/bureautique/images/image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/bureautique/images/image/</guid>
+      <description>Règles Lorsque des images sont insérées dans le document, selon leur fonction (informatives, décoratives ou lien hypertexte), une alternative textuelle sera éventuellement proposée.</description>
+    </item>
+    
+    <item>
       <title>Les liens</title>
       <link>https://sofeve-concept.github.io/coder/lien-bouton/liens/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/lien-bouton/liens/</guid>
       <description>Règles d&amp;rsquo;implémentation d&amp;rsquo;un lien Les liens permettent de naviguer dans une page ou entre pages web.</description>
+    </item>
+    
+    <item>
+      <title>Libellé explicite</title>
+      <link>https://sofeve-concept.github.io/bureautique/liens/libelle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/bureautique/liens/libelle/</guid>
+      <description>Règles Le libellé d’un lien, c’est le texte du lien tel qu’il est affiché à l’écran.</description>
+    </item>
+    
+    <item>
+      <title>Métadonnées et méta-informations</title>
+      <link>https://sofeve-concept.github.io/bureautique/finaliser/meta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/bureautique/finaliser/meta/</guid>
+      <description>Règles Les métadonnées ou méta-informations fournissent des renseignements à propos d&amp;rsquo;autres données pour en faciliter la gestion et la compréhension du document.</description>
+    </item>
+    
+    <item>
+      <title>Police de caractère</title>
+      <link>https://sofeve-concept.github.io/bureautique/presentation/police-caractere/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/bureautique/presentation/police-caractere/</guid>
+      <description>Il existe 5 grandes catégories de police de caractères :
+les polices sérif (avec empattements) – exemple : times new roman, open sans ; les polices sans-sérif (linéales) – exemple arial, roboto ; les polices scriptes (ou cursives) – exemple segoe script ; les polices monospaces (dont la largeur de chaque caractère est identique) ; les polices symboliques ou décoratives – exemple webdings, wingdings.</description>
     </item>
     
     <item>
@@ -89,6 +135,15 @@
     </item>
     
     <item>
+      <title>Titraille</title>
+      <link>https://sofeve-concept.github.io/bureautique/structure/titraille/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/bureautique/structure/titraille/</guid>
+      <description>Règles Le contenu doit être structuré à l’aide des titres de niveau 1 à 6. La hiérarchie des titres doit être conservée ; il faut donc éviter de passer directement d’un titre 2 à un titre 4, par exemple.</description>
+    </item>
+    
+    <item>
       <title>Code HTML global</title>
       <link>https://sofeve-concept.github.io/coder/structure/code-base/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -108,12 +163,30 @@ Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page H
     </item>
     
     <item>
+      <title>Couleur et information</title>
+      <link>https://sofeve-concept.github.io/bureautique/couleur/information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/bureautique/couleur/information/</guid>
+      <description>Règles Il faut veiller à ce que les couleurs ne soient pas le seul moyen de véhiculer de l’information.</description>
+    </item>
+    
+    <item>
       <title>Étiquette de champ</title>
       <link>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</guid>
       <description>remarque Pour présenter l&#39;étiquette de champ, les exemples de cette page associent l&#39;étiquette à un champ de type `input`.</description>
+    </item>
+    
+    <item>
+      <title>Export au format PDF</title>
+      <link>https://sofeve-concept.github.io/bureautique/finaliser/export/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/bureautique/finaliser/export/</guid>
+      <description>Règles Les documents au format PDF doivent pouvoir être lus par un logiciel de synthèse vocale au même titre qu’un document bureautique.</description>
     </item>
     
     <item>
@@ -154,12 +227,40 @@ Image sans alternative textuelle Quand les images ou les icônes sont décorativ
     </item>
     
     <item>
+      <title>Lettres capitales et sigles</title>
+      <link>https://sofeve-concept.github.io/bureautique/presentation/capitales-sigles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/bureautique/presentation/capitales-sigles/</guid>
+      <description>Règles Le texte en lettres capitales sera réservé aux titres et aux sigles.
+Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</description>
+    </item>
+    
+    <item>
       <title>Lien d&#39;évitement</title>
       <link>https://sofeve-concept.github.io/coder/navigation/lien-evitement/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/navigation/lien-evitement/</guid>
       <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;un lien d’évitement ? Un lien d&amp;rsquo;évitement (ou lien de raccourci, lien d&amp;rsquo;accès rapide) est un lien qui permet d&amp;rsquo;accéder directement à une partie du document l&amp;rsquo;objectif est de permettre aux utilisateurs naviguant au clavier (dont notamment les utilisateurs de logiciel de synthèse vocale) d’accéder plus rapidement à des zones précises de la page sans dérouler la lecture des items précédents.</description>
+    </item>
+    
+    <item>
+      <title>Lien de téléchargement</title>
+      <link>https://sofeve-concept.github.io/bureautique/liens/telechargement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/bureautique/liens/telechargement/</guid>
+      <description>Règles Lorsque des liens qui permettent de télécharger directement des fichiers sont insérés dans les contenus, il est recommandé d’intégrer les informations suivantes dans l’intitulé du lien :</description>
+    </item>
+    
+    <item>
+      <title>Liste à puces et liste numérotée</title>
+      <link>https://sofeve-concept.github.io/bureautique/structure/listes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/bureautique/structure/listes/</guid>
+      <description>Règles Les mises en forme « Liste à puces » et « Listes numérotées » doivent être utilisées pour mettre en avant une énumération.</description>
     </item>
     
     <item>
@@ -217,6 +318,15 @@ Image sans alternative textuelle Quand les images ou les icônes sont décorativ
     </item>
     
     <item>
+      <title>Colonnes</title>
+      <link>https://sofeve-concept.github.io/bureautique/structure/colonnes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/bureautique/structure/colonnes/</guid>
+      <description>Règles Pour présenter du texte sur plusieurs colonnes, utiliser la fonctionnalité « Colonnes » prévue à cet effet ; ne pas utiliser les tableaux.</description>
+    </item>
+    
+    <item>
       <title>Image légendée</title>
       <link>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -245,12 +355,39 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
     </item>
     
     <item>
+      <title>Saut de ligne</title>
+      <link>https://sofeve-concept.github.io/bureautique/presentation/saut-ligne/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/bureautique/presentation/saut-ligne/</guid>
+      <description>Règles Pour espacer des paragraphes, ne pas utiliser des sauts de ligne multiple mais utiliser les propriétés d’espacement des paragraphes.</description>
+    </item>
+    
+    <item>
       <title>Texte</title>
       <link>https://sofeve-concept.github.io/coder/contenu/texte/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/contenu/texte/</guid>
       <description>Formatage du texte À faire Utiliser des tailles relatives pour les polices de caractères : (em, rem, %, small&amp;hellip;) Veiller à déclarer une interligne de 1,5 via la déclaration css line-height: 1.</description>
+    </item>
+    
+    <item>
+      <title>Alignement et indentation</title>
+      <link>https://sofeve-concept.github.io/bureautique/presentation/alignement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/bureautique/presentation/alignement/</guid>
+      <description>Règles Pour aligner des paragraphes ou effectuer des retraits, ne pas utiliser les touches « Entrée », « Tabulation » ou « Espace » mais utiliser les propriétés de formatage du paragraphe.</description>
+    </item>
+    
+    <item>
+      <title>Citations</title>
+      <link>https://sofeve-concept.github.io/bureautique/structure/citation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/bureautique/structure/citation/</guid>
+      <description>Règles Lorsque des citations sont proposées dans les contenus, utiliser le style « Citations » de Libre Office.</description>
     </item>
     
     <item>
@@ -278,6 +415,15 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
       
       <guid>https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/</guid>
       <description>Implémentation HTML Les champs de même nature sont regroupés et titré avec fieldset et legend</description>
+    </item>
+    
+    <item>
+      <title>Langue</title>
+      <link>https://sofeve-concept.github.io/bureautique/structure/langue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/bureautique/structure/langue/</guid>
+      <description>Règles Tout document doit avoir une langue principale déclarée. Si des paragraphes ou des portions de texte sont écrits dans une autre langue, il faudra veiller à déclarer le changement de langue.</description>
     </item>
     
     <item>
