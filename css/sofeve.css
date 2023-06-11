@@ -1123,8 +1123,6 @@ nav[role="navigation"].navbar ul button[aria-expanded='true'] + ul li a[aria-cur
   background-color: var(--LINK-color);
 }
 
-
-
 /********************************************
   MAIN
 *********************************************/
