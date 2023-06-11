@@ -44,7 +44,7 @@ function sandwitch() {
 
 }
 
-sandwitch()
+
 
 function menuEtSousMenuDeroulant() {
 
