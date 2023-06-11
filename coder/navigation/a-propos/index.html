@@ -36,7 +36,7 @@
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
 	</div>
 	<nav role='navigation' class="navbar" aria-label="Menu principal">
-		<button aria-expanded="false" id="hamburger" aria-controls="menu" onclick="hamburger(this)">
+		<button aria-expanded="false" id="hamburger" aria-controls="menu">
 		     <span class="sr-only">Menu</span>
 		</button>
 		<ul id="menu">
@@ -150,7 +150,7 @@
 		</ul>
 	</nav>	
 	<form action="/rechercher" method="GET" role="search" class="search">
-    <div class="fancy-input">
+    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" >
     </div>
@@ -289,15 +289,8 @@
 					
 					
 					<li>
-						<a href="https://sofeve-concept.github.io/coder/navigation/lien-acces-rapide/" >	
-							Lien d&#39;accès rapide
-						</a>
-					</li>
-					
-					
-					<li>
 						<a href="https://sofeve-concept.github.io/coder/navigation/lien-evitement/" >	
-							Lien d&#39;accès rapide
+							Lien d&#39;évitement
 						</a>
 					</li>
 					
@@ -381,7 +374,7 @@
                <h1>À propos de la navigation</h1>
                <p>Informations générales à savoir sur les systèmes de navigation</p>
                <div class="toc">
-               <h2>Dans cette rubrique</h2>
+               <h2><i class="fa fa-thumbtack fa-rotate-by" aria-hidden="true"></i>Dans cette rubrique</h2>
                <nav id="TableOfContents">
   <ul>
     <li><a href="#ce-quil-faut-retenir">Ce qu&rsquo;il faut retenir</a></li>
@@ -398,35 +391,45 @@
                </div>
 
                <h2 id="ce-quil-faut-retenir">Ce qu&rsquo;il faut retenir</h2>
-<p>Pour un site qui comporte plus de 5 pages différentes, il faut veiller à prévoir au moins 2 systèmes de navigation parmi :</p>
+<p>Pour un site qui comporte plus de 5 pages différentes, il faut veiller à prévoir au moins 2 systèmes de navigation parmi :</p>
 <ul>
 <li>Un menu de navigation et un plan du site</li>
 <li>Un menu de navigation et un moteur de recherche</li>
 </ul>
 <p>L&rsquo;apparence et le positionnement du menu principal doit être cohérent sur toutes les pages du site (placé au même endroit, visuel identique).</p>
 <h2 id="ordre-de-tabulation">Ordre de tabulation</h2>
-<p>Naviguez dans la page au clavier et assurez-vous que :</p>
+<p>Naviguez dans la page au clavier et assurez-vous que :</p>
 <ul>
-<li>L&rsquo;ordre de tabulation est cohérent ;</li>
-<li>la page ne comporte pas de piège au clavier (vérifiez les composants d&rsquo;interface riche tels que les fenêtres modales) ;</li>
-<li>le focus est bien visible ;</li>
+<li>L&rsquo;ordre de tabulation est cohérent </li>
+<li>la page ne comporte pas de piège au clavier (vérifiez les composants d&rsquo;interface riche tels que les fenêtres modales) </li>
+<li>le focus est bien visible </li>
 <li>les raccourcis clavier n’utilisant qu’une seule touche (lettre minuscule ou majuscule, ponctuation, chiffre ou symbole) sont contrôlables par l’utilisateur.</li>
 </ul>
 <h2 id="différencier-visuellement-la-position-courante">Différencier visuellement la position courante</h2>
-<p>Dans un menu de navigation principale ou secondaire, il faut veiller à indiquer la position courante pas uniquement par la couleur mais aussi par une autre mise en forme telle que : une mise en gras, une taille de police différente des items non actifs, de l&rsquo;italique&hellip;</p>
+<p>Dans un menu de navigation principale ou secondaire, il faut veiller à indiquer la position courante pas uniquement par la couleur mais aussi par une autre mise en forme telle que : une mise en gras, une taille de police différente des items non actifs, de l&rsquo;italique&hellip;</p>
 <h2 id="sémantique-html">Sémantique HTML</h2>
 <h3 id="dans-quel-cas-utiliser-lélément-html-navnbsp">Dans quel cas utiliser l&rsquo;élément html <code>nav</code> ?</h3>
 <p>Les menus de navigation seront implémentés avec l&rsquo;élément html <code>nav</code> auquel on pourra rajouter l&rsquo;attribut aria <code>role</code> : <code>&lt;nav role=&quot;navigation&quot;&gt;...&lt;/nav&gt;</code>.<br>
 À cette balise on posera aussi un attribut <code>aria-label</code> pour préciser de quel type de navigation il s&rsquo;agit. Exemple :</p>
 <ul>
-<li><code>&lt;nav role=&quot;navigation&quot; aria-label=&quot;Navigation principale&quot;&gt;...&lt;/nav&gt;</code>, pour le menu de navigation principal du site ;</li>
-<li><code>&lt;nav role=&quot;navigation&quot; aria-label=&quot;Navigation secondaire&quot;&gt;...&lt;/nav&gt;</code>, pour un menu de navigation secondaire ou contaxtuel ;</li>
-<li><code>&lt;nav role=&quot;navigation&quot; aria-label=&quot;Vous êtes ici : &quot;&gt;...&lt;/nav&gt;</code>, pour un fil d&rsquo;ariane ;</li>
-<li><code>&lt;nav role=&quot;navigation&quot; aria-label=&quot;Étapes de la démarche&quot;&gt;...&lt;/nav&gt;</code>, pour un processus par étapes.</li>
+<li>pour le menu de navigation principal du site :</li>
 </ul>
-<h3 id="dans-quel-cas-ne-pas-utiliser-lélément-html-navnbsp">Dans quel cas ne pas utiliser l&rsquo;élément html <code>nav</code> ?</h3>
-<p>Tous les groupes de liens d&rsquo;une page n&rsquo;ont pas besoin d&rsquo;être dans un élément de navigation — l&rsquo;élément est principalement destiné aux sections constituées de blocs de navigation majeurs. En particulier, il est courant que les pieds de page contiennent une courte liste de liens vers diverses pages d&rsquo;un site, telles que les conditions d&rsquo;utilisation, la page d&rsquo;accueil et une page de copyright. L&rsquo;élément de pied de page suffit à lui seul dans de tels cas ; bien qu&rsquo;un élément de navigation puisse être utilisé dans de tels cas, il est généralement inutile.</p>
-<p>L&rsquo;élément <code>nav</code>ne sera donc pas utilisé :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;navigation&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Navigation principale&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span></span></code></pre></div><ul>
+<li>pour un menu de navigation secondaire ou contextuel :</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;navigation&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Navigation secondaire&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span></span></code></pre></div><ul>
+<li>pour un fil d&rsquo;ariane :</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;navigation&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Vous êtes ici : &#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span></span></code></pre></div><ul>
+<li>pour un processus par étapes :</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;navigation&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Étapes de la démarche&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h3 id="dans-quel-cas-ne-pas-utiliser-lélément-html-navnbsp">Dans quel cas ne pas utiliser l&rsquo;élément html <code>nav</code> ?</h3>
+<p>Tous les groupes de liens d&rsquo;une page n&rsquo;ont pas besoin d&rsquo;être dans un élément de navigation  l&rsquo;élément est principalement destiné aux sections constituées de blocs de navigation majeurs. En particulier, il est courant que les pieds de page contiennent une courte liste de liens vers diverses pages d&rsquo;un site, telles que les conditions d&rsquo;utilisation, la page d&rsquo;accueil et une page de copyright. L&rsquo;élément de pied de page suffit à lui seul dans de tels cas : bien qu&rsquo;un élément de navigation puisse être utilisé dans de tels cas, il est généralement inutile.</p>
+<p>L&rsquo;élément <code>nav</code>ne sera donc pas utilisé :</p>
 <ul>
 <li>Pour présenter les liens inscrits dans la zone de pied de page <code>footer</code></li>
 <li>Pour présenter une collection de liens pointant vers d&rsquo;autres sites.</li>
@@ -468,13 +471,13 @@
  <script src="/js/script.js"></script>
  <script src="/js/utils.js"></script>
  
+ <script src="/js/clipboard.js"></script>
+
 <script src="/js/search.js"></script>
 	
 	
 
-<script>
-	sandwitch();
-</script>	
+
 
 </body>
 </html>

@@ -36,7 +36,7 @@
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
 	</div>
 	<nav role='navigation' class="navbar" aria-label="Menu principal">
-		<button aria-expanded="false" id="hamburger" aria-controls="menu" onclick="hamburger(this)">
+		<button aria-expanded="false" id="hamburger" aria-controls="menu">
 		     <span class="sr-only">Menu</span>
 		</button>
 		<ul id="menu">
@@ -150,7 +150,7 @@
 		</ul>
 	</nav>	
 	<form action="/rechercher" method="GET" role="search" class="search">
-    <div class="fancy-input">
+    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" >
     </div>
@@ -367,7 +367,7 @@
                <h1>Titraille</h1>
                <p>Afin de faciliter la navigation avec un synthétiquer vocal, il est important de structurer son texte à l&#39;aide de titres.</p>
                <div class="toc">
-               <h2>Dans cette rubrique</h2>
+               <h2><i class="fa fa-thumbtack fa-rotate-by" aria-hidden="true"></i>Dans cette rubrique</h2>
                <nav id="TableOfContents">
   <ul>
     <li><a href="#balises-de-titraille-éléments-html-h1-à-h6">Balises de titraille, éléments html <code>h1</code> à <code>h6</code></a></li>
@@ -384,7 +384,7 @@
 - <code>&lt;h5&gt;Titre de niveau 5&lt;/h5&gt;</code>
 - <code>&lt;h6&gt;Titre de niveau 6&lt;/h6&gt;</code></p>
 <ul>
-<li>La hiérarchie de titres sera logique et exhaustive ; on veillera notamment à ce qu&rsquo;il n&rsquo;y ait pas de &ldquo;trous&rdquo; entre les niveaux de titre (on passerait de h1 à h3, par exemple sans mettre de h2).</li>
+<li>La hiérarchie de titres sera logique et exhaustive  on veillera notamment à ce qu&rsquo;il n&rsquo;y ait pas de &ldquo;trous&rdquo; entre les niveaux de titre (on passerait de h1 à h3, par exemple sans mettre de h2).</li>
 <li>Les balises de titraille seront utilisées pour créer des titres et non pas à des fins de mise en forme ou de présentation du texte.</li>
 </ul>
 
@@ -428,9 +428,7 @@
 	
 	
 
-<script>
-	sandwitch();
-</script>	
+
 
 </body>
 </html>

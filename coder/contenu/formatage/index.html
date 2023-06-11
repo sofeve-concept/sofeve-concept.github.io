@@ -36,7 +36,7 @@
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
 	</div>
 	<nav role='navigation' class="navbar" aria-label="Menu principal">
-		<button aria-expanded="false" id="hamburger" aria-controls="menu" onclick="hamburger(this)">
+		<button aria-expanded="false" id="hamburger" aria-controls="menu">
 		     <span class="sr-only">Menu</span>
 		</button>
 		<ul id="menu">
@@ -150,7 +150,7 @@
 		</ul>
 	</nav>	
 	<form action="/rechercher" method="GET" role="search" class="search">
-    <div class="fancy-input">
+    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" >
     </div>
@@ -367,7 +367,7 @@
                <h1>Formatage du contenu</h1>
                <p>Bien structurer sa page et proposer un visuel homogène et cohérent entre les pages permet de faciliter la navigation et la compréhension du contenu du site.</p>
                <div class="toc">
-               <h2>Dans cette rubrique</h2>
+               <h2><i class="fa fa-thumbtack fa-rotate-by" aria-hidden="true"></i>Dans cette rubrique</h2>
                <nav id="TableOfContents">
   <ul>
     <li><a href="#les-points-essentiels-à-retenir">Les points essentiels à retenir</a>
@@ -427,7 +427,7 @@ Pour cela, utiliser l&rsquo;extension &ldquo;Web Developper&rdquo; préalablemen
 <li>Une image sera balisée par <code>&lt;img src=&quot;lien-vers-l-image/nom-de-l-image&quot; alt=&quot;&quot;&gt;</code></li>
 </ul>
 <h2 id="halte-au-détournement-de-code-">Halte au détournement de code !</h2>
-<p>Certains éléments HTML sont détournés de leur usage sémantique ; cela est bien entendu proscrit. Voivi les cas de &ldquo;détournement de code&rdquo; les plus fréquents.</p>
+<p>Certains éléments HTML sont détournés de leur usage sémantique  cela est bien entendu proscrit. Voivi les cas de &ldquo;détournement de code&rdquo; les plus fréquents.</p>
 <h3 id="confusion-entre-liens-et-boutons">Confusion entre liens et boutons</h3>
 <p>Il existe deux types de détournement de code :</p>
 <ul>
@@ -509,9 +509,7 @@ Comme vu au début de cette page, les balises <code>&lt;q&gt;...&lt;/q&gt;</code
 	
 	
 
-<script>
-	sandwitch();
-</script>	
+
 
 </body>
 </html>

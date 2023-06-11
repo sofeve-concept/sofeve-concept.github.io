@@ -1,24 +1,50 @@
-/**
- * Fonction pour afficher le sous-menu au clic de souris 
- * inspiré de : https://www.w3schools.com/howto/howto_js_dropdown.asp
- */
-
-
-
 function hamburger() {
-  var hamb = document.getElementById("hamburger");
-  let state = hamb.getAttribute('aria-expanded');
-  state === 'false' ? hamb.setAttribute('aria-expanded', 'true') : hamb.setAttribute('aria-expanded', 'false');
-}
+  var buttonHamburger = document.getElementById("hamburger");
+  buttonHamburger.addEventListener('click', function (e) {
+    let state = buttonHamburger.getAttribute('aria-expanded');
+    state === 'false' ? buttonHamburger.setAttribute('aria-expanded', 'true') : buttonHamburger.setAttribute('aria-expanded', 'false');
+  });  
 
-function sandwitch() {
-  var hamb = document.getElementById("sandwitch");
-  hamb.addEventListener('click', function (e) {
-    let state = hamb.getAttribute('aria-expanded');
-    state === 'false' ? hamb.setAttribute('aria-expanded', 'true') : hamb.setAttribute('aria-expanded', 'false');
+  document.addEventListener('keydown', evt => {
+    var isEchap = false;
+    if ("key" in evt) {
+      isEchap = (evt.key === "Escape" || evt.key === "Esc");
+    } else {
+      isEchap = (evt.keyCode === 27);
+    }
+    if (isEchap) {
+      buttonHamburger.setAttribute('aria-expanded', 'false') 
+      buttonHamburger.focus()
+        }
   });
 }
 
+hamburger()
+
+
+function sandwitch() {
+  var buttonSandwith = document.getElementById("sandwitch");
+  buttonSandwith.addEventListener('click', function (e) {
+    let state = buttonSandwith.getAttribute('aria-expanded');
+    state === 'false' ? buttonSandwith.setAttribute('aria-expanded', 'true') : buttonSandwith.setAttribute('aria-expanded', 'false');
+  });
+
+  document.addEventListener('keydown', evt => {
+    var isEchap = false;
+    if ("key" in evt) {
+      isEchap = (evt.key === "Escape" || evt.key === "Esc");
+    } else {
+      isEchap = (evt.keyCode === 27);
+    }
+    if (isEchap) {
+      buttonSandwith.setAttribute('aria-expanded', 'false') 
+      buttonSandwith.focus()
+        }
+  });
+
+}
+
+sandwitch()
 
 function menuEtSousMenuDeroulant() {
 
@@ -48,8 +74,7 @@ function menuEtSousMenuDeroulant() {
   }
 
   // disparition du sous-menu et focus sur le bouton correspondant au sous-menu
-  document.onkeydown = function (evt) {
-    evt = evt || window.event;
+  document.addEventListener('keydown', evt => {
     var isEchap = false;
     if ("key" in evt) {
       isEchap = (evt.key === "Escape" || evt.key === "Esc");
@@ -64,7 +89,7 @@ function menuEtSousMenuDeroulant() {
         }
       }
     }
-  };
+  });
 
 }
 menuEtSousMenuDeroulant()
@@ -112,16 +137,17 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 });
 
-/** */
+/** Placeholder */
 
-var fancyInputElements = document.querySelectorAll('.fancy-input input');
+var PlaceHolderInputElements = document.querySelectorAll('.champs input');
+const button = document.querySelector('button[type="reset"]');
 
-for (var i = 0; i < fancyInputElements.length; i++)
+for (var i = 0; i < PlaceHolderInputElements.length; i++)
 {
-	scaleLabel(fancyInputElements[i], true);
-	
-	fancyInputElements[i].addEventListener('focus', function () { scaleLabel(this, false) });
-	fancyInputElements[i].addEventListener('blur', function () { scaleLabel(this, true) });
+	scaleLabel(PlaceHolderInputElements[i], true);
+	PlaceHolderInputElements[i].addEventListener('focus', function () { scaleLabel(this, false) });
+	PlaceHolderInputElements[i].addEventListener('blur', function () { scaleLabel(this, true) });
+  button.addEventListener('click', function () { scaleLabel(this, true) });
 }
 
 function scaleLabel(element, isLikePlaceholder)
@@ -138,6 +164,7 @@ function scaleLabel(element, isLikePlaceholder)
 		element.parentNode.querySelector('label').classList.remove('like-placeholder');
 	}
 }
+
 /************************************* DIALOG ***********************************/
 /*
  *   This content is licensed according to the W3C Software License at

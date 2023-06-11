@@ -36,7 +36,7 @@
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
 	</div>
 	<nav role='navigation' class="navbar" aria-label="Menu principal">
-		<button aria-expanded="false" id="hamburger" aria-controls="menu" onclick="hamburger(this)">
+		<button aria-expanded="false" id="hamburger" aria-controls="menu">
 		     <span class="sr-only">Menu</span>
 		</button>
 		<ul id="menu">
@@ -150,7 +150,7 @@
 		</ul>
 	</nav>	
 	<form action="/rechercher" method="GET" role="search" class="search">
-    <div class="fancy-input">
+    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" >
     </div>
@@ -360,7 +360,7 @@
                <h1>Tableaux accessibles</h1>
                <p>Selon que le tableau sert à la présentation ou à présenter des données, la façon de coder sera différente.</p>
                <div class="toc">
-               <h2>Dans cette rubrique</h2>
+               <h2><i class="fa fa-thumbtack fa-rotate-by" aria-hidden="true"></i>Dans cette rubrique</h2>
                <nav id="TableOfContents">
   <ul>
     <li><a href="#ce-quil-faut-retenir">Ce qu&rsquo;il faut retenir</a></li>
@@ -400,9 +400,9 @@ Aujourd&rsquo;hui, les tableaux servent de moins en moins à cela mais dans le c
 </span></span></code></pre></div><h2 id="tableaux-de-données">Tableaux de données</h2>
 <p>Les tableaux de données devront respecter les règles d&rsquo;accessibilité suivantes :</p>
 <ul>
-<li>Le tableau de données aura un titre, celui-ci doit être balisé avec l&rsquo;élément HTML <code>&lt;caption&gt;</code> ;</li>
-<li>Les lignes d&rsquo;entête seront encadrées par les balises <code>&lt;thead&gt;...&lt;/thead&gt;</code> ;</li>
-<li>Les lignes de données seront encadrées par les balises <code>&lt;tbody&gt;...&lt;/tbody&gt;</code> ;</li>
+<li>Le tableau de données aura un titre, celui-ci doit être balisé avec l&rsquo;élément HTML <code>&lt;caption&gt;</code> </li>
+<li>Les lignes d&rsquo;entête seront encadrées par les balises <code>&lt;thead&gt;...&lt;/thead&gt;</code> </li>
+<li>Les lignes de données seront encadrées par les balises <code>&lt;tbody&gt;...&lt;/tbody&gt;</code> </li>
 <li>Les cellules d&rsquo;entête de ligne et de colonne seront encadrées par les balises <code>&lt;th&gt;...&lt;/th&gt;</code>.</li>
 </ul>
 <h3 id="tableau-de-données-simple">Tableau de données simple</h3>
@@ -677,9 +677,7 @@ Aujourd&rsquo;hui, les tableaux servent de moins en moins à cela mais dans le c
 	
 	
 
-<script>
-	sandwitch();
-</script>	
+
 
 </body>
 </html>

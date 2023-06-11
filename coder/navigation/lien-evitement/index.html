@@ -7,8 +7,8 @@
 	
 	
 	
-	<title>Lien d&#39;accès rapide - Navigation	- Coder accessible - Sofève Concept</title>
-	<meta name="description" content="Le lien d&#39;accès rapide est un lien d’évitement qui permet d’accéder directement à la zone de contenu principal de la page afin d&#39;optimiser la navigation au clavier.">
+	<title>Lien d&#39;évitement - Navigation	- Coder accessible - Sofève Concept</title>
+	<meta name="description" content="Le lien d&#39;évitement ou lien d&#39;accès rapide permet d’accéder directement à la zone de contenu principal de la page afin d&#39;optimiser la navigation au clavier.">
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
     <meta property="og:type" content="website" />
@@ -36,7 +36,7 @@
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
 	</div>
 	<nav role='navigation' class="navbar" aria-label="Menu principal">
-		<button aria-expanded="false" id="hamburger" aria-controls="menu" onclick="hamburger(this)">
+		<button aria-expanded="false" id="hamburger" aria-controls="menu">
 		     <span class="sr-only">Menu</span>
 		</button>
 		<ul id="menu">
@@ -150,7 +150,7 @@
 		</ul>
 	</nav>	
 	<form action="/rechercher" method="GET" role="search" class="search">
-    <div class="fancy-input">
+    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" >
     </div>
@@ -212,7 +212,7 @@
   
   
   <li aria-current="page" tabindex="-1">
-    Lien d&#39;accès rapide
+    Lien d&#39;évitement
   </li>
   
 
@@ -289,15 +289,8 @@
 					
 					
 					<li>
-						<a href="https://sofeve-concept.github.io/coder/navigation/lien-acces-rapide/"  aria-current="page" >	
-							Lien d&#39;accès rapide
-						</a>
-					</li>
-					
-					
-					<li>
 						<a href="https://sofeve-concept.github.io/coder/navigation/lien-evitement/"  aria-current="page" >	
-							Lien d&#39;accès rapide
+							Lien d&#39;évitement
 						</a>
 					</li>
 					
@@ -378,10 +371,10 @@
                
                </aside>
           <section class="item-80 rubCode">
-               <h1>Lien d&#39;accès rapide</h1>
-               <p>Le lien d&#39;accès rapide est un lien d’évitement qui permet d’accéder directement à la zone de contenu principal de la page afin d&#39;optimiser la navigation au clavier.</p>
+               <h1>Lien d&#39;évitement</h1>
+               <p>Le lien d&#39;évitement ou lien d&#39;accès rapide permet d’accéder directement à la zone de contenu principal de la page afin d&#39;optimiser la navigation au clavier.</p>
                <div class="toc">
-               <h2>Dans cette rubrique</h2>
+               <h2><i class="fa fa-thumbtack fa-rotate-by" aria-hidden="true"></i>Dans cette rubrique</h2>
                <nav id="TableOfContents">
   <ul>
     <li><a href="#quest-ce-quun-lien-dévitementnbsp">Qu&rsquo;est-ce qu&rsquo;un lien d’évitement ?</a>
@@ -400,16 +393,16 @@
                </div>
 
                <h2 id="quest-ce-quun-lien-dévitementnbsp">Qu&rsquo;est-ce qu&rsquo;un lien d’évitement ?</h2>
-<p>Un lien d&rsquo;évitement (ou lien de raccourci, lien d&rsquo;accès rapide) est un lien qui permet d&rsquo;accéder directement à une partie du document ; l&rsquo;objectif est de permettre aux utilisateurs naviguant au clavier (dont notamment les utilisateurs de logiciel de synthèse vocale) d’accéder plus rapidement à des zones précises de la page sans dérouler la lecture des items précédents.</p>
+<p>Un lien d&rsquo;évitement (ou lien de raccourci, lien d&rsquo;accès rapide) est un lien qui permet d&rsquo;accéder directement à une partie du document  l&rsquo;objectif est de permettre aux utilisateurs naviguant au clavier (dont notamment les utilisateurs de logiciel de synthèse vocale) d’accéder plus rapidement à des zones précises de la page sans dérouler la lecture des items précédents.</p>
 <p>Il existe 3 sortes de liens d&rsquo;évitement :</p>
 <ul>
-<li>Le lien dit &ldquo;d&rsquo;accès rapide&rdquo; : présenté en haut de page, ce doit être le premier lien accessible au clavier. Ce lien peut être masqué par défaut et apparaitre lorsqu&rsquo;il reçoit le focus (navigation clavier) ;</li>
-<li>le lien d’évitement placé dans le corps du document. Il sera placé avant la zone de la page qu&rsquo;il propose d&rsquo;éviter. La plupart du temps, ce lien se pose avec un intitulé du type &ldquo;Passer la section&rdquo;, &ldquo;Passer la partie xxx&rdquo; ;</li>
+<li>Le lien dit &ldquo;d&rsquo;accès rapide&rdquo; : présenté en haut de page, ce doit être le premier lien accessible au clavier. Ce lien peut être masqué par défaut et apparaitre lorsqu&rsquo;il reçoit le focus (navigation clavier) </li>
+<li>le lien d’évitement placé dans le corps du document. Il sera placé avant la zone de la page qu&rsquo;il propose d&rsquo;éviter. La plupart du temps, ce lien se pose avec un intitulé du type &ldquo;Passer la section&rdquo;, &ldquo;Passer la partie xxx&rdquo; </li>
 <li>le lien de navigation interne à la page, typiquement un lien de table des matières ou un lien de retour en haut de page.</li>
 </ul>
 <h3 id="règles-dimplémentation-dun-lien-dévitement">Règles d’implémentation d’un lien d&rsquo;évitement</h3>
 <p>Un lien d&rsquo;évitement se pose toujours vers une ancre nommée dans le document.
-<code>&lt;a class=&quot;evitement&quot; href=&quot;#top&quot;&gt;Haut de page&lt;/a&gt;</code></p>
+<code>&lt;a class=&quot;evitement&quot; href=&quot;#contenu&quot;&gt;Aller au contenu&lt;/a&gt; </code></p>
 <h2 id="implémentation-dun-lien-daccès-rapide-masqué-par-défaut">Implémentation d&rsquo;un lien d&rsquo;accès rapide masqué par défaut</h2>
 <h3 id="code-html-partiel">Code HTML partiel</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
@@ -472,9 +465,7 @@
 	
 	
 
-<script>
-	sandwitch();
-</script>	
+
 
 </body>
 </html>

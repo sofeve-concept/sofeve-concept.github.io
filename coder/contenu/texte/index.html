@@ -36,7 +36,7 @@
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
 	</div>
 	<nav role='navigation' class="navbar" aria-label="Menu principal">
-		<button aria-expanded="false" id="hamburger" aria-controls="menu" onclick="hamburger(this)">
+		<button aria-expanded="false" id="hamburger" aria-controls="menu">
 		     <span class="sr-only">Menu</span>
 		</button>
 		<ul id="menu">
@@ -150,7 +150,7 @@
 		</ul>
 	</nav>	
 	<form action="/rechercher" method="GET" role="search" class="search">
-    <div class="fancy-input">
+    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" >
     </div>
@@ -367,7 +367,7 @@
                <h1>Texte</h1>
                <p>Quelques règles en matière de formatage du texte sont à respecter pour faciliter l&#39;accessibilité numérique de sa page.</p>
                <div class="toc">
-               <h2>Dans cette rubrique</h2>
+               <h2><i class="fa fa-thumbtack fa-rotate-by" aria-hidden="true"></i>Dans cette rubrique</h2>
                <nav id="TableOfContents">
   <ul>
     <li><a href="#formatage-du-texte">Formatage du texte</a>
@@ -385,20 +385,20 @@
                <h2 id="formatage-du-texte">Formatage du texte</h2>
 <h3 id="agrave-faire">À faire</h3>
 <ul>
-<li>Utiliser des tailles relatives pour les polices de caractères : (em, rem, %, small&hellip;) ;</li>
-<li>Veiller à déclarer une interligne de 1,5 via la déclaration css <code>line-height: 1.5;</code> ;</li>
-<li>Utiliser la balise <code>&lt;strong&gt;...&lt;/strong&gt;</code> pour signaler du contenu important et non pas pour mettre du texte en gras. Dans ce cas, on utilisera plutôt la déclaration css <code>font-weight: bold;</code> ;</li>
+<li>Utiliser des tailles relatives pour les polices de caractères : (em, rem, %, small&hellip;) </li>
+<li>Veiller à déclarer une interligne de 1,5 via la déclaration css <code>line-height: 1.5;</code> </li>
+<li>Utiliser la balise <code>&lt;strong&gt;...&lt;/strong&gt;</code> pour signaler du contenu important et non pas pour mettre du texte en gras. Dans ce cas, on utilisera plutôt la déclaration css <code>font-weight: bold;</code> </li>
 </ul>
 <h3 id="agrave-ne-pas-faire">À ne pas faire</h3>
 <ul>
-<li>Utiliser les balises de titraille à des fins de mise en forme ;</li>
-<li>Justifier le texte - cela rend la lecture très difficile pour les personnes dyslexiques ;</li>
-<li>Écrire tout en majuscules - on utilisera plutôt la déclaration CSS <code>text-transform: uppercase;</code> ; et le &ldquo;tout majuscules&rdquo; sera réservé à des portions de texte très courtes ou aux titres ;</li>
-<li>Utiliser la balise <code>&lt;br&gt;</code> (ou pire plusieurs fois cette balise) pour espacer une ligne ; de même on n&rsquo;utilisera pas des balises de parapgraphes vides <code>&lt;p&gt;&lt;/p&gt;</code> pour espacer les lignes. Au lieu de cela, on utilisera des styles CSS avec des déclarations du type <code>margin-bottom: 1.5rem;</code> ;</li>
+<li>Utiliser les balises de titraille à des fins de mise en forme </li>
+<li>Justifier le texte - cela rend la lecture très difficile pour les personnes dyslexiques </li>
+<li>Écrire tout en majuscules - on utilisera plutôt la déclaration CSS <code>text-transform: uppercase;</code>  et le &ldquo;tout majuscules&rdquo; sera réservé à des portions de texte très courtes ou aux titres </li>
+<li>Utiliser la balise <code>&lt;br&gt;</code> (ou pire plusieurs fois cette balise) pour espacer une ligne  de même on n&rsquo;utilisera pas des balises de parapgraphes vides <code>&lt;p&gt;&lt;/p&gt;</code> pour espacer les lignes. Au lieu de cela, on utilisera des styles CSS avec des déclarations du type <code>margin-bottom: 1.5rem;</code> </li>
 </ul>
 <h2 id="citations">Citations</h2>
 <ul>
-<li>Un bloc complet de citation sera inséré entre les balises <code>&lt;blokquote&gt;...&lt;/blokquote&gt;</code> ;</li>
+<li>Un bloc complet de citation sera inséré entre les balises <code>&lt;blokquote&gt;...&lt;/blokquote&gt;</code> </li>
 <li>Un extrait de citation, à l&rsquo;intérieur d&rsquo;un paragraphe, sera inséré entre les balises <code>&lt;q&gt;...&lt;/q&gt;</code>.</li>
 <li>L&rsquo;élément <code>&lt;cite&gt;</code> contiendra le titre d&rsquo;une œuvre telle qu&rsquo;un livre, une chanson, un film, une sculpture&hellip;</li>
 </ul>
@@ -415,7 +415,7 @@ Exemple :</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Nous allons maintenant aborder des notions de <span class="p">&lt;</span><span class="nt">span</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>design thinking<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </span></span></code></pre></div><ul>
-<li>De même, en cas de changment de sens de lecture (le document se lit de gauche à droite et une portion de texte se lit de droite à gauche, par exemple) ; ce changement de sens de lecture sera mentionné via l&rsquo;attribut <code>dir</code>.</li>
+<li>De même, en cas de changment de sens de lecture (le document se lit de gauche à droite et une portion de texte se lit de droite à gauche, par exemple)  ce changement de sens de lecture sera mentionné via l&rsquo;attribut <code>dir</code>.</li>
 </ul>
 
           </section>
@@ -460,9 +460,7 @@ Exemple :</li>
 	
 	
 
-<script>
-	sandwitch();
-</script>	
+
 
 </body>
 </html>

@@ -36,7 +36,7 @@
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
 	</div>
 	<nav role='navigation' class="navbar" aria-label="Menu principal">
-		<button aria-expanded="false" id="hamburger" aria-controls="menu" onclick="hamburger(this)">
+		<button aria-expanded="false" id="hamburger" aria-controls="menu">
 		     <span class="sr-only">Menu</span>
 		</button>
 		<ul id="menu">
@@ -150,7 +150,7 @@
 		</ul>
 	</nav>	
 	<form action="/rechercher" method="GET" role="search" class="search">
-    <div class="fancy-input">
+    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" >
     </div>
@@ -374,7 +374,7 @@
                <h1>Sémantique HTML</h1>
                <p>Les formulaires HTML permettent d&#39;envoyer des données qui seront ensuite traitées côté serveur.</p>
                <div class="toc">
-               <h2>Dans cette rubrique</h2>
+               <h2><i class="fa fa-thumbtack fa-rotate-by" aria-hidden="true"></i>Dans cette rubrique</h2>
                <nav id="TableOfContents">
   <ul>
     <li><a href="#ce-quil-faut-retenir">Ce qu&rsquo;il faut retenir</a></li>
@@ -462,7 +462,7 @@
 <h2 id="cas-des-formulaire-à-étapes-multiples">Cas des formulaire à étapes multiples</h2>
 <p>Lors d&rsquo;un formulaire à étapes multiples (étapes de passage de commande, par exemple), il faudra :</p>
 <ul>
-<li>Prévoir la mise en place d&rsquo;une navigation du processus à étape (tunnel) avec l&rsquo;élément HTML <code>nav</code> ;</li>
+<li>Prévoir la mise en place d&rsquo;une navigation du processus à étape (tunnel) avec l&rsquo;élément HTML <code>nav</code> </li>
 <li>Identifier l’étape courante avec &lt;aria-current=&ldquo;step&rdquo;&gt;</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Étapes de votre commande&#34;</span><span class="p">&gt;</span>
@@ -515,9 +515,7 @@
 	
 	
 
-<script>
-	sandwitch();
-</script>	
+
 
 </body>
 </html>

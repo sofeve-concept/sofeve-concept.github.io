@@ -36,7 +36,7 @@
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
 	</div>
 	<nav role='navigation' class="navbar" aria-label="Menu principal">
-		<button aria-expanded="false" id="hamburger" aria-controls="menu" onclick="hamburger(this)">
+		<button aria-expanded="false" id="hamburger" aria-controls="menu">
 		     <span class="sr-only">Menu</span>
 		</button>
 		<ul id="menu">
@@ -150,7 +150,7 @@
 		</ul>
 	</nav>	
 	<form action="/rechercher" method="GET" role="search" class="search">
-    <div class="fancy-input">
+    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" >
     </div>
@@ -289,15 +289,8 @@
 					
 					
 					<li>
-						<a href="https://sofeve-concept.github.io/coder/navigation/lien-acces-rapide/" >	
-							Lien d&#39;accès rapide
-						</a>
-					</li>
-					
-					
-					<li>
 						<a href="https://sofeve-concept.github.io/coder/navigation/lien-evitement/" >	
-							Lien d&#39;accès rapide
+							Lien d&#39;évitement
 						</a>
 					</li>
 					
@@ -381,7 +374,7 @@
                <h1>Fil d&#39;Ariane</h1>
                <p>Dans le monde du web, le fil d&#39;Ariane désigne un système d&#39;aide à la navigation qui décrit l&#39;arborescence des menus parcourus.</p>
                <div class="toc">
-               <h2>Dans cette rubrique</h2>
+               <h2><i class="fa fa-thumbtack fa-rotate-by" aria-hidden="true"></i>Dans cette rubrique</h2>
                <nav id="TableOfContents">
   <ul>
     <li><a href="#quest-ce-quun-fil-darianenbsp">Qu&rsquo;est-ce qu&rsquo;un fil d&rsquo;Ariane ?</a></li>
@@ -402,10 +395,10 @@
 <p>Dans le monde du web, le fil d&rsquo;Ariane désigne un système d&rsquo;aide à la navigation qui décrit l&rsquo;arborescence des menus parcourus pour afficher la page sur laquelle l&rsquo;internaute se trouve.</p>
 <h2 id="règles-dimplémentation-dun-fil-dariane">Règles d&rsquo;implémentation d&rsquo;un fil d&rsquo;Ariane</h2>
 <ul>
-<li><strong>Pas de fil d&rsquo;Ariane sur la page d&rsquo;accueil</strong> ;</li>
-<li>Le fil d&rsquo;Ariane doit toujours être situé au même endroit quelque soit la page affichée ;</li>
-<li>Le fil d&rsquo;Ariane doit précéder le contenu de la page ;</li>
-<li>Le fil d&rsquo;Ariane doit proposer des liens cliquables permettant de remonter dans l&rsquo;arborescence du  site ;</li>
+<li><strong>Pas de fil d&rsquo;Ariane sur la page d&rsquo;accueil</strong> </li>
+<li>Le fil d&rsquo;Ariane doit toujours être situé au même endroit quelque soit la page affichée </li>
+<li>Le fil d&rsquo;Ariane doit précéder le contenu de la page </li>
+<li>Le fil d&rsquo;Ariane doit proposer des liens cliquables permettant de remonter dans l&rsquo;arborescence du  site </li>
 <li>Idéalement, le dernier item du fil d&rsquo;Ariane n&rsquo;est pas cliquable et doit se différencier visuellement des autres items.</li>
 </ul>
 <h2 id="règles-daccessibilité-du-fil-dariane">Règles d&rsquo;accessibilité du fil d&rsquo;Ariane</h2>
@@ -416,7 +409,7 @@ On pourra rajouter un attribut <code>aria-label</code> pour préciser qu&rsquo;i
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;navigation&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Vous êtes ici&#34;</span><span class="p">&gt;</span>[…]<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
 </span></span></code></pre></div><ul>
 <li>Les différents items du fil d&rsquo;Ariane seront proposés sous forme de liste ordonnée <code>ol</code> (puisque l&rsquo;ordre des items a de l&rsquo;importance).</li>
-<li>La position courante (page sur laquelle l&rsquo;internaute se trouve) sera identifée par l&rsquo;attribut <code>aria-current=&quot;page&quot;</code> ; sans lien posé sur l&rsquo;item.</li>
+<li>La position courante (page sur laquelle l&rsquo;internaute se trouve) sera identifée par l&rsquo;attribut <code>aria-current=&quot;page&quot;</code>  sans lien posé sur l&rsquo;item.</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;navigation&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Vous êtes ici&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
@@ -554,9 +547,7 @@ On pourra rajouter un attribut <code>aria-label</code> pour préciser qu&rsquo;i
 	
 	
 
-<script>
-	sandwitch();
-</script>	
+
 
 </body>
 </html>

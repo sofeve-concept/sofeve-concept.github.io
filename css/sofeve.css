@@ -4,6 +4,7 @@
     "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   --FONT-FAMILY-title: "Righteous", cursive;
   --FONT-SYMBOLIC: "Font Awesome 6 Free";
+  --fa-rotate-angle: 30deg;
   --WHITE-color: #ffffff;
   --WHITE-SOFT-color: #f8f8f8;
   --HARMONIE-GRAY-SWEET-color: #e3e3e3;
@@ -26,8 +27,8 @@
   /** Construction de l'harmonie - contraste noir */
   --BLACK-color: #161616;
   --HARMONIE-color: #027dc7;
-  --HARMONIE-LIGHT-color: #7ca6da;
-  --HARMONIE-SWEET-color: #9fbbe3;
+  --HARMONIE-LIGHT-color: #9fbbe3;
+  --HARMONIE-SWEET-color: #E3EBF7;
   --HARMONIE-GOLD-color: #f9c233;
   --HARMONIE-GOLD-SWEET-color: #FDEDC4;
   --HARMONIE-GREEN-color: #79b50d;
@@ -608,7 +609,6 @@ code {
   color: #abb2bf;
   background: #181a15;
   padding: 0 0.25em;
-  vertical-align: bottom;
 }
 
 code,
@@ -617,7 +617,9 @@ pre,
 samp {
   font-family: "Consolas", menlo, monospace;
 }
-
+pre {
+  overflow: auto; 
+}
 .highlight {
   margin-top: 0;
   margin-bottom: 2em;
@@ -977,10 +979,8 @@ nav[role="navigation"].navbar  button#hamburger {
 }
 
 nav[role="navigation"].navbar button#hamburger::before {
-  --icon-size: 1.5rem;
   font-family: 'FontAwesome';
   content: "\f0c9";
-  
 }
 nav[role="navigation"].navbar ul {
   margin: 0;
@@ -1033,20 +1033,10 @@ nav[role="navigation"].navbar ul li button {
 }
 
 nav[role="navigation"].navbar ul li button::after {
-  --icon-size: 1.25rem;
-  background-color: currentColor;
-  content: "";
+  font-family: 'FontAwesome';
+  content: "\f078";
   float: right;
-  height: var(--icon-size);
-  margin-left: .5rem;
-  margin-right: 0;
-  -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTEyIDEzLjE3Mmw0Ljk1LTQuOTUgMS40MTQgMS40MTRMMTIgMTYgNS42MzYgOS42MzYgNy4wNSA4LjIyMmw0Ljk1IDQuOTV6Ii8+PC9zdmc+);
-  mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTEyIDEzLjE3Mmw0Ljk1LTQuOTUgMS40MTQgMS40MTRMMTIgMTYgNS42MzYgOS42MzYgNy4wNSA4LjIyMmw0Ljk1IDQuOTV6Ii8+PC9zdmc+);
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
-  transition: transform .3s;
-  vertical-align: calc(.375em - var(--icon-size)*0.5);
-  width: var(--icon-size);
+  padding-left: .5em;
 }
 
 nav[role="navigation"].navbar ul li a:hover,
@@ -1321,7 +1311,6 @@ h4 code {
 .container {
   padding: 0 var(--MARGE-Y);
 }
-
 .border {
   border: 1px solid red;
 }
@@ -1974,7 +1963,7 @@ div.extrait {
 }
 
 .card:hover {
-  background-color: var(--HARMONIE-SWEET-color);
+  background-color: var(--HARMONIE-LIGHT-color);
 }
 .card.no-hover:hover {
   background-color: var(--WHITE-color);
@@ -2141,28 +2130,32 @@ table th {
 /** TableOfContents  */
 .toc h2 {
   font-size: 1.5em;
-  padding-left: 1em;
+  padding-left: .25em;
   margin-bottom: 0 !important;
   text-shadow: none;
-  color: var(--WHITE-color);
-  background-color: var(--HARMONIE-GRAY-DARK-color);
-  border-radius: .25em .25em 0 0;
+  color: var(--HARMONIE-BASE-color);
+  background-color: var(--HARMONIE-LIGHT-color);
+  border-left: 0.25rem solid var(--HARMONIE-LIGHT-color);
 }
-
+.toc h2 i {
+  margin: 0 .5em 0 0;
+}
 .toc h2::after {
   width: 0;
   height: 0;
 }
 
 #TableOfContents {
-  padding: 1em 1em 0 3em;
+  padding: 1em ;
   margin-bottom: 3em;
-  background-color: var(--HARMONIE-GRAY-SWEET-color);
-  border: 0.25rem solid var(--HARMONIE-GRAY-DARK-color);
+  background-color: var(--HARMONIE-SWEET-color);
+  border: 1px solid var(--HARMONIE-LIGHT-color);
+  border-left: 0.5rem solid var(--HARMONIE-LIGHT-color);
 }
 #TableOfContents ul {
   margin:0;
   padding: 0;
+  list-style: none;
 }
 #TableOfContents li:last-of-type {
   margin-bottom:0;
@@ -2345,13 +2338,13 @@ form[role="search"] {
 }
 
 
-.fancy-input
+.champs
 {
 	display: inline-block;
 	position: relative;
 }
 
-.fancy-input label
+.champs label
 {
 	position: absolute;
 	left: 0.5em;
@@ -2364,7 +2357,7 @@ form[role="search"] {
 	transition: transform 0.15s ease;
 }
 
-.fancy-input label.like-placeholder
+.champs label.like-placeholder
 {
 	transform: scale(1.25);
   top:-.25em;
@@ -2372,7 +2365,7 @@ form[role="search"] {
 	background-color: var(--HARMONIE-DARK-color);
 }
 
-.fancy-input input
+.champs input
 {
 	font: 1em;
 	padding: 0.75em 0.5em .75em .5em;
@@ -2383,7 +2376,7 @@ form[role="search"] {
   width: 200px;
 }
 
-.fancy-input input:focus
+.champs input:focus
 {
 	border: 3px solid var(--HARMONIE-GOLD-color);
   outline: 0;
@@ -2418,11 +2411,11 @@ outline: 0;
   background-color: var(--HARMONIE-DARK-color);
   border: 0;
 }
-.pageRecherche .fancy-input label {
+.pageRecherche .champs label {
 	left: 0.25em;
 	top: -.75em;
 }
-.pageRecherche .fancy-input label.like-placeholder
+.pageRecherche .champs label.like-placeholder
 {
 	transform: scale(1.25);
   top: -.25em;
@@ -2712,9 +2705,6 @@ outline: 0;
   footer[role="contentinfo"] .pied ul:not(:first-of-type) {
     flex-direction: column;
   }
-}
-
-@media screen and (width <=576px) {
   #www h2 {
     font-size: 1.75em;
   }
@@ -2728,8 +2718,20 @@ outline: 0;
 
   header[role="banner"] nav[role="navigation"] {
     flex: auto 1 0;
+   
   }
-
+  header[role="banner"] nav[role="navigation"].navbar li,
+  header[role="banner"] nav[role="navigation"].navbar li a,
+  header[role="banner"] nav[role="navigation"].navbar ul li a[aria-current="page"], 
+  header[role="banner"] nav[role="navigation"].navbar li button 
+  {
+    font-size: .95em;
+  }
+  nav[role="navigation"].navbar ul button[aria-expanded="true"] + ul li,
+  nav[role="navigation"].navbar ul button[aria-expanded="true"] + ul li a
+   {
+    padding: 0.25rem;
+  }
   .ariane ol {
     flex-wrap: wrap;
   }

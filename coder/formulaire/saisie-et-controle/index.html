@@ -36,7 +36,7 @@
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
 	</div>
 	<nav role='navigation' class="navbar" aria-label="Menu principal">
-		<button aria-expanded="false" id="hamburger" aria-controls="menu" onclick="hamburger(this)">
+		<button aria-expanded="false" id="hamburger" aria-controls="menu">
 		     <span class="sr-only">Menu</span>
 		</button>
 		<ul id="menu">
@@ -150,7 +150,7 @@
 		</ul>
 	</nav>	
 	<form action="/rechercher" method="GET" role="search" class="search">
-    <div class="fancy-input">
+    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" >
     </div>
@@ -374,7 +374,7 @@
                <h1>Saisie et contrôle du formulaire</h1>
                <p>La mise en place d&#39;aide à la saisie et la gestion des erreurs doivent respecter des règles d&#39;accessibilité.</p>
                <div class="toc">
-               <h2>Dans cette rubrique</h2>
+               <h2><i class="fa fa-thumbtack fa-rotate-by" aria-hidden="true"></i>Dans cette rubrique</h2>
                <nav id="TableOfContents">
   <ul>
     <li><a href="#champ-obligatoire">Champ obligatoire</a></li>
@@ -401,13 +401,13 @@ Le champ obligatoire sera codé avec l&rsquo;attribut <code>required</code>.</p>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;date&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;date&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;date&#34;</span> <span class="na">required</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">...
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
-</span></span></code></pre></div><p><em>Remarque : le <code>type=&quot;date&quot;</code> utilise la calendrier cliquable natif du navigateur ; plus besoin d&rsquo;avoir recours à une librairie javascript comme c&rsquo;était le cas en HTML 4</em></p>
+</span></span></code></pre></div><p><em>Remarque : le <code>type=&quot;date&quot;</code> utilise la calendrier cliquable natif du navigateur  plus besoin d&rsquo;avoir recours à une librairie javascript comme c&rsquo;était le cas en HTML 4</em></p>
 <h2 id="aide-à-la-saisie">Aide à la saisie</h2>
 <h3 id="généralités">Généralités</h3>
 <p>Les aides à la saisie :</p>
 <ul>
-<li>sont intégrées directement dans les balises <label> ;</li>
-<li>permettent de connaître le format de saisie attendu (ex: 25/11/1987) ;</li>
+<li>sont intégrées directement dans les balises <label> </li>
+<li>permettent de connaître le format de saisie attendu (ex: 25/11/1987) </li>
 <li>permettent de connaître le type et le poids maximal autorisé pour l’envoi de fichiers.</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;numero&#34;</span><span class="p">&gt;</span>Votre numéro de client
@@ -444,21 +444,21 @@ Le champ obligatoire sera codé avec l&rsquo;attribut <code>required</code>.</p>
 </span></span></code></pre></div><h2 id="gestion-des-erreurs">Gestion des erreurs</h2>
 <p>La gestion des erreurs suit les règles suivantes :</p>
 <ul>
-<li>Un message d&rsquo;erreur sera implémenté accolé au champ en erreur ;</li>
-<li>Le message d&rsquo;erreur expliquera les raisons de l&rsquo;erreur de manière claire et sans ambiguïté ;</li>
+<li>Un message d&rsquo;erreur sera implémenté accolé au champ en erreur </li>
+<li>Le message d&rsquo;erreur expliquera les raisons de l&rsquo;erreur de manière claire et sans ambiguïté </li>
 <li>Le message d&rsquo;erreur rappelera ce qui est attendu dans le champ et donnera des suggestions de correction (exemple : Veuillez renseigner un email valide (<a href="mailto:nom@domaine.fr">nom@domaine.fr</a>) );</li>
-<li>Le message d&rsquo;erreur sera relié au champ grâce à l&rsquo;attribut <code>aria-labelledby</code> pour pouvoir être restitué par les logiciels de synthèse vocale ;</li>
-<li>Le focus clavier est mis sur le premier champ en erreur afin de pouvoir parcourir tout le formulaire ;</li>
+<li>Le message d&rsquo;erreur sera relié au champ grâce à l&rsquo;attribut <code>aria-labelledby</code> pour pouvoir être restitué par les logiciels de synthèse vocale </li>
+<li>Le focus clavier est mis sur le premier champ en erreur afin de pouvoir parcourir tout le formulaire </li>
 <li>Le champ en erreur (et/ou son label) ne seront <strong>pas signalés uniquement par la couleur</strong> (le champ en erreur pourra alors avoir une bordure plus grosse par exemple et son label écrit en gras);</li>
-<li>Le champ en erreur possèdera alors l&rsquo;attribut <code>aria-invalid=&quot;true&quot; </code> ;</li>
-<li>Le message d&rsquo;erreur pour un champ obligatoire qui n&rsquo;est pas renseigné est contextualisé et unique (exemple : Le champ &ldquo;Nom&rdquo; est obligatoire) ;</li>
+<li>Le champ en erreur possèdera alors l&rsquo;attribut <code>aria-invalid=&quot;true&quot; </code> </li>
+<li>Le message d&rsquo;erreur pour un champ obligatoire qui n&rsquo;est pas renseigné est contextualisé et unique (exemple : Le champ &ldquo;Nom&rdquo; est obligatoire) </li>
 <li>Le titre de la page HTML sera modifiée en conséquence.</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Erreur - Formulaire d&#39;envoi de votre commande<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">...
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span></code></pre></div><p>Enfin, un message d&rsquo;erreur global peut être implémenté au début du formulaire ; il aura alors le rôle <code>role=&quot;alert&quot;</code>. <strong>Cette zone prévue pour recevoir le message d&rsquo;alerte global sera implémentée à vide dans la formulaire puis peuplée au moement du retour d&rsquo;erreur</strong>.</p>
+</span></span></code></pre></div><p>Enfin, un message d&rsquo;erreur global peut être implémenté au début du formulaire  il aura alors le rôle <code>role=&quot;alert&quot;</code>. <strong>Cette zone prévue pour recevoir le message d&rsquo;alerte global sera implémentée à vide dans la formulaire puis peuplée au moement du retour d&rsquo;erreur</strong>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;alert&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">...
@@ -507,9 +507,7 @@ Le champ obligatoire sera codé avec l&rsquo;attribut <code>required</code>.</p>
 	
 	
 
-<script>
-	sandwitch();
-</script>	
+
 
 </body>
 </html>

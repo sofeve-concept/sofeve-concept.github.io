@@ -36,7 +36,7 @@
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
 	</div>
 	<nav role='navigation' class="navbar" aria-label="Menu principal">
-		<button aria-expanded="false" id="hamburger" aria-controls="menu" onclick="hamburger(this)">
+		<button aria-expanded="false" id="hamburger" aria-controls="menu">
 		     <span class="sr-only">Menu</span>
 		</button>
 		<ul id="menu">
@@ -150,7 +150,7 @@
 		</ul>
 	</nav>	
 	<form action="/rechercher" method="GET" role="search" class="search">
-    <div class="fancy-input">
+    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" >
     </div>
@@ -289,15 +289,8 @@
 					
 					
 					<li>
-						<a href="https://sofeve-concept.github.io/coder/navigation/lien-acces-rapide/" >	
-							Lien d&#39;accès rapide
-						</a>
-					</li>
-					
-					
-					<li>
 						<a href="https://sofeve-concept.github.io/coder/navigation/lien-evitement/" >	
-							Lien d&#39;accès rapide
+							Lien d&#39;évitement
 						</a>
 					</li>
 					
@@ -381,7 +374,7 @@
                <h1>Menu de navigation</h1>
                <p>Un menu de navigation regroupe un ensemble de liens permettant d&#39;afficher les différentes pages du site web ou d&#39;atteindre un endroit spécifique de la page affichée. Il traduit l&#39;arborescence du site web.</p>
                <div class="toc">
-               <h2>Dans cette rubrique</h2>
+               <h2><i class="fa fa-thumbtack fa-rotate-by" aria-hidden="true"></i>Dans cette rubrique</h2>
                <nav id="TableOfContents">
   <ul>
     <li><a href="#quest-ce-quun-menu-de-navigationnbsp">Qu&rsquo;est-ce qu&rsquo;un menu de navigation ?</a></li>
@@ -406,9 +399,9 @@
 <li>Il sera toujours placé au même endroit dans les pages du site.</li>
 <li>Le menu de navigation sert à identifier :
 <ul>
-<li>le menu principal (menu permettant de se déplacer de rubrique en rubrique) ;</li>
-<li>le menu secondaire (menu permettatn de se déplacer de sous-rubriques en sous-rubriques au sein d&rsquo;une même grande rubrique) ;</li>
-<li>le fil d&rsquo;Ariane ;</li>
+<li>le menu principal (menu permettant de se déplacer de rubrique en rubrique) </li>
+<li>le menu secondaire (menu permettatn de se déplacer de sous-rubriques en sous-rubriques au sein d&rsquo;une même grande rubrique) </li>
+<li>le fil d&rsquo;Ariane </li>
 <li>La pagination lors de l&rsquo;affichage d&rsquo;un résultat de recherche, d&rsquo;un tableau ou d&rsquo;une succession de pages relatives au même thème.</li>
 </ul>
 </li>
@@ -511,9 +504,7 @@
 	
 	
 
-<script>
-	sandwitch();
-</script>	
+
 
 </body>
 </html>

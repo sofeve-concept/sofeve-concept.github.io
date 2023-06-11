@@ -36,7 +36,7 @@
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
 	</div>
 	<nav role='navigation' class="navbar" aria-label="Menu principal">
-		<button aria-expanded="false" id="hamburger" aria-controls="menu" onclick="hamburger(this)">
+		<button aria-expanded="false" id="hamburger" aria-controls="menu">
 		     <span class="sr-only">Menu</span>
 		</button>
 		<ul id="menu">
@@ -150,7 +150,7 @@
 		</ul>
 	</nav>	
 	<form action="/rechercher" method="GET" role="search" class="search">
-    <div class="fancy-input">
+    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" >
     </div>
@@ -360,7 +360,7 @@
                <h1>Code HTML global</h1>
                <p>Structure de base d&#39;une page HTML valide selon le W3C et les critères d&#39;accessibilité numérique.</p>
                <div class="toc">
-               <h2>Dans cette rubrique</h2>
+               <h2><i class="fa fa-thumbtack fa-rotate-by" aria-hidden="true"></i>Dans cette rubrique</h2>
                <nav id="TableOfContents">
   <ul>
     <li><a href="#règles-dimplémentation">Règles d&rsquo;implémentation</a></li>
@@ -390,9 +390,9 @@
 
                <p>Une page web doit comporter différents éléments pour être valide :</p>
 <ul>
-<li>Un <em>doctype</em> pour indiquer qu&rsquo;il s&rsquo;agit d&rsquo;une page HTML 5 ;</li>
+<li>Un <em>doctype</em> pour indiquer qu&rsquo;il s&rsquo;agit d&rsquo;une page HTML 5 </li>
 <li>Une déclaration de langue</li>
-<li>Une entête contenant des <em>meta informations</em> comme le titre de la page (qui apparaitra dans l&rsquo;onglet du navigateur) et diverses déclarations comme l&rsquo;encodage de la page, les liens vers des feuilles de style&hellip; ;</li>
+<li>Une entête contenant des <em>meta informations</em> comme le titre de la page (qui apparaitra dans l&rsquo;onglet du navigateur) et diverses déclarations comme l&rsquo;encodage de la page, les liens vers des feuilles de style&hellip; </li>
 <li>Le corps du document (c&rsquo;est cette partie du code qui sera affichée dans le navigateur) contenant des balises sémantiques permettant de structurer la page.</li>
 </ul>
 <h2 id="règles-dimplémentation">Règles d&rsquo;implémentation</h2>
@@ -428,8 +428,8 @@
 <h4 id="titre-de-page-élément-title">Titre de page (élément <code>title</code>)</h4>
 <p>Le titre de page doit :</p>
 <ul>
-<li>Donner a minima le nom de la page en cours et le nom du site ;</li>
-<li>S&rsquo;afficher de manière cohérente sur l&rsquo;ensemble des pages ;</li>
+<li>Donner a minima le nom de la page en cours et le nom du site </li>
+<li>S&rsquo;afficher de manière cohérente sur l&rsquo;ensemble des pages </li>
 <li>Afficher les informations du plus précis au plus général (nom de la page, nom de la rubrique pour finir par le nom du site)</li>
 <li>S&rsquo;actualiser à chaque modification de page ou de contexte (on entendd par chagement de contexte lorque la page affiche un message d&rsquo;erreur, le résultat d&rsquo;un système de pagination&hellip;).</li>
 </ul>
@@ -444,9 +444,9 @@
 <p>La déclaration d&rsquo;affichage adaptatif permet de concevoir un site &ldquo;responsive&rdquo; qui s&rsquo;adaptera au différentes configurations d&rsquo;écran et périphériques de sorties prévus en CSS.<br>
 On insérera donc la balise <code>meta name=&quot;viewport&quot;</code> avec l&rsquo;attribut <code>content</code> pour lequel on déclarera les propriétés :</p>
 <ul>
-<li><code>height</code> et/ou <code>width</code> : taille de l&rsquo;écran ; on déclarera respectivement <code>device-height</code> ou <code>device-width</code> comme valeur de référence.</li>
-<li><code>initial-scale</code> : niveau de zoom initial ; la valeur &ldquo;1&rdquo; correspond à un zoom de départ de 100% ; valeur à privilégier.</li>
-<li><code>user-scalable</code> : zoomer dans la page (valeur &ldquo;yes&rdquo; par défaut ; il n&rsquo;est donc pas nécessaire de le préciser et c&rsquo;est cette valeur qui sera choisie) ou non (no).</li>
+<li><code>height</code> et/ou <code>width</code> : taille de l&rsquo;écran  on déclarera respectivement <code>device-height</code> ou <code>device-width</code> comme valeur de référence.</li>
+<li><code>initial-scale</code> : niveau de zoom initial  la valeur &ldquo;1&rdquo; correspond à un zoom de départ de 100%  valeur à privilégier.</li>
+<li><code>user-scalable</code> : zoomer dans la page (valeur &ldquo;yes&rdquo; par défaut  il n&rsquo;est donc pas nécessaire de le préciser et c&rsquo;est cette valeur qui sera choisie) ou non (no).</li>
 </ul>
 <h5 id="exemple-">Exemple :</h5>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1&#34;</span><span class="p">&gt;</span> 
@@ -523,9 +523,7 @@ Dans le cas où une liste de liens est proposé dans le `footer`, ceux-ci <stron
 	
 	
 
-<script>
-	sandwitch();
-</script>	
+
 
 </body>
 </html>

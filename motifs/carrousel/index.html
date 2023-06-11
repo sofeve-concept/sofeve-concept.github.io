@@ -38,7 +38,7 @@
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
 	</div>
 	<nav role='navigation' class="navbar" aria-label="Menu principal">
-		<button aria-expanded="false" id="hamburger" aria-controls="menu" onclick="hamburger(this)">
+		<button aria-expanded="false" id="hamburger" aria-controls="menu">
 		     <span class="sr-only">Menu</span>
 		</button>
 		<ul id="menu">
@@ -150,7 +150,7 @@
 		</ul>
 	</nav>	
 	<form action="/rechercher" method="GET" role="search" class="search">
-    <div class="fancy-input">
+    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" >
     </div>
@@ -623,12 +623,12 @@
 </span></span><span class="line"><span class="cl">    <span class="nv">--hover-color</span><span class="p">:</span> <span class="mh">#C83737</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c">/** pour afficher les boutons de contrôle en bas ;  mettre top au lieu de bottom pour les afficher en haut*/</span>
+</span></span><span class="line"><span class="cl"><span class="c">/** pour afficher les boutons de contrôle en bas&amp;nbsp;  mettre top au lieu de bottom pour les afficher en haut*/</span>
 </span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">carousel-tablist</span> <span class="p">.</span><span class="nc">controls</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="k">bottom</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">controls</span><span class="o">-</span><span class="n">position</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c">/** pour afficher le texte en haut ; mettre top au lieu de bottom pour positionner à partir du haut*/</span>
+</span></span><span class="line"><span class="cl"><span class="c">/** pour afficher le texte en haut&amp;nbsp; mettre top au lieu de bottom pour positionner à partir du haut*/</span>
 </span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">carousel-tablist</span> <span class="p">.</span><span class="nc">carousel-item</span> <span class="p">.</span><span class="nc">carousel-caption</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="k">bottom</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">caption</span><span class="o">-</span><span class="n">position</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
@@ -1424,9 +1424,7 @@
 <script src="/js/carrousel.js"></script>
 	
 
-<script>
-	sandwitch();
-</script>	
+
 
 </body>
 </html>

@@ -36,7 +36,7 @@
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
 	</div>
 	<nav role='navigation' class="navbar" aria-label="Menu principal">
-		<button aria-expanded="false" id="hamburger" aria-controls="menu" onclick="hamburger(this)">
+		<button aria-expanded="false" id="hamburger" aria-controls="menu">
 		     <span class="sr-only">Menu</span>
 		</button>
 		<ul id="menu">
@@ -150,7 +150,7 @@
 		</ul>
 	</nav>	
 	<form action="/rechercher" method="GET" role="search" class="search">
-    <div class="fancy-input">
+    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" >
     </div>
@@ -374,7 +374,7 @@
                <h1>Étiquette de champ</h1>
                <p>Les étiquettes doivent décrire le rôle de chaque champ du formulaire et être correctement associées à leur champ.</p>
                <div class="toc">
-               <h2>Dans cette rubrique</h2>
+               <h2><i class="fa fa-thumbtack fa-rotate-by" aria-hidden="true"></i>Dans cette rubrique</h2>
                <nav id="TableOfContents">
   <ul>
     <li><a href="#implémentation-html">Implémentation HTML</a></li>
@@ -397,7 +397,7 @@ Pour présenter l'étiquette de champ, les exemples de cette page associent l'é
 <h2 id="implémentation-html">Implémentation HTML</h2>
 <p>L&rsquo;étiquette de champ sera implémentée avec les balises <code>&lt;label&gt;...&lt;/label&gt;</code>.<br>
 L&rsquo;attribut <code>for</code> sera utilisé pour l&rsquo;associer à l&rsquo;<code>ìd</code> du champ auquel elle fait référence.</p>
-<p>Une façon simple de s&rsquo;assurer que l&rsquo;étiquette est bien reliée à son champ consiste à cliquer sur l&rsquo;étiquette. Si l&rsquo;étiquette est bien associée alors le curseur se placera dans le champ lié (ou s&rsquo;il s&rsquo;agit de case à cocher, la case sera cochée/décochée ; s&rsquo;il s&rsquo;agit d&rsquo;un bouton radio, le bouton sera coché/décoché).</p>
+<p>Une façon simple de s&rsquo;assurer que l&rsquo;étiquette est bien reliée à son champ consiste à cliquer sur l&rsquo;étiquette. Si l&rsquo;étiquette est bien associée alors le curseur se placera dans le champ lié (ou s&rsquo;il s&rsquo;agit de case à cocher, la case sera cochée/décochée  s&rsquo;il s&rsquo;agit d&rsquo;un bouton radio, le bouton sera coché/décoché).</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;nom&#34;</span><span class="p">&gt;</span>Nom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;nom&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;nom&#34;</span><span class="p">&gt;</span>
 </span></span></code></pre></div><p><strong>Autre implémentation possible</strong><br>
@@ -412,7 +412,7 @@ Dans cet exemple, le <code>input</code>est inclus entre les balises <code>label<
 <input type="text" name="nom" id="nom">
 
 <h2 id="étiquette-invisible">Étiquette invisible</h2>
-<p>Un champs sans étiquette visible doit rester exceptionnel. On réservera ce cas à des champs dont la fonction est suffisamment claire et compréhensible sans étiquette ; comme, par exemple, un champ de recherche identifié par une icône loupe.</p>
+<p>Un champs sans étiquette visible doit rester exceptionnel. On réservera ce cas à des champs dont la fonction est suffisamment claire et compréhensible sans étiquette  comme, par exemple, un champ de recherche identifié par une icône loupe.</p>
 <h3 id="code-html-et-css">Code HTML et CSS</h3>
 <p><strong>HTML</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;search&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sr-only&#34;</span><span class="p">&gt;</span>Rechercher sur le site<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
@@ -509,9 +509,7 @@ En effet, l'attribut `placeholder` disparaît dès que l'utilisateur active le c
 	
 	
 
-<script>
-	sandwitch();
-</script>	
+
 
 </body>
 </html>

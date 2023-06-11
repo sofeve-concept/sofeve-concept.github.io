@@ -13,7 +13,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/motifs/code-de-base/</guid>
-      <description>Deux extraits de code sont présentés. Le premier est commenté ; le deuxième ne l&amp;rsquo;est pas et est suivi du code CSS pour le lien d&amp;rsquo;évitement.</description>
+      <description>Deux extraits de code sont présentés. Le premier est commenté le deuxième ne l&amp;rsquo;est pas et est suivi du code CSS pour le lien d&amp;rsquo;évitement.</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/navigation/a-propos/</guid>
-      <description>Ce qu&amp;rsquo;il faut retenir Pour un site qui comporte plus de 5 pages différentes, il faut veiller à prévoir au moins 2 systèmes de navigation parmi :</description>
+      <description>Ce qu&amp;rsquo;il faut retenir Pour un site qui comporte plus de 5 pages différentes, il faut veiller à prévoir au moins 2 systèmes de navigation parmi :</description>
     </item>
     
     <item>
@@ -95,7 +95,7 @@
       
       <guid>https://sofeve-concept.github.io/coder/structure/code-base/</guid>
       <description>Une page web doit comporter différents éléments pour être valide :
-Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page HTML 5 ; Une déclaration de langue Une entête contenant des meta informations comme le titre de la page (qui apparaitra dans l&amp;rsquo;onglet du navigateur) et diverses déclarations comme l&amp;rsquo;encodage de la page, les liens vers des feuilles de style&amp;hellip; ; Le corps du document (c&amp;rsquo;est cette partie du code qui sera affichée dans le navigateur) contenant des balises sémantiques permettant de structurer la page.</description>
+Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page HTML 5 Une déclaration de langue Une entête contenant des meta informations comme le titre de la page (qui apparaitra dans l&amp;rsquo;onglet du navigateur) et diverses déclarations comme l&amp;rsquo;encodage de la page, les liens vers des feuilles de style&amp;hellip; Le corps du document (c&amp;rsquo;est cette partie du code qui sera affichée dans le navigateur) contenant des balises sémantiques permettant de structurer la page.</description>
     </item>
     
     <item>
@@ -154,21 +154,12 @@ Image sans alternative textuelle Quand les images ou les icônes sont décorativ
     </item>
     
     <item>
-      <title>Lien d&#39;accès rapide</title>
-      <link>https://sofeve-concept.github.io/coder/navigation/lien-acces-rapide/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/coder/navigation/lien-acces-rapide/</guid>
-      <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;un lien d&amp;rsquo;accès rapide ? Un lien d&amp;rsquo;accès rapide (ou lien de raccourci, lien d&amp;rsquo;évitement) est un lien qui permet d&amp;rsquo;accéder directement à une partie du document ; l&amp;rsquo;objectif est de permettre aux utilisateurs naviguant au clavier (dont notamment les utilisateurs de logiciel de synthèse vocale) d’accéder plus rapidement à des zones précises de la page sans dérouler la lecture des items précédents.</description>
-    </item>
-    
-    <item>
-      <title>Lien d&#39;accès rapide</title>
+      <title>Lien d&#39;évitement</title>
       <link>https://sofeve-concept.github.io/coder/navigation/lien-evitement/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/navigation/lien-evitement/</guid>
-      <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;un lien d’évitement ? Un lien d&amp;rsquo;évitement (ou lien de raccourci, lien d&amp;rsquo;accès rapide) est un lien qui permet d&amp;rsquo;accéder directement à une partie du document ; l&amp;rsquo;objectif est de permettre aux utilisateurs naviguant au clavier (dont notamment les utilisateurs de logiciel de synthèse vocale) d’accéder plus rapidement à des zones précises de la page sans dérouler la lecture des items précédents.</description>
+      <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;un lien d’évitement ? Un lien d&amp;rsquo;évitement (ou lien de raccourci, lien d&amp;rsquo;accès rapide) est un lien qui permet d&amp;rsquo;accéder directement à une partie du document l&amp;rsquo;objectif est de permettre aux utilisateurs naviguant au clavier (dont notamment les utilisateurs de logiciel de synthèse vocale) d’accéder plus rapidement à des zones précises de la page sans dérouler la lecture des items précédents.</description>
     </item>
     
     <item>
@@ -259,7 +250,7 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/contenu/texte/</guid>
-      <description>Formatage du texte À faire Utiliser des tailles relatives pour les polices de caractères : (em, rem, %, small&amp;hellip;) ; Veiller à déclarer une interligne de 1,5 via la déclaration css line-height: 1.</description>
+      <description>Formatage du texte À faire Utiliser des tailles relatives pour les polices de caractères : (em, rem, %, small&amp;hellip;) Veiller à déclarer une interligne de 1,5 via la déclaration css line-height: 1.</description>
     </item>
     
     <item>
@@ -397,7 +388,7 @@ Quatrième imagelorem ipsum</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/motifs/placeholder/</guid>
-      <description>Visuel PrénomNomAdresse mailEnvoyerExtraits de code Code HTML &amp;lt;form id=&amp;#34;motif-placeholder&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;prenom&amp;#34; name=&amp;#34;prenomTextField&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;prenom&amp;#34;&amp;gt;Prénom&amp;lt;/label&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;nom&amp;#34; name=&amp;#34;nomTextField&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;nom&amp;#34;&amp;gt;Nom&amp;lt;/label&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;email&amp;#34; name=&amp;#34;emailTextField&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;email&amp;#34;&amp;gt;Adresse mail&amp;lt;/label&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;button&amp;gt;Envoyer&amp;lt;/button&amp;gt; &amp;lt;/form&amp;gt; Code CSS Pour adapter la couleur de la barre de navigation et des liens, modifier les codes couleurs dans la déclaration :root.</description>
+      <description>Visuel PrénomNomAdresse mailEnvoyerExtraits de code Code HTML &amp;lt;form id=&amp;#34;motif-placeholder&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;prenom&amp;#34;&amp;gt;Prénom&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;prenom&amp;#34; name=&amp;#34;prenomTextField&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;nom&amp;#34;&amp;gt;Nom&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;nom&amp;#34; name=&amp;#34;nomTextField&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;email&amp;#34;&amp;gt;Adresse mail&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;email&amp;#34; name=&amp;#34;emailTextField&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;button&amp;gt;Envoyer&amp;lt;/button&amp;gt; &amp;lt;/form&amp;gt; Code CSS Pour adapter la couleur de la barre de navigation et des liens, modifier les codes couleurs dans la déclaration :root.</description>
     </item>
     
     <item>

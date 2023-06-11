@@ -36,7 +36,7 @@
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
 	</div>
 	<nav role='navigation' class="navbar" aria-label="Menu principal">
-		<button aria-expanded="false" id="hamburger" aria-controls="menu" onclick="hamburger(this)">
+		<button aria-expanded="false" id="hamburger" aria-controls="menu">
 		     <span class="sr-only">Menu</span>
 		</button>
 		<ul id="menu">
@@ -150,7 +150,7 @@
 		</ul>
 	</nav>	
 	<form action="/rechercher" method="GET" role="search" class="search">
-    <div class="fancy-input">
+    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" >
     </div>
@@ -360,7 +360,7 @@
                <h1>Validité du code</h1>
                <p>Vérifier la validité du code HTML de sa page et de sa feuille de style CSS.</p>
                <div class="toc">
-               <h2>Dans cette rubrique</h2>
+               <h2><i class="fa fa-thumbtack fa-rotate-by" aria-hidden="true"></i>Dans cette rubrique</h2>
                <nav id="TableOfContents">
   <ul>
     <li><a href="#code-html-de-base-dune-page-web">Code HTML de base d&rsquo;une page web</a>
@@ -380,10 +380,10 @@
                <h2 id="code-html-de-base-dune-page-web">Code HTML de base d&rsquo;une page web</h2>
 <p>Une page web HTML doit comporter a minima les éléments suivants pour être valide :</p>
 <ul>
-<li>Un <em>doctype</em> pour indiquer qu&rsquo;il s&rsquo;agit d&rsquo;une page HTML ; on choisira la déclaration correspondant au langage HTML 5 <code>&lt;!DOCTYPE html&gt;</code>;</li>
+<li>Un <em>doctype</em> pour indiquer qu&rsquo;il s&rsquo;agit d&rsquo;une page HTML  on choisira la déclaration correspondant au langage HTML 5 <code>&lt;!DOCTYPE html&gt;</code>;</li>
 <li>Une déclaration de langue à la <a href="https://www.iso.org/iso-639-language-codes.html">norme internationale ISO 639-1</a>; elle correspondra à la langue dans laquelle la page est écrite.</li>
-<li>Des déclaration d&rsquo;entête contenant des <em>meta informations</em> dont l&rsquo;encodage de la page, le titre de la page (qui apparaît dans l&rsquo;onglet du navigateur) et d&rsquo;autres déclarations comme les liens vers des feuilles de style CSS, des liens vers des scripts&hellip; ;</li>
-<li>Un corps de document contenant des balises sémantiques permettant de structurer la page ; c&rsquo;est cette partie du code qui sera affichée dans le navigateur.</li>
+<li>Des déclaration d&rsquo;entête contenant des <em>meta informations</em> dont l&rsquo;encodage de la page, le titre de la page (qui apparaît dans l&rsquo;onglet du navigateur) et d&rsquo;autres déclarations comme les liens vers des feuilles de style CSS, des liens vers des scripts&hellip; </li>
+<li>Un corps de document contenant des balises sémantiques permettant de structurer la page  c&rsquo;est cette partie du code qui sera affichée dans le navigateur.</li>
 </ul>
 <p>En résumé, une page HTML doit contenir a minima le code suivant :</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
@@ -398,14 +398,14 @@
 </span></span></code></pre></div><h3 id="contrôler-la-validité-du-code-html">Contrôler la validité du code HTML</h3>
 <p>Pour tester la validité de son code HTML et apporter les corrections nécessaires si besoin, il existe un outil en ligne : le <strong>validateur du W3C</strong>. Voici comment procéder :</p>
 <ol>
-<li>Copier l&rsquo;intégralité du code HTML de la page ;</li>
-<li>Aller sur le site de validation du W3C : <a href="https://validator.w3.org/nu/#textarea">https://validator.w3.org/nu/#textarea</a> ;</li>
-<li>Copier le contenu dans la zone de texte prévue à cet effet ;</li>
+<li>Copier l&rsquo;intégralité du code HTML de la page </li>
+<li>Aller sur le site de validation du W3C : <a href="https://validator.w3.org/nu/#textarea">https://validator.w3.org/nu/#textarea</a> </li>
+<li>Copier le contenu dans la zone de texte prévue à cet effet </li>
 <li>Cliquer sur le bouton [Check].</li>
 </ol>
 <h2 id="code-css-dune-page-web">Code CSS d&rsquo;une page web</h2>
 <p>Le CSS (Cascading Style Sheets en anglais, ou « feuilles de style en cascade ») est un langage qui a été inventé pour styliser les contenus de nos pages en leur appliquant des styles. Les standards définissant CSS sont publiés par le World Wide Web Consortium (W3C). Introduit au milieu des années 1990, CSS devient couramment utilisé dans la conception de sites web et bien pris en charge par les navigateurs web dans les années 2000</p>
-<p>Comme tout langage informatique, le CSS a évolué au cours du temps ; Aujourd&rsquo;hui on parle de CSS3.</p>
+<p>Comme tout langage informatique, le CSS a évolué au cours du temps  Aujourd&rsquo;hui on parle de CSS3.</p>
 <p>Une feuille de style :</p>
 <ul>
 <li>permet la mise en forme du document,</li>
@@ -416,10 +416,10 @@
 <h3 id="contrôler-la-validité-du-code-css">Contrôler la validité du code CSS</h3>
 <p>De la même manière que pour le HTML, la validité du code CSS sera vérifiée via le <strong>validateur du W3C</strong>. Voici comment procéder :</p>
 <ol>
-<li>Copier l&rsquo;intégralité du code CSS de la feuille de style ;</li>
-<li>Aller sur le site de validation du W3C : <a href="https://validator.w3.org/nu/#textarea">https://validator.w3.org/nu/#textarea</a> ;</li>
+<li>Copier l&rsquo;intégralité du code CSS de la feuille de style </li>
+<li>Aller sur le site de validation du W3C : <a href="https://validator.w3.org/nu/#textarea">https://validator.w3.org/nu/#textarea</a> </li>
 <li>Cocher la case <strong>CSS</strong></li>
-<li>Copier le contenu dans la zone de texte prévue à cet effet ;</li>
+<li>Copier le contenu dans la zone de texte prévue à cet effet </li>
 <li>Cliquer sur le bouton [Check].</li>
 </ol>
 
@@ -465,9 +465,7 @@
 	
 	
 
-<script>
-	sandwitch();
-</script>	
+
 
 </body>
 </html>

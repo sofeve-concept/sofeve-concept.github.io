@@ -36,7 +36,7 @@
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
 	</div>
 	<nav role='navigation' class="navbar" aria-label="Menu principal">
-		<button aria-expanded="false" id="hamburger" aria-controls="menu" onclick="hamburger(this)">
+		<button aria-expanded="false" id="hamburger" aria-controls="menu">
 		     <span class="sr-only">Menu</span>
 		</button>
 		<ul id="menu">
@@ -150,7 +150,7 @@
 		</ul>
 	</nav>	
 	<form action="/rechercher" method="GET" role="search" class="search">
-    <div class="fancy-input">
+    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" >
     </div>
@@ -367,7 +367,7 @@
                <h1>Listes</h1>
                <p>Il existe trois façons de présenter une liste dans une page web.</p>
                <div class="toc">
-               <h2>Dans cette rubrique</h2>
+               <h2><i class="fa fa-thumbtack fa-rotate-by" aria-hidden="true"></i>Dans cette rubrique</h2>
                <nav id="TableOfContents">
   <ul>
     <li><a href="#listes">Listes</a>
@@ -391,8 +391,8 @@
 <h3 id="liste-ordonnée-balises-olol">Liste ordonnée, balises <code>&lt;ol&gt;...&lt;/ol&gt;</code></h3>
 <p>On utilisera une liste ordonnée quand l&rsquo;ordre des items de la liste (balisée avec <code>&lt;li&gt;...&lt;/li&gt;</code>) a de l&rsquo;importance.<br>
 Les balises de liste ordonnée seront utilisées notamment pour présenter :
-- un fil d&rsquo;ariane ;
-- un processus par étape ;
+- un fil d&rsquo;ariane 
+- un processus par étape 
 - un système de pagination.</p>
 <h3 id="liste-de-définitions-ou-de-descriptions-balises-dldl-et-sous-balises-dtdt-et-dddd">Liste de définitions ou de descriptions, balises <code>&lt;dl&gt;...&lt;/dl&gt;</code> et sous-balises <code>&lt;dt&gt;...&lt;/dt&gt;</code> et <code>&lt;dd&gt;...&lt;/dd&gt;</code></h3>
 <ul>
@@ -458,9 +458,7 @@ Les balises de liste ordonnée seront utilisées notamment pour présenter :
 	
 	
 
-<script>
-	sandwitch();
-</script>	
+
 
 </body>
 </html>

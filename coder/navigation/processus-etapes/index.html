@@ -36,7 +36,7 @@
 		<a href="https://sofeve-concept.github.io"><img src="/images/sofeve-concept-logo.png" alt="Sofève Concept"></a>
 	</div>
 	<nav role='navigation' class="navbar" aria-label="Menu principal">
-		<button aria-expanded="false" id="hamburger" aria-controls="menu" onclick="hamburger(this)">
+		<button aria-expanded="false" id="hamburger" aria-controls="menu">
 		     <span class="sr-only">Menu</span>
 		</button>
 		<ul id="menu">
@@ -150,7 +150,7 @@
 		</ul>
 	</nav>	
 	<form action="/rechercher" method="GET" role="search" class="search">
-    <div class="fancy-input">
+    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" >
     </div>
@@ -289,15 +289,8 @@
 					
 					
 					<li>
-						<a href="https://sofeve-concept.github.io/coder/navigation/lien-acces-rapide/" >	
-							Lien d&#39;accès rapide
-						</a>
-					</li>
-					
-					
-					<li>
 						<a href="https://sofeve-concept.github.io/coder/navigation/lien-evitement/" >	
-							Lien d&#39;accès rapide
+							Lien d&#39;évitement
 						</a>
 					</li>
 					
@@ -381,7 +374,7 @@
                <h1>Processus par étapes</h1>
                <p>Les processus par étapes affichent la progression à travers une séquence d&#39;étapes logiques et numérotées.</p>
                <div class="toc">
-               <h2>Dans cette rubrique</h2>
+               <h2><i class="fa fa-thumbtack fa-rotate-by" aria-hidden="true"></i>Dans cette rubrique</h2>
                <nav id="TableOfContents">
   <ul>
     <li><a href="#quest-ce-quun-processus-par-étapesnbsp">Qu&rsquo;est-ce qu&rsquo;un processus par étapes ?</a>
@@ -412,13 +405,13 @@
 </ul>
 <h2 id="règles-daccessibilité-du-processus-par-étapes">Règles d&rsquo;accessibilité du processus par étapes</h2>
 <ul>
-<li>Le processus par étape sera balisé avec les balises <code>&lt;nav&gt;...&lt;/nav&gt;</code> ; <strong>on ne posera pas d&rsquo;attribut</strong> <code>role=&quot;navigation</code>.</li>
+<li>Le processus par étape sera balisé avec les balises <code>&lt;nav&gt;...&lt;/nav&gt;</code>  <strong>on ne posera pas d&rsquo;attribut</strong> <code>role=&quot;navigation</code>.</li>
 <li>Les différentes étapes du processus seront balisées par un liste ordonnée (l&rsquo;ordre ayant de l&rsquo;importance) <code>&lt;ol&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ol&gt;</code></li>
 <li>L&rsquo;étape en cours sera balisée avec l&rsquo;attribut <code>aria-current=&quot;step&quot;</code></li>
 <li>Un retour arrière sera proposé via un lien sur les étapes précédentes.</li>
 </ul>
 <h2 id="bouts-de-code">Bouts de code</h2>
-<p>Exemple avec un processus d&rsquo;achat ; le code donne ce rendu visuel.
+<p>Exemple avec un processus d&rsquo;achat  le code donne ce rendu visuel.
 <img src="/images/stepper-exemple2.jpg" alt="processus par étapes d&amp;rsquo;une commande"></p>
 <h3 id="code-html">Code HTML</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;stepper&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Étapes de votre commande&#34;</span><span class="p">&gt;</span>
@@ -648,9 +641,7 @@
 	
 	
 
-<script>
-	sandwitch();
-</script>	
+
 
 </body>
 </html>
