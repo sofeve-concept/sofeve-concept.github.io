@@ -320,7 +320,9 @@ aria.Utils = aria.Utils || {};
     if (topDialog.dialogNode.contains(closeButton)) {
       topDialog.close();
     }
+
   }; // end closeDialog
+
 
   window.replaceDialog = function (
     newDialogId,
