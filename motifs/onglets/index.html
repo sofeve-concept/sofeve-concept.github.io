@@ -400,6 +400,7 @@
                     <nav id="TableOfContents">
   <ul>
     <li><a href="#visuel">Visuel</a></li>
+    <li><a href="#règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</a></li>
     <li><a href="#extraits-de-code">Extraits de code</a>
       <ul>
         <li><a href="#code-html">Code HTML</a></li>
@@ -419,13 +420,13 @@
                 <button id="tab-1" type="button" role="tab" aria-selected="true" aria-controls="tabpanel-1">
                     <span>Premier onglet</span>
                 </button>
-                <button id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-2" tabindex="-1">
+                <button id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-2">
                     <span>Deuxième onglet</span>
                 </button>
-                <button id="tab-3" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-3" tabindex="-1">
+                <button id="tab-3" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-3">
                     <span>Troisième onglet</span>
                 </button>
-                <button id="tab-4" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-4" tabindex="-1">
+                <button id="tab-4" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-4">
                     <span>Quatrième onglet</span>
                 </button>
             </div>
@@ -480,6 +481,27 @@
             </div>
         </div>
 
+<h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
+<ul>
+<li>L&rsquo;élément qui sert de conteneur pour l&rsquo;ensemble d&rsquo;onglets a le rôle <code>role=&quot;tablist&quot;</code>.</li>
+<li>Si l&rsquo;élément <code>tablist</code> est orienté verticalement, sa propriété <code>aria-orientation</code> est définie sur <code>vertical</code> (la valeur par défaut de <code>aria-orientation</code> pour un élément de tablist est horizontal.).</li>
+<li>Chaque élément qui sert d&rsquo;onglet est contenu dans l&rsquo;élément avec le rôle tablist et est :
+<ul>
+<li>un bouton<code>button type=&quot;button&quot;</code>;</li>
+<li>avec un rôle <code>role=&quot;tab&quot;</code> :</li>
+<li>un attribut aria <code>aria-controls</code> qui fait référence au <code>aria-labelledby</code> du panneau qu&rsquo;il contrôle ;</li>
+<li>un rôle <code>aria-selected</code> défini sur <code>true</code> si l&rsquo;onglet est actif, <code>false</code> sinon.</li>
+<li>les boutons inactifs ne sont pas accessibles via la touche [tab] (attribut <code>tabindex=&quot;-1&quot;</code>, posé en javascript) mais par les touches &ldquo;flèches de direction&rdquo; du clavier.</li>
+</ul>
+</li>
+<li>Chaque élément qui contient le panneau de contenu de l&rsquo;onglet
+<ul>
+<li>a le rôle <code>role=&quot;tabpanel&quot;</code> ;</li>
+<li>un attribut <code>aria-labelledby</code> dont la valeur fait référence à la valeur du <code>aria-controls</code> du bouton qui le contrôle </li>
+<li>une classe de style CSS qui le rend indisponible (déclaration <code>display: none;</code>) si le panneau n&rsquo;est pas actif.</li>
+</ul>
+</li>
+</ul>
 <h2 id="extraits-de-code">Extraits de code</h2>
 <h3 id="code-html">Code HTML</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;tabs&#34;</span><span class="p">&gt;</span>
@@ -488,13 +510,13 @@
 </span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tab-1&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tab&#34;</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;tabpanel-1&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Premier onglet<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tab-2&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tab&#34;</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;tabpanel-2&#34;</span> <span class="na">tabindex</span><span class="o">=</span><span class="s">&#34;-1&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tab-2&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tab&#34;</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;tabpanel-2&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Deuxième onglet<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tab-3&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tab&#34;</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;tabpanel-3&#34;</span> <span class="na">tabindex</span><span class="o">=</span><span class="s">&#34;-1&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tab-3&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tab&#34;</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;tabpanel-3&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Troisième onglet<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tab-4&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tab&#34;</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;tabpanel-4&#34;</span> <span class="na">tabindex</span><span class="o">=</span><span class="s">&#34;-1&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tab-4&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tab&#34;</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;tabpanel-4&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Quatrième onglet<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
