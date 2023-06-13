@@ -1207,7 +1207,9 @@ main section nav a:focus {
   text-shadow: none;
   letter-spacing:0.1em;
 }
-
+#www ul.coche li::before {
+  color: var(--WHITE-color) !important;
+}
 #loi {
   width: 100%;
   min-height: 300px;
