@@ -399,8 +399,8 @@
                     <h2>Dans cette rubrique</h2>
                     <nav id="TableOfContents">
   <ul>
-    <li><a href="#visuel">Visuel</a></li>
     <li><a href="#règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</a></li>
+    <li><a href="#visuel">Visuel</a></li>
     <li><a href="#extraits-de-code">Extraits de code</a>
       <ul>
         <li><a href="#code-html">Code HTML</a></li>
@@ -411,10 +411,14 @@
 </nav>
                </div>
 
-               
-<p>Une bonne pratique d'accessibilité pour le fil d'ariane ("<span lang="en">breadcrumb</span>", en anglais) consiste à ne pas rendre le lien de la page active cliquable.<br>
-Cela se fait d'une part à l'aide de la CSS <code>pointer-events</code> qui va désactiver le clic et d'autre part à l'aide de l'attribut HTML <code>tabindex</code> qui va désactiver la prise de focus.</p>
-
+               <h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
+<ul>
+<li>Le fil d&rsquo;Ariane est contenu dans un élément HTML <code>nav</code> possédant le rôle <code>role=&quot;navigation</code>.</li>
+<li>La balise <code>nav</code> possède un attribut <code>aria-label</code> ou <code>aria-labelledby</code>.</li>
+<li>L&rsquo;ensemble des liens est structuré à l&rsquo;aide d&rsquo;une liste ordonnée.</li>
+<li>Pour empêcher l&rsquo;annonce par le lecteur d&rsquo;écran des séparateurs visuels entre les liens, les séparateur sont ajoutés via CSS.</li>
+<li>Si l&rsquo;élément représentant la page en cours est un lien, le lien possède l&rsquo;attribut <code>aria-current=&quot;page&quot;</code> sinon l&rsquo;attribut <code>aria-current</code> est facultatif.</li>
+</ul>
 <h2 id="visuel">Visuel</h2>
 
 <nav aria-label="Vous êtes ici" class="demo-ariane">
@@ -426,14 +430,6 @@ Cela se fait d'une part à l'aide de la CSS <code>pointer-events</code> qui va d
     </ol>
 </nav>
 
-<h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
-<ul>
-<li>Le fil d&rsquo;Ariane est contenu dans un élément HTML <code>nav</code> possédant le rôle <code>role=&quot;navigation</code>.</li>
-<li>La balise <code>nav</code> possède un attribut <code>aria-label</code> ou <code>aria-labelledby</code>.</li>
-<li>L&rsquo;ensemble des liens est structuré à l&rsquo;aide d&rsquo;une liste ordonnée.</li>
-<li>Pour empêcher l&rsquo;annonce par le lecteur d&rsquo;écran des séparateurs visuels entre les liens, les séparateur sont ajoutés via CSS.</li>
-<li>Si l&rsquo;élément représentant la page en cours est un lien, le lien possède l&rsquo;attribut <code>aria-current=&quot;page&quot;</code> sinon l&rsquo;attribut <code>aria-current</code> est facultatif.</li>
-</ul>
 <h2 id="extraits-de-code">Extraits de code</h2>
 <h3 id="code-html">Code HTML</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Vous êtes ici&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;demo-ariane&#34;</span><span class="p">&gt;</span>

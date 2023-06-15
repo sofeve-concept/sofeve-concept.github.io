@@ -399,8 +399,8 @@
                     <h2>Dans cette rubrique</h2>
                     <nav id="TableOfContents">
   <ul>
-    <li><a href="#visuel">Visuel</a></li>
     <li><a href="#règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</a></li>
+    <li><a href="#visuel">Visuel</a></li>
     <li><a href="#extraits-de-code">Extraits de code</a>
       <ul>
         <li><a href="#code-html">Code HTML</a></li>
@@ -412,7 +412,14 @@
 </nav>
                </div>
 
-               <h2 id="visuel">Visuel</h2>
+               <h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
+<ul>
+<li>Le titre de chaque en-tête de l&rsquo;accordéon est contenu dans un élément <code>button</code> avec un attribut <code>aria-controls</code> qui fait référence à l&rsquo;<code>id</code> de l&rsquo;élément qu&rsquo;il contrôle et un attribut <code>aria-expanded</code>qui prend la valeur <code>true</code> quand la zone que gère l&rsquo;en-tête de l&rsquo;accordéon est visible et <code>false</code> quand la zone que gère l&rsquo;en-tête de l&rsquo;accordéon est invisible.</li>
+<li>L&rsquo;élément bouton est le seul élément à l&rsquo;intérieur de l&rsquo;élément titre. Autrement dit, s&rsquo;il existe d&rsquo;autres éléments visuellement persistants, ils ne sont pas inclus dans l&rsquo;élément d&rsquo;en-tête.</li>
+<li>Si le panneau d&rsquo;accordéon associé à un en-tête d&rsquo;accordéon est visible, et si l&rsquo;accordéon ne permet pas de réduire le panneau, l&rsquo;élément du bouton d&rsquo;en-tête a <code>aria-disabled</code> défini sur <code>true</code>.</li>
+<li>Chaque élément qui sert de conteneur pour le contenu du panneau a le rôle <code>region</code> et <code>aria-labelledby</code> avec une valeur qui fait référence au bouton qui contrôle l&rsquo;affichage du panneau. La région de rôle est particulièrement utile pour la perception de la structure par les utilisateurs de lecteurs d&rsquo;écran lorsque les panneaux contiennent des éléments d&rsquo;en-tête ou un accordéon imbriqué.</li>
+</ul>
+<h2 id="visuel">Visuel</h2>
 
  <div id="accordionGroup" class="accordion">
             <h3>
@@ -494,13 +501,6 @@
         </div>
 
 
-<h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
-<ul>
-<li>Le titre de chaque en-tête de l&rsquo;accordéon est contenu dans un élément <code>button</code> avec un attribut <code>aria-controls</code> qui fait référence à l&rsquo;<code>id</code> de l&rsquo;élément qu&rsquo;il contrôle et un attribut <code>aria-expanded</code>qui prend la valeur <code>true</code> quand la zone que gère l&rsquo;en-tête de l&rsquo;accordéon est visible et <code>false</code> quand la zone que gère l&rsquo;en-tête de l&rsquo;accordéon est invisible.</li>
-<li>L&rsquo;élément bouton est le seul élément à l&rsquo;intérieur de l&rsquo;élément titre. Autrement dit, s&rsquo;il existe d&rsquo;autres éléments visuellement persistants, ils ne sont pas inclus dans l&rsquo;élément d&rsquo;en-tête.</li>
-<li>Si le panneau d&rsquo;accordéon associé à un en-tête d&rsquo;accordéon est visible, et si l&rsquo;accordéon ne permet pas de réduire le panneau, l&rsquo;élément du bouton d&rsquo;en-tête a <code>aria-disabled</code> défini sur <code>true</code>.</li>
-<li>Chaque élément qui sert de conteneur pour le contenu du panneau a le rôle <code>region</code> et <code>aria-labelledby</code> avec une valeur qui fait référence au bouton qui contrôle l&rsquo;affichage du panneau. La région de rôle est particulièrement utile pour la perception de la structure par les utilisateurs de lecteurs d&rsquo;écran lorsque les panneaux contiennent des éléments d&rsquo;en-tête ou un accordéon imbriqué.</li>
-</ul>
 <h2 id="extraits-de-code">Extraits de code</h2>
 <h3 id="code-html">Code HTML</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"> <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;accordionGroup&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion&#34;</span><span class="p">&gt;</span>

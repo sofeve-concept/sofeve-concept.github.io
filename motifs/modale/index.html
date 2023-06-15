@@ -399,8 +399,8 @@
                     <h2>Dans cette rubrique</h2>
                     <nav id="TableOfContents">
   <ul>
-    <li><a href="#visuel">Visuel</a></li>
     <li><a href="#règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</a></li>
+    <li><a href="#visuel">Visuel</a></li>
     <li><a href="#extraits-de-code">Extraits de code</a>
       <ul>
         <li><a href="#code-html">Code HTML</a></li>
@@ -412,7 +412,16 @@
 </nav>
                </div>
 
-               <h2 id="visuel">Visuel</h2>
+               <h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
+<ul>
+<li>Une fenêtre modale porte le rôle aria <code>role=dialog&quot;</code>, l&rsquo;attribut <code>aria-modal=&quot;true&quot;</code> et un attribut <code>aria-labelledby</code> qui fait référence à l&rsquo;<code>id</code> de l&rsquo;élément contenant le titre de la boîte de dialogue.</li>
+<li>Une fenêtre modale est considéré comme un changement de contexte. On veillera donc à commencer son contenu par un titre de niveau 1 (élément HTML <code>h1</code>).</li>
+<li>Pour bien signifier l&rsquo;ouverture d&rsquo;un nouveau contexte, on veillera à opacifier le fond de la page pour bien faire apparaître la fenêtre modale.</li>
+<li>À l&rsquo;ouverture de la fenêtre modale, le focus sera positionné sur le bouton de fermeture qui sera le premier élément HTML de la fenêtre.</li>
+<li>La fenêtre modale pourra être fermée en appuyant sur la touche [Echap] du clavier.</li>
+<li>Après la fermeture de la fenêtre modale, le focus clavier se repositionne sur le bouton qui a provoqué ld&rsquo;ouverture de la fenêtre modale.</li>
+</ul>
+<h2 id="visuel">Visuel</h2>
 
 <button type="button" onclick="openDialog('dialog1', this)">Ouvrir la fenêtre modale</button>
 <!-- La fenêtre Modale -->
@@ -434,15 +443,6 @@
       </div>
     </div>
 
-<h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
-<ul>
-<li>Une fenêtre modale porte le rôle aria <code>role=dialog&quot;</code>, l&rsquo;attribut <code>aria-modal=&quot;true&quot;</code> et un attribut <code>aria-labelledby</code> qui fait référence à l&rsquo;<code>id</code> de l&rsquo;élément contenant le titre de la boîte de dialogue.</li>
-<li>Une fenêtre modale est considéré comme un changement de contexte. On veillera donc à commencer son contenu par un titre de niveau 1 (élément HTML <code>h1</code>).</li>
-<li>Pour bien signifier l&rsquo;ouverture d&rsquo;un nouveau contexte, on veillera à opacifier le fond de la page pour bien faire apparaître la fenêtre modale.</li>
-<li>À l&rsquo;ouverture de la fenêtre modale, le focus sera positionné sur le bouton de fermeture qui sera le premier élément HTML de la fenêtre.</li>
-<li>La fenêtre modale pourra être fermée en appuyant sur la touche [Echap] du clavier.</li>
-<li>Après la fermeture de la fenêtre modale, le focus clavier se repositionne sur le bouton qui a provoqué ld&rsquo;ouverture de la fenêtre modale.</li>
-</ul>
 <h2 id="extraits-de-code">Extraits de code</h2>
 <h3 id="code-html">Code HTML</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&#34;openDialog(&#39;dialog1&#39;, this)&#34;</span><span class="p">&gt;</span>Ouvrir la fenêtre modale<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>

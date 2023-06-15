@@ -31,7 +31,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/motifs/bordure-texte/</guid>
-      <description>Cette technique de bordure de texte en css permet de rendre le contraste entre le texte et l&amp;rsquo;image conforme aux critères d&amp;rsquo;accessibilité.</description>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Cette technique de bordure de texte en css permet de rendre le contraste entre le texte et l&amp;rsquo;image conforme aux critères d&amp;rsquo;accessibilité.</description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/motifs/ariane/</guid>
-      <description>Une bonne pratique d&#39;accessibilité pour le fil d&#39;ariane (&#34;breadcrumb&#34;, en anglais) consiste à ne pas rendre le lien de la page active cliquable.</description>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le fil d&amp;rsquo;Ariane est contenu dans un élément HTML nav possédant le rôle role=&amp;quot;navigation.</description>
     </item>
     
     <item>
@@ -459,7 +459,7 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/motifs/accordeon/</guid>
-      <description>Visuel Rubrique1Consectetur cupidatat nisi amet exercitation quis mollit. Incididunt labore voluptate laborenostrud incididunt fugiat labore est anim tempor et Lorem dolor ea.</description>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le titre de chaque en-tête de l&amp;rsquo;accordéon est contenu dans un élément button avec un attribut aria-controls qui fait référence à l&amp;rsquo;id de l&amp;rsquo;élément qu&amp;rsquo;il contrôle et un attribut aria-expandedqui prend la valeur true quand la zone que gère l&amp;rsquo;en-tête de l&amp;rsquo;accordéon est visible et false quand la zone que gère l&amp;rsquo;en-tête de l&amp;rsquo;accordéon est invisible.</description>
     </item>
     
     <item>
@@ -489,7 +489,7 @@ Quatrième imagelorem ipsum</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/motifs/modale/</guid>
-      <description>Visuel Ouvrir la fenêtre modaleTitre de la fenêtre modale&amp;times;Labore sit invidunt amet sit sanctus justo tempor sea amet, accusam nonumy et et nonumy aliquyam dolor ipsum vero duo.</description>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Une fenêtre modale porte le rôle aria role=dialog&amp;quot;, l&amp;rsquo;attribut aria-modal=&amp;quot;true&amp;quot; et un attribut aria-labelledby qui fait référence à l&amp;rsquo;id de l&amp;rsquo;élément contenant le titre de la boîte de dialogue.</description>
     </item>
     
     <item>
@@ -516,7 +516,7 @@ Quatrième imagelorem ipsum</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/motifs/onglets/</guid>
-      <description>Visuel Liste d&#39;onglets activables au clavierPremier ongletDeuxième ongletTroisième ongletQuatrième ongletSunt veniam ad reprehenderit exercitation non dolore exercitation labore deserunt laboris deserunt.</description>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;élément qui sert de conteneur pour l&amp;rsquo;ensemble d&amp;rsquo;onglets a le rôle role=&amp;quot;tablist&amp;quot;.</description>
     </item>
     
     <item>
