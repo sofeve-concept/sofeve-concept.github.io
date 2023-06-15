@@ -519,3 +519,13 @@ function fermerDialogViaClicBody(event) {
 }
 
 document.body.addEventListener('click', fermerMenuViaClicBody, false);
+
+			
+function envoiCourriel() 
+{
+  var part1 = "sc.gounon";
+  var part2 = Math.pow(2,6);
+  var part4 = "gmail.com";
+  var part5 = part1 + String.fromCharCode(part2) + part4;
+    window.location = "mai" + "lto" + ":" + part5;
+}		
