@@ -153,12 +153,17 @@ a {
   color: var(--HARMONIE-BASE-color);
   text-decoration: none;
 }
-
+a[target]:not(.infobulle)::after {
+  font-family: "FontAwesome";
+  content: "\f35d";
+  padding-left: .25em;
+  font-size: .9em;
+ }
+ 
 a:hover,
 a:focus {
   text-decoration: underline;
 }
-
 a:visited {
   color: var(--HARMONIE-BASE-DARK-color);
 }
@@ -745,8 +750,13 @@ blockquote::after {
   content: close-quote;
 }
 blockquote+.auteur {
-  margin: -2em 2em 0 0;
-  text-align: right;
+  margin: -2em 2em 0 5%;
+  text-align: left;
+}
+
+cite::before,
+cite::after {
+  content:"_"
 }
 /**********************************
 FLEXBOX

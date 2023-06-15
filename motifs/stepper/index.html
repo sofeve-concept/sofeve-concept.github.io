@@ -7,7 +7,7 @@
 	
 	
 	
-	<title>Processus par étape - Composants web - Sofève Concept</title>
+	<title>Processus par étape - Motifs de conception web - Sofève Concept</title>
 	<meta name="description" content="Extrait de code pour un processus par étape valide selon le W3C et les critères d&#39;accessibilité numérique.">
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -145,7 +145,7 @@
 				<a href="/motifs/" 
 				
 				aria-current="page"
-				> Composants web</a></li>
+				> Motifs de conception web</a></li>
 			
 		
 		 
@@ -256,7 +256,7 @@
   
   <li>
     
-    <a href="/motifs/">Composants web</a>
+    <a href="/motifs/">Motifs de conception web</a>
    
   </li>
   
@@ -288,7 +288,7 @@
 	
      
 	<nav role="navigation" aria-label="navigation contextuelle">
-          <p class="rubrique">Motifs de conception</p>
+          <p class="rubrique">Motifs de conception web</p>
           <button aria-haspopup="true" aria-expanded="false" id="sandwitch" aria-controls="sousMenu">
                <i class="fa fa-bars" aria-hidden="true"></i>
                <span class="sr-only">Menu</span>
@@ -399,6 +399,7 @@
                     <h2>Dans cette rubrique</h2>
                     <nav id="TableOfContents">
   <ul>
+    <li><a href="#règles-dimplémentation-pour-laccessibilité">Règles d’implémentation pour l’accessibilité</a></li>
     <li><a href="#visuel">Visuel</a></li>
     <li><a href="#extraits-de-code">Extraits de code</a>
       <ul>
@@ -410,7 +411,14 @@
 </nav>
                </div>
 
-               <h2 id="visuel">Visuel</h2>
+               <h2 id="règles-dimplémentation-pour-laccessibilité">Règles d’implémentation pour l’accessibilité</h2>
+<ul>
+<li>Le processus par étape sera balisé avec les balises <code>&lt;nav&gt;...&lt;/nav&gt;</code>  <strong>on ne posera pas d&rsquo;attribut</strong> <code>role=&quot;navigation</code>.</li>
+<li>Les différentes étapes du processus seront balisées par un liste ordonnée (l&rsquo;ordre ayant de l&rsquo;importance) <code>&lt;ol&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ol&gt;</code></li>
+<li>L&rsquo;étape en cours sera balisée avec l&rsquo;attribut <code>aria-current=&quot;step&quot;</code></li>
+<li>Un retour arrière sera proposé via un lien sur les étapes précédentes.</li>
+</ul>
+<h2 id="visuel">Visuel</h2>
 
 <nav class="stepper" aria-label="Étapes de votre commande" class="stepper">
      <ol>

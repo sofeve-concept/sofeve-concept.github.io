@@ -66,7 +66,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/motifs/placeholder/</guid>
-      <description>Visuel PrénomNomAdresse mailEnvoyerExtraits de code Code HTML &amp;lt;form id=&amp;#34;motif-placeholder&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;prenom&amp;#34;&amp;gt;Prénom&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;prenom&amp;#34; name=&amp;#34;prenomTextField&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;nom&amp;#34;&amp;gt;Nom&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;nom&amp;#34; name=&amp;#34;nomTextField&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;email&amp;#34;&amp;gt;Adresse mail&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;email&amp;#34; name=&amp;#34;emailTextField&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;button&amp;gt;Envoyer&amp;lt;/button&amp;gt; &amp;lt;/form&amp;gt; Code CSS Pour adapter la couleur de la barre de navigation et des liens, modifier les codes couleurs dans la déclaration :root.</description>
+      <description>Règles d’implémentation pour l’accessibilité Tout champ de formulaire doit avoir un label associé. Le fait de remplacer le libellé label par un attribut placeholder empêche l&amp;rsquo;accessibilité du champ du formulaire puisque le libellé du placeholder disparaît au focus.</description>
     </item>
     
   </channel>

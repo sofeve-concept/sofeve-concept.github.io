@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Composants web on Sofève Concept</title>
+    <title>Motifs de conception web on Sofève Concept</title>
     <link>https://sofeve-concept.github.io/motifs/</link>
-    <description>Recent content in Composants web on Sofève Concept</description>
+    <description>Recent content in Motifs de conception web on Sofève Concept</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/motifs/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -39,7 +39,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/motifs/stepper/</guid>
-      <description>Visuel IdentificationPanierLivraisonPaiementFinIdentificationRechercheTéléchargementExtraits de code Code HTML &amp;lt;nav class=&amp;#34;stepper&amp;#34; aria-label=&amp;#34;Étapes de votre commande&amp;#34; class=&amp;#34;stepper&amp;#34;&amp;gt; &amp;lt;ol&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;.</description>
+      <description>Règles d’implémentation pour l’accessibilité Le processus par étape sera balisé avec les balises &amp;lt;nav&amp;gt;...&amp;lt;/nav&amp;gt; on ne posera pas d&amp;rsquo;attribut role=&amp;quot;navigation.</description>
     </item>
     
     <item>
@@ -102,7 +102,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/motifs/infobulle/</guid>
-      <description>Les infobulles (tooltip en anglais) ne sont pas accessibles au clavier. Nous allons donc recourir au CSS et à l&#39;attribut aria-label pour les simuler.</description>
+      <description>Règles d’implémentation pour l’accessibilité Les infobulles (tooltip en anglais) créées nativement via l&amp;rsquo;attribut title ne sont pas accessibles au clavier.</description>
     </item>
     
     <item>
@@ -111,7 +111,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/motifs/lien-evitement/</guid>
-      <description>Le lien d&#39;évitement (&#34;skip link&#34;, en anglais), est invisible par défaut sur la page et n&#39;apparaît qu&#39;à la prise de focus pour une navigation au clavier.</description>
+      <description>Règles d’implémentation pour l’accessibilité Dans ce motif de conception, le lien d&amp;rsquo;évitement (skip link en anglais) est invisible par défaut sur la page et n&amp;rsquo;apparaît qu&amp;rsquo;à la prise de focus pour une navigation au clavier.</description>
     </item>
     
     <item>
@@ -129,7 +129,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/motifs/placeholder/</guid>
-      <description>Visuel PrénomNomAdresse mailEnvoyerExtraits de code Code HTML &amp;lt;form id=&amp;#34;motif-placeholder&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;prenom&amp;#34;&amp;gt;Prénom&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;prenom&amp;#34; name=&amp;#34;prenomTextField&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;nom&amp;#34;&amp;gt;Nom&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;nom&amp;#34; name=&amp;#34;nomTextField&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;field&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;email&amp;#34;&amp;gt;Adresse mail&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; id=&amp;#34;email&amp;#34; name=&amp;#34;emailTextField&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;button&amp;gt;Envoyer&amp;lt;/button&amp;gt; &amp;lt;/form&amp;gt; Code CSS Pour adapter la couleur de la barre de navigation et des liens, modifier les codes couleurs dans la déclaration :root.</description>
+      <description>Règles d’implémentation pour l’accessibilité Tout champ de formulaire doit avoir un label associé. Le fait de remplacer le libellé label par un attribut placeholder empêche l&amp;rsquo;accessibilité du champ du formulaire puisque le libellé du placeholder disparaît au focus.</description>
     </item>
     
     <item>
