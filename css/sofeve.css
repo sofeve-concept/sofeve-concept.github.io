@@ -1260,7 +1260,6 @@ h1 {
   color: var(--PAON-BLEU-color);
   text-shadow: 0.03em 0.03em 0.05em var(--HARMONIE-BASE-color);
 }
-
 h1::after {
   content: "";
   width: 120px;
