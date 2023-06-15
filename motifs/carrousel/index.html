@@ -399,6 +399,7 @@
                     <h2>Dans cette rubrique</h2>
                     <nav id="TableOfContents">
   <ul>
+    <li><a href="#règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</a></li>
     <li><a href="#visuel">Visuel</a></li>
     <li><a href="#extraits-de-code">Extraits de code</a>
       <ul>
@@ -411,7 +412,18 @@
 </nav>
                </div>
 
-               <h2 id="visuel">Visuel</h2>
+               <h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
+<ul>
+<li>Ce carrousel utilise le modèle d&rsquo;onglets pour fournir aux utilisateurs un moyen de sauter des diapositives dans la séquence en choisissant directement celle à afficher.</li>
+<li>Le contrôle de rotation, le contrôle de défilement suivant et le contrôle de défilement précédent sont soit des éléments de bouton natifs (<code>button</code> - recommandé), soit implémentent le modèle de bouton (<code>role=&quot;button&quot;</code>).</li>
+<li>La navigation entre les diapositives est assurée par une série de boutons circulaires qui fonctionnent comme des onglets (<code>role=&quot;tablist&quot;</code>) et sont rendus sur les diapositives rotatives.</li>
+<li>La rotation automatique s&rsquo;arrête lorsque les utilisateurs déplacent le focus sur n&rsquo;importe quel contrôle ou lien dans le carrousel ou passent la souris sur le contenu du carrousel ; on choisira de préférence de ne pas rendre la rotation automatique au chargement de la page.</li>
+<li>Le contrôle de rotation a une étiquette accessible fournie par son texte interne ou son étiquette <code>aria</code>. L&rsquo;étiquette change pour correspondre à l&rsquo;action que le bouton effectuera, par exemple, &ldquo;Arrêter la rotation de la diapositive&rdquo; ou &ldquo;Démarrer la rotation de la diapositive&rdquo;. Une étiquette qui change lorsque le bouton est activé indique clairement à la fois que le contenu de la diapositive peut changer automatiquement et quand il le fait. Puisque l&rsquo;étiquette change, le contrôle de rotation n&rsquo;a aucun état spécifié (inutile de préciser <code>aria-pressed</code>, par exemple).</li>
+<li>Chaque conteneur de diapositives a un rôle <code>tabpanel</code>. Il comporte des contrôles de sélecteur de diapositives implémentés à l&rsquo;aide du modèle d&rsquo;onglets où chaque contrôle est un élément d&rsquo;onglet ; l&rsquo;activation d&rsquo;un onglet affiche la diapositive associée à cet onglet.</li>
+<li>Le nom accessible de chaque onglet indique la diapositive qu&rsquo;il affichera en incluant le nom ou le numéro de la diapositive, par exemple, &ldquo;Diapositive 3&rdquo; ; les noms de diapositives sont préférables si chaque diapositive a un nom unique.</li>
+<li>L&rsquo;ensemble de contrôles est regroupé dans un élément tablist avec un nom accessible fourni par la valeur de aria-label qui identifie l&rsquo;objectif des onglets, par exemple, « Choisir la diapositive à afficher ».</li>
+</ul>
+<h2 id="visuel">Visuel</h2>
 
 <div id="myCarousel" class="carousel-tablist" aria-roledescription="carousel"
             aria-label="Exemple de carrousel">

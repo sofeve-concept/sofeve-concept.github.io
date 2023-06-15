@@ -269,7 +269,7 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/motifs/menu-de-navigation/</guid>
-      <description>Présentation L&amp;rsquo;exemple présenté ici est celui d&amp;rsquo;un menu hamburger avec menu déroulant (rubriques parentes et sous-rubriques).</description>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;exemple présenté ici est celui d&amp;rsquo;un menu hamburger avec menu déroulant (rubriques parentes et sous-rubriques).</description>
     </item>
     
     <item>
@@ -278,7 +278,7 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/motifs/menu-lateral-glissant/</guid>
-      <description>Visuel Extraits de code Code HTML &amp;lt;header role=&amp;#34;header&amp;#34;&amp;gt; &amp;lt;nav id=&amp;#34;mySidenav&amp;#34; class=&amp;#34;sidenav&amp;#34;&amp;gt; &amp;lt;button id=&amp;#34;closenav&amp;#34; class=&amp;#34;closebtn&amp;#34; onclick=&amp;#34;closeNav()&amp;#34; aria-label=&amp;#34;Close Navigation Menu&amp;#34;&amp;gt; &amp;lt;span aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;amp;times;&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Fermer le menu latéral&amp;lt;/span&amp;gt; &amp;lt;/button&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;About&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;Services&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;Clients&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;Contact&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/nav&amp;gt; &amp;lt;/header&amp;gt; &amp;lt;main role=&amp;#34;main&amp;#34; id=&amp;#34;main&amp;#34;&amp;gt; &amp;lt;button id=&amp;#34;opennav&amp;#34; style=&amp;#34;font-size:30px;cursor:pointer&amp;#34; onclick=&amp;#34;openNav()&amp;#34; aria-expanded=&amp;#34;false&amp;#34;&amp;gt; &amp;lt;span aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;amp;#9776;&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;sr-only&amp;#34;&amp;gt;Ouvrir le menu latéral&amp;lt;/span&amp;gt; &amp;lt;/button&amp;gt; &amp;lt;p&amp;gt;Cliquez sur l&amp;#39;icône hamburger pour ouvrir le menu de navigation latéral et poussez ce contenu vers la droite.</description>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le menu latéral de navigation suit les mêmes règles que le menu navigation déroulant.</description>
     </item>
     
     <item>
@@ -468,10 +468,7 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/motifs/carrousel/</guid>
-      <description>Visuel Première imagelorem ipsum
-Deuxième imagelorem ipsum
-Troisième imagelorem ipsum
-Quatrième imagelorem ipsum</description>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Ce carrousel utilise le modèle d&amp;rsquo;onglets pour fournir aux utilisateurs un moyen de sauter des diapositives dans la séquence en choisissant directement celle à afficher.</description>
     </item>
     
     <item>
@@ -480,7 +477,7 @@ Quatrième imagelorem ipsum</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/motifs/carte-cliquable/</guid>
-      <description>Visuel Carte cliquableExtrait de code pour créer une carte cliquable valide selon le W3C et les critères d&#39;accessibilité numérique.</description>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Une carte cliquable est une zone délimitée par une div qui contient un titre, du texte et un lien.</description>
     </item>
     
     <item>

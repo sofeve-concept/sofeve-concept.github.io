@@ -399,6 +399,7 @@
                     <h2>Dans cette rubrique</h2>
                     <nav id="TableOfContents">
   <ul>
+    <li><a href="#règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</a></li>
     <li><a href="#visuel">Visuel</a></li>
     <li><a href="#extraits-de-code">Extraits de code</a>
       <ul>
@@ -410,7 +411,12 @@
 </nav>
                </div>
 
-               <h2 id="visuel">Visuel</h2>
+               <h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
+<ul>
+<li>Une carte cliquable est une zone délimitée par une <code>div</code> qui contient un titre, du texte et un lien. Une mauvaise pratique consiste à englober le conteneur <code>div</code> dans un lien.</li>
+<li>En recourant au CSS, nous allons pouvoir implémenter un lien à l&rsquo;intérieur du conteneur et faire en sorte que sa surface cliquable recouvre tout le conteneur.</li>
+</ul>
+<h2 id="visuel">Visuel</h2>
 
 <div class="card demo">
      <h2><a href="#">Carte cliquable</a></h2>
