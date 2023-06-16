@@ -1351,6 +1351,10 @@ figcaption {
   text-align: center;
   font-weight: bold;
 }
+figcaption.text-left {
+  text-align: left !important;
+  font-weight: normal;
+}
 /********************************************
   ASIDE
 *********************************************/

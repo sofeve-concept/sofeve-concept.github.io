@@ -1,6 +1,6 @@
 :root {
-    --max-width: 640px;
-    --max-height: 640px;
+    --max-width: 420px;
+    --max-height: 420px;
     --items-padding: 5px;
     /** bordure autour des images du carrousel */
     --controls-position: 1em;
