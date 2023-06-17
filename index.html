@@ -80,7 +80,8 @@
     </button>
 </form>
 <div class="toSearch">
-    <a href="/rechercher"><i class="fa fa-search" aria-label="Aller à la recherche surt le site"></i></a>
+    <a href="/rechercher"><i class="fa fa-search" aria-hidden="true"></i>
+    <span class="sr-only">Aller à la page de recherche sur le site</span></a>
 </div>
 </header>
 	
@@ -210,9 +211,9 @@
 <p>Un handicap peut être permanent ou temporaire et il est couramment admis de dire que 80% des handicaps sont invisibles.</p>
 
 <figure role="figure" aria-labelledby="info">
- <figcaption>Répartition des handicaps selon leur visibilité</figcaption>
+<p id="info" class="sr-only">Les handicaps visibles sont les handicaps visuels et moteurs et représentent environ 20% des handicaps. Les autres handicaps, soit 80%, sont invisibles et concernent les handicaps psychiques, auditifs, mentaus et les maladies invalidantes. </p>
   <img src="/images/handicap-visible-invisible.jpg" alt="Handicaps visibles et invisibles" class="center img-resp"/>
-  <p id="info" class="sr-only">Les handicaps visibles sont les handicaps visuels et moteurs et représentent environ 20% des handicaps. Les autres handicaps, soit 80%, sont invisibles et concernent les handicaps psychiques, auditifs, mentaus et les maladies invalidantes. </p>
+  <figcaption>Répartition des handicaps selon leur visibilité</figcaption>
 </figure>
 
 <h3>Le handicap en France en quelques chiffres</h3>
@@ -277,10 +278,9 @@
 
 
 <figure role="figure" aria-labelledby="info2">
- <figcaption>Abréviation du mot "<span lang="en">accessibility</span>" et pictogramme associé.</figcaption>
   <p id="info2">En anglais, le mot "accessibilité" se dit "<span lang="en">accessibility</span>". C'est son abréviation qui donne le mot "a11y". Le pitogramme présentant un personnage bras et jambes écartés est utilisé pour symboliser l'accessibilité numérique.</p>
   <img src="/images/a11y.jpg" alt="Signification de a11y et pictogramme associé." class="center">
- 
+  <figcaption>Abréviation du mot <span lang="en">accessibility</span> et pictogramme associé.</figcaption>
 </figure>
 
 
@@ -303,7 +303,7 @@
 	<footer role="contentinfo">
 	<div class="pied">
 		<ul>
-			<li><div role="button" onclick="envoiCourriel();"><i class="fa fa-envelope" aria-hidden="true"></i>
+			<li><div role="button" onclick="envoiCourriel();" tabindex="0"><i class="fa fa-envelope" aria-hidden="true"></i>
 				<span class="sr-only">Contacter par courriel</span></div></li>
 			<li><a href="https://github.com/sofeve-concept"  title="GitHub"><i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">GitHub</span></a></li>
 			<li><a href="https://www.linkedin.com/in/sophie-gounon/"  title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a></li></ul>

@@ -79,7 +79,8 @@
     </button>
 </form>
 <div class="toSearch">
-    <a href="/rechercher"><i class="fa fa-search" aria-label="Aller à la recherche surt le site"></i></a>
+    <a href="/rechercher"><i class="fa fa-search" aria-hidden="true"></i>
+    <span class="sr-only">Aller à la page de recherche sur le site</span></a>
 </div>
 </header>
 	
@@ -261,7 +262,7 @@ Dans le cas où une liste de liens est proposé dans le `footer`, ceux-ci <stron
 	<footer role="contentinfo">
 	<div class="pied">
 		<ul>
-			<li><div role="button" onclick="envoiCourriel();"><i class="fa fa-envelope" aria-hidden="true"></i>
+			<li><div role="button" onclick="envoiCourriel();" tabindex="0"><i class="fa fa-envelope" aria-hidden="true"></i>
 				<span class="sr-only">Contacter par courriel</span></div></li>
 			<li><a href="https://github.com/sofeve-concept"  title="GitHub"><i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">GitHub</span></a></li>
 			<li><a href="https://www.linkedin.com/in/sophie-gounon/"  title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a></li></ul>
