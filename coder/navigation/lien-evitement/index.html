@@ -3,23 +3,20 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Lien d&#39;évitement - Navigation	- Web accessible - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Lien d&#39;évitement - Navigation - Web accessible - Sofève Concept</title>
+	
 	<meta name="description" content="Le lien d&#39;évitement ou lien d&#39;accès rapide permet d’accéder directement à la zone de contenu principal de la page afin d&#39;optimiser la navigation au clavier.">
+	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Sofève Concept" />
-    <meta property="og:description" content="Sofève Concept est un site web de conseil et de documentation pour créer des sites web et des documents bureautiques accessibles" />
-    <meta property="og:url" content="https://sofeve-concept.github.io" />
-    <meta property="og:site_name" content="Sofève Concept" />
-    <meta property="og:image" content="https://sofeve-concept.github.io/images/sofeve-concept.jpg" />
-	<link href="/images/favicon.ico" rel="icon">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Poppins&family=Righteous&display=swap" rel="stylesheet" media="screen">
-	<link href="/css/print.min.css" rel="stylesheet" media="print">
-	<link href="/css/fontawesome.min.css" rel="stylesheet" media="screen">
-	<link href="/css/sofeve.min.css" rel="stylesheet" media="screen"></head>
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Sofève Concept" />
+	<meta property="og:description"
+		content="Sofève Concept est un site web de conseil et de documentation pour créer des sites web et des documents bureautiques accessibles" />
+	<meta property="og:url" content="https://sofeve-concept.github.io" />
+	<meta property="og:site_name" content="Sofève Concept" />
+	<meta property="og:image" content="https://sofeve-concept.github.io/images/sofeve-concept.jpg" />
+	<link href="/%20images/favicon.ico" rel="icon"><link href="/css/print.min.css" rel="stylesheet" media="print"><link href="/css/fontawesome.min.css" rel="stylesheet" media="screen"><link href="/css/fontluciole.min.css" rel="stylesheet" media="screen"><link href="/css/fontatkinson.min.css" rel="stylesheet" media="screen"><link href="/css/sofeve.min.css" rel="stylesheet" media="screen"></head>
 <body>
 	<a class="evitement" href="#contenu">Aller au contenu</a>
 <header role="banner">
@@ -62,7 +59,9 @@
               			<li><a href="/bureautique/couleur/">Couleur et contraste</a></li>
               			<li><a href="/bureautique/finaliser/">Tags et export PDF</a></li>
               			</ul>
-			    </li></ul>
+			    </li>
+			<li class="a-propos">
+				<a href="/a-propos/">À propos</a></li></ul>
 	</nav>	
 	<form action="/rechercher" method="GET" role="search" class="search">
     <div class="champs">
@@ -107,8 +106,7 @@
 <nav role="navigation" aria-label="Navigation secondaire coder accessible">
 	<p class="rubrique">Web accessible</p>
 	<button aria-haspopup="true" aria-expanded="false" id="sandwitch" aria-controls="sousMenu">
-		<i class="fa fa-bars" aria-hidden="true"></i>
-		<span class="sr-only">Menu</span>
+		Web accessible<i class="fa fa-caret-down" aria-hidden="true"></i>
 	</button>
 	<ul id="sousMenu"><li><a href="https://sofeve-concept.github.io/coder/structure/">Structure générale</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/contenu/">Contenu</a></li>
@@ -192,12 +190,11 @@
 	<footer role="contentinfo">
 	<div class="pied">
 		<ul class="clicIcon">
-			<li><div role="button" onclick="envoiCourriel();" tabindex="0" class="mymail" title="Envoyer un courriel"><i class="fa fa-envelope" aria-hidden="true"></i>
+			<li><div role="button" onclick="envoiCourriel();" tabindex="0" class="mymail" title="Envoyer un courriel"><i class="fas fa-at" aria-hidden="true"></i>
 				<span class="sr-only">Contacter par courriel</span></div></li>
 			<li><a href="https://github.com/sofeve-concept"  title="GitHub"><i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">GitHub</span></a></li>
 			<li><a href="https://www.linkedin.com/in/sophie-gounon/"  title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a></li></ul>
 		<ul>
-		    <li><a href="/a-propos/" class="">À propos</a></li>
 		    <li><a href="/mentions-legales" class="">Mentions légales et crédits</a></li></ul>
 		<p class="copyr">&copy; 2023 Sofève Concept - <span>By</span> Sofève Concept</p>
 	 </div>
