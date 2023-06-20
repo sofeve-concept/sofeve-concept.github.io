@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Multimedia on Sofève Concept</title>
+    <link>https://sofeve-concept.github.io/coder/multimedia/</link>
+    <description>Recent content in Multimedia on Sofève Concept</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/coder/multimedia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contenu du multimédia</title>
+      <link>https://sofeve-concept.github.io/coder/multimedia/presentation-video/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/multimedia/presentation-video/</guid>
+      <description>Transcription textuelle La transcription textuelle est indispensable pour les contenus uniquement audio. Elle doit restituer le contenu de la vidéo ou de l&amp;rsquo;audio le plus fidèlement possible.</description>
+    </item>
+    
+    <item>
+      <title>Lecteur audio ou vidéo</title>
+      <link>https://sofeve-concept.github.io/coder/multimedia/lecteur-video/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/multimedia/lecteur-video/</guid>
+      <description>Règles à respecter sur le lecteur audio/vidéo Le lecteur vidéo (ou audio) :
+ne doit pas démarrer automatiquement ; doit prendre en charge les sous-titres et l&amp;rsquo;audiodescription de la vidéo ; doit permette à l&amp;rsquo;utilisateur de contrôler la lecture de la vidéo avec des boutons d&amp;rsquo;action du type : pause/lecture, avancer/reculer, arrêter/monter/baisser le son, afficher ou non les sous-titres et l&amp;rsquo;audiodescription.</description>
+    </item>
+    
+  </channel>
+</rss>

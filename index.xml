@@ -35,6 +35,15 @@
     </item>
     
     <item>
+      <title>Contenu du multimédia</title>
+      <link>https://sofeve-concept.github.io/coder/multimedia/presentation-video/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/multimedia/presentation-video/</guid>
+      <description>Transcription textuelle La transcription textuelle est indispensable pour les contenus uniquement audio. Elle doit restituer le contenu de la vidéo ou de l&amp;rsquo;audio le plus fidèlement possible.</description>
+    </item>
+    
+    <item>
       <title>Contraste de couleur</title>
       <link>https://sofeve-concept.github.io/bureautique/couleur/contraste/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -206,6 +215,16 @@ Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page H
       <guid>https://sofeve-concept.github.io/coder/image-icone/images-img-svg/</guid>
       <description>Les images s&amp;rsquo;implémentent avec l&amp;rsquo;élément HTML &amp;lt;img src=&amp;quot;...&amp;quot;&amp;gt; ou &amp;lt;svg ...&amp;gt;...&amp;lt;/svg&amp;gt;.
 Image sans alternative textuelle Quand les images ou les icônes sont décoratives, on n&amp;rsquo;ajoute pas d&amp;rsquo;alternative textuelle (alt).</description>
+    </item>
+    
+    <item>
+      <title>Lecteur audio ou vidéo</title>
+      <link>https://sofeve-concept.github.io/coder/multimedia/lecteur-video/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/multimedia/lecteur-video/</guid>
+      <description>Règles à respecter sur le lecteur audio/vidéo Le lecteur vidéo (ou audio) :
+ne doit pas démarrer automatiquement ; doit prendre en charge les sous-titres et l&amp;rsquo;audiodescription de la vidéo ; doit permette à l&amp;rsquo;utilisateur de contrôler la lecture de la vidéo avec des boutons d&amp;rsquo;action du type : pause/lecture, avancer/reculer, arrêter/monter/baisser le son, afficher ou non les sous-titres et l&amp;rsquo;audiodescription.</description>
     </item>
     
     <item>
