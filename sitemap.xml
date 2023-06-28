@@ -24,6 +24,8 @@
   </url><url>
     <loc>https://sofeve-concept.github.io/bureautique/finaliser/meta/</loc>
   </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/courriel/parametrage/</loc>
+  </url><url>
     <loc>https://sofeve-concept.github.io/bureautique/presentation/police-caractere/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/motifs/stepper/</loc>
@@ -73,6 +75,8 @@
     <loc>https://sofeve-concept.github.io/motifs/menu-lateral-glissant/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/bureautique/presentation/</loc>
+  </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/courriel/courriel/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/</loc>
   </url><url>
@@ -128,6 +132,8 @@
   </url><url>
     <loc>https://sofeve-concept.github.io/bureautique/finaliser/</loc>
   </url><url>
+    <loc>https://sofeve-concept.github.io/bureautique/courriel/</loc>
+  </url><url>
     <loc>https://sofeve-concept.github.io/coder/formulaire/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/scripts/</loc>
@@ -137,6 +143,9 @@
     <loc>https://sofeve-concept.github.io/coder/structure/validite-code/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/</loc>
+    <lastmod>2020-04-06T11:00:27+02:00</lastmod>
+  </url><url>
+    <loc>https://sofeve-concept.github.io/services/</loc>
     <lastmod>2020-04-06T11:00:27+02:00</lastmod>
   </url><url>
     <loc>https://sofeve-concept.github.io/a-propos/</loc>
@@ -171,12 +180,18 @@
   </url><url>
     <loc>https://sofeve-concept.github.io/404.html</loc>
   </url><url>
+    <loc>https://sofeve-concept.github.io/ressources/outils/</loc>
+  </url><url>
     <loc>https://sofeve-concept.github.io/motifs/placeholder/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/plan/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/rechercher/</loc>
     <priority>0.1</priority>
+  </url><url>
+    <loc>https://sofeve-concept.github.io/ressources/</loc>
+  </url><url>
+    <loc>https://sofeve-concept.github.io/ressources/sites/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/motifs/tableau-responsive/</loc>
   </url><url>

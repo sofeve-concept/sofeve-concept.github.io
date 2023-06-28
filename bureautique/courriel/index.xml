@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Courrier électronique on Sofève Concept</title>
+    <link>https://sofeve-concept.github.io/bureautique/courriel/</link>
+    <description>Recent content in Courrier électronique on Sofève Concept</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/bureautique/courriel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paramétrage de la messagerie</title>
+      <link>https://sofeve-concept.github.io/bureautique/courriel/parametrage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/bureautique/courriel/parametrage/</guid>
+      <description>Règles Comme pour un document bureautique, la présentation du mail doit répondre aux règles d&amp;rsquo;accessibilié numérique.</description>
+    </item>
+    
+    <item>
+      <title>Rédaction de courriels</title>
+      <link>https://sofeve-concept.github.io/bureautique/courriel/courriel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/bureautique/courriel/courriel/</guid>
+      <description>Règles Comme pour un document bureautique, le corps du message doit répondre aux règles d&amp;rsquo;accessibilié numérique.</description>
+    </item>
+    
+  </channel>
+</rss>

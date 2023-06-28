@@ -1,0 +1,86 @@
+:root {
+    --BORDER-color: #333333;
+    --THEAD-BACKGROUND-color: #191919;
+    --THEAD-color: #FFF;
+    --LIGNE-PAIR-color: #DBDBDB;
+    --LIGNE-HOVER-color: #93c0eb;
+}
+table.resp {
+     margin: 0 auto; /** centre le tableau*/
+     border-collapse: collapse;
+     margin-bottom: 2em;
+ }
+ 
+ table.resp caption {
+     caption-side: top;
+ }
+ table.resp th,
+ table.resp td {
+     padding: 0.75em;
+     border-bottom: 1px solid var(--BORDER-color);
+ }
+ 
+ table.resp thead tr {
+     color: var(--THEAD-color);
+     background-color: var(--THEAD-BACKGROUND-color);
+ }
+ 
+ table.resp tbody tr:nth-child(even){
+     background-color: var(--LIGNE-PAIR-color);
+ }
+ table.resp tbody tr:hover {
+     background-color: var(--LIGNE-HOVER-color);
+ }
+ 
+ 
+ table.resp tbody th {
+     text-align: right;
+ }
+ table.resp tbody td {
+     text-align: right;
+ }
+ 
+ @media screen and (max-width: 992px) {
+     table.resp td,
+     table.resp th {
+         font-size: 0.9em;
+     }
+ }
+ 
+ @media screen and (max-width: 576px) {
+     table.resp thead {
+         display: none;
+     }
+     table.resp tr {
+         display: block;
+         margin-bottom: 1em;
+     }
+     table.resp td {
+         display: block;
+         text-align: left;
+     }
+     table.resp td::before {
+         content: attr(data-label);
+         float: left;
+         font-weight: bold;
+         padding-right: 0.25em;
+     }
+ }
+ 
+ @media screen and (max-width: 550px) {
+     table.resp tr {
+         border: 1px solid var(--BORDER-color);
+     }
+     table.resp th,
+     table.resp td {
+         padding: 0.75em;
+         border-bottom: 0;
+     }  
+     table.resp tbody th {
+         text-align: center;
+         background-color: var(--THEAD-BACKGROUND-color);
+         color: var(--THEAD-color);
+         display: block;
+     }
+ }
+ 
