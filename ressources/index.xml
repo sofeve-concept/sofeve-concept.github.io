@@ -6,23 +6,5 @@
     <description>Recent content in Ressources on Sofève Concept</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/ressources/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Outils de vérification</title>
-      <link>https://sofeve-concept.github.io/ressources/outils/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/ressources/outils/</guid>
-      <description>Outils pour tester l&amp;rsquo;accessibilité des pages web Débogage dans le navigateur Le débogage consiste à rechercher et corriger les erreurs dans son code.</description>
-    </item>
-    
-    <item>
-      <title>Sites web ressources</title>
-      <link>https://sofeve-concept.github.io/ressources/sites/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/ressources/sites/</guid>
-      <description>Access42 Access42 est un cabinet de conseil expert en accessibilité numérique. La société propose entre autre :</description>
-    </item>
-    
   </channel>
 </rss>

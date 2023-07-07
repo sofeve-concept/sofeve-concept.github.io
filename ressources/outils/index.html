@@ -61,9 +61,14 @@
               			</ul>
 			    </li>
 			<li class="motifs">
-				<a href="/motifs/">Motifs de conception</a></li>
+				<a href="/motifs/">Motifs de conception</a></li>	
 			<li class="ressources">
-				<a href="/ressources/" aria-current="true">Ressources</a></li>
+				<button aria-haspopup="true" aria-expanded="false" aria-controls="ressources" aria-current="true">Ressources</button>
+				   <ul id="ressources"><li><a href="/ressources/bureautique/">Bureautique accessible</a></li>
+              			<li><a href="/ressources/outils/" aria-current="page">Outils de vérification</a></li>
+              			<li><a href="/ressources/sites/">Sites sur l&#39;accessibilité</a></li>
+              			</ul>
+			    </li>
 			<li class="a-propos">
 				<a href="/a-propos/">À propos</a></li></ul>
 	</nav>	
@@ -87,8 +92,8 @@
 		<span class="sr-only">Aller à la page de recherche sur le site</span></a>
 	 </a></p>
 </header>
-	
-<main role="main" class="container"><div class="flex ligneHaut">
+	<main role="main" class="container">
+		<div class="flex ligneHaut">
 <nav aria-label="Vous êtes ici" class="ariane">
 <ol>
   <li><a href="/">Accueil</a></li>
@@ -101,150 +106,39 @@
   Imprimer
 </button>
 </div>
-</div><div class="flex">
-          <aside class="item-20"><nav role="navigation" aria-label="navigation secondaire ressources">
-     <p class="rubrique">Ressources</p>
-     <button aria-haspopup="true" aria-expanded="false" id="sandwitch" aria-controls="sousMenu">
-          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#2E006C" aria-hidden="true"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-          <span class="sr-only">Menu</span>
-     </button>
-     <ul>
-          <li><a href="/ressources/bureautique/presentation/alignement/">Alignement et indentation</a></li>
-          <li><a href="/ressources/bureautique/structure/citation/">Citations</a></li>
-          <li><a href="/ressources/bureautique/structure/colonnes/">Colonnes</a></li>
-          <li><a href="/ressources/bureautique/couleur/contraste/">Contraste de couleur</a></li>
-          <li><a href="/ressources/bureautique/couleur/information/">Couleur et information</a></li>
-          <li><a href="/ressources/bureautique/finaliser/export/">Export au format PDF</a></li>
-          <li><a href="/ressources/bureautique/images/image/">Image</a></li>
-          <li><a href="/ressources/bureautique/structure/langue/">Langue</a></li>
-          <li><a href="/ressources/bureautique/presentation/capitales-sigles/">Lettres capitales et sigles</a></li>
-          <li><a href="/ressources/bureautique/liens/libelle/">Libellé explicite</a></li>
-          <li><a href="/ressources/bureautique/liens/telechargement/">Lien de téléchargement</a></li>
-          <li><a href="/ressources/bureautique/structure/listes/">Liste à puces et liste numérotée</a></li>
-          <li><a href="/ressources/bureautique/finaliser/meta/">Métadonnées et méta-informations</a></li>
-          <li><a href="/ressources/outils/"><strong>Outils de vérification</strong></a></li>
-          <li><a href="/ressources/bureautique/courriel/parametrage/">Paramétrage de la messagerie</a></li>
-          <li><a href="/ressources/bureautique/presentation/police-caractere/">Police de caractère</a></li>
-          <li><a href="/ressources/bureautique/courriel/courriel/">Rédaction de courriels</a></li>
-          <li><a href="/ressources/bureautique/presentation/saut-ligne/">Saut de ligne</a></li>
-          <li><a href="/ressources/sites/">Sites web ressources</a></li>
-          <li><a href="/ressources/bureautique/structure/titraille/">Titraille</a></li></ul>
-</nav></aside>
-          <section class="item-80 rubMotif">
-               <h1 id="contenu">Outils de vérification</h1>
-               <p>Collection de quelques outils pour vérifier l&#39;accessibilité numérique de ses pages web ou documents bureautiques.</p>
-               <div class="toc">
-                    <h2><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" aria-hidden="true" fill="#2E006C"><path d="M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z"></path></svg>Dans cette rubrique</h2>
-                    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#outils-pour-tester-laccessibilité-des-pages-web">Outils pour tester l&rsquo;accessibilité des pages web</a>
-      <ul>
-        <li><a href="#débogage-dans-le-navigateur">Débogage dans le navigateur</a>
-          <ul>
-            <li><a href="#dans-firefox">Dans Firefox</a></li>
-            <li><a href="#dans-chrome">Dans Chrome</a></li>
-          </ul>
-        </li>
-        <li><a href="#les-extensions-de-navigateurs">Les extensions de navigateurs</a>
-          <ul>
-            <li><a href="#webdeveloper">WebDeveloper</a></li>
-            <li><a href="#html-validator">HTML Validator</a></li>
-            <li><a href="#tanaguru-webext-rgaa">Tanaguru webext RGAA</a></li>
-            <li><a href="#wave">Wave</a></li>
-            <li><a href="#assistant-rgaa">Assistant RGAA</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#outils-pour-tester-les-couleurs">Outils pour tester les couleurs</a>
-      <ul>
-        <li><a href="#colour-contrast-analyser">Colour Contrast Analyser</a></li>
-      </ul>
-    </li>
-    <li><a href="#outils-pour-tester-laccessibilité-bureautique">Outils pour tester l&rsquo;accessibilité bureautique</a>
-      <ul>
-        <li><a href="#vérificateur-du-logiciel-bureautique">Vérificateur du logiciel bureautique</a></li>
-        <li><a href="#pdf-accessibility-checker">PDF Accessibility Checker</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-               </div>
-               <h2 id="outils-pour-tester-laccessibilité-des-pages-web">Outils pour tester l&rsquo;accessibilité des pages web</h2>
-<h3 id="débogage-dans-le-navigateur">Débogage dans le navigateur</h3>
-<p>Le débogage consiste à rechercher et corriger les erreurs dans son code. Un code sans erreur permet notamment un meilleur affichage dans le navigateur.</p>
-<h4 id="dans-firefox">Dans Firefox</h4>
-<p>Dans firefox, l&rsquo;outil de débogage s&rsquo;obtient via la combinaisonde touches <code>CTRL</code> + <code>MAJ</code> + <code>I</code>.</p>
-<p>Ses principales fonctionnalités sont:</p>
-<ul>
-<li>Accès simultané au code HTML, aux feuilles de style CSS ou aux scripts présents dans la page</li>
-<li>Surlignage des différents éléments avec visualisation du code correspondant</li>
-<li>Éditer et modifier à la volée du code HTML : rendu visuel immédiat</li>
-<li>Pour les scripts, l&rsquo;outils propose un débugger.</li>
-<li>Possibilité d&rsquo;évaluer le temps de chargement des différents éléments de la page (scripts, images, feuilles de style, …).</li>
-</ul>
-<h4 id="dans-chrome">Dans Chrome</h4>
-<p>Dans Chrome, l&rsquo;outil de débogage s&rsquo;obtient via la touche <code>F12</code>.</p>
-<p>Ses principales fonctionnalités sont:</p>
-<ul>
-<li>Accès simultané au code HTML, aux feuilles de style CSS ou aux scripts présents dans la page</li>
-<li>Surlignage des différents éléments avec visualisation du code correspondant</li>
-<li>Éditer et modifier à la volée du code HTML : rendu visuel immédiat</li>
-<li>Pour les scripts, l&rsquo;outils propose un débugger.</li>
-<li>Possibilité d&rsquo;évaluer le temps de chargement des différents éléments de la page (scripts, images, feuilles de style, …).</li>
-</ul>
-<h3 id="les-extensions-de-navigateurs">Les extensions de navigateurs</h3>
-<p>Il est possible d&rsquo;installer des extensions dans son navigateur web pour examiner et manipuler le code des pages Web.<br>
-<em>L&rsquo;installation des extensions étant différentes d&rsquo;un navigateur à l&rsquo;autre, seul le nom de l&rsquo;extension est mentionné.</em></p>
-<h4 id="webdeveloper">WebDeveloper</h4>
-<p>C&rsquo;est le &ldquo;couteau suisse&rdquo; du développeur Web pour examiner et manipuler les pages Web.</p>
-<p>Ses principales fonctionnalités sont :</p>
-<ul>
-<li>Activer/désactiver le javascript, le cache,…</li>
-<li>Manipuler les cookies</li>
-<li>Examiner les CSS</li>
-<li>Redimensionner les pages (résolutions)</li>
-<li>Manipuler les formulaires</li>
-<li>Valider les pages</li>
-</ul>
-<h4 id="html-validator">HTML Validator</h4>
-<p>Validateur HTML basé sur la librairie Tidy (développée par le W3C à l&rsquo;origine) et SGML (validateur actuel du W3C). Ce dernier est plus restrictif. Le validateur est présent sous la forme d&rsquo;une icône située à droite de la barre de statut, et vérifie toutes les pages sur lesquelles vous naviguez ou intégrer dans les outils de développement. Cet outil s&rsquo;active depuis les outils de développements de son navigateur.</p>
-<p>Ses principales fonctionnalités sont :</p>
-<ul>
-<li>Signale les erreurs de validation et indique quand c&rsquo;est possible la façon d&rsquo;y remédier</li>
-<li>Permet de valider sans passer par les validateurs officiels du W3C, parfois débordés.</li>
-</ul>
-<h4 id="tanaguru-webext-rgaa">Tanaguru webext RGAA</h4>
-<p>C&rsquo;est un outil d&rsquo;évaluation de l&rsquo;accessibilité des pages web. Il analyse le code source généré sur la base des tests du RGAA. Cet outil s&rsquo;active depuis les outils de développements de son navigateur.</p>
-<h4 id="wave">Wave</h4>
-<p>Cette extension a l&rsquo;avantage de pouvoir être utilisée sur des pages en local.</p>
-<p>Ses principales fonctionnalités sont :</p>
-<ul>
-<li>analyse des erreurs globales et des erreurs de contrastes de couleurs</li>
-<li>repérage des éléments de structuration de la page</li>
-<li>affichage des erreurs et alertes</li>
-<li>analyse des attributs <code>ARIA</code>.</li>
-</ul>
-<h4 id="assistant-rgaa">Assistant RGAA</h4>
-<p>Cette extension, développée par la société <strong>Empreinte digitale</strong>, propose une liste complète des tests du référentiel RGAA. Pour chacun de ces tests, l&rsquo;extension permet d&rsquo;appliquer des modifications à la page courante (modifications de style, ajout d&rsquo;informations, outils), permettant d&rsquo;effectuer plus simplement les tests.</p>
-<h2 id="outils-pour-tester-les-couleurs">Outils pour tester les couleurs</h2>
-<h3 id="colour-contrast-analyser">Colour Contrast Analyser</h3>
-<p>L&rsquo;outil gratuit de vérification du contraste des couleurs créé par TPGi permet de déterminer facilement le rapport de contraste de deux couleurs simplement à l&rsquo;aide d&rsquo;un outil pipette. <span lang="en">Colour Contrast Analyser</span> (CCA) permet d&rsquo;optimiser son contenu, y compris le texte et les éléments visuels, pour les personnes ayant une déficience visuelle comme le daltonisme et les malvoyants.</p>
-<p>Ses principales fonctionnalités :</p>
-<ul>
-<li>Vérifie les combinaisons de couleurs de premier plan et d&rsquo;arrière-plan pour déterminer si elles donnent une bonne visibilité de couleurs.</li>
-<li>Basé sur les algorithmes proposés par le W3C.</li>
-</ul>
-<p><a href="https://pdfua.foundation/en/pdf-accessibility-checker-pac/" title="Télécharger le logiciel CCA (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">Télécharger le logiciel CCA</a></p>
-<h2 id="outils-pour-tester-laccessibilité-bureautique">Outils pour tester l&rsquo;accessibilité bureautique</h2>
-<h3 id="vérificateur-du-logiciel-bureautique">Vérificateur du logiciel bureautique</h3>
-<p>Outre <span lang="en">Colour Contrast Analyser</span>, les logiciels bureautiques possèdent un outil de vérification de l&rsquo;accessibilité atteignable depuis leur menu. Consulter la documentation de votre logiciel pour savoir où le trouver.</p>
-<h3 id="pdf-accessibility-checker">PDF Accessibility Checker</h3>
-<p>Créé par la <span lang="en">PDF/UA Foundation</span>, le logiciel &ldquo;PAC&rdquo; (<span lang="en">PDF Accessibility Checker</span>) a été initialement publié en 2010 et a été le premier outil automatisé de validation de la conformité PDF/UA. PAC est conçu pour identifier facilement tous les critères de succès vérifiables par machine de l&rsquo;ISO 14289-1 (PDF/UA) et des WCAG (Web Content Accessibility Guidelines).</p>
-<p><a href="https://pdfua.foundation/en/pdf-accessibility-checker-pac/" title="Télécharger le logiciel PAC (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">Télécharger le logiciel PAC</a></p>
+</div>
+	<h1 id="contenu">Outils de vérification</h1>
+			<p class="intro">Collection de quelques outils pour vérifier l&#39;accessibilité numérique de ses pages web ou documents bureautiques.</p>
+		
+			<article class="summary">
+	<h2><a href="https://sofeve-concept.github.io/ressources/outils/outils-page-web/">Accessibilité des pages web</a></h2>
+	<div class="extrait">
+		<p>Outils pour tester l&#39;accessibilité des pages web</p>	
+			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/ressources/outils/outils-page-web/" class="btn" title="Lire la suite de l'article Accessibilité des pages web">Lire la suite...</a></p>
+	</div>
+</article>
 
-          </section>
-     </div>
+		
+			<article class="summary">
+	<h2><a href="https://sofeve-concept.github.io/ressources/outils/outils-couleurs/">Contraste de couleurs</a></h2>
+	<div class="extrait">
+		<p>Collection de quelques outils pour vérifier le contraste des couleurs.</p>	
+			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/ressources/outils/outils-couleurs/" class="btn" title="Lire la suite de l'article Contraste de couleurs">Lire la suite...</a></p>
+	</div>
+</article>
+
+		
+			<article class="summary">
+	<h2><a href="https://sofeve-concept.github.io/ressources/outils/outils-bureautique/">Accessibilité bureautique</a></h2>
+	<div class="extrait">
+		<p>Collection de quelques outils pour vérifier l&#39;accessibilité numérique de ses documents bureautiques.</p>	
+			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/ressources/outils/outils-bureautique/" class="btn" title="Lire la suite de l'article Accessibilité bureautique">Lire la suite...</a></p>
+	</div>
+</article>
+
+		
+	
+
 </main>
 
 	<footer role="contentinfo" id="piedDePage">

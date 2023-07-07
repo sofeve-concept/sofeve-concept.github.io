@@ -61,9 +61,14 @@
               			</ul>
 			    </li>
 			<li class="motifs">
-				<a href="/motifs/">Motifs de conception</a></li>
+				<a href="/motifs/">Motifs de conception</a></li>	
 			<li class="ressources">
-				<a href="/ressources/" aria-current="true">Ressources</a></li>
+				<button aria-haspopup="true" aria-expanded="false" aria-controls="ressources" aria-current="true">Ressources</button>
+				   <ul id="ressources"><li><a href="/ressources/bureautique/">Bureautique accessible</a></li>
+              			<li><a href="/ressources/outils/">Outils de vérification</a></li>
+              			<li><a href="/ressources/sites/">Sites sur l&#39;accessibilité</a></li>
+              			</ul>
+			    </li>
 			<li class="a-propos">
 				<a href="/a-propos/">À propos</a></li></ul>
 	</nav>	
@@ -87,8 +92,8 @@
 		<span class="sr-only">Aller à la page de recherche sur le site</span></a>
 	 </a></p>
 </header>
-	
-<main role="main" class="container"><div class="flex ligneHaut">
+	<main role="main" class="container">
+     <div class="flex ligneHaut">
 <nav aria-label="Vous êtes ici" class="ariane">
 <ol>
   <li><a href="/">Accueil</a></li>
@@ -103,41 +108,40 @@
   Imprimer
 </button>
 </div>
-</div><div class="flex">
-          <aside class="item-20"><nav role="navigation" aria-label="navigation secondaire ressources">
-     <p class="rubrique">Ressources</p>
+</div>
+     <div class="flex">
+          <aside class="item-20">
+               
+               
+<nav role="navigation" aria-label="Navigation secondaire bureautique accessible">
+     <p class="rubrique">Bureautique accessible</p>
      <button aria-haspopup="true" aria-expanded="false" id="sandwitch" aria-controls="sousMenu">
           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#2E006C" aria-hidden="true"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
           <span class="sr-only">Menu</span>
      </button>
-     <ul>
-          <li><a href="/ressources/bureautique/presentation/alignement/">Alignement et indentation</a></li>
-          <li><a href="/ressources/bureautique/structure/citation/">Citations</a></li>
-          <li><a href="/ressources/bureautique/structure/colonnes/">Colonnes</a></li>
-          <li><a href="/ressources/bureautique/couleur/contraste/">Contraste de couleur</a></li>
-          <li><a href="/ressources/bureautique/couleur/information/"><strong>Couleur et information</strong></a></li>
-          <li><a href="/ressources/bureautique/finaliser/export/">Export au format PDF</a></li>
-          <li><a href="/ressources/bureautique/images/image/">Image</a></li>
-          <li><a href="/ressources/bureautique/structure/langue/">Langue</a></li>
-          <li><a href="/ressources/bureautique/presentation/capitales-sigles/">Lettres capitales et sigles</a></li>
-          <li><a href="/ressources/bureautique/liens/libelle/">Libellé explicite</a></li>
-          <li><a href="/ressources/bureautique/liens/telechargement/">Lien de téléchargement</a></li>
-          <li><a href="/ressources/bureautique/structure/listes/">Liste à puces et liste numérotée</a></li>
-          <li><a href="/ressources/bureautique/finaliser/meta/">Métadonnées et méta-informations</a></li>
-          <li><a href="/ressources/outils/">Outils de vérification</a></li>
-          <li><a href="/ressources/bureautique/courriel/parametrage/">Paramétrage de la messagerie</a></li>
-          <li><a href="/ressources/bureautique/presentation/police-caractere/">Police de caractère</a></li>
-          <li><a href="/ressources/bureautique/courriel/courriel/">Rédaction de courriels</a></li>
-          <li><a href="/ressources/bureautique/presentation/saut-ligne/">Saut de ligne</a></li>
-          <li><a href="/ressources/sites/">Sites web ressources</a></li>
-          <li><a href="/ressources/bureautique/structure/titraille/">Titraille</a></li></ul>
-</nav></aside>
-          <section class="item-80 rubMotif">
+     <ul id="sousMenu"><li><a href="https://sofeve-concept.github.io/ressources/bureautique/structure/">Structure du document</a></li>
+          <li><a href="https://sofeve-concept.github.io/ressources/bureautique/presentation/">Présentation du texte</a></li>
+          <li><a href="https://sofeve-concept.github.io/ressources/bureautique/liens/">Lien hypertexte</a></li>
+          <li><a href="https://sofeve-concept.github.io/ressources/bureautique/images/">Image</a></li>
+          <li><a href="https://sofeve-concept.github.io/ressources/bureautique/couleur/" aria-current="true" >Couleurs et contrastes</a>
+               
+               <ul><li><a href="https://sofeve-concept.github.io/ressources/bureautique/couleur/contraste/">Contraste de couleur</a></li>
+                    <li><a href="https://sofeve-concept.github.io/ressources/bureautique/couleur/information/" aria-current="page" >Couleur et information</a></li>
+                    </ul>
+               </li>
+          <li><a href="https://sofeve-concept.github.io/ressources/bureautique/finaliser/">Tags et export PDF</a></li>
+          <li><a href="https://sofeve-concept.github.io/ressources/bureautique/courriel/">Courrier électronique</a></li>
+          </ul>
+</nav>
+
+              
+               </aside>
+          <section class="item-80 rubCode">
                <h1 id="contenu">Couleur et information</h1>
                <p> Les couleurs ne doivent pas être le seul moyen de véhiculer de l’information.</p>
                <div class="toc">
-                    <h2><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" aria-hidden="true" fill="#2E006C"><path d="M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z"></path></svg>Dans cette rubrique</h2>
-                    <nav id="TableOfContents">
+               <h2><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" aria-hidden="true" fill="#2E006C"><path d="M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z"/></svg> Dans cette rubrique</h2>
+               <nav id="TableOfContents">
   <ul>
     <li><a href="#règles">Règles</a></li>
     <li><a href="#pourquoi-">Pourquoi ?</a></li>
@@ -153,8 +157,9 @@
 <h2 id="comment-">Comment ?</h2>
 <p>Pour véhiculer l’information, on aura recours aux motifs ou on positionnera les légendes dans le graphique lui-même.</p>
 
-          </section>
+          </section> 
      </div>
+     
 </main>
 
 	<footer role="contentinfo" id="piedDePage">

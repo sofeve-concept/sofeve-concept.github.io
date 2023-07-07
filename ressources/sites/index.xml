@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sites web ressources on Sofève Concept</title>
+    <link>https://sofeve-concept.github.io/ressources/sites/</link>
+    <description>Recent content in Sites web ressources on Sofève Concept</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/ressources/sites/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Design Systems Français</title>
+      <link>https://sofeve-concept.github.io/ressources/sites/design-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/ressources/sites/design-system/</guid>
+      <description>Définition Un design system rassemble tous les éléments graphiques et visuels liés à une charte de présentation dans un seul et même système standardisé.</description>
+    </item>
+    
+    <item>
+      <title>Sociétés qui œuvrent pour l&#39;accessibilité numérique</title>
+      <link>https://sofeve-concept.github.io/ressources/sites/sites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/ressources/sites/sites/</guid>
+      <description>Access42 Access42 est un cabinet de conseil expert en accessibilité numérique. La société propose entre autre :</description>
+    </item>
+    
+  </channel>
+</rss>

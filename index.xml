@@ -26,6 +26,15 @@
     </item>
     
     <item>
+      <title>Accessibilité des pages web</title>
+      <link>https://sofeve-concept.github.io/ressources/outils/outils-page-web/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/ressources/outils/outils-page-web/</guid>
+      <description>Débogage dans le navigateur Le débogage consiste à rechercher et corriger les erreurs dans son code.</description>
+    </item>
+    
+    <item>
       <title>Bordure de texte</title>
       <link>https://sofeve-concept.github.io/motifs/bordure-texte/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -178,6 +187,15 @@ Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page H
       
       <guid>https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs/</guid>
       <description>Contraste suffisant entre les textes et l’arrière-plan Texte normal non gras inférieur à 18pt : rapport de 4,5 pour 1 Texte normal gras inférieur à 14pt : rapport de 4,5 pour 1 Grand texte non gras inférieur à 18pt : rapport de 3 pour 1 Grand texte gras inférieur à 14pt : rapport de 3 pour 1 Information compréhensible même en l’absence de couleurs</description>
+    </item>
+    
+    <item>
+      <title>Contraste de couleurs</title>
+      <link>https://sofeve-concept.github.io/ressources/outils/outils-couleurs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/ressources/outils/outils-couleurs/</guid>
+      <description>Colour Contrast Analyser L&amp;rsquo;outil gratuit de vérification du contraste des couleurs créé par TPGi permet de déterminer facilement le rapport de contraste de deux couleurs simplement à l&amp;rsquo;aide d&amp;rsquo;un outil pipette.</description>
     </item>
     
     <item>
@@ -491,6 +509,15 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
     </item>
     
     <item>
+      <title>Accessibilité bureautique</title>
+      <link>https://sofeve-concept.github.io/ressources/outils/outils-bureautique/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/ressources/outils/outils-bureautique/</guid>
+      <description>Vérificateur du logiciel bureautique Outre Colour Contrast Analyser, les logiciels bureautiques possèdent un outil de vérification de l&amp;rsquo;accessibilité atteignable depuis leur menu.</description>
+    </item>
+    
+    <item>
       <title>Accordéon</title>
       <link>https://sofeve-concept.github.io/motifs/accordeon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -515,6 +542,15 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
       
       <guid>https://sofeve-concept.github.io/motifs/carte-cliquable/</guid>
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Une carte cliquable est une zone délimitée par une div qui contient un titre, du texte et un lien.</description>
+    </item>
+    
+    <item>
+      <title>Design Systems Français</title>
+      <link>https://sofeve-concept.github.io/ressources/sites/design-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/ressources/sites/design-system/</guid>
+      <description>Définition Un design system rassemble tous les éléments graphiques et visuels liés à une charte de présentation dans un seul et même système standardisé.</description>
     </item>
     
     <item>
@@ -563,15 +599,6 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
     </item>
     
     <item>
-      <title>Outils de vérification</title>
-      <link>https://sofeve-concept.github.io/ressources/outils/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/ressources/outils/</guid>
-      <description>Outils pour tester l&amp;rsquo;accessibilité des pages web Débogage dans le navigateur Le débogage consiste à rechercher et corriger les erreurs dans son code.</description>
-    </item>
-    
-    <item>
       <title>Placeholder</title>
       <link>https://sofeve-concept.github.io/motifs/placeholder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -590,11 +617,11 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
     </item>
     
     <item>
-      <title>Sites web ressources</title>
-      <link>https://sofeve-concept.github.io/ressources/sites/</link>
+      <title>Sociétés qui œuvrent pour l&#39;accessibilité numérique</title>
+      <link>https://sofeve-concept.github.io/ressources/sites/sites/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sofeve-concept.github.io/ressources/sites/</guid>
+      <guid>https://sofeve-concept.github.io/ressources/sites/sites/</guid>
       <description>Access42 Access42 est un cabinet de conseil expert en accessibilité numérique. La société propose entre autre :</description>
     </item>
     
