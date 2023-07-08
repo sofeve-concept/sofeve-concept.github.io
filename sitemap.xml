@@ -156,6 +156,8 @@
   </url><url>
     <loc>https://sofeve-concept.github.io/a-propos/</loc>
   </url><url>
+    <loc>https://sofeve-concept.github.io/a-propos/qui-est-sofeve/</loc>
+  </url><url>
     <loc>https://sofeve-concept.github.io/motifs/accordeon/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/</loc>
@@ -166,7 +168,11 @@
   </url><url>
     <loc>https://sofeve-concept.github.io/categories/</loc>
   </url><url>
+    <loc>https://sofeve-concept.github.io/coder/</loc>
+  </url><url>
     <loc>https://sofeve-concept.github.io/tags/css/</loc>
+  </url><url>
+    <loc>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/ressources/sites/design-system/</loc>
   </url><url>
@@ -208,7 +214,5 @@
     <loc>https://sofeve-concept.github.io/motifs/tableau-responsive/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/tags/</loc>
-  </url><url>
-    <loc>https://sofeve-concept.github.io/coder/</loc>
   </url>
 </urlset>
