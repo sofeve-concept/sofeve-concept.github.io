@@ -144,10 +144,16 @@
                </aside>
           <section class="item-80 rubCode">
                <h1 id="contenu">À propos de la navigation</h1>
-               <p>Informations générales à savoir sur les systèmes de navigation</p>
-               <div class="toc">
-               <h2><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" aria-hidden="true" fill="#2E006C"><path d="M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z"/></svg> Dans cette rubrique</h2>
-               <nav id="TableOfContents">
+               <p>Informations générales à savoir sur les systèmes de navigation</p><div id="accordeonGroup" class="accordeon">
+     <h2>
+         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
+             <span class="accordeon-title">Table des matières</span>
+             <span class="accordeon-icon" aria-hidden="true"></span>
+         </button>
+     </h2>
+     <div id="tdm" role="region" aria-labelledby="tableDesMatieres" class="accordeon-panel" hidden>
+         <div>
+          <nav id="TableOfContents">
   <ul>
     <li><a href="#ce-quil-faut-retenir">Ce qu&rsquo;il faut retenir</a></li>
     <li><a href="#ordre-de-tabulation">Ordre de tabulation</a></li>
@@ -160,8 +166,9 @@
     </li>
   </ul>
 </nav>
-               </div>
-               <h2 id="ce-quil-faut-retenir">Ce qu&rsquo;il faut retenir</h2>
+         </div>
+     </div>
+</div><h2 id="ce-quil-faut-retenir">Ce qu&rsquo;il faut retenir</h2>
 <p>Pour un site qui comporte plus de 5 pages différentes, il faut veiller à prévoir au moins 2 systèmes de navigation parmi :</p>
 <ul>
 <li>Un menu de navigation et un plan du site</li>

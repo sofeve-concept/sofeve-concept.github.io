@@ -20,8 +20,6 @@
 	<link href="/images/favicon.ico" rel="icon"><link href="/css/fontluciole.min.css" rel="stylesheet" media="screen"><link href="/css/fontatkinson.min.css" rel="stylesheet" media="screen">
 	<link href="/css/print.min.css" rel="stylesheet" media="print"><link href="/css/sofeve.min.css" rel="stylesheet" media="screen">
 	<link href="/css/monokai.min.css" rel="stylesheet" media="screen">
-	
-	<link href="/css/accordeon.min.css" rel="stylesheet" media="screen">
 	</head>
 <body>
 	<div class="evitement">
@@ -139,10 +137,16 @@
 </nav></aside>
           <section class="item-80 rubMotif">
                <h1 id="contenu">Accordéon</h1>
-               <p>Extrait de code pour un accordéon accessible au clavier.</p>
-               <div class="toc">
-                    <h2><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" aria-hidden="true" fill="#2E006C"><path d="M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z"></path></svg>Dans cette rubrique</h2>
-                    <nav id="TableOfContents">
+               <p>Extrait de code pour un accordéon accessible au clavier.</p><div id="accordeonGroup" class="accordeon">
+     <h2>
+         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
+             <span class="accordeon-title">Table des matières</span>
+             <span class="accordeon-icon" aria-hidden="true"></span>
+         </button>
+     </h2>
+     <div id="tdm" role="region" aria-labelledby="tableDesMatieres" class="accordeon-panel" hidden>
+         <div>
+          <nav id="TableOfContents">
   <ul>
     <li><a href="#règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</a></li>
     <li><a href="#visuel">Visuel</a></li>
@@ -155,8 +159,9 @@
     </li>
   </ul>
 </nav>
-               </div>
-               <h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
+         </div>
+     </div>
+</div><h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
 <ul>
 <li>Le titre de chaque en-tête de l&rsquo;accordéon est contenu dans un élément <code>button</code> avec un attribut <code>aria-controls</code> qui fait référence à l&rsquo;<code>id</code> de l&rsquo;élément qu&rsquo;il contrôle et un attribut <code>aria-expanded</code> qui prend la valeur <code>true</code> quand la zone que gère l&rsquo;en-tête de l&rsquo;accordéon est visible et <code>false</code> quand la zone que gère l&rsquo;en-tête de l&rsquo;accordéon est invisible.</li>
 <li>L&rsquo;élément bouton est le seul élément à l&rsquo;intérieur de l&rsquo;élément titre. Autrement dit, s&rsquo;il existe d&rsquo;autres éléments visuellement persistants, ils ne sont pas inclus dans l&rsquo;élément d&rsquo;en-tête.</li>
@@ -165,17 +170,17 @@
 </ul>
 <h2 id="visuel">Visuel</h2>
 
- <div id="accordionGroup" class="accordion">
+ <div id="accordeonGroup" class="accordeon">
             <h3>
-                <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect1"
-                    id="accordion1id">
-                    <span class="accordion-title">
+                <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="sect1"
+                    id="accordeon1id">
+                    <span class="accordeon-title">
                         Rubrique1
-                        <span class="accordion-icon"></span>
+                        <span class="accordeon-icon"></span>
                     </span>
                 </button>
             </h3>
-            <div id="sect1" role="region" aria-labelledby="accordion1id" class="accordion-panel" hidden="">
+            <div id="sect1" role="region" aria-labelledby="accordeon1id" class="accordeon-panel" hidden="">
                 <div>
                     <p>Consectetur cupidatat nisi amet exercitation quis mollit. Incididunt labore voluptate labore
                         nostrud incididunt fugiat labore est anim tempor et Lorem dolor ea. Est aute sint velit deserunt
@@ -192,15 +197,15 @@
                 </div>
             </div>
             <h3>
-                <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect2"
-                    id="accordion2id">
-                    <span class="accordion-title">
+                <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="sect2"
+                    id="accordeon2id">
+                    <span class="accordeon-title">
                         Rubrique2
-                        <span class="accordion-icon"></span>
+                        <span class="accordeon-icon"></span>
                     </span>
                 </button>
             </h3>
-            <div id="sect2" role="region" aria-labelledby="accordion2id" class="accordion-panel" hidden="">
+            <div id="sect2" role="region" aria-labelledby="accordeon2id" class="accordeon-panel" hidden="">
                 <div>
                     <p>Consectetur cupidatat nisi amet exercitation quis mollit. Incididunt labore voluptate labore
                         nostrud incididunt fugiat labore est anim tempor et Lorem dolor ea. Est aute sint velit deserunt
@@ -217,15 +222,15 @@
                 </div>
             </div>
             <h3>
-                <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect3"
-                    id="accordion3id">
-                    <span class="accordion-title">
+                <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="sect3"
+                    id="accordeon3id">
+                    <span class="accordeon-title">
                         Rubrique3
-                        <span class="accordion-icon"></span>
+                        <span class="accordeon-icon"></span>
                     </span>
                 </button>
             </h3>
-            <div id="sect3" role="region" aria-labelledby="accordion3id" class="accordion-panel" hidden="">
+            <div id="sect3" role="region" aria-labelledby="accordeon3id" class="accordeon-panel" hidden="">
                 <div>
                     <p>Consectetur cupidatat nisi amet exercitation quis mollit. Incididunt labore voluptate labore
                         nostrud incididunt fugiat labore est anim tempor et Lorem dolor ea. Est aute sint velit deserunt
