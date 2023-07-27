@@ -211,88 +211,62 @@
 </ul>
 <p>L&rsquo;alternative textuelle se pose soit avec l&rsquo;attribit <code>alt</code>, soit avec l&rsquo;attribut <code>title</code>, soit avec les attributs aria <code>aria-label</code> ou <code>aria-labelledby</code>.</p>
 
-<table>
-            <caption>Alternatives textuelles à utiliser selon le type d'image</caption>
-       <thead>
-        <tr>
-            <th rowspan="2">&Eacute;lément HTML</th>
-            <th colspan="3">Alternatives textuelles</th>
-            </tr>
-        <tr>
-        <th>alt<br>
-        </th>
-        <th>title<br>
-        </th>
-        <th>aria-label<br>
-        aria-labelledby<br>
-        aria-describedby<br>
-        </th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-        <td>&lt;img... alt="Description de l'image."&gt;
-        </td>
-        <td>x<br>
-        </td>
-        <td><br>
-        </td>
-        <td>x<br>
-        </td>
-        </tr>
-        <tr>
-        <td>&lt;input type="image" alt="Description de l'image."... &gt;
-        </td>
-        <td>x<br>
-        </td>
-        <td><br>
-        </td>
-        <td>x<br>
-        </td>
-        </tr>
-        <tr>
-        <td>&lt;area...alt="Description de l'image."&gt;
-        </td>
-        <td>x<br>
-        </td>
-        <td><br>
-        </td>
-        <td>x<br>
-        </td>
-        </tr>
-        <tr>
-        <td>&lt;object type="images"...&gt;
-        </td>
-        <td><br>
-        </td>
-        <td>x<br>
-        </td>
-        <td>x<br>
-        </td>
-        </tr>
-        <tr>
-        <td>&lt;embed type="images/..."...&gt;
-        </td>
-        <td><br>
-        </td>
-        <td>x<br>
-        </td>
-        <td>x<br>
-        </td>
-        </tr>
-        <tr>
-        <td>&lt;canvas ...&gt;
-        </td>
-        <td><br>
-        </td>
-        <td>x<br>
-        </td>
-        <td>x<br>
-        </td>
-        </tr>
-        </tbody>
-        </table>
-        
+<table class="responsive">
+<caption>Alternatives textuelles à utiliser selon le type d'image</caption>
+     <thead>
+     <tr>
+          <th scope="col">&Eacute;lément HTML</th>
+          <th scope="col">Attribut<br>alt</th>
+          <th scope="col">Attribut<br>title</th>
+          <th scope="col">Attributs<br>aria-label<br>aria-labelledby<br>aria-describedby</th>
+     </tr>
+     </thead>
+     <tbody>
+     <tr>
+          <th scope="row" data-label="Élément HTML">img</th>
+          <td data-label="alt">oui</td>
+          <td data-label="title">non</td>
+          <td data-label="aria-label, aria-labelledby, aria-describedby">oui</td>
+     </tr>
+     <tr>
+          <th scope="row" data-label="Élément HTML">svg role="img"</th>
+          <td data-label="alt">non</td>
+          <td data-label="title">non</td>
+          <td data-label="aria-label, aria-labelledby, aria-describedby">oui</td>
+     </tr>
+     <tr>
+     <th scope="row" data-label="Élément HTML">input type="image"</th>
+     <td data-label="alt">oui</td>
+     <td data-label="title">non</td>
+     <td data-label="aria-label, aria-labelledby, aria-describedby">oui</td>
+     </tr>
+     <tr>
+     <th scope="row" data-label="Élément HTML">area</th>
+     <td data-label="alt">oui</td>
+     <td data-label="title">non</td>
+     <td data-label="aria-label, aria-labelledby, aria-describedby">oui</td>
+     </tr>
+     <tr>
+     <th scope="row" data-label="Élément HTML">object type="images"</th>
+     <td data-label="alt">non</td>
+     <td data-label="title">oui</td>
+     <td data-label="aria-label, aria-labelledby, aria-describedby">oui</td>
+     </tr>
+     <tr>
+     <th scope="row" data-label="Élément HTML">embed type="images/..."</th>
+     <td data-label="alt">non</td>
+     <td data-label="title">oui</td>
+     <td data-label="aria-label, aria-labelledby, aria-describedby">oui</td>
+     </tr>
+     <tr>
+     <th scope="row" data-label="Élément HTML">canvas</th>
+     <td data-label="alt">non</td>
+     <td data-label="title">oui</td>
+     <td data-label="aria-label, aria-labelledby, aria-describedby">oui</td>
+     </tr>
+     </tbody>
+     </table>
+
 <h4 id="eacutelément-html-svg-1">Élément HTML <code>svg</code></h4>
 <p>Pour les svg, on aura recours à l&rsquo;élément <code>&lt;title&gt;...&lt;/title&gt;</code> (et non pas l&rsquo;attribut <code>title</code>) et au rôle aria <code>role=&quot;img&quot;</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;monTexte&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;img&#34;</span><span class="p">&gt;</span>
