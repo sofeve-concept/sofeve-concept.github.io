@@ -7,17 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/coder/image-icone/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Images img et svg</title>
-      <link>https://sofeve-concept.github.io/coder/image-icone/images-img-svg/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/coder/image-icone/images-img-svg/</guid>
-      <description>Les images s&amp;rsquo;implémentent avec l&amp;rsquo;élément HTML &amp;lt;img src=&amp;quot;...&amp;quot;&amp;gt; ou &amp;lt;svg ...&amp;gt;...&amp;lt;/svg&amp;gt;.
-Image sans alternative textuelle Quand les images ou les icônes sont décoratives, on n&amp;rsquo;ajoute pas d&amp;rsquo;alternative textuelle (alt).</description>
-    </item>
-    
-    <item>
-      <title>Les images</title>
+      <title>Les images (IMG et SVG)</title>
       <link>https://sofeve-concept.github.io/coder/image-icone/images/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -41,7 +31,7 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/image-icone/police-icone/</guid>
-      <description>Les polices d&amp;rsquo;icônes symboliques Parmi les polices de cacractères symboliques, les plus connues sont :</description>
+      <description>Les polices de caractère symboliques Parmi les polices de cacractères symboliques, les plus connues sont :</description>
     </item>
     
   </channel>

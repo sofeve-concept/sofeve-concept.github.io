@@ -128,8 +128,7 @@
 		<li><a href="https://sofeve-concept.github.io/coder/lien-bouton/">Liens et boutons</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/image-icone/" aria-current="true" >Images et icônes</a>
 			
-			<ul><li><a href="https://sofeve-concept.github.io/coder/image-icone/images-img-svg/">Images img et svg</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/image-icone/images/">Les images</a></li>
+			<ul><li><a href="https://sofeve-concept.github.io/coder/image-icone/images/">Les images (IMG et SVG)</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/">Image légendée</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/image-icone/police-icone/" aria-current="page" >Police symbolique</a></li>
 				</ul></li>
@@ -154,27 +153,25 @@
          <div>
           <nav id="TableOfContents">
   <ul>
-    <li><a href="#les-polices-dicônes-symboliques">Les polices d&rsquo;icônes symboliques</a></li>
-    <li><a href="#implémentation-html">Implémentation HTML</a></li>
+    <li><a href="#les-polices-de-caractère-symboliques">Les polices de caractère symboliques</a></li>
   </ul>
 </nav>
          </div>
      </div>
-</div><h2 id="les-polices-dicônes-symboliques">Les polices d&rsquo;icônes symboliques</h2>
+</div><h2 id="les-polices-de-caractère-symboliques">Les polices de caractère symboliques</h2>
 <p>Parmi les polices de cacractères symboliques, les plus connues sont :</p>
 <ul>
 <li><a href="https://fontawesome.com/icons?d=gallery"  target="_blank" rel="noopener noreferrer" title="Awesome (nouvelle fenêtre)">Awesome</a></li>
 <li><a href="https://icons.getbootstrap.com/"  target="_blank" rel="noopener noreferrer" title="Bootstrap icons (nouvelle fenêtre)">Bootstrap icons</a></li>
 <li><a href="#ZgotmplZ"  target="_blank" rel="noopener noreferrer" title="Material Icons (nouvelle fenêtre)">Material Icons</a></li>
 </ul>
-<h2 id="implémentation-html">Implémentation HTML</h2>
-<p>Si l&rsquo;icône n&rsquo;apporte pas d&rsquo;information, il sera masqué aux lecteurs d&rsquo;écran via l&rsquo;attribut aria <code>aria-hidden=&quot;true&quot;</code>.</p>
+<p>Si le symbole n&rsquo;apporte pas d&rsquo;information, il sera masqué aux lecteurs d&rsquo;écran via l&rsquo;attribut aria <code>aria-hidden=&quot;true&quot;</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fas fa-gift&#34;</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
-</span></span></code></pre></div><p>Si l&rsquo;icône est porteur d&rsquo;information, il sera quand même masqué aux lecteurs d&rsquo;écran via l&rsquo;attribut aria <code>aria-hidden=&quot;true&quot;</code> et on rajoutera sa signification via un texte caché en CSS.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fas fa-home&#34;</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sr-only&#34;</span><span class="p">&gt;</span>Accueil<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-</span></span></code></pre></div><p><strong>Le code CSS ci-dessous pour masquer le texte mais le rendre interprétable par les synthétiseurs vocaux est le plus optimum quelque soit le logiciel de synthèse utilisé (Jaws, NVDA, Voice Over&hellip;).</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/** sr-only : screen-reader only : seulement pour lecteur d&#39;écran */</span>
+</span></span></code></pre></div><p>Si le symbole est porteur d&rsquo;information, on apportera sa signification via l&rsquo;attribut aria <code>aria-label</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fas fa-search&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Rechercher&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Une autre technique consiste à rajouter un texte visuellement masqué et qui sera lu par les logiciels de synthèse vocale (via la classe de style <code>.sr-only</code> (on retrouve aussi fréquemment sur le web cette classe de style nommée <code>.visually-hidden</code>) ; l&rsquo;élément HTML <code>i</code> sera alors transformé en élément <code>span</code> pour respecter la sémantique HTML.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fas fa-search&#34;</span> <span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sr-only&#34;</span><span class="p">&gt;</span>Rechercher<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/** sr-only : screen-reader only : seulement pour lecteur d&#39;écran */</span>
 </span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">sr-only</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="k">border</span><span class="p">:</span> <span class="mi">0</span> <span class="cp">!important</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="k">clip</span><span class="p">:</span> <span class="nb">rect</span><span class="p">(</span><span class="mi">1</span><span class="kt">px</span><span class="p">,</span> <span class="mi">1</span><span class="kt">px</span><span class="p">,</span> <span class="mi">1</span><span class="kt">px</span><span class="p">,</span> <span class="mi">1</span><span class="kt">px</span><span class="p">)</span> <span class="cp">!important</span><span class="p">;</span>
