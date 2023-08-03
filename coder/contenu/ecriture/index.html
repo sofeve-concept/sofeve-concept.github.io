@@ -3,9 +3,9 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Libellé explicite - Lien hypertexte - Ressources - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Écrire accessible - Contenu - Coder accessible - Sofève Concept</title>
 	
-	<meta name="description" content="Les logiciels de synthèse vocale disposent d’un système permettant de naviguer de lien en lien, d’où l’intérêt de clairement différencier chaque intitulé de lien.">
+	<meta name="description" content="Les utilisateurs qui visitent votre page doivent comprendre le contenu proposé. Pour cela, certaines règles d&#39;écriture doivent être appliquées. Le contenu sera alors lisible et compréhensible par le plus grand nombre de lecteurs.">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -46,7 +46,7 @@
 			<li class="accueil">
 				<a href="/">Accueil</a></li>	
 			<li class="coder">
-				<button aria-haspopup="true" aria-expanded="false" aria-controls="coder">Coder accessible</button>
+				<button aria-haspopup="true" aria-expanded="false" aria-controls="coder" aria-current="true">Coder accessible</button>
 				   <ul id="coder"><li><a href="/coder/">Vue d&#39;ensemble</a></li>
               			<li><a href="/coder/structure/">Structure générale</a></li>
               			<li><a href="/coder/contenu/">Contenu</a></li>
@@ -63,7 +63,7 @@
 			<li class="motifs">
 				<a href="/motifs/">Motifs de conception</a></li>	
 			<li class="ressources">
-				<button aria-haspopup="true" aria-expanded="false" aria-controls="ressources" aria-current="true">Ressources</button>
+				<button aria-haspopup="true" aria-expanded="false" aria-controls="ressources">Ressources</button>
 				   <ul id="ressources"><li><a href="/ressources/bureautique/">Bureautique accessible</a></li>
               			<li><a href="/ressources/outils/">Outils de vérification</a></li>
               			<li><a href="/ressources/sites/">Sites sur l&#39;accessibilité</a></li>
@@ -96,15 +96,15 @@
 		<span class="sr-only">Aller à la page de recherche sur le site</span></a>
 	 </a></p>
 </header>
-	<main role="main" class="container">
+	
+<main role="main" class="container">
      <div class="flex ligneHaut">
 <nav aria-label="Vous êtes ici" class="ariane">
 <ol>
   <li><a href="/">Accueil</a></li>
-  <li><a href="/ressources/">Ressources</a></li>
-  <li><a href="/ressources/bureautique/">Bureautique accessible</a></li>
-  <li><a href="/ressources/bureautique/liens/">Lien hypertexte</a></li>
-  <li aria-current="page" tabindex="-1">Libellé explicite</li></ol>
+  <li><a href="/coder/">Coder accessible</a></li>
+  <li><a href="/coder/contenu/">Contenu</a></li>
+  <li aria-current="page" tabindex="-1">Écrire accessible</li></ol>
 </nav>
 <div>
 <button onclick="window.print();">
@@ -116,31 +116,35 @@
      <div class="flex">
           <aside class="item-20">
                
-<nav role="navigation" aria-label="Navigation secondaire bureautique accessible">
-     <p class="rubrique">Bureautique accessible</p>
-     <button aria-haspopup="true" aria-expanded="false" id="sandwitch" aria-controls="sousMenu">
-          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#2E006C" aria-hidden="true"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-          <span class="sr-only">Menu</span>
-     </button>
-     <ul id="sousMenu"><li><a href="https://sofeve-concept.github.io/ressources/bureautique/structure/">Structure du document</a></li>
-          <li><a href="https://sofeve-concept.github.io/ressources/bureautique/presentation/">Présentation du texte</a></li>
-          <li><a href="https://sofeve-concept.github.io/ressources/bureautique/liens/" aria-current="true" >Lien hypertexte</a>
-               
-               <ul><li><a href="https://sofeve-concept.github.io/ressources/bureautique/liens/libelle/" aria-current="page" >Libellé explicite</a></li>
-                    <li><a href="https://sofeve-concept.github.io/ressources/bureautique/liens/telechargement/">Lien de téléchargement</a></li>
-                    </ul>
-               </li>
-          <li><a href="https://sofeve-concept.github.io/ressources/bureautique/images/">Image</a></li>
-          <li><a href="https://sofeve-concept.github.io/ressources/bureautique/couleur/">Couleurs et contrastes</a></li>
-          <li><a href="https://sofeve-concept.github.io/ressources/bureautique/finaliser/">Tags et export PDF</a></li>
-          <li><a href="https://sofeve-concept.github.io/ressources/bureautique/courriel/">Courrier électronique</a></li>
-          </ul>
+<nav role="navigation" aria-label="Navigation secondaire coder accessible">
+	<p class="rubrique">Coder accessible</p>
+	<button aria-haspopup="true" aria-expanded="false" id="sandwitch" aria-controls="sousMenu">
+		Coder accessible<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" aria-hidden="true" fill="#2E006C"><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+	</button>
+	<ul id="sousMenu"><li><a href="https://sofeve-concept.github.io/coder/structure/">Structure générale</a></li>
+		<li><a href="https://sofeve-concept.github.io/coder/contenu/" aria-current="true" >Contenu</a>
+			
+			<ul><li><a href="https://sofeve-concept.github.io/coder/contenu/ecriture/" aria-current="page" >Écrire accessible</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/contenu/formatage/">Formatage du contenu</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/contenu/titraille/">Titraille</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/contenu/texte/">Texte</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/contenu/liste/">Listes</a></li>
+				</ul></li>
+		<li><a href="https://sofeve-concept.github.io/coder/couleurs/">Couleurs</a></li>
+		<li><a href="https://sofeve-concept.github.io/coder/navigation/">Navigation</a></li>
+		<li><a href="https://sofeve-concept.github.io/coder/lien-bouton/">Liens et boutons</a></li>
+		<li><a href="https://sofeve-concept.github.io/coder/image-icone/">Images et icônes</a></li>
+		<li><a href="https://sofeve-concept.github.io/coder/tableaux/">Tableaux</a></li>
+		<li><a href="https://sofeve-concept.github.io/coder/formulaire/">Formulaires</a></li>
+		<li><a href="https://sofeve-concept.github.io/coder/scripts/">Composants d&#39;interface riche</a></li>
+		<li><a href="https://sofeve-concept.github.io/coder/multimedia/">Multimedia</a></li>
+		</ul>
 </nav>
 
-          </aside>
+               </aside>
           <section class="item-80 rubCode">
-               <h1 id="contenu">Libellé explicite</h1>
-               <p>Les logiciels de synthèse vocale disposent d’un système permettant de naviguer de lien en lien, d’où l’intérêt de clairement différencier chaque intitulé de lien.</p><div id="accordeonGroup" class="accordeon">
+               <h1 id="contenu">Écrire accessible</h1>
+               <p>Les utilisateurs qui visitent votre page doivent comprendre le contenu proposé. Pour cela, certaines règles d&#39;écriture doivent être appliquées. Le contenu sera alors lisible et compréhensible par le plus grand nombre de lecteurs.</p><div id="accordeonGroup" class="accordeon">
      <h2>
          <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
              <span class="accordeon-title">Table des matières</span>
@@ -151,40 +155,64 @@
          <div>
           <nav id="TableOfContents">
   <ul>
-    <li><a href="#règles">Règles</a></li>
-    <li><a href="#pourquoi-">Pourquoi ?</a></li>
-    <li><a href="#comment-">Comment ?</a>
+    <li><a href="#abréviations-sigles-acronymes-numéronymes">Abréviations, sigles, acronymes, numéronymes</a>
       <ul>
-        <li><a href="#dans-microsoft-word">Dans Microsoft word</a></li>
-        <li><a href="#dans-libre-office-writer">Dans Libre Office Writer</a></li>
+        <li><a href="#définitions">Définitions</a></li>
+        <li><a href="#bonnes-pratiques">Bonnes pratiques</a></li>
       </ul>
     </li>
+    <li><a href="#faciliter-la-lecture-du-texte">Faciliter la lecture du texte</a></li>
+    <li><a href="#mettre-en-forme-le-texte">Mettre en forme le texte</a></li>
   </ul>
 </nav>
          </div>
      </div>
-</div><h2 id="règles">Règles</h2>
-<p>Le libellé d’un lien, c’est le texte du lien tel qu’il est affiché à l’écran. On veillera à proposer des intitulés clairs et explicites qui peuvent être compris même si l’intitulé est lu indépendamment du texte qui l’entoure.</p>
-<div class="notice attention" >   
-     <p> attention </p>
-     <p>
-Les liens du type « cliquez ici », « en savoir plus » ou « lire la suite » sont donc à proscrire au profit de liens plus parlants comme « Accessibilité numérique (lire la suite) », « En savoir plus sur l'accessibilité numérique », « Lire l'article complet sur l'accessibilité numérique », ...
-</p>
-</div>
-<h2 id="pourquoi-">Pourquoi ?</h2>
-<p>Les logiciels de synthèse vocale disposent d’un système permettant de naviguer de lien en lien, d’où l’intérêt de clairement différencier chaque intitulé de lien.</p>
-<h2 id="comment-">Comment ?</h2>
-<h3 id="dans-microsoft-word">Dans Microsoft word</h3>
-<p>Cliquer-droit sur le paragraphe voulu et choisir dans le menu contextuel « Lien hypertexte ».</p>
-<p><img src="/images/word-lien.png" alt="Paragraphe"></p>
-<h3 id="dans-libre-office-writer">Dans Libre Office Writer</h3>
-<p>Dans le menu, choisir « Insertion – Hyperlien ».
-Dans la zone « URL », inscrire l’adresse du lien et dans la zone « Texte », inscrire le libellé du lien.</p>
-<p><img src="/images/lien1.jpg" alt="Libellé du lien"></p>
+</div><h2 id="abréviations-sigles-acronymes-numéronymes">Abréviations, sigles, acronymes, numéronymes</h2>
+<h3 id="définitions">Définitions</h3>
 
-          </section> 
+<dl>
+<dt>Abréviation</dt>
+<dd>Une abréviation est le raccourcissement d'un mot ou d'un groupe de mots. Exemple : «&nbsp;nb&nbsp;» pour «&nbsp;nombre&nbsp;», «&nbsp;bd&nbsp;» pour «&nbsp;boulevard&nbsp;», «&nbsp;mme&nbsp;» pour «&nbsp;madame&nbsp;»...</dd>
+<dt>Sigle</dt>
+<dd>Un sigle est une suite des initiales de plusieurs mots employée comme abréviation ; chaque lettre étant prononcée indépendemment l'une de l'autre - Exemple : «&nbsp;ESS&nbsp;» pour «&nbsp;Économie Sociale et Solidaire&nbsp;», «&nbsp;RGPD&nbsp;» pour «&nbsp;Règlement Général sur la Protection des Données&nbsp;»...</dd>
+<dt>Acronyme</dt>
+<dd>Un acronyme est un sigle (un sigle est une suite des initiales de plusieurs mots employée comme abréviation - exemple : «&nbsp;ESS&nbsp;» pour «&nbsp;économie sociale et solidaire&nbsp;») qui se prononce comme un mot ordinaire. Exemple : «&nbsp;ovni&nbsp;» pour «&nbsp;Objet Volant Non Identifié&nbsp;», «&nbsp;faq&nbsp;» pour «&nbsp;Foire Aux Questions&nbsp;»...</dd>
+<dt>Numéronymes</dt>
+<dd>Un numéronyme est un mot où des chiffres sont utilisés pour créer une abréviation. Exemple : «&nbsp;a11y&nbsp;» pour «&nbsp;<span lang="en">accessibility</span>&nbsp;», «&nbsp;i18n&nbsp;» pour «&nbsp;internationalisation&nbsp;»...</dd>
+</dl>
+
+<h3 id="bonnes-pratiques">Bonnes pratiques</h3>
+<p>Lorsque l&rsquo;abréviation, le sigle, l&rsquo;acronyme ou le numéronyme se rencontre pour la première fois dans le texte, une bonne pratique consiste à la présenter sous sa forme développée et sous sa forme réduite.<br>
+<strong>Exemple :</strong><br>
+<em>Le HTML (HyperText Markup Language) est le langage du web.</em></p>
+<p>Ensuite, sa forme réduite pourra être utilisée dans la suite de la page. On pourra recourir à l&rsquo;élément HTML <code>abbr</code> pour rappeler sa signification.<br>
+<strong>Exemple :</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">abbr</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Règlement Général sur la Protection des Données&#34;</span><span class="p">&gt;</span>RGPD<span class="p">&lt;/</span><span class="nt">abbr</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h2 id="faciliter-la-lecture-du-texte">Faciliter la lecture du texte</h2>
+<p>Afin de faciliter la lecture aux personnes dyslexiques qui représentent environ 5% de la population française :</p>
+<ul>
+<li>on évitera d&rsquo;écrire avec du texte justifé afin que le lecteur dyslexique ne perde pas visuellement son emplacement de lecture ;</li>
+<li>on évitera d&rsquo;écrire en noir pur (code hexadécimal #000000) sur du blanc pur (code hexadécimal #FFFFFF), ou inversement, afin d&rsquo;éviter une effet « tourbillon » ;</li>
+<li>on évitera d&rsquo;écrire de grand bloc de texte en italique car l&rsquo;italique augmente la pixellisation du texte et donc sa difficulté de reconnaissance ;</li>
+<li>on évitera d&rsquo;écrire du texte tout en majuscules ; cette forme d&rsquo;écriture sera réservée aux titres, sigles&hellip;</li>
+</ul>
+<p>Afin de faciliter la lecture aux personnes ayant des défauts visuels tels que les astigmates qui perçoivent moins bien les contrastes de couleurs que les autres personnes ou les daltoniens qui ne perçoivent pas certaines couleurs :</p>
+<ul>
+<li>on veillera à proposer un taux de contraste entre le premier plan et l&rsquo;arrière plan de minimum 4.5 pour 1 ;</li>
+<li>on évitera d&rsquo;utiliser des couleurs complémentaires entre le premier plan et l&rsquo;arrière plan.</li>
+</ul>
+<h2 id="mettre-en-forme-le-texte">Mettre en forme le texte</h2>
+<p>Le seul critère concernant la mise en forme du texte porte sur l&rsquo;espacement du texte. Pour autant, prendre en compte les éléments suivants améliorera la lecture et le compréhension du contenu que vous proposerez :</p>
+<ul>
+<li><strong>Taille de police</strong> : du fait de la multitude de tailles d&rsquo;écran et de types d&rsquo;appareils sur lesquels l&rsquo;utilisateur affiche une page web (écran d&rsquo;ordinateur de bureau, écran d&rsquo;ordinateur portable, smartphone, tablette), la <strong>taille de base de la police de caractère sur le web est de 16px, soit 1em</strong> ;</li>
+<li><strong>Longueur de la ligne</strong> : la longueur de ligne la plus favorable à la lecture est <strong>comprise entre 5 et 80 caractères</strong> ;</li>
+<li><strong>Longueur d&rsquo;un paragraphe</strong> : la longueur d&rsquo;un paragraphe sera déterminé selon le principe suivant : « une paragraphe pour une idée » ;</li>
+<li><strong>Espacement des lignes</strong> : l&rsquo;espacement entre les lignes sera fixé à 1,5 fois la taille de la police utilisée pour écrire la ligne.</li>
+</ul>
+
+          </section>
+          
      </div>
-     
 </main>
 
 	<footer role="contentinfo" id="piedDePage">
@@ -210,6 +238,9 @@ Dans la zone « URL », inscrire l’adresse du lien et dans la zone « Texte
 	    <path
 		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
 	</svg>
-	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/search.min.js"></script>
+	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/clipboard.min.js"></script>
+<script src="/js/search.min.js"></script>
+<script>sandwitch();</script>	
+
 </body>
 </html>
