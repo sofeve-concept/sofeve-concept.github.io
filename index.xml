@@ -76,7 +76,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/contenu/formatage/</guid>
-      <description>Bien structurer sa page et proposer un visuel homogène et cohérent entre les pages permet de faciliter la navigation et la compréhension du contenu du site.</description>
+      <description>Comme il n&amp;rsquo;est pas possible d&amp;rsquo;être exhaustif, nous allons parcourir ici les éléments sur lesquels être vigilants car bien souvent source de non conformité en terme d&amp;rsquo;accessibilité numérique.</description>
     </item>
     
     <item>
@@ -186,7 +186,7 @@ Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page H
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs/</guid>
-      <description>Contraste suffisant entre les textes et l’arrière-plan Texte normal non gras inférieur à 18pt : rapport de 4,5 pour 1 Texte normal gras inférieur à 14pt : rapport de 4,5 pour 1 Grand texte non gras inférieur à 18pt : rapport de 3 pour 1 Grand texte gras inférieur à 14pt : rapport de 3 pour 1 Information compréhensible même en l’absence de couleurs</description>
+      <description>Contraste suffisant entre les textes et l’arrière-plan Le rapport de constraste à respecter est le suivant :</description>
     </item>
     
     <item>
@@ -231,7 +231,7 @@ Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page H
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/structure/formatage/</guid>
-      <description>Bien structurer sa page et proposer un visuel homogène et cohérent entre les pages permet de faciliter la navigation et la compréhension du contenu du site.</description>
+      <description>Comme il n&amp;rsquo;est pas possible d&amp;rsquo;être exhaustif, nous allons parcourir ici les éléments sur lesquels être vigilants car bien souvent source de non conformité en terme d&amp;rsquo;accessibilité numérique.</description>
     </item>
     
     <item>
@@ -359,7 +359,7 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/contenu/titraille/</guid>
-      <description>Balises de titraille, éléments html h1 à h6 Le contenu du document est hiérarchisé à l&amp;rsquo;aide déléments de titraille (balises allant de &amp;lt;h1&amp;gt;.</description>
+      <description>Balises de titraille, éléments HTML h1 à h6 Le contenu du document est hiérarchisé à l&amp;rsquo;aide déléments de titraille (balises allant de &amp;lt;h1&amp;gt;.</description>
     </item>
     
     <item>
@@ -414,7 +414,7 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/contenu/texte/</guid>
-      <description>Formatage du texte À faire Utiliser des tailles relatives pour les polices de caractères : (em, rem, %, small&amp;hellip;) Veiller à déclarer une interligne de 1,5 via la déclaration css line-height: 1.</description>
+      <description>Formatage du texte À faire Utiliser des tailles relatives pour les polices de caractères : (em, rem, %, small&amp;hellip;) ; Veiller à déclarer une interligne de 1,5 via la déclaration css line-height: 1.</description>
     </item>
     
     <item>
@@ -450,7 +450,7 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/contenu/liste/</guid>
-      <description>Listes Il existe 3 façons différentes d&amp;rsquo;implémenter des listes. Les listes servent à présenter des élements sous forme de liste mais aussi les éléments d&amp;rsquo;un menu : menu de navigation, fils d&amp;rsquo;ariane, processus par étape, pagination.</description>
+      <description>Listes Les listes servent à présenter des élements sous forme de liste mais aussi les éléments d&amp;rsquo;un menu : menu de navigation, fils d&amp;rsquo;ariane, processus par étape, pagination.</description>
     </item>
     
     <item>
@@ -486,7 +486,7 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/navigation/processus-etapes/</guid>
-      <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;un processus par étapes ? Les processus par étapes affichent la progression à travers une séquence d&amp;rsquo;étapes logiques et numérotées.</description>
+      <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;un processus par étapes ? Les processus par étapes (stepper, en anglais) affichent la progression à travers une séquence d&amp;rsquo;étapes logiques et numérotées.</description>
     </item>
     
     <item>

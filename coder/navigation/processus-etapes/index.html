@@ -162,18 +162,12 @@
     </li>
     <li><a href="#règles-dimplémentation-dun-processus-par-étapes">Règles d&rsquo;implémentation d&rsquo;un processus par étapes</a></li>
     <li><a href="#règles-daccessibilité-du-processus-par-étapes">Règles d&rsquo;accessibilité du processus par étapes</a></li>
-    <li><a href="#bouts-de-code">Bouts de code</a>
-      <ul>
-        <li><a href="#code-html">Code HTML</a></li>
-        <li><a href="#code-css">Code CSS</a></li>
-      </ul>
-    </li>
   </ul>
 </nav>
          </div>
      </div>
 </div><h2 id="quest-ce-quun-processus-par-étapesnbsp">Qu&rsquo;est-ce qu&rsquo;un processus par étapes ?</h2>
-<p>Les processus par étapes affichent la progression à travers une séquence d&rsquo;étapes logiques et numérotées. Ils sont surtout employés pour présenter un processus d&rsquo;achat ou lors de démarches en ligne nécessitant plusieurs étapes.</p>
+<p>Les processus par étapes (<em><span lang="en">stepper</span></em>, en anglais) affichent la progression à travers une séquence d&rsquo;étapes logiques et numérotées. Ils sont surtout employés pour présenter un processus d&rsquo;achat ou lors de démarches en ligne nécessitant plusieurs étapes.</p>
 <h3 id="exemple-de-processus-par-étape">Exemple de processus par étape</h3>
 <p><img src="/images/stepper-exemple1.jpg" alt="stepper"></p>
 <h2 id="règles-dimplémentation-dun-processus-par-étapes">Règles d&rsquo;implémentation d&rsquo;un processus par étapes</h2>
@@ -188,195 +182,12 @@
 <li>L&rsquo;étape en cours sera balisée avec l&rsquo;attribut <code>aria-current=&quot;step&quot;</code></li>
 <li>Un retour arrière sera proposé via un lien sur les étapes précédentes.</li>
 </ul>
-<h2 id="bouts-de-code">Bouts de code</h2>
-<p>Exemple avec un processus d&rsquo;achat  le code donne ce rendu visuel.
-<img src="/images/stepper-exemple2.jpg" alt="processus par étapes d&amp;rsquo;une commande"></p>
-<h3 id="code-html">Code HTML</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;stepper&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Étapes de votre commande&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;1. Identification&#34;</span><span class="p">&gt;</span>Identification<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">li</span> <span class="na">aria-current</span><span class="o">=</span><span class="s">&#34;step&#34;</span><span class="p">&gt;&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Panier<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Livraison<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Paiement<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Fin<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h3 id="code-css">Code CSS</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">@</span><span class="k">charset</span> <span class="s2">&#34;UTF-8&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">:</span><span class="nd">root</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--stepper-font-size</span><span class="p">:</span> <span class="mf">0.875</span><span class="kt">rem</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--stepper-font-weight</span><span class="p">:</span> <span class="mi">700</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--stepper-counter</span><span class="p">:</span> <span class="n">step</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--stepper-item-padding-y</span><span class="p">:</span> <span class="mi">7</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--stepper-item-bg</span><span class="p">:</span> <span class="mh">#123</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--stepper-item-active-bg</span><span class="p">:</span> <span class="mh">#456</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--stepper-item-next-bg</span><span class="p">:</span> <span class="mh">#789</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--stepper-item-arrow-shape</span><span class="p">:</span> <span class="nb">polygon</span><span class="p">(</span><span class="mi">0</span><span class="kt">%</span> <span class="mi">0</span><span class="kt">%</span><span class="p">,</span> <span class="mi">1</span><span class="kt">px</span> <span class="mi">0</span><span class="kt">%</span><span class="p">,</span> <span class="nb">calc</span><span class="p">(</span><span class="mi">100</span><span class="kt">%</span> <span class="o">-</span> <span class="mf">0.125</span><span class="kt">rem</span><span class="p">)</span> <span class="mi">50</span><span class="kt">%</span><span class="p">,</span> <span class="mi">1</span><span class="kt">px</span> <span class="mi">100</span><span class="kt">%</span><span class="p">,</span> <span class="mi">0</span><span class="kt">%</span> <span class="mi">100</span><span class="kt">%</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--stepper-link-line-height</span><span class="p">:</span> <span class="mf">1.1428571429</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--stepper-link-color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--stepper-link-active-color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--stepper-link-next-color</span><span class="p">:</span> <span class="mh">#000</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--stepper-link-text-decoration</span><span class="p">:</span> <span class="kc">underline</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">*,</span>
-</span></span><span class="line"><span class="cl"><span class="p">::</span><span class="nd">after</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl"><span class="p">::</span><span class="nd">before</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">box-sizing</span><span class="p">:</span> <span class="kc">border-box</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="nt">nav</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">margin</span><span class="p">:</span> <span class="mi">3</span><span class="kt">em</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--stepper-item-padding-x</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--stepper-item-margin-end</span><span class="p">:</span> <span class="mf">0.125</span><span class="kt">rem</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--stepper-item-drop-shadow</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--stepper-item-arrow-width</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--stepper-link-width</span><span class="p">:</span> <span class="mf">1.25</span><span class="kt">ch</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--stepper-link-marker</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">counter</span><span class="p">))</span> <span class="s2">&#34; &#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">min-width</span><span class="p">:</span><span class="nd">480px</span><span class="o">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">stepper</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">--stepper-item-padding-x</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">--stepper-item-margin-end</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">--stepper-item-drop-shadow</span><span class="p">:</span> <span class="nb">drop-shadow</span><span class="p">(</span><span class="mf">0.1875</span><span class="kt">rem</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mh">#fff</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">--stepper-item-arrow-width</span><span class="p">:</span> <span class="mf">0.8125</span><span class="kt">rem</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">stepper</span> <span class="nt">li</span><span class="o">[</span><span class="nt">aria-current</span><span class="o">=</span><span class="s2">&#34;step&#34;</span><span class="o">]</span> <span class="nt">a</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">--stepper-link-marker</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">counter</span><span class="p">))</span> <span class="s2">&#34;. &#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="k">max-width</span><span class="p">:</span> <span class="kc">none</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">min-width</span><span class="p">:</span><span class="nd">480px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="p">:</span><span class="nd">1279</span><span class="p">.</span><span class="nc">98px</span><span class="o">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">stepper</span> <span class="nt">li</span><span class="o">[</span><span class="nt">aria-current</span><span class="o">=</span><span class="s2">&#34;step&#34;</span><span class="o">]</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">flex</span><span class="p">:</span> <span class="mi">4</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">min-width</span><span class="p">:</span><span class="nd">1280px</span><span class="o">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">stepper</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">--stepper-link-width</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="nv">--stepper-link-marker</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">counter</span><span class="p">))</span> <span class="s2">&#34;. &#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">ol</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">overflow</span><span class="p">:</span> <span class="kc">hidden</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">font-size</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">font-weight</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">font</span><span class="o">-</span><span class="kc">weight</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">list-style</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">counter-reset</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">counter</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">li</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">flex</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">padding</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">item</span><span class="o">-</span><span class="n">padding</span><span class="o">-</span><span class="n">y</span><span class="p">)</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">item</span><span class="o">-</span><span class="n">padding</span><span class="o">-</span><span class="n">x</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">counter-increment</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">counter</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">item</span><span class="o">-</span><span class="n">bg</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">filter</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">item</span><span class="o">-</span><span class="n">drop</span><span class="o">-</span><span class="n">shadow</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">li</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">:</span><span class="nd">last-child</span><span class="o">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">margin-right</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">item</span><span class="o">-</span><span class="n">margin</span><span class="o">-</span><span class="kc">end</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">li</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">:</span><span class="nd">last-child</span><span class="o">)</span><span class="p">::</span><span class="nd">after</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">left</span><span class="p">:</span> <span class="nb">calc</span><span class="p">(</span><span class="mi">100</span><span class="kt">%</span> <span class="o">-</span> <span class="mi">1</span><span class="kt">px</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">z-index</span><span class="p">:</span> <span class="mi">-1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">width</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">item</span><span class="o">-</span><span class="n">arrow</span><span class="o">-</span><span class="n">width</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="kp">-webkit-</span><span class="k">clip-path</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">item</span><span class="o">-</span><span class="n">arrow</span><span class="o">-</span><span class="n">shape</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">clip-path</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">item</span><span class="o">-</span><span class="n">arrow</span><span class="o">-</span><span class="n">shape</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">background-color</span><span class="p">:</span> <span class="kc">inherit</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">li</span><span class="o">[</span><span class="nt">aria-current</span><span class="o">=</span><span class="s2">&#34;step&#34;</span><span class="o">]</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">item</span><span class="o">-</span><span class="n">active</span><span class="o">-</span><span class="n">bg</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">li</span><span class="o">[</span><span class="nt">aria-current</span><span class="o">=</span><span class="s2">&#34;step&#34;</span><span class="o">]~</span><span class="nt">li</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">item</span><span class="o">-</span><span class="n">next</span><span class="o">-</span><span class="n">bg</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">li</span><span class="o">+</span><span class="p">.</span><span class="nc">stepper</span> <span class="nt">li</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">padding-left</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">item</span><span class="o">-</span><span class="n">arrow</span><span class="o">-</span><span class="n">width</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">a</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">span</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">flex</span><span class="p">:</span> <span class="mi">1</span> <span class="mi">0</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">link</span><span class="o">-</span><span class="n">width</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">max-width</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">link</span><span class="o">-</span><span class="n">width</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">margin</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">overflow</span><span class="p">:</span> <span class="kc">hidden</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">line-height</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">link</span><span class="o">-</span><span class="n">line</span><span class="o">-</span><span class="n">height</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">link</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">white-space</span><span class="p">:</span> <span class="kc">nowrap</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">outline-offset</span><span class="p">:</span> <span class="mf">1.25</span><span class="kt">rem</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">a</span><span class="p">::</span><span class="nd">before</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">span</span><span class="p">::</span><span class="nd">before</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">link</span><span class="o">-</span><span class="n">marker</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">a</span><span class="p">:</span><span class="nd">focus</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">a</span><span class="p">:</span><span class="nd">hover</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">span</span><span class="p">:</span><span class="nd">focus</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">span</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">link</span><span class="o">-</span><span class="kc">color</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">a</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">underline</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">a</span><span class="p">:</span><span class="nd">focus</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="kp">-webkit-</span><span class="k">text-decoration</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">link</span><span class="o">-</span><span class="kc">text</span><span class="o">-</span><span class="n">decoration</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">text-decoration</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">link</span><span class="o">-</span><span class="kc">text</span><span class="o">-</span><span class="n">decoration</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">outline-offset</span><span class="p">:</span> <span class="mf">0.3125</span><span class="kt">rem</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">li</span><span class="o">[</span><span class="nt">aria-current</span><span class="o">=</span><span class="s2">&#34;step&#34;</span><span class="o">]</span> <span class="nt">a</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">li</span><span class="o">[</span><span class="nt">aria-current</span><span class="o">=</span><span class="s2">&#34;step&#34;</span><span class="o">]</span> <span class="nt">span</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">link</span><span class="o">-</span><span class="n">active</span><span class="o">-</span><span class="kc">color</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">li</span><span class="o">[</span><span class="nt">aria-current</span><span class="o">=</span><span class="s2">&#34;step&#34;</span><span class="o">]~</span><span class="nt">li</span> <span class="nt">a</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">li</span><span class="o">[</span><span class="nt">aria-current</span><span class="o">=</span><span class="s2">&#34;step&#34;</span><span class="o">]~</span><span class="nt">li</span> <span class="nt">span</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">stepper</span><span class="o">-</span><span class="n">link</span><span class="o">-</span><span class="n">next</span><span class="o">-</span><span class="kc">color</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">li</span><span class="p">:</span><span class="nd">first-child</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">z-index</span><span class="p">:</span> <span class="mi">4</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">li</span><span class="p">:</span><span class="nd">nth-child</span><span class="o">(</span><span class="nt">2</span><span class="o">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">z-index</span><span class="p">:</span> <span class="mi">3</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">li</span><span class="p">:</span><span class="nd">nth-child</span><span class="o">(</span><span class="nt">3</span><span class="o">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">z-index</span><span class="p">:</span> <span class="mi">2</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">stepper</span> <span class="nt">li</span><span class="p">:</span><span class="nd">nth-child</span><span class="o">(</span><span class="nt">4</span><span class="o">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">z-index</span><span class="p">:</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div>
+<div class="notice astuce" >   
+     <p> astuce </p>
+     <p>
+Un exemple de processus par étape est disponible dans la rubrique <a href="/motifs/stepper/">Motifs de conception - Processus par étape</a>.
+</p>
+</div>
           </section>
           
      </div>
@@ -405,8 +216,7 @@
 	    <path
 		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
 	</svg>
-	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/clipboard.min.js"></script>
-<script src="/js/search.min.js"></script>
+	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/search.min.js"></script>
 <script>sandwitch();</script>	
 
 </body>
