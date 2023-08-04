@@ -1,0 +1,1 @@
+:root{--TEXT-color:#015c15;--BACKGROUND-color:#D9F7DB}[role=status]{margin-top:.5em;padding:.5em;border:2px solid var(--TEXT-color);border-radius:4px;background:var(--BACKGROUND-color);color:var(--TEXT-color)}[role=status] p{margin:0}[role=status]:empty{display:none}

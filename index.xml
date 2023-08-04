@@ -571,12 +571,21 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
     </item>
     
     <item>
+      <title>Étiquette de champs</title>
+      <link>https://sofeve-concept.github.io/motifs/placeholder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/placeholder/</guid>
+      <description>Règles d’implémentation pour l’accessibilité Dans un formulaire, il est possible d&amp;rsquo;afficher un texte par défaut dans un champ via l&amp;rsquo;attribut placeholder.</description>
+    </item>
+    
+    <item>
       <title>Fenêtre modale</title>
       <link>https://sofeve-concept.github.io/motifs/modale/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/motifs/modale/</guid>
-      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Une fenêtre modale porte le rôle aria role=dialog&amp;quot;, l&amp;rsquo;attribut aria-modal=&amp;quot;true&amp;quot; et un attribut aria-labelledby qui fait référence à l&amp;rsquo;id de l&amp;rsquo;élément contenant le titre de la boîte de dialogue.</description>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Une fenêtre modale porte le rôle aria role=&amp;quot;dialog&amp;quot;, l&amp;rsquo;attribut aria-modal=&amp;quot;true&amp;quot; et un attribut aria-labelledby qui fait référence à l&amp;rsquo;id de l&amp;rsquo;élément contenant le titre de la boîte de dialogue.</description>
     </item>
     
     <item>
@@ -589,12 +598,30 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
     </item>
     
     <item>
-      <title>Lien d&#39;évitement</title>
-      <link>https://sofeve-concept.github.io/motifs/lien-evitement/</link>
+      <title>Lien d&#39;accès rapide</title>
+      <link>https://sofeve-concept.github.io/motifs/lien-acces-rapide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sofeve-concept.github.io/motifs/lien-evitement/</guid>
-      <description>Règles d’implémentation pour l’accessibilité Dans ce motif de conception, le lien d&amp;rsquo;évitement (skip link en anglais) est invisible par défaut sur la page et n&amp;rsquo;apparaît qu&amp;rsquo;à la prise de focus pour une navigation au clavier.</description>
+      <guid>https://sofeve-concept.github.io/motifs/lien-acces-rapide/</guid>
+      <description>Règles d’implémentation pour l’accessibilité Dans ce motif de conception, le lien d&amp;rsquo;accès rapide, parfois appelé aussi lien d&amp;rsquo;évitement (skip link en anglais) lorsqu&amp;rsquo;il permet de sauter une zone de la page, est invisible par défaut sur la page et n&amp;rsquo;apparaît qu&amp;rsquo;à la prise de focus pour une navigation au clavier.</description>
+    </item>
+    
+    <item>
+      <title>Message d&#39;alerte</title>
+      <link>https://sofeve-concept.github.io/motifs/alerte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/alerte/</guid>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;affichage d&amp;rsquo;un message d&amp;rsquo;alerte ne nécessite pas de rechargement de la page.</description>
+    </item>
+    
+    <item>
+      <title>Notification</title>
+      <link>https://sofeve-concept.github.io/motifs/statut/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/statut/</guid>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;affichage d&amp;rsquo;un message de notification ne nécessite pas de rechargement de la page.</description>
     </item>
     
     <item>
@@ -613,15 +640,6 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
       
       <guid>https://sofeve-concept.github.io/404.html</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Placeholder</title>
-      <link>https://sofeve-concept.github.io/motifs/placeholder/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/placeholder/</guid>
-      <description>Règles d’implémentation pour l’accessibilité Tout champ de formulaire doit avoir un label associé. Le fait de remplacer le libellé label par un attribut placeholder empêche l&amp;rsquo;accessibilité du champ du formulaire puisque le libellé du placeholder disparaît au focus.</description>
     </item>
     
     <item>

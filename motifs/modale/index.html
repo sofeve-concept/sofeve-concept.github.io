@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Fenêtre modale - Motifs de conception - Sofève Concept</title>
 	
-	<meta name="description" content="Extrait de code pour une fenêtre modale accessible au clavier.">
+	<meta name="description" content="Une fenêtre modale est une fenêtre qui apparaît par-dessus la fenêtre en cours du navigateur et qui prend le contrôle total du clavier et de l&#39;écran.">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -125,21 +125,23 @@
           <li><a href="/motifs/bordure-texte/">Bordure de texte</a></li>
           <li><a href="/motifs/carrousel/">Carrousel</a></li>
           <li><a href="/motifs/carte-cliquable/">Carte cliquable</a></li>
+          <li><a href="/motifs/placeholder/">Étiquette de champs</a></li>
           <li><a href="/motifs/modale/"><strong>Fenêtre modale</strong></a></li>
           <li><a href="/motifs/ariane/">Fil d&#39;ariane</a></li>
           <li><a href="/motifs/infobulle/">Infobulle</a></li>
-          <li><a href="/motifs/lien-evitement/">Lien d&#39;évitement</a></li>
+          <li><a href="/motifs/lien-acces-rapide/">Lien d&#39;accès rapide</a></li>
           <li><a href="/motifs/menu-de-navigation/">Menu de navigation</a></li>
           <li><a href="/motifs/menu-lateral-glissant/">Menu latéral glissant</a></li>
+          <li><a href="/motifs/alerte/">Message d&#39;alerte</a></li>
+          <li><a href="/motifs/statut/">Notification</a></li>
           <li><a href="/motifs/onglets/">Onglets</a></li>
-          <li><a href="/motifs/placeholder/">Placeholder</a></li>
           <li><a href="/motifs/stepper/">Processus par étape</a></li>
           <li><a href="/motifs/retour-en-haut/">Retour en haut</a></li>
           <li><a href="/motifs/tableau-responsive/">Tableau</a></li></ul>
 </nav></aside>
           <section class="item-80 rubMotif">
                <h1 id="contenu">Fenêtre modale</h1>
-               <p>Extrait de code pour une fenêtre modale accessible au clavier.</p><div id="accordeonGroup" class="accordeon">
+               <p>Une fenêtre modale est une fenêtre qui apparaît par-dessus la fenêtre en cours du navigateur et qui prend le contrôle total du clavier et de l&#39;écran.</p><div id="accordeonGroup" class="accordeon">
      <h2>
          <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
              <span class="accordeon-title">Table des matières</span>
@@ -165,12 +167,12 @@
      </div>
 </div><h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
 <ul>
-<li>Une fenêtre modale porte le rôle aria <code>role=dialog&quot;</code>, l&rsquo;attribut <code>aria-modal=&quot;true&quot;</code> et un attribut <code>aria-labelledby</code> qui fait référence à l&rsquo;<code>id</code> de l&rsquo;élément contenant le titre de la boîte de dialogue.</li>
+<li>Une fenêtre modale porte le rôle aria <code>role=&quot;dialog&quot;</code>, l&rsquo;attribut <code>aria-modal=&quot;true&quot;</code> et un attribut <code>aria-labelledby</code> qui fait référence à l&rsquo;<code>id</code> de l&rsquo;élément contenant le titre de la boîte de dialogue.</li>
 <li>Une fenêtre modale est considéré comme un changement de contexte. On veillera donc à commencer son contenu par un titre de niveau 1 (élément HTML <code>h1</code>).</li>
 <li>Pour bien signifier l&rsquo;ouverture d&rsquo;un nouveau contexte, on veillera à opacifier le fond de la page pour bien faire apparaître la fenêtre modale.</li>
-<li>À l&rsquo;ouverture de la fenêtre modale, le focus sera positionné sur le bouton de fermeture qui sera le premier élément HTML de la fenêtre.</li>
+<li>À l&rsquo;ouverture de la fenêtre modale, le focus sera positionné sur le premier élément pouvant recevoir le focus.</li>
 <li>La fenêtre modale pourra être fermée en appuyant sur la touche [Echap] du clavier.</li>
-<li>Après la fermeture de la fenêtre modale, le focus clavier se repositionne sur le bouton qui a provoqué ld&rsquo;ouverture de la fenêtre modale.</li>
+<li>Après la fermeture de la fenêtre modale, le focus clavier se repositionne sur le bouton qui a provoqué l&rsquo;ouverture de la fenêtre modale.</li>
 </ul>
 <h2 id="visuel">Visuel</h2>
 
@@ -200,11 +202,11 @@
 </span></span><span class="line"><span class="cl"><span class="c">&lt;!-- La fenêtre Modale --&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;dialog&#34;</span>
 </span></span><span class="line"><span class="cl">         <span class="na">id</span><span class="o">=</span><span class="s">&#34;dialog1&#34;</span>
-</span></span><span class="line"><span class="cl">         <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;dialog1_label&#34;</span>
+</span></span><span class="line"><span class="cl">         <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;dialog1&#34;</span>
 </span></span><span class="line"><span class="cl">         <span class="na">aria-modal</span><span class="o">=</span><span class="s">&#34;true&#34;</span>
 </span></span><span class="line"><span class="cl">         <span class="na">class</span><span class="o">=</span><span class="s">&#34;none&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">         <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dialog-header&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;dialog1_label&#34;</span><span class="p">&gt;</span>Titre de la fenêtre modale<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;dialog1&#34;</span><span class="p">&gt;</span>Titre de la fenêtre modale<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Fermer&#34;</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Fermer la fenêtre modale&#34;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&#34;closeDialog(this)&#34;</span><span class="p">&gt;</span><span class="ni">&amp;times;</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dialog-body&#34;</span><span class="p">&gt;</span>

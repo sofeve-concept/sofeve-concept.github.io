@@ -3,9 +3,9 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Lien d&#39;évitement - Motifs de conception - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Message d&#39;alerte - Motifs de conception - Sofève Concept</title>
 	
-	<meta name="description" content="Extrait de code pour un lien d&#39;évitement valide selon le W3C et les critères d&#39;accessibilité numérique.">
+	<meta name="description" content="Une alerte est déclenchée par un événement, tel qu&#39;une erreur, une condition d&#39;avertissement ou l&#39;arrivée d&#39;informations importantes.">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -20,6 +20,8 @@
 	<link href="/images/favicon.ico" rel="icon"><link href="/css/fontluciole.min.css" rel="stylesheet" media="screen"><link href="/css/fontatkinson.min.css" rel="stylesheet" media="screen">
 	<link href="/css/print.min.css" rel="stylesheet" media="print"><link href="/css/sofeve.min.css" rel="stylesheet" media="screen">
 	<link href="/css/monokai.min.css" rel="stylesheet" media="screen">
+	
+	<link href="/css/alerte.min.css" rel="stylesheet" media="screen">
 	</head>
 <body>
 	<div class="evitement">
@@ -102,7 +104,7 @@
 <ol>
   <li><a href="/">Accueil</a></li>
   <li><a href="/motifs/">Motifs de conception</a></li>
-  <li aria-current="page" tabindex="-1">Lien d&#39;évitement</li></ol>
+  <li aria-current="page" tabindex="-1">Message d&#39;alerte</li></ol>
 </nav>
 <div>
 <button onclick="window.print();">
@@ -123,21 +125,23 @@
           <li><a href="/motifs/bordure-texte/">Bordure de texte</a></li>
           <li><a href="/motifs/carrousel/">Carrousel</a></li>
           <li><a href="/motifs/carte-cliquable/">Carte cliquable</a></li>
+          <li><a href="/motifs/placeholder/">Étiquette de champs</a></li>
           <li><a href="/motifs/modale/">Fenêtre modale</a></li>
           <li><a href="/motifs/ariane/">Fil d&#39;ariane</a></li>
           <li><a href="/motifs/infobulle/">Infobulle</a></li>
-          <li><a href="/motifs/lien-evitement/"><strong>Lien d&#39;évitement</strong></a></li>
+          <li><a href="/motifs/lien-acces-rapide/">Lien d&#39;accès rapide</a></li>
           <li><a href="/motifs/menu-de-navigation/">Menu de navigation</a></li>
           <li><a href="/motifs/menu-lateral-glissant/">Menu latéral glissant</a></li>
+          <li><a href="/motifs/alerte/"><strong>Message d&#39;alerte</strong></a></li>
+          <li><a href="/motifs/statut/">Notification</a></li>
           <li><a href="/motifs/onglets/">Onglets</a></li>
-          <li><a href="/motifs/placeholder/">Placeholder</a></li>
           <li><a href="/motifs/stepper/">Processus par étape</a></li>
           <li><a href="/motifs/retour-en-haut/">Retour en haut</a></li>
           <li><a href="/motifs/tableau-responsive/">Tableau</a></li></ul>
 </nav></aside>
           <section class="item-80 rubMotif">
-               <h1 id="contenu">Lien d&#39;évitement</h1>
-               <p>Extrait de code pour un lien d&#39;évitement valide selon le W3C et les critères d&#39;accessibilité numérique.</p><div id="accordeonGroup" class="accordeon">
+               <h1 id="contenu">Message d&#39;alerte</h1>
+               <p>Une alerte est déclenchée par un événement, tel qu&#39;une erreur, une condition d&#39;avertissement ou l&#39;arrivée d&#39;informations importantes.</p><div id="accordeonGroup" class="accordeon">
      <h2>
          <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
              <span class="accordeon-title">Table des matières</span>
@@ -148,41 +152,95 @@
          <div>
           <nav id="TableOfContents">
   <ul>
-    <li><a href="#règles-dimplémentation-pour-laccessibilité">Règles d’implémentation pour l’accessibilité</a></li>
+    <li><a href="#règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</a></li>
     <li><a href="#visuel">Visuel</a></li>
     <li><a href="#extraits-de-code">Extraits de code</a>
       <ul>
         <li><a href="#code-html">Code HTML</a></li>
         <li><a href="#code-css">Code CSS</a></li>
+        <li><a href="#code-javascript">Code javascript</a></li>
       </ul>
     </li>
   </ul>
 </nav>
          </div>
      </div>
-</div><h2 id="règles-dimplémentation-pour-laccessibilité">Règles d’implémentation pour l’accessibilité</h2>
-<p>Dans ce motif de conception, le lien d&rsquo;évitement (<span lang="en">skip link</span> en anglais) est invisible par défaut sur la page et n&rsquo;apparaît qu&rsquo;à la prise de focus pour une navigation au clavier.</p>
+</div><h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
+<ul>
+<li>L&rsquo;affichage d&rsquo;un message d&rsquo;alerte ne nécessite pas de rechargement de la page.</li>
+<li>Un message d&rsquo;alerte est une zone définit par l&rsquo;élément HTML <code>div</code> et porte le rôle aria <code>role=&quot;alert&quot;</code>.</li>
+<li>La zone d&rsquo;alerte est inplémentée vide dans le code HTML et ne sera peuplée de contenu qu&rsquo;en cas de besoin.</li>
+<li>Il est possible de spécifier la façon dont le logiciel de synthèse vocale restitura l&rsquo;information quand la zone sera peuplée d&rsquo;informations via les attributs aria :
+<ul>
+<li><code>aria-live</code> : permet d&rsquo;indiquer à quel moment le logiciel de synthèse vocale va restituer l&rsquo;information. Par défaut (donc inutile de le spécifier) la valeur est <code>assertive</code>. Les valeurs possibles sont :
+<ul>
+<li><code>aria-live=&quot;assertive&quot;</code> : indique aux technologies d&rsquo;assistance d&rsquo;interrompre d&rsquo;autres processus pour fournir aux utilisateurs une notification immédiate des modifications pertinentes du conteneur d&rsquo;alerte.</li>
+<li><code>aria-live=&quot;polite&quot;</code> : indique aux technologies d&rsquo;assistance que le contenu de la zone d&rsquo;alerte doivent être vocalisée à la prochaine opportunité, comme à la fin de la phrase en cours ou lorsque l&rsquo;utilisateur interrompt sa saisie.</li>
+<li><code>aria-live=&quot;off&quot;</code> : indique aux technologies d&rsquo;assistance que le contenu de la zone d&rsquo;alerte ne doit pas être vocalisé sauf si l&rsquo;utilisateur se positionne sur cette zone.</li>
+</ul>
+</li>
+<li><code>aria-atomic</code> : permet d&rsquo;indiquer si la totalité de la zone d&rsquo;alerte doit être lue ou seulement la partie modifiée. Par défaut (donc inutile de le spécifier) la valeur est <code>false</code>. Les valeurs possibles sont :
+<ul>
+<li><code>aria-atomic=&quot;true&quot;</code> : indique aux technologies d&rsquo;assistance que la totalité de la zone d&rsquo;alerte doit être lue.</li>
+<li><code>aria-atomic=&quot;false&quot;</code> : indique aux technologies d&rsquo;assistance de ne vocaliser que la partie modifée de la zone d&rsquo;alerte.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Le message d&rsquo;alerte ne doit pas disparaître automatiquement ; seule une action de l&rsquo;utilisateur peut la faire disparaître (bouton de fermeture, rechargement de la page&hellip;).</li>
+</ul>
 <h2 id="visuel">Visuel</h2>
-<p>Pour tester le lien d&rsquo;évitement, placez-vous en haut de cette page et naviguer au clavier (touche &quot; tab &quot; pour se déplacer, touche &quot; entrée &quot; pour &quot; cliquer &quot; sur le lien).</p>
+
+<button type="button" id="alerteBouton">Afficher l'alerte</button>
+<div id="alerteZone" role="alert"></div>
+<script type="text/template" id="alerteInfo">
+  <p>Attention, si ce n'est pas accessible, ce n'est pas terminé !</p>
+</script>
+
 <h2 id="extraits-de-code">Extraits de code</h2>
 <h3 id="code-html">Code HTML</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;evitement&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#contenu&#34;</span><span class="p">&gt;</span>Aller au contenu<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> 
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">header</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;banner&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">...
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;alerteBouton&#34;</span><span class="p">&gt;</span>Afficher l&#39;alerte<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;alerteZone&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;alert&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/template&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;alerteInfo&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">Attention</span><span class="p">,</span> <span class="nx">si</span> <span class="nx">ce</span> <span class="nx">n</span><span class="s1">&#39;est pas accessible, ce n&#39;</span><span class="nx">est</span> <span class="nx">pas</span> <span class="nx">terminé</span> <span class="o">!&lt;</span><span class="err">/p&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h3 id="code-css">Code CSS</h3>
-<p>Il existe plusieurs façons de rendre son lien invisible  en voici une :</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">a</span><span class="p">.</span><span class="nc">evitement</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">   <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">   <span class="k">color</span><span class="p">:</span> <span class="mh">#555</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">   <span class="k">background</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+<p>Pour adapter les couleurs, modifier les codes couleurs dans la déclaration <code>:root</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/** Alerte **/</span>
+</span></span><span class="line"><span class="cl"><span class="p">:</span><span class="nd">root</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">--TEXT-color</span><span class="p">:</span> <span class="mh">#7c0303</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">--BACKGROUND-color</span><span class="p">:</span> <span class="mh">#F4CDCD</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> <span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;alert&#34;</span><span class="o">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="k">margin-top</span><span class="p">:</span> <span class="mf">.5</span><span class="kt">em</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">   <span class="k">padding</span><span class="p">:</span> <span class="mf">.5</span><span class="kt">em</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">   <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">   <span class="k">left</span><span class="p">:</span> <span class="mi">-99999</span><span class="kt">rem</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">   <span class="k">z-index</span><span class="p">:</span> <span class="mi">100</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="nt">a</span><span class="p">.</span><span class="nc">evitement</span><span class="p">:</span><span class="nd">focus</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">   <span class="k">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="k">border</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">TEXT</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">   <span class="k">border-radius</span><span class="p">:</span> <span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="k">background</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">BACKGROUND</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">   <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">TEXT</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> <span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;alert&#34;</span><span class="o">]</span><span class="p">:</span><span class="nd">empty</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span></code></pre></div><h3 id="code-javascript">Code javascript</h3>
+<p>Le code javascript est utilisé pour la démonstration. Il est tout à fait possible d&rsquo;implémenter du contenu dans la zone d&rsquo;alerte d&rsquo;une autre manière.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm"> *   This content is licensed according to the W3C Software License at
+</span></span></span><span class="line"><span class="cl"><span class="cm"> *   https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document
+</span></span></span><span class="line"><span class="cl"><span class="cm"> *
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;use strict&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;load&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">var</span> <span class="nx">button</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;alerteBouton&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">button</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="nx">addAlert</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">addAlert</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">var</span> <span class="nx">alerte</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;alerteZone&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">var</span> <span class="nx">template</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;alerteInfo&#39;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">alerte</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">template</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
           </section>
@@ -214,6 +272,7 @@
 	</svg>
 	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/clipboard.min.js"></script>
 <script src="/js/search.min.js"></script>
+<script src="/js/alerte.min.js"></script>
 <script>sandwitch();</script>	
 
 </body>
