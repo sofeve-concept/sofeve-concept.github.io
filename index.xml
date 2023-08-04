@@ -171,15 +171,6 @@ les polices sérif (avec empattements) – exemple : times new roman, open sans
     </item>
     
     <item>
-      <title>Tester avec une synthèse vocale</title>
-      <link>https://sofeve-concept.github.io/ressources/outils/synthese-vocale-nvda/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/ressources/outils/synthese-vocale-nvda/</guid>
-      <description>Logiciel de synthèse vocale Pour s&amp;rsquo;assurer de l&amp;rsquo;accessibilité numérique d&amp;rsquo;une page web, il est impératif de réaliser des tests avec un lecteur d&amp;rsquo;écran.</description>
-    </item>
-    
-    <item>
       <title>Titraille</title>
       <link>https://sofeve-concept.github.io/ressources/bureautique/structure/titraille/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -427,6 +418,15 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
     </item>
     
     <item>
+      <title>Tester avec une synthèse vocale</title>
+      <link>https://sofeve-concept.github.io/ressources/outils/synthese-vocale-nvda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/ressources/outils/synthese-vocale-nvda/</guid>
+      <description>Logiciel de synthèse vocale Pour s&amp;rsquo;assurer de l&amp;rsquo;accessibilité numérique d&amp;rsquo;une page web, il est impératif de réaliser des tests avec un lecteur d&amp;rsquo;écran.</description>
+    </item>
+    
+    <item>
       <title>Texte</title>
       <link>https://sofeve-concept.github.io/coder/contenu/texte/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -460,6 +460,15 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
       
       <guid>https://sofeve-concept.github.io/coder/navigation/fil-ariane/</guid>
       <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;un fil d&amp;rsquo;Ariane ? Le terme &amp;ldquo;fil d&amp;rsquo;Ariane&amp;rdquo; provient du mythe de l&amp;rsquo;antiquité racontant comment Ariane tendit à son aimé Thésée un fil pour qu&amp;rsquo;il puisse retrouver son chemin après avoir pénétré le labyrinthe dans lequel était enfermé le Minautore.</description>
+    </item>
+    
+    <item>
+      <title>Liste de vérification</title>
+      <link>https://sofeve-concept.github.io/ressources/outils/liste-de-verification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/ressources/outils/liste-de-verification/</guid>
+      <description>Liste de 45 items répartis en 12 thématiques à vérifier sur ses pages.ThématiquesCritèresCochez si validéStructrure HTMLDéclarer un doctype valide.</description>
     </item>
     
     <item>

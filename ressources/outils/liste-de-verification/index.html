@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Liste de vérification - Outils de vérification - Ressources - Sofève Concept</title>
+	
+	<meta name="description" content="Avant de réaliser un audit complet du site selon le RGAA (composé de 106 crières répartis en 13 thématiques), voici une liste de quelques critères à vérifier au cours du développement de vos pages web.">
+	
+	<meta name="author" content="Sophie Gounon">
+	<meta property="og:locale" content="fr_FR" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Sofève Concept" />
+	<meta property="og:description"
+		content="Sofève Concept est un site web de conseil et de documentation pour créer des sites web et des documents bureautiques accessibles" />
+	<meta property="og:url" content="https://sofeve-concept.github.io" />
+	<meta property="og:site_name" content="Sofève Concept" />
+	<meta property="og:image" content="https://sofeve-concept.github.io/images/sofeve-concept.jpg" />
+	<meta name="theme-color" content="#19003C" />
+	<link href="/images/favicon.ico" rel="icon"><link href="/css/fontluciole.min.css" rel="stylesheet" media="screen"><link href="/css/fontatkinson.min.css" rel="stylesheet" media="screen">
+	<link href="/css/print.min.css" rel="stylesheet" media="print"><link href="/css/sofeve.min.css" rel="stylesheet" media="screen">
+	<link href="/css/monokai.min.css" rel="stylesheet" media="screen">
+	</head>
+<body>
+	<div class="evitement">
+	<nav role="navigation" aria-label="Accès rapide">
+		<ul>
+			<li><a href="#contenu">Contenu</a></li>
+			<li><a href="#navigation">Menu</a></li> 
+			<li><a href="#piedDePage">Pied de page</a></li>
+		</ul>
+	</nav>
+</div>
+<header role="banner" id="banner" class="noSticky">
+	<div class="logo">
+		<a href="https://sofeve-concept.github.io">
+			<img src="/images/sofeve-concept-logo.webp" alt="Sofève Concept" class="big-logo">
+			<img src="/images/mini-logo.webp" alt="Sofève Concept" class="mini-logo">
+		</a>
+	</div>
+	<nav role='navigation' class="navbar" id="navigation" aria-label="Menu principal">
+		<button aria-expanded="false" id="hamburger" aria-controls="menu">
+		     <span class="sr-only">Menu</span>
+		</button>
+		<ul id="menu">
+			<li class="accueil">
+				<a href="/">Accueil</a></li>	
+			<li class="coder">
+				<button aria-haspopup="true" aria-expanded="false" aria-controls="coder">Coder accessible</button>
+				   <ul id="coder"><li><a href="/coder/">Vue d&#39;ensemble</a></li>
+              			<li><a href="/coder/structure/">Structure générale</a></li>
+              			<li><a href="/coder/contenu/">Contenu</a></li>
+              			<li><a href="/coder/couleurs/">Couleurs</a></li>
+              			<li><a href="/coder/navigation/">Navigation</a></li>
+              			<li><a href="/coder/lien-bouton/">Liens et boutons</a></li>
+              			<li><a href="/coder/image-icone/">Images et icônes</a></li>
+              			<li><a href="/coder/tableaux/">Tableaux</a></li>
+              			<li><a href="/coder/formulaire/">Formulaires</a></li>
+              			<li><a href="/coder/scripts/">Composants d&#39;interface riche</a></li>
+              			<li><a href="/coder/multimedia/">Multimedia</a></li>
+              			</ul>
+			    </li>
+			<li class="motifs">
+				<a href="/motifs/">Motifs de conception</a></li>	
+			<li class="ressources">
+				<button aria-haspopup="true" aria-expanded="false" aria-controls="ressources" aria-current="true">Ressources</button>
+				   <ul id="ressources"><li><a href="/ressources/bureautique/">Bureautique accessible</a></li>
+              			<li><a href="/ressources/outils/">Outils de vérification</a></li>
+              			<li><a href="/ressources/sites/">Sites sur l&#39;accessibilité</a></li>
+              			</ul>
+			    </li>	
+			<li class="a-propos">
+				<button aria-haspopup="true" aria-expanded="false" aria-controls="a-propos">À propos</button>
+				   <ul id="a-propos"><li><a href="/a-propos/accessibilite-numerique/">De l&#39;accessibilité numérique</a></li>
+              			<li><a href="/a-propos/qui-est-sofeve/">De Sofève-Concept</a></li>
+              			</ul>
+			    </li></ul>
+	</nav>	
+	<form action="/rechercher" method="GET" role="search" class="search">
+	    <div class="champs">
+    <label for="search-query">Rechercher</label>
+    <input type="search" name="q" id="search-query" >
+    </div>
+    <button type="reset">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" fill="#19003C" aria-hidden="true"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+        <span class="sr-only">Effacer</span>
+    </button>
+    <button type="submit">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#19003C" aria-hidden="true"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+        <span class="sr-only">Rechercher</span>
+    </button>
+
+	</form>
+	<p class="toSearch"><a href="/rechercher">
+		<span class="search-loupe" aria-hidden="true"></span>
+		<span class="sr-only">Aller à la page de recherche sur le site</span></a>
+	 </a></p>
+</header>
+	<main role="main" class="container">
+     <div class="flex ligneHaut">
+<nav aria-label="Vous êtes ici" class="ariane">
+<ol>
+  <li><a href="/">Accueil</a></li>
+  <li><a href="/ressources/">Ressources</a></li>
+  <li><a href="/ressources/outils/">Outils de vérification</a></li>
+  <li aria-current="page" tabindex="-1">Liste de vérification</li></ol>
+</nav>
+<div>
+<button onclick="window.print();">
+  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" aria-hidden="true" fill="#2E006C"><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zM432 248a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
+  Imprimer
+</button>
+</div>
+</div> 
+     <h1 id="contenu">Liste de vérification</h1>
+     <p>Avant de réaliser un audit complet du site selon le RGAA (composé de 106 crières répartis en 13 thématiques), voici une liste de quelques critères à vérifier au cours du développement de vos pages web.</p><div id="accordeonGroup" class="accordeon">
+     <h2>
+         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
+             <span class="accordeon-title">Table des matières</span>
+             <span class="accordeon-icon" aria-hidden="true"></span>
+         </button>
+     </h2>
+     <div id="tdm" role="region" aria-labelledby="tableDesMatieres" class="accordeon-panel" hidden>
+         <div>
+          <nav id="TableOfContents"></nav>
+         </div>
+     </div>
+</div>
+<table class="responsive style2 noline">
+                    <caption>Liste de 45 items répartis en 12 thématiques à vérifier sur ses pages.</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Thématiques</th>
+                            <th scope="col">Critères</th>
+                            <th scope="col">Cochez si validé</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" rowspan="6">Structrure HTML</th>
+                    </tr>
+                    <tr>
+                        <td><label for="c1">Déclarer un doctype valide.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c1" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c2">Déclarer toujours la langue de traitement sur la balise
+                                <code>html</code>.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c2" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c3">Valider le code source.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c3" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c4">Structurer votre page avec les régions ARIA.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c4" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c5">Si le site est en HTML5, structurer la page avec les balises HTML5 et les
+                                régions ARIA.
+                        </label></td>
+                        <td data-label="Cochez si validé : "><input id="c5" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="6">Navigation</th>
+                    </tr>
+                    <tr>
+                        <td><label for="c6">Définir des titres de pages pertinents.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c6" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c7">Implémenter un lien d'accès rapide au contenu.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c7" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c8">Implémenter un lien d'accès rapide à la navigation principale.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c8" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c9">Implémenter des liens d'évitement pour tous les groupes de liens
+                                importants.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c9" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c10">Implémenter deux systèmes de navigation au moins.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c10" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="6">Contenus</th>
+                    </tr>
+                    <tr>
+                        <td><label for="c11">Donner un titre pertinent aux cadres en ligne.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c11" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c12">Utiliser les balises appropriées pour structurer les listes.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c12" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c13">Indiquer les changements de langue et de sens de lecture.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c13" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c14">Indiquer les ouvertures de nouvelles fenêtres.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c14" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c15">Indiquer le format et le poids des documents en téléchargements.</label>
+                        </td>
+                        <td data-label="Cochez si validé : "><input id="c15" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="6">Tableaux</th>
+                    </tr>
+                    <tr>
+                        <td><label for="c16">Implémenter le <code>role="presentation"</code> sur les tableaux de mise en
+                                forme.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c16" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c17">Déclarer les cellules d'en-têtes dans des éléments <code>th</code>.</label>
+                        </td>
+                        <td data-label="Cochez si validé : "><input id="c17" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c18">Implémenter un attribut <code>scope="col"</code> pour les en-têtes de
+                                colonnes.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c18" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c19">Implémenter un attribut <code>scope="row"</code> pour les en-têtes de
+                                lignes.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c19" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c20">Utiliser les relations <code>id</code>, <code>headers</code> pour relier
+                                les cellules de
+                                données à leurs en-têtes dans le cas de cellules fusionnées.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c20" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="4">Liens</th>
+                    </tr>
+                    <tr>
+                        <td><label for="c21">Attention aux liens vides.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c21" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c22">Définir des intitulés de liens pertinents.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c22" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c23">Respecter la construction des titres de liens.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c23" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="5">Formulaires</th>
+                    </tr>
+                    <tr>
+                        <td><label for="c24">Définir des étiquettes pertinentes.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c24" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c25">Utiliser une méthode conforme pour relier les champs à leurs étiquettes
+                                respectives.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c25" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c26">Pour les champs obligatoires avec un format de saisie, pensez toujours à
+                                l'indiquer (de
+                                préférence dans l'étiquette du champ).</label></td>
+                        <td data-label="Cochez si validé : "><input id="c26" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c27">Pour les erreurs de saisie, reliez l'erreur au champ concerné et indiquez
+                                un exemple de
+                                saisie réelle lorsque nécessaire.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c27" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="4">Focus</th>
+                    </tr>
+                    <tr>
+                        <td><label for="c28">La prise de focus est visible, les valeurs de l'outline ne la dégradent
+                                pas.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c28" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c29">Une mise en forme autre que la couleur permet d'identifier les liens ainsi
+                                que leur survol
+                                et la prise de focus.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c29" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c30">Lors de la navigation au clavier la prise de focus est cohérente et ne
+                                reste pas bloquée sur
+                                un élément (piège au clavier).</label></td>
+                        <td data-label="Cochez si validé : "><input id="c30" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="3">Distinction forme et fond</th>
+                    </tr>
+                    <tr>
+                        <td><label for="c31">Aucun contenu ne disparaît lors de l'activation ou de la désactivation des
+                                styles.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c31" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c32">La page reste compréhensible et les différentes zones sont correctement
+                                ordonnées lorsque
+                                les styles sont désactivés.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c32" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="5">Images</th>
+                    </tr>
+                    <tr>
+                        <td><label for="c33">Définir un <code>alt</code> sur toutes les images <code>img</code>.</label>
+                        </td>
+                        <td data-label="Cochez si validé : "><input id="c33" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c34">Définir un <code>alt=""</code> sur les images de décoration.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c34" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c35">Définir une alternative conforme et pertinente lorsqu'elle est porteuse
+                                d'information.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c35" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c36">Éviter le plus possibles les images textes</label></td>
+                        <td data-label="Cochez si validé : "><input id="c36" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="4">Informations par la forme et la couleur</th>
+                    </tr>
+                    <tr>
+                        <td><label for="c37">Ne pas donner d'informations uniquement par la couleur.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c37" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c38">Ne pas donner d'informations uniquement par la forme.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c38" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c39">Implémenter des alternatives à la couleur et à la forme qui soient
+                                pertinentes.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c39" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="5">Agrandissement des caractères</th>
+                    </tr>
+                    <tr><td><label for="c40">Ne pas définir des tailles de caractères en pixels.</label></td>
+                    <td data-label="Cochez si validé : "><input id="c40" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c41">Eviter de fixer des hauteurs de boîte en pixels.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c41" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c42">Utiliser la propriété overflow:hidden avec précaution.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c42" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c43">Définir si possible des points de rupture en em.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c43" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="3">Multimédia</th>
+                    </tr>
+                    <tr><td><label for="c44">Faire précéder toutes les vidéos d'un titre.</label></td>
+                    <td data-label="Cochez si validé : "><input id="c44" type="checkbox" name="check"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="c45">Fournir un lien clairement identifié permettant d'accéder à l'alternative
+                                accessible des
+                                médias non temporels.</label></td>
+                        <td data-label="Cochez si validé : "><input id="c45" type="checkbox" name="check"></td>
+                    </tr>
+                </tbody>
+                </table>
+
+
+     
+</main>
+
+	<footer role="contentinfo" id="piedDePage">
+	<div class="pied">
+		<ul class="clicIcon">
+			<li><button role="button" onclick="envoiCourriel();" tabindex="0" class="mymail" title="Envoyer un courriel"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="icon" aria-hidden="true"><path d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"/></svg>
+				<span class="sr-only">Contacter par courriel</span></button></li>
+			<li><a href="https://github.com/sofeve-concept"  target="_blank" rel="noopener noreferrer" title="GitHub (nouvelle fenêtre)"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512" class="icon" aria-hidden="true"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg><span class="sr-only">GitHub</span></a></li>
+			<li><a href="https://www.linkedin.com/in/sophie-gounon/"  target="_blank" rel="noopener noreferrer" title="LinkedIn (nouvelle fenêtre)"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" class="icon" aria-hidden="true"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg><span class="sr-only">LinkedIn</span></a></li></ul>
+		<ul class="infoleg">
+		    <li><a href="/plan" >Plan du site</a></li>
+		    <li><a href="/mentions-legales" >Mentions légales et crédits</a></li></ul>	
+	 </div>
+	 <div class="indicateurs">
+		<p>&copy; 2023 Sofève Concept</p>
+		<p>Accessibilité : totalement conforme</p>
+		<p><span>By</span> Sofève Concept
+	</div>
+</footer>
+<a id="RetourEnHaut" class="cInvisible" href="#top">
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"
+	    aria-hidden="true">
+	    <path
+		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+	</svg>
+	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/search.min.js"></script>
+</body>
+</html>
