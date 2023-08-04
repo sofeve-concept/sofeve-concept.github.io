@@ -154,18 +154,18 @@
           <nav id="TableOfContents">
   <ul>
     <li><a href="#ce-quil-faut-retenir">Ce qu&rsquo;il faut retenir</a></li>
-    <li><a href="#image-sans-alternative-textuelle">Image sans alternative textuelle</a>
+    <li><a href="#image-décorative--pas-dalternative-textuelle">Image décorative : pas d&rsquo;alternative textuelle</a>
       <ul>
         <li><a href="#eacutelément-html-img">Élément HTML <code>img</code></a></li>
         <li><a href="#eacutelément-html-svg">Élément HTML <code>svg</code></a></li>
       </ul>
     </li>
-    <li><a href="#image-avec-alternative-textuelle">Image avec alternative textuelle</a>
+    <li><a href="#image-illustrative-ou-informative--avec-alternative-textuelle">Image illustrative ou informative : avec alternative textuelle</a>
       <ul>
         <li>
           <ul>
             <li><a href="#eacutelément-html-svg-1">Élément HTML <code>svg</code></a></li>
-            <li><a href="#cas-des-images-liens">Cas des images-liens</a></li>
+            <li><a href="#cas-des-images-svg-liens">Cas des images SVG liens</a></li>
           </ul>
         </li>
       </ul>
@@ -181,9 +181,9 @@
 <li>Images-textes</li>
 <li>Images-liens et boutons</li>
 </ul>
-<p>Les images s&rsquo;implémentent avec l&rsquo;élément HTML <code>&lt;img src=&quot;...&quot;&gt;</code>  dans certatins cas, un attribut <code>alt</code>(pour alternative visuelle) sera ajouté.</p>
-<h2 id="image-sans-alternative-textuelle">Image sans alternative textuelle</h2>
-<p>Quand <strong>les images ou les icônes sont décoratives</strong>, on n&rsquo;ajoute pas d&rsquo;alternative textuelle (<code>alt</code>). On peut alors coder l&rsquo;image de plusieurs manières :</p>
+<p>Les images s&rsquo;implémentent le plus souvent avec l&rsquo;élément HTML <code>&lt;img src=&quot;...&quot;&gt;</code>  dans certatins cas, un attribut <code>alt</code>(pour alternative visuelle) sera ajouté. Une autre façon courante d&rsquo;implémenter une image consiste à utiliser l&rsquo;élément <code>svg</code>.</p>
+<h2 id="image-décorative--pas-dalternative-textuelle">Image décorative : pas d&rsquo;alternative textuelle</h2>
+<p>Quand <strong>les images ou les icônes sont décoratives</strong>, on n&rsquo;ajoute pas d&rsquo;alternative textuelle. On peut alors coder l&rsquo;image de plusieurs manières :</p>
 <h3 id="eacutelément-html-img">Élément HTML <code>img</code></h3>
 <ul>
 <li>avec alternative textuelle vide <code>alt=&quot;&quot;</code> :</li>
@@ -200,7 +200,7 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">focusable</span><span class="o">=</span><span class="s">&#34;false&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">	...
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h2 id="image-avec-alternative-textuelle">Image avec alternative textuelle</h2>
+</span></span></code></pre></div><h2 id="image-illustrative-ou-informative--avec-alternative-textuelle">Image illustrative ou informative : avec alternative textuelle</h2>
 <p>On ajoute une alternative textuelle quand les images ou les icônes sont :</p>
 <ul>
 <li>illustratives ou informatives</li>
@@ -276,24 +276,18 @@
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">desc</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;maDescription&#34;</span><span class="p">&gt;</span>Description détaillée de l&#39;image.<span class="p">&lt;/</span><span class="nt">desc</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">   ...
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h4 id="cas-des-images-liens">Cas des images-liens</h4>
-<p>Exemple avec un texte visuellement caché et lu par les lecteurs d&rsquo;écran grâce à la classe de style <code>sr-only</code> (screen reader only)</p>
+</span></span></code></pre></div><h4 id="cas-des-images-svg-liens">Cas des images SVG liens</h4>
+<p>Lorsqu&rsquo;une image SVG est un lien à elle seule, l&rsquo;implémentation se fait de la manière suivante :</p>
+<ul>
+<li>on pose sur la balise <code>svg</code> un attribut <code>aria-label</code> avec comme propriété l&rsquo;intitulé du lien ;</li>
+<li>on ajoute la balise <code>title</code> à l&rsquo;intérieur des balises <code>svg</code> avec exactement le même libellé qu&rsquo;indiqué dans l&rsquo;attribut <code>aria-label</code>.</li>
+</ul>
 <p><strong>HTML</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">svg</span> <span class="na">focusable</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sr-only&#34;</span><span class="p">&gt;</span>Rechercher<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-</span></span></code></pre></div><p><strong>CSS</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">sr-only</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">position</span><span class="p">:</span><span class="kc">absolute</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="k">top</span><span class="p">:</span><span class="mi">-10000</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>Autre implémentation possible :</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Rechercher&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">svg</span> <span class="na">focusable</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Rechercher&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">svg</span> <span class="na">focusable</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">svg</span> <span class="err">...</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;img&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Libellé du lien-image&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Libellé du lien-image<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">path</span> <span class="err">...</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>     
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </span></span></code></pre></div>
           </section>
