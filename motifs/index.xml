@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/motifs/code-de-base/</guid>
-      <description>Deux extraits de code sont présentés. Le premier est commenté le deuxième ne l&amp;rsquo;est pas et est suivi du code CSS pour le lien d&amp;rsquo;évitement.</description>
+      <description>Le critère 9.2 du référentiel général d’amélioration de l’acccessibilité (RGAA), rend obligatoire la présence de plusieurs balises sémantiques de région (landmark, en anglais) dans la page HTML :</description>
     </item>
     
     <item>
