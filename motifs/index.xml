@@ -124,6 +124,15 @@
     </item>
     
     <item>
+      <title>Menu déroulant</title>
+      <link>https://sofeve-concept.github.io/motifs/menu-deroulant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/menu-deroulant/</guid>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;exemple proposé ici utilise uniquement des listes imbriquées ; les rôles aria suivants sont utilisés pour fournir la sémantique nécessaire d&amp;rsquo;un menu d&amp;rsquo;application : role=&amp;quot;menubar&amp;quot; : Représente une barre de menus (généralement horizontale).</description>
+    </item>
+    
+    <item>
       <title>Message d&#39;alerte</title>
       <link>https://sofeve-concept.github.io/motifs/alerte/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
