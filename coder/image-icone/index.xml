@@ -7,12 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/coder/image-icone/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Les images (IMG et SVG)</title>
+      <title>Les images</title>
       <link>https://sofeve-concept.github.io/coder/image-icone/images/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/image-icone/images/</guid>
-      <description>Ce qu&amp;rsquo;il faut retenir On n&amp;rsquo;utilisera pas le style CSS pour afficher les images porteuses d’informations telles que :</description>
+      <description>Ce qu&amp;rsquo;il faut retenir Dans une page web, une image peut être utilisée comme simple décoration ou être porteuse d&amp;rsquo;information (image illustrative ou informative).</description>
+    </item>
+    
+    <item>
+      <title>Images IMG</title>
+      <link>https://sofeve-concept.github.io/coder/image-icone/images-img/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/image-icone/images-img/</guid>
+      <description>Image IMG décorative : pas d&amp;rsquo;alternative textuelle Pour savoir si une image est décorative, le plus simple est d&amp;rsquo;imaginer qu&amp;rsquo;il n&amp;rsquo;y a pas d&amp;rsquo;image et de se poser ensuite la question : « Est-ce que je perds de l&amp;rsquo;information ?</description>
+    </item>
+    
+    <item>
+      <title>Images SVG</title>
+      <link>https://sofeve-concept.github.io/coder/image-icone/images-svg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/image-icone/images-svg/</guid>
+      <description>SVG (Scalable Vector Graphics) est un format de fichier vectoriel qui permet de décrire des images.</description>
     </item>
     
     <item>

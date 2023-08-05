@@ -3,9 +3,9 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Les images (IMG et SVG) - Images et icônes - Coder accessible - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Les images - Images et icônes - Coder accessible - Sofève Concept</title>
 	
-	<meta name="description" content="L&#39;accessibilité numérique des images sera traitée différemment selon qu&#39;il s&#39;agit d&#39;images informatives, décoratives, illustratives.">
+	<meta name="description" content="L&#39;accessibilité numérique des images sera traitée différemment selon qu&#39;il s&#39;agit d&#39;images décoratives, informatives ou illustratives.">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -104,7 +104,7 @@
   <li><a href="/">Accueil</a></li>
   <li><a href="/coder/">Coder accessible</a></li>
   <li><a href="/coder/image-icone/">Images et icônes</a></li>
-  <li aria-current="page" tabindex="-1">Les images (IMG et SVG)</li></ol>
+  <li aria-current="page" tabindex="-1">Les images</li></ol>
 </nav>
 <div>
 <button onclick="window.print();">
@@ -128,7 +128,9 @@
 		<li><a href="https://sofeve-concept.github.io/coder/lien-bouton/">Liens et boutons</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/image-icone/" aria-current="true" >Images et icônes</a>
 			
-			<ul><li><a href="https://sofeve-concept.github.io/coder/image-icone/images/" aria-current="page" >Les images (IMG et SVG)</a></li>
+			<ul><li><a href="https://sofeve-concept.github.io/coder/image-icone/images/" aria-current="page" >Les images</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/image-icone/images-img/">Images IMG</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/image-icone/images-svg/">Images SVG</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/">Image légendée</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/image-icone/police-icone/">Police symbolique</a></li>
 				</ul></li>
@@ -141,8 +143,8 @@
 
                </aside>
           <section class="item-80 rubCode">
-               <h1 id="contenu">Les images (IMG et SVG)</h1>
-               <p>L&#39;accessibilité numérique des images sera traitée différemment selon qu&#39;il s&#39;agit d&#39;images informatives, décoratives, illustratives.</p><div id="accordeonGroup" class="accordeon">
+               <h1 id="contenu">Les images</h1>
+               <p>L&#39;accessibilité numérique des images sera traitée différemment selon qu&#39;il s&#39;agit d&#39;images décoratives, informatives ou illustratives.</p><div id="accordeonGroup" class="accordeon">
      <h2>
          <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
              <span class="accordeon-title">Table des matières</span>
@@ -154,62 +156,72 @@
           <nav id="TableOfContents">
   <ul>
     <li><a href="#ce-quil-faut-retenir">Ce qu&rsquo;il faut retenir</a></li>
-    <li><a href="#image-décorative--pas-dalternative-textuelle">Image décorative : pas d&rsquo;alternative textuelle</a>
-      <ul>
-        <li><a href="#eacutelément-html-img">Élément HTML <code>img</code></a></li>
-        <li><a href="#eacutelément-html-svg">Élément HTML <code>svg</code></a></li>
-      </ul>
-    </li>
-    <li><a href="#image-illustrative-ou-informative--avec-alternative-textuelle">Image illustrative ou informative : avec alternative textuelle</a>
-      <ul>
-        <li>
-          <ul>
-            <li><a href="#eacutelément-html-svg-1">Élément HTML <code>svg</code></a></li>
-            <li><a href="#cas-des-images-svg-liens">Cas des images SVG liens</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
+    <li><a href="#implémentation-des-images-décoratives">Implémentation des images décoratives</a></li>
+    <li><a href="#implémentation-des-images-illustratives-et-informatives">Implémentation des images illustratives et informatives</a></li>
   </ul>
 </nav>
          </div>
      </div>
 </div><h2 id="ce-quil-faut-retenir">Ce qu&rsquo;il faut retenir</h2>
-<p>On n&rsquo;utilisera pas le style CSS pour afficher les images porteuses d’informations telles que :</p>
+<p>Dans une page web, une image peut être utilisée comme simple décoration ou être porteuse d&rsquo;information (image illustrative ou informative). Selon son usage dans le site, on traitera l&rsquo;implémentation de l&rsquo;image de manière différente :</p>
 <ul>
-<li>Logos</li>
-<li>Images-textes</li>
-<li>Images-liens et boutons</li>
+<li>Dans le cas où l&rsquo;image sert de décoration (c&rsquo;est à dire que l&rsquo;absence d&rsquo;image ne provoque pas la perte d&rsquo;informations), on fera en sorte que celle-ci soit ignorée par un lecteur de synthèse vocale.</li>
+<li>Dans le cas contraire (l&rsquo;image est porteuse d&rsquo;information), il faudra l&rsquo;implémenter en prenant soin de proposer un texte de remplacement ou un texte descriptif (cas d&rsquo;une infographie, par exemple). Enfin, <strong>on n&rsquo;utilisera pas le style CSS pour afficher</strong> les images porteuses d’informations telles que :
+<ul>
+<li>les logos  ;</li>
+<li>les images-textes  ;</li>
+<li>les images-liens ;</li>
+<li>les images-boutons.</li>
 </ul>
-<p>Les images s&rsquo;implémentent le plus souvent avec l&rsquo;élément HTML <code>&lt;img src=&quot;...&quot;&gt;</code>  dans certatins cas, un attribut <code>alt</code>(pour alternative visuelle) sera ajouté. Une autre façon courante d&rsquo;implémenter une image consiste à utiliser l&rsquo;élément <code>svg</code>.</p>
-<h2 id="image-décorative--pas-dalternative-textuelle">Image décorative : pas d&rsquo;alternative textuelle</h2>
-<p>Quand <strong>les images ou les icônes sont décoratives</strong>, on n&rsquo;ajoute pas d&rsquo;alternative textuelle. On peut alors coder l&rsquo;image de plusieurs manières :</p>
-<h3 id="eacutelément-html-img">Élément HTML <code>img</code></h3>
+</li>
+</ul>
+<p>Les images s&rsquo;implémentent le plus souvent avec l&rsquo;élément HTML <code>&lt;img src=&quot;...&quot;&gt;</code> . Une autre façon courante d&rsquo;implémenter une image consiste à utiliser l&rsquo;élément <code>svg</code>. Pour autant d&rsquo;autres éléments HTML existent pour implémenter des images (<code>canvas</code>, <code>area</code>, <code>input type=&quot;image&quot;</code>, &hellip;).</p>
+<h2 id="implémentation-des-images-décoratives">Implémentation des images décoratives</h2>
+<p>Pour savoir si une image est décorative, le plus simple est d&rsquo;imaginer qu&rsquo;il n&rsquo;y a pas d&rsquo;image et de se poser ensuite la question : « Est-ce que je perds de l&rsquo;information ? ». Si la réponse à la question est « Non », alors l&rsquo;image est décorative. Dans ce cas, on fera en sorte :</p>
 <ul>
-<li>avec alternative textuelle vide <code>alt=&quot;&quot;</code> :</li>
+<li>de ne pas ajouter d&rsquo;alternative textuelle (le plus fréquemment en posant un attribut <code>alt</code> vide : <code>alt=&quot;&quot;</code>)  ;</li>
+<li>de s&rsquo;assurer que l&rsquo;image est bien ignorée par les lecteurs de synthèse vocale (attribut <code>aria-hidden=&quot;true&quot;</code>).<br>
+D&rsquo;autres façons d&rsquo;ignorer la vocalisation de ces images consiste à :
+<ul>
+<li>poser un attribut aria <code>role=&quot;presentation&quot;</code> ;</li>
+<li>désactiver le focus clavier (cas des images SVG) : <code>focusable=&quot;false&quot;</code>.</li>
+</ul>
+</li>
+</ul>
+<p>Voici quelques exemples d&rsquo;implémentation d&rsquo;une image décorative :</p>
+<ul>
+<li><strong>Pour un élément HTML <code>img</code></strong> :
+<ul>
+<li>Alternative textuelle vide <code>alt=&quot;&quot;</code> :</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;mon_image_decorative.png&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">&gt;</span>
 </span></span></code></pre></div><ul>
-<li>sans l&rsquo;attribut <code>alt</code>  et avec l&rsquo;attribut <code>role=&quot;presentation&quot;</code> :</li>
+<li>Pas d&rsquo;attribut <code>alt</code> mais un attribut aria <code>role=&quot;presentation&quot;</code> :</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;mon_image_decorative.png&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;presentation&#34;</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h3 id="eacutelément-html-svg">Élément HTML <code>svg</code></h3>
+</span></span></code></pre></div></li>
+<li><strong>Pour un élément HTML <code>svg</code></strong> :
 <ul>
 <li>avec l&rsquo;attribut <code>focusable=&quot;false&quot;</code> et le role aria <code>aria-hidden=&quot;true&quot;</code></li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">focusable</span><span class="o">=</span><span class="s">&#34;false&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">	...
+</span></span><span class="line"><span class="cl">     ...
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h2 id="image-illustrative-ou-informative--avec-alternative-textuelle">Image illustrative ou informative : avec alternative textuelle</h2>
-<p>On ajoute une alternative textuelle quand les images ou les icônes sont :</p>
-<ul>
-<li>illustratives ou informatives</li>
-<li>des liens ou des boutons seuls</li>
+</span></span></code></pre></div></li>
 </ul>
-<p>L&rsquo;alternative textuelle se pose soit avec l&rsquo;attribit <code>alt</code>, soit avec l&rsquo;attribut <code>title</code>, soit avec les attributs aria <code>aria-label</code> ou <code>aria-labelledby</code>.</p>
+<h2 id="implémentation-des-images-illustratives-et-informatives">Implémentation des images illustratives et informatives</h2>
+<p>Dans le cas où l&rsquo;image est :</p>
+<ul>
+<li>porteuse d&rsquo;information ;</li>
+<li>une illustration d&rsquo;un propos ;</li>
+<li>un lien (une flèche, par exemple) ;</li>
+<li>un bouton seul (une croix pour fermer une fenêtre modale, par exemple) ;<br>
+on veillera à lui ajouter une alternative textuelle.<br>
+L&rsquo;alternative textuelle se pose soit avec l&rsquo;attribut <code>alt</code>, soit avec l&rsquo;attribut <code>title</code>, soit avec les attributs aria <code>aria-label</code> ou <code>aria-labelledby</code>.</li>
+</ul>
 
 <table class="responsive">
-<caption>Alternatives textuelles à utiliser selon le type d'image</caption>
+<caption>Alternatives textuelles à utiliser selon le type d'élément HTML</caption>
      <thead>
      <tr>
           <th scope="col">&Eacute;lément HTML</th>
@@ -264,32 +276,7 @@
      </tbody>
      </table>
 
-<h4 id="eacutelément-html-svg-1">Élément HTML <code>svg</code></h4>
-<p>Pour les svg, on aura recours à l&rsquo;élément <code>&lt;title&gt;...&lt;/title&gt;</code> (et non pas l&rsquo;attribut <code>title</code>) et au rôle aria <code>role=&quot;img&quot;</code>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;monTexte&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;img&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;monTexte&#34;</span><span class="p">&gt;</span>L&#39;alternative textuelle de l&#39;image<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">   ...
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
-</span></span></code></pre></div><p>Dans la cas où l&rsquo;image svg nécessite une description plus détaillée, on utilisera alors l&rsquo;élément <code>&lt;desc&gt;...&lt;/desc&gt;</code>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;monTexte maDescription&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;img&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;monTexte&#34;</span><span class="p">&gt;</span>Titre de l&#39;image<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">desc</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;maDescription&#34;</span><span class="p">&gt;</span>Description détaillée de l&#39;image.<span class="p">&lt;/</span><span class="nt">desc</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">   ...
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h4 id="cas-des-images-svg-liens">Cas des images SVG liens</h4>
-<p>Lorsqu&rsquo;une image SVG est un lien à elle seule, l&rsquo;implémentation se fait de la manière suivante :</p>
-<ul>
-<li>on pose sur la balise <code>svg</code> un attribut <code>aria-label</code> avec comme propriété l&rsquo;intitulé du lien ;</li>
-<li>on ajoute la balise <code>title</code> à l&rsquo;intérieur des balises <code>svg</code> avec exactement le même libellé qu&rsquo;indiqué dans l&rsquo;attribut <code>aria-label</code>.</li>
-</ul>
-<p><strong>HTML</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">svg</span> <span class="err">...</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;img&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Libellé du lien-image&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Libellé du lien-image<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">path</span> <span class="err">...</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>     
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</span></span></code></pre></div>
+
           </section>
           
      </div>

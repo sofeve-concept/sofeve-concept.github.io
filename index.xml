@@ -98,6 +98,15 @@
     </item>
     
     <item>
+      <title>Les images</title>
+      <link>https://sofeve-concept.github.io/coder/image-icone/images/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/image-icone/images/</guid>
+      <description>Ce qu&amp;rsquo;il faut retenir Dans une page web, une image peut être utilisée comme simple décoration ou être porteuse d&amp;rsquo;information (image illustrative ou informative).</description>
+    </item>
+    
+    <item>
       <title>Les liens</title>
       <link>https://sofeve-concept.github.io/coder/lien-bouton/liens/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -244,6 +253,15 @@ Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page H
     </item>
     
     <item>
+      <title>Images IMG</title>
+      <link>https://sofeve-concept.github.io/coder/image-icone/images-img/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/image-icone/images-img/</guid>
+      <description>Image IMG décorative : pas d&amp;rsquo;alternative textuelle Pour savoir si une image est décorative, le plus simple est d&amp;rsquo;imaginer qu&amp;rsquo;il n&amp;rsquo;y a pas d&amp;rsquo;image et de se poser ensuite la question : « Est-ce que je perds de l&amp;rsquo;information ?</description>
+    </item>
+    
+    <item>
       <title>Lecteur audio ou vidéo</title>
       <link>https://sofeve-concept.github.io/coder/multimedia/lecteur-video/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -260,15 +278,6 @@ ne doit pas démarrer automatiquement ; doit prendre en charge les sous-titres 
       
       <guid>https://sofeve-concept.github.io/coder/lien-bouton/boutons/</guid>
       <description>Règles d&amp;rsquo;implémentation d&amp;rsquo;un bouton Les boutons déclenchent des actions. Ils sont implémentés avec les balises &amp;lt;input type=&amp;quot;.</description>
-    </item>
-    
-    <item>
-      <title>Les images (IMG et SVG)</title>
-      <link>https://sofeve-concept.github.io/coder/image-icone/images/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/coder/image-icone/images/</guid>
-      <description>Ce qu&amp;rsquo;il faut retenir On n&amp;rsquo;utilisera pas le style CSS pour afficher les images porteuses d’informations telles que :</description>
     </item>
     
     <item>
@@ -381,13 +390,12 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
     </item>
     
     <item>
-      <title>Image légendée</title>
-      <link>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</link>
+      <title>Images SVG</title>
+      <link>https://sofeve-concept.github.io/coder/image-icone/images-svg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</guid>
-      <description>Implémentation HTML Les images légendées doivent être balisées avec &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; et &amp;lt;figcaption&amp;gt;.
-La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</description>
+      <guid>https://sofeve-concept.github.io/coder/image-icone/images-svg/</guid>
+      <description>SVG (Scalable Vector Graphics) est un format de fichier vectoriel qui permet de décrire des images.</description>
     </item>
     
     <item>
@@ -397,15 +405,6 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
       
       <guid>https://sofeve-concept.github.io/coder/navigation/menu-navigation/</guid>
       <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;un menu de navigation ? Un menu de navigation regroupe un ensemble de liens permettant d&amp;rsquo;afficher les différentes pages du site web ou d&amp;rsquo;atteindre un endroit spécifique de la page affichée.</description>
-    </item>
-    
-    <item>
-      <title>Police symbolique</title>
-      <link>https://sofeve-concept.github.io/coder/image-icone/police-icone/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/coder/image-icone/police-icone/</guid>
-      <description>Les polices de caractère symboliques Parmi les polices de cacractères symboliques, les plus connues sont :</description>
     </item>
     
     <item>
@@ -463,6 +462,16 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
     </item>
     
     <item>
+      <title>Image légendée</title>
+      <link>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</guid>
+      <description>Implémentation HTML Les images légendées doivent être balisées avec &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; et &amp;lt;figcaption&amp;gt;.
+La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</description>
+    </item>
+    
+    <item>
       <title>Liste de vérification</title>
       <link>https://sofeve-concept.github.io/ressources/outils/liste-de-verification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -514,6 +523,15 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
       
       <guid>https://sofeve-concept.github.io/coder/navigation/processus-etapes/</guid>
       <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;un processus par étapes ? Les processus par étapes (stepper, en anglais) affichent la progression à travers une séquence d&amp;rsquo;étapes logiques et numérotées.</description>
+    </item>
+    
+    <item>
+      <title>Police symbolique</title>
+      <link>https://sofeve-concept.github.io/coder/image-icone/police-icone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/image-icone/police-icone/</guid>
+      <description>Les polices de caractère symboliques Parmi les polices de cacractères symboliques, les plus connues sont :</description>
     </item>
     
     <item>

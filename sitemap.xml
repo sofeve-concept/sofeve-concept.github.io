@@ -22,6 +22,8 @@
   </url><url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/images/image/</loc>
   </url><url>
+    <loc>https://sofeve-concept.github.io/coder/image-icone/images/</loc>
+  </url><url>
     <loc>https://sofeve-concept.github.io/coder/lien-bouton/liens/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/liens/libelle/</loc>
@@ -60,11 +62,11 @@
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/structure/formatage/</loc>
   </url><url>
+    <loc>https://sofeve-concept.github.io/coder/image-icone/images-img/</loc>
+  </url><url>
     <loc>https://sofeve-concept.github.io/coder/multimedia/lecteur-video/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/lien-bouton/boutons/</loc>
-  </url><url>
-    <loc>https://sofeve-concept.github.io/coder/image-icone/images/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/presentation/capitales-sigles/</loc>
   </url><url>
@@ -94,13 +96,11 @@
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/couleurs/</loc>
   </url><url>
-    <loc>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</loc>
+    <loc>https://sofeve-concept.github.io/coder/image-icone/images-svg/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/liens/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/navigation/menu-navigation/</loc>
-  </url><url>
-    <loc>https://sofeve-concept.github.io/coder/image-icone/police-icone/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/presentation/saut-ligne/</loc>
   </url><url>
@@ -115,6 +115,8 @@
     <loc>https://sofeve-concept.github.io/coder/navigation/fil-ariane/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/images/</loc>
+  </url><url>
+    <loc>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/ressources/outils/liste-de-verification/</loc>
   </url><url>
@@ -147,6 +149,8 @@
     <loc>https://sofeve-concept.github.io/coder/scripts/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/multimedia/</loc>
+  </url><url>
+    <loc>https://sofeve-concept.github.io/coder/image-icone/police-icone/</loc>
   </url><url>
     <loc>https://sofeve-concept.github.io/coder/structure/validite-code/</loc>
   </url><url>
