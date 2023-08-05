@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Police symbolique - Images et icônes - Coder accessible - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Icônes, symboles, émojis - Images et icônes - Coder accessible - Sofève Concept</title>
 	
 	<meta name="description" content="Les polices symboliques sont parfois utilisées pour afficher une icône ; l&#39;usage le plus connu étant le symbole de maison pour représenter la page d&#39;accueil du site.">
 	
@@ -104,7 +104,7 @@
   <li><a href="/">Accueil</a></li>
   <li><a href="/coder/">Coder accessible</a></li>
   <li><a href="/coder/image-icone/">Images et icônes</a></li>
-  <li aria-current="page" tabindex="-1">Police symbolique</li></ol>
+  <li aria-current="page" tabindex="-1">Icônes, symboles, émojis</li></ol>
 </nav>
 <div>
 <button onclick="window.print();">
@@ -131,8 +131,8 @@
 			<ul><li><a href="https://sofeve-concept.github.io/coder/image-icone/images/">Les images</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/image-icone/images-img/">Images IMG</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/image-icone/images-svg/">Images SVG</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/">Image légendée</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/image-icone/police-icone/" aria-current="page" >Police symbolique</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/">Images légendées</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/image-icone/police-icone/" aria-current="page" >Icônes, symboles, émojis</a></li>
 				</ul></li>
 		<li><a href="https://sofeve-concept.github.io/coder/tableaux/">Tableaux</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/formulaire/">Formulaires</a></li>
@@ -143,7 +143,7 @@
 
                </aside>
           <section class="item-80 rubCode">
-               <h1 id="contenu">Police symbolique</h1>
+               <h1 id="contenu">Icônes, symboles, émojis</h1>
                <p>Les polices symboliques sont parfois utilisées pour afficher une icône ; l&#39;usage le plus connu étant le symbole de maison pour représenter la page d&#39;accueil du site.</p><div id="accordeonGroup" class="accordeon">
      <h2>
          <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
@@ -155,25 +155,96 @@
          <div>
           <nav id="TableOfContents">
   <ul>
-    <li><a href="#les-polices-de-caractère-symboliques">Les polices de caractère symboliques</a></li>
+    <li><a href="#polices-dicônes-et-de-symboles">Polices d&rsquo;icônes et de symboles</a></li>
+    <li><a href="#implémentation-dune-icône-ou-dun-symbole-purement-décoratif">Implémentation d&rsquo;une icône ou d&rsquo;un symbole purement décoratif</a></li>
+    <li><a href="#implémentation-dune-icône-ou-dun-symbole-qui-porte-de-linformation">Implémentation d&rsquo;une icône ou d&rsquo;un symbole qui porte de l&rsquo;information</a></li>
+    <li><a href="#les-caractères-unicode">Les caractères unicode</a></li>
+    <li><a href="#les-émojis">Les émojis</a></li>
   </ul>
 </nav>
          </div>
      </div>
-</div><h2 id="les-polices-de-caractère-symboliques">Les polices de caractère symboliques</h2>
-<p>Parmi les polices de cacractères symboliques, les plus connues sont :</p>
+</div><h2 id="polices-dicônes-et-de-symboles">Polices d&rsquo;icônes et de symboles</h2>
+<p>Il existe des polices de caractères qui, lorsqu&rsquo;elles sont implémentées dans le site permettent d&rsquo;afficher des icônes ou des symboles. Les plus connues sont :</p>
 <ul>
 <li><a href="https://fontawesome.com/icons?d=gallery"  target="_blank" rel="noopener noreferrer" title="Awesome (nouvelle fenêtre)">Awesome</a></li>
 <li><a href="https://icons.getbootstrap.com/"  target="_blank" rel="noopener noreferrer" title="Bootstrap icons (nouvelle fenêtre)">Bootstrap icons</a></li>
 <li><a href="#ZgotmplZ"  target="_blank" rel="noopener noreferrer" title="Material Icons (nouvelle fenêtre)">Material Icons</a></li>
 </ul>
-<p>Si le symbole n&rsquo;apporte pas d&rsquo;information, il sera masqué aux lecteurs d&rsquo;écran via l&rsquo;attribut aria <code>aria-hidden=&quot;true&quot;</code>.</p>
+<p>Pour respecter la sémantique HTML, ces polices de caractères sont implémentées via des classes de style dans un élément HTML <code>i</code>.</p>
+<h2 id="implémentation-dune-icône-ou-dun-symbole-purement-décoratif">Implémentation d&rsquo;une icône ou d&rsquo;un symbole purement décoratif</h2>
+<p><em>Pour savoir si l&rsquo;icône (ou symbole) est décorative, le plus simple est de se poser la question : « Est-ce que je perds de l&rsquo;information si je ne la vois pas ? ». Si la réponse à la question est « Non », alors l&rsquo;icône est décorative.</em></p>
+<p>Dans ce cas, le symbole sera masqué aux lecteurs d&rsquo;écran via l&rsquo;attribut aria <code>aria-hidden=&quot;true&quot;</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fas fa-gift&#34;</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
-</span></span></code></pre></div><p>Si le symbole est porteur d&rsquo;information, on apportera sa signification via l&rsquo;attribut aria <code>aria-label</code></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fas fa-search&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Rechercher&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
-</span></span></code></pre></div><p>Une autre technique consiste à rajouter un texte visuellement masqué et qui sera lu par les logiciels de synthèse vocale (via la classe de style <code>.sr-only</code> (on retrouve aussi fréquemment sur le web cette classe de style nommée <code>.visually-hidden</code>) ; l&rsquo;élément HTML <code>i</code> sera alors transformé en élément <code>span</code> pour respecter la sémantique HTML.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fas fa-search&#34;</span> <span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sr-only&#34;</span><span class="p">&gt;</span>Rechercher<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/** sr-only : screen-reader only : seulement pour lecteur d&#39;écran */</span>
+</span></span></code></pre></div><h2 id="implémentation-dune-icône-ou-dun-symbole-qui-porte-de-linformation">Implémentation d&rsquo;une icône ou d&rsquo;un symbole qui porte de l&rsquo;information</h2>
+<p>Si le symbole est porteur d&rsquo;information (c&rsquo;est à dire que, en son absence, on perd de l&rsquo;information),</p>
+<ul>
+<li>on masqura l&rsquo;icône via l&rsquo;attribut <code>aria-hidden=&quot;true&quot;</code> ;</li>
+<li>on rajoutera un texte visuellement masqué (via une classe de style du type <code>.sr-only</code> ; on retrouve aussi fréquemment sur le web cette classe de style nommée <code>.visually-hidden</code>) qui sera lu par les logiciels de synthèse vocale.</li>
+<li>on veillera à respecter la sémantique HTML en transformant l&rsquo;élément HTML <code>i</code> en élément <code>span</code>.</li>
+</ul>
+<p><strong>HTML</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fas fa-search&#34;</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sr-only&#34;</span><span class="p">&gt;</span>Rechercher<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p><strong>CSS</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/** sr-only : screen-reader only : seulement pour lecteur d&#39;écran */</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">sr-only</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">border</span><span class="p">:</span> <span class="mi">0</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">clip</span><span class="p">:</span> <span class="nb">rect</span><span class="p">(</span><span class="mi">1</span><span class="kt">px</span><span class="p">,</span> <span class="mi">1</span><span class="kt">px</span><span class="p">,</span> <span class="mi">1</span><span class="kt">px</span><span class="p">,</span> <span class="mi">1</span><span class="kt">px</span><span class="p">)</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kp">-webkit-</span><span class="k">clip-path</span><span class="p">:</span> <span class="nb">inset</span><span class="p">(</span><span class="mi">50</span><span class="kt">%</span><span class="p">)</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">clip-path</span><span class="p">:</span> <span class="nb">inset</span><span class="p">(</span><span class="mi">50</span><span class="kt">%</span><span class="p">)</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">height</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">overflow</span><span class="p">:</span> <span class="kc">hidden</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">width</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">white-space</span><span class="p">:</span> <span class="kc">nowrap</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p><strong>Autre implémentation possible, sans l&rsquo;attribut aria-hidden</strong><br>
+Notez que le texte se trouve alors entre les balises faisant référence à la police symbolique afin de ne pas vocaliser une balise vide.</p>
+<p><strong>HTML</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fas fa-search&#34;</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sr-only&#34;</span><span class="p">&gt;</span>Rechercher<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p><strong>CSS</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/** sr-only : screen-reader only : seulement pour lecteur d&#39;écran */</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">sr-only</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">border</span><span class="p">:</span> <span class="mi">0</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">clip</span><span class="p">:</span> <span class="nb">rect</span><span class="p">(</span><span class="mi">1</span><span class="kt">px</span><span class="p">,</span> <span class="mi">1</span><span class="kt">px</span><span class="p">,</span> <span class="mi">1</span><span class="kt">px</span><span class="p">,</span> <span class="mi">1</span><span class="kt">px</span><span class="p">)</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kp">-webkit-</span><span class="k">clip-path</span><span class="p">:</span> <span class="nb">inset</span><span class="p">(</span><span class="mi">50</span><span class="kt">%</span><span class="p">)</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">clip-path</span><span class="p">:</span> <span class="nb">inset</span><span class="p">(</span><span class="mi">50</span><span class="kt">%</span><span class="p">)</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">height</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">overflow</span><span class="p">:</span> <span class="kc">hidden</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">width</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">white-space</span><span class="p">:</span> <span class="kc">nowrap</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="les-caractères-unicode">Les caractères unicode</h2>
+<p>Les caractères unicodes sont parfois utilisés pour représenter des flèches, des symboles mathématiques ou autres&hellip; Ces caractères sont lus, pas toujours de manière compréhensible, par les synthétiseurs vocaux mêmes s&rsquo;ils sont implémentés via la propriété CSS <code>content</code>.</p>
+<p><strong>Exemple d&rsquo;implémentation d&rsquo;une flèche en CSS qui sera vocalisée</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">fleche-droite</span><span class="p">::</span><span class="nd">after</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">content</span><span class="p">:</span> <span class="s2">&#34;→ &#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Dans cet exemple de flèche, une bonne implémentation consiste à ignorer ce symbole pour les technologies d&rsquo;assistance via l&rsquo;utilisation de l&rsquo;attribut <code>aria-hidden=&quot;true&quot;</code>.</p>
+<p><strong>Visuel</strong><br>
+
+<a href="..." title="Lire la suite sur....">Lire la suite<span aria-hidden="true"> →</span></a>
+</p>
+<p><strong>HTML</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Lire la suite sur....&#34;</span><span class="p">&gt;</span>Lire la suite<span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;</span> →<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h2 id="les-émojis">Les émojis</h2>
+<p>Il peut être tentant de remplacer ou d&rsquo;agrémenter son texte avec des émojis. Comme pour les caractères unicode traités précédemment (d&rsquo;ailleurs les émojis en sont), ceux-ci sont très mal vocalisés par les technologies d&rsquo;assistance. On implémentera donc ces émojis de la manière suivante :</p>
+<ul>
+<li>on cache l&rsquo;émoji aux logiciels de synthèse vocale via l&rsquo;attribut <code>aria-hidden=&quot;true&quot;</code> ;</li>
+<li>on propose sa signification via un texte visuellement caché mais lu par les technologies d&rsquo;assistance.</li>
+</ul>
+<p><strong>Visuel</strong></p>
+
+<p><span class="sr-only">J'aime</span><span aria-hidden="true">J'❤️</span> le chocolat.</p>
+
+<p><strong>HTML</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sr-only&#34;</span><span class="p">&gt;</span>J&#39;aime<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;</span>J&#39;❤️<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> le chocolat.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p><strong>CSS</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/** sr-only : screen-reader only : seulement pour lecteur d&#39;écran */</span>
 </span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">sr-only</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="k">border</span><span class="p">:</span> <span class="mi">0</span> <span class="cp">!important</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="k">clip</span><span class="p">:</span> <span class="nb">rect</span><span class="p">(</span><span class="mi">1</span><span class="kt">px</span><span class="p">,</span> <span class="mi">1</span><span class="kt">px</span><span class="p">,</span> <span class="mi">1</span><span class="kt">px</span><span class="p">,</span> <span class="mi">1</span><span class="kt">px</span><span class="p">)</span> <span class="cp">!important</span><span class="p">;</span>
