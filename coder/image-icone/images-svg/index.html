@@ -158,14 +158,14 @@
     <li><a href="#implémentation-dune-image-svg">Implémentation d&rsquo;une image SVG</a></li>
     <li><a href="#image-svg-décorative--pas-dalternative-textuelle">Image SVG décorative : pas d&rsquo;alternative textuelle</a>
       <ul>
-        <li><a href="#image-svg-est-insérée-via-la-balise-img">image SVG est insérée via la balise <code>img</code></a></li>
-        <li><a href="#code-svg-est-inséré-directement-dans-le-code-html">Code SVG est inséré directement dans le code HTML</a></li>
+        <li><a href="#image-svg-insérée-via-la-balise-img">Image SVG insérée via la balise <code>img</code></a></li>
+        <li><a href="#code-svg-inséré-directement-dans-le-code-html">Code SVG inséré directement dans le code HTML</a></li>
       </ul>
     </li>
     <li><a href="#image-svg-illustrative-ou-informative">Image SVG illustrative ou informative</a>
       <ul>
-        <li><a href="#image-svg-est-insérée-via-la-balise-img-1">image SVG est insérée via la balise <code>img</code></a></li>
-        <li><a href="#code-svg-est-inséré-directement-dans-le-code-html-1">Code SVG est inséré directement dans le code HTML</a></li>
+        <li><a href="#image-svg-insérée-via-la-balise-img-1">Image SVG insérée via la balise <code>img</code></a></li>
+        <li><a href="#code-svg-inséré-directement-dans-le-code-html-1">Code SVG inséré directement dans le code HTML</a></li>
       </ul>
     </li>
     <li><a href="#images-svg-utilisées-seules-comme-liens-ou-boutons">Images SVG utilisées seules comme liens ou boutons</a></li>
@@ -191,14 +191,14 @@
 <h2 id="image-svg-décorative--pas-dalternative-textuelle">Image SVG décorative : pas d&rsquo;alternative textuelle</h2>
 <p><em>Pour savoir si une image est décorative, le plus simple est d&rsquo;imaginer qu&rsquo;il n&rsquo;y a pas d&rsquo;image et de se poser ensuite la question : « Est-ce que je perds de l&rsquo;information ? ». Si la réponse à la question est « Non », alors l&rsquo;image est décorative.</em></p>
 <p>Quand les images sont décoratives, on fait en sorte qu&rsquo;elles soient ignorées par les technologies d&rsquo;assistance :</p>
-<h3 id="image-svg-est-insérée-via-la-balise-img">image SVG est insérée via la balise <code>img</code></h3>
+<h3 id="image-svg-insérée-via-la-balise-img">Image SVG insérée via la balise <code>img</code></h3>
 <p>On ajoute à l&rsquo;image :</p>
 <ul>
 <li>une alternative textuelle vide <code>alt=&quot;&quot;</code> ;</li>
 <li>et l&rsquo;attribut <code>aria-hidden=&quot;true&quot;</code>.</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;mon_image_decorative.svg&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h3 id="code-svg-est-inséré-directement-dans-le-code-html">Code SVG est inséré directement dans le code HTML</h3>
+</span></span></code></pre></div><h3 id="code-svg-inséré-directement-dans-le-code-html">Code SVG inséré directement dans le code HTML</h3>
 <ul>
 <li>On ajoute :
 <ul>
@@ -214,14 +214,14 @@
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h2 id="image-svg-illustrative-ou-informative">Image SVG illustrative ou informative</h2>
 <p>On considère qu&rsquo;une image est informative (ou illustrative) lorsque sa présence est indispensable à la compréhension du contenu proposé dans la page.</p>
-<h3 id="image-svg-est-insérée-via-la-balise-img-1">image SVG est insérée via la balise <code>img</code></h3>
+<h3 id="image-svg-insérée-via-la-balise-img-1">Image SVG insérée via la balise <code>img</code></h3>
 <p>On ajoute à l&rsquo;image :</p>
 <ul>
 <li>une alternative textuelle <code>alt</code> ;</li>
 <li>et le rôle aria <code>role=&quot;img&quot;</code>.</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;astuce.svg&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;Astuce&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;img&#34;</span> <span class="p">/&gt;</span>
-</span></span></code></pre></div><h3 id="code-svg-est-inséré-directement-dans-le-code-html-1">Code SVG est inséré directement dans le code HTML</h3>
+</span></span></code></pre></div><h3 id="code-svg-inséré-directement-dans-le-code-html-1">Code SVG inséré directement dans le code HTML</h3>
 <p>On ajoute :</p>
 <ul>
 <li>à la balise <code>&lt;svg&gt;</code> :
