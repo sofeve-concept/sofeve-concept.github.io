@@ -194,24 +194,24 @@
 </ul>
 <h3 id="visuel-du-menu-proposé">Visuel du menu proposé</h3>
 
-<ul role="menubar" id="menuListe" class="mb-3">
-     <li role="menuitem">Accueil</li>
+<ul role="menubar" id="menuliste" class="mb-3">
+     <li role="menuitem"><a href="#">Accueil</a></li>
 	<li role="menuitem" aria-haspopup="true">
 		Coder accessible
 		<ul role="menu">
-			<li role="menuitem">Contenu</li>
-			<li role="menuitem">Couleurs</li>
-			<li role="menuitem">Navigation</li>
+			<li role="menuitem"><a href="#">Contenu</a></li>
+			<li role="menuitem"><a href="#">Couleurs</a></li>
+			<li role="menuitem"><a href="#">Navigation</a></li>
 		</ul>
 	</li>
 	<li role="menuitem" aria-haspopup="true">
 		Ressources
 		<ul role="menu">
-               <li role="menuitem">Accessibilité bureautique</li>
-			<li role="menuitem">Accessibilité web</li>
+               <li role="menuitem"><a href="#">Accessibilité bureautique</a></li>
+			<li role="menuitem"><a href="#">Accessibilité web</a></li>
 		</ul>
 	</li>
-	<li role="menuitem">Contact</li>
+	<li role="menuitem"><a href="#">Contact</a></li>
 </ul>
 
 <h2 id="extraits-de-code">Extraits de code</h2>
@@ -240,13 +240,11 @@
 </span></span></code></pre></div><h3 id="code-css">Code CSS</h3>
 <p>Pour adapter la couleur de la barre de navigation et des liens, modifier les codes couleurs dans la déclaration <code>:root</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">:</span><span class="nd">root</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="nv">--BACKGROUND-color</span><span class="p">:</span> <span class="mh">#19003C</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">	<span class="nv">--FRONT-color</span><span class="p">:</span> <span class="mh">#FFFFFF</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">	<span class="nv">--SEPARATOR-color</span><span class="p">:</span> <span class="mh">#D2B3FF</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">	<span class="nv">--FOCUS-color</span><span class="p">:</span> <span class="mh">#F9C233</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">--BACKGROUND-color</span><span class="p">:</span> <span class="mh">#292929</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">--FRONT-color</span><span class="p">:</span> <span class="mh">#FFF</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">--FOCUS-color</span><span class="p">:</span> <span class="mh">#575757</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"> <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuListe</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"> <span class="p">#</span><span class="nn">menuliste</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="k">width</span><span class="p">:</span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">	<span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">	<span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
@@ -254,53 +252,50 @@
 </span></span><span class="line"><span class="cl">	<span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">FRONT</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">	<span class="k">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">BACKGROUND</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">	<span class="k">padding</span><span class="p">:</span> <span class="mf">.25</span><span class="kt">em</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">	<span class="k">list-style</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuListe</span> <span class="nt">li</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuliste</span> <span class="nt">li</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="k">white-space</span><span class="p">:</span> <span class="kc">nowrap</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">	<span class="k">display</span><span class="p">:</span><span class="kc">block</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">	<span class="k">padding</span><span class="p">:</span> <span class="mf">.25</span><span class="kt">em</span> <span class="mf">.75</span><span class="kt">em</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">	<span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">FRONT</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuListe</span> <span class="nt">li</span><span class="o">[</span><span class="nt">aria-haspopup</span><span class="o">=</span><span class="s2">&#34;true&#34;</span><span class="o">]</span><span class="p">::</span><span class="nd">after</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="nv">--icon-size</span><span class="p">:</span> <span class="mf">1.25</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuliste</span> <span class="nt">li</span><span class="o">[</span><span class="nt">aria-haspopup</span><span class="o">=</span><span class="s2">&#34;true&#34;</span><span class="o">]</span><span class="p">::</span><span class="nd">after</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">--icon-size</span><span class="p">:</span> <span class="mi">1</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">content</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">	<span class="k">background-color</span><span class="p">:</span> <span class="kc">currentColor</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">	<span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">	<span class="k">flex</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">float</span><span class="p">:</span> <span class="kc">right</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">padding-top</span><span class="p">:</span> <span class="mf">1.5</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">margin-left</span><span class="p">:</span> <span class="mf">.5</span><span class="kt">em</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">	<span class="k">height</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="kc">icon</span><span class="o">-</span><span class="n">size</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">	<span class="kp">-webkit-</span><span class="k">mask-size</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">	<span class="k">mask-size</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">	<span class="k">vertical-align</span><span class="p">:</span> <span class="nb">calc</span><span class="p">((</span><span class="mf">.75</span><span class="kt">em</span> <span class="o">-</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="kc">icon</span><span class="o">-</span><span class="n">size</span><span class="p">))</span> <span class="o">*</span> <span class="mi">1</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">	<span class="k">width</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="kc">icon</span><span class="o">-</span><span class="n">size</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">	<span class="k">content</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">	<span class="kp">-webkit-</span><span class="k">mask-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="sx">../images/chevron-down.svg</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">	<span class="k">mask-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="sx">../images/chevron-down.svg</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="kp">-webkit-</span><span class="k">mask-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="sx">../images/chevron.svg</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="k">mask-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="sx">../images/chevron.svg</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuListe</span> <span class="nt">li</span><span class="o">[</span><span class="nt">aria-expanded</span><span class="o">=</span><span class="s2">&#34;true&#34;</span><span class="o">]</span><span class="p">::</span><span class="nd">after</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="k">transform</span><span class="p">:</span> <span class="nb">rotate</span><span class="p">(</span><span class="mi">180</span><span class="kt">deg</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuListe</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuliste</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="k">float</span><span class="p">:</span> <span class="kc">left</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">	<span class="k">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">BACKGROUND</span><span class="o">-</span><span class="kc">color</span><span class="p">);;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">BACKGROUND</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">	<span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">	<span class="k">position</span><span class="p">:</span><span class="kc">relative</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">	<span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuListe</span> <span class="p">:</span><span class="nd">hover</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuListe</span> <span class="p">:</span><span class="nd">focus</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="k">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">FOCUS</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuliste</span> <span class="nt">li</span><span class="p">:</span><span class="nd">hover</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuliste</span> <span class="nt">li</span><span class="p">:</span><span class="nd">focus</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">FRONT</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">	<span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">BACKGROUND</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">	<span class="k">outline</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">BACKGROUND</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">BACKGROUND</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">	<span class="k">text-decoration</span><span class="p">:</span> <span class="kc">underline</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuListe</span> <span class="p">:</span><span class="nd">hover</span> <span class="nt">li</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuListe</span> <span class="p">:</span><span class="nd">focus</span> <span class="nt">li</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuliste</span> <span class="nt">li</span><span class="p">:</span><span class="nd">hover</span> <span class="nt">li</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuliste</span> <span class="nt">li</span><span class="p">:</span><span class="nd">focus</span> <span class="nt">li</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">FRONT</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">	<span class="k">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">BACKGROUND</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuListe</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuliste</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">	<span class="k">position</span><span class="p">:</span><span class="kc">absolute</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">	<span class="k">left</span><span class="p">:</span><span class="mi">0</span><span class="p">;</span>
@@ -311,26 +306,21 @@
 </span></span><span class="line"><span class="cl">	<span class="k">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">BACKGROUND</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">	<span class="k">width</span><span class="p">:</span> <span class="mi">200</span><span class="kt">%</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">	<span class="k">text-align</span><span class="p">:</span> <span class="kc">left</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">	<span class="k">z-index</span><span class="p">:</span> <span class="mi">1230</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuListe</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="nt">li</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">:</span><span class="nd">last-child</span><span class="o">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="k">border-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">FRONT</span><span class="o">-</span><span class="kc">color</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuListe</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="nt">li</span><span class="p">:</span><span class="nd">focus</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuListe</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="nt">li</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="k">outline</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">FOCUS</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuListe</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="o">[</span><span class="nt">aria-expanded</span><span class="o">=</span><span class="s2">&#34;true&#34;</span><span class="o">]</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuliste</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="o">[</span><span class="nt">aria-expanded</span><span class="o">=</span><span class="s2">&#34;true&#34;</span><span class="o">]</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="k">display</span><span class="p">:</span><span class="kc">block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuliste</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="nt">a</span><span class="p">:</span><span class="nd">hover</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">menuliste</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="nt">a</span><span class="p">:</span><span class="nd">focus</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">text-decoration</span><span class="p">:</span> <span class="kc">underline</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><h3 id="code-javascript">Code javascript</h3>
 <p>Le script ci-dessous sera intégré dans la page HTML via l&rsquo;écriture suivante :</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/js/script.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </span></span></code></pre></div><p><strong>Fichier js/script.js</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">appsMenuItems</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;#menuListe &gt; li&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">subMenuItems</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;#menuListe &gt; li li&#39;</span><span class="p">);</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">appsMenuItems</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;#menuliste &gt; li&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">subMenuItems</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;#menuliste &gt; li li&#39;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">keys</span> <span class="o">=</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">tab</span><span class="o">:</span>    <span class="mi">9</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">enter</span><span class="o">:</span>  <span class="mi">13</span><span class="p">,</span>
