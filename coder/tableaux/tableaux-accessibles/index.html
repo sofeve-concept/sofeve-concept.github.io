@@ -130,7 +130,6 @@
 		<li><a href="https://sofeve-concept.github.io/coder/tableaux/" aria-current="true" >Tableaux</a>
 			
 			<ul><li><a href="https://sofeve-concept.github.io/coder/tableaux/semantique-html-tableaux/">Sémantique HTML</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/tableaux/tableaux/">Tableaux</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/tableaux/tableaux-accessibles/" aria-current="page" >Tableaux accessibles</a></li>
 				</ul></li>
 		<li><a href="https://sofeve-concept.github.io/coder/formulaire/">Formulaires</a></li>
@@ -142,7 +141,7 @@
                </aside>
           <section class="item-80 rubCode">
                <h1 id="contenu">Tableaux accessibles</h1>
-               <p>Selon que le tableau sert à la présentation ou à présenter des données, la façon de coder sera différente.</p><div id="accordeonGroup" class="accordeon">
+               <p>Selon que le tableau sert à la présentation ou à présenter des données, la façon de coder sera différente.</p><div id="accordeonGroup" class="accordeon tableDesMat">
      <h2>
          <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
              <span class="accordeon-title">Table des matières</span>
@@ -159,12 +158,12 @@
       <ul>
         <li><a href="#tableau-de-données-simple">Tableau de données simple</a>
           <ul>
-            <li><a href="#exemple">Exemple</a></li>
+            <li><a href="#exemples">Exemples</a></li>
           </ul>
         </li>
         <li><a href="#tableau-de-données-complexe">Tableau de données complexe</a>
           <ul>
-            <li><a href="#exemple-1">Exemple</a></li>
+            <li><a href="#exemple">Exemple</a></li>
           </ul>
         </li>
       </ul>
@@ -175,19 +174,25 @@
      </div>
 </div><h2 id="ce-quil-faut-retenir">Ce qu&rsquo;il faut retenir</h2>
 <p>On veillera à ce que tous les contenus et toutes les fonctionnalités du tableau soient disponibles quelle que soit la taille de l’écran.<br>
-En particulier, on veillera à ne pas supprimer de fonctionnalités (menus, systèmes de filtres, cartes interactives, etc.) et/ou de contenus (tableaux de données, vidéos, etc.) sur les vues responsive.</p>
-
-<p>On veillera aussi à ce que le contenu linéarisé du tableau reste compréhensible.<br>  
-Avec l'extension de navigateur <span lang="en">"web developper"</span>, cliquer sur <span lang="en">"Misceallanous" - "Linearize page"</span>.</p>
-
+En particulier, on veillera à ne pas supprimer de fonctionnalités (menus, systèmes de filtres, cartes interactives, etc.) et/ou de contenus (tableaux de données, vidéos, etc.) sur les vues responsive.<br>
+On veillera aussi à ce que le contenu linéarisé du tableau reste compréhensible. Pour cela, avec l&rsquo;extension de navigateur <span lang="en">«&nbsp;web developper&nbsp;»</span> cliquer :</p>
+<ul>
+<li>sur <span lang="en">«&nbsp;Misceallanous&nbsp;»</span></li>
+<li>puis sur <span lang="en">«&nbsp;Linearize page&nbsp;»</span>.</li>
+</ul>
 <h2 id="tableaux-servant-à-la-mise-en-forme">Tableaux servant à la mise en forme</h2>
 <p>Avant l&rsquo;existence des propriétés CSS flexbox ou gridbox, les tableaux étaient utilisés pour mettre en forme les informations sur une page (une colonne pour revevoir un menu et une autre pour recevoir du contenu, par exemple).<br>
 Aujourd&rsquo;hui, les tableaux servent de moins en moins à cela mais dans le cas où ils sont utilisés pour mettre en forme le contenu de la page, il faudra rajouter le role aria <code>role=&quot;presentation&quot;</code>.</p>
-<p><strong>Ces tableaux de présentation ne devront en aucun cas intégrer les techniques d&rsquo;accessibilité présentées pour les tableaux de données.</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">table</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;presentation&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  ...
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h2 id="tableaux-de-données">Tableaux de données</h2>
+</span></span></code></pre></div><div class="notice attention" >   
+     <p> attention </p>
+     <p>
+Ces tableaux de présentation ne devront en aucun cas intégrer les techniques d'accessibilité présentées pour les tableaux de données ci-après.
+</p>
+</div>
+<h2 id="tableaux-de-données">Tableaux de données</h2>
 <p>Les tableaux de données devront respecter les règles d&rsquo;accessibilité suivantes :</p>
 <ul>
 <li>Le tableau de données aura un titre, celui-ci doit être balisé avec l&rsquo;élément HTML <code>&lt;caption&gt;</code> </li>
@@ -201,43 +206,146 @@ Aujourd&rsquo;hui, les tableaux servent de moins en moins à cela mais dans le c
 <li>si la cellule d&rsquo;entête porte sur la ligne complète, on écrira <code>&lt;th scope=&quot;row&quot;&gt;</code></li>
 <li>si la cellule d&rsquo;entête porte sur la colonne entière, on écrira <code>&lt;th scope=&quot;col&quot;&gt;</code></li>
 </ul>
-<h4 id="exemple">Exemple</h4>
-<p><strong>Code HTML</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">table</span> <span class="err">...</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">caption</span><span class="p">&gt;</span>Répartition des handicaps selon le type<span class="p">&lt;/</span><span class="nt">caption</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>Type de handicap<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>Nombre de personnes concernées (en million)<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>Déficience visuellue<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>1.7<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>Déficience auditive<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>1.6<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>Handicap physique<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>2.3<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>Handicap cognitif<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>0.7<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">tfoot</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">colspan</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>Source Insee - Chiffre 2016<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">tfoot</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
-</span></span></code></pre></div><p><strong>Résultat</strong></p>
+<p>L&rsquo;attribut <code>scope</code> définit la direction des cellules d&rsquo;en-tête et les associe aux cellules de données correspondantes. <strong>L&rsquo;attribut <code>scope</code> est indispensable pour les tableaux volumineux</strong>.</p>
+<h4 id="exemples">Exemples</h4>
 
+ <div class="accordeon accordeonNoBorder">
+     <h5>
+         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="simple1"  id="tableauSimple">
+             <span class="accordeon-title">Tableau avec entête horizontale</span>
+             <span class="accordeon-icon" aria-hidden="true"></span>
+         </button>
+     </h5>
+     <div id="simple1" role="region" aria-labelledby="tableauSimple" class="accordeon-panel" hidden>
+         <div>
+<h6>Visuel</h6>
 <table class="responsive style2">
+   <caption>Les événements à ne pas rater</caption>
+   <thead>
+<tr>
+    <th scope="row">Date</th>
+    <th scope="row">&Eacute;vénement</th>
+    <th scope="row">Lieu</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>16 mars</td>
+    <td>Sensibilisation au handicap</td>
+    <td>Salle Ada Lovelace</td>
+  </tr>
+  <tr>
+     <td>7 mai</td>
+     <td>Conférence «&nbsp;numérique et handicap&nbsp;»</td>
+     <td>Salle Hedy Lamarr</td>
+  </tr>
+  <tr>
+    <td>21 juillet</td>
+    <td>Hackathon accessibilité</td>
+    <td>Salle Grace Hopper</td>
+  </tr>
+  </tbody>
+</table>
+
+<h6>Code HTML</h6>
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">table</span> <span class="err">...</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">caption</span><span class="p">&gt;</span>Les événements à ne pas rater<span class="p">&lt;/</span><span class="nt">caption</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>Date<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span><span class="ni">&amp;Eacute;</span>vénement<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>Lieu<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>16 mars<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Sensibilisation au handicap<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Salle Ada Lovelace<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>7 mai<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Conférence «<span class="ni">&amp;nbsp;</span>numérique et handicap<span class="ni">&amp;nbsp;</span>»<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Salle Hedy Lamarr<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>21 juillet<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Hackathon accessibilité<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Salle Grace Hopper<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+</span></span></code></pre></div>
+         </div>
+     </div>
+     <h5>
+         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="simple2"  id="tableauSimple">
+             <span class="accordeon-title">Tableau avec entête verticale</span>
+             <span class="accordeon-icon" aria-hidden="true"></span>
+         </button>
+     </h5>
+     <div id="simple2" role="region" aria-labelledby="tableauSimple" class="accordeon-panel" hidden>
+         <div>
+<h6>Visuel</h6>
+<table class="responsive style2 style3">
+   <caption>Les événements à ne pas rater</caption>
+<tr>
+    <th scope="row">Date</th>
+    <td>16 mars</td>
+    <td>7 mai</td>
+    <td>21 juillet</td>
+  </tr>
+  <tr>
+    <th scope="row">&Eacute;vénement</th>
+    <td>Sensibilisation au handicap</td>
+    <td>Conférence «&nbsp;numérique et handicap&nbsp;»</td>
+    <td>Hackathon accessibilité</td>
+  </tr>
+  <tr>
+    <th scope="row">Lieu</th>
+    <td>Salle Ada Lovelace</td>
+    <td>Salle Hedy Lamarr</td>
+    <td>Salle Grace Hopper</td>
+  </tr>
+</table>
+
+<h6>Code HTML</h6>
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">caption</span><span class="p">&gt;</span>Les événements à ne pas rater<span class="p">&lt;/</span><span class="nt">caption</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>Date<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>16 mars<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>7 mai<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>21 juillet<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span><span class="ni">&amp;Eacute;</span>vénement<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Sensibilisation au handicap<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Conférence «<span class="ni">&amp;nbsp;</span>numérique et handicap<span class="ni">&amp;nbsp;</span>»<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Hackathon accessibilité<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>Lieu<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Salle Ada Lovelace<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Salle Hedy Lamarr<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Salle Grace Hopper<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+</span></span></code></pre></div>
+         </div>
+     </div>
+ <h5>
+         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="simple3"  id="tableauSimple">
+             <span class="accordeon-title">Tableau avec double entête (horizontale et verticale)</span>
+             <span class="accordeon-icon" aria-hidden="true"></span>
+         </button>
+     </h5>
+     <div id="simple3" role="region" aria-labelledby="tableauSimple" class="accordeon-panel" hidden>
+         <div>
+<h6>Visuel</h6>
+<table class="responsive style2 style3">
    <caption>Répartition des handicaps selon le type</caption>
 <thead>
     <tr>
@@ -263,93 +371,50 @@ Aujourd&rsquo;hui, les tableaux servent de moins en moins à cela mais dans le c
         <td>0.7</td>
     </tr>
 </tbody>
-<tfoot>
-    <tr>
-          <th colspan="2">Source Insee - Chiffre 2016</th>
-    </tr>
-</tfoot>
 </table>
 
+<h6>Code HTML</h6>
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">table</span> <span class="err">...</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">caption</span><span class="p">&gt;</span>Répartition des handicaps selon le type<span class="p">&lt;/</span><span class="nt">caption</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>Type de handicap<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>Nombre de personnes concernées (en million)<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>Déficience visuelle<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>1.7<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>Déficience auditive<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>1.6<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>Handicap physique<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>2.3<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>Handicap cognitif<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>0.7<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+</span></span></code></pre></div>
+         </div>
+     </div>    
+</div>
 
 <h3 id="tableau-de-données-complexe">Tableau de données complexe</h3>
 <p>Dans le cas d&rsquo;un tableau de données complexe (une donnée fait référence à plusieurs entêtes), les attributs <code>headers</code> et <code>id</code> seront utilisés au lieu de l&rsquo;attribut <code>scope</code> :</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;entete-1&#34;</span><span class="p">&gt;</span>Entête 1<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;entete-2&#34;</span><span class="p">&gt;</span>Entête 2<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;entete-1&#34;</span><span class="p">&gt;</span>Entête 1<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;entete-2&#34;</span><span class="p">&gt;</span>Entête 2<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">...
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;entete-1 entete-2&#34;</span><span class="p">&gt;</span> la valeur de cette cellule se réfère aux entêtes 1 et 2 <span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h4 id="exemple-1">Exemple</h4>
-<p><strong>Code HTML</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">caption</span> <span class="p">&gt;</span>Températures moyennes constatées<span class="p">&lt;/</span><span class="nt">caption</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;temperature&#34;</span><span class="p">&gt;</span>Température<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;printemps&#34;</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;temperature&#34;</span> <span class="na">colspan</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>Printemps<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;ete&#34;</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;temperature&#34;</span> <span class="na">colspan</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span><span class="ni">&amp;Eacute;</span>té<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;automne&#34;</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;temperature&#34;</span> <span class="na">colspan</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>Automne<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;hiver&#34;</span>  <span class="na">headers</span><span class="o">=</span><span class="s">&#34;temperature&#34;</span> <span class="na">colspan</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>Hiver<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;nord&#34;</span><span class="p">&gt;</span>Secteur<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;minimale-printemps&#34;</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord printemps&#34;</span><span class="p">&gt;</span>Minimale<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;maximale-printemps&#34;</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord printemps&#34;</span><span class="p">&gt;</span>Maximale<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;minimale-ete&#34;</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord ete&#34;</span><span class="p">&gt;</span>Minimale<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;maximale-ete&#34;</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord ete&#34;</span><span class="p">&gt;</span>Maximale<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;minimale-automne&#34;</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord automne&#34;</span><span class="p">&gt;</span>Minimale<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;maximale-automne&#34;</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord automne&#34;</span><span class="p">&gt;</span>Maximale<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;minimale-hiver&#34;</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord hiver&#34;</span><span class="p">&gt;</span>Minimale<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;maximale-hiver&#34;</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord hiver&#34;</span><span class="p">&gt;</span>Maximale<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;nord&#34;</span><span class="p">&gt;</span>Nord<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord printemps minimale-printemps&#34;</span><span class="p">&gt;</span>17<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord printemps maximale-printemps&#34;</span><span class="p">&gt;</span>13<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord ete minimale-ete&#34;</span><span class="p">&gt;</span>0<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord ete maximale-ete&#34;</span><span class="p">&gt;</span>0<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord automne minimale-automne&#34;</span><span class="p">&gt;</span>13<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord automne maximale-automne&#34;</span><span class="p">&gt;</span>7<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord hiver minimale-hiver&#34;</span><span class="p">&gt;</span>13<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord hiver maximale-hiver&#34;</span><span class="p">&gt;</span>7<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;sud&#34;</span><span class="p">&gt;</span>Sud<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;sud printemps minimale-printemps&#34;</span><span class="p">&gt;</span>17<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;sud printemps maximale-printemps&#34;</span><span class="p">&gt;</span>13<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;sud ete minimale-ete&#34;</span><span class="p">&gt;</span>0<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;sud ete maximale-ete&#34;</span><span class="p">&gt;</span>0<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;sud automne minimale-automne&#34;</span><span class="p">&gt;</span>13<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;sud automne maximale-automne&#34;</span><span class="p">&gt;</span>7<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;sud hiver minimale-hiver&#34;</span><span class="p">&gt;</span>13<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;sud hiver maximale-hiver&#34;</span><span class="p">&gt;</span>7<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;est&#34;</span><span class="p">&gt;</span>Est<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;est printemps minimale-printemps&#34;</span><span class="p">&gt;</span>17<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;est printemps maximale-printemps&#34;</span><span class="p">&gt;</span>12<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;est ete minimale-ete&#34;</span><span class="p">&gt;</span>0<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;est ete maximale-ete&#34;</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;est automne minimale-automne&#34;</span><span class="p">&gt;</span>13<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;est automne maximale-automne&#34;</span><span class="p">&gt;</span>7<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;est hiver minimale-hiver&#34;</span><span class="p">&gt;</span>13<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;est hiver maximale-hiver&#34;</span><span class="p">&gt;</span>7<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;ouest&#34;</span><span class="p">&gt;</span>Ouest<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;ouest printemps minimale-printemps&#34;</span><span class="p">&gt;</span>17<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;ouest printemps maximale-printemps&#34;</span><span class="p">&gt;</span>12<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;ouest ete minimale-ete&#34;</span><span class="p">&gt;</span>0<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;ouest ete maximale-ete&#34;</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;ouest automne minimale-automne&#34;</span><span class="p">&gt;</span>13<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;ouest automne maximale-automne&#34;</span><span class="p">&gt;</span>7<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;ouest hiver minimale-hiver&#34;</span><span class="p">&gt;</span>13<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;ouest hiver maximale-hiver&#34;</span><span class="p">&gt;</span>7<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"> <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"> <span class="p">&lt;</span><span class="nt">tfoot</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">         <span class="p">&lt;</span><span class="nt">td</span> <span class="na">colspan</span><span class="o">=</span><span class="s">&#34;9&#34;</span><span class="p">&gt;</span>Bien entendu, les chiffres sont totalement fictifs !<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"> <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
-</span></span></code></pre></div><p><strong>Résultat</strong></p>
+</span></span></code></pre></div><h4 id="exemple">Exemple</h4>
+<p><strong>Visuel</strong></p>
 
 <table>
  <caption >Températures moyennes constatées</caption>
@@ -424,7 +489,79 @@ Aujourd&rsquo;hui, les tableaux servent de moins en moins à cela mais dans le c
   </table>
   
 
-<div class="notice remarque" >   
+<p><strong>Code HTML</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">caption</span> <span class="p">&gt;</span>Températures moyennes constatées<span class="p">&lt;/</span><span class="nt">caption</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;temperature&#34;</span><span class="p">&gt;</span>Température<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;printemps&#34;</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;temperature&#34;</span> <span class="na">colspan</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>Printemps<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;ete&#34;</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;temperature&#34;</span> <span class="na">colspan</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span><span class="ni">&amp;Eacute;</span>té<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;automne&#34;</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;temperature&#34;</span> <span class="na">colspan</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>Automne<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;hiver&#34;</span>  <span class="na">headers</span><span class="o">=</span><span class="s">&#34;temperature&#34;</span> <span class="na">colspan</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>Hiver<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;nord&#34;</span><span class="p">&gt;</span>Secteur<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;minimale-printemps&#34;</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord printemps&#34;</span><span class="p">&gt;</span>Minimale<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;maximale-printemps&#34;</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord printemps&#34;</span><span class="p">&gt;</span>Maximale<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;minimale-ete&#34;</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord ete&#34;</span><span class="p">&gt;</span>Minimale<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;maximale-ete&#34;</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord ete&#34;</span><span class="p">&gt;</span>Maximale<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;minimale-automne&#34;</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord automne&#34;</span><span class="p">&gt;</span>Minimale<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;maximale-automne&#34;</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord automne&#34;</span><span class="p">&gt;</span>Maximale<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;minimale-hiver&#34;</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord hiver&#34;</span><span class="p">&gt;</span>Minimale<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;maximale-hiver&#34;</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord hiver&#34;</span><span class="p">&gt;</span>Maximale<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;nord&#34;</span><span class="p">&gt;</span>Nord<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord printemps minimale-printemps&#34;</span><span class="p">&gt;</span>17<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord printemps maximale-printemps&#34;</span><span class="p">&gt;</span>13<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord ete minimale-ete&#34;</span><span class="p">&gt;</span>0<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord ete maximale-ete&#34;</span><span class="p">&gt;</span>0<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord automne minimale-automne&#34;</span><span class="p">&gt;</span>13<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord automne maximale-automne&#34;</span><span class="p">&gt;</span>7<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord hiver minimale-hiver&#34;</span><span class="p">&gt;</span>13<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;nord hiver maximale-hiver&#34;</span><span class="p">&gt;</span>7<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;sud&#34;</span><span class="p">&gt;</span>Sud<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;sud printemps minimale-printemps&#34;</span><span class="p">&gt;</span>17<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;sud printemps maximale-printemps&#34;</span><span class="p">&gt;</span>13<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;sud ete minimale-ete&#34;</span><span class="p">&gt;</span>0<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;sud ete maximale-ete&#34;</span><span class="p">&gt;</span>0<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;sud automne minimale-automne&#34;</span><span class="p">&gt;</span>13<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;sud automne maximale-automne&#34;</span><span class="p">&gt;</span>7<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;sud hiver minimale-hiver&#34;</span><span class="p">&gt;</span>13<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;sud hiver maximale-hiver&#34;</span><span class="p">&gt;</span>7<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;est&#34;</span><span class="p">&gt;</span>Est<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;est printemps minimale-printemps&#34;</span><span class="p">&gt;</span>17<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;est printemps maximale-printemps&#34;</span><span class="p">&gt;</span>12<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;est ete minimale-ete&#34;</span><span class="p">&gt;</span>0<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;est ete maximale-ete&#34;</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;est automne minimale-automne&#34;</span><span class="p">&gt;</span>13<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;est automne maximale-automne&#34;</span><span class="p">&gt;</span>7<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;est hiver minimale-hiver&#34;</span><span class="p">&gt;</span>13<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;est hiver maximale-hiver&#34;</span><span class="p">&gt;</span>7<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">th</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;ouest&#34;</span><span class="p">&gt;</span>Ouest<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;ouest printemps minimale-printemps&#34;</span><span class="p">&gt;</span>17<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;ouest printemps maximale-printemps&#34;</span><span class="p">&gt;</span>12<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;ouest ete minimale-ete&#34;</span><span class="p">&gt;</span>0<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;ouest ete maximale-ete&#34;</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;ouest automne minimale-automne&#34;</span><span class="p">&gt;</span>13<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;ouest automne maximale-automne&#34;</span><span class="p">&gt;</span>7<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;ouest hiver minimale-hiver&#34;</span><span class="p">&gt;</span>13<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">&lt;</span><span class="nt">td</span> <span class="na">headers</span><span class="o">=</span><span class="s">&#34;ouest hiver maximale-hiver&#34;</span><span class="p">&gt;</span>7<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">&lt;</span><span class="nt">tfoot</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">         <span class="p">&lt;</span><span class="nt">td</span> <span class="na">colspan</span><span class="o">=</span><span class="s">&#34;9&#34;</span><span class="p">&gt;</span>Bien entendu, les chiffres sont totalement fictifs !<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+</span></span></code></pre></div><div class="notice remarque" >   
      <p> remarque </p>
      <p>
 Le critère 10.11 du <abbr title="Référentiel général d'amélioration de l'accessibilité">RGAA</abbr> mentionne <q>Pour chaque page web, lorsque le contenu dont le sens de lecture est horizontal est affiché dans une fenêtre réduite à une largeur de 320px, l’ensemble des informations et des fonctionnalités sont-elles disponibles sans aucun défilement horizontal (hors cas particuliers) ?</q>. Les tableaux font partie des cas particuliers où l'ascenseur horizontal peut être affiché. 
