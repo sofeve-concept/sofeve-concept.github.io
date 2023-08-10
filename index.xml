@@ -80,15 +80,6 @@
     </item>
     
     <item>
-      <title>Formatage du contenu</title>
-      <link>https://sofeve-concept.github.io/coder/contenu/formatage/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/coder/contenu/formatage/</guid>
-      <description>Comme il n&amp;rsquo;est pas possible d&amp;rsquo;être exhaustif, nous allons parcourir ici les éléments sur lesquels être vigilants car bien souvent source de non conformité en terme d&amp;rsquo;accessibilité numérique.</description>
-    </item>
-    
-    <item>
       <title>Image</title>
       <link>https://sofeve-concept.github.io/ressources/bureautique/images/image/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -236,6 +227,15 @@ Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page H
     
     <item>
       <title>Formatage du contenu</title>
+      <link>https://sofeve-concept.github.io/coder/contenu/formatage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/contenu/formatage/</guid>
+      <description>Comme il n&amp;rsquo;est pas possible d&amp;rsquo;être exhaustif, nous allons parcourir ici les éléments sur lesquels être vigilants car bien souvent source de non conformité en terme d&amp;rsquo;accessibilité numérique.</description>
+    </item>
+    
+    <item>
+      <title>Formatage du contenu</title>
       <link>https://sofeve-concept.github.io/coder/structure/formatage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -354,15 +354,6 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
     </item>
     
     <item>
-      <title>Titraille</title>
-      <link>https://sofeve-concept.github.io/coder/contenu/titraille/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/coder/contenu/titraille/</guid>
-      <description>Balises de titraille, éléments HTML h1 à h6 Le contenu du document est hiérarchisé à l&amp;rsquo;aide déléments de titraille (balises allant de &amp;lt;h1&amp;gt;.</description>
-    </item>
-    
-    <item>
       <title>Colonnes</title>
       <link>https://sofeve-concept.github.io/ressources/bureautique/structure/colonnes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -426,12 +417,12 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
     </item>
     
     <item>
-      <title>Texte</title>
-      <link>https://sofeve-concept.github.io/coder/contenu/texte/</link>
+      <title>Titraille</title>
+      <link>https://sofeve-concept.github.io/coder/contenu/titraille/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sofeve-concept.github.io/coder/contenu/texte/</guid>
-      <description>Formatage du texte À faire Utiliser des tailles relatives pour les polices de caractères : (em, rem, %, small&amp;hellip;) ; Veiller à déclarer une interligne de 1,5 via la déclaration css line-height: 1.</description>
+      <guid>https://sofeve-concept.github.io/coder/contenu/titraille/</guid>
+      <description>Balises de titraille, éléments HTML h1 à h6 Le contenu du document est hiérarchisé à l&amp;rsquo;aide déléments de titraille (balises allant de &amp;lt;h1&amp;gt;.</description>
     </item>
     
     <item>
@@ -481,15 +472,6 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
     </item>
     
     <item>
-      <title>Listes</title>
-      <link>https://sofeve-concept.github.io/coder/contenu/liste/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/coder/contenu/liste/</guid>
-      <description>Listes Les listes servent à présenter des élements sous forme de liste mais aussi les éléments d&amp;rsquo;un menu : menu de navigation, fils d&amp;rsquo;ariane, processus par étape, pagination.</description>
-    </item>
-    
-    <item>
       <title>Regroupement de champs</title>
       <link>https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -508,6 +490,15 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
     </item>
     
     <item>
+      <title>Texte</title>
+      <link>https://sofeve-concept.github.io/coder/contenu/texte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/contenu/texte/</guid>
+      <description>Formatage du texte À faire Utiliser des tailles relatives pour les polices de caractères : (em, rem, %, small&amp;hellip;) ; Veiller à déclarer une interligne de 1,5 via la déclaration css line-height: 1.</description>
+    </item>
+    
+    <item>
       <title>Langue</title>
       <link>https://sofeve-concept.github.io/ressources/bureautique/structure/langue/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -523,6 +514,15 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
       
       <guid>https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/</guid>
       <description>Règles générales Les options proposées dans une liste déroulante doivent être ordonnées de manière logique :</description>
+    </item>
+    
+    <item>
+      <title>Listes</title>
+      <link>https://sofeve-concept.github.io/coder/contenu/liste/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/contenu/liste/</guid>
+      <description>Listes Les listes servent à présenter des élements sous forme de liste mais aussi les éléments d&amp;rsquo;un menu : menu de navigation, fils d&amp;rsquo;ariane, processus par étape, pagination.</description>
     </item>
     
     <item>

@@ -50,12 +50,6 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/coder/contenu/formatage/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/images/image/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -170,6 +164,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/coder/contenu/formatage/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/structure/formatage/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -254,12 +254,6 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/coder/contenu/titraille/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/structure/colonnes/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -314,7 +308,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/coder/contenu/texte/</loc>
+    <loc>https://sofeve-concept.github.io/coder/contenu/titraille/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -356,12 +350,6 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/coder/contenu/liste/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://sofeve-concept.github.io/coder/navigation/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -375,6 +363,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-complexes/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/coder/contenu/texte/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -404,6 +398,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/coder/contenu/liste/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/navigation/processus-etapes/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -422,13 +422,13 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/coder/tableaux/</loc>
+    <loc>https://sofeve-concept.github.io/ressources/bureautique/finaliser/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/finaliser/</loc>
+    <loc>https://sofeve-concept.github.io/coder/tableaux/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -521,6 +521,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/motifs/carte-cliquable/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/tags/code-valide/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -643,6 +649,12 @@
     <loc>https://sofeve-concept.github.io/rechercher/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.1</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/tags/regions/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
