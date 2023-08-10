@@ -643,6 +643,15 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
     </item>
     
     <item>
+      <title>Formulaire de recherche</title>
+      <link>https://sofeve-concept.github.io/motifs/formulaire-recherche/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/formulaire-recherche/</guid>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le formulaire de recherche sur tout le site sera identifié avec le rôle aria role=&amp;quot;search&amp;quot;.</description>
+    </item>
+    
+    <item>
       <title>Infobulle</title>
       <link>https://sofeve-concept.github.io/motifs/infobulle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

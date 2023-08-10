@@ -568,6 +568,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/motifs/formulaire-recherche/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/tags/html/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
