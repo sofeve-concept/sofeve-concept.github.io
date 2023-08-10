@@ -16,21 +16,21 @@
     </item>
     
     <item>
-      <title>Étiquette de champ</title>
-      <link>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</guid>
-      <description>remarque Pour présenter l&#39;étiquette de champ, les exemples de cette page associent l&#39;étiquette à un champ de type `input`.</description>
-    </item>
-    
-    <item>
       <title>Saisie et contrôle du formulaire</title>
       <link>https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/</guid>
       <description>Champ obligatoire Si le champ est obligatoire, on utilisera un signe distinctif intégré dans la balise &amp;lt;label&amp;gt;.</description>
+    </item>
+    
+    <item>
+      <title>Étiquette de champ</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</guid>
+      <description>remarque Pour présenter l&#39;étiquette de champ, les exemples de cette page associent l&#39;étiquette à un champ de type `input`.</description>
     </item>
     
     <item>
@@ -49,6 +49,15 @@
       
       <guid>https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/</guid>
       <description>Règles générales Les options proposées dans une liste déroulante doivent être ordonnées de manière logique :</description>
+    </item>
+    
+    <item>
+      <title>Formulaire à étapes multiples</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/</guid>
+      <description>Pour découper un formulaire en étapes multiples, chaque étape devra proposer les éléments présentés ci-après.</description>
     </item>
     
   </channel>

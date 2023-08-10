@@ -131,10 +131,11 @@
 		<li><a href="https://sofeve-concept.github.io/coder/formulaire/" aria-current="true" >Formulaires</a>
 			
 			<ul><li><a href="https://sofeve-concept.github.io/coder/formulaire/semantique-html-formulaire/">Sémantique HTML</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/" aria-current="page" >Étiquette de champ</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/">Saisie et contrôle du formulaire</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/" aria-current="page" >Étiquette de champ</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/">Regroupement de champs</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/">Liste déroulante</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/">Formulaire à étapes multiples</a></li>
 				</ul></li>
 		<li><a href="https://sofeve-concept.github.io/coder/scripts/">Composants d&#39;interface riche</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/multimedia/">Multimedia</a></li>
@@ -155,10 +156,14 @@
          <div>
           <nav id="TableOfContents">
   <ul>
-    <li><a href="#implémentation-html">Implémentation HTML</a></li>
-    <li><a href="#étiquette-invisible">Étiquette invisible</a>
+    <li><a href="#implémentation-html">Implémentation HTML</a>
       <ul>
-        <li><a href="#code-html-et-css">Code HTML et CSS</a></li>
+        <li><a href="#bonnes-pratiques-de-présentation-visuelle">Bonnes pratiques de présentation visuelle</a></li>
+        <li><a href="#étiquette-invisible">Étiquette invisible</a>
+          <ul>
+            <li><a href="#autre-implémentation-possible">Autre implémentation possible</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
     <li><a href="#étiquette-et-placeholder">Étiquette et placeholder</a></li>
@@ -186,12 +191,19 @@ Dans cet exemple, le <code>input</code>est inclus entre les balises <code>label<
 </span></span></code></pre></div><p><strong>Visuel</strong><br>
 <em>Cliquez sur l&rsquo;étiquette &ldquo;Nom&rdquo; et vérifiez que le curseur se place bien dans la zone de texte.</em></p>
 
+<div class="mb-3">
 <label for="nom">Nom</label>
 <input type="text" name="nom" id="nom" class="exempleCodeInput">
+</div>
 
-<h2 id="étiquette-invisible">Étiquette invisible</h2>
+<h3 id="bonnes-pratiques-de-présentation-visuelle">Bonnes pratiques de présentation visuelle</h3>
+<p>Il est impératif de maintenir une relation visuelle étroite et distincte entre l&rsquo;étiquette et le champ du formulaire. C&rsquo;est pourquoi, l&rsquo;intitulé du champ sera accolé à son champ. Dans le cas d&rsquo;un sens de lecture de gauche à droite :</p>
+<ul>
+<li>pour les boutons radio et les cases à cocher, le libellé soit placé à droite du bouton ;</li>
+<li>pour les autres champs de formulaires, le libellé sera accolé immédiatement au-dessus ou à gauche du champ correspondant.</li>
+</ul>
+<h3 id="étiquette-invisible">Étiquette invisible</h3>
 <p>Un champs sans étiquette visible doit rester exceptionnel. On réservera ce cas à des champs dont la fonction est suffisamment claire et compréhensible sans étiquette  comme, par exemple, un champ de recherche identifié par une icône loupe.</p>
-<h3 id="code-html-et-css">Code HTML et CSS</h3>
 <p><strong>HTML</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;search&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sr-only&#34;</span><span class="p">&gt;</span>Rechercher sur le site<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;search&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;search&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;search&#34;</span><span class="p">&gt;</span>
@@ -213,11 +225,17 @@ Dans cet exemple, le <code>input</code>est inclus entre les balises <code>label<
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p><strong>Visuel</strong></p>
 
+<div class="mb-3">
     <label for="search" class="sr-only">Rechercher sur le site</label>
     <input type="search" name="search" id="search" class="exempleCodeInput">
     <button type="submit" class="exempleCodeInput">Rechercher</button>
+</div>
 
-<h2 id="étiquette-et-placeholder">Étiquette et placeholder</h2>
+<h4 id="autre-implémentation-possible">Autre implémentation possible</h4>
+<p>Une autre implémentation possible consite à utiliser l&rsquo;attribut <code>aria-label</code> :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;search&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Rechercher sur le site...&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span><span class="p">&gt;</span>Lancer la recherche<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h2 id="étiquette-et-placeholder">Étiquette et placeholder</h2>
 <div class="notice attention" >   
      <p> attention </p>
      <p>

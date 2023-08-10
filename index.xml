@@ -226,15 +226,6 @@ Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page H
     </item>
     
     <item>
-      <title>Étiquette de champ</title>
-      <link>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</guid>
-      <description>remarque Pour présenter l&#39;étiquette de champ, les exemples de cette page associent l&#39;étiquette à un champ de type `input`.</description>
-    </item>
-    
-    <item>
       <title>Export au format PDF</title>
       <link>https://sofeve-concept.github.io/ressources/bureautique/finaliser/export/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -378,6 +369,15 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
       
       <guid>https://sofeve-concept.github.io/ressources/bureautique/structure/colonnes/</guid>
       <description>Règles Pour présenter du texte sur plusieurs colonnes, utiliser la fonctionnalité « Colonnes » prévue à cet effet ; ne pas utiliser les tableaux.</description>
+    </item>
+    
+    <item>
+      <title>Étiquette de champ</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</guid>
+      <description>remarque Pour présenter l&#39;étiquette de champ, les exemples de cette page associent l&#39;étiquette à un champ de type `input`.</description>
     </item>
     
     <item>
@@ -532,6 +532,15 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
       
       <guid>https://sofeve-concept.github.io/coder/navigation/processus-etapes/</guid>
       <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;un processus par étapes ? Les processus par étapes (stepper, en anglais) affichent la progression à travers une séquence d&amp;rsquo;étapes logiques et numérotées.</description>
+    </item>
+    
+    <item>
+      <title>Formulaire à étapes multiples</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/</guid>
+      <description>Pour découper un formulaire en étapes multiples, chaque étape devra proposer les éléments présentés ci-après.</description>
     </item>
     
     <item>

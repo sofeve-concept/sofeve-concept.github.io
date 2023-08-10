@@ -164,12 +164,6 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/finaliser/export/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -273,6 +267,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/coder/couleurs/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -405,6 +405,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/coder/navigation/processus-etapes/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

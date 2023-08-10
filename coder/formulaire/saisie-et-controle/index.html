@@ -131,10 +131,11 @@
 		<li><a href="https://sofeve-concept.github.io/coder/formulaire/" aria-current="true" >Formulaires</a>
 			
 			<ul><li><a href="https://sofeve-concept.github.io/coder/formulaire/semantique-html-formulaire/">Sémantique HTML</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/">Étiquette de champ</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/" aria-current="page" >Saisie et contrôle du formulaire</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/">Étiquette de champ</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/">Regroupement de champs</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/">Liste déroulante</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/">Formulaire à étapes multiples</a></li>
 				</ul></li>
 		<li><a href="https://sofeve-concept.github.io/coder/scripts/">Composants d&#39;interface riche</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/multimedia/">Multimedia</a></li>
@@ -163,7 +164,13 @@
         <li><a href="#mise-en-forme-complexe-de-laide-à-la-saisie">Mise en forme complexe de l&rsquo;aide à la saisie</a></li>
       </ul>
     </li>
-    <li><a href="#gestion-des-erreurs">Gestion des erreurs</a></li>
+    <li><a href="#gestion-des-erreurs">Gestion des erreurs</a>
+      <ul>
+        <li><a href="#titre-de-la-page">Titre de la page</a></li>
+        <li><a href="#message-derreur-global">Message d&rsquo;erreur global</a></li>
+        <li><a href="#message-derreur-contextuel-associé-au-champ-en-erreur">Message d&rsquo;erreur contextuel (associé au champ en erreur)</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
          </div>
@@ -220,7 +227,27 @@ Le champ obligatoire sera codé avec l&rsquo;attribut <code>required</code>.</p>
 </span></span><span class="line"><span class="cl"> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Formats acceptés : pdf ou doc<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h2 id="gestion-des-erreurs">Gestion des erreurs</h2>
-<p>La gestion des erreurs suit les règles suivantes :</p>
+<h3 id="titre-de-la-page">Titre de la page</h3>
+<p>En cas d&rsquo;erreur, le titre de la page HTML sera modifiée en conséquence.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Erreur - Formulaire d&#39;envoi de votre commande<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h3 id="message-derreur-global">Message d&rsquo;erreur global</h3>
+<p>Un message d&rsquo;erreur global peut être implémenté au début du formulaire  il aura alors le rôle <code>role=&quot;alert&quot;</code>.<br>
+<strong>Cette zone prévue pour recevoir le message d&rsquo;alerte global sera implémentée à vide dans la formulaire puis peuplée au moment du retour d&rsquo;erreur</strong>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;alert&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span></code></pre></div><div class="notice astuce" >   
+     <p> astuce </p>
+     <p>
+Dans la rubrique <a href="/motifs/alerte/">Motifs de conception - Message d'alerte</a>, des informations supplémentaires sont proposées sur l'implémentation d'un élément portant le rôle `alert`.
+</p>
+</div>
+<h3 id="message-derreur-contextuel-associé-au-champ-en-erreur">Message d&rsquo;erreur contextuel (associé au champ en erreur)</h3>
+<p>La gestion des erreurs doit suivre les règles suivantes :</p>
 <ul>
 <li>Un message d&rsquo;erreur sera implémenté accolé au champ en erreur </li>
 <li>Le message d&rsquo;erreur expliquera les raisons de l&rsquo;erreur de manière claire et sans ambiguïté </li>
@@ -230,18 +257,7 @@ Le champ obligatoire sera codé avec l&rsquo;attribut <code>required</code>.</p>
 <li>Le champ en erreur (et/ou son label) ne seront <strong>pas signalés uniquement par la couleur</strong> (le champ en erreur pourra alors avoir une bordure plus grosse par exemple et son label écrit en gras);</li>
 <li>Le champ en erreur possèdera alors l&rsquo;attribut <code>aria-invalid=&quot;true&quot; </code> </li>
 <li>Le message d&rsquo;erreur pour un champ obligatoire qui n&rsquo;est pas renseigné est contextualisé et unique (exemple : Le champ &ldquo;Nom&rdquo; est obligatoire) </li>
-<li>Le titre de la page HTML sera modifiée en conséquence.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Erreur - Formulaire d&#39;envoi de votre commande<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">...
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span></code></pre></div><p>Enfin, un message d&rsquo;erreur global peut être implémenté au début du formulaire  il aura alors le rôle <code>role=&quot;alert&quot;</code>. <strong>Cette zone prévue pour recevoir le message d&rsquo;alerte global sera implémentée à vide dans la formulaire puis peuplée au moement du retour d&rsquo;erreur</strong>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;alert&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">...
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
-</span></span></code></pre></div><p>Il est possible aussi de paramétrer la façon dont l&rsquo;alerte est vocalisée avec les attributs <code>aria-live</code> et <code>aria-atomic</code>. <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions"  target="_blank" rel="noopener noreferrer" title="Voir la documentation MDN (nouvelle fenêtre)">Voir la documentation MDN</a>.</p>
 
           </section>
           

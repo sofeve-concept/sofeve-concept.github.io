@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Sémantique HTML - Formulaires - Coder accessible - Sofève Concept</title>
 	
-	<meta name="description" content="Les formulaires HTML permettent d&#39;envoyer des données qui seront ensuite traitées côté serveur. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	<meta name="description" content="Les formulaires HTML permettent d&#39;envoyer des données qui seront ensuite traitées côté serveur. Les formulaires peuvent être visuellement et cognitivement complexes et difficiles à utiliser ; créer des formulaires accessibles rend leur utilisation plus faciles. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -131,10 +131,11 @@
 		<li><a href="https://sofeve-concept.github.io/coder/formulaire/" aria-current="true" >Formulaires</a>
 			
 			<ul><li><a href="https://sofeve-concept.github.io/coder/formulaire/semantique-html-formulaire/" aria-current="page" >Sémantique HTML</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/">Étiquette de champ</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/">Saisie et contrôle du formulaire</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/">Étiquette de champ</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/">Regroupement de champs</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/">Liste déroulante</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/">Formulaire à étapes multiples</a></li>
 				</ul></li>
 		<li><a href="https://sofeve-concept.github.io/coder/scripts/">Composants d&#39;interface riche</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/multimedia/">Multimedia</a></li>
@@ -144,7 +145,7 @@
                </aside>
           <section class="item-80 rubCode">
                <h1 id="contenu">Sémantique HTML</h1>
-               <p>Les formulaires HTML permettent d&#39;envoyer des données qui seront ensuite traitées côté serveur.</p><div id="accordeonGroup" class="accordeon tableDesMat">
+               <p>Les formulaires HTML permettent d&#39;envoyer des données qui seront ensuite traitées côté serveur. Les formulaires peuvent être visuellement et cognitivement complexes et difficiles à utiliser ; créer des formulaires accessibles rend leur utilisation plus faciles.</p><div id="accordeonGroup" class="accordeon tableDesMat">
      <h2>
          <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
              <span class="accordeon-title">Table des matières</span>
@@ -157,7 +158,6 @@
   <ul>
     <li><a href="#ce-quil-faut-retenir">Ce qu&rsquo;il faut retenir</a></li>
     <li><a href="#code-html">Code HTML</a></li>
-    <li><a href="#cas-des-formulaire-à-étapes-multiples">Cas des formulaire à étapes multiples</a></li>
   </ul>
 </nav>
          </div>
@@ -238,20 +238,7 @@
 </tbody>
 </table>
 
-<h2 id="cas-des-formulaire-à-étapes-multiples">Cas des formulaire à étapes multiples</h2>
-<p>Lors d&rsquo;un formulaire à étapes multiples (étapes de passage de commande, par exemple), il faudra :</p>
-<ul>
-<li>Prévoir la mise en place d&rsquo;une navigation du processus à étape (tunnel) avec l&rsquo;élément HTML <code>nav</code> </li>
-<li>Identifier l’étape courante avec &lt;aria-current=&ldquo;step&rdquo;&gt;</li>
-</ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Étapes de votre commande&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/info&#34;</span><span class="p">&gt;</span>Informations personnelles<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">li</span> <span class="na">aria-current</span><span class="o">=</span><span class="s">&#34;step&#34;</span><span class="p">&gt;</span>Paiement<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Prévisualisation<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">	<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"> <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
-</span></span></code></pre></div>
+
           </section>
           
      </div>
@@ -279,8 +266,7 @@
 	    <path
 		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
 	</svg>
-	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/clipboard.min.js"></script>
-<script src="/js/search.min.js"></script>
+	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/search.min.js"></script>
 <script>sandwitch();</script>	
 
 </body>
