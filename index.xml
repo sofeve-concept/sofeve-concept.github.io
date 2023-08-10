@@ -354,12 +354,12 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
     </item>
     
     <item>
-      <title>Tableaux accessibles</title>
-      <link>https://sofeve-concept.github.io/coder/tableaux/tableaux-accessibles/</link>
+      <title>Tableaux de mise en forme</title>
+      <link>https://sofeve-concept.github.io/coder/tableaux/tableaux-presentation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sofeve-concept.github.io/coder/tableaux/tableaux-accessibles/</guid>
-      <description>Ce qu&amp;rsquo;il faut retenir On veillera à ce que tous les contenus et toutes les fonctionnalités du tableau soient disponibles quelle que soit la taille de l’écran.</description>
+      <guid>https://sofeve-concept.github.io/coder/tableaux/tableaux-presentation/</guid>
+      <description>Tableaux servant à la mise en forme Avant l&amp;rsquo;existence des propriétés CSS flexbox ou gridbox, les tableaux étaient utilisés pour mettre en forme les informations sur une page (une colonne pour revevoir un menu et une autre pour recevoir du contenu, par exemple).</description>
     </item>
     
     <item>
@@ -405,6 +405,15 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
       
       <guid>https://sofeve-concept.github.io/ressources/bureautique/presentation/saut-ligne/</guid>
       <description>Règles Pour espacer des paragraphes, ne pas utiliser des sauts de ligne multiple mais utiliser les propriétés d’espacement des paragraphes.</description>
+    </item>
+    
+    <item>
+      <title>Tableaux simples</title>
+      <link>https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-simples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-simples/</guid>
+      <description>Structure du tableau de données simple Les tableaux de données devront respecter les règles d&amp;rsquo;accessibilité suivantes :</description>
     </item>
     
     <item>
@@ -487,6 +496,15 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
       
       <guid>https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/</guid>
       <description>Implémentation HTML Les champs de même nature sont regroupés et titré avec fieldset et legend</description>
+    </item>
+    
+    <item>
+      <title>Tableaux complexes</title>
+      <link>https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-complexes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-complexes/</guid>
+      <description>Structure du tableau de données complexe Les tableaux de données devront respecter les règles d&amp;rsquo;accessibilité suivantes :</description>
     </item>
     
     <item>

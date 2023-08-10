@@ -3,9 +3,9 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Sémantique HTML - Tableaux - Coder accessible - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Tableaux de mise en forme - Tableaux - Coder accessible - Sofève Concept</title>
 	
-	<meta name="description" content="Un tableau HTML permet de présenter des données de manière organisée. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	<meta name="description" content="Un tableau de mise en forme ou de présentation sert, comme son nom l&#39;indique, uniquement à présenter le contenu de la page. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -104,7 +104,7 @@
   <li><a href="/">Accueil</a></li>
   <li><a href="/coder/">Coder accessible</a></li>
   <li><a href="/coder/tableaux/">Tableaux</a></li>
-  <li aria-current="page" tabindex="-1">Sémantique HTML</li></ol>
+  <li aria-current="page" tabindex="-1">Tableaux de mise en forme</li></ol>
 </nav>
 <div>
 <button onclick="window.print();">
@@ -129,8 +129,8 @@
 		<li><a href="https://sofeve-concept.github.io/coder/image-icone/">Images et icônes</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/tableaux/" aria-current="true" >Tableaux</a>
 			
-			<ul><li><a href="https://sofeve-concept.github.io/coder/tableaux/semantique-html-tableaux/" aria-current="page" >Sémantique HTML</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/tableaux/tableaux-presentation/">Tableaux de mise en forme</a></li>
+			<ul><li><a href="https://sofeve-concept.github.io/coder/tableaux/semantique-html-tableaux/">Sémantique HTML</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/tableaux/tableaux-presentation/" aria-current="page" >Tableaux de mise en forme</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-simples/">Tableaux simples</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-complexes/">Tableaux complexes</a></li>
 				</ul></li>
@@ -142,8 +142,8 @@
 
                </aside>
           <section class="item-80 rubCode">
-               <h1 id="contenu">Sémantique HTML</h1>
-               <p>Un tableau HTML permet de présenter des données de manière organisée.</p><div id="accordeonGroup" class="accordeon tableDesMat">
+               <h1 id="contenu">Tableaux de mise en forme</h1>
+               <p>Un tableau de mise en forme ou de présentation sert, comme son nom l&#39;indique, uniquement à présenter le contenu de la page.</p><div id="accordeonGroup" class="accordeon tableDesMat">
      <h2>
          <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
              <span class="accordeon-title">Table des matières</span>
@@ -154,88 +154,32 @@
          <div>
           <nav id="TableOfContents">
   <ul>
-    <li><a href="#ce-quil-faut-retenir">Ce qu&rsquo;il faut retenir</a></li>
-    <li><a href="#code-html">Code HTML</a>
-      <ul>
-        <li><a href="#éléments-html-des-tableaux">Éléments HTML des tableaux</a></li>
-        <li><a href="#attributs-html-des-tableaux">Attributs HTML des tableaux</a></li>
-      </ul>
-    </li>
+    <li><a href="#tableaux-servant-à-la-mise-en-forme">Tableaux servant à la mise en forme</a></li>
+    <li><a href="#test-de-laccessibilité-du-tableau">Test de l&rsquo;accessibilité du tableau</a></li>
   </ul>
 </nav>
          </div>
      </div>
-</div><h2 id="ce-quil-faut-retenir">Ce qu&rsquo;il faut retenir</h2>
-<p>Un tableau HTML permet de présenter des données de manière organisée.<br>
-Avant l&rsquo;arrivée du CSS et des propriétés flexbox et grid notamment, les tableaux servaient aussi à la présentation de l&rsquo;information. Cette façon de faire est à exclure aujourd&rsquo;hui.</p>
-<h2 id="code-html">Code HTML</h2>
-<h3 id="éléments-html-des-tableaux">Éléments HTML des tableaux</h3>
-
-<table class="responsive style2">
-   <caption>Sémantique HTML des tableaux</caption>
-<thead>
-    <tr>
-        <th scope="col">&Eacute;lément HTM</th>
-        <th scope="col">Utilisation</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <th scope="row"><code>&lt;table>...&lt;/table></code></th>
-        <td>Déclaration du tableau</td>
-    </tr>
-    <tr>
-        <th scope="row"><code>&lt;caption>...&lt;/caption></code></th>
-        <td>Titre du tableau</td>
-    </tr>
-    <tr>
-        <th scope="row"><code>&lt;colgroup>...&lt;/colgroup></code> et <code>&lt;col>...&lt;/col></code></th>
-        <td>Groupe de colonnes au sein d'un tableau</td>
-    </tr>
-     <tr>
-        <th scope="row"><code>&lt;thead>...&lt;/thead></code></th>
-        <td>Section d'entête du tableau</td>
-    </tr>
-    <tr>
-        <th scope="row"><code>&lt;tbody>...&lt;/tbody></code></th>
-        <td>Section du corps du tableau</td>
-    </tr>
-    <tr>
-        <th scope="row"><code>&lt;tfoot>...&lt;/tfoot></code></th>
-        <td>Section de pied du tableau</td>
-    </tr>
-    <tr>
-        <th scope="row"><code>&lt;tr>...&lt;/tr></code></th>
-        <td>Déclaration de ligne de tableau</td>
-    </tr>
-    <tr>
-        <th scope="row"><code>&lt;th>...&lt;/th></code></th>
-        <td>Déclaration de cellule d'entête de tableau</td>
-    </tr>
-    <tr>
-        <th scope="row"><code>&lt;td>...&lt;/td></code></th>
-        <td>Déclaration de cellule de tableau</td>
-    </tr>
-</tbody>
-</table>
-
-<p>_N.B. Dans le cas d&rsquo;un tableau de données complexe, on pourra utiliser l&rsquo;élément <code>summary</code> pour proposer un résumé du tableau. Voir la rubrique <a href="/coder/tableaux/tableaux-donnees-complexes/">Tableaux complexes</a>.</p>
-<h3 id="attributs-html-des-tableaux">Attributs HTML des tableaux</h3>
+</div><h2 id="tableaux-servant-à-la-mise-en-forme">Tableaux servant à la mise en forme</h2>
+<p>Avant l&rsquo;existence des propriétés CSS flexbox ou gridbox, les tableaux étaient utilisés pour mettre en forme les informations sur une page (une colonne pour revevoir un menu et une autre pour recevoir du contenu, par exemple).<br>
+Aujourd&rsquo;hui, les tableaux servent de moins en moins à cela mais dans le cas où ils sont utilisés pour mettre en forme le contenu de la page, il faudra rajouter le role aria <code>role=&quot;presentation&quot;</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">table</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;presentation&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  ...
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h2 id="test-de-laccessibilité-du-tableau">Test de l&rsquo;accessibilité du tableau</h2>
+<p>On veillera à ce que tous les contenus et toutes les fonctionnalités du tableau soient disponibles quelle que soit la taille de l’écran.<br>
+En particulier, on veillera à ne pas supprimer de fonctionnalités (menus, systèmes de filtres, cartes interactives, etc.) et/ou de contenus (tableaux de données, vidéos, etc.) sur les vues responsive.<br>
+On veillera aussi à ce que le contenu linéarisé du tableau reste compréhensible. Pour cela, avec l&rsquo;extension de navigateur <span lang="en">«&nbsp;web developper&nbsp;»</span> cliquer :</p>
 <ul>
-<li><code>colspan</code> : permet de fusionner des colonnes. Exemple pour une fusion de 3 colonnes : <code>&lt;th colspan=&quot;3&quot;&gt;</code></li>
-<li><code>rowspan</code> : permet de fusionner des lignes. Exemple pour une fusion de 2 lignes : <code>&lt;th rowspan=&quot;2&quot;&gt;</code></li>
+<li>sur <span lang="en">«&nbsp;Misceallanous&nbsp;»</span></li>
+<li>puis sur <span lang="en">«&nbsp;Linearize page&nbsp;»</span>.</li>
 </ul>
-<p><strong>Attributs spécifiques pour les lecteur d&rsquo;écran</strong></p>
-<ul>
-<li><code>scope</code> : permet de spécifier sur quoi porte la cellule.
-<ul>
-<li>Exemple pour une cellule portant sur toute une colonne : <code>&lt;th scope=&quot;col&quot;&gt;</code></li>
-<li>Exemple pour une cellule portant sur toute une ligne : <code>&lt;th scope=&quot;row&quot;&gt;</code></li>
-</ul>
-</li>
-<li><code>id</code> et <code>headers</code> : permet de créer une association entre plusieurs entêtes. Voir la rubrique <a href="/coder/tableaux/tableaux-donnees-complexes/">Tableaux complexes</a>.</li>
-</ul>
-
+<div class="notice attention" >   
+     <p> attention </p>
+     <p>
+Ces tableaux de présentation ne devront en aucun cas intégrer les techniques d'accessibilité présentées dans les autres rubriques.
+</p>
+</div>
           </section>
           
      </div>
@@ -263,7 +207,8 @@ Avant l&rsquo;arrivée du CSS et des propriétés flexbox et grid notamment, les
 	    <path
 		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
 	</svg>
-	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/search.min.js"></script>
+	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/clipboard.min.js"></script>
+<script src="/js/search.min.js"></script>
 <script>sandwitch();</script>	
 
 </body>

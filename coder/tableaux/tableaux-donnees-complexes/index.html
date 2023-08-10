@@ -3,9 +3,9 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Tableaux accessibles - Tableaux - Coder accessible - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Tableaux complexes - Tableaux - Coder accessible - Sofève Concept</title>
 	
-	<meta name="description" content="Selon que le tableau sert à la présentation ou à présenter des données, la façon de coder sera différente. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	<meta name="description" content="Un tableau de données complexe est un tableau dont les cellules d&#39;entête s&#39;étendent sur plusieurs colonnes et/ou lignes. Plusieurs éléments et attributs peuvent être utilisés pour définir la structure et les relations de l&#39;entête et des cellules de données. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -104,7 +104,7 @@
   <li><a href="/">Accueil</a></li>
   <li><a href="/coder/">Coder accessible</a></li>
   <li><a href="/coder/tableaux/">Tableaux</a></li>
-  <li aria-current="page" tabindex="-1">Tableaux accessibles</li></ol>
+  <li aria-current="page" tabindex="-1">Tableaux complexes</li></ol>
 </nav>
 <div>
 <button onclick="window.print();">
@@ -130,7 +130,9 @@
 		<li><a href="https://sofeve-concept.github.io/coder/tableaux/" aria-current="true" >Tableaux</a>
 			
 			<ul><li><a href="https://sofeve-concept.github.io/coder/tableaux/semantique-html-tableaux/">Sémantique HTML</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/tableaux/tableaux-accessibles/" aria-current="page" >Tableaux accessibles</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/tableaux/tableaux-presentation/">Tableaux de mise en forme</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-simples/">Tableaux simples</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-complexes/" aria-current="page" >Tableaux complexes</a></li>
 				</ul></li>
 		<li><a href="https://sofeve-concept.github.io/coder/formulaire/">Formulaires</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/scripts/">Composants d&#39;interface riche</a></li>
@@ -140,8 +142,8 @@
 
                </aside>
           <section class="item-80 rubCode">
-               <h1 id="contenu">Tableaux accessibles</h1>
-               <p>Selon que le tableau sert à la présentation ou à présenter des données, la façon de coder sera différente.</p><div id="accordeonGroup" class="accordeon tableDesMat">
+               <h1 id="contenu">Tableaux complexes</h1>
+               <p>Un tableau de données complexe est un tableau dont les cellules d&#39;entête s&#39;étendent sur plusieurs colonnes et/ou lignes. Plusieurs éléments et attributs peuvent être utilisés pour définir la structure et les relations de l&#39;entête et des cellules de données.</p><div id="accordeonGroup" class="accordeon tableDesMat">
      <h2>
          <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
              <span class="accordeon-title">Table des matières</span>
@@ -152,289 +154,46 @@
          <div>
           <nav id="TableOfContents">
   <ul>
-    <li><a href="#ce-quil-faut-retenir">Ce qu&rsquo;il faut retenir</a></li>
-    <li><a href="#tableaux-servant-à-la-mise-en-forme">Tableaux servant à la mise en forme</a></li>
-    <li><a href="#tableaux-de-données">Tableaux de données</a>
-      <ul>
-        <li><a href="#tableau-de-données-simple">Tableau de données simple</a>
-          <ul>
-            <li><a href="#exemples">Exemples</a></li>
-          </ul>
-        </li>
-        <li><a href="#tableau-de-données-complexe">Tableau de données complexe</a>
-          <ul>
-            <li><a href="#exemples-1">Exemples</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
+    <li><a href="#structure-du-tableau-de-données-complexe">Structure du tableau de données complexe</a></li>
+    <li><a href="#exemples-de-tableaux-complexes">Exemples de tableaux complexes</a></li>
+    <li><a href="#test-de-laccessibilité-du-tableau">Test de l&rsquo;accessibilité du tableau</a></li>
   </ul>
 </nav>
          </div>
      </div>
-</div><h2 id="ce-quil-faut-retenir">Ce qu&rsquo;il faut retenir</h2>
-<p>On veillera à ce que tous les contenus et toutes les fonctionnalités du tableau soient disponibles quelle que soit la taille de l’écran.<br>
-En particulier, on veillera à ne pas supprimer de fonctionnalités (menus, systèmes de filtres, cartes interactives, etc.) et/ou de contenus (tableaux de données, vidéos, etc.) sur les vues responsive.<br>
-On veillera aussi à ce que le contenu linéarisé du tableau reste compréhensible. Pour cela, avec l&rsquo;extension de navigateur <span lang="en">«&nbsp;web developper&nbsp;»</span> cliquer :</p>
-<ul>
-<li>sur <span lang="en">«&nbsp;Misceallanous&nbsp;»</span></li>
-<li>puis sur <span lang="en">«&nbsp;Linearize page&nbsp;»</span>.</li>
-</ul>
-<h2 id="tableaux-servant-à-la-mise-en-forme">Tableaux servant à la mise en forme</h2>
-<p>Avant l&rsquo;existence des propriétés CSS flexbox ou gridbox, les tableaux étaient utilisés pour mettre en forme les informations sur une page (une colonne pour revevoir un menu et une autre pour recevoir du contenu, par exemple).<br>
-Aujourd&rsquo;hui, les tableaux servent de moins en moins à cela mais dans le cas où ils sont utilisés pour mettre en forme le contenu de la page, il faudra rajouter le role aria <code>role=&quot;presentation&quot;</code>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">table</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;presentation&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  ...
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
-</span></span></code></pre></div><div class="notice attention" >   
-     <p> attention </p>
-     <p>
-Ces tableaux de présentation ne devront en aucun cas intégrer les techniques d'accessibilité présentées pour les tableaux de données ci-après.
-</p>
-</div>
-<h2 id="tableaux-de-données">Tableaux de données</h2>
+</div><h2 id="structure-du-tableau-de-données-complexe">Structure du tableau de données complexe</h2>
 <p>Les tableaux de données devront respecter les règles d&rsquo;accessibilité suivantes :</p>
 <ul>
 <li>Le tableau de données aura un titre, celui-ci doit être balisé avec l&rsquo;élément HTML <code>&lt;caption&gt;</code> </li>
-<li>Les lignes d&rsquo;entête seront encadrées par les balises <code>&lt;thead&gt;...&lt;/thead&gt;</code> </li>
-<li>Les lignes de données seront encadrées par les balises <code>&lt;tbody&gt;...&lt;/tbody&gt;</code> </li>
-<li>Les cellules d&rsquo;entête de ligne et de colonne seront encadrées par les balises <code>&lt;th&gt;...&lt;/th&gt;</code>.</li>
-</ul>
-<h3 id="tableau-de-données-simple">Tableau de données simple</h3>
-<p>Dans le cas d&rsquo;un tableau de données simple (une seule ligne d&rsquo;entête), on implémentera l’attribut <code>scope</code> sur les balises <code>&lt;th&gt;</code> :</p>
-<ul>
-<li>si la cellule d&rsquo;entête porte sur la ligne complète, on écrira <code>&lt;th scope=&quot;row&quot;&gt;</code></li>
-<li>si la cellule d&rsquo;entête porte sur la colonne entière, on écrira <code>&lt;th scope=&quot;col&quot;&gt;</code></li>
-</ul>
-<p>L&rsquo;attribut <code>scope</code> définit la direction des cellules d&rsquo;en-tête et les associe aux cellules de données correspondantes. <strong>L&rsquo;attribut <code>scope</code> est indispensable pour les tableaux volumineux</strong>.</p>
-<h4 id="exemples">Exemples</h4>
-
- <div class="accordeon accordeonNoBorder">
-     <h5>
-         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="simple1"  id="tableauSimple">
-             <span class="accordeon-title">Tableau avec entête horizontale</span>
-             <span class="accordeon-icon" aria-hidden="true"></span>
-         </button>
-     </h5>
-     <div id="simple1" role="region" aria-labelledby="tableauSimple" class="accordeon-panel" hidden>
-         <div>
-<h6>Visuel</h6>
-<table class="responsive style2">
-   <caption>Les événements à ne pas rater</caption>
-   <thead>
-<tr>
-    <th scope="row">Date</th>
-    <th scope="row">&Eacute;vénement</th>
-    <th scope="row">Lieu</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>16 mars</td>
-    <td>Sensibilisation au handicap</td>
-    <td>Salle Ada Lovelace</td>
-  </tr>
-  <tr>
-     <td>7 mai</td>
-     <td>Conférence «&nbsp;numérique et handicap&nbsp;»</td>
-     <td>Salle Hedy Lamarr</td>
-  </tr>
-  <tr>
-    <td>21 juillet</td>
-    <td>Hackathon accessibilité</td>
-    <td>Salle Grace Hopper</td>
-  </tr>
-  </tbody>
-</table>
-
-<h6>Code HTML</h6>
-
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">table</span> <span class="err">...</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">caption</span><span class="p">&gt;</span>Les événements à ne pas rater<span class="p">&lt;/</span><span class="nt">caption</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>Date<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span><span class="ni">&amp;Eacute;</span>vénement<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>Lieu<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>16 mars<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Sensibilisation au handicap<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Salle Ada Lovelace<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>7 mai<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Conférence «<span class="ni">&amp;nbsp;</span>numérique et handicap<span class="ni">&amp;nbsp;</span>»<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Salle Hedy Lamarr<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>21 juillet<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Hackathon accessibilité<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Salle Grace Hopper<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
-</span></span></code></pre></div>
-         </div>
-     </div>
-     <h5>
-         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="simple2"  id="tableauSimple2">
-             <span class="accordeon-title">Tableau avec entête verticale</span>
-             <span class="accordeon-icon" aria-hidden="true"></span>
-         </button>
-     </h5>
-     <div id="simple2" role="region" aria-labelledby="tableauSimple2" class="accordeon-panel" hidden>
-         <div>
-<h6>Visuel</h6>
-<table class="responsive style2 style3">
-   <caption>Les événements à ne pas rater</caption>
-<tr>
-    <th scope="row">Date</th>
-    <td>16 mars</td>
-    <td>7 mai</td>
-    <td>21 juillet</td>
-  </tr>
-  <tr>
-    <th scope="row">&Eacute;vénement</th>
-    <td>Sensibilisation au handicap</td>
-    <td>Conférence «&nbsp;numérique et handicap&nbsp;»</td>
-    <td>Hackathon accessibilité</td>
-  </tr>
-  <tr>
-    <th scope="row">Lieu</th>
-    <td>Salle Ada Lovelace</td>
-    <td>Salle Hedy Lamarr</td>
-    <td>Salle Grace Hopper</td>
-  </tr>
-</table>
-
-<h6>Code HTML</h6>
-
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">caption</span><span class="p">&gt;</span>Les événements à ne pas rater<span class="p">&lt;/</span><span class="nt">caption</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>Date<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>16 mars<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>7 mai<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>21 juillet<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span><span class="ni">&amp;Eacute;</span>vénement<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Sensibilisation au handicap<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Conférence «<span class="ni">&amp;nbsp;</span>numérique et handicap<span class="ni">&amp;nbsp;</span>»<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Hackathon accessibilité<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>Lieu<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Salle Ada Lovelace<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Salle Hedy Lamarr<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Salle Grace Hopper<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
-</span></span></code></pre></div>
-         </div>
-     </div>
- <h5>
-         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="simple3"  id="tableauSimple3">
-             <span class="accordeon-title">Tableau avec double entête (horizontale et verticale)</span>
-             <span class="accordeon-icon" aria-hidden="true"></span>
-         </button>
-     </h5>
-     <div id="simple3" role="region" aria-labelledby="tableauSimple3" class="accordeon-panel" hidden>
-         <div>
-<h6>Visuel</h6>
-<table class="responsive style2 style3">
-   <caption>Répartition des handicaps selon le type</caption>
-<thead>
-    <tr>
-        <th scope="col">Type de handicap</th>
-        <th scope="col">Nombre de personnes concernées (en million)</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <th scope="row">Déficience visuelle</th>
-        <td>1.7</td>
-    </tr>
-    <tr>
-        <th scope="row">Déficience auditive</th>
-        <td>1.6</td>
-    </tr>
-    <tr>
-        <th scope="row">Handicap physique</th>
-        <td>2.3</td>
-    </tr>
-    <tr>
-        <th scope="row">Handicap cognitif</th>
-        <td>0.7</td>
-    </tr>
-</tbody>
-</table>
-
-<h6>Code HTML</h6>
-
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">table</span> <span class="err">...</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">caption</span><span class="p">&gt;</span>Répartition des handicaps selon le type<span class="p">&lt;/</span><span class="nt">caption</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>Type de handicap<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>Nombre de personnes concernées (en million)<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>Déficience visuelle<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>1.7<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>Déficience auditive<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>1.6<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>Handicap physique<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>2.3<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>Handicap cognitif<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>0.7<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
-</span></span></code></pre></div>
-         </div>
-     </div>    
-</div>
-
-<div class="notice astuce" >   
-     <p> astuce </p>
-     <p>
-Un exemple de tableau responsive, s'affichant sans ascenseur horizontal sur un écran de largeur 320px, est disponible dans la rubrique <a href="/motifs/tableau-responsive/">Motifs de conception - Tableau</a>.
-</p>
-</div>
-<h3 id="tableau-de-données-complexe">Tableau de données complexe</h3>
-<p>Un tableau de données complexe est un tableau dont les cellules d&rsquo;entête s&rsquo;étendent sur plusieurs colonnes et/ou lignes. Plusieurs éléments et attributs peuvent être utilisés pour définir la structure et les relations de l&rsquo;entête et des cellules de données.</p>
-<p>La structure des groupes de colonnes et de lignes doit être définie dans le balisage du tableau :</p>
-<ul>
-<li>un groupe de colonnes est défini à l&rsquo;aide de l&rsquo;élément <code>colgroup</code> ;</li>
 <li>un groupe de lignes est défini par les éléments <code>thead</code>, <code>tbody</code> et <code>tfoot</code> :
 <ul>
-<li>les éléments <code>thead</code> et <code>tfoot</code> ne peuvent être utilisés qu&rsquo;une seule fois dans un tableau ;</li>
-<li>un tableau peut avoir n&rsquo;importe quel nombre d&rsquo;éléments <code>tbody</code> ; chaque élément <code>tbody</code> définissant un groupe de lignes.</li>
+<li>Les éléments <code>thead</code> et <code>tfoot</code> ne peuvent être utilisés qu&rsquo;une seule fois dans un tableau ;</li>
+<li>Un tableau peut avoir n&rsquo;importe quel nombre d&rsquo;éléments <code>tbody</code> ; chaque élément <code>tbody</code> définissant un groupe de lignes.</li>
+<li>Les lignes d&rsquo;entête seront encadrées par les balises <code>&lt;thead&gt;...&lt;/thead&gt;</code> </li>
+<li>Les lignes de données seront encadrées par les balises <code>&lt;tbody&gt;...&lt;/tbody&gt;</code> </li>
 </ul>
 </li>
+<li>Les cellules d&rsquo;entête de ligne et de colonne seront encadrées par les balises <code>&lt;th&gt;...&lt;/th&gt;</code>.</li>
+<li>On implémentera l’attribut <code>scope</code> sur les balises <code>&lt;th&gt;</code> :</li>
+<li>si la cellule d&rsquo;entête porte sur la ligne complète, on écrira <code>&lt;th scope=&quot;row&quot;&gt;</code></li>
+<li>si la cellule d&rsquo;entête porte sur la colonne entière, on écrira <code>&lt;th scope=&quot;col&quot;&gt;</code></li>
+<li>On recourera éventuellement au éléments HTML suivant :
+<ul>
+<li><code>summary</code>, pour proposer un résumé du tableau</li>
+<li><code>colgroup</code> et <code>col</code>, pour grouper et identifier des colonnes au sein d&rsquo;un tableau.</li>
 </ul>
-<p>Un autre façon de coder le tableau consiste à utiliser les attributs <code>headers</code> et <code>id</code> ; <code>headers</code> sera appliqué que la cellule et contriendra les <code>id</code> des cellules d&rsquo;entête.</p>
-<h4 id="exemples-1">Exemples</h4>
+</li>
+<li>Une autre façon de coder le tableau consiste à utiliser les attributs <code>headers</code> et <code>id</code> ; <code>headers</code> sera appliqué sur la cellule de données et contriendra les <code>id</code> des cellules d&rsquo;entête correspondantes.</li>
+</ul>
+<h2 id="exemples-de-tableaux-complexes">Exemples de tableaux complexes</h2>
 
  <div class="accordeon accordeonNoBorder">
-     <h5>
+     <h3>
          <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="complexe1"  id="tableauComplexe">
              <span class="accordeon-title">Tableau avec entête multiple et utilisant les attributs `headers` et `id`</span>
              <span class="accordeon-icon" aria-hidden="true"></span>
          </button>
-     </h5>
+     </h3>
      <div id="complexe1" role="region" aria-labelledby="tableauComplexe" class="accordeon-panel" hidden>
          <div>
 <h6>Visuel</h6>
@@ -578,12 +337,12 @@ Un exemple de tableau responsive, s'affichant sans ascenseur horizontal sur un �
 </span></span></code></pre></div>
          </div>
      </div>
-     <h5>
+     <h3>
          <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="complexe2"  id="tableauComplexe2">
              <span class="accordeon-title">Tableau avec entête multiple utilisant `col` et `colgroup` </span>
              <span class="accordeon-icon" aria-hidden="true"></span>
          </button>
-     </h5>
+     </h3>
      <div id="complexe2" role="region" aria-labelledby="tableauComplexe2" class="accordeon-panel" hidden>
          <div>
 <h6>Visuel</h6>
@@ -591,9 +350,10 @@ Un exemple de tableau responsive, s'affichant sans ascenseur horizontal sur un �
 
 <table class="responsive style2 style3">
 <caption>Températures observées</caption>
-  <col>
-  <colgroup span="2"></colgroup>
-  <colgroup span="2"></colgroup>
+  <colgroup>
+  <col span="2"></col>
+  <col span="2"></col>
+  </colgroup>
   <tr>
     <td rowspan="2"></td>
     <th colspan="2" scope="colgroup">Matin</th>
@@ -627,9 +387,10 @@ Un exemple de tableau responsive, s'affichant sans ascenseur horizontal sur un �
 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">caption</span><span class="p">&gt;</span>Températures observées<span class="p">&lt;/</span><span class="nt">caption</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">col</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">colgroup</span> <span class="na">span</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">colgroup</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">colgroup</span> <span class="na">span</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">colgroup</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">colgroup</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">col</span> <span class="na">span</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">col</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">col</span> <span class="na">span</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">col</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">colgroup</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">td</span> <span class="na">rowspan</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">th</span> <span class="na">colspan</span><span class="o">=</span><span class="s">&#34;2&#34;</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;colgroup&#34;</span><span class="p">&gt;</span>Matin<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
@@ -659,12 +420,12 @@ Un exemple de tableau responsive, s'affichant sans ascenseur horizontal sur un �
 </span></span></code></pre></div>
          </div>
      </div>
- <h5>
+ <h3>
          <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="complexe3"  id="tableauComplexe3">
              <span class="accordeon-title">Tableau avec des entêtes s'étendant sur plusieurs lignes ou colonnes</span>
              <span class="accordeon-icon" aria-hidden="true"></span>
          </button>
-     </h5>
+     </h3>
      <div id="complexe3" role="region" aria-labelledby="tableauComplexe3" class="accordeon-panel" hidden>
          <div>
 <h6>Visuel</h6>
@@ -772,12 +533,12 @@ Un exemple de tableau responsive, s'affichant sans ascenseur horizontal sur un �
 </span></span></code></pre></div><p>
          </div>
      </div>    
-     <h5>
+     <h3>
          <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="complexe4"  id="tableauComplexe4">
              <span class="accordeon-title">Tableau avec des entêtes sur plusieurs niveaux</span>
              <span class="accordeon-icon" aria-hidden="true"></span>
          </button>
-     </h5>
+     </h3>
      <div id="complexe4" role="region" aria-labelledby="tableauComplexe4" class="accordeon-panel" hidden>
          <div>
 <h6>Visuel</h6>
@@ -877,12 +638,12 @@ Afin d&rsquo;éviter à certains logiciels de synthèse vocale de lire la cellul
 </span></span></code></pre></div><p>
          </div>
      </div>    
-          <h5>
+          <h3>
          <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="complexe5"  id="tableauComplexe5">
              <span class="accordeon-title">Tableau avec des entêtes s'étendant sur plusieurs lignes et colonnes et sur plusieurs niveaux</span>
              <span class="accordeon-icon" aria-hidden="true"></span>
          </button>
-     </h5>
+     </h3>
      <div id="complexe5" role="region" aria-labelledby="tableauComplexe5" class="accordeon-panel" hidden>
          <div>
 <h6>Visuel</h6>
@@ -1163,6 +924,14 @@ La tableau étant vraiement complexe, l&rsquo;attribut <code>summary</code> a é
      </div>    
 </div>
 
+<h2 id="test-de-laccessibilité-du-tableau">Test de l&rsquo;accessibilité du tableau</h2>
+<p>On veillera à ce que tous les contenus et toutes les fonctionnalités du tableau soient disponibles quelle que soit la taille de l’écran.<br>
+En particulier, on veillera à ne pas supprimer de fonctionnalités (menus, systèmes de filtres, cartes interactives, etc.) et/ou de contenus (tableaux de données, vidéos, etc.) sur les vues responsive.<br>
+On veillera aussi à ce que le contenu linéarisé du tableau reste compréhensible. Pour cela, avec l&rsquo;extension de navigateur <span lang="en">«&nbsp;web developper&nbsp;»</span> cliquer :</p>
+<ul>
+<li>sur <span lang="en">«&nbsp;Misceallanous&nbsp;»</span></li>
+<li>puis sur <span lang="en">«&nbsp;Linearize page&nbsp;»</span>.</li>
+</ul>
 <div class="notice remarque" >   
      <p> remarque </p>
      <p>

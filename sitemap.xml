@@ -254,7 +254,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/coder/tableaux/tableaux-accessibles/</loc>
+    <loc>https://sofeve-concept.github.io/coder/tableaux/tableaux-presentation/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -297,6 +297,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/presentation/saut-ligne/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-simples/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -363,6 +369,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-complexes/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
