@@ -119,6 +119,7 @@
      <ul>
           <li><a href="/motifs/code-de-base/"><strong> Code de base</strong></a></li>
           <li><a href="/motifs/accordeon/">Accordéon</a></li>
+          <li><a href="/motifs/bandeau-collant/">Bannière collante</a></li>
           <li><a href="/motifs/bordure-texte/">Bordure de texte</a></li>
           <li><a href="/motifs/carrousel/">Carrousel</a></li>
           <li><a href="/motifs/carte-cliquable/">Carte cliquable</a></li>
@@ -164,10 +165,10 @@
      </div>
 </div><p>Le critère 9.2 du référentiel général d’amélioration de l’acccessibilité (RGAA), rend obligatoire la présence de plusieurs balises sémantiques de région (<span lang="en">landmark</span>, en anglais) dans la page HTML :</p>
 <ul>
-<li><code>header</code> pour la zone d&rsquo;entête,</li>
-<li><code>main</code> pour la zone de contenu principal,</li>
-<li><code>footer</code> pour la zone de pied de page,</li>
-<li><code>nav</code> pour les zones de navigations principales et secondaires.</li>
+<li><code>header</code> pour la zone d&rsquo;entête principale avec le rôle aria <code>role=&quot;banner&quot;</code> ;</li>
+<li><code>main</code> pour la zone de contenu principal avec le rôle aria <code>role=&quot;main&quot;</code> ;</li>
+<li><code>footer</code> pour la zone de pied de page avec le rôle aria <code>role=&quot;contentinfo&quot;</code> ;</li>
+<li><code>nav</code> pour les zones de navigations principales et secondaires, chacune avec le rôle aria <code>role=&quot;navigation&quot;</code>.</li>
 </ul>
 <p>Deux extraits de code sont présentés. Le premier est commenté  le deuxième ne l&rsquo;est pas et est suivi du code CSS pour le lien d&rsquo;évitement ; la présence du lien d&rsquo;évitement est rendu obligatoire par le critère 12.7 du RGAA.</p>
 <h2 id="extraits-de-code">Extraits de code</h2>
