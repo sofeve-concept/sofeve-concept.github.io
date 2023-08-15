@@ -724,6 +724,15 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
     </item>
     
     <item>
+      <title>Panneau dépliant</title>
+      <link>https://sofeve-concept.github.io/motifs/panneau-depliant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/panneau-depliant/</guid>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le titre du panneau dépliant est contenu dans un élément button avec un attribut aria-controls qui fait référence à l&amp;rsquo;id de l&amp;rsquo;élément qu&amp;rsquo;il contrôle et un attribut aria-expanded qui prend la valeur true quand la zone de contenu est visible et false quand la zone de contenu est masquée.</description>
+    </item>
+    
+    <item>
       <title>Retour en haut</title>
       <link>https://sofeve-concept.github.io/motifs/retour-en-haut/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

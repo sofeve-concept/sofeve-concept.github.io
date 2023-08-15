@@ -652,6 +652,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/motifs/panneau-depliant/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/plan/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

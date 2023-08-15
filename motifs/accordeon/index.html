@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Accordéon - Motifs de conception - Sofève Concept</title>
 	
-	<meta name="description" content="Un accordéon permet l&#39;affichage de contenu par un système de plier / déplier. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	<meta name="description" content="Un accordéon permet l&#39;affichage d&#39;une liste d&#39;éléments empilés dont le contenu  est révélé par un système de plier / déplier. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -135,13 +135,14 @@
           <li><a href="/motifs/alerte/">Message d&#39;alerte</a></li>
           <li><a href="/motifs/statut/">Notification</a></li>
           <li><a href="/motifs/onglets/">Onglets</a></li>
+          <li><a href="/motifs/panneau-depliant/">Panneau dépliant</a></li>
           <li><a href="/motifs/stepper/">Processus par étape</a></li>
           <li><a href="/motifs/retour-en-haut/">Retour en haut</a></li>
           <li><a href="/motifs/tableau-responsive/">Tableau adaptatif</a></li></ul>
 </nav></aside>
           <section class="item-80 rubMotif">
                <h1 id="contenu">Accordéon</h1>
-               <p>Un accordéon permet l&#39;affichage de contenu par un système de plier / déplier.</p>
+               <p>Un accordéon permet l&#39;affichage d&#39;une liste d&#39;éléments empilés dont le contenu  est révélé par un système de plier / déplier.</p>
 <button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
     Table des matières
 </button>
@@ -165,7 +166,7 @@
 <li>Le titre de chaque en-tête de l&rsquo;accordéon est contenu dans un élément <code>button</code> avec un attribut <code>aria-controls</code> qui fait référence à l&rsquo;<code>id</code> de l&rsquo;élément qu&rsquo;il contrôle et un attribut <code>aria-expanded</code> qui prend la valeur <code>true</code> quand la zone que gère l&rsquo;en-tête de l&rsquo;accordéon est visible et <code>false</code> quand la zone que gère l&rsquo;en-tête de l&rsquo;accordéon est invisible.</li>
 <li>L&rsquo;élément bouton est le seul élément à l&rsquo;intérieur de l&rsquo;élément titre. Autrement dit, s&rsquo;il existe d&rsquo;autres éléments visuellement persistants, ils ne sont pas inclus dans l&rsquo;élément d&rsquo;en-tête.</li>
 <li>Si le panneau d&rsquo;accordéon associé à un en-tête d&rsquo;accordéon est visible, et si l&rsquo;accordéon ne permet pas de réduire le panneau, l&rsquo;élément du bouton d&rsquo;en-tête a <code>aria-disabled</code> défini sur <code>true</code>.</li>
-<li>Chaque élément qui sert de conteneur pour le contenu du panneau a le rôle <code>region</code> et <code>aria-labelledby</code> avec une valeur qui fait référence au bouton qui contrôle l&rsquo;affichage du panneau. La région de rôle est particulièrement utile pour la perception de la structure par les utilisateurs de lecteurs d&rsquo;écran lorsque les panneaux contiennent des éléments d&rsquo;en-tête ou un accordéon imbriqué.</li>
+<li>Chaque élément qui sert de conteneur pour le contenu du panneau a le rôle <code>region</code> et un <code>id</code> avec une valeur qui fait référence au bouton qui contrôle l&rsquo;affichage du panneau. La région de rôle est particulièrement utile pour la perception de la structure par les utilisateurs de lecteurs d&rsquo;écran lorsque les panneaux contiennent des éléments d&rsquo;en-tête ou un accordéon imbriqué.</li>
 </ul>
 <h2 id="visuel">Visuel</h2>
 
