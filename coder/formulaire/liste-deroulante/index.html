@@ -145,16 +145,12 @@
                </aside>
           <section class="item-80 rubCode">
                <h1 id="contenu">Liste déroulante</h1>
-               <p>Dans les formulaires, les listes déroulantes doivent respecter certaines règles.</p><div id="accordeonGroup" class="accordeon tableDesMat">
-     <h2>
-         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
-             <span class="accordeon-title">Table des matières</span>
-             <span class="accordeon-icon" aria-hidden="true"></span>
-         </button>
-     </h2>
-     <div id="tdm" role="region" aria-labelledby="tableDesMatieres" class="accordeon-panel" hidden>
-         <div>
-          <nav id="TableOfContents">
+               <p>Dans les formulaires, les listes déroulantes doivent respecter certaines règles.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
+    Table des matières
+</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
   <ul>
     <li><a href="#règles-générales">Règles générales</a></li>
     <li><a href="#implémentation-html">Implémentation HTML</a>
@@ -165,9 +161,8 @@
     <li><a href="#regroupement-des-options">Regroupement des options</a></li>
   </ul>
 </nav>
-         </div>
-     </div>
-</div><h2 id="règles-générales">Règles générales</h2>
+</div>
+<h2 id="règles-générales">Règles générales</h2>
 <p>Les options proposées dans une liste déroulante doivent être ordonnées de manière logique :</p>
 <ul>
 <li>Ordre alphabétique (une liste de langues, par exemple).</li>

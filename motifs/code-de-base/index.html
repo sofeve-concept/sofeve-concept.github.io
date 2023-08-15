@@ -141,16 +141,12 @@
 </nav></aside>
           <section class="item-80 rubMotif">
                <h1 id="contenu"> Code de base</h1>
-               <p>La structure de base d&#39;un document HTML doit comporter impérativement plusieurs balises sémantiques appelées aussi régions.</p><div id="accordeonGroup" class="accordeon tableDesMat">
-     <h2>
-         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
-             <span class="accordeon-title">Table des matières</span>
-             <span class="accordeon-icon" aria-hidden="true"></span>
-         </button>
-     </h2>
-     <div id="tdm" role="region" aria-labelledby="tableDesMatieres" class="accordeon-panel" hidden>
-         <div>
-          <nav id="TableOfContents">
+               <p>La structure de base d&#39;un document HTML doit comporter impérativement plusieurs balises sémantiques appelées aussi régions.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
+    Table des matières
+</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
   <ul>
     <li><a href="#extraits-de-code">Extraits de code</a>
       <ul>
@@ -161,9 +157,8 @@
     </li>
   </ul>
 </nav>
-         </div>
-     </div>
-</div><p>Le critère 9.2 du référentiel général d’amélioration de l’acccessibilité (RGAA), rend obligatoire la présence de plusieurs balises sémantiques de région (<span lang="en">landmark</span>, en anglais) dans la page HTML :</p>
+</div>
+<p>Le critère 9.2 du référentiel général d’amélioration de l’acccessibilité (RGAA), rend obligatoire la présence de plusieurs balises sémantiques de région (<span lang="en">landmark</span>, en anglais) dans la page HTML :</p>
 <ul>
 <li><code>header</code> pour la zone d&rsquo;entête principale avec le rôle aria <code>role=&quot;banner&quot;</code> ;</li>
 <li><code>main</code> pour la zone de contenu principal avec le rôle aria <code>role=&quot;main&quot;</code> ;</li>

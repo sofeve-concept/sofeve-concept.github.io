@@ -143,16 +143,12 @@
 </nav></aside>
           <section class="item-80 rubMotif">
                <h1 id="contenu">Processus par étape</h1>
-               <p>Un processus par étape affiche la progression d&#39;une séquence en la divisant en plusieurs étapes logiques et numérotées comme lors d&#39;un processus d&#39;achat.</p><div id="accordeonGroup" class="accordeon tableDesMat">
-     <h2>
-         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
-             <span class="accordeon-title">Table des matières</span>
-             <span class="accordeon-icon" aria-hidden="true"></span>
-         </button>
-     </h2>
-     <div id="tdm" role="region" aria-labelledby="tableDesMatieres" class="accordeon-panel" hidden>
-         <div>
-          <nav id="TableOfContents">
+               <p>Un processus par étape affiche la progression d&#39;une séquence en la divisant en plusieurs étapes logiques et numérotées comme lors d&#39;un processus d&#39;achat.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
+    Table des matières
+</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
   <ul>
     <li><a href="#règles-dimplémentation-pour-laccessibilité">Règles d’implémentation pour l’accessibilité</a></li>
     <li><a href="#visuel">Visuel</a></li>
@@ -164,9 +160,8 @@
     </li>
   </ul>
 </nav>
-         </div>
-     </div>
-</div><h2 id="règles-dimplémentation-pour-laccessibilité">Règles d’implémentation pour l’accessibilité</h2>
+</div>
+<h2 id="règles-dimplémentation-pour-laccessibilité">Règles d’implémentation pour l’accessibilité</h2>
 <ul>
 <li>Le processus par étape sera balisé avec les balises <code>&lt;nav&gt;...&lt;/nav&gt;</code>  <strong>on ne posera pas d&rsquo;attribut</strong> <code>role=&quot;navigation</code>.</li>
 <li>Les différentes étapes du processus seront balisées par un liste ordonnée (l&rsquo;ordre ayant de l&rsquo;importance) <code>&lt;ol&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ol&gt;</code></li>

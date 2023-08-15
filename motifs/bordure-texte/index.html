@@ -143,16 +143,12 @@
 </nav></aside>
           <section class="item-80 rubMotif">
                <h1 id="contenu">Bordure de texte</h1>
-               <p>Extrait de code pour un créer une bordure de texte afin de le rendre lisible sur un fond de couleurs variées.</p><div id="accordeonGroup" class="accordeon tableDesMat">
-     <h2>
-         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
-             <span class="accordeon-title">Table des matières</span>
-             <span class="accordeon-icon" aria-hidden="true"></span>
-         </button>
-     </h2>
-     <div id="tdm" role="region" aria-labelledby="tableDesMatieres" class="accordeon-panel" hidden>
-         <div>
-          <nav id="TableOfContents">
+               <p>Extrait de code pour un créer une bordure de texte afin de le rendre lisible sur un fond de couleurs variées.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
+    Table des matières
+</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
   <ul>
     <li><a href="#règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</a></li>
     <li><a href="#visuel">Visuel</a></li>
@@ -164,9 +160,8 @@
     </li>
   </ul>
 </nav>
-         </div>
-     </div>
-</div><h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
+</div>
+<h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
 <p>Cette technique de bordure de texte en css permet de rendre le contraste entre le texte et l&rsquo;image conforme aux critères d&rsquo;accessibilité.</p>
 <p>Cette utilisation de bordure doit se faire avec parcimonie ; le lisibiité n&rsquo;étant pas la meilleure. On préférera, si possible, un texte avec un fond opacifié pour assurer le ratio de contraste de 4.5:1 entre le texte et l&rsquo;arrière-plan.</p>
 <h2 id="visuel">Visuel</h2>

@@ -143,16 +143,12 @@
 </nav></aside>
           <section class="item-80 rubMotif">
                <h1 id="contenu">Étiquette de champs</h1>
-               <p>Étiquette de champs simulant le visuel du texte affiché par défaut dans un champ de formulaire.</p><div id="accordeonGroup" class="accordeon tableDesMat">
-     <h2>
-         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
-             <span class="accordeon-title">Table des matières</span>
-             <span class="accordeon-icon" aria-hidden="true"></span>
-         </button>
-     </h2>
-     <div id="tdm" role="region" aria-labelledby="tableDesMatieres" class="accordeon-panel" hidden>
-         <div>
-          <nav id="TableOfContents">
+               <p>Étiquette de champs simulant le visuel du texte affiché par défaut dans un champ de formulaire.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
+    Table des matières
+</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
   <ul>
     <li><a href="#règles-dimplémentation-pour-laccessibilité">Règles d’implémentation pour l’accessibilité</a></li>
     <li><a href="#visuel">Visuel</a></li>
@@ -165,9 +161,8 @@
     </li>
   </ul>
 </nav>
-         </div>
-     </div>
-</div><h2 id="règles-dimplémentation-pour-laccessibilité">Règles d’implémentation pour l’accessibilité</h2>
+</div>
+<h2 id="règles-dimplémentation-pour-laccessibilité">Règles d’implémentation pour l’accessibilité</h2>
 <p>Dans un formulaire, il est possible d&rsquo;afficher un texte par défaut dans un champ via l&rsquo;attribut <code>placeholder</code>. Or, tout champ de formulaire doit avoir un <code>label</code> associé. Le fait de remplacer le libellé <code>label</code> par un attribut <code>placeholder</code> empêche l&rsquo;accessibilité du champ du formulaire puisque le libellé du <code>placeholder</code> disparaît au focus.<br>
 Le motif de conception suivant propose donc de simuler un <code>placeholder</code> en donnant au <code>label</code> le rendu visuel du <code>placeholder</code>.</p>
 <h2 id="visuel">Visuel</h2>

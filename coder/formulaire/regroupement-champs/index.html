@@ -145,16 +145,12 @@
                </aside>
           <section class="item-80 rubCode">
                <h1 id="contenu">Regroupement de champs</h1>
-               <p>Lorsque des champs de même nature sont présentés dans un formulaire, une bonne pratique d&#39;accessibilité consiste à les regrouper.</p><div id="accordeonGroup" class="accordeon tableDesMat">
-     <h2>
-         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
-             <span class="accordeon-title">Table des matières</span>
-             <span class="accordeon-icon" aria-hidden="true"></span>
-         </button>
-     </h2>
-     <div id="tdm" role="region" aria-labelledby="tableDesMatieres" class="accordeon-panel" hidden>
-         <div>
-          <nav id="TableOfContents">
+               <p>Lorsque des champs de même nature sont présentés dans un formulaire, une bonne pratique d&#39;accessibilité consiste à les regrouper.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
+    Table des matières
+</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
   <ul>
     <li><a href="#implémentation-html">Implémentation HTML</a></li>
     <li><a href="#regroupement-de-boutons-radios-et-de-cases-à-cocher">Regroupement de boutons radios et de cases à cocher</a>
@@ -165,9 +161,8 @@
     </li>
   </ul>
 </nav>
-         </div>
-     </div>
-</div><h2 id="implémentation-html">Implémentation HTML</h2>
+</div>
+<h2 id="implémentation-html">Implémentation HTML</h2>
 <p>Les champs de même nature sont regroupés et titré avec <code>fieldset</code> et <code>legend</code></p>
 <p><strong>Code HTML</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">fieldset</span><span class="p">&gt;</span>

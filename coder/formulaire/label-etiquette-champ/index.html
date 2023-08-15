@@ -145,16 +145,12 @@
                </aside>
           <section class="item-80 rubCode">
                <h1 id="contenu">Étiquette de champ</h1>
-               <p>Les étiquettes doivent décrire le rôle de chaque champ du formulaire et être correctement associées à leur champ.</p><div id="accordeonGroup" class="accordeon tableDesMat">
-     <h2>
-         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
-             <span class="accordeon-title">Table des matières</span>
-             <span class="accordeon-icon" aria-hidden="true"></span>
-         </button>
-     </h2>
-     <div id="tdm" role="region" aria-labelledby="tableDesMatieres" class="accordeon-panel" hidden>
-         <div>
-          <nav id="TableOfContents">
+               <p>Les étiquettes doivent décrire le rôle de chaque champ du formulaire et être correctement associées à leur champ.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
+    Table des matières
+</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
   <ul>
     <li><a href="#implémentation-html">Implémentation HTML</a>
       <ul>
@@ -169,9 +165,8 @@
     <li><a href="#étiquette-et-placeholder">Étiquette et placeholder</a></li>
   </ul>
 </nav>
-         </div>
-     </div>
-</div><div class="notice remarque" >   
+</div>
+<div class="notice remarque" >   
      <p> remarque </p>
      <p>
 Pour présenter l'étiquette de champ, les exemples de cette page associent l'étiquette à un champ de type `input`. Toutefois, ce qui est dit dans cette rubrique reste valable quelque soit l'élément HTML de champ utilisé. 

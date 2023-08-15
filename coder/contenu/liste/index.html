@@ -144,16 +144,12 @@
                </aside>
           <section class="item-80 rubCode">
                <h1 id="contenu">Listes</h1>
-               <p>Il existe 3 façons différentes d&#39;implémenter une liste dans une page web.</p><div id="accordeonGroup" class="accordeon tableDesMat">
-     <h2>
-         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
-             <span class="accordeon-title">Table des matières</span>
-             <span class="accordeon-icon" aria-hidden="true"></span>
-         </button>
-     </h2>
-     <div id="tdm" role="region" aria-labelledby="tableDesMatieres" class="accordeon-panel" hidden>
-         <div>
-          <nav id="TableOfContents">
+               <p>Il existe 3 façons différentes d&#39;implémenter une liste dans une page web.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
+    Table des matières
+</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
   <ul>
     <li><a href="#listes">Listes</a>
       <ul>
@@ -164,9 +160,8 @@
     </li>
   </ul>
 </nav>
-         </div>
-     </div>
-</div><h2 id="listes">Listes</h2>
+</div>
+<h2 id="listes">Listes</h2>
 <p>Les listes servent à présenter des élements sous forme de liste mais aussi les éléments d&rsquo;un menu : menu de navigation, fils d&rsquo;ariane, processus par étape, pagination.</p>
 <h3 id="liste-non-ordonnée-balises-ulul">Liste non ordonnée, balises <code>&lt;ul&gt;...&lt;/ul&gt;</code></h3>
 <ul>

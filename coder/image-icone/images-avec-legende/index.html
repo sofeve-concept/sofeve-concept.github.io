@@ -144,16 +144,12 @@
                </aside>
           <section class="item-80 rubCode">
                <h1 id="contenu">Images légendées</h1>
-               <p>Le HTML5 a introduit un nouvel élément &lt;figure&gt; pour insérer une image avec une légende.</p><div id="accordeonGroup" class="accordeon tableDesMat">
-     <h2>
-         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
-             <span class="accordeon-title">Table des matières</span>
-             <span class="accordeon-icon" aria-hidden="true"></span>
-         </button>
-     </h2>
-     <div id="tdm" role="region" aria-labelledby="tableDesMatieres" class="accordeon-panel" hidden>
-         <div>
-          <nav id="TableOfContents">
+               <p>Le HTML5 a introduit un nouvel élément &lt;figure&gt; pour insérer une image avec une légende.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
+    Table des matières
+</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
   <ul>
     <li><a href="#implémentation-html">Implémentation HTML</a></li>
     <li><a href="#code-et-rendu">Code et rendu</a>
@@ -164,9 +160,8 @@
     </li>
   </ul>
 </nav>
-         </div>
-     </div>
-</div><h2 id="implémentation-html">Implémentation HTML</h2>
+</div>
+<h2 id="implémentation-html">Implémentation HTML</h2>
 <p>Les images légendées doivent être balisées avec <code>&lt;figure role=&quot;figure&quot;&gt;</code> et <code>&lt;figcaption&gt;</code>.</p>
 <p>La balise <code>&lt;figure role=&quot;figure&quot;&gt;</code> doit :</p>
 <ul>

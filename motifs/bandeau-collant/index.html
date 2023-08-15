@@ -141,16 +141,12 @@
 </nav></aside>
           <section class="item-80 rubMotif">
                <h1 id="contenu">Bannière collante</h1>
-               <p>Une bannière collante dynamique. Au défilement de la page vers le bas, la bannière du haut disparaît ; elle réapparaît lors du défilement de la page vers le haut.</p><div id="accordeonGroup" class="accordeon tableDesMat">
-     <h2>
-         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
-             <span class="accordeon-title">Table des matières</span>
-             <span class="accordeon-icon" aria-hidden="true"></span>
-         </button>
-     </h2>
-     <div id="tdm" role="region" aria-labelledby="tableDesMatieres" class="accordeon-panel" hidden>
-         <div>
-          <nav id="TableOfContents">
+               <p>Une bannière collante dynamique. Au défilement de la page vers le bas, la bannière du haut disparaît ; elle réapparaît lors du défilement de la page vers le haut.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
+    Table des matières
+</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
   <ul>
     <li><a href="#règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</a></li>
     <li><a href="#visuel">Visuel</a></li>
@@ -163,9 +159,8 @@
     </li>
   </ul>
 </nav>
-         </div>
-     </div>
-</div><h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
+</div>
+<h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
 <p>Les règles d&rsquo;implémentation de la bannière sont celles appliquées à une zone recevant l&rsquo;entête et le menu principal de la page, à savoir :</p>
 <ul>
 <li>une région <code>header</code> avec le rôle aria <code>role=&quot;banner&quot;</code> ;</li>

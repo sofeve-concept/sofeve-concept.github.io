@@ -141,16 +141,12 @@
 </nav></aside>
           <section class="item-80 rubMotif">
                <h1 id="contenu">Lien d&#39;accès rapide</h1>
-               <p>Un lien d&#39;accès rapide permet d&#39;accéder rapidement à une zone de contenu de la page ou de sauter une zone dans la page.</p><div id="accordeonGroup" class="accordeon tableDesMat">
-     <h2>
-         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
-             <span class="accordeon-title">Table des matières</span>
-             <span class="accordeon-icon" aria-hidden="true"></span>
-         </button>
-     </h2>
-     <div id="tdm" role="region" aria-labelledby="tableDesMatieres" class="accordeon-panel" hidden>
-         <div>
-          <nav id="TableOfContents">
+               <p>Un lien d&#39;accès rapide permet d&#39;accéder rapidement à une zone de contenu de la page ou de sauter une zone dans la page.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
+    Table des matières
+</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
   <ul>
     <li><a href="#règles-dimplémentation-pour-laccessibilité">Règles d’implémentation pour l’accessibilité</a></li>
     <li><a href="#visuel">Visuel</a></li>
@@ -162,9 +158,8 @@
     </li>
   </ul>
 </nav>
-         </div>
-     </div>
-</div><h2 id="règles-dimplémentation-pour-laccessibilité">Règles d’implémentation pour l’accessibilité</h2>
+</div>
+<h2 id="règles-dimplémentation-pour-laccessibilité">Règles d’implémentation pour l’accessibilité</h2>
 <p>Dans ce motif de conception, le lien d&rsquo;accès rapide, parfois appelé aussi lien d&rsquo;évitement (<span lang="en">skip link</span> en anglais) lorsqu&rsquo;il permet de sauter une zone de la page, est invisible par défaut sur la page et n&rsquo;apparaît qu&rsquo;à la prise de focus pour une navigation au clavier.<br>
 Le critère 12.7 du référentiel général d’amélioration de l’acccessibilité (RGAA) rend obligatoire la présence d&rsquo;un lien d&rsquo;accès rapide au contenu principal.</p>
 <h2 id="visuel">Visuel</h2>

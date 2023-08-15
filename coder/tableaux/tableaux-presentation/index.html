@@ -143,24 +143,19 @@
                </aside>
           <section class="item-80 rubCode">
                <h1 id="contenu">Tableaux de mise en forme</h1>
-               <p>Un tableau de mise en forme ou de présentation sert, comme son nom l&#39;indique, uniquement à présenter le contenu de la page.</p><div id="accordeonGroup" class="accordeon tableDesMat">
-     <h2>
-         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
-             <span class="accordeon-title">Table des matières</span>
-             <span class="accordeon-icon" aria-hidden="true"></span>
-         </button>
-     </h2>
-     <div id="tdm" role="region" aria-labelledby="tableDesMatieres" class="accordeon-panel" hidden>
-         <div>
-          <nav id="TableOfContents">
+               <p>Un tableau de mise en forme ou de présentation sert, comme son nom l&#39;indique, uniquement à présenter le contenu de la page.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
+    Table des matières
+</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
   <ul>
     <li><a href="#tableaux-servant-à-la-mise-en-forme">Tableaux servant à la mise en forme</a></li>
     <li><a href="#test-de-laccessibilité-du-tableau">Test de l&rsquo;accessibilité du tableau</a></li>
   </ul>
 </nav>
-         </div>
-     </div>
-</div><h2 id="tableaux-servant-à-la-mise-en-forme">Tableaux servant à la mise en forme</h2>
+</div>
+<h2 id="tableaux-servant-à-la-mise-en-forme">Tableaux servant à la mise en forme</h2>
 <p>Avant l&rsquo;existence des propriétés CSS flexbox ou gridbox, les tableaux étaient utilisés pour mettre en forme les informations sur une page (une colonne pour revevoir un menu et une autre pour recevoir du contenu, par exemple).<br>
 Aujourd&rsquo;hui, les tableaux servent de moins en moins à cela mais dans le cas où ils sont utilisés pour mettre en forme le contenu de la page, il faudra rajouter le role aria <code>role=&quot;presentation&quot;</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">table</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;presentation&#34;</span><span class="p">&gt;</span>

@@ -143,16 +143,12 @@
 </nav></aside>
           <section class="item-80 rubMotif">
                <h1 id="contenu">Onglets</h1>
-               <p>Les onglets sont des affichages dynamiques de contenu dans une même zone de la page via un système d&#39;étiquettes cliquables.</p><div id="accordeonGroup" class="accordeon tableDesMat">
-     <h2>
-         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
-             <span class="accordeon-title">Table des matières</span>
-             <span class="accordeon-icon" aria-hidden="true"></span>
-         </button>
-     </h2>
-     <div id="tdm" role="region" aria-labelledby="tableDesMatieres" class="accordeon-panel" hidden>
-         <div>
-          <nav id="TableOfContents">
+               <p>Les onglets sont des affichages dynamiques de contenu dans une même zone de la page via un système d&#39;étiquettes cliquables.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
+    Table des matières
+</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
   <ul>
     <li><a href="#règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</a></li>
     <li><a href="#visuel">Visuel</a></li>
@@ -165,9 +161,8 @@
     </li>
   </ul>
 </nav>
-         </div>
-     </div>
-</div><h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
+</div>
+<h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
 <ul>
 <li>L&rsquo;élément qui sert de conteneur pour l&rsquo;ensemble d&rsquo;onglets a le rôle <code>role=&quot;tablist&quot;</code>.</li>
 <li>Si l&rsquo;élément <code>tablist</code> est orienté verticalement, sa propriété <code>aria-orientation</code> est définie sur <code>vertical</code> (la valeur par défaut de <code>aria-orientation</code> pour un élément de tablist est horizontal.).</li>

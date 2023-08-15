@@ -141,16 +141,12 @@
 </nav></aside>
           <section class="item-80 rubMotif">
                <h1 id="contenu">Retour en haut</h1>
-               <p>Extrait de code pour un lien de retour en haut de page apparaissant lors du défilement de la page.</p><div id="accordeonGroup" class="accordeon tableDesMat">
-     <h2>
-         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
-             <span class="accordeon-title">Table des matières</span>
-             <span class="accordeon-icon" aria-hidden="true"></span>
-         </button>
-     </h2>
-     <div id="tdm" role="region" aria-labelledby="tableDesMatieres" class="accordeon-panel" hidden>
-         <div>
-          <nav id="TableOfContents">
+               <p>Extrait de code pour un lien de retour en haut de page apparaissant lors du défilement de la page.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
+    Table des matières
+</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
   <ul>
     <li><a href="#règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</a></li>
     <li><a href="#visuel">Visuel</a></li>
@@ -163,9 +159,8 @@
     </li>
   </ul>
 </nav>
-         </div>
-     </div>
-</div><h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
+</div>
+<h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
 <ul>
 <li>Le &ldquo;bouton&rdquo; de retour en haut est en fait un lien travaillé en CSS.</li>
 <li>Il se présente sous forme d&rsquo;une icône &ldquo;flèche&rdquo; qui sera cachée aux logiciels de synthèse vocale via l&rsquo;attribut <code>aria-hidden=&quot;true&quot;</code>.</li>

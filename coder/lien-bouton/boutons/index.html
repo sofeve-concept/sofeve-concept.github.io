@@ -141,16 +141,12 @@
                </aside>
           <section class="item-80 rubCode">
                <h1 id="contenu">Les boutons</h1>
-               <p>Les boutons permettent de déclencher des actions : envoyer des informations via un formulaire, déployer/replier un menu déroulant, ouvrir ou fermer une fenêtre modale, afficher l’élément suivant ou précédent dans un carrousel...</p><div id="accordeonGroup" class="accordeon tableDesMat">
-     <h2>
-         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
-             <span class="accordeon-title">Table des matières</span>
-             <span class="accordeon-icon" aria-hidden="true"></span>
-         </button>
-     </h2>
-     <div id="tdm" role="region" aria-labelledby="tableDesMatieres" class="accordeon-panel" hidden>
-         <div>
-          <nav id="TableOfContents">
+               <p>Les boutons permettent de déclencher des actions : envoyer des informations via un formulaire, déployer/replier un menu déroulant, ouvrir ou fermer une fenêtre modale, afficher l’élément suivant ou précédent dans un carrousel...</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
+    Table des matières
+</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
   <ul>
     <li><a href="#règles-dimplémentation-dun-bouton">Règles d&rsquo;implémentation d&rsquo;un bouton</a>
       <ul>
@@ -165,9 +161,8 @@
     </li>
   </ul>
 </nav>
-         </div>
-     </div>
-</div><h2 id="règles-dimplémentation-dun-bouton">Règles d&rsquo;implémentation d&rsquo;un bouton</h2>
+</div>
+<h2 id="règles-dimplémentation-dun-bouton">Règles d&rsquo;implémentation d&rsquo;un bouton</h2>
 <p>Les boutons déclenchent des actions. Ils sont implémentés avec les balises <code>&lt;input type=&quot;...&quot;&gt;</code> et <code>&lt;button&gt;... &lt;/button&gt;</code></p>
 <h3 id="ce-quil-faut-retenir">Ce qu&rsquo;il faut retenir</h3>
 <p>Les boutons sont utilisés pour :</p>

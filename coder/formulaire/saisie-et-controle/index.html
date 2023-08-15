@@ -145,16 +145,12 @@
                </aside>
           <section class="item-80 rubCode">
                <h1 id="contenu">Saisie et contrôle du formulaire</h1>
-               <p>La mise en place d&#39;aide à la saisie et la gestion des erreurs doivent respecter des règles d&#39;accessibilité.</p><div id="accordeonGroup" class="accordeon tableDesMat">
-     <h2>
-         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
-             <span class="accordeon-title">Table des matières</span>
-             <span class="accordeon-icon" aria-hidden="true"></span>
-         </button>
-     </h2>
-     <div id="tdm" role="region" aria-labelledby="tableDesMatieres" class="accordeon-panel" hidden>
-         <div>
-          <nav id="TableOfContents">
+               <p>La mise en place d&#39;aide à la saisie et la gestion des erreurs doivent respecter des règles d&#39;accessibilité.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
+    Table des matières
+</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
   <ul>
     <li><a href="#champ-obligatoire">Champ obligatoire</a></li>
     <li><a href="#aide-à-la-saisie">Aide à la saisie</a>
@@ -173,9 +169,8 @@
     </li>
   </ul>
 </nav>
-         </div>
-     </div>
-</div><h2 id="champ-obligatoire">Champ obligatoire</h2>
+</div>
+<h2 id="champ-obligatoire">Champ obligatoire</h2>
 <p>Si le champ est obligatoire, on utilisera un signe distinctif intégré dans la balise <code>&lt;label&gt;</code>. Ce signe ne sera pas implémenté via CSS pour être accessible.<br>
 <strong>Rappel : en aucun cas, on ne signalera le champ obligatoire en utilisant la couleur</strong> (exemple à ne pas suivre : &ldquo;Les champs obligatoires sont signalés en rouge&rdquo;).<br>
 Enfin, la mention de la présence de champs obligatoire dans le formulaire sera signalée <strong>au début</strong> du formulaire.<br>

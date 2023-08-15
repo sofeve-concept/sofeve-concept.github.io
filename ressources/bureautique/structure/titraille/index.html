@@ -143,16 +143,12 @@
           </aside>
           <section class="item-80 rubCode">
                <h1 id="contenu">Titraille</h1>
-               <p>L&#39;utilisation des titres permet de naviguer plus facilement de titre en titre dans le document. De plus, cela permet de créer automatiquement une table des matières.</p><div id="accordeonGroup" class="accordeon tableDesMat">
-     <h2>
-         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
-             <span class="accordeon-title">Table des matières</span>
-             <span class="accordeon-icon" aria-hidden="true"></span>
-         </button>
-     </h2>
-     <div id="tdm" role="region" aria-labelledby="tableDesMatieres" class="accordeon-panel" hidden>
-         <div>
-          <nav id="TableOfContents">
+               <p>L&#39;utilisation des titres permet de naviguer plus facilement de titre en titre dans le document. De plus, cela permet de créer automatiquement une table des matières.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
+    Table des matières
+</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
   <ul>
     <li><a href="#règles">Règles</a></li>
     <li><a href="#pourquoi-">Pourquoi ?</a></li>
@@ -164,9 +160,8 @@
     </li>
   </ul>
 </nav>
-         </div>
-     </div>
-</div><h2 id="règles">Règles</h2>
+</div>
+<h2 id="règles">Règles</h2>
 <ol>
 <li>Le contenu doit être structuré à l’aide des titres de niveau 1 à 6.</li>
 <li>La hiérarchie des titres doit être conservée ; il faut donc éviter de passer directement d’un titre 2 à un titre 4, par exemple.</li>

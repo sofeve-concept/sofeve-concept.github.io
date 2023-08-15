@@ -141,16 +141,12 @@
 </nav></aside>
           <section class="item-80 rubMotif">
                <h1 id="contenu">Accordéon</h1>
-               <p>Un accordéon permet l&#39;affichage de contenu par un système de plier / déplier.</p><div id="accordeonGroup" class="accordeon tableDesMat">
-     <h2>
-         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
-             <span class="accordeon-title">Table des matières</span>
-             <span class="accordeon-icon" aria-hidden="true"></span>
-         </button>
-     </h2>
-     <div id="tdm" role="region" aria-labelledby="tableDesMatieres" class="accordeon-panel" hidden>
-         <div>
-          <nav id="TableOfContents">
+               <p>Un accordéon permet l&#39;affichage de contenu par un système de plier / déplier.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
+    Table des matières
+</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
   <ul>
     <li><a href="#règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</a></li>
     <li><a href="#visuel">Visuel</a></li>
@@ -163,9 +159,8 @@
     </li>
   </ul>
 </nav>
-         </div>
-     </div>
-</div><h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
+</div>
+<h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
 <ul>
 <li>Le titre de chaque en-tête de l&rsquo;accordéon est contenu dans un élément <code>button</code> avec un attribut <code>aria-controls</code> qui fait référence à l&rsquo;<code>id</code> de l&rsquo;élément qu&rsquo;il contrôle et un attribut <code>aria-expanded</code> qui prend la valeur <code>true</code> quand la zone que gère l&rsquo;en-tête de l&rsquo;accordéon est visible et <code>false</code> quand la zone que gère l&rsquo;en-tête de l&rsquo;accordéon est invisible.</li>
 <li>L&rsquo;élément bouton est le seul élément à l&rsquo;intérieur de l&rsquo;élément titre. Autrement dit, s&rsquo;il existe d&rsquo;autres éléments visuellement persistants, ils ne sont pas inclus dans l&rsquo;élément d&rsquo;en-tête.</li>

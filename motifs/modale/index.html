@@ -143,16 +143,12 @@
 </nav></aside>
           <section class="item-80 rubMotif">
                <h1 id="contenu">Fenêtre modale</h1>
-               <p>Une fenêtre modale est une fenêtre qui apparaît par-dessus la fenêtre en cours du navigateur et qui prend le contrôle total du clavier et de l&#39;écran.</p><div id="accordeonGroup" class="accordeon tableDesMat">
-     <h2>
-         <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="tdm"  id="tableDesMatieres">
-             <span class="accordeon-title">Table des matières</span>
-             <span class="accordeon-icon" aria-hidden="true"></span>
-         </button>
-     </h2>
-     <div id="tdm" role="region" aria-labelledby="tableDesMatieres" class="accordeon-panel" hidden>
-         <div>
-          <nav id="TableOfContents">
+               <p>Une fenêtre modale est une fenêtre qui apparaît par-dessus la fenêtre en cours du navigateur et qui prend le contrôle total du clavier et de l&#39;écran.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
+    Table des matières
+</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
   <ul>
     <li><a href="#règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</a></li>
     <li><a href="#visuel">Visuel</a></li>
@@ -165,9 +161,8 @@
     </li>
   </ul>
 </nav>
-         </div>
-     </div>
-</div><h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
+</div>
+<h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
 <ul>
 <li>Une fenêtre modale porte le rôle aria <code>role=&quot;dialog&quot;</code>, l&rsquo;attribut <code>aria-modal=&quot;true&quot;</code> et un attribut <code>aria-labelledby</code> qui fait référence à l&rsquo;<code>id</code> de l&rsquo;élément contenant le titre de la boîte de dialogue.</li>
 <li>Une fenêtre modale est considéré comme un changement de contexte. On veillera donc à commencer son contenu par un titre de niveau 1 (élément HTML <code>h1</code>).</li>
