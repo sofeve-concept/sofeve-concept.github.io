@@ -3,9 +3,9 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Contraste de couleurs - Couleurs - Coder accessible - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Contraste accessible - Couleurs - Coder accessible - Sofève Concept</title>
 	
-	<meta name="description" content="Les règles d&#39;accessibilité imposent des rapports minimaux de contrastes entre la couleur du fond et celle du texte ou de l&#39;élément graphique de la page pour en améliorer la lisibilité. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	<meta name="description" content="Le contraste de couleurs entre l&#39;avant-plan et l&#39;arrière-plan doit être suffisamment accentué pour permettre une bonne lisibilité du contenu. Un contraste insuffisant est une des erreurs les plus fréquentes en matière d&#39;accessibilité numérique. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -104,7 +104,7 @@
   <li><a href="/">Accueil</a></li>
   <li><a href="/coder/">Coder accessible</a></li>
   <li><a href="/coder/couleurs/">Couleurs</a></li>
-  <li aria-current="page" tabindex="-1">Contraste de couleurs</li></ol>
+  <li aria-current="page" tabindex="-1">Contraste accessible</li></ol>
 </nav>
 <div>
 <button onclick="window.print();">
@@ -125,8 +125,8 @@
 		<li><a href="https://sofeve-concept.github.io/coder/contenu/">Contenu</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/couleurs/" aria-current="true" >Couleurs</a>
 			
-			<ul><li><a href="https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs/" aria-current="page" >Contraste de couleurs</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs-accessible/">Contraste accessible</a></li>
+			<ul><li><a href="https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs/">Contraste de couleurs</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs-accessible/" aria-current="page" >Contraste accessible</a></li>
 				</ul></li>
 		<li><a href="https://sofeve-concept.github.io/coder/navigation/">Navigation</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/lien-bouton/">Liens et boutons</a></li>
@@ -140,85 +140,103 @@
 
                </aside>
           <section class="item-80 rubCode">
-               <h1 id="contenu">Contraste de couleurs</h1>
-               <p>Les règles d&#39;accessibilité imposent des rapports minimaux de contrastes entre la couleur du fond et celle du texte ou de l&#39;élément graphique de la page pour en améliorer la lisibilité.</p>
+               <h1 id="contenu">Contraste accessible</h1>
+               <p>Le contraste de couleurs entre l&#39;avant-plan et l&#39;arrière-plan doit être suffisamment accentué pour permettre une bonne lisibilité du contenu. Un contraste insuffisant est une des erreurs les plus fréquentes en matière d&#39;accessibilité numérique.</p>
 <button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
     Table des matières
 </button>
 <div id="tdm" role="region" tabindex="-1">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#définition-du-constraste-et-du-rapport-de-contraste">Définition du constraste et du rapport de contraste</a></li>
-    <li><a href="#calcul-du-rapport-de-contraste">Calcul du rapport de contraste</a>
+    <li><a href="#ce-quil-faut-retenir">Ce qu’il faut retenir</a></li>
+    <li><a href="#contraste-requis-entre-les-textes-et-larrière-plan">Contraste requis entre les textes et l’arrière-plan</a>
       <ul>
-        <li><a href="#eacutetape-1--calcul-des-composantes-non-linéaires-du-code-couleur">Étape 1 : calcul des composantes non linéaires du code couleur</a></li>
-        <li><a href="#eacutetape-2--calcul-de-la-luminance-relative-de-la-couleur">Étape 2 : calcul de la luminance relative de la couleur</a></li>
-        <li><a href="#eacutetape-3--calcul-du-rapport-de-contraste-entre-2-couleurs">Étape 3 : calcul du rapport de contraste entre 2 couleurs</a></li>
+        <li><a href="#contraste-minimal-requis-niveau-aa-du-wcag">Contraste minimal requis (niveau AA du WCAG)</a></li>
+        <li><a href="#contraste-augmenté-niveau-aaa-du-wcag">Contraste augmenté (niveau AAA du WCAG)</a></li>
+        <li><a href="#cas-de-non-application-de-ces-critères-de-contraste">Cas de non application de ces critères de contraste</a></li>
       </ul>
     </li>
+    <li><a href="#contraste-minimal-entre-les-éléments-graphiques-informatifs-et-interactifs-et-larrière-plan">Contraste minimal entre les éléments graphiques informatifs et interactifs et l&rsquo;arrière-plan</a></li>
+    <li><a href="#tableau-récapitulatif">Tableau récapitulatif</a></li>
   </ul>
 </nav>
 </div>
-<h2 id="définition-du-constraste-et-du-rapport-de-contraste">Définition du constraste et du rapport de contraste</h2>
-<p>Le contraste de couleurs est la différence de luminosité entre les couleurs de premier et d&rsquo;arrière-plan.<br>
-Le rapport de contraste se calcule à partir de la différence de luminance (intensité de lumière émise) de chacune des couleurs ; il est compris entre 1 et 21 et exprimé sous la forme « 1:1 », « 21:1 ». Plus le nombre est grand, plus le contraste est élevé.</p>
-<h2 id="calcul-du-rapport-de-contraste">Calcul du rapport de contraste</h2>
-<p>Pour calculer le rapport de contraste entre deux couleurs, on va commencer par calculer la luminance relative de chacune des couleurs.<br>
-Une couleur peut être codée selon ses composantes <abbr title="Rouge, Vert, Bleu">RVB</abbr> (ou <abbr title="Red, Green, Blue">RGB</abbr> en anglais) ; les valeurs allant de 0 à 255. Ainsi, le noir pur se code rgb(0,0,0) et la blanc pur se code rgb(255,255,255).</p>
-<h3 id="eacutetape-1--calcul-des-composantes-non-linéaires-du-code-couleur">Étape 1 : calcul des composantes non linéaires du code couleur</h3>
-<p>La première étape consiste à calculer à partir des valeurs RVB de la couleur les valeurs non linéaires comprises entre 0 (noir) et 1 (blanc) :</p>
+<h2 id="ce-quil-faut-retenir">Ce qu’il faut retenir</h2>
+<p>La couleur <strong>ne doit jamais</strong> être la seule façon de véhiculer une information, d’indiquer une action&hellip; (Une personne daltonienne, par exemple, ne perçoit pas la couleur rouge. Si, dans un formulaire, vous demandez à ce que les champs signalés en rouge soient obligatoirement renseignés, cette dernière ne saura pas quels champs absolument renseigner).</p>
+<p>On veillera donc à ce que l&rsquo;information soit compréhensible même en l’absence de couleurs. <br>
+Exemple : Pour présenter un graphique, les lignes ou secteurs seront représentés avec des motifs.</p>
+<h2 id="contraste-requis-entre-les-textes-et-larrière-plan">Contraste requis entre les textes et l’arrière-plan</h2>
+<p>Le <abbr title="Référentiel général d&#39;amélioration de l&#39;accessibilité">RGAA</abbr> impose seulement le respect du critère de contraste du niveau AA du WCAG.</p>
+<h3 id="contraste-minimal-requis-niveau-aa-du-wcag">Contraste minimal requis (niveau AA du WCAG)</h3>
+<p>Le rapport de constraste à respecter est le suivant :</p>
 <ul>
-<li>Prenons la première composante du code couleur RVB, à savoir le code pour le rouge, et calculons le rouge non linéaire.
+<li>Texte normal non gras inférieur à 18pt : rapport de <strong>4.5</strong> pour 1</li>
+<li>Texte normal gras inférieur à 14pt : rapport de <strong>4.5</strong> pour 1</li>
+<li>Grand texte non gras inférieur à 18pt : rapport de <strong>3</strong> pour 1</li>
+<li>Grand texte gras inférieur à 14pt : rapport de <strong>3</strong> pour 1</li>
+</ul>
+<h3 id="contraste-augmenté-niveau-aaa-du-wcag">Contraste augmenté (niveau AAA du WCAG)</h3>
+<p>Le rapport de constraste à respecter est le suivant :</p>
 <ul>
-<li>Diviser le premier composant (R) de l’étape 1 par 255 (R1 = R/255)
+<li>Texte normal non gras inférieur à 18pt : rapport de <strong>7</strong> pour 1</li>
+<li>Texte normal gras inférieur à 14pt : rapport de <strong>7</strong> pour 1</li>
+<li>Grand texte non gras inférieur à 18pt : rapport de <strong>4.5</strong> pour 1</li>
+<li>Grand texte gras inférieur à 14pt : rapport de <strong>4.5</strong> pour 1</li>
+</ul>
+<h3 id="cas-de-non-application-de-ces-critères-de-contraste">Cas de non application de ces critères de contraste</h3>
+<p>Les critères sont non applicables dans les cas suivants :</p>
 <ul>
-<li>si R1 ≤ 0,03928 alors R2 = R1 / 12,92</li>
-<li>si R1 &gt; 0,03928 alors R2 = ((R1 + 0.055) / 1.055)</li>
+<li>Le texte fait partie d’un logo ou d’un nom de marque d’un organisme ou d’une société ;</li>
+<li>Le texte ou l’image de texte est purement décoratif ;</li>
+<li>Le texte fait partie d’une image véhiculant une information mais le texte lui-même n’apporte aucune information essentielle ;</li>
+<li>Le texte ou l’image de texte fait partie d’un élément d’interface sur lequel aucune action n’est possible (par exemple un bouton avec l’attribut <code>disabled</code>).</li>
 </ul>
-</li>
-<li>Rouge non linéaire (Rnl) : Rnl = R2 x 0,2126</li>
-</ul>
-</li>
-<li>Prenons la deuxième composante du code couleur RVB, à savoir le code pour le vert, et calculons le vert non linéaire.
+<h2 id="contraste-minimal-entre-les-éléments-graphiques-informatifs-et-interactifs-et-larrière-plan">Contraste minimal entre les éléments graphiques informatifs et interactifs et l&rsquo;arrière-plan</h2>
+<p>Les éléments graphiques sont :</p>
 <ul>
-<li>Diviser le deuxième composant (V) de l’étape 1 par 255 (V1 = R/255)
-<ul>
-<li>si V1 ≤ 0,03928 alors V2 = V1 / 12,92</li>
-<li>si V1 &gt; 0,03928 alors V2 = ((V1 + 0.055) / 1.055)</li>
+<li>des pictogrammes informatifs  ;</li>
+<li>des pictogrammes interactifs seuls, lorsqu’ils ne sont pas accompagnés d’un texte  ;</li>
+<li>des bordures de champs de formulaire  ;</li>
+<li>des onglets.
+Ce critère de contraste minimum s&rsquo;applique aussi à deux éléments juxtaposés. Ainsi, si vous voulez ne pas souligner par défaut les liens mais les rendre repérable par la couleur (et un élément visuel supplémentaire comme le gras par exemple - n&rsquo;oubliez pas : l&rsquo;information de doit pas être véhiculée uniquement par la couleur), vous devez veiller à ce que le contraste de couleur entre le texte et le lien soit conforme à ce critère.</li>
 </ul>
-</li>
-<li>Vert non linéaire (Vnl) :  Vnl = V2 x 0,7152</li>
-</ul>
-</li>
-<li>Prenons la troisième composante du code couleur RVB, à savoir le code pour le bleu, et calculons le bleu non linéaire.
-<ul>
-<li>Diviser le troisème composant (B) de l’étape 1 par 255 (V1 = R/255)
-<ul>
-<li>si V1 ≤ 0,03928 alors V2 = V1 / 12,92</li>
-<li>si V1 &gt; 0,03928 alors V2 = ((V1 + 0.055) / 1.055)</li>
-</ul>
-</li>
-<li>Bleu non linéaire (Bnl) : Bnl = V2 x 0,0722</li>
-</ul>
-</li>
-</ul>
-<h3 id="eacutetape-2--calcul-de-la-luminance-relative-de-la-couleur">Étape 2 : calcul de la luminance relative de la couleur</h3>
-<p>Pour obtenir la luminance relative (L), additionnez les valeurs non linéaires obtenues à l&rsquo;étape 1.
-L = Rnl + Vnl + Bnl</p>
-<h3 id="eacutetape-3--calcul-du-rapport-de-contraste-entre-2-couleurs">Étape 3 : calcul du rapport de contraste entre 2 couleurs</h3>
-<p>Après avoir effectué les calculs des étapes 1 et 2 pour la deuxième couleur, on va calculer le rapport de contraste entre les deux couleurs de la manière suivante :<br>
-Rapport de contraste = (L1 + 0.05) / (L2 + 0.05), où :</p>
-<ul>
-<li>L1 représente la luminance de la première couleur ;</li>
-<li>L2 représente la luminance de la deuxième couleur.</li>
-</ul>
+<p>Pour ces éléments, le rapport de contraste minimum à atteindre est de <strong>3</strong> pour 1, quel que soit le niveau du WCAG visé (AA ou AAA).</p>
+<h2 id="tableau-récapitulatif">Tableau récapitulatif</h2>
+
+<table class="responsive style2">
+   <caption>Rapport de constraste de couleurs requis</caption>
+   <thead>
+<tr>
+    <th scope="col">Type de contenu</th>
+    <th scope="col">Ratio minimum (niveau AA)</th>
+    <th scope="col">Ratio optimal (niveau AAA)</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Petit texte : <br>Texte non gras inférieur à 18pt (ou 24px ou 1.5em)<br>Texte gras inférieur à 14pt (ou 18.5px ou 1.15em)</td>
+    <td>4.5 : 1</td>
+    <td>7 : 1</td>
+  </tr>
+  <tr>
+     <td>Grand texte : <br>Texte non gras supérieur à 18pt (ou 24px ou 1.5em)<br>Texte gras supérieur à 14pt (ou 18.5px ou 1.15em)</td>
+     <td>3 : 1</td>
+    <td>4.5 : 1</td>
+  </tr>
+  <tr>
+    <td>Composants d'interface graphiques&nbsp;;<br>&Eacute;léments graphiques porteurs d'information&nbsp;;<br>Couleurs contiguës entre éléments graphiques</td>
+     <td>3 : 1</td>
+     <td>Non défini</td>
+  </tr>
+  </tbody>
+</table>
+
 <div class="notice astuce" >   
      <p> astuce </p>
      <p>
-Pour s'assurer que le contraste est conforme, inutile de se lancer dans des calculs savants ! Des outils le feront pour vous. Pour cela, utilisez les outils de vérification présentés dans la rubrique <a href="/ressources/outils/outils-couleurs/">Ressources - Outils de vérification - Contraste de couleurs</a>.
+Pour s'assurer que le contraste est conforme, utilisez les outils de vérification présentés dans la rubrique <a href="/ressources/outils/outils-couleurs/">Ressources - Outils de vérification - Contraste de couleurs</a>.
 </p>
 </div>
-
           </section>
           
      </div>

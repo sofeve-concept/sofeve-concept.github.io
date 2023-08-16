@@ -12,7 +12,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs/</guid>
-      <description>Contraste suffisant entre les textes et l’arrière-plan Le rapport de constraste à respecter est le suivant :</description>
+      <description>Définition du constraste et du rapport de contraste Le contraste de couleurs est la différence de luminosité entre les couleurs de premier et d&amp;rsquo;arrière-plan.</description>
+    </item>
+    
+    <item>
+      <title>Contraste accessible</title>
+      <link>https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs-accessible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs-accessible/</guid>
+      <description>Ce qu’il faut retenir La couleur ne doit jamais être la seule façon de véhiculer une information, d’indiquer une action&amp;hellip; (Une personne daltonienne, par exemple, ne perçoit pas la couleur rouge.</description>
     </item>
     
   </channel>
