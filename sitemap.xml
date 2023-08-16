@@ -14,6 +14,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs-accessible/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/ressources/outils/outils-page-web/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -33,12 +39,6 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/couleur/contraste/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -134,6 +134,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/structure/code-base/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -141,12 +147,6 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/coder/contenu/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs-accessible/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
