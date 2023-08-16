@@ -332,6 +332,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/ressources/outils/liste-de-verification/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/navigation/fil-ariane/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -345,12 +351,6 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/ressources/outils/liste-de-verification/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

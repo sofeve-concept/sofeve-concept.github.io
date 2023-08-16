@@ -453,6 +453,15 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
     </item>
     
     <item>
+      <title>Évaluer l&#39;accessibilité de son site</title>
+      <link>https://sofeve-concept.github.io/ressources/outils/liste-de-verification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/ressources/outils/liste-de-verification/</guid>
+      <description>Le premier test à réaliser est assez simple : mettez votre souris de côté et naviguez dans vos pages en utilisant uniquement les touches du clavier.</description>
+    </item>
+    
+    <item>
       <title>Fil d&#39;Ariane</title>
       <link>https://sofeve-concept.github.io/coder/navigation/fil-ariane/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -469,15 +478,6 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
       <guid>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</guid>
       <description>Implémentation HTML Les images légendées doivent être balisées avec &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; et &amp;lt;figcaption&amp;gt;.
 La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</description>
-    </item>
-    
-    <item>
-      <title>Liste de vérification</title>
-      <link>https://sofeve-concept.github.io/ressources/outils/liste-de-verification/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/ressources/outils/liste-de-verification/</guid>
-      <description>Liste de 45 items répartis en 12 thématiques à vérifier sur ses pages.ThématiquesCritèresCochez si validéStructrure HTMLDéclarer un doctype valide.</description>
     </item>
     
     <item>
