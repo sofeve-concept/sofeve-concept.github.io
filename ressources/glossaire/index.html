@@ -3,9 +3,9 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Liens et boutons - Coder accessible - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Glossaire - Ressources - Sofève Concept</title>
 	
-	<meta name="description" content="Selon le type de lien ou d&#39;action que nous souhaitons mettre en place dans notre site web, nous choisirons soit un lien soit un bouton. Découvrez les principes d&#39;accessibilité numérique qui régissent leur implémentation. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	<meta name="description" content="Définition des termes fréquemment utilisés en accessibilité numérique. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -46,13 +46,13 @@
 			<li class="accueil">
 				<a href="/">Accueil</a></li>	
 			<li class="coder">
-				<button aria-haspopup="true" aria-expanded="false" aria-controls="coder" aria-current="true">Coder accessible</button>
+				<button aria-haspopup="true" aria-expanded="false" aria-controls="coder">Coder accessible</button>
 				   <ul id="coder"><li><a href="/coder/">Vue d&#39;ensemble</a></li>
               			<li><a href="/coder/structure/">Structure générale</a></li>
               			<li><a href="/coder/contenu/">Contenu</a></li>
               			<li><a href="/coder/couleurs/">Couleurs</a></li>
               			<li><a href="/coder/navigation/">Navigation</a></li>
-              			<li><a href="/coder/lien-bouton/" aria-current="page">Liens et boutons</a></li>
+              			<li><a href="/coder/lien-bouton/">Liens et boutons</a></li>
               			<li><a href="/coder/image-icone/">Images et icônes</a></li>
               			<li><a href="/coder/tableaux/">Tableaux</a></li>
               			<li><a href="/coder/formulaire/">Formulaires</a></li>
@@ -63,11 +63,11 @@
 			<li class="motifs">
 				<a href="/motifs/">Motifs de conception</a></li>	
 			<li class="ressources">
-				<button aria-haspopup="true" aria-expanded="false" aria-controls="ressources">Ressources</button>
+				<button aria-haspopup="true" aria-expanded="false" aria-controls="ressources" aria-current="true">Ressources</button>
 				   <ul id="ressources"><li><a href="/ressources/bureautique/">Bureautique accessible</a></li>
               			<li><a href="/ressources/outils/">Outils de vérification</a></li>
               			<li><a href="/ressources/sites/">Sites sur l&#39;accessibilité</a></li>
-              			<li><a href="/ressources/glossaire/">Glossaire</a></li>
+              			<li><a href="/ressources/glossaire/" aria-current="page">Glossaire</a></li>
               			</ul>
 			    </li>	
 			<li class="a-propos">
@@ -104,9 +104,9 @@
 <ol>
   <li><a href="/">Accueil</a></li>
   
-  <li><a href="/coder/">Coder accessible</a></li>
+  <li><a href="/ressources/">Ressources</a></li>
   
-  <li aria-current="page" tabindex="-1">Liens et boutons</li>
+  <li aria-current="page" tabindex="-1">Glossaire</li>
   </ol>
 </nav>
 <div>
@@ -116,37 +116,10 @@
 </button>
 </div>
 </div>
-     <div class="flex">
-          <aside class="item-20">
-               
-<nav role="navigation" aria-label="Navigation secondaire coder accessible">
-	<p class="rubrique">Coder accessible</p>
-	<button aria-haspopup="true" aria-expanded="false" id="sandwitch" aria-controls="sousMenu">
-		Coder accessible
-	</button>
-	<ul id="sousMenu"><li><a href="https://sofeve-concept.github.io/coder/structure/">Structure générale</a></li>
-		<li><a href="https://sofeve-concept.github.io/coder/contenu/">Contenu</a></li>
-		<li><a href="https://sofeve-concept.github.io/coder/couleurs/">Couleurs</a></li>
-		<li><a href="https://sofeve-concept.github.io/coder/navigation/">Navigation</a></li>
-		<li><a href="https://sofeve-concept.github.io/coder/lien-bouton/" aria-current="page" >Liens et boutons</a>
-			
-			<ul><li><a href="https://sofeve-concept.github.io/coder/lien-bouton/liens/">Les liens</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/lien-bouton/boutons/">Les boutons</a></li>
-				</ul></li>
-		<li><a href="https://sofeve-concept.github.io/coder/image-icone/">Images et icônes</a></li>
-		<li><a href="https://sofeve-concept.github.io/coder/tableaux/">Tableaux</a></li>
-		<li><a href="https://sofeve-concept.github.io/coder/formulaire/">Formulaires</a></li>
-		<li><a href="https://sofeve-concept.github.io/coder/scripts/">Composants d&#39;interface riche</a></li>
-		<li><a href="https://sofeve-concept.github.io/coder/multimedia/">Multimedia</a></li>
-		</ul>
-</nav>
-
-               </aside>
-          <section class="item-80 rubCode">
-               <h1 id="contenu">Liens et boutons</h1>
-               <p>Selon le type de lien ou d&#39;action que nous souhaitons mettre en place dans notre site web, nous choisirons soit un lien soit un bouton. Découvrez les principes d&#39;accessibilité numérique qui régissent leur implémentation.</p>
-               
-               
+     <h1 id="contenu">Glossaire</h1>
+     <p>Définition des termes fréquemment utilisés en accessibilité numérique.</p>
+     
+     
 
      <dl class="glossaire">
           
@@ -172,8 +145,6 @@
           
      </dl>
 
-          </section>   
-     </div>
 </main>
 
 	<footer role="contentinfo" id="piedDePage">
@@ -199,7 +170,5 @@
 		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
 	</svg>
 	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/search.min.js"></script>
-<script>sandwitch();</script>	
-
 </body>
 </html>

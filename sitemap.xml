@@ -586,6 +586,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/ressources/glossaire/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/tags/html/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
