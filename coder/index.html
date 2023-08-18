@@ -97,12 +97,14 @@
 	 </a></p>
 </header>
 	
-	<main role="main" class="container">
-		<div class="flex ligneHaut">
+<main role="main" class="container">
+     <div class="flex ligneHaut">
 <nav aria-label="Vous êtes ici" class="ariane">
 <ol>
   <li><a href="/">Accueil</a></li>
-  <li aria-current="page" tabindex="-1">Coder accessible</li></ol>
+  
+  <li aria-current="page" tabindex="-1">Coder accessible</li>
+  </ol>
 </nav>
 <div>
 <button onclick="window.print();">
@@ -110,10 +112,10 @@
   Imprimer
 </button>
 </div>
-</div>	
-		<div class="flex">
-	<aside class="item-20">	
-		
+</div>
+     <div class="flex">
+          <aside class="item-20">
+               
 <nav role="navigation" aria-label="Navigation secondaire coder accessible">
 	<p class="rubrique">Coder accessible</p>
 	<button aria-haspopup="true" aria-expanded="false" id="sandwitch" aria-controls="sousMenu">
@@ -132,261 +134,55 @@
 		</ul>
 </nav>
 
-	</aside>
-	<section class="item-80">
-		<h1 id="contenu">Coder accessible</h1>
-		<p class="intro">Ce chapitre est un pas à pas des codes HTML et CSS respectueux des principes d&#39;accessibilité numérique.</p>
-		
+               </aside>
+          <section class="item-80 rubCode">
+               <h1 id="contenu">Coder accessible</h1>
+               <p>Ce chapitre est un pas à pas des codes HTML et CSS respectueux des principes d&#39;accessibilité numérique.</p>
+               <p>L&rsquo;accessibilité numérique consiste à rendre les supports numériques (web, applications mobiles, documents bureautiques) :</p>
+<ul>
+<li><strong>Perceptible</strong> : 
+L&rsquo;information et les composants de l&rsquo;interface utilisateur doivent être présentés à l&rsquo;utilisateur de façon à ce qu&rsquo;il puisse les percevoir ;</li>
+<li><strong>Utilisable</strong> simplement : Les composants de l&rsquo;interface utilisateur et de navigation doivent être fonctionnels et utilisables simplement ;</li>
+<li><strong>Compréhensible</strong> : Les informations et l&rsquo;utilisation de l&rsquo;interface
+utilisateur doivent être compréhensibles ;</li>
+<li><strong>Robuste</strong> : Optimiser la compatibilité avec les agents utilisateurs actuels
+et futurs, y compris les <strong>technologies d&rsquo;assistance</strong>.</li>
+</ul>
+
 <blockquote>Mettre le Web et ses services à la disposition de tous les individus, quel que soit leur matériel ou logiciel, leur infrastructure réseau, leur langue maternelle, leur culture, leur localisation géographique, ou leurs aptitudes physiques ou mentales.</blockquote>
 <p class="auteur mb-3"><cite>Tim Berners-Lee, inventeur du web.</cite></p>
-<p>L'accessibilité numérique consiste à rendre les supports numériques (web, applications mobiles, documents bureautiques)</p>
-            <ol class="mb-3">
-              <li><strong>Perceptible</strong>&nbsp;:&nbsp;
-                L'information et les composants de l'interface utilisateur doivent être présentés à l'utilisateur de façon à ce qu'il puisse les percevoir&nbsp;;</li>
-              <li><strong>Utilisable</strong> simplement&nbsp;: Les composants de l'interface utilisateur et de navigation doivent être fonctionnels et utilisables simplement&nbsp;;</li>
-              <li><strong>Compréhensible</strong>&nbsp;: Les informations et l'utilisation de l'interface
-                utilisateur doivent être compréhensibles&nbsp;;</li>
-              <li><strong>Robuste</strong>&nbsp;: Optimiser la compatibilité avec les agents utilisateurs actuels
-                et futurs, y compris les <strong>technologies d'assistance</strong>.</li>
-            </ol>
-<p class="mb-3">Dans ce chapitre, nous allons explorer quelques principes et règles à appliquer au cours de l'élaboration des pages web.</p>
 
-<h2 id="dans-ce-chapitre">Dans ce chapitre</h2>
+<p>Nous allons explorer quelques principes et règles à appliquer au cours de l&rsquo;élaboration des pages web. Nous nous référerons à certains termes dont voici la définition :</p>
 
-<div class="flex align-items-start">
-<div class="item-50">
-<ul class="listOfChapterContent">
+               
 
-	
+     <dl class="glossaire">
+          
+               <dt id="RGAA">RGAA&nbsp;:&nbsp;Référentiel Général d&rsquo;Amélioration de l&rsquo;Accessibilité</dt>
+               <dd>Le RGAA permet de contrôler l’accessibilité d’un site et de ses contenus suivant les normes internationales de l’accessibilité numérique connues sous l’appellation de WCAG. Les criètres du RGAA correspondent au <a href="#WCAG">niveau AA du WCAG</a>.<br> Le RGAA définit une méthode technique et propose un cadre opérationnel de vérification de la conformité aux exigences d’accessibilité. Elle comporte 106 critères de contrôle RGAA incluant une moyenne de 2,5 tests par critères.</dd>
+               <dd><a href="https://design.numerique.gouv.fr/accessibilite-numerique/rgaa/"  target="_blank" rel="noopener noreferrer" title="RGAA (nouvelle fenêtre)">Site web RGAA</a></dd>
+          
+               <dt id="W3C">W3C&nbsp;:&nbsp;<span lang="en">World Wide Web Consortium</span></dt>
+               <dd>Le W3C est un organisme de standardisation à but non lucratif, fondé en octobre 1994 par Tim Berners-Lee et chargé de promouvoir la compatibilité des technologies du World Wide Web.</dd>
+               <dd><a href="https://www.w3.org/"  target="_blank" rel="noopener noreferrer" title="W3C (nouvelle fenêtre)">Site web W3C</a></dd>
+          
+               <dt id="WAI">WAI&nbsp;:&nbsp;<span lang="en">Web Accessibility Initiative</span></dt>
+               <dd>L&rsquo;initiative WAI développe des normes et des supports pour aider les développeurs à comprendre et à mettre en œuvre l&rsquo;accessibilité.</dd>
+               <dd><a href="https://www.w3.org/WAI/"  target="_blank" rel="noopener noreferrer" title="WAI (nouvelle fenêtre)">Site web WAI</a></dd>
+          
+               <dt id="WAI-ARIA">WAI-ARIA&nbsp;:&nbsp;<span lang="en">Web Accessibility Initiative - Accessible Rich Internet Applications</span></dt>
+               <dd>WAI-ARIA ( ou ARIA ) est un ensemble de rôles et d&rsquo;attributs qui définissent comment rendre le contenu et les applications web accessibles (notamment développés avec JavaScript). ARIA complète HTML afin que les éléments interactifs et les widgets puissent être utilisés par les outils d&rsquo;assistance quand les fonctionnalités standard ne le permettent pas. Ainsi, ARIA permet de rendre accessible les widgets JavaScript, les indications dans les formulaires, les messages d&rsquo;erreur, les mises à jour dynamiques du contenu, &hellip;<br> La première règle d&rsquo;ARIA s&rsquo;énonce ainsi : <q> Si vous pouvez utiliser un élément natif HTML ou un attribut avec la sémantique et le comportement voulu qui existe nativement, faites-le plutôt que d&rsquo;utiliser un autre élément en lui ajoutant un rôle, un état ou une propriété ARIA afin de le rendre accessible. </q>. Autrement dit, <strong>la première règle d&rsquo;ARIA est de ne pas utiliser ARIA !</strong></dd>
+               <dd><a href="https://www.w3.org/WAI/standards-guidelines/aria/"  target="_blank" rel="noopener noreferrer" title="WAI-ARIA (nouvelle fenêtre)">Site web WAI-ARIA</a></dd>
+          
+               <dt id="WCAG">WCAG&nbsp;:&nbsp;<span lang="en">Web Content Accessibility Guidelines</span></dt>
+               <dd>Le WCAG est le standard international des normes pour rendre les contenus web accessibles. Le WCAG consiste en 12 directives principales organisées en 4 principes (le contenu doit être perceptible, utilisable, compréhensible et robuste) et chacune de ces directives est accompagnée de critères de succès à évaluer.<br> Le WCAG utilise trois niveaux d&rsquo;accessibilité : <ul> <li><strong>Niveau A</strong> : Les développeurs web doivent satisfaire ces conditions, sinon il sera impossible à un ou plusieurs groupes d&rsquo;accéder au contenu du web.</li> <li><strong>Niveau AA</strong> : Les développeurs web devraient satisfaire ces conditions, sinon certains groupes éprouveront des difficultés à accéder au contenu du web.</li> <li><strong>Niveau AAA</strong> : Les développeurs web peuvent satisfaire ces conditions dans le but de faciliter l&rsquo;accès au web pour certains groupes.</li> </ul></dd>
+               <dd><a href="https://www.w3.org/WAI/standards-guidelines/wcag/fr"  target="_blank" rel="noopener noreferrer" title="WCAG (nouvelle fenêtre)">Site web WCAG</a></dd>
+          
+     </dl>
 
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-	<li><a href="/coder/structure/">Structure générale</a>
-		<ul>
-			 
-			<li><a href="/coder/structure/code-base/">Code HTML global</a></li>
-			 
-			<li><a href="/coder/structure/formatage/">Formatage du contenu</a></li>
-			 
-			<li><a href="/coder/structure/validite-code/">Validité du code</a></li>
-			
-		</ul>
-	</li>
-	
-	<li><a href="/coder/contenu/">Contenu</a>
-		<ul>
-			 
-			<li><a href="/coder/contenu/ecriture/">Écrire accessible</a></li>
-			 
-			<li><a href="/coder/contenu/formatage/">Formatage du contenu</a></li>
-			 
-			<li><a href="/coder/contenu/titraille/">Titraille</a></li>
-			 
-			<li><a href="/coder/contenu/texte/">Texte</a></li>
-			 
-			<li><a href="/coder/contenu/liste/">Listes</a></li>
-			
-		</ul>
-	</li>
-	
-	<li><a href="/coder/couleurs/">Couleurs</a>
-		<ul>
-			 
-			<li><a href="/coder/couleurs/contraste-couleurs-accessible/">Accessibilité des couleurs</a></li>
-			 
-			<li><a href="/coder/couleurs/contraste-couleurs/">Calcul du contraste</a></li>
-			
-		</ul>
-	</li>
-	
-	<li><a href="/coder/navigation/">Navigation</a>
-		<ul>
-			 
-			<li><a href="/coder/navigation/a-propos/">À propos de la navigation</a></li>
-			 
-			<li><a href="/coder/navigation/lien-evitement/">Lien d&#39;évitement</a></li>
-			 
-			<li><a href="/coder/navigation/menu-navigation/">Menu de navigation</a></li>
-			 
-			<li><a href="/coder/navigation/fil-ariane/">Fil d&#39;Ariane</a></li>
-			 
-			<li><a href="/coder/navigation/processus-etapes/">Processus par étapes</a></li>
-			
-		</ul>
-	</li>
-	
-	<li><a href="/coder/lien-bouton/">Liens et boutons</a>
-		<ul>
-			 
-			<li><a href="/coder/lien-bouton/liens/">Les liens</a></li>
-			 
-			<li><a href="/coder/lien-bouton/boutons/">Les boutons</a></li>
-			
-		</ul>
-	</li>
-	
-	<li><a href="/coder/image-icone/">Images et icônes</a>
-		<ul>
-			 
-			<li><a href="/coder/image-icone/images/">Les images</a></li>
-			 
-			<li><a href="/coder/image-icone/images-img/">Images IMG</a></li>
-			 
-			<li><a href="/coder/image-icone/images-svg/">Images SVG</a></li>
-			 
-			<li><a href="/coder/image-icone/images-avec-legende/">Images légendées</a></li>
-			 
-			<li><a href="/coder/image-icone/police-icone/">Icônes, symboles, émojis</a></li>
-			
-		</ul>
-	</li>
-	
-	<li><a href="/coder/tableaux/">Tableaux</a>
-		<ul>
-			 
-			<li><a href="/coder/tableaux/semantique-html-tableaux/">Sémantique HTML</a></li>
-			 
-			<li><a href="/coder/tableaux/tableaux-presentation/">Tableaux de mise en forme</a></li>
-			 
-			<li><a href="/coder/tableaux/tableaux-donnees-simples/">Tableaux simples</a></li>
-			 
-			<li><a href="/coder/tableaux/tableaux-donnees-complexes/">Tableaux complexes</a></li>
-			
-		</ul>
-	</li>
-	
-	<li><a href="/coder/formulaire/">Formulaires</a>
-		<ul>
-			 
-			<li><a href="/coder/formulaire/semantique-html-formulaire/">Sémantique HTML</a></li>
-			 
-			<li><a href="/coder/formulaire/saisie-et-controle/">Saisie et contrôle du formulaire</a></li>
-			 
-			<li><a href="/coder/formulaire/label-etiquette-champ/">Étiquette de champ</a></li>
-			 
-			<li><a href="/coder/formulaire/regroupement-champs/">Regroupement de champs</a></li>
-			 
-			<li><a href="/coder/formulaire/liste-deroulante/">Liste déroulante</a></li>
-			 
-			<li><a href="/coder/formulaire/formulaire-etapes-multiples/">Formulaire à étapes multiples</a></li>
-			
-		</ul>
-	</li>
-	
-	<li><a href="/coder/scripts/">Composants d&#39;interface riche</a>
-		<ul>
-			
-		</ul>
-	</li>
-	
-	<li><a href="/coder/multimedia/">Multimedia</a>
-		<ul>
-			 
-			<li><a href="/coder/multimedia/presentation-video/">Contenu du multimédia</a></li>
-			 
-			<li><a href="/coder/multimedia/lecteur-video/">Lecteur audio ou vidéo</a></li>
-			
-		</ul>
-	</li>
-	
-
-</ul>
-</div>
-<div class="item-50">
- <img src="/images/accessibility.jpg" alt="" class="img-fluid" loading="lazy">
-</div>
-</div>
-
-	
-
-</section>
-</div>
-	</main>
+          </section>   
+     </div>
+</main>
 
 	<footer role="contentinfo" id="piedDePage">
 	<div class="pied">
