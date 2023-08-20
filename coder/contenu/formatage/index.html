@@ -167,9 +167,9 @@
     <li><a href="#halte-au-détournement-de-code-">Halte au détournement de code !</a>
       <ul>
         <li><a href="#confusion-entre-liens-et-boutons">Confusion entre liens et boutons</a></li>
-        <li><a href="#utiliser-la-balise-hr-pour-créer-une-ligne-horizontale-de-séparation">Utiliser la balise <code>&lt;hr&gt;</code> pour créer une ligne horizontale de séparation.</a></li>
+        <li><a href="#utilisation-de-la-balise-hr-pour-créer-une-ligne-horizontale-de-séparation">Utilisation de la balise <code>&lt;hr&gt;</code> pour créer une ligne horizontale de séparation.</a></li>
         <li><a href="#utilisation-de-fieldsetfieldset-pour-obtenir-une-bordure">Utilisation de <code>&lt;fieldset&gt;...&lt;/fieldset&gt;</code> pour obtenir une bordure.</a></li>
-        <li><a href="#utiliser-des-éléments-html-à-des-fins-de-mise-en-forme">Utiliser des éléments HTML à des fins de mise en forme</a></li>
+        <li><a href="#utilisation-des-éléments-html-à-des-fins-de-mise-en-forme">Utilisation des éléments HTML à des fins de mise en forme</a></li>
       </ul>
     </li>
   </ul>
@@ -179,9 +179,9 @@
 <h2 id="les-points-essentiels-à-retenir">Les points essentiels à retenir</h2>
 <h3 id="principes-généraux">Principes généraux</h3>
 <ul>
-<li>La présentation des pages (menu de navigation, contenu) doit rester cohérente d&rsquo;une page à l&rsquo;autre.</li>
-<li>Une information ne doit pas être donnée uniquement par la forme, la taille ou la position.</li>
-<li>La prise de focus doit être bien visible.<br>
+<li><strong>La présentation des pages</strong> (menu de navigation, contenu) <strong>doit rester cohérente</strong> d&rsquo;une page à l&rsquo;autre ;</li>
+<li><strong>Une information ne doit pas être donnée uniquement par la forme, la taille ou la position</strong> ;</li>
+<li><strong>La prise de focus doit être bien visible</strong> :<br>
 Pour cela, déplacez-vous dans la page uniquement à l&rsquo;aide du clavier (touche &ldquo;tabulation&rdquo;). Si vous ne savez pas où se trouve votre curseur, c&rsquo;est que cette règle n&rsquo;est pas respectée. Ajoutez alors un style spécifique pour l&rsquo;état &ldquo;focus&rdquo; dans votre feuille de style.<br>
 Exemple :</li>
 </ul>
@@ -196,16 +196,17 @@ Pour cela, utiliser l&rsquo;extension &ldquo;Web Developper&rdquo; préalablemen
 <ul>
 <li>Veiller à ce que tout le texte soit visible en cas de :
 <ul>
-<li>fort grossissement - Appuyer sur les touches Ctrl et + à 6 reprises.</li>
-<li>changement d&rsquo;orientation de l&rsquo;écran (site responsive) - Dans firefox, vous pouvez afficher une vue adaptative de votre fenêtre via la combinaison de touches Ctrl + Maj + M</li>
-<li>zoom de la page HTML - utiliser la loupe de Windows par exemple.</li>
+<li>fort grossissement - Dans le navigateur, appuyer sur les touches [Ctrl] et [+] (touche « Plus ») à 6 reprises ;</li>
+<li>changement d&rsquo;orientation de l&rsquo;écran (site responsive) - Dans Firefox, vous pouvez afficher une vue adaptative de votre fenêtre via la combinaison de touches [Ctrl] + [Maj] + [M] ;</li>
+<li>zoom de la page HTML - utiliser la loupe de Windows par exemple ;</li>
+<li>utilisation du mode contraste élevé sous Windows - utiliser la combinaison de touches : [Alt] + [Maj] + [Imprim écran].</li>
 </ul>
 </li>
 </ul>
 <h3 id="structure-du-texte">Structure du texte</h3>
 <p><strong>En bref</strong></p>
 <ul>
-<li>les titres seront balisés balises avec les balises allant de <code>&lt;h1&gt;...&lt;/h1&gt;</code> à <code>&lt;h6&gt;...&lt;/h6&gt;</code></li>
+<li>Les titres seront balisés balises avec les balises allant de <code>&lt;h1&gt;...&lt;/h1&gt;</code> à <code>&lt;h6&gt;...&lt;/h6&gt;</code></li>
 <li>Le paragraphe sera balisé avec <code>&lt;p&gt;...&lt;/p&gt;</code></li>
 <li>Le bloc de citation avec <code>&lt;blockquote&gt;...&lt;/blockquote&gt;</code></li>
 <li>Un extrait de citation (inséré dans un paragraphe) sera balisé par <code>&lt;q&gt;...&lt;/q&gt;</code></li>
@@ -214,7 +215,8 @@ Pour cela, utiliser l&rsquo;extension &ldquo;Web Developper&rdquo; préalablemen
 <li>Une image sera balisée par <code>&lt;img src=&quot;lien-vers-l-image/nom-de-l-image&quot; alt=&quot;&quot;&gt;</code></li>
 </ul>
 <h2 id="halte-au-détournement-de-code-">Halte au détournement de code !</h2>
-<p>Certains éléments HTML sont détournés de leur usage sémantique  cela est bien entendu proscrit. Voivi les cas de &ldquo;détournement de code&rdquo; les plus fréquents.</p>
+<p>Certains éléments HTML sont détournés de leur usage sémantique  cela est bien entendu proscrit.<br>
+Voici les cas de &ldquo;détournement de code&rdquo; les plus fréquents :</p>
 <h3 id="confusion-entre-liens-et-boutons">Confusion entre liens et boutons</h3>
 <p>Il existe deux types de détournement de code :</p>
 <ul>
@@ -223,7 +225,7 @@ Pour cela, utiliser l&rsquo;extension &ldquo;Web Developper&rdquo; préalablemen
 Ici, une action javascript a été posé sur le lien via un <code>onClick</code>. Un lien sur lequel on pose un <code>onClick</code> n&rsquo;est pas un lien, c&rsquo;est un bouton. La bonne façon de faire sera : <code>&lt;button onClick=&quot;...&quot;&gt;...&lt;/button&gt;</code>, quitte à donner ensuite à son bouton l&rsquo;allure d&rsquo;un lien hypertexte via du CSS.</li>
 </ul>
 <p>Pour plus d&rsquo;informations sur la différences entre liens et boutons, <a href="/code/lien-bouton/">se référer à la rubrique Liens et boutons</a></p>
-<h3 id="utiliser-la-balise-hr-pour-créer-une-ligne-horizontale-de-séparation">Utiliser la balise <code>&lt;hr&gt;</code> pour créer une ligne horizontale de séparation.</h3>
+<h3 id="utilisation-de-la-balise-hr-pour-créer-une-ligne-horizontale-de-séparation">Utilisation de la balise <code>&lt;hr&gt;</code> pour créer une ligne horizontale de séparation.</h3>
 <p>La balise <code>&lt;hr&gt;</code> ne peut être utilisée qu&rsquo;entre deux balises de type paragraphe <code>&lt;p&gt;...&lt;/p&gt;</code> et sert à représenter un changement thématique entre deux paragraphes. On ne pourra donc utiliser <code>&lt;hr /&gt;</code> que dans le contexte suivant :</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Quand je mange du chocolat, tout va.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>
@@ -250,7 +252,7 @@ Les balises <code>&lt;fieldset&gt;...&lt;/fieldset&gt;</code> ne doivent être u
 </span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
 </span></span></code></pre></div><p>Pour plus d&rsquo;informations sur les formulaires, <a href="/code/formulaire/">se référer à la rubrique Formulaire</a>.</p>
-<h3 id="utiliser-des-éléments-html-à-des-fins-de-mise-en-forme">Utiliser des éléments HTML à des fins de mise en forme</h3>
+<h3 id="utilisation-des-éléments-html-à-des-fins-de-mise-en-forme">Utilisation des éléments HTML à des fins de mise en forme</h3>
 <p>Les balises <code>&lt;q&gt;...&lt;/q&gt;</code> sont parfois utilisées pour obtenir un texte entre guillemets (mise en forme par défaut des navigateurs).<br>
 Comme vu au début de cette page, les balises <code>&lt;q&gt;...&lt;/q&gt;</code> servent à indiquer une citation courte à l&rsquo;intérieur d&rsquo;un paragraphe.</p>
 
