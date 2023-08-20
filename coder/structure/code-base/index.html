@@ -164,6 +164,7 @@
             <li><a href="#déclaration-de-lencodage-du-document-élément-meta-charset">Déclaration de l&rsquo;encodage du document (élément <code>&lt;meta charset</code>)</a></li>
             <li><a href="#titre-de-page-élément-title">Titre de page (élément <code>title</code>)</a></li>
             <li><a href="#déclaration-pour-gérer-laffichage-adaptatif-du-site-élément-meta-nameviewport">Déclaration pour gérer l&rsquo;affichage adaptatif du site (élément <code>&lt;meta name=&quot;viewport&quot;</code>)</a></li>
+            <li><a href="#liens-vers-les-feuilles-de-style-externes">Liens vers les feuilles de style externes</a></li>
           </ul>
         </li>
         <li><a href="#contenu-du-corps-du-document-html-élément-body">Contenu du corps du document HTML (élément <code>body</code>)</a>
@@ -210,7 +211,15 @@
 </span></span><span class="line"><span class="cl">        ...
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h2 id="règles-daccessibilité">Règles d&rsquo;accessibilité</h2>
+</span></span></code></pre></div><div class="notice attention" >   
+     <p> attention </p>
+     <p>
+Dans le cas d'un site multilangue, il faudra bien veiller à mettre à jour le code ISO de la langue du document : <br> 
+<code>&lt;html lang="fr-FR"></code>, pour un site en français&nbsp;;<br>
+<code>&lt;html lang="en-EN"></code>, pour un site en anglais...
+</p>
+</div>
+<h2 id="règles-daccessibilité">Règles d&rsquo;accessibilité</h2>
 <p>L&rsquo;extrait de code ci-après présente le code minimal pour avoir une page HTML conforme aux principes d&rsquo;accessibilité numérique utilisation des <strong>balises sémantiques HTML 5</strong>, <strong>role aria</strong> et <strong>lien d&rsquo;évitement</strong> (ou lien d&rsquo;accès rapide qui permet d&rsquo;accéder directement au contenu de la page).</p>
 <h3 id="contenu-de-lentête-html-élément-head">Contenu de l&rsquo;entête HTML (élément <code>head</code>)</h3>
 <p>Les balises <code>&lt;head&gt;...&lt;/head&gt;</code> doivent contenir :</p>
@@ -242,7 +251,18 @@ On insérera donc la balise <code>meta name=&quot;viewport&quot;</code> avec l&r
 </ul>
 <h5 id="exemple-">Exemple :</h5>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1&#34;</span><span class="p">&gt;</span> 
-</span></span></code></pre></div><h3 id="contenu-du-corps-du-document-html-élément-body">Contenu du corps du document HTML (élément <code>body</code>)</h3>
+</span></span></code></pre></div><h4 id="liens-vers-les-feuilles-de-style-externes">Liens vers les feuilles de style externes</h4>
+<p>C&rsquo;est dans cette partie du document HTML, qu&rsquo;on posera les liens vers les feuilles de style externes du site qui permettront d&rsquo;homogénéiser la présentation des différentes pages.<br>
+Une bonne pratique web d&rsquo;écoconception consiste à proposer une feuille de style spécifique pour l&rsquo;impression, bien souvent nommée <code>print.css</code>. L&rsquo;idée est que, lorsque l&rsquo;utilisateur voudra imprimer cette page, les éléments non pertinents (la plupart du temps, le bandeau général du site, le menu de navigation&hellip;) ne seront pas imprimés.</p>
+<h5 id="exemple--1">Exemple :</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/css/print.min.css&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;print&#34;</span><span class="p">&gt;</span>
+</span></span></code></pre></div><div class="notice remarque" >   
+     <p> remarque </p>
+     <p>
+Une autre bonne pratique d'écoconception web consiste à développer son site en version « <span lang="en">Mobile first</span> » ; c'est à dire à prévoir la mise en forme de son site pour un affichage sur smartphone, puis d'adapter la feuille de style pour un affichage sur des supports plus grands (tablettes, écrans d'ordinateur).
+</p>
+</div>
+<h3 id="contenu-du-corps-du-document-html-élément-body">Contenu du corps du document HTML (élément <code>body</code>)</h3>
 <p>Les balises <code>&lt;body&gt;...&lt;/body&gt;</code> doivent contenir :</p>
 <h4 id="lien-dévitement">Lien d&rsquo;évitement</h4>
 <p>Un lien d&rsquo;évitement (ou lien d&rsquo;accès rapide) sera proposé immédiatement après la balise <code>&lt;body&gt;</code> afin de permettre à une personne naviguant au clavier d&rsquo;atteindre dès le chargement d&rsquo;une nouvelle page le contenu de celle-ci.<br>
@@ -256,7 +276,8 @@ Cette zone d&rsquo;entête principale propose la pluplart du temps le logo du si
 <div class="notice remarque" >   
      <p> remarque </p>
      <p>
-La balise <code>&lt;nav role="navigation"></code> sert uniquement pour proposer des liens internes au site : menu principal ou secondaire, fil d'ariane, pagination, processus par étape.  
+La balise <code>&lt;nav role="navigation"></code> sert uniquement pour proposer des liens internes au site : menu principal ou secondaire, fil d'ariane, pagination, processus par étape. En aucun cas, donc, elle ne sera utilisé pour présenter une liste de liens pointant sur d'autres sites.<br>
+De même, les liens proposés dans la région <code>&lt;footer role="contentinfo">...&lt;/footer></code> <b>ne seront pas encapsulés</b> dans un élément <code>&lt;nav role="navigation">...&lt;/nav></code>
 </p>
 </div>
 <h4 id="zone-de-contenu-principal--élément-main-avec-le-role-aria-main">Zone de contenu principal  (élément <code>main</code> avec le role aria <code>main</code>)</h4>
@@ -269,7 +290,7 @@ La plupart du temps, cette zone recevra les informations relatives au site (copy
 <div class="notice attention" >   
      <p> attention </p>
      <p>
-Dans le cas où une liste de liens est proposé dans le <code>footer</code>, ceux-ci <strong>ne seront pas encadrés</strong> par l'élément <code>nav</code>.
+Dans le cas où une liste de liens est proposé dans le <code>footer</code>, ceux-ci <b>ne seront pas encadrés</b> par l'élément <code>nav</code>.
 </p>
 </div>
 
