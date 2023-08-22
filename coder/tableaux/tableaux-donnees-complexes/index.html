@@ -187,9 +187,14 @@
 </li>
 <li>Les cellules d&rsquo;entête de ligne et de colonne seront encadrées par les balises <code>&lt;th&gt;...&lt;/th&gt;</code>.</li>
 <li><code>colgroup</code> et <code>col</code> peuvent être utilisé pour grouper et identifier des colonnes au sein d&rsquo;un tableau.</li>
-<li>On implémentera l’attribut <code>scope</code> sur les balises <code>&lt;th&gt;</code> :</li>
+<li>On implémentera l’attribut <code>scope</code> sur les balises <code>&lt;th&gt;</code> :
+<ul>
 <li>si la cellule d&rsquo;entête porte sur la ligne complète, on écrira <code>&lt;th scope=&quot;row&quot;&gt;</code></li>
+<li>si la cellule d&rsquo;entête porte sur la un groupe de lignes et s&rsquo;applique à toutes ses cellules, on écrira <code>&lt;th scope=&quot;rowgroup&quot;&gt;</code></li>
 <li>si la cellule d&rsquo;entête porte sur la colonne entière, on écrira <code>&lt;th scope=&quot;col&quot;&gt;</code></li>
+<li>si la cellule d&rsquo;entête porte sur un groupe de colonne et concerne toutes ses cellules, on écrira <code>&lt;th scope=&quot;colgroup&quot;&gt;</code></li>
+</ul>
+</li>
 <li>Une autre façon de coder le tableau consiste à utiliser les attributs <code>headers</code> et <code>id</code> ; <code>headers</code> sera appliqué sur la cellule de données et contriendra les <code>id</code> des cellules d&rsquo;entête correspondantes.</li>
 </ul>
 <h3 id="résumé-du-tableau-de-données-complexe">Résumé du tableau de données complexe</h3>
@@ -421,8 +426,6 @@
      <div id="complexe2" role="region" aria-labelledby="tableauComplexe2" class="accordeon-panel" hidden>
          <div>
 <h6>Visuel</h6>
-
-
 <table class="responsive style2 style3">
 <caption>Températures observées</caption>
   <colgroup>
@@ -460,6 +463,8 @@
 
 <h6>Code HTML</h6>
 
+
+<p><strong>Un élément <code>colgroup</code> doit apparaître après tout élément <code>caption</code> optionnel et avant tout élément <code>thead</code>, <code>th</code>, <code>tbody</code>, <code>tfoot</code> et <code>tr</code>.</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">caption</span><span class="p">&gt;</span>Températures observées<span class="p">&lt;/</span><span class="nt">caption</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">colgroup</span><span class="p">&gt;</span>
