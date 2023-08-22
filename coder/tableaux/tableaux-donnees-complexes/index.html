@@ -162,7 +162,6 @@
         <li><a href="#résumé-du-tableau-de-données-complexe">Résumé du tableau de données complexe</a>
           <ul>
             <li><a href="#caption"><code>caption</code></a></li>
-            <li><a href="#summary"><code>summary</code></a></li>
             <li><a href="#aria-describedby"><code>aria-describedby</code></a></li>
           </ul>
         </li>
@@ -254,14 +253,8 @@
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">caption</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">...
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h4 id="summary"><code>summary</code></h4>
-<p><code>summary</code> est un attribut de l&rsquo;élément <code>table</code> et sert à fournir un résumé du tableau. Contrairement à la technique précédente, le résumé n&rsquo;apparaîtra pas visuellement.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">table</span> <span class="na">summary</span><span class="o">=</span><span class="s">&#34;La première colonne indique le nombre de chambre, les autres colonnes indiquent le type de logement et le nombre de logement disponible.&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">caption</span><span class="p">&gt;</span>Disponibilité des logements<span class="p">&lt;/</span><span class="nt">caption</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">...
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h4 id="aria-describedby"><code>aria-describedby</code></h4>
-<p><code>aria-describedby</code> fera référence à l&rsquo;<code>id</code> d&rsquo;un élément HTML qui présentara le résumé du tableau. Une bonne pratique consiste à proposer ce résumé à proximité du tableau.</p>
+<p><code>aria-describedby</code> fera référence à l&rsquo;<code>id</code> d&rsquo;un élément HTML qui présentera le résumé du tableau. Une bonne pratique consiste à proposer ce résumé à proximité du tableau.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;description&#34;</span><span class="p">&gt;</span>La première colonne indique le nombre de chambre, les autres colonnes indiquent le type de logement et le nombre de logement disponible.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">table</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&#34;description&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">caption</span><span class="p">&gt;</span>Disponibilité des logements<span class="p">&lt;/</span><span class="nt">caption</span><span class="p">&gt;</span>
