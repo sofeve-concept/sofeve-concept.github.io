@@ -158,7 +158,11 @@
     <li><a href="#extraits-de-code">Extraits de code</a>
       <ul>
         <li><a href="#code-html">Code HTML</a></li>
-        <li><a href="#code-css">Code CSS</a></li>
+        <li><a href="#code-css">Code CSS</a>
+          <ul>
+            <li><a href="#image-svg-servant-de-flèche">Image SVG servant de flèche</a></li>
+          </ul>
+        </li>
         <li><a href="#code-javascript">Code javascript</a></li>
       </ul>
     </li>
@@ -174,18 +178,11 @@
 </ul>
 <h2 id="visuel">Visuel</h2>
 
- <div id="accordeonGroup" class="accordeon">
+<div class="accordeon">
     <h3>
-        <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="sect1"
-            id="accordeon1id">
-            <span class="accordeon-title">
-                Rubrique1
-                <span class="accordeon-icon"></span>
-            </span>
-        </button>
+        <button type="button" aria-expanded="true" class="accordeon-bouton" aria-controls="contenu1" id="accordeon1">Intitulé accordéon 1</button>
     </h3>
-    <div id="sect1" role="region" aria-labelledby="accordeon1id" class="accordeon-panel" hidden="">
-        <div>
+    <div id="contenu1" role="region" aria-labelledby="accordeon1" class="accordeon-panneau">
             <p>Consectetur cupidatat nisi amet exercitation quis mollit. Incididunt labore voluptate labore
                 nostrud incididunt fugiat labore est anim tempor et Lorem dolor ea. Est aute sint velit deserunt
                 qui adipisicing magna cillum fugiat et exercitation. Consectetur excepteur aliquip duis
@@ -198,19 +195,11 @@
                 consectetur minim tempor amet sint fugiat duis irure do. Laboris magna cupidatat sint enim non
                 occaecat cillum anim consectetur mollit laboris anim. Ea velit fugiat nisi aliquip labore sit
                 Lorem laborum mollit sit culpa non sunt.</p>
-        </div>
     </div>
     <h3>
-        <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="sect2"
-            id="accordeon2id">
-            <span class="accordeon-title">
-                Rubrique2
-                <span class="accordeon-icon"></span>
-            </span>
-        </button>
+        <button type="button" aria-expanded="false" class="accordeon-bouton" aria-controls="contenu2" id="accordeon2">Intitulé accordéon 2</button>
     </h3>
-    <div id="sect2" role="region" aria-labelledby="accordeon2id" class="accordeon-panel" hidden="">
-        <div>
+    <div id="contenu2" role="region" aria-labelledby="accordeon2" class="accordeon-panneau" hidden="">
             <p>Consectetur cupidatat nisi amet exercitation quis mollit. Incididunt labore voluptate labore
                 nostrud incididunt fugiat labore est anim tempor et Lorem dolor ea. Est aute sint velit deserunt
                 qui adipisicing magna cillum fugiat et exercitation. Consectetur excepteur aliquip duis
@@ -223,19 +212,11 @@
                 consectetur minim tempor amet sint fugiat duis irure do. Laboris magna cupidatat sint enim non
                 occaecat cillum anim consectetur mollit laboris anim. Ea velit fugiat nisi aliquip labore sit
                 Lorem laborum mollit sit culpa non sunt.</p>
-        </div>
     </div>
     <h3>
-        <button type="button" aria-expanded="false" class="accordeon-trigger" aria-controls="sect3"
-            id="accordeon3id">
-            <span class="accordeon-title">
-                Rubrique3
-                <span class="accordeon-icon"></span>
-            </span>
-        </button>
+        <button type="button" aria-expanded="false" class="accordeon-bouton" aria-controls="contenu3" id="accordeon3">Intitulé accordéon 3</button>
     </h3>
-    <div id="sect3" role="region" aria-labelledby="accordeon3id" class="accordeon-panel" hidden="">
-        <div>
+    <div id="contenu3" role="region" aria-labelledby="accordeon3" class="accordeon-panneau" hidden="">
             <p>Consectetur cupidatat nisi amet exercitation quis mollit. Incididunt labore voluptate labore
                 nostrud incididunt fugiat labore est anim tempor et Lorem dolor ea. Est aute sint velit deserunt
                 qui adipisicing magna cillum fugiat et exercitation. Consectetur excepteur aliquip duis
@@ -248,24 +229,18 @@
                 consectetur minim tempor amet sint fugiat duis irure do. Laboris magna cupidatat sint enim non
                 occaecat cillum anim consectetur mollit laboris anim. Ea velit fugiat nisi aliquip labore sit
                 Lorem laborum mollit sit culpa non sunt.</p>
-        </div>
     </div>
 </div>
 
 <h2 id="extraits-de-code">Extraits de code</h2>
 <h3 id="code-html">Code HTML</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;accordionGroup&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion&#34;</span><span class="p">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordeon&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-trigger&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;sect1&#34;</span>
-</span></span><span class="line"><span class="cl">            <span class="na">id</span><span class="o">=</span><span class="s">&#34;accordion1id&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-title&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                Rubrique1
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-icon&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordeon-bouton&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;contenu1&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;accordeon1&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            Intitulé accordéon 1
 </span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;sect1&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;region&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;accordion1id&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-panel&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;contenu1&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;region&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;accordeon1&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordeon-panneau&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Consectetur cupidatat nisi amet exercitation quis mollit. Incididunt labore voluptate labore
 </span></span><span class="line"><span class="cl">                nostrud incididunt fugiat labore est anim tempor et Lorem dolor ea. Est aute sint velit deserunt
 </span></span><span class="line"><span class="cl">                qui adipisicing magna cillum fugiat et exercitation. Consectetur excepteur aliquip duis
@@ -278,45 +253,32 @@
 </span></span><span class="line"><span class="cl">                consectetur minim tempor amet sint fugiat duis irure do. Laboris magna cupidatat sint enim non
 </span></span><span class="line"><span class="cl">                occaecat cillum anim consectetur mollit laboris anim. Ea velit fugiat nisi aliquip labore sit
 </span></span><span class="line"><span class="cl">                Lorem laborum mollit sit culpa non sunt.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-trigger&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;sect2&#34;</span>
-</span></span><span class="line"><span class="cl">            <span class="na">id</span><span class="o">=</span><span class="s">&#34;accordion2id&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-title&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                Rubrique2
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-icon&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordeon-bouton&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;contenu2&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;accordeon2&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            Intitulé accordéon 2
 </span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;sect2&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;region&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;accordion2id&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-panel&#34;</span> <span class="na">hidden</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;contenu2&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;region&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;accordeon2&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordeon-panneau&#34;</span> <span class="na">hidden</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Consectetur cupidatat nisi amet exercitation quis mollit. Incididunt labore voluptate labore
 </span></span><span class="line"><span class="cl">                nostrud incididunt fugiat labore est anim tempor et Lorem dolor ea. Est aute sint velit deserunt
 </span></span><span class="line"><span class="cl">                qui adipisicing magna cillum fugiat et exercitation. Consectetur excepteur aliquip duis
 </span></span><span class="line"><span class="cl">                consectetur minim tempor amet sint fugiat duis irure do. Laboris magna cupidatat sint enim non
 </span></span><span class="line"><span class="cl">                occaecat cillum anim consectetur mollit laboris anim. Ea velit fugiat nisi aliquip labore sit
 </span></span><span class="line"><span class="cl">                Lorem laborum mollit sit culpa non sunt.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Consectetur cupidatat nisi amet exercitation quis mollit. Incididunt labore voluptate labore
 </span></span><span class="line"><span class="cl">                nostrud incididunt fugiat labore est anim tempor et Lorem dolor ea. Est aute sint velit deserunt
 </span></span><span class="line"><span class="cl">                qui adipisicing magna cillum fugiat et exercitation. Consectetur excepteur aliquip duis
 </span></span><span class="line"><span class="cl">                consectetur minim tempor amet sint fugiat duis irure do. Laboris magna cupidatat sint enim non
 </span></span><span class="line"><span class="cl">                occaecat cillum anim consectetur mollit laboris anim. Ea velit fugiat nisi aliquip labore sit
 </span></span><span class="line"><span class="cl">                Lorem laborum mollit sit culpa non sunt.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-trigger&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;sect3&#34;</span>
-</span></span><span class="line"><span class="cl">            <span class="na">id</span><span class="o">=</span><span class="s">&#34;accordion3id&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-title&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                Rubrique3
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-icon&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordeon-bouton&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;contenu3&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;accordeon3&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            Intitulé accordéon 3
 </span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;sect3&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;region&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;accordion3id&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-panel&#34;</span> <span class="na">hidden</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;contenu3&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;region&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;accordeon3&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordeon-panneau&#34;</span> <span class="na">hidden</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Consectetur cupidatat nisi amet exercitation quis mollit. Incididunt labore voluptate labore
 </span></span><span class="line"><span class="cl">                nostrud incididunt fugiat labore est anim tempor et Lorem dolor ea. Est aute sint velit deserunt
 </span></span><span class="line"><span class="cl">                qui adipisicing magna cillum fugiat et exercitation. Consectetur excepteur aliquip duis
@@ -329,7 +291,6 @@
 </span></span><span class="line"><span class="cl">                consectetur minim tempor amet sint fugiat duis irure do. Laboris magna cupidatat sint enim non
 </span></span><span class="line"><span class="cl">                occaecat cillum anim consectetur mollit laboris anim. Ea velit fugiat nisi aliquip labore sit
 </span></span><span class="line"><span class="cl">                Lorem laborum mollit sit culpa non sunt.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h3 id="code-css">Code CSS</h3>
@@ -345,118 +306,79 @@
 </span></span><span class="line"><span class="cl">    <span class="nv">--accordeon-focus-within-background-color</span><span class="p">:</span> <span class="mh">#f7f7f7</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordeon</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">accordeon</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border-radius</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">acccordeon</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">border-top</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">accordeon</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">accordeon</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="k">width</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">accordeon</span><span class="o">-</span><span class="n">width</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion</span> <span class="nt">h3</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordeon</span> <span class="nt">h3</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="cp">!important</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion</span><span class="p">:</span><span class="nd">focus-within</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">accordeon</span><span class="o">-</span><span class="n">focus</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion</span><span class="o">&gt;*+*</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordeon</span><span class="o">&gt;*+*</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="k">border-top</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">accordeon</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion-trigger</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">background</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordeon-bouton</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">accordeon</span><span class="o">-</span><span class="n">entete</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">background-color</span><span class="p">:</span> <span class="kc">transparent</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">border</span><span class="p">:</span><span class="mi">0</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="k">font-size</span><span class="p">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">font-weight</span><span class="p">:</span> <span class="kc">normal</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">font-weight</span><span class="p">:</span> <span class="mi">500</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">line-height</span><span class="p">:</span> <span class="mf">1.5</span><span class="kt">rem</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">padding</span><span class="p">:</span> <span class="mi">1</span><span class="kt">em</span> <span class="mf">1.5</span><span class="kt">em</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">max-height</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">max-width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">min-height</span><span class="p">:</span> <span class="mi">3</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">overflow</span><span class="p">:</span> <span class="kc">initial</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">padding</span><span class="p">:</span> <span class="mf">.75</span><span class="kt">rem</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="k">text-align</span><span class="p">:</span> <span class="kc">left</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">outline</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion-trigger</span><span class="p">:</span><span class="nd">focus</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">outline</span><span class="p">:</span> <span class="mi">4</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">transparent</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordeon-bouton</span><span class="p">::</span><span class="nd">after</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">--icon-size</span><span class="p">:</span> <span class="mf">1.25</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">background-color</span><span class="p">:</span> <span class="kc">currentColor</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">float</span><span class="p">:</span> <span class="kc">right</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">flex</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">height</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="kc">icon</span><span class="o">-</span><span class="n">size</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kp">-webkit-</span><span class="k">mask-size</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">mask-size</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">vertical-align</span><span class="p">:</span> <span class="nb">calc</span><span class="p">((</span><span class="mf">.55</span><span class="kt">em</span> <span class="o">-</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="kc">icon</span><span class="o">-</span><span class="n">size</span><span class="p">))</span> <span class="o">*</span> <span class="mf">.5</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">width</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="kc">icon</span><span class="o">-</span><span class="n">size</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kp">-webkit-</span><span class="k">mask-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="sx">../images/caret-right-fill.svg</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">mask-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="sx">../images/caret-right-fill.svg</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">transform</span><span class="p">:</span> <span class="nb">rotate</span><span class="p">(</span><span class="mi">90</span><span class="kt">deg</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">transition</span><span class="p">:</span> <span class="k">transform</span> <span class="mf">.2</span><span class="kt">s</span> <span class="kc">ease-out</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion</span><span class="o">&gt;*</span><span class="p">:</span><span class="nd">first-child</span> <span class="p">.</span><span class="nc">accordion-trigger</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion</span><span class="o">&gt;*</span><span class="p">:</span><span class="nd">first-child</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border-radius</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">acccordeon</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">)</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">acccordeon</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">)</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion</span><span class="o">&gt;*</span><span class="p">:</span><span class="nd">last-child</span> <span class="p">.</span><span class="nc">accordion-trigger</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion</span><span class="o">&gt;*</span><span class="p">:</span><span class="nd">last-child</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border-radius</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">0</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">acccordeon</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">)</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">acccordeon</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nt">button</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border-style</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion</span> <span class="nt">button</span><span class="p">::</span><span class="nd">-moz-focus-inner</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion-title</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">pointer-events</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border</span><span class="p">:</span> <span class="kc">transparent</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border-radius</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">acccordeon</span><span class="o">-</span><span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">padding</span><span class="p">:</span> <span class="mf">0.25</span><span class="kt">em</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">outline</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion-trigger</span><span class="p">:</span><span class="nd">focus</span> <span class="p">.</span><span class="nc">accordion-title</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordeon-bouton</span><span class="o">[</span><span class="nt">aria-expanded</span><span class="o">=</span><span class="s2">&#34;true&#34;</span><span class="o">]</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">accordeon</span><span class="o">-</span><span class="n">entete</span><span class="o">-</span><span class="n">hover</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion-icon</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border</span><span class="p">:</span> <span class="kc">solid</span> <span class="n">currentcolor</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border-width</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">2</span><span class="kt">px</span> <span class="mi">2</span><span class="kt">px</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">height</span><span class="p">:</span> <span class="mf">0.5</span><span class="kt">rem</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">pointer-events</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">right</span><span class="p">:</span> <span class="mi">2</span><span class="kt">em</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">top</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">transform</span><span class="p">:</span> <span class="nb">translateY</span><span class="p">(</span><span class="mi">-60</span><span class="kt">%</span><span class="p">)</span> <span class="nb">rotate</span><span class="p">(</span><span class="mi">45</span><span class="kt">deg</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">width</span><span class="p">:</span> <span class="mf">0.5</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordeon-bouton</span><span class="o">[</span><span class="nt">aria-expanded</span><span class="o">=</span><span class="s2">&#34;true&#34;</span><span class="o">]</span><span class="p">::</span><span class="nd">after</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">transform</span><span class="p">:</span> <span class="nb">rotate</span><span class="p">(</span><span class="mi">-180</span><span class="kt">deg</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion-trigger</span><span class="p">:</span><span class="nd">focus</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion-trigger</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordeon-bouton</span><span class="p">:</span><span class="nd">focus</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordeon-bouton</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="k">background</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">accordeon</span><span class="o">-</span><span class="n">entete</span><span class="o">-</span><span class="n">hover</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion-trigger</span><span class="p">:</span><span class="nd">focus</span> <span class="p">.</span><span class="nc">accordion-title</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion-trigger</span><span class="p">:</span><span class="nd">hover</span> <span class="p">.</span><span class="nc">accordion-title</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">accordeon</span><span class="o">-</span><span class="n">entete</span><span class="o">-</span><span class="n">hover</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion-trigger</span><span class="p">:</span><span class="nd">focus</span> <span class="p">.</span><span class="nc">accordion-icon</span><span class="o">,</span>
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion-trigger</span><span class="p">:</span><span class="nd">hover</span> <span class="p">.</span><span class="nc">accordion-icon</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">accordeon</span><span class="o">-</span><span class="n">entete</span><span class="o">-</span><span class="n">hover</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion-trigger</span><span class="o">[</span><span class="nt">aria-expanded</span><span class="o">=</span><span class="s2">&#34;true&#34;</span><span class="o">]</span> <span class="p">.</span><span class="nc">accordion-icon</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">transform</span><span class="p">:</span> <span class="nb">translateY</span><span class="p">(</span><span class="mi">-50</span><span class="kt">%</span><span class="p">)</span> <span class="nb">rotate</span><span class="p">(</span><span class="mi">-135</span><span class="kt">deg</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion-panel</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordeon-panneau</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">padding</span><span class="p">:</span> <span class="mi">1</span><span class="kt">em</span> <span class="mf">1.5</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">padding</span><span class="p">:</span> <span class="mi">1</span><span class="kt">em</span> <span class="mi">0</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c">/* For Edge bug https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/4806035/ */</span>
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordion-panel</span><span class="o">[</span><span class="nt">hidden</span><span class="o">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">accordeon-panneau</span><span class="o">[</span><span class="nt">hidden</span><span class="o">]</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><h3 id="code-javascript">Code javascript</h3>
+</span></span></code></pre></div><h4 id="image-svg-servant-de-flèche">Image SVG servant de flèche</h4>
+<p><img src="/images/caret-right-fill.svg" alt="flèche SVG"> : <a href="/images/caret-right-fill.svg" download="caret-right-fill.svg">Télécharger l&rsquo;image</a></p>
+<h3 id="code-javascript">Code javascript</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="s2">&#34;use strict&#34;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
