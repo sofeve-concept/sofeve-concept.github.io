@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Contraste de couleurs - Outils de vérification - Ressources - Sofève Concept</title>
 	
-	<meta name="description" content="Collection de quelques outils pour vérifier le contraste des couleurs. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	<meta name="description" content="Collection de quelques outils pour vérifier le contraste des couleurs et générer une palette de couleurs avec les bons contrastes. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -118,48 +118,45 @@
 </div>
 </div> 
      <h1 id="contenu">Contraste de couleurs</h1>
-     <p>Collection de quelques outils pour vérifier le contraste des couleurs.</p>
+     <p>Collection de quelques outils pour vérifier le contraste des couleurs et générer une palette de couleurs avec les bons contrastes.</p>
 <button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
     Table des matières
 </button>
 <div id="tdm" role="region" tabindex="-1">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#colour-contrast-analyser">Colour Contrast Analyser</a></li>
-    <li><a href="#tanaguru-contrast-finder">Tanaguru contrast finder</a></li>
-    <li><a href="#extensions-de-navigateur">Extensions de navigateur</a>
+    <li><a href="#vérifier-la-conformité-des-contrastes">Vérifier la conformité des contrastes</a>
       <ul>
-        <li><a href="#wcag-color-contrast-checker">WCAG Color Contrast Checker</a></li>
-        <li><a href="#nocoffee">NoCoffee</a></li>
+        <li><a href="#colour-contrast-analyser">Colour Contrast Analyser</a></li>
+        <li><a href="#extensions-de-navigateur">Extensions de navigateur</a>
+          <ul>
+            <li><a href="#wcag-color-contrast-checker">WCAG Color Contrast Checker</a></li>
+            <li><a href="#nocoffee">NoCoffee</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
+    <li><a href="#générer-une-palette-de-couleurs-accessibles">Générer une palette de couleurs accessibles</a></li>
   </ul>
 </nav>
 </div>
-<h2 id="colour-contrast-analyser">Colour Contrast Analyser</h2>
+<h2 id="vérifier-la-conformité-des-contrastes">Vérifier la conformité des contrastes</h2>
+<h3 id="colour-contrast-analyser">Colour Contrast Analyser</h3>
 <p>L&rsquo;outil gratuit de vérification du contraste des couleurs créé par TPGi permet de déterminer facilement le rapport de contraste de deux couleurs simplement à l&rsquo;aide d&rsquo;un outil pipette. <span lang="en">Colour Contrast Analyser</span> (CCA) permet d&rsquo;optimiser son contenu, y compris le texte et les éléments visuels, pour les personnes ayant une déficience visuelle comme le daltonisme et les malvoyants.</p>
 <p>Ses principales fonctionnalités :</p>
 <ul>
 <li>Vérifie les combinaisons de couleurs de premier plan et d&rsquo;arrière-plan pour déterminer si elles donnent une bonne visibilité de couleurs.</li>
 <li>Basé sur les algorithmes proposés par le W3C.</li>
 </ul>
-<p><a href="https://pdfua.foundation/en/pdf-accessibility-checker-pac/" title="Télécharger le logiciel CCA (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">Télécharger le logiciel CCA</a></p>
-<h2 id="tanaguru-contrast-finder">Tanaguru contrast finder</h2>
-<p>Site web géré par la société Tanaguru pour vérifier et trouver le bon contraste entre deux couleurs.<br>
-Il est possible de</p>
-<ul>
-<li>paramétrer le ratio de contraste ;</li>
-<li>choisir de modifier soit la couleur du texte soit la couleur du fond ;</li>
-<li>choisir des couleurs valides et très proches de la couleur initiale ou une palette de couleurs valides</li>
-</ul>
-<h2 id="extensions-de-navigateur">Extensions de navigateur</h2>
-<h3 id="wcag-color-contrast-checker">WCAG Color Contrast Checker</h3>
-<p>L&rsquo;extension vérifie le contraste des couleurs entre le premier plan et l&rsquo;arrière-plan des éléments qui se trouvent dans la page selon les WCAG 2.1.</p>
-<p>Il évalue le contraste sur tous les éléments de la page en tenant compte de leur style calculé pour les propriétés CSS color et background-color.</p>
-<p>Dans le cas où ces couleurs sont définies avec des valeurs RGBA, il considère également l&rsquo;opacité pour en déduire la couleur réelle qui est finalement affichée.</p>
-<p>Il peut simuler le daltonisme et évaluer le contraste pour les simulations. De cette façon, les développeurs peuvent voir à quoi ressemblent les pages pour les utilisateurs daltoniens.</p>
-<p>L&rsquo;outil comprend également deux champs dans lesquels les couleurs peuvent être introduites manuellement pour être testées. Il permet également de choisir la couleur directement à partir des documents par l&rsquo;intermédiaire d&rsquo;une pipette.</p>
-<h3 id="nocoffee">NoCoffee</h3>
+<p><a href="https://www.tpgi.com/color-contrast-checker/" lang="en" hreflang="en" title="Télécharger le logiciel CCA (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">Télécharger le logiciel CCA</a></p>
+<h3 id="extensions-de-navigateur">Extensions de navigateur</h3>
+<h4 id="wcag-color-contrast-checker">WCAG Color Contrast Checker</h4>
+<p>L&rsquo;extension vérifie le contraste des couleurs entre le premier plan et l&rsquo;arrière-plan des éléments qui se trouvent dans la page selon les WCAG 2.1.<br>
+Il évalue le contraste sur tous les éléments de la page en tenant compte de leur style calculé pour les propriétés CSS color et background-color.<br>
+Dans le cas où ces couleurs sont définies avec des valeurs RGBA, il considère également l&rsquo;opacité pour en déduire la couleur réelle qui est finalement affichée.<br>
+Il peut simuler le daltonisme et évaluer le contraste pour les simulations. De cette façon, les développeurs peuvent voir à quoi ressemblent les pages pour les utilisateurs daltoniens.<br>
+L&rsquo;outil comprend également deux champs dans lesquels les couleurs peuvent être introduites manuellement pour être testées. Il permet également de choisir la couleur directement à partir des documents par l&rsquo;intermédiaire d&rsquo;une pipette.</p>
+<h4 id="nocoffee">NoCoffee</h4>
 <p>NoCoffee peut être utile pour comprendre les problèmes rencontrés par les personnes ayant des problèmes de vision légers à extrêmes, tels que :</p>
 <ul>
 <li><strong>Faible acuité</strong> : certaines pages Web utilisent un texte très petit ou des cibles de clics. S&rsquo;il est vrai que les utilisateurs utilisent un zoom de navigateur intégré ou des loupes d&rsquo;écran comme ZoomText, de nombreux utilisateurs non techniques ne savent pas comment.</li>
@@ -168,6 +165,17 @@ Il est possible de</p>
 <li><strong>Neige visuelle</strong>, <strong>éblouissement</strong>, <strong>images fantômes</strong> et <strong>cataractes</strong>.</li>
 <li><strong>Nystagmus</strong> (mouvement oscillatoire rapide, involontaire des yeux).</li>
 <li><strong>Champ visuel obstrué</strong> : corps flottants, obstruction d&rsquo;un côté (décollement de la rétine ou hémanopie), vision centrale obstruée (glaucome), vision tachetée (rétinopathie diabétique) ou vision périphérique obstruée (rétinite pigmentaire ou dégénérescence maculaire). Remarque : les simulations de champs visuels partiels ne peuvent pas suivre votre regard comme elles le feraient dans le monde réel.</li>
+</ul>
+<h2 id="générer-une-palette-de-couleurs-accessibles">Générer une palette de couleurs accessibles</h2>
+<ul>
+<li>
+<p><strong><span lang="en">A11y Color Palette</span></strong> : Cet outil vous aide à visualiser une palette entière de toutes les combinaisons de couleurs en gardant l&rsquo;accessibilité à l&rsquo;esprit. Les combinaisons sont classées par rapport de contraste des couleurs.<br>
+<a href="http://a11yrocks.com/colorPalette/" lang="en" hreflang="en" title="A11y Color Palette (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">A11y Color Palette</a></p>
+</li>
+<li>
+<p><strong><span lang="en">Tanaguru contrast finder</span></strong> : Cet outil vous aide à paramétrer le ratio de contraste, choisir de modifier soit la couleur du texte soit la couleur du fond et choisir des couleurs valides et très proches de la couleur initiale ou une palette de couleurs valides.<br>
+<a href="https://contrast-finder.tanaguru.com/" lang="en" hreflang="en" title="Tanaguru contrast finder (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">Tanaguru contrast finder</a></p>
+</li>
 </ul>
 
      
