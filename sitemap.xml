@@ -146,6 +146,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/coder/contenu/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/ressources/outils/outils-couleurs/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -159,12 +165,6 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/finaliser/export/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/coder/contenu/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
