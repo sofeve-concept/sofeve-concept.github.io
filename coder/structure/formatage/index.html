@@ -157,17 +157,60 @@
 <div id="tdm" role="region" tabindex="-1">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#les-points-essentiels-à-retenir">Les points essentiels à retenir</a></li>
+    <li><a href="#les-points-essentiels-à-retenir">Les points essentiels à retenir</a>
+      <ul>
+        <li><a href="#structure-de-la-page">Structure de la page</a></li>
+        <li><a href="#feuilles-de-style">Feuilles de style</a></li>
+        <li><a href="#texte">Texte</a></li>
+        <li><a href="#navigation">Navigation</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 </div>
 <p>Comme il n&rsquo;est pas possible d&rsquo;être exhaustif, nous allons parcourir ici les éléments sur lesquels être vigilants car bien souvent source de non conformité en terme d&rsquo;accessibilité numérique. Pour avoir des informations plus détaillées, rendez-vous dans la rubrique <a href="/coder/contenu/">Coder accessible - Structure du contenu</a>.</p>
 <h2 id="les-points-essentiels-à-retenir">Les points essentiels à retenir</h2>
+<h3 id="structure-de-la-page">Structure de la page</h3>
 <ul>
-<li>La présentation des pages (menu de navigation, contenu) doit rester cohérente d&rsquo;une page à l&rsquo;autre.</li>
-<li>Une information ne doit pas être donnée uniquement par la forme, la taille ou la position.</li>
-<li>Veiller à rendre l&rsquo;information compréhensible quand les feuilles de style sont désactivées.<br>
-Pour cela, utiliser l&rsquo;extension &ldquo;<span lang="en">Web Developper</span>&rdquo; préalablement ajoutée à votre navigateur et choisissez &ldquo;<span lang="en">Disabled All Styles</span>&rdquo; dans l&rsquo;onglet &ldquo;styles&rdquo;.</li>
+<li><strong>La présentation des pages</strong> (menu de navigation, contenu) <strong>doit rester cohérente</strong> d&rsquo;une page à l&rsquo;autre.</li>
+<li><strong>Les pages sont bien struturées</strong>
+<ul>
+<li>La zone d’en-tête de la page est structurée via une balise <code>header role=&quot;banner&quot;</code> ;</li>
+<li>Les zones de navigation principale et secondaire sont structurées via une balise <code>nav role=&quot;navigation&quot;</code> ;</li>
+<li>La balise <code>nav</code> est réservée à la structuration des zones de navigation principales et secondaires ;</li>
+<li>La zone de contenu principal est structurée via une balise <code>main role=&quot;main&quot;</code>, visible et unique ;</li>
+<li>La zone de pied de page est structurée via une balise <code>footer role=&quot;contentinfo&quot;</code>.</li>
+</ul>
+</li>
+<li><strong>Les contenus sont visibles sans avoir recours à un défilement horizontal pour une fenêtre ayant une largeur de 320px</strong> ou à un défilement vertical pour une fenêtre ayant une hauteur de 256px.</li>
+<li><strong>Les contenus cachés</strong> (via l’attribut <code>hidden</code> ou de l’attribut aria <code>aria-hidden</code> ) <strong>sont bien ignorés par les logiciels de synthèse vocale</strong>.</li>
+<li><strong>Les contenus dynamiques apparaissant au survol ou au clic de la souris apparaissent aussi en utilisant le clavier</strong>.</li>
+</ul>
+<h3 id="feuilles-de-style">Feuilles de style</h3>
+<ul>
+<li><strong>Les feuilles de styles CSS sont utilisées pour contrôler la présentation de l’information</strong>.</li>
+<li><strong>L&rsquo;information doit rester compréhensible quand les feuilles de style CSS sont désactivées</strong> :<br>
+Pour cela, utiliser l&rsquo;extension &ldquo;<span lang="en">Web Developper</span>&rdquo; préalablement ajoutée à votre navigateur et choisissez &ldquo;<span lang="en">Disabled All Styles</span>&rdquo; dans l&rsquo;onglet &ldquo;styles&rdquo;.<br>
+<img src="/images/web-developper-css.jpg" alt="Web developper - onglet CSS"></li>
+<li><strong>Les déclarations CSS de couleurs de fond d’élément et de police sont bien déclarées</strong> : chaque déclaration CSS de couleurs de police (<code>color</code>) ou d’un élément susceptible de contenir du texte est accompagnée d’une déclaration de couleur de fond (<code>background</code>, <code>background-color</code>) de l&rsquo;élément qui le reçoit. Autrement dit, une bonne pratique consiste à toujours déclarer les valeurs des deux propriétés <code>color</code> et <code>background-color</code> dans une même déclaration.</li>
+</ul>
+<h3 id="texte">Texte</h3>
+<ul>
+<li><strong>Le texte doit rester visible</strong> en cas de :
+<ul>
+<li><strong>Fort grossissement</strong> :  l’augmentation de la taille des caractères jusqu’à 200%, au moins, ne doit pas provoquer de perte d’information.   <em>Dans votre navigateur utiliser le zoom ou appuyer sur les touches <code>Ctrl</code> et <code>+</code> à 6 reprises ou la loupe de Windows</em>.</li>
+<li><strong>Changement d&rsquo;orientation de l&rsquo;écran</strong> (site responsive)<br>
+<em>Dans Firefox, vous pouvez afficher une vue adaptative de votre fenêtre via la combinaison de touches <code>Ctrl</code> + <code>Maj</code> + <code>M</code></em></li>
+<li><strong>Lors de l&rsquo;utilisation du mode contraste élevé de windows</strong>.<br>
+<em>Le mode contraste élevé s&rsquo;active via la combinaison de touches <code>Alt</code> + <code>Maj</code> + <code>Impr écran</code></em>;</li>
+</ul>
+</li>
+<li><strong>Les propriétés d’espacement du texte peuvent être redéfinies par l’utilisateur</strong> sans perte de contenu ou de fonctionnalité</li>
+<li><strong>Une information ne doit pas être donnée uniquement par la forme, la taille ou la position</strong>.</li>
+</ul>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li><strong>Chaque lien</strong> dont la nature de lien n’est pas évidente (typiquement, on a supprimé le soulignement qui identifie nativement le lien) <strong>est bien visible et distinct du texte environnant</strong>.</li>
 <li><strong>La prise de focus doit être bien visible</strong> :<br>
 Pour cela, déplacez-vous dans la page uniquement à l&rsquo;aide du clavier (touche &ldquo;tabulation&rdquo;). Si vous ne savez pas où se trouve votre curseur, c&rsquo;est que cette règle n&rsquo;est pas respectée. Ajoutez alors un style spécifique pour l&rsquo;état &ldquo;focus&rdquo; dans votre feuille de style.<br>
 Exemple :</li>
@@ -175,17 +218,7 @@ Exemple :</li>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">:</span><span class="nd">focus</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="k">outline</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">purple</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p><img src="/images/web-developper-css.jpg" alt="Web developper - onglet CSS"></p>
-<ul>
-<li>Veiller à ce que tout le texte soit visible en cas de :
-<ul>
-<li>fort grossissement - Appuyer sur les touches Ctrl et + à 6 reprises.</li>
-<li>changement d&rsquo;orientation de l&rsquo;écran (site responsive) - Dans Firefox, vous pouvez afficher une vue adaptative de votre fenêtre via la combinaison de touches Ctrl + Maj + M</li>
-<li>zoom de la page HTML - utiliser la loupe de Windows par exemple.</li>
-</ul>
-</li>
-</ul>
-
+</span></span></code></pre></div>
           </section>   
      </div>
 </main>
