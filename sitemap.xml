@@ -116,13 +116,13 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/structure/</loc>
+    <loc>https://sofeve-concept.github.io/coder/structure/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/coder/structure/</loc>
+    <loc>https://sofeve-concept.github.io/ressources/bureautique/structure/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -146,12 +146,6 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/coder/contenu/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://sofeve-concept.github.io/ressources/outils/outils-couleurs/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -165,18 +159,6 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/finaliser/export/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/coder/contenu/formatage/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/coder/structure/formatage/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -236,6 +218,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/coder/structure/formatage/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/presentation/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -249,6 +237,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/coder/contenu/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -297,6 +291,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/presentation/saut-ligne/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/coder/structure/code/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -411,6 +411,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/coder/navigation/processus-etapes/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/coder/contenu/citations/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

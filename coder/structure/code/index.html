@@ -3,9 +3,9 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Formulaire à étapes multiples - Formulaires - Coder accessible - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Sémantique HTML - Structure de la page - Coder accessible - Sofève Concept</title>
 	
-	<meta name="description" content="Les formulaires longs seront découpés en plusieurs formulaires plus petits, chacun repésentant une étape du formulaire complet. Cela permet de rendre les formulaires longs plus faciles à comprendre et d&#39;alléger la charge cognitive liée à son remplissage, en particulier pour les personnes qui ont moins d&#39;expérience en informatique ou qui ont divers troubles cognitifs. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	<meta name="description" content="Bien structurer sa page et proposer un visuel homogène et cohérent entre les pages permet de faciliter la navigation et la compréhension du contenu du site. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -106,9 +106,9 @@
   
   <li><a href="/coder/">Coder accessible</a></li>
   
-  <li><a href="/coder/formulaire/">Formulaires</a></li>
+  <li><a href="/coder/structure/">Structure de la page</a></li>
   
-  <li aria-current="page" tabindex="-1">Formulaire à étapes multiples</li>
+  <li aria-current="page" tabindex="-1">Sémantique HTML</li>
   </ol>
 </nav>
 <div>
@@ -127,23 +127,21 @@
 		Coder accessible
 	</button>
 	<ul id="sousMenu">
-		<li><a href="/coder">Préambule</a></li><li><a href="https://sofeve-concept.github.io/coder/structure/">Structure de la page</a></li>
+		<li><a href="/coder">Préambule</a></li><li><a href="https://sofeve-concept.github.io/coder/structure/" aria-current="true" >Structure de la page</a>
+			
+			<ul><li><a href="https://sofeve-concept.github.io/coder/structure/code-base/">Code HTML global</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/structure/formatage/">Présentation de l&#39;information</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/structure/code/" aria-current="page" >Sémantique HTML</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/structure/validite-code/">Validité du code</a></li>
+				</ul>
+			</li>
 		<li><a href="https://sofeve-concept.github.io/coder/contenu/">Structure du contenu</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/couleurs/">Couleurs</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/navigation/">Navigation</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/lien-bouton/">Liens et boutons</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/image-icone/">Images et icônes</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/tableaux/">Tableaux</a></li>
-		<li><a href="https://sofeve-concept.github.io/coder/formulaire/" aria-current="true" >Formulaires</a>
-			
-			<ul><li><a href="https://sofeve-concept.github.io/coder/formulaire/semantique-html-formulaire/">Sémantique HTML</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/">Saisie et contrôle du formulaire</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/">Étiquette de champ</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/">Regroupement de champs</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/">Liste déroulante</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/" aria-current="page" >Formulaire à étapes multiples</a></li>
-				</ul>
-			</li>
+		<li><a href="https://sofeve-concept.github.io/coder/formulaire/">Formulaires</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/scripts/">Composants d&#39;interface riche</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/multimedia/">Multimedia</a></li>
 		</ul>
@@ -151,76 +149,66 @@
 
                </aside>
           <section class="item-80 rubCode">
-               <h1 id="contenu">Formulaire à étapes multiples</h1>
-               <p>Les formulaires longs seront découpés en plusieurs formulaires plus petits, chacun repésentant une étape du formulaire complet. Cela permet de rendre les formulaires longs plus faciles à comprendre et d&#39;alléger la charge cognitive liée à son remplissage, en particulier pour les personnes qui ont moins d&#39;expérience en informatique ou qui ont divers troubles cognitifs.</p>
+               <h1 id="contenu">Sémantique HTML</h1>
+               <p>Bien structurer sa page et proposer un visuel homogène et cohérent entre les pages permet de faciliter la navigation et la compréhension du contenu du site.</p>
 <button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
     Table des matières
 </button>
 <div id="tdm" role="region" tabindex="-1">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#titre-de-la-page">Titre de la page</a></li>
-    <li><a href="#titre-du-formulaire">Titre du formulaire</a></li>
-    <li><a href="#mise-en-place-dun-indicateur-de-progression">Mise en place d&rsquo;un indicateur de progression</a>
+    <li><a href="#halte-au-détournement-de-code-">Halte au détournement de code !</a>
       <ul>
-        <li><a href="#jauge-de-progression">Jauge de progression</a></li>
-        <li><a href="#liste-détapes">Liste d&rsquo;étapes</a></li>
+        <li><a href="#confusion-entre-liens-et-boutons">Confusion entre liens et boutons</a></li>
+        <li><a href="#utiliser-la-balise-hr-pour-créer-une-ligne-horizontale-de-séparation">Utiliser la balise <code>&lt;hr&gt;</code> pour créer une ligne horizontale de séparation.</a></li>
+        <li><a href="#utilisation-de-fieldsetfieldset-pour-obtenir-une-bordure">Utilisation de <code>&lt;fieldset&gt;...&lt;/fieldset&gt;</code> pour obtenir une bordure.</a></li>
+        <li><a href="#utiliser-des-éléments-html-à-des-fins-de-mise-en-forme">Utiliser des éléments HTML à des fins de mise en forme</a></li>
       </ul>
     </li>
   </ul>
 </nav>
 </div>
-<p>Pour découper un formulaire en étapes multiples, chaque étape devra proposer les éléments présentés ci-après.</p>
-<h2 id="titre-de-la-page">Titre de la page</h2>
-<p>Le titre de la page doit indiquer l&rsquo;étape à laquelle se trouve l&rsquo;utilisateur et reprendre le titre du formulaire.</p>
+<h2 id="halte-au-détournement-de-code-">Halte au détournement de code !</h2>
+<p>Certains éléments HTML sont détournés de leur usage sémantique  cela est bien entendu proscrit. Voivi les cas de &ldquo;détournement de code&rdquo; les plus fréquents.</p>
+<h3 id="confusion-entre-liens-et-boutons">Confusion entre liens et boutons</h3>
+<p>Il existe deux types de détournement de code :</p>
+<ul>
+<li>Utilisation des balises de lien <code>&lt;a&gt;...&lt;/a&gt;</code>, pour obtenir des bouton sans arrière-plan ni bordure.</li>
+<li>Utilisation d&rsquo;un lien au lieu d&rsquo;un bouton : <code>&lt;a href=&quot;#&quot; onClick=&quot;...&quot;&gt;...&lt;/a&gt;</code>.<br>
+Ici, une action javascript a été posé sur le lien via un <code>onClick</code>. Un lien sur lequel on pose un <code>onClick</code> n&rsquo;est pas un lien, c&rsquo;est un bouton. La bonne façon de faire sera : <code>&lt;button onClick=&quot;...&quot;&gt;...&lt;/button&gt;</code>, quitte à donner ensuite à son bouton l&rsquo;allure d&rsquo;un lien hypertexte via du CSS.</li>
+</ul>
+<p>Pour plus d&rsquo;informations sur la différences entre liens et boutons, <a href="/code/lien-bouton/">se référer à la rubrique Liens et boutons</a></p>
+<h3 id="utiliser-la-balise-hr-pour-créer-une-ligne-horizontale-de-séparation">Utiliser la balise <code>&lt;hr&gt;</code> pour créer une ligne horizontale de séparation.</h3>
+<p>La balise <code>&lt;hr&gt;</code> ne peut être utilisée qu&rsquo;entre deux balises de type paragraphe <code>&lt;p&gt;...&lt;/p&gt;</code> et sert à représenter un changement thématique entre deux paragraphes. On ne pourra donc utiliser <code>&lt;hr /&gt;</code> que dans le contexte suivant :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Quand je mange du chocolat, tout va.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Quand je dessine avec un pinceau en poils de chameau, tout est beau.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Pour créer une ligne de séparation, on utilisera donc un style CSS déclaré, par exemple, via <code>border-top: 1 px solid black;</code></p>
+<h3 id="utilisation-de-fieldsetfieldset-pour-obtenir-une-bordure">Utilisation de <code>&lt;fieldset&gt;...&lt;/fieldset&gt;</code> pour obtenir une bordure.</h3>
+<p><code>&lt;fieldset&gt;...&lt;/fieldset&gt;</code> est une balise spécifique au formulaire (balise <code>&lt;form&gt;...&lt;/form&gt;</code>). La balise <code>&lt;fieldset&gt;</code> doit toujours est suivie ddes balises <code>&lt;legend&gt;...&lt;/legend&gt;</code> pour que le code soit conforme.<br>
+Les balises <code>&lt;fieldset&gt;...&lt;/fieldset&gt;</code> ne doivent être utilisées que dans les formulaire pour regrouper des champs de même nature.</p>
 <p><strong>Exemple</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Étape 2 sur 3 - Paiement - Votre commande<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h2 id="titre-du-formulaire">Titre du formulaire</h2>
-<p>L&rsquo;utilisation d&rsquo;un titre (<code>h1</code>, <code>h2</code>,&hellip;) dans la page de contenu est un bon moyen d&rsquo;informer l&rsquo;utilisateur.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Paiement (Étape 2 sur 3)<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h2 id="mise-en-place-dun-indicateur-de-progression">Mise en place d&rsquo;un indicateur de progression</h2>
-<p>Un indicateur d&rsquo;étapes aide les utilisateurs à s&rsquo;orienter. Il peut prendre 2 formes :</p>
-<ul>
-<li>une jauge de progression ;</li>
-<li>une liste des différentes étapes à compléter.</li>
-</ul>
-<h3 id="jauge-de-progression">Jauge de progression</h3>
-<p>L&rsquo;élément de progression <code>progress</code> peut être utilisé pour informer les utilisateurs de leur progression dans le remplissage du formulaire. Cette façon de faire peut être particulièrement utile dans les situations où le nombre d&rsquo;étapes dépend de l&rsquo;entrée de l&rsquo;utilisateur, comme dans une enquête où les étapes sont ignorées en fonction de la façon dont les questions ont été répondues.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">Répondre à l&#39;enquête <span class="p">&lt;</span><span class="nt">progress</span> <span class="na">max</span><span class="o">=</span><span class="s">&#34;7&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>(Étape 2 sur 7)<span class="p">&lt;/</span><span class="nt">progress</span><span class="p">&gt;</span>
-</span></span></code></pre></div><p><strong>L&rsquo;élément <code>progress</code> est animé par défaut dans certains navigateurs ce qui est contraire à règle d&rsquo;accessibilité qui demande à ce que l&rsquo;utilisateur ait la maîtrise des animations. Pour éviter cette animation automatique, il faudra rajouter le code CSS suivant :</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">:</span><span class="nd">root</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">     <span class="nv">--PROGRESS-color</span><span class="p">:</span> <span class="mh">#123456</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="c">/* Microsoft IE */</span>
-</span></span><span class="line"><span class="cl"><span class="nt">progress</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">PROGRESS</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="c">/* Apple Safari and Google Chrome */</span>
-</span></span><span class="line"><span class="cl"><span class="nt">progress</span><span class="p">::</span><span class="nd">-webkit-progress-bar</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="k">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">PROGRESS</span><span class="o">-</span><span class="kc">color</span><span class="p">);;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="c">/* Mozilla Firefox */</span>
-</span></span><span class="line"><span class="cl"><span class="nt">progress</span><span class="p">::</span><span class="nd">-moz-progress-bar</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="k">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">PROGRESS</span><span class="o">-</span><span class="kc">color</span><span class="p">);;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><h3 id="liste-détapes">Liste d&rsquo;étapes</h3>
-<p>Une liste d&rsquo;étapes s&rsquo;implémente de la manière suivante :</p>
-<ul>
-<li>la liste d&rsquo;étapes est incluse entre les balises <code>&lt;nav&gt;</code> et <code>&lt;/nav&gt;</code> </li>
-<li>la liste d&rsquo;étapes est implémentée sous forme de <strong>liste ordonnée</strong> avec un élément de liste pour chaque étape ;</li>
-<li>l’étape courante est identifée avec l&rsquo;attribut <code>aria-current=&quot;step&quot;</code></li>
-<li>si possible, un lien est posé vers les étapes déjà effectuées et dans ces cas, les données déjà saisies dans l&rsquo;étape en cours doivent être enregistrées.</li>
-</ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Étapes de votre commande&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/info&#34;</span><span class="p">&gt;</span>Informations personnelles<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">li</span> <span class="na">aria-current</span><span class="o">=</span><span class="s">&#34;step&#34;</span><span class="p">&gt;</span>Paiement<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Livraison<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">	<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"> <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
-</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">form</span> <span class="err">...</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Invité 1<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;prenom1&#34;</span><span class="p">&gt;</span>Prénom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;prenom1&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;prenom1&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;nom1&#34;</span><span class="p">&gt;</span>Nom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;nom1&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;nom1&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Invité 2<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;prenom2&#34;</span><span class="p">&gt;</span>Prénom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;prenom2&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;prenom2&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;nom2&#34;</span><span class="p">&gt;</span>Nom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;nom2&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;nom2&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Pour plus d&rsquo;informations sur les formulaires, <a href="/code/formulaire/">se référer à la rubrique Formulaire</a>.</p>
+<h3 id="utiliser-des-éléments-html-à-des-fins-de-mise-en-forme">Utiliser des éléments HTML à des fins de mise en forme</h3>
+<p>Les balises <code>&lt;q&gt;...&lt;/q&gt;</code> sont parfois utilisées pour obtenir un texte entre guillemets (mise en forme par défaut des navigateurs).<br>
+Comme vu au début de cette page, les balises <code>&lt;q&gt;...&lt;/q&gt;</code> servent à indiquer une citation courte à l&rsquo;intérieur d&rsquo;un paragraphe.</p>
+
           </section>   
      </div>
 </main>

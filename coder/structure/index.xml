@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Structure générale on Sofève Concept</title>
+    <title>Structure de la page on Sofève Concept</title>
     <link>https://sofeve-concept.github.io/coder/structure/</link>
-    <description>Recent content in Structure générale on Sofève Concept</description>
+    <description>Recent content in Structure de la page on Sofève Concept</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/coder/structure/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -17,12 +17,21 @@ Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page H
     </item>
     
     <item>
-      <title>Formatage du contenu</title>
+      <title>Présentation de l&#39;information</title>
       <link>https://sofeve-concept.github.io/coder/structure/formatage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/structure/formatage/</guid>
       <description>Comme il n&amp;rsquo;est pas possible d&amp;rsquo;être exhaustif, nous allons parcourir ici les éléments sur lesquels être vigilants car bien souvent source de non conformité en terme d&amp;rsquo;accessibilité numérique.</description>
+    </item>
+    
+    <item>
+      <title>Sémantique HTML</title>
+      <link>https://sofeve-concept.github.io/coder/structure/code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/structure/code/</guid>
+      <description>Halte au détournement de code ! Certains éléments HTML sont détournés de leur usage sémantique cela est bien entendu proscrit.</description>
     </item>
     
     <item>

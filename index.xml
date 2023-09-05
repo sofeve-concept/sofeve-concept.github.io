@@ -235,24 +235,6 @@ Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page H
     </item>
     
     <item>
-      <title>Formatage du contenu</title>
-      <link>https://sofeve-concept.github.io/coder/contenu/formatage/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/coder/contenu/formatage/</guid>
-      <description>Comme il n&amp;rsquo;est pas possible d&amp;rsquo;être exhaustif, nous allons parcourir ici les éléments sur lesquels être vigilants car bien souvent source de non conformité en terme d&amp;rsquo;accessibilité numérique.</description>
-    </item>
-    
-    <item>
-      <title>Formatage du contenu</title>
-      <link>https://sofeve-concept.github.io/coder/structure/formatage/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/coder/structure/formatage/</guid>
-      <description>Comme il n&amp;rsquo;est pas possible d&amp;rsquo;être exhaustif, nous allons parcourir ici les éléments sur lesquels être vigilants car bien souvent source de non conformité en terme d&amp;rsquo;accessibilité numérique.</description>
-    </item>
-    
-    <item>
       <title>Images IMG</title>
       <link>https://sofeve-concept.github.io/coder/image-icone/images-img/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -336,6 +318,15 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
     </item>
     
     <item>
+      <title>Présentation de l&#39;information</title>
+      <link>https://sofeve-concept.github.io/coder/structure/formatage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/structure/formatage/</guid>
+      <description>Comme il n&amp;rsquo;est pas possible d&amp;rsquo;être exhaustif, nous allons parcourir ici les éléments sur lesquels être vigilants car bien souvent source de non conformité en terme d&amp;rsquo;accessibilité numérique.</description>
+    </item>
+    
+    <item>
       <title>Rédaction de courriels</title>
       <link>https://sofeve-concept.github.io/ressources/bureautique/courriel/courriel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -405,6 +396,15 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
       
       <guid>https://sofeve-concept.github.io/ressources/bureautique/presentation/saut-ligne/</guid>
       <description>Règles Pour espacer des paragraphes, ne pas utiliser des sauts de ligne multiple mais utiliser les propriétés d’espacement des paragraphes.</description>
+    </item>
+    
+    <item>
+      <title>Sémantique HTML</title>
+      <link>https://sofeve-concept.github.io/coder/structure/code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/structure/code/</guid>
+      <description>Halte au détournement de code ! Certains éléments HTML sont détournés de leur usage sémantique cela est bien entendu proscrit.</description>
     </item>
     
     <item>
@@ -541,6 +541,15 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
       
       <guid>https://sofeve-concept.github.io/coder/navigation/processus-etapes/</guid>
       <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;un processus par étapes ? Les processus par étapes (stepper, en anglais) affichent la progression à travers une séquence d&amp;rsquo;étapes logiques et numérotées.</description>
+    </item>
+    
+    <item>
+      <title>Citations</title>
+      <link>https://sofeve-concept.github.io/coder/contenu/citations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/contenu/citations/</guid>
+      <description>Bloc de citation Chaque bloc de citation doit être structuré au moyen d’un élément blockquote. Un bloc de citation est un paragraphe (ou plusieurs) complet d&amp;rsquo;une citation d&amp;rsquo;un auteur.</description>
     </item>
     
     <item>

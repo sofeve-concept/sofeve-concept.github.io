@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Contenu on Sofève Concept</title>
+    <title>Structure du contenu on Sofève Concept</title>
     <link>https://sofeve-concept.github.io/coder/contenu/</link>
-    <description>Recent content in Contenu on Sofève Concept</description>
+    <description>Recent content in Structure du contenu on Sofève Concept</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/coder/contenu/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,15 +13,6 @@
       
       <guid>https://sofeve-concept.github.io/coder/contenu/ecriture/</guid>
       <description>Abréviations, sigles, acronymes, numéronymes Définitions Abréviation Une abréviation est le raccourcissement d&#39;un mot ou d&#39;un groupe de mots.</description>
-    </item>
-    
-    <item>
-      <title>Formatage du contenu</title>
-      <link>https://sofeve-concept.github.io/coder/contenu/formatage/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/coder/contenu/formatage/</guid>
-      <description>Comme il n&amp;rsquo;est pas possible d&amp;rsquo;être exhaustif, nous allons parcourir ici les éléments sur lesquels être vigilants car bien souvent source de non conformité en terme d&amp;rsquo;accessibilité numérique.</description>
     </item>
     
     <item>
@@ -49,6 +40,15 @@
       
       <guid>https://sofeve-concept.github.io/coder/contenu/liste/</guid>
       <description>Listes Les listes servent à présenter des élements sous forme de liste mais aussi les éléments d&amp;rsquo;un menu : menu de navigation, fils d&amp;rsquo;ariane, processus par étape, pagination.</description>
+    </item>
+    
+    <item>
+      <title>Citations</title>
+      <link>https://sofeve-concept.github.io/coder/contenu/citations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/contenu/citations/</guid>
+      <description>Bloc de citation Chaque bloc de citation doit être structuré au moyen d’un élément blockquote. Un bloc de citation est un paragraphe (ou plusieurs) complet d&amp;rsquo;une citation d&amp;rsquo;un auteur.</description>
     </item>
     
   </channel>
