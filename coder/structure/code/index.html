@@ -3,9 +3,9 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Titraille - Formatage du contenu - Coder accessible - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Sémantique HTML - Structure de la page - Coder accessible - Sofève Concept</title>
 	
-	<meta name="description" content="Afin de faciliter la navigation avec un synthétiquer vocal, il est important de structurer son texte à l&#39;aide de titres. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	<meta name="description" content="Bien structurer sa page et proposer un visuel homogène et cohérent entre les pages permet de faciliter la navigation et la compréhension du contenu du site. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -106,9 +106,9 @@
   
   <li><a href="/coder/">Coder accessible</a></li>
   
-  <li><a href="/coder/contenu/">Formatage du contenu</a></li>
+  <li><a href="/coder/structure/">Structure de la page</a></li>
   
-  <li aria-current="page" tabindex="-1">Titraille</li>
+  <li aria-current="page" tabindex="-1">Sémantique HTML</li>
   </ol>
 </nav>
 <div>
@@ -127,16 +127,15 @@
 		Coder accessible
 	</button>
 	<ul id="sousMenu">
-		<li><a href="/coder">Préambule</a></li><li><a href="https://sofeve-concept.github.io/coder/structure/">Structure de la page</a></li>
-		<li><a href="https://sofeve-concept.github.io/coder/contenu/" aria-current="true" >Formatage du contenu</a>
+		<li><a href="/coder">Préambule</a></li><li><a href="https://sofeve-concept.github.io/coder/structure/" aria-current="true" >Structure de la page</a>
 			
-			<ul><li><a href="https://sofeve-concept.github.io/coder/contenu/ecriture/">Écrire accessible</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/contenu/titraille/" aria-current="page" >Titraille</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/contenu/texte/">Texte</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/contenu/liste/">Listes</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/contenu/citations/">Citations</a></li>
+			<ul><li><a href="https://sofeve-concept.github.io/coder/structure/code-base/">Code HTML global</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/structure/formatage/">Présentation de l&#39;information</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/structure/code/" aria-current="page" >Sémantique HTML</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/structure/validite-code/">Validité du code</a></li>
 				</ul>
 			</li>
+		<li><a href="https://sofeve-concept.github.io/coder/contenu/">Structure du contenu</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/couleurs/">Couleurs</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/navigation/">Navigation</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/lien-bouton/">Liens et boutons</a></li>
@@ -150,30 +149,65 @@
 
                </aside>
           <section class="item-80 rubCode">
-               <h1 id="contenu">Titraille</h1>
-               <p>Afin de faciliter la navigation avec un synthétiquer vocal, il est important de structurer son texte à l&#39;aide de titres.</p>
+               <h1 id="contenu">Sémantique HTML</h1>
+               <p>Bien structurer sa page et proposer un visuel homogène et cohérent entre les pages permet de faciliter la navigation et la compréhension du contenu du site.</p>
 <button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
     Table des matières
 </button>
 <div id="tdm" role="region" tabindex="-1">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#balises-de-titraille-éléments-html-h1-à-h6">Balises de titraille, éléments HTML <code>h1</code> à <code>h6</code></a></li>
+    <li><a href="#halte-au-détournement-de-code-">Halte au détournement de code !</a>
+      <ul>
+        <li><a href="#confusion-entre-liens-et-boutons">Confusion entre liens et boutons</a></li>
+        <li><a href="#utiliser-la-balise-hr-pour-créer-une-ligne-horizontale-de-séparation">Utiliser la balise <code>&lt;hr&gt;</code> pour créer une ligne horizontale de séparation.</a></li>
+        <li><a href="#utilisation-de-fieldsetfieldset-pour-obtenir-une-bordure">Utilisation de <code>&lt;fieldset&gt;...&lt;/fieldset&gt;</code> pour obtenir une bordure.</a></li>
+        <li><a href="#utiliser-des-éléments-html-à-des-fins-de-mise-en-forme">Utiliser des éléments HTML à des fins de mise en forme</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 </div>
-<h2 id="balises-de-titraille-éléments-html-h1-à-h6">Balises de titraille, éléments HTML <code>h1</code> à <code>h6</code></h2>
-<p>Le contenu du document est hiérarchisé à l&rsquo;aide déléments de titraille (balises allant de <code>&lt;h1&gt;...&lt;/h1&gt;</code> à <code>&lt;h6&gt;...&lt;/h6&gt;</code>); S&rsquo;il est possible d&rsquo;aller au delà du niveau 6, mieux vaut repenser la hériarchisation de sa page avant de rajouter un titre de niveau 7 ou plus&hellip;:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Titre de niveau 1<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Titre de niveau 2<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Titre de niveau 3<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>Titre de niveau 4<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h5</span><span class="p">&gt;</span>Titre de niveau 5<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h6</span><span class="p">&gt;</span>Titre de niveau 6<span class="p">&lt;/</span><span class="nt">h6</span><span class="p">&gt;</span>
-</span></span></code></pre></div><ul>
-<li>La hiérarchie de titres sera logique et exhaustive  on veillera notamment à ce qu&rsquo;il n&rsquo;y ait pas de &ldquo;trous&rdquo; entre les niveaux de titre (on passerait de h1 à h3, par exemple sans mettre de h2).</li>
-<li>Les balises de titraille seront utilisées pour créer des titres et non pas à des fins de mise en forme ou de présentation du texte.</li>
+<h2 id="halte-au-détournement-de-code-">Halte au détournement de code !</h2>
+<p>Certains éléments HTML sont détournés de leur usage sémantique  cela est bien entendu proscrit. Voivi les cas de &ldquo;détournement de code&rdquo; les plus fréquents.</p>
+<h3 id="confusion-entre-liens-et-boutons">Confusion entre liens et boutons</h3>
+<p>Il existe deux types de détournement de code :</p>
+<ul>
+<li>Utilisation des balises de lien <code>&lt;a&gt;...&lt;/a&gt;</code>, pour obtenir des bouton sans arrière-plan ni bordure.</li>
+<li>Utilisation d&rsquo;un lien au lieu d&rsquo;un bouton : <code>&lt;a href=&quot;#&quot; onClick=&quot;...&quot;&gt;...&lt;/a&gt;</code>.<br>
+Ici, une action javascript a été posé sur le lien via un <code>onClick</code>. Un lien sur lequel on pose un <code>onClick</code> n&rsquo;est pas un lien, c&rsquo;est un bouton. La bonne façon de faire sera : <code>&lt;button onClick=&quot;...&quot;&gt;...&lt;/button&gt;</code>, quitte à donner ensuite à son bouton l&rsquo;allure d&rsquo;un lien hypertexte via du CSS.</li>
 </ul>
+<p>Pour plus d&rsquo;informations sur la différences entre liens et boutons, <a href="/code/lien-bouton/">se référer à la rubrique Liens et boutons</a></p>
+<h3 id="utiliser-la-balise-hr-pour-créer-une-ligne-horizontale-de-séparation">Utiliser la balise <code>&lt;hr&gt;</code> pour créer une ligne horizontale de séparation.</h3>
+<p>La balise <code>&lt;hr&gt;</code> ne peut être utilisée qu&rsquo;entre deux balises de type paragraphe <code>&lt;p&gt;...&lt;/p&gt;</code> et sert à représenter un changement thématique entre deux paragraphes. On ne pourra donc utiliser <code>&lt;hr /&gt;</code> que dans le contexte suivant :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Quand je mange du chocolat, tout va.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Quand je dessine avec un pinceau en poils de chameau, tout est beau.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Pour créer une ligne de séparation, on utilisera donc un style CSS déclaré, par exemple, via <code>border-top: 1 px solid black;</code></p>
+<h3 id="utilisation-de-fieldsetfieldset-pour-obtenir-une-bordure">Utilisation de <code>&lt;fieldset&gt;...&lt;/fieldset&gt;</code> pour obtenir une bordure.</h3>
+<p><code>&lt;fieldset&gt;...&lt;/fieldset&gt;</code> est une balise spécifique au formulaire (balise <code>&lt;form&gt;...&lt;/form&gt;</code>). La balise <code>&lt;fieldset&gt;</code> doit toujours est suivie ddes balises <code>&lt;legend&gt;...&lt;/legend&gt;</code> pour que le code soit conforme.<br>
+Les balises <code>&lt;fieldset&gt;...&lt;/fieldset&gt;</code> ne doivent être utilisées que dans les formulaire pour regrouper des champs de même nature.</p>
+<p><strong>Exemple</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">form</span> <span class="err">...</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Invité 1<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;prenom1&#34;</span><span class="p">&gt;</span>Prénom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;prenom1&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;prenom1&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;nom1&#34;</span><span class="p">&gt;</span>Nom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;nom1&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;nom1&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Invité 2<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;prenom2&#34;</span><span class="p">&gt;</span>Prénom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;prenom2&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;prenom2&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;nom2&#34;</span><span class="p">&gt;</span>Nom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;nom2&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;nom2&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Pour plus d&rsquo;informations sur les formulaires, <a href="/code/formulaire/">se référer à la rubrique Formulaire</a>.</p>
+<h3 id="utiliser-des-éléments-html-à-des-fins-de-mise-en-forme">Utiliser des éléments HTML à des fins de mise en forme</h3>
+<p>Les balises <code>&lt;q&gt;...&lt;/q&gt;</code> sont parfois utilisées pour obtenir un texte entre guillemets (mise en forme par défaut des navigateurs).<br>
+Comme vu au début de cette page, les balises <code>&lt;q&gt;...&lt;/q&gt;</code> servent à indiquer une citation courte à l&rsquo;intérieur d&rsquo;un paragraphe.</p>
 
           </section>   
      </div>
