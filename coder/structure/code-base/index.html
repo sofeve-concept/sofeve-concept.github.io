@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="fr">
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -192,17 +192,17 @@
 <h2 id="règles-dimplémentation">Règles d&rsquo;implémentation</h2>
 <ul>
 <li>Le doctype HTML 5 s&rsquo;écrit <code>&lt;!DOCTYPE html&gt;</code></li>
-<li>il sera suivi par l&rsquo;élement  <code>html</code> avec l&rsquo;indication de la langue du document au format ISO <code>&lt;html lang=&quot;fr-FR&quot;&gt;</code> qui contiendra :
+<li>il sera suivi par la balise ouvrante <code>html</code> <strong>avec l&rsquo;indication de la langue principale du document</strong> au format ISO 639-1 <code>&lt;html lang=&quot;...&quot;&gt;</code> qui sera suivie :
 <ul>
-<li>les éléments HTML balisés par <code>&lt;head&gt;...&lt;/head&gt;</code></li>
-<li>les éléments HTML balisés par <code>&lt;body&gt;...&lt;/body&gt;</code></li>
+<li>des éléments HTML balisés par <code>&lt;head&gt;...&lt;/head&gt;</code></li>
+<li>des éléments HTML balisés par <code>&lt;body&gt;...&lt;/body&gt;</code></li>
 </ul>
 </li>
 <li>le document HTML se terminera avec la balise fermante <code>&lt;/html&gt;</code>.</li>
 </ul>
-<p>Le code HTML minimum se présentera donc comme suit :</p>
+<p>Le code HTML minimum se présentera donc comme suit (pour une page écrite principalement en français):</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;fr-FR&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;fr&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Titre de la page - Nom du site<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
@@ -215,9 +215,9 @@
 </span></span></code></pre></div><div class="notice attention" >   
      <p> attention </p>
      <p>
-Dans le cas d'un site multilangue, il faudra bien veiller à mettre à jour le code ISO de la langue du document : <br> 
-<code>&lt;html lang="fr-FR"></code>, pour un site en français&nbsp;;<br>
-<code>&lt;html lang="en-EN"></code>, pour un site en anglais...
+Dans le cas d'un site multilangue, il faudra bien veiller à mettre à jour le code ISO 639-1 de la langue du document : <br> 
+<code>&lt;html lang="fr"></code>, pour un site en français&nbsp;;<br>
+<code>&lt;html lang="en"></code>, pour un site en anglais...
 </p>
 </div>
 <h2 id="règles-daccessibilité">Règles d&rsquo;accessibilité</h2>
