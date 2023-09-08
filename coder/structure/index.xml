@@ -13,7 +13,7 @@
       
       <guid>https://sofeve-concept.github.io/coder/structure/code-base/</guid>
       <description>Une page web doit comporter différents éléments pour être valide :
-Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page HTML 5 Une déclaration de langue Une entête contenant des meta informations comme le titre de la page (qui apparaitra dans l&amp;rsquo;onglet du navigateur) et diverses déclarations comme l&amp;rsquo;encodage de la page, les liens vers des feuilles de style&amp;hellip; Le corps du document (c&amp;rsquo;est cette partie du code qui sera affichée dans le navigateur) contenant des balises sémantiques permettant de structurer la page.</description>
+Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page HTML 5 ; L&amp;rsquo;élément racine html contenant une déclaration de langue ; Une entête contenant des meta informations comme le titre de la page (qui apparaitra dans l&amp;rsquo;onglet du navigateur) et diverses déclarations comme l&amp;rsquo;encodage de la page, les liens vers des feuilles de style&amp;hellip; Le corps du document (c&amp;rsquo;est cette partie du code qui sera affichée dans le navigateur) contenant des balises sémantiques permettant de structurer la page.</description>
     </item>
     
     <item>

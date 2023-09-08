@@ -183,15 +183,15 @@
 </div>
 <p>Une page web doit comporter différents éléments pour être valide :</p>
 <ul>
-<li>Un <em>doctype</em> pour indiquer qu&rsquo;il s&rsquo;agit d&rsquo;une page HTML 5 </li>
-<li>Une déclaration de langue</li>
+<li>Un <em>doctype</em> pour indiquer qu&rsquo;il s&rsquo;agit d&rsquo;une page HTML 5 ;</li>
+<li>L&rsquo;élément racine <code>html</code> contenant une déclaration de langue ;</li>
 <li>Une entête contenant des <em>meta informations</em> comme le titre de la page (qui apparaitra dans l&rsquo;onglet du navigateur) et diverses déclarations comme l&rsquo;encodage de la page, les liens vers des feuilles de style&hellip; </li>
 <li>Le corps du document (c&rsquo;est cette partie du code qui sera affichée dans le navigateur) contenant des balises sémantiques permettant de structurer la page.</li>
 </ul>
 <h2 id="règles-dimplémentation">Règles d&rsquo;implémentation</h2>
 <ul>
 <li>Le doctype HTML 5 s&rsquo;écrit <code>&lt;!DOCTYPE html&gt;</code></li>
-<li>il sera suivi par la balise ouvrante <code>html</code> <strong>avec l&rsquo;indication de la langue principale du document</strong> au format ISO 639-1 <code>&lt;html lang=&quot;...&quot;&gt;</code> qui sera suivie :
+<li>il sera suivi par la balise ouvrante <code>html</code> <strong>avec l&rsquo;indication de la langue principale du document</strong> au format ISO 639-1 (exemple : <code>&lt;html lang=&quot;fr&quot;&gt;</code>) qui sera suivie :
 <ul>
 <li>des éléments HTML balisés par <code>&lt;head&gt;...&lt;/head&gt;</code></li>
 <li>des éléments HTML balisés par <code>&lt;body&gt;...&lt;/body&gt;</code></li>
@@ -199,7 +199,7 @@
 </li>
 <li>le document HTML se terminera avec la balise fermante <code>&lt;/html&gt;</code>.</li>
 </ul>
-<p>Le code HTML minimum se présentera donc comme suit (pour une page écrite principalement en français):</p>
+<p>Le code HTML minimum se présentera donc comme suit (pour une page écrite en français):</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;fr&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
