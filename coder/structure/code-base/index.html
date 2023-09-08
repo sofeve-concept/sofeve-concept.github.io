@@ -156,7 +156,11 @@
 <div id="tdm" role="region" tabindex="-1">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#règles-dimplémentation">Règles d&rsquo;implémentation</a></li>
+    <li><a href="#règles-dimplémentation">Règles d&rsquo;implémentation</a>
+      <ul>
+        <li><a href="#à-propos-de-lattribut-lang">À propos de l&rsquo;attribut <code>lang</code></a></li>
+      </ul>
+    </li>
     <li><a href="#règles-daccessibilité">Règles d&rsquo;accessibilité</a>
       <ul>
         <li><a href="#contenu-de-lentête-html-élément-head">Contenu de l&rsquo;entête HTML (élément <code>head</code>)</a>
@@ -211,7 +215,14 @@
 </span></span><span class="line"><span class="cl">        ...
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</span></span></code></pre></div><div class="notice attention" >   
+</span></span></code></pre></div><h3 id="à-propos-de-lattribut-lang">À propos de l&rsquo;attribut <code>lang</code></h3>
+<p>L&rsquo;attribut <code>lang</code> permet d&rsquo;indiquer la langue principale du document. Il est aussi utilisé par :</p>
+<ul>
+<li>Les logiciels de synthèse vocale pour choisir la prononciation et l&rsquo;accent avec lesquels vocaliser la page ;</li>
+<li>Les moteurs de recherche pour afficher les résultats de recherche selon les préférences linguistiques de l&rsquo;utilisateur.</li>
+</ul>
+<p><em>À l&rsquo;intérieur d&rsquo;un document, l&rsquo;attribut <code>lang</code> permet aussi d&rsquo;afficher la portion de texte ainsi identifiée avec un style spécifique. Exemple une portion de texte écrite en japonais (<code>lang=&quot;jp&quot;</code>) pourra recourir via CSS à une police de caractère spécifique.</em></p>
+<div class="notice attention" >   
      <p> attention </p>
      <p>
 Dans le cas d'un site multilangue, il faudra bien veiller à mettre à jour le code ISO 639-1 de la langue du document : <br> 
