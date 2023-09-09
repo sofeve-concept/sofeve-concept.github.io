@@ -7,12 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/coder/image-icone/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Les images</title>
+      <title>Implémenter les images</title>
       <link>https://sofeve-concept.github.io/coder/image-icone/images/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/image-icone/images/</guid>
       <description>Ce qu&amp;rsquo;il faut retenir Dans une page web, une image peut être utilisée comme simple décoration ou être porteuse d&amp;rsquo;information (image illustrative ou informative).</description>
+    </item>
+    
+    <item>
+      <title>Optimiser les images</title>
+      <link>https://sofeve-concept.github.io/coder/image-icone/optimisation-image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/image-icone/optimisation-image/</guid>
+      <description>Format d&amp;rsquo;image les plus courants Les formats d&amp;rsquo;image (extension du fichier image) recommandés et pris en charge en HTML sont les suivants :</description>
     </item>
     
     <item>
@@ -34,7 +43,7 @@
     </item>
     
     <item>
-      <title>Images légendées</title>
+      <title>Images légendées (FIGURE)</title>
       <link>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

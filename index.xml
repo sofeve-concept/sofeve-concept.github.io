@@ -98,7 +98,7 @@
     </item>
     
     <item>
-      <title>Les images</title>
+      <title>Implémenter les images</title>
       <link>https://sofeve-concept.github.io/coder/image-icone/images/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -235,15 +235,6 @@ Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page H
     </item>
     
     <item>
-      <title>Images IMG</title>
-      <link>https://sofeve-concept.github.io/coder/image-icone/images-img/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/coder/image-icone/images-img/</guid>
-      <description>Image IMG décorative : pas d&amp;rsquo;alternative textuelle Pour savoir si une image est décorative, le plus simple est d&amp;rsquo;imaginer qu&amp;rsquo;il n&amp;rsquo;y a pas d&amp;rsquo;image et de se poser ensuite la question : « Est-ce que je perds de l&amp;rsquo;information ?</description>
-    </item>
-    
-    <item>
       <title>Lecteur audio ou vidéo</title>
       <link>https://sofeve-concept.github.io/coder/multimedia/lecteur-video/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -318,6 +309,15 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
     </item>
     
     <item>
+      <title>Optimiser les images</title>
+      <link>https://sofeve-concept.github.io/coder/image-icone/optimisation-image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/image-icone/optimisation-image/</guid>
+      <description>Format d&amp;rsquo;image les plus courants Les formats d&amp;rsquo;image (extension du fichier image) recommandés et pris en charge en HTML sont les suivants :</description>
+    </item>
+    
+    <item>
       <title>Présentation de l&#39;information</title>
       <link>https://sofeve-concept.github.io/coder/structure/formatage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -372,12 +372,12 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
     </item>
     
     <item>
-      <title>Images SVG</title>
-      <link>https://sofeve-concept.github.io/coder/image-icone/images-svg/</link>
+      <title>Images IMG</title>
+      <link>https://sofeve-concept.github.io/coder/image-icone/images-img/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sofeve-concept.github.io/coder/image-icone/images-svg/</guid>
-      <description>SVG (Scalable Vector Graphics) est un format de fichier vectoriel qui permet de décrire des images.</description>
+      <guid>https://sofeve-concept.github.io/coder/image-icone/images-img/</guid>
+      <description>Image IMG décorative : pas d&amp;rsquo;alternative textuelle Pour savoir si une image est décorative, le plus simple est d&amp;rsquo;imaginer qu&amp;rsquo;il n&amp;rsquo;y a pas d&amp;rsquo;image et de se poser ensuite la question : « Est-ce que je perds de l&amp;rsquo;information ?</description>
     </item>
     
     <item>
@@ -471,13 +471,12 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
     </item>
     
     <item>
-      <title>Images légendées</title>
-      <link>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</link>
+      <title>Images SVG</title>
+      <link>https://sofeve-concept.github.io/coder/image-icone/images-svg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</guid>
-      <description>Implémentation HTML Les images légendées doivent être balisées avec &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; et &amp;lt;figcaption&amp;gt;.
-La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</description>
+      <guid>https://sofeve-concept.github.io/coder/image-icone/images-svg/</guid>
+      <description>SVG (Scalable Vector Graphics) est un format de fichier vectoriel qui permet de décrire des images.</description>
     </item>
     
     <item>
@@ -505,6 +504,16 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
       
       <guid>https://sofeve-concept.github.io/coder/contenu/texte/</guid>
       <description>Formatage du texte À faire Utiliser des tailles relatives pour les polices de caractères : (em, rem, %, small&amp;hellip;) ; Veiller à déclarer une interligne de 1,5 via la déclaration css line-height: 1.</description>
+    </item>
+    
+    <item>
+      <title>Images légendées (FIGURE)</title>
+      <link>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</guid>
+      <description>Implémentation HTML Les images légendées doivent être balisées avec &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; et &amp;lt;figcaption&amp;gt;.
+La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</description>
     </item>
     
     <item>

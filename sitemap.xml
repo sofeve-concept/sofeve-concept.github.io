@@ -170,12 +170,6 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/coder/image-icone/images-img/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://sofeve-concept.github.io/coder/multimedia/lecteur-video/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -219,6 +213,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/motifs/menu-lateral-glissant/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/coder/image-icone/optimisation-image/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -272,7 +272,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/coder/image-icone/images-svg/</loc>
+    <loc>https://sofeve-concept.github.io/coder/image-icone/images-img/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -350,7 +350,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</loc>
+    <loc>https://sofeve-concept.github.io/coder/image-icone/images-svg/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -381,6 +381,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/couleur/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
