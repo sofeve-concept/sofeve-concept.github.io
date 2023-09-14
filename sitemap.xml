@@ -440,6 +440,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/coder/contenu/cadre/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/finaliser/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -51,5 +51,14 @@
       <description>Bloc de citation Chaque bloc de citation doit être structuré au moyen d’un élément blockquote. Un bloc de citation est un paragraphe (ou plusieurs) complet d&amp;rsquo;une citation d&amp;rsquo;un auteur.</description>
     </item>
     
+    <item>
+      <title>Cadre intégré</title>
+      <link>https://sofeve-concept.github.io/coder/contenu/cadre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/contenu/cadre/</guid>
+      <description>Règle d&amp;rsquo;implémentation En matière d&amp;rsquo;accessibilité numérique, la seule règle à respecter est de renseigner l&amp;rsquo;attribut title avec un texte pertinent, clair et précis sur le contenu affiché dans le cadre.</description>
+    </item>
+    
   </channel>
 </rss>
