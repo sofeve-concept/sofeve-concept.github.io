@@ -3,10 +3,10 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Processus par étapes - Navigation - Coder accessible - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Lien d&#39;accès rapide - Navigation - Coder accessible - Sofève Concept</title>
 	
 	<meta name="theme-color" content="#FFFFFF" />
-	<meta name="description" content="Les processus par étapes affichent la progression à travers une séquence d&#39;étapes logiques et numérotées. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	<meta name="description" content="Le lien d&#39;accès rapide permet d’accéder directement à la zone de contenu principal de la page afin d&#39;optimiser la navigation au clavier. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -106,7 +106,7 @@
   
   <li><a href="/coder/navigation/">Navigation</a></li>
   
-  <li aria-current="page" tabindex="-1">Processus par étapes</li>
+  <li aria-current="page" tabindex="-1">Lien d&#39;accès rapide</li>
   </ol>
 </nav>
 <div>
@@ -131,10 +131,10 @@
 		<li><a href="https://sofeve-concept.github.io/coder/navigation/" aria-current="true" >Navigation</a>
 			
 			<ul><li><a href="https://sofeve-concept.github.io/coder/navigation/a-propos/">À propos de la navigation</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/navigation/lien-acces-rapide/">Lien d&#39;accès rapide</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/navigation/lien-acces-rapide/" aria-current="page" >Lien d&#39;accès rapide</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/navigation/menu-navigation/">Menu de navigation</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/navigation/fil-ariane/">Fil d&#39;Ariane</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/navigation/processus-etapes/" aria-current="page" >Processus par étapes</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/navigation/processus-etapes/">Processus par étapes</a></li>
 				</ul>
 			</li>
 		<li><a href="https://sofeve-concept.github.io/coder/lien-bouton/">Liens et boutons</a></li>
@@ -148,46 +148,40 @@
 
                </aside>
           <section class="item-80 rubCode">
-               <h1 id="contenu">Processus par étapes</h1>
-               <p>Les processus par étapes affichent la progression à travers une séquence d&#39;étapes logiques et numérotées.</p>
+               <h1 id="contenu">Lien d&#39;accès rapide</h1>
+               <p>Le lien d&#39;accès rapide permet d’accéder directement à la zone de contenu principal de la page afin d&#39;optimiser la navigation au clavier.</p>
 <button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
     Table des matières
 </button>
 <div id="tdm" role="region" tabindex="-1">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#quest-ce-quun-processus-par-étapesnbsp">Qu&rsquo;est-ce qu&rsquo;un processus par étapes ?</a>
+    <li><a href="#quest-ce-quun-lien-daccès-rapidenbsp">Qu&rsquo;est-ce qu&rsquo;un lien d&rsquo;accès rapide ?</a>
       <ul>
-        <li><a href="#exemple-de-processus-par-étape">Exemple de processus par étape</a></li>
+        <li><a href="#implémentation-dun-lien-daccès-rapide">Implémentation d’un lien d&rsquo;accès rapide</a></li>
       </ul>
     </li>
-    <li><a href="#règles-dimplémentation-dun-processus-par-étapes">Règles d&rsquo;implémentation d&rsquo;un processus par étapes</a></li>
-    <li><a href="#règles-daccessibilité-du-processus-par-étapes">Règles d&rsquo;accessibilité du processus par étapes</a></li>
   </ul>
 </nav>
 </div>
-<h2 id="quest-ce-quun-processus-par-étapesnbsp">Qu&rsquo;est-ce qu&rsquo;un processus par étapes ?</h2>
-<p>Les processus par étapes (<em><span lang="en">stepper</span></em>, en anglais) affichent la progression à travers une séquence d&rsquo;étapes logiques et numérotées. Ils sont surtout employés pour présenter un processus d&rsquo;achat ou lors de démarches en ligne nécessitant plusieurs étapes.</p>
-<h3 id="exemple-de-processus-par-étape">Exemple de processus par étape</h3>
-<p><img src="/images/stepper-exemple1.jpg" alt="stepper"></p>
-<h2 id="règles-dimplémentation-dun-processus-par-étapes">Règles d&rsquo;implémentation d&rsquo;un processus par étapes</h2>
+<h2 id="quest-ce-quun-lien-daccès-rapidenbsp">Qu&rsquo;est-ce qu&rsquo;un lien d&rsquo;accès rapide ?</h2>
+<p>Un lien d&rsquo;accès rapide (ou lien de raccourci, lien d&rsquo;évitement) est un lien qui permet d&rsquo;accéder directement à une partie du document  l&rsquo;objectif est de permettre aux utilisateurs naviguant au clavier (dont notamment les utilisateurs de logiciel de synthèse vocale) d’accéder plus rapidement à des zones précises de la page sans dérouler la lecture des items précédents.</p>
+<p>Il existe 3 sortes de liens d&rsquo;accès rapide :</p>
 <ul>
-<li>Un processus par étapes sera proposé dès lors que plusieurs étapes doivent être impérativement réalisées pour parvenir à une action ultime.</li>
-<li>La plupart du temps, il sera intégré dans un formulaire.</li>
+<li>Le lien dit &quot; d&rsquo;évitement &quot; : présenté en haut de page, ce doit être le premier lien accessible au clavier. Ce lien peut être masqué par défaut et apparaitre lorsqu&rsquo;il reçoit le focus (navigation clavier) </li>
+<li>le lien d&rsquo;accès rapide placé dans le corps du document. Il sera placé avant la zone de la page qu&rsquo;il propose d&rsquo;éviter. La plupart du temps, ce lien se pose avec un intitulé du type &quot; Passer la section &ldquo;, &quot; Passer la partie xxx &ldquo; </li>
+<li>le lien de navigation interne à la page, typiquement un lien de table des matières ou un lien de retour en haut de page.</li>
 </ul>
-<h2 id="règles-daccessibilité-du-processus-par-étapes">Règles d&rsquo;accessibilité du processus par étapes</h2>
-<ul>
-<li>Le processus par étape sera balisé avec les balises <code>&lt;nav&gt;...&lt;/nav&gt;</code>  <strong>on ne posera pas d&rsquo;attribut</strong> <code>role=&quot;navigation</code>.</li>
-<li>Les différentes étapes du processus seront balisées par un liste ordonnée (l&rsquo;ordre ayant de l&rsquo;importance) <code>&lt;ol&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ol&gt;</code></li>
-<li>L&rsquo;étape en cours sera balisée avec l&rsquo;attribut <code>aria-current=&quot;step&quot;</code></li>
-<li>Un retour arrière sera proposé via un lien sur les étapes précédentes.</li>
-</ul>
+<h3 id="implémentation-dun-lien-daccès-rapide">Implémentation d’un lien d&rsquo;accès rapide</h3>
+<p>Un lien d&rsquo;accès rapide se pose toujours vers une ancre nommée dans le document.
+<code>&lt;a class=&quot;acces-rapide&quot; href=&quot;#top&quot;&gt;Haut de page&lt;/a&gt;</code></p>
 <div class="notice astuce" >   
      <p> astuce </p>
      <p>
-Un exemple de processus par étape est disponible dans la rubrique <a href="/motifs/stepper/">Motifs de conception - Processus par étape</a>.
+Un exemple de lien d'évitement est disponible dans la rubrique <a href="/motifs/lien-acces-rapide/">Motifs de conception - Lien d'accès rapide</a> et un exemple de lien de retour en haut de page est disponible dans la rubrique <a href="/motifs/retour-en-haut/">Motifs de conception - Retour en haut</a>.
 </p>
 </div>
+
           </section>   
      </div>
 </main>
