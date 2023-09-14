@@ -181,6 +181,7 @@
         </li>
       </ul>
     </li>
+    <li><a href="#en-résumé--structure-de-base-dune-page-html">En résumé : structure de base d&rsquo;une page HTML</a></li>
   </ul>
 </nav>
 </div>
@@ -304,7 +305,30 @@ La plupart du temps, cette zone recevra les informations relatives au site (copy
 Dans le cas où une liste de liens est proposé dans le <code>footer</code>, ceux-ci <b>ne seront pas encadrés</b> par l'élément <code>nav</code>.
 </p>
 </div>
-
+<h2 id="en-résumé--structure-de-base-dune-page-html">En résumé : structure de base d&rsquo;une page HTML</h2>
+<p>Une page web devra donc avoir comme structure HTML minimale celle indiquée ci-après (certains éléments tel que la navigation est expliquée dans la rubrique <a href="/coder/navigation/">Coder accessible - Navigation</a>) :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;fr&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Titre de la page - Nom du site<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        [...]
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;evitement&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#contenu&#34;</span><span class="p">&gt;</span>Aller au contenu<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">header</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;banner&#34;</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">    [La bannière d&#39;entête]
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">nav</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;navigation&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;navigation principale&#34;</span><span class="p">&gt;</span>[La navigation dans le site]<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">main</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;main&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;contenu&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    [Le corps de la page]
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">footer</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;contentinfo&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    [Le pied de page]
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div>
           </section>   
      </div>
 </main>
