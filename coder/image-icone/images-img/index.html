@@ -138,6 +138,7 @@
 				<li><a href="https://sofeve-concept.github.io/coder/image-icone/images-svg/">Images SVG</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/">Images légendées (FIGURE)</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/image-icone/police-icone/">Icônes, symboles, émojis</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/image-icone/quiz/">Quiz récap&#39;</a></li>
 				</ul>
 			</li>
 		<li><a href="https://sofeve-concept.github.io/coder/tableaux/">Tableaux</a></li>
@@ -199,7 +200,7 @@ Un exemple typique est celui du logotype.</p>
 <p>Typiquement, une image complexe est un graphique, une infographie ; bref, une image qui nécessite une description détaillée car nécessitant plus de 6 mots pour la décrire (la longueur recommandée pour remplir l&rsquo;attribut <code>alt</code>&rsquo; est de 5 à 6 mots).<br>
 Dans ce cas la description de l&rsquo;image serait trop longue pour être contenu dans un attribut <code>alt</code> , on proposera alors sa description dans un texte proche de l&rsquo;image concernée.</p>
 <h4 id="la-théorie">La théorie&hellip;</h4>
-<p>En théorie, d&rsquo;après la documentation du W3C, il est tout à fait possible de proposer une description longue de l&rsquo;image en utilisant l&rsquo;attribut <code>aria-describedby</code> ou l&rsquo;attribut <code>longdesc</code>. L&rsquo;attribut <code>aria-describedby</code> ou l&rsquo;attribut <code>longdesc</code> font alors référence à un <code>id</code> posé sur l&rsquo;élément qui décrira l&rsquo;image ; l&rsquo;attribut <code>alt</code> qui sera quand même renseigné peut repreprendre où pas le début de la description longue.</p>
+<p>En théorie, d&rsquo;après la documentation du W3C, il est tout à fait possible de proposer une description longue de l&rsquo;image en utilisant l&rsquo;attribut <code>aria-describedby</code> ou l&rsquo;attribut <code>longdesc</code>. L&rsquo;attribut <code>aria-describedby</code> ou l&rsquo;attribut <code>longdesc</code> font alors référence à un <code>id</code> posé sur l&rsquo;élément qui décrira l&rsquo;image ; l&rsquo;attribut <code>alt</code> qui sera quand même renseigné en reprenant (ou pas) le début de la description longue.</p>
 <p><strong>Visuel</strong><br>
 
  <img src="/images/handicap-repartition.webp" alt="Répartition des handicaps selon leur visibilité" aria-describedby="description" class="img-resp" loading="lazy">
@@ -297,7 +298,8 @@ Pour afficher / masquer le texte, on aura alors recours à du javascript. Un <a 
 	    <path
 		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
 	</svg>
-	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/clipboard.min.js"></script>
+	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/afficherReponse.min.js"></script>
+<script src="/js/clipboard.min.js"></script>
 <script src="/js/search.min.js"></script>
 <script>sandwitch();</script>	
 

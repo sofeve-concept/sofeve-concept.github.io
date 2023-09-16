@@ -60,5 +60,14 @@
       <description>Pour découper un formulaire en étapes multiples, chaque étape devra proposer les éléments présentés ci-après.</description>
     </item>
     
+    <item>
+      <title>Quiz récap&#39;</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/quiz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/quiz/</guid>
+      <description>N°QuestionVotre réponseAfficher les réponses1L&#39;élément fieldset sert à&amp;nbsp;:Mettre une bordure autour des champs de formulaire.</description>
+    </item>
+    
   </channel>
 </rss>

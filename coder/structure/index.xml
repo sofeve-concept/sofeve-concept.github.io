@@ -43,5 +43,14 @@ Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page H
       <description>Code HTML de base d&amp;rsquo;une page web Une page web HTML doit comporter a minima les éléments suivants pour être valide :</description>
     </item>
     
+    <item>
+      <title>Quiz récap&#39;</title>
+      <link>https://sofeve-concept.github.io/coder/structure/quiz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/structure/quiz/</guid>
+      <description>N°QuestionVotre réponseAfficher les réponses1Combien de fois puis-je trouver le role=&#34;</description>
+    </item>
+    
   </channel>
 </rss>

@@ -133,6 +133,7 @@
 			
 			<ul><li><a href="https://sofeve-concept.github.io/coder/lien-bouton/liens/" aria-current="page" >Les liens</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/lien-bouton/boutons/">Les boutons</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/lien-bouton/quiz/">Quiz récap&#39;</a></li>
 				</ul>
 			</li>
 		<li><a href="https://sofeve-concept.github.io/coder/image-icone/">Images et icônes</a></li>
@@ -208,7 +209,7 @@ Un lien s&rsquo;implémente avec l&rsquo;élément HTML <code>a</code> (&ldquo;a
 <h2 id="règles-daccessibilité-dun-lien">Règles d&rsquo;accessibilité d&rsquo;un lien</h2>
 <p>Pour l&rsquo;accessibilité, on veillera à faire la différence entre un lien explicite et un lien non explicite.</p>
 <h3 id="lien-explicite">Lien explicite</h3>
-<p>Un lien explicite est un lien dont l&rsquo;intitulé, dans le contecte où il se trouve, a du sens en soi.</p>
+<p>Un lien explicite est un lien dont l&rsquo;intitulé a du sens en soi dans le contexte où il se trouve.</p>
 <h4 id="lien-texte-explicite">Lien texte explicite</h4>
 <p>Lorsque l&rsquo;intitulé du lien suffit à en comprendre le sens, le lien sera implémenté de la manière suivante (sans attribut <code>title</code>) :</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;motifs.html&#34;</span><span class="p">&gt;</span>Motifs de conception<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
@@ -226,7 +227,7 @@ Un lien s&rsquo;implémente avec l&rsquo;élément HTML <code>a</code> (&ldquo;a
 <p>Dans certains cas, on pourra recourir à l&rsquo;attribut <code>title</code> pour le rendre explicite. Un autre technique consiste à utiliser l&rsquo;attribut <code>aria-label</code>.<br>
 <strong>Attention</strong> On utilisera soit l&rsquo;attribut <code>title</code>, soit l&rsquo;attribut <code>aria-label</code> mais pas les deux ensembles !</p>
 <h4 id="lien-texte-non-explicite">Lien texte non explicite.</h4>
-<p>Lorsque le libellé du lien n&rsquo;est pas suffisemment explicite, on rajoutera l&rsquo;attribut <code>title</code>. Attention ! Cet attribut title doit reprendre impérativement au début l&rsquo;intitulé du lien.</p>
+<p>Lorsque le libellé du lien n&rsquo;est pas suffisamment explicite, on rajoutera l&rsquo;attribut <code>title</code>. Attention ! Cet attribut title doit reprendre impérativement au début l&rsquo;intitulé du lien.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;navigation.html&#34;</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Lire la suite sur le système de navigation&#34;</span><span class="p">&gt;</span>Lire la suite<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h4 id="lien-posé-sur-une-image">Lien posé sur une image</h4>
 <p>Lorsque le lien est posé sur une image, on ne renseignera pas l&rsquo;attribut <code>title</code> du lien et mais on renseignera l&rsquo;attribut <code>alt</code> de l&rsquo;image.</p>
@@ -293,7 +294,8 @@ Si on teste ce code HTML en désactivant les CSS, on aura une implémentation co
 	    <path
 		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
 	</svg>
-	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/clipboard.min.js"></script>
+	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/afficherReponse.min.js"></script>
+<script src="/js/clipboard.min.js"></script>
 <script src="/js/search.min.js"></script>
 <script>sandwitch();</script>	
 
