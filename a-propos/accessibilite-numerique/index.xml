@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>À propos de l&#39;accessibilité numérique on Sofève Concept</title>
+    <link>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/</link>
+    <description>Recent content in À propos de l&#39;accessibilité numérique on Sofève Concept</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/a-propos/accessibilite-numerique/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Définition de l&#39;accessibilité numérique</title>
+      <link>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/definition-accessibilite-numerique/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/definition-accessibilite-numerique/</guid>
+      <description>Mettre le Web et ses services, à la disposition de tous les individus, quel que soit leur matériel ou logiciel, leur infrastructure réseau, leur langue maternelle, leur culture, leur localisation géographique, ou leurs aptitudes physiques ou mentales.</description>
+    </item>
+    
+    <item>
+      <title>Le cadre légal de l&#39;accessibilité numérique</title>
+      <link>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/cadre-legal-accessibilite-numerique/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/cadre-legal-accessibilite-numerique/</guid>
+      <description>Que dit la loi&amp;nbsp;?En France, l’article 47 de la loi du 11 février 2005 pour l’égalité des droits et des chances, la participation et la citoyenneté des personnes handicapées, fixe les obligations en matière d’accessibilité numérique&amp;nbsp;: Les services de communication publics en ligne des services de l’État, des collectivités territoriales et des établissements publics qui en dépendent doivent être accessibles aux personnes handicapées.</description>
+    </item>
+    
+    <item>
+      <title>Référentiels pour l&#39;accessibilité numérique</title>
+      <link>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/referentiels-accessibilite-numerique/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/referentiels-accessibilite-numerique/</guid>
+      <description>Les normes internationales Les normes internationales pour rendre ses supports numériques accessibles sont émises par la Web Accessibility Initiative (WAI) du W3C à travers plusieurs guides :</description>
+    </item>
+    
+  </channel>
+</rss>

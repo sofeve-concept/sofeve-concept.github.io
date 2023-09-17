@@ -71,6 +71,15 @@
     </item>
     
     <item>
+      <title>Définition de l&#39;accessibilité numérique</title>
+      <link>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/definition-accessibilite-numerique/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/definition-accessibilite-numerique/</guid>
+      <description>Mettre le Web et ses services, à la disposition de tous les individus, quel que soit leur matériel ou logiciel, leur infrastructure réseau, leur langue maternelle, leur culture, leur localisation géographique, ou leurs aptitudes physiques ou mentales.</description>
+    </item>
+    
+    <item>
       <title>Écrire accessible</title>
       <link>https://sofeve-concept.github.io/coder/contenu/ecriture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -235,6 +244,15 @@ Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page H
     </item>
     
     <item>
+      <title>Le cadre légal de l&#39;accessibilité numérique</title>
+      <link>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/cadre-legal-accessibilite-numerique/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/cadre-legal-accessibilite-numerique/</guid>
+      <description>Que dit la loi&amp;nbsp;?En France, l’article 47 de la loi du 11 février 2005 pour l’égalité des droits et des chances, la participation et la citoyenneté des personnes handicapées, fixe les obligations en matière d’accessibilité numérique&amp;nbsp;: Les services de communication publics en ligne des services de l’État, des collectivités territoriales et des établissements publics qui en dépendent doivent être accessibles aux personnes handicapées.</description>
+    </item>
+    
+    <item>
       <title>Lecteur audio ou vidéo</title>
       <link>https://sofeve-concept.github.io/coder/multimedia/lecteur-video/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -387,6 +405,15 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
       
       <guid>https://sofeve-concept.github.io/coder/navigation/menu-navigation/</guid>
       <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;un menu de navigation ? Un menu de navigation regroupe un ensemble de liens permettant d&amp;rsquo;afficher les différentes pages du site web ou d&amp;rsquo;atteindre un endroit spécifique de la page affichée.</description>
+    </item>
+    
+    <item>
+      <title>Référentiels pour l&#39;accessibilité numérique</title>
+      <link>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/referentiels-accessibilite-numerique/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/referentiels-accessibilite-numerique/</guid>
+      <description>Les normes internationales Les normes internationales pour rendre ses supports numériques accessibles sont émises par la Web Accessibility Initiative (WAI) du W3C à travers plusieurs guides :</description>
     </item>
     
     <item>
@@ -721,15 +748,6 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
       
       <guid>https://sofeve-concept.github.io/motifs/carte-cliquable/</guid>
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Une carte cliquable est une zone délimitée par une div qui contient un titre, du texte et un lien.</description>
-    </item>
-    
-    <item>
-      <title>De l&#39;accessibilité numérique</title>
-      <link>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/</guid>
-      <description>À propos de l&amp;rsquo;accessibilité numérique Mettre le Web et ses services, à la disposition de tous les individus, quel que soit leur matériel ou logiciel, leur infrastructure réseau, leur langue maternelle, leur culture, leur localisation géographique, ou leurs aptitudes physiques ou mentales.</description>
     </item>
     
     <item>

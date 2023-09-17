@@ -44,6 +44,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/definition-accessibilite-numerique/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/contenu/ecriture/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -170,6 +176,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/cadre-legal-accessibilite-numerique/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/multimedia/lecteur-video/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -285,6 +297,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/coder/navigation/menu-navigation/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/referentiels-accessibilite-numerique/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -568,6 +586,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/a-propos/qui-est-sofeve/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -617,12 +641,6 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/tags/css/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
