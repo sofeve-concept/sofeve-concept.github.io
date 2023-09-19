@@ -3,10 +3,10 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Lien d&#39;accès rapide - Navigation - Coder accessible - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Navigation au clavier - Navigation - Coder accessible - Sofève Concept</title>
 	
 	<meta name="theme-color" content="#FFFFFF" />
-	<meta name="description" content="Le lien d&#39;accès rapide ou lien d&#39;évitement permet d’accéder directement à la zone de contenu principal de la page afin d&#39;optimiser la navigation au clavier. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	<meta name="description" content="La navigation au clavier (sans la souris) est essentielle en matière d&#39;accessibilité numérique. En effet, certains utilisateurs, notamment ceux utilisant des logiciels de synthèse vocale, naviguent et interagissent avec l&#39;interface web en uilisant uniquement le clavier. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -106,7 +106,7 @@
   
   <li><a href="/coder/navigation/">Navigation</a></li>
   
-  <li aria-current="page" tabindex="-1">Lien d&#39;accès rapide</li>
+  <li aria-current="page" tabindex="-1">Navigation au clavier</li>
   </ol>
 </nav>
 <div>
@@ -131,11 +131,11 @@
 		<li><a href="https://sofeve-concept.github.io/coder/navigation/" aria-current="true" >Navigation</a>
 			
 			<ul><li><a href="https://sofeve-concept.github.io/coder/navigation/a-propos/">À propos de la navigation</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/navigation/lien-acces-rapide/" aria-current="page" >Lien d&#39;accès rapide</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/navigation/lien-acces-rapide/">Lien d&#39;accès rapide</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/navigation/menu-navigation/">Menu de navigation</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/navigation/fil-ariane/">Fil d&#39;Ariane</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/navigation/processus-etapes/">Processus par étapes</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/navigation/navigation-clavier/">Navigation au clavier</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/navigation/navigation-clavier/" aria-current="page" >Navigation au clavier</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/navigation/quiz/">Quiz récap&#39;</a></li>
 				</ul>
 			</li>
@@ -150,39 +150,61 @@
 
                </aside>
           <section class="item-80 rubCode">
-               <h1 id="contenu">Lien d&#39;accès rapide</h1>
-               <p>Le lien d&#39;accès rapide ou lien d&#39;évitement permet d’accéder directement à la zone de contenu principal de la page afin d&#39;optimiser la navigation au clavier.</p>
+               <h1 id="contenu">Navigation au clavier</h1>
+               <p>La navigation au clavier (sans la souris) est essentielle en matière d&#39;accessibilité numérique. En effet, certains utilisateurs, notamment ceux utilisant des logiciels de synthèse vocale, naviguent et interagissent avec l&#39;interface web en uilisant uniquement le clavier.</p>
 <button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
     Table des matières
 </button>
 <div id="tdm" role="region" tabindex="-1">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#quest-ce-quun-lien-daccès-rapidenbsp">Qu&rsquo;est-ce qu&rsquo;un lien d&rsquo;accès rapide ?</a>
+    <li><a href="#utilisation-des-touches-du-clavier-pour-la-navigation">Utilisation des touches du clavier pour la navigation</a></li>
+    <li><a href="#règles-à-respecter-pour-la-navigation-clavier">Règles à respecter pour la navigation clavier</a></li>
+    <li><a href="#gestion-du-focus-clavier">Gestion du focus clavier</a>
       <ul>
-        <li><a href="#règles-dimplémentation-dun-lien-daccès-rapide">Règles d’implémentation d’un lien d&rsquo;accès rapide</a></li>
+        <li><a href="#un-focus-clavier-toujours-visible">Un focus clavier toujours visible</a></li>
       </ul>
     </li>
   </ul>
 </nav>
 </div>
-<h2 id="quest-ce-quun-lien-daccès-rapidenbsp">Qu&rsquo;est-ce qu&rsquo;un lien d&rsquo;accès rapide ?</h2>
-<p>Un lien d&rsquo;accès rapide (ou lien de raccourci, lien d&rsquo;évitement) est un lien qui permet d&rsquo;accéder directement à une partie du document  l&rsquo;objectif est de permettre aux utilisateurs naviguant au clavier (dont notamment les utilisateurs de logiciel de synthèse vocale) d’accéder plus rapidement à des zones précises de la page sans dérouler la lecture des items précédents.</p>
-<p>Il existe 3 sortes de liens d&rsquo;accès rapide :</p>
+<h2 id="utilisation-des-touches-du-clavier-pour-la-navigation">Utilisation des touches du clavier pour la navigation</h2>
+<p>Pour naviguer au clavier, les touches suivantes sont utilisées :</p>
 <ul>
-<li>Le lien dit « d&rsquo;accès rapide » : présenté en haut de page, ce doit être le premier lien accessible au clavier. Ce lien peut être masqué par défaut et apparaitre lorsqu&rsquo;il reçoit le focus (navigation clavier) </li>
-<li>le lien d’évitement placé dans le corps du document. Il sera placé avant la zone de la page qu&rsquo;il propose d&rsquo;éviter. La plupart du temps, ce lien se pose avec un intitulé du type « Passer la section », « Passer la partie xxx » </li>
-<li>le lien de navigation interne à la page, typiquement un lien de table des matières ou un lien de retour en haut de page.</li>
+<li>Touche <code>Tab</code> (<code>Tabulation</code>) : pour passer au lien, élément de formulaire ou bouton suivant.</li>
+<li>Touches <code>Maj</code> +  <code>Tab</code> : pour passer au lien, élément de formulaire ou bouton précédent.</li>
+<li>Touche <code>Entrée</code> : pour activer le lien ou le bouton.</li>
+<li>Touche <code>Espace</code>  : pour cocher / décocher une case à cocher.</li>
+<li>Touche <code>Echap</code> : pour retourner à l&rsquo;état précédent (reprise de focus).</li>
+<li>Touches <code>Flèche droite</code>, <code>Flèche gauche</code>, <code>Flèche bas</code>, <code>Flèche haut</code> : pour faire défiler un affichage (ascenseur), pour modifier la valeur d&rsquo;un bouton radio, pour se déplacer dans une liste (menu, liste d&rsquo;option d&rsquo;un liste de sélection déroulante&hellip;)</li>
 </ul>
-<h3 id="règles-dimplémentation-dun-lien-daccès-rapide">Règles d’implémentation d’un lien d&rsquo;accès rapide</h3>
-<p>Un lien d&rsquo;accès rapide se pose toujours vers une ancre nommée dans le document.
-<code>&lt;a class=&quot;evitement&quot; href=&quot;#contenu&quot;&gt;Aller au contenu&lt;/a&gt; </code></p>
-<div class="notice astuce" >   
-     <p> astuce </p>
-     <p>
-Un exemple de lien d'accès rapide est disponible dans la rubrique <a href="/motifs/lien-acces-rapide/">Motifs de conception - Lien d'accès rapide</a> et un exemple de lien de retour en haut de page est disponible dans la rubrique <a href="/motifs/retour-en-haut/">Motifs de conception - Retour en haut</a>.
-</p>
-</div>
+<p>Lorsqu&rsquo;un utilisateur se déplace dans la page web en utilisant le clavier, on parle alors de « focus clavier » pour désigner l&rsquo;élément sur lequel le curseur est positionné.</p>
+<h2 id="règles-à-respecter-pour-la-navigation-clavier">Règles à respecter pour la navigation clavier</h2>
+<p>Les règles suivantes doivent être respectées pour l&rsquo;accessibilité de la page :</p>
+<ul>
+<li>L&rsquo;ordre de tabulation est cohérent avec le visuel ;</li>
+<li>Tous les éléments interactifs (boutons, liens, champs de formulaire, fenêtre modale&hellip;) sont accessibles et fonctionnels au clavier ;</li>
+<li>Les éléments HTML natifs sont privilégiés car prévus pour recevoir le focus (éléments <code>a</code>, <code>button</code>&hellip;) ;</li>
+<li>Les raccourcis clavier utilisant une seule touche peuvent être modifiés ou désactivés par l&rsquo;utilisateur ;</li>
+<li><strong>Le focus clavier est toujours visible</strong>.</li>
+</ul>
+<h2 id="gestion-du-focus-clavier">Gestion du focus clavier</h2>
+<h3 id="un-focus-clavier-toujours-visible">Un focus clavier toujours visible</h3>
+<p>Le focus clavier doit toujours être visible. Une <strong>très mauvaise pratique</strong> consiste à le rendre invisible avec le code CSS suivant : <code>:focus { outline: none; }</code>.
+On veillera donc à ce que le focus clavier respecte les règles suivantes :</p>
+<ul>
+<li>Sa couleur a un contraste minimum de 3:1 par rapport à l&rsquo;élément d&rsquo;arrière-plan.</li>
+<li>Sa taille est suffisamment grande pour être perçue par l&rsquo;utilisateur. On aura donc un style CSS semblable à (on compte un minimum de 2px pour un trait continu) :</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">:</span><span class="nd">focus</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">outline</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">black</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Voici un style de focus qui fonctionne pour tous les cas :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">:</span><span class="nd">focus-visible</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">outline</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">white</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">6</span><span class="kt">px</span> <span class="kc">black</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>
           </section>   
      </div>
 </main>
@@ -211,6 +233,7 @@ Un exemple de lien d'accès rapide est disponible dans la rubrique <a href="/mot
 		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
 	</svg>
 	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/afficherReponse.min.js"></script>
+<script src="/js/clipboard.min.js"></script>
 <script src="/js/search.min.js"></script>
 <script>sandwitch();</script>	
 

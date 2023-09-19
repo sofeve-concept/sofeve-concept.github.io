@@ -3,10 +3,8 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Lien d&#39;accès rapide - Navigation - Coder accessible - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Sécurité des formulaires - Formulaires - Coder accessible - Sofève Concept</title>
 	
-	<meta name="theme-color" content="#FFFFFF" />
-	<meta name="description" content="Le lien d&#39;accès rapide ou lien d&#39;évitement permet d’accéder directement à la zone de contenu principal de la page afin d&#39;optimiser la navigation au clavier. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -104,9 +102,9 @@
   
   <li><a href="/coder/">Coder accessible</a></li>
   
-  <li><a href="/coder/navigation/">Navigation</a></li>
+  <li><a href="/coder/formulaire/">Formulaires</a></li>
   
-  <li aria-current="page" tabindex="-1">Lien d&#39;accès rapide</li>
+  <li aria-current="page" tabindex="-1">Sécurité des formulaires</li>
   </ol>
 </nav>
 <div>
@@ -128,21 +126,22 @@
 		<li><a href="/coder">Préambule</a></li><li><a href="https://sofeve-concept.github.io/coder/structure/">Structure de la page</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/contenu/">Contenu</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/couleurs/">Couleurs</a></li>
-		<li><a href="https://sofeve-concept.github.io/coder/navigation/" aria-current="true" >Navigation</a>
-			
-			<ul><li><a href="https://sofeve-concept.github.io/coder/navigation/a-propos/">À propos de la navigation</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/navigation/lien-acces-rapide/" aria-current="page" >Lien d&#39;accès rapide</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/navigation/menu-navigation/">Menu de navigation</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/navigation/fil-ariane/">Fil d&#39;Ariane</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/navigation/processus-etapes/">Processus par étapes</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/navigation/navigation-clavier/">Navigation au clavier</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/navigation/quiz/">Quiz récap&#39;</a></li>
-				</ul>
-			</li>
+		<li><a href="https://sofeve-concept.github.io/coder/navigation/">Navigation</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/lien-bouton/">Liens et boutons</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/image-icone/">Images et icônes</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/tableaux/">Tableaux</a></li>
-		<li><a href="https://sofeve-concept.github.io/coder/formulaire/">Formulaires</a></li>
+		<li><a href="https://sofeve-concept.github.io/coder/formulaire/" aria-current="true" >Formulaires</a>
+			
+			<ul><li><a href="https://sofeve-concept.github.io/coder/formulaire/semantique-html-formulaire/">Sémantique HTML</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/">Libellé de champ</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/">Regroupement de champs</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/">Liste déroulante</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/">Saisie et contrôle du formulaire</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/">Formulaire à étapes multiples</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/formulaire/securite-formulaire/" aria-current="page" >Sécurité des formulaires</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/formulaire/quiz/">Quiz récap&#39;</a></li>
+				</ul>
+			</li>
 		<li><a href="https://sofeve-concept.github.io/coder/scripts/">Composants d&#39;interface riche</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/multimedia/">Multimédia</a></li>
 		</ul>
@@ -150,39 +149,62 @@
 
                </aside>
           <section class="item-80 rubCode">
-               <h1 id="contenu">Lien d&#39;accès rapide</h1>
-               <p>Le lien d&#39;accès rapide ou lien d&#39;évitement permet d’accéder directement à la zone de contenu principal de la page afin d&#39;optimiser la navigation au clavier.</p>
+               <h1 id="contenu">Sécurité des formulaires</h1>
+               <p></p>
 <button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
     Table des matières
 </button>
 <div id="tdm" role="region" tabindex="-1">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#quest-ce-quun-lien-daccès-rapidenbsp">Qu&rsquo;est-ce qu&rsquo;un lien d&rsquo;accès rapide ?</a>
+    <li><a href="#formulaire-gérant-des-données-sensibles">Formulaire gérant des données sensibles</a></li>
+    <li><a href="#système-de-sécurisation-des-formulaires">Système de sécurisation des formulaires</a>
       <ul>
-        <li><a href="#règles-dimplémentation-dun-lien-daccès-rapide">Règles d’implémentation d’un lien d&rsquo;accès rapide</a></li>
+        <li><a href="#captcha">Captcha</a></li>
+        <li><a href="#tests-logiques">Tests logiques</a></li>
       </ul>
     </li>
   </ul>
 </nav>
 </div>
-<h2 id="quest-ce-quun-lien-daccès-rapidenbsp">Qu&rsquo;est-ce qu&rsquo;un lien d&rsquo;accès rapide ?</h2>
-<p>Un lien d&rsquo;accès rapide (ou lien de raccourci, lien d&rsquo;évitement) est un lien qui permet d&rsquo;accéder directement à une partie du document  l&rsquo;objectif est de permettre aux utilisateurs naviguant au clavier (dont notamment les utilisateurs de logiciel de synthèse vocale) d’accéder plus rapidement à des zones précises de la page sans dérouler la lecture des items précédents.</p>
-<p>Il existe 3 sortes de liens d&rsquo;accès rapide :</p>
+<h2 id="formulaire-gérant-des-données-sensibles">Formulaire gérant des données sensibles</h2>
+<p>Les données sensibles concernent des données à caractère financier, juridique ou personnel. Dans ce cas, l&rsquo;utilisateur doit pouvoir :</p>
 <ul>
-<li>Le lien dit « d&rsquo;accès rapide » : présenté en haut de page, ce doit être le premier lien accessible au clavier. Ce lien peut être masqué par défaut et apparaitre lorsqu&rsquo;il reçoit le focus (navigation clavier) </li>
-<li>le lien d’évitement placé dans le corps du document. Il sera placé avant la zone de la page qu&rsquo;il propose d&rsquo;éviter. La plupart du temps, ce lien se pose avec un intitulé du type « Passer la section », « Passer la partie xxx » </li>
-<li>le lien de navigation interne à la page, typiquement un lien de table des matières ou un lien de retour en haut de page.</li>
+<li><strong>vérifier et corriger les données avant la validation</strong> d’un formulaire en plusieurs étapes ;</li>
+<li><strong>modifier ou annuler les données et les actions effectuées</strong> sur ces données <strong>après la validation</strong> du formulaire.</li>
 </ul>
-<h3 id="règles-dimplémentation-dun-lien-daccès-rapide">Règles d’implémentation d’un lien d&rsquo;accès rapide</h3>
-<p>Un lien d&rsquo;accès rapide se pose toujours vers une ancre nommée dans le document.
-<code>&lt;a class=&quot;evitement&quot; href=&quot;#contenu&quot;&gt;Aller au contenu&lt;/a&gt; </code></p>
-<div class="notice astuce" >   
-     <p> astuce </p>
-     <p>
-Un exemple de lien d'accès rapide est disponible dans la rubrique <a href="/motifs/lien-acces-rapide/">Motifs de conception - Lien d'accès rapide</a> et un exemple de lien de retour en haut de page est disponible dans la rubrique <a href="/motifs/retour-en-haut/">Motifs de conception - Retour en haut</a>.
-</p>
-</div>
+<p>En cas de modification ou de suppression de ces données, l&rsquo;utilisateur doit  :</p>
+<ul>
+<li>pouvoir récupérer ses données supprimées ou modifiées ;</li>
+<li>se voir proposer une demande de confirmation explicite de la suppression ou de la modification des données.</li>
+</ul>
+<h2 id="système-de-sécurisation-des-formulaires">Système de sécurisation des formulaires</h2>
+<p>Lors de la mise en place d&rsquo;un formulaire sur son site, il est bien souvent indispensable de trouver des méthodes de sécurisation pour éviter le piratage des données envoyées par l&rsquo;utilisateur ou de subir une attaque de son propre système d&rsquo;information.
+Ces systèmes de sécurisation seront annoncés avant leur implémentation dans le formulaire. Exemple « La question suivante permet de nous assurer que vous êtes un être humain.».</p>
+<h3 id="captcha">Captcha</h3>
+<p>Un captcha (<span lang="en">Completely Automated Public Turing-test to tell Computers and Humans Apart</span>) est un système de sécurité, le plus souvent visuel, visant à différencier un être humain d&rsquo;un robot. L&rsquo;inconvénient est qu&rsquo;il n&rsquo;est le plus souvent pas accessible aux personnes porteuses de handicap.<br>
+En cas d&rsquo;implémentation d&rsquo;un captcha, il faudra donc prévoir :</p>
+<ul>
+<li>un système de rafraîchissement du contenu dans le cas où le captcha qui s&rsquo;affiche à l&rsquo;écran n&rsquo;est pas compréhensible pour l&rsquo;utilisateur ;</li>
+<li>une alternative sonore en cas de captcha visuel ;</li>
+<li>une autre façon de renseigner un test de sécurité (test autre que le captcha) ;</li>
+<li>un moyen de contact autre en cas d&rsquo;impossibilité à renseigner le captcha.</li>
+</ul>
+<h3 id="tests-logiques">Tests logiques</h3>
+<p>Il est possible de recourir à des tests logiques pour sécuriser son formulaire comme :</p>
+<ul>
+<li>une question mathématique simple. Exemple : Combien font 10 + 2 ? ;</li>
+<li>une question textuelle simple. Exemple :  Quel animal aboie ? ;</li>
+<li>une consigne textuelle simple. Exemple :  Merci de recopier le mot « bureau » ;</li>
+<li>une confirmation via des cases à cocher. Exemple : Êtes-vous un être humain ?</li>
+</ul>
+<p>Comme pour les captcha, il faudra prévoir :</p>
+<ul>
+<li>un système de rafraîchissement du contenu dans le cas où le test qui s&rsquo;affiche à l&rsquo;écran n&rsquo;est pas compréhensible pour l&rsquo;utilisateur ;</li>
+<li>une autre façon de renseigner le test de sécurité ;</li>
+<li>un moyen de contact autre en cas d&rsquo;impossibilité à renseigner le test.</li>
+</ul>
+
           </section>   
      </div>
 </main>

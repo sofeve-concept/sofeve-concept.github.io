@@ -3,10 +3,10 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Étiquette de champ - Formulaires - Coder accessible - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Libellé de champ - Formulaires - Coder accessible - Sofève Concept</title>
 	
 	<meta name="theme-color" content="#FFFFFF" />
-	<meta name="description" content="Les étiquettes doivent décrire le rôle de chaque champ du formulaire et être correctement associées à leur champ. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	<meta name="description" content="Les libellés de champs (ou étiquettes de champs) doivent décrire le rôle de chaque champ du formulaire et être correctement associés à leur champ. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -106,7 +106,7 @@
   
   <li><a href="/coder/formulaire/">Formulaires</a></li>
   
-  <li aria-current="page" tabindex="-1">Étiquette de champ</li>
+  <li aria-current="page" tabindex="-1">Libellé de champ</li>
   </ol>
 </nav>
 <div>
@@ -135,11 +135,12 @@
 		<li><a href="https://sofeve-concept.github.io/coder/formulaire/" aria-current="true" >Formulaires</a>
 			
 			<ul><li><a href="https://sofeve-concept.github.io/coder/formulaire/semantique-html-formulaire/">Sémantique HTML</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/">Saisie et contrôle du formulaire</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/" aria-current="page" >Étiquette de champ</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/" aria-current="page" >Libellé de champ</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/">Regroupement de champs</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/">Liste déroulante</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/">Saisie et contrôle du formulaire</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/">Formulaire à étapes multiples</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/formulaire/securite-formulaire/">Sécurité des formulaires</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/quiz/">Quiz récap&#39;</a></li>
 				</ul>
 			</li>
@@ -150,8 +151,8 @@
 
                </aside>
           <section class="item-80 rubCode">
-               <h1 id="contenu">Étiquette de champ</h1>
-               <p>Les étiquettes doivent décrire le rôle de chaque champ du formulaire et être correctement associées à leur champ.</p>
+               <h1 id="contenu">Libellé de champ</h1>
+               <p>Les libellés de champs (ou étiquettes de champs) doivent décrire le rôle de chaque champ du formulaire et être correctement associés à leur champ.</p>
 <button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
     Table des matières
 </button>
@@ -181,14 +182,9 @@ Pour présenter l'étiquette de champ, les exemples de cette page associent l'é
 <h2 id="implémentation-html">Implémentation HTML</h2>
 <p>L&rsquo;étiquette de champ sera implémentée avec les balises <code>&lt;label&gt;...&lt;/label&gt;</code>.<br>
 L&rsquo;attribut <code>for</code> sera utilisé pour l&rsquo;associer à l&rsquo;<code>ìd</code> du champ auquel elle fait référence.</p>
-<p>Une façon simple de s&rsquo;assurer que l&rsquo;étiquette est bien reliée à son champ consiste à cliquer sur l&rsquo;étiquette. Si l&rsquo;étiquette est bien associée alors le curseur se placera dans le champ lié (ou s&rsquo;il s&rsquo;agit de case à cocher, la case sera cochée/décochée  s&rsquo;il s&rsquo;agit d&rsquo;un bouton radio, le bouton sera coché/décoché).</p>
+<p>Une façon simple de s&rsquo;assurer que le libellé est bien relié à son champ consiste à cliquer sur le libellé du champ. Si le libellé est bien associé alors le curseur se placera dans le champ lié (ou s&rsquo;il s&rsquo;agit de case à cocher, la case sera cochée/décochée ; s&rsquo;il s&rsquo;agit d&rsquo;un bouton radio, le bouton sera coché/décoché).</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;nom&#34;</span><span class="p">&gt;</span>Nom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;nom&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;nom&#34;</span><span class="p">&gt;</span>
-</span></span></code></pre></div><p><strong>Autre implémentation possible</strong><br>
-Dans cet exemple, le <code>input</code>est inclus entre les balises <code>label</code>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;nom&#34;</span><span class="p">&gt;</span>Nom
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;nom&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;nom&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
 </span></span></code></pre></div><p><strong>Visuel</strong><br>
 <em>Cliquez sur l&rsquo;étiquette &ldquo;Nom&rdquo; et vérifiez que le curseur se place bien dans la zone de texte.</em></p>
 
@@ -197,20 +193,61 @@ Dans cet exemple, le <code>input</code>est inclus entre les balises <code>label<
 <input type="text" name="nom" id="nom" class="exempleCodeInput">
 </div>
 
-<h3 id="bonnes-pratiques-de-présentation-visuelle">Bonnes pratiques de présentation visuelle</h3>
-<p>Il est impératif de maintenir une relation visuelle étroite et distincte entre l&rsquo;étiquette et le champ du formulaire. C&rsquo;est pourquoi, l&rsquo;intitulé du champ sera accolé à son champ. Dans le cas d&rsquo;un sens de lecture de gauche à droite :</p>
+<p><strong>Autre implémentation possible</strong><br>
+Dans cet exemple, le <code>input</code>est inclus entre les balises <code>label</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>Nom
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;nom&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h3 id="bonnes-pratiques-de-présentation-visuelle">Bonnes pratiques de présentation visuelle</h3>
+<p>Il est impératif de maintenir une relation visuelle étroite et distincte entre l&rsquo;étiquette et le champ du formulaire. C&rsquo;est pourquoi, <strong>l&rsquo;intitulé du champ sera accolé à son champ</strong>. Dans le cas d&rsquo;un sens de lecture de gauche à droite :</p>
 <ul>
 <li>pour les boutons radio et les cases à cocher, le libellé soit placé à droite du bouton ;</li>
 <li>pour les autres champs de formulaires, le libellé sera accolé immédiatement au-dessus ou à gauche du champ correspondant.</li>
 </ul>
+<p><strong>Exemple de mauvaise présentation des champs de formulaire et de leur libellé associé (libellé éloigné de son champ) :</strong></p>
+
+<div class="flex justify-content-start mb-1">
+<label for="nom" class="item-20">Nom</label>
+<input type="text" name="nom" id="nom" class="exempleCodeInput">
+</div>
+<div class="flex justify-content-start mb-1">
+<label for="prenom" class="item-20">Prénom</label>
+<input type="text" name="prenom" id="prenom" class="exempleCodeInput">
+</div>
+
+<p><strong>Exemple d&rsquo;une bonne présentation des champs de formulaire et de leur libellé associé (libellé accolé au champ) :</strong></p>
+
+<div class="flex justify-content-start mb-1">
+<div class="item-20 text-right">
+<label for="nom" class="mr-1">Nom</label>
+</div>
+<input type="text" name="nom" id="nom" class="exempleCodeInput" class="item-50">
+</div>
+<div class="flex justify-content-start mb-3">
+<div class="item-20 text-right">
+<label for="prenom" class="mr-1">Prénom</label>
+</div>
+<input type="text" name="prenom" id="prenom" class="exempleCodeInput">
+</div>
+
 <h3 id="étiquette-invisible">Étiquette invisible</h3>
-<p>Un champs sans étiquette visible doit rester exceptionnel. On réservera ce cas à des champs dont la fonction est suffisamment claire et compréhensible sans étiquette  comme, par exemple, un champ de recherche identifié par une icône loupe.</p>
+<p>Un champ sans étiquette visible doit rester exceptionnel. On réservera ce cas à des champs dont la fonction est suffisamment claire et compréhensible sans étiquette  comme, par exemple, un champ de recherche. Dans ce cas, on créera le nom accessible du champ avec l&rsquo;attribut <code>aria-label</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;search&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Rechercher sur le site...&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span><span class="p">&gt;</span>Lancer la recherche<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p><strong>Visuel</strong></p>
+
+<div class="mb-3">
+<input type="text" name="search" class="exempleCodeInput" aria-label="Rechercher sur le site...">
+<button type="submit" class="exempleCodeInput">Lancer la recherche</button>
+</div>
+
+<h4 id="autre-implémentation-possible">Autre implémentation possible</h4>
+<p>Une autre implémentation possible consiste à utiliser un libellé qui sera caché visuellement mais lu par les logiciels de synthèse vocale. :</p>
 <p><strong>HTML</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;search&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sr-only&#34;</span><span class="p">&gt;</span>Rechercher sur le site<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;search&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;search&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;search&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span><span class="p">&gt;</span>Rechercher<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-</span></span></code></pre></div><p><strong>CSS</strong></p>
-<p><em>Le code CSS ci-dessous pour masquer le texte mais le rendre interprétable par les synthétiseurs vocaux est le plus optimum quelque soit le logiciel de synthèse utilisé (Jaws, NVDA, Voice Over&hellip;).</em></p>
+</span></span></code></pre></div><p><em>Le code CSS ci-dessous pour masquer le texte mais le rendre interprétable par les synthétiseurs vocaux est le plus optimum quelque soit le logiciel de synthèse utilisé (Jaws, NVDA, Voice Over&hellip;).</em></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/** sr-only : screen-reader only : seulement pour lecteur d&#39;écran */</span>
 </span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">sr-only</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="k">border</span><span class="p">:</span> <span class="mi">0</span> <span class="cp">!important</span><span class="p">;</span>
@@ -224,45 +261,10 @@ Dans cet exemple, le <code>input</code>est inclus entre les balises <code>label<
 </span></span><span class="line"><span class="cl">    <span class="k">width</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="cp">!important</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="k">white-space</span><span class="p">:</span> <span class="kc">nowrap</span> <span class="cp">!important</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p><strong>Visuel</strong></p>
-
-<div class="mb-3">
-    <label for="search" class="sr-only">Rechercher sur le site</label>
-    <input type="search" name="search" id="search" class="exempleCodeInput">
-    <button type="submit" class="exempleCodeInput">Rechercher</button>
-</div>
-
-<h4 id="autre-implémentation-possible">Autre implémentation possible</h4>
-<p>Une autre implémentation possible consite à utiliser l&rsquo;attribut <code>aria-label</code> :</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;search&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Rechercher sur le site...&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span><span class="p">&gt;</span>Lancer la recherche<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h2 id="étiquette-et-placeholder">Étiquette et placeholder</h2>
-<div class="notice attention" >   
-     <p> attention </p>
-     <p>
-L'attribut `placeholder` qui permet de renseigner un texte indicatif par défaut dans un champ de formulaire ne peut en aucun cas remplacer l'élément `label`.  
-En effet, l'attribut `placeholder` disparaît dès que l'utilisateur active le champ de formulaire ou commence à écrire dedans.
-</p>
-</div>
-<p>Le cas le plus courant d&rsquo;une étiquette masquée est celui du formulaire de recherche dans un site. Le cas d&rsquo;usage le présente avec une icône en forme de loupe.</p>
-<p><strong>Code HTML</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;search&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sr-only&#34;</span><span class="p">&gt;</span>Rechercher sur le site<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;search&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;search&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;search&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;Rechercher dans le site...&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span><span class="p">&gt;</span>Rechercher<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/** sr-only : screen-reader only : seulement pour lecteur d&#39;écran */</span>
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">sr-only</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border</span><span class="p">:</span> <span class="mi">0</span> <span class="cp">!important</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">clip</span><span class="p">:</span> <span class="nb">rect</span><span class="p">(</span><span class="mi">1</span><span class="kt">px</span><span class="p">,</span> <span class="mi">1</span><span class="kt">px</span><span class="p">,</span> <span class="mi">1</span><span class="kt">px</span><span class="p">,</span> <span class="mi">1</span><span class="kt">px</span><span class="p">)</span> <span class="cp">!important</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="kp">-webkit-</span><span class="k">clip-path</span><span class="p">:</span> <span class="nb">inset</span><span class="p">(</span><span class="mi">50</span><span class="kt">%</span><span class="p">)</span> <span class="cp">!important</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">clip-path</span><span class="p">:</span> <span class="nb">inset</span><span class="p">(</span><span class="mi">50</span><span class="kt">%</span><span class="p">)</span> <span class="cp">!important</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">height</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="cp">!important</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">overflow</span><span class="p">:</span> <span class="kc">hidden</span> <span class="cp">!important</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span> <span class="cp">!important</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span> <span class="cp">!important</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">width</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="cp">!important</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">white-space</span><span class="p">:</span> <span class="kc">nowrap</span> <span class="cp">!important</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><div class="notice astuce" >   
+<p>L&rsquo;attribut <code>placeholder</code> qui permet de renseigner un texte indicatif par défaut dans un champ de formulaire ne peut en aucun cas remplacer l&rsquo;élément <code>label</code>.<br>
+En effet, l&rsquo;attribut <code>placeholder</code> disparaît dès que l&rsquo;utilisateur active le champ de formulaire ou commence à écrire dedans.</p>
+<div class="notice astuce" >   
      <p> astuce </p>
      <p>
 Si vous voulez utiliser un attribut <code>placeholder</code> à la place du <code>label</code>, il faudra recourir à du javascript et à du CSS pour donner à votre <code>label</code> un visuel identique au <code>placeholder</code>. Un exemple est disponible dans la rubrique <a href="/motifs/placeholder/">Motifs de conception - Placeholder</a>.

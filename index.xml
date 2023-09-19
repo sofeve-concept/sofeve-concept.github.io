@@ -176,7 +176,8 @@ les polices sérif (avec empattements) – exemple : times new roman, open sans
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/formulaire/semantique-html-formulaire/</guid>
-      <description>Ce qu&amp;rsquo;il faut retenir Un formulaire HTML est composé de plusieurs éléments : zones de texte (sur une seule ligne ou plusieurs lignes), liste de sélection déroulante, cases à cocher, boutons radio et boutons d&amp;rsquo;action (soumission du formulaire ou effacement des champs).</description>
+      <description>Ce qu&amp;rsquo;il faut retenir Un formulaire HTML peut être composé de plusieurs éléments :
+zones de texte (sur une seule ligne ou plusieurs lignes), liste de sélection déroulante, cases à cocher, boutons radio et boutons d&amp;rsquo;action (soumission du formulaire ou effacement des champs).</description>
     </item>
     
     <item>
@@ -282,6 +283,15 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
     </item>
     
     <item>
+      <title>Libellé de champ</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</guid>
+      <description>remarque Pour présenter l&#39;étiquette de champ, les exemples de cette page associent l&#39;étiquette à un champ de type `input`.</description>
+    </item>
+    
+    <item>
       <title>Lien d&#39;accès rapide</title>
       <link>https://sofeve-concept.github.io/coder/navigation/lien-acces-rapide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -354,15 +364,6 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
     </item>
     
     <item>
-      <title>Saisie et contrôle du formulaire</title>
-      <link>https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/</guid>
-      <description>Champ obligatoire Si le champ est obligatoire, on utilisera un signe distinctif intégré dans la balise &amp;lt;label&amp;gt;.</description>
-    </item>
-    
-    <item>
       <title>Tableaux de mise en forme</title>
       <link>https://sofeve-concept.github.io/coder/tableaux/tableaux-presentation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -378,15 +379,6 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
       
       <guid>https://sofeve-concept.github.io/ressources/bureautique/structure/colonnes/</guid>
       <description>Règles Pour présenter du texte sur plusieurs colonnes, utiliser la fonctionnalité « Colonnes » prévue à cet effet ; ne pas utiliser les tableaux.</description>
-    </item>
-    
-    <item>
-      <title>Étiquette de champ</title>
-      <link>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</guid>
-      <description>remarque Pour présenter l&#39;étiquette de champ, les exemples de cette page associent l&#39;étiquette à un champ de type `input`.</description>
     </item>
     
     <item>
@@ -414,6 +406,15 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
       
       <guid>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/referentiels-accessibilite-numerique/</guid>
       <description>Les normes internationales Les normes internationales pour rendre ses supports numériques accessibles sont émises par la Web Accessibility Initiative (WAI) du W3C à travers plusieurs guides :</description>
+    </item>
+    
+    <item>
+      <title>Regroupement de champs</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/</guid>
+      <description>Implémentation HTML Les champs de même nature sont regroupés avec fieldset et titrés avec legend.</description>
     </item>
     
     <item>
@@ -507,12 +508,12 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
     </item>
     
     <item>
-      <title>Regroupement de champs</title>
-      <link>https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/</link>
+      <title>Liste déroulante</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/</guid>
-      <description>Implémentation HTML Les champs de même nature sont regroupés et titré avec fieldset et legend</description>
+      <guid>https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/</guid>
+      <description>Règles générales Les options proposées dans une liste déroulante doivent être ordonnées de manière logique :</description>
     </item>
     
     <item>
@@ -553,15 +554,6 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
     </item>
     
     <item>
-      <title>Liste déroulante</title>
-      <link>https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/</guid>
-      <description>Règles générales Les options proposées dans une liste déroulante doivent être ordonnées de manière logique :</description>
-    </item>
-    
-    <item>
       <title>Listes</title>
       <link>https://sofeve-concept.github.io/coder/contenu/liste/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -577,6 +569,16 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
       
       <guid>https://sofeve-concept.github.io/coder/navigation/processus-etapes/</guid>
       <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;un processus par étapes ? Les processus par étapes (stepper, en anglais) affichent la progression à travers une séquence d&amp;rsquo;étapes logiques et numérotées.</description>
+    </item>
+    
+    <item>
+      <title>Saisie et contrôle du formulaire</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/</guid>
+      <description>Champ obligatoire Si un des champs du formulaire est obligatoire :
+la mention de la présence de champs obligatoires dans le formulaire sera signalée au début du formulaire ; on signalera pour chaque champ obligatoire que celui-ci l&amp;rsquo;est, soit en l&amp;rsquo;écrivant entre les balises &amp;lt;label&amp;gt; ; exemple : &amp;lt;label&amp;gt;.</description>
     </item>
     
     <item>
@@ -598,12 +600,30 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
     </item>
     
     <item>
+      <title>Navigation au clavier</title>
+      <link>https://sofeve-concept.github.io/coder/navigation/navigation-clavier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/navigation/navigation-clavier/</guid>
+      <description>Utilisation des touches du clavier pour la navigation Pour naviguer au clavier, les touches suivantes sont utilisées :</description>
+    </item>
+    
+    <item>
       <title>Cadre intégré</title>
       <link>https://sofeve-concept.github.io/coder/contenu/cadre/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/contenu/cadre/</guid>
       <description>Règle d&amp;rsquo;implémentation En matière d&amp;rsquo;accessibilité numérique, la seule règle à respecter est de renseigner l&amp;rsquo;attribut title avec un texte pertinent, clair et précis sur le contenu affiché dans le cadre.</description>
+    </item>
+    
+    <item>
+      <title>Sécurité des formulaires</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/securite-formulaire/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/securite-formulaire/</guid>
+      <description>Formulaire gérant des données sensibles Les données sensibles concernent des données à caractère financier, juridique ou personnel.</description>
     </item>
     
     <item>
