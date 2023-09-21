@@ -53,6 +53,16 @@
     </item>
     
     <item>
+      <title>Code HTML de base</title>
+      <link>https://sofeve-concept.github.io/coder/structure/code-base/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/structure/code-base/</guid>
+      <description>Présentation générale d&amp;rsquo;une page HTML Une page web HTML comporte plusieurs éléments :
+Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page HTML 5 ; Le doctype HTML 5 s&amp;rsquo;écrit &amp;lt;!</description>
+    </item>
+    
+    <item>
       <title>Contenu du multimédia</title>
       <link>https://sofeve-concept.github.io/coder/multimedia/presentation-video/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -171,6 +181,15 @@ les polices sérif (avec empattements) – exemple : times new roman, open sans
     </item>
     
     <item>
+      <title>Régions HTML</title>
+      <link>https://sofeve-concept.github.io/coder/structure/region-html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/structure/region-html/</guid>
+      <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;une région ? Le HTML 5 a introduit des éléments de région (landmark, en anglais}).</description>
+    </item>
+    
+    <item>
       <title>Sémantique HTML</title>
       <link>https://sofeve-concept.github.io/coder/formulaire/semantique-html-formulaire/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -205,16 +224,6 @@ zones de texte (sur une seule ligne ou plusieurs lignes), liste de sélection d�
       
       <guid>https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs/</guid>
       <description>Définition du constraste et du ratio de contraste Le contraste de couleurs est la différence de luminosité entre les couleurs de premier et d&amp;rsquo;arrière-plan.</description>
-    </item>
-    
-    <item>
-      <title>Code HTML global</title>
-      <link>https://sofeve-concept.github.io/coder/structure/code-base/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/coder/structure/code-base/</guid>
-      <description>Une page web doit comporter différents éléments pour être valide :
-Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page HTML 5 ; L&amp;rsquo;élément racine html contenant une déclaration de langue ; Une entête contenant des meta informations comme le titre de la page (qui apparaitra dans l&amp;rsquo;onglet du navigateur) et diverses déclarations comme l&amp;rsquo;encodage de la page, les liens vers des feuilles de style&amp;hellip; Le corps du document (c&amp;rsquo;est cette partie du code qui sera affichée dans le navigateur) contenant des balises sémantiques permettant de structurer la page.</description>
     </item>
     
     <item>
@@ -346,15 +355,6 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
     </item>
     
     <item>
-      <title>Présentation de l&#39;information</title>
-      <link>https://sofeve-concept.github.io/coder/structure/formatage/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/coder/structure/formatage/</guid>
-      <description>Comme il n&amp;rsquo;est pas possible d&amp;rsquo;être exhaustif, nous allons parcourir ici les éléments sur lesquels être vigilants car bien souvent source de non conformité en terme d&amp;rsquo;accessibilité numérique.</description>
-    </item>
-    
-    <item>
       <title>Rédaction de courriels</title>
       <link>https://sofeve-concept.github.io/ressources/bureautique/courriel/courriel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -432,7 +432,7 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/structure/semantique-html/</guid>
-      <description>Halte au détournement de code ! Certains éléments HTML sont détournés de leur usage sémantique cela est bien entendu proscrit.</description>
+      <description>Halte au détournement de code ! Certains éléments HTML sont détournés de leur usage sémantique ; cela est bien entendu proscrit.</description>
     </item>
     
     <item>

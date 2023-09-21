@@ -165,6 +165,7 @@
       <ul>
         <li><a href="#dans-quel-cas-utiliser-lélément-html-navnbsp">Dans quel cas utiliser l&rsquo;élément HTML <code>nav</code> ?</a></li>
         <li><a href="#dans-quel-cas-ne-pas-utiliser-lélément-html-navnbsp">Dans quel cas ne pas utiliser l&rsquo;élément HTML <code>nav</code> ?</a></li>
+        <li><a href="#règles-daccessibilité-à-vérifier-sur-la-navigation">Règles d&rsquo;accessibilité à vérifier sur la navigation</a></li>
       </ul>
     </li>
   </ul>
@@ -214,7 +215,17 @@
 <li>Pour présenter les liens inscrits dans la zone de pied de page <code>footer</code></li>
 <li>Pour présenter une collection de liens pointant vers d&rsquo;autres sites.</li>
 </ul>
-
+<h3 id="règles-daccessibilité-à-vérifier-sur-la-navigation">Règles d&rsquo;accessibilité à vérifier sur la navigation</h3>
+<ul>
+<li><strong>Chaque lien</strong> dont la nature de lien n’est pas évidente (typiquement, on a supprimé le soulignement qui identifie nativement le lien) <strong>est bien visible et distinct du texte environnant</strong>.</li>
+<li><strong>La prise de focus doit être bien visible</strong> :<br>
+Pour cela, déplacez-vous dans la page uniquement à l&rsquo;aide du clavier (touche &ldquo;tabulation&rdquo;). Si vous ne savez pas où se trouve votre curseur, c&rsquo;est que cette règle n&rsquo;est pas respectée. Ajoutez alors un style spécifique pour l&rsquo;état &ldquo;focus&rdquo; dans votre feuille de style.<br>
+Exemple :</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">:</span><span class="nd">focus</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">outline</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">purple</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>
           </section>   
      </div>
 </main>

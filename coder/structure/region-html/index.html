@@ -3,10 +3,10 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Texte - Contenu - Coder accessible - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Régions HTML - Structure de la page - Coder accessible - Sofève Concept</title>
 	
 	<meta name="theme-color" content="#FFFFFF" />
-	<meta name="description" content="Quelques règles en matière de formatage du texte sont à respecter pour faciliter l&#39;accessibilité numérique de sa page. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	<meta name="description" content="Les régions HTML sont importantes pour structurer le corps de son document. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -104,9 +104,9 @@
   
   <li><a href="/coder/">Coder accessible</a></li>
   
-  <li><a href="/coder/contenu/">Contenu</a></li>
+  <li><a href="/coder/structure/">Structure de la page</a></li>
   
-  <li aria-current="page" tabindex="-1">Texte</li>
+  <li aria-current="page" tabindex="-1">Régions HTML</li>
   </ol>
 </nav>
 <div>
@@ -125,18 +125,16 @@
 		Coder accessible
 	</button>
 	<ul id="sousMenu">
-		<li><a href="/coder">Préambule</a></li><li><a href="https://sofeve-concept.github.io/coder/structure/">Structure de la page</a></li>
-		<li><a href="https://sofeve-concept.github.io/coder/contenu/" aria-current="true" >Contenu</a>
+		<li><a href="/coder">Préambule</a></li><li><a href="https://sofeve-concept.github.io/coder/structure/" aria-current="true" >Structure de la page</a>
 			
-			<ul><li><a href="https://sofeve-concept.github.io/coder/contenu/ecriture/">Écrire accessible</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/contenu/titraille/">Titraille</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/contenu/texte/" aria-current="page" >Texte</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/contenu/liste/">Listes</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/contenu/citations/">Citations</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/contenu/cadre/">Cadre intégré</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/contenu/quiz/">Quiz récap&#39;</a></li>
+			<ul><li><a href="https://sofeve-concept.github.io/coder/structure/code-base/">Code HTML de base</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/structure/region-html/" aria-current="page" >Régions HTML</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/structure/semantique-html/">Sémantique HTML</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/structure/validite-code/">Validité du code</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/structure/quiz/">Quiz récap&#39;</a></li>
 				</ul>
 			</li>
+		<li><a href="https://sofeve-concept.github.io/coder/contenu/">Contenu</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/couleurs/">Couleurs</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/navigation/">Navigation</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/lien-bouton/">Liens et boutons</a></li>
@@ -150,78 +148,80 @@
 
                </aside>
           <section class="item-80 rubCode">
-               <h1 id="contenu">Texte</h1>
-               <p>Quelques règles en matière de formatage du texte sont à respecter pour faciliter l&#39;accessibilité numérique de sa page.</p>
+               <h1 id="contenu">Régions HTML</h1>
+               <p>Les régions HTML sont importantes pour structurer le corps de son document.</p>
 <button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
     Table des matières
 </button>
 <div id="tdm" role="region" tabindex="-1">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#formatage-du-texte">Formatage du texte</a>
-      <ul>
-        <li><a href="#agrave-faire">À faire</a></li>
-        <li><a href="#agrave-ne-pas-faire">À ne pas faire</a></li>
-      </ul>
-    </li>
-    <li><a href="#citations">Citations</a></li>
-    <li><a href="#changement-de-langue-ou-de-direction">Changement de langue ou de direction</a>
-      <ul>
-        <li><a href="#règles-daccessibilité-à-vérifier-sur-le-texte">Règles d&rsquo;accessibilité à vérifier sur le texte</a></li>
-      </ul>
-    </li>
+    <li><a href="#quest-ce-quune-régionnbsp">Qu&rsquo;est-ce qu&rsquo;une région ?</a></li>
+    <li><a href="#les-régions-html-et-leur-rôle-spécifique">Les régions HTML et leur rôle spécifique</a></li>
   </ul>
 </nav>
 </div>
-<h2 id="formatage-du-texte">Formatage du texte</h2>
-<h3 id="agrave-faire">À faire</h3>
-<ul>
-<li>Utiliser des tailles relatives pour les polices de caractères : (em, rem, %, small&hellip;) ;</li>
-<li>Veiller à déclarer une interligne de 1,5 via la déclaration css <code>line-height: 1.5;</code> ;</li>
-<li>Utiliser la balise <code>&lt;strong&gt;...&lt;/strong&gt;</code> pour signaler du contenu important et non pas pour mettre du texte en gras. Dans ce cas, on utilisera plutôt la déclaration css <code>font-weight: bold;</code> ;</li>
-</ul>
-<h3 id="agrave-ne-pas-faire">À ne pas faire</h3>
-<ul>
-<li>Utiliser les balises de titraille à des fins de mise en forme ;</li>
-<li>Justifier le texte - cela rend la lecture très difficile pour les personnes dyslexiques ;</li>
-<li>Écrire tout en majuscules - on utilisera plutôt la déclaration CSS <code>text-transform: uppercase;</code> ; et le &ldquo;tout majuscules&rdquo; sera réservé à des portions de texte très courtes ou aux titres ;</li>
-<li>Utiliser la balise <code>&lt;br&gt;</code> (ou pire plusieurs fois cette balise) pour espacer une ligne ; de même on n&rsquo;utilisera pas des balises de parapgraphes vides <code>&lt;p&gt;&lt;/p&gt;</code> pour espacer les lignes. Au lieu de cela, on utilisera des styles CSS avec des déclarations du type <code>margin-bottom: 1.5rem;</code> ;</li>
-</ul>
-<h2 id="citations">Citations</h2>
-<ul>
-<li>Un bloc complet de citation sera inséré entre les balises <code>&lt;blokquote&gt;...&lt;/blokquote&gt;</code> ;</li>
-<li>Un extrait de citation, à l&rsquo;intérieur d&rsquo;un paragraphe, sera inséré entre les balises <code>&lt;q&gt;...&lt;/q&gt;</code>.</li>
-<li>L&rsquo;élément <code>&lt;cite&gt;</code> contiendra le titre d&rsquo;une œuvre telle qu&rsquo;un livre, une chanson, un film, une sculpture&hellip;</li>
-</ul>
-<div class="notice attention" >   
-     <p> attention </p>
-     <p>
-La spécification WHATWG proscrit l'utilisation de <code>cite</code> pour inclure le nom de l'auteur d'une œuvre... alors que la spécification W3C l'autorise. &Agrave; vous de voir...
-</p>
-</div>
-<h2 id="changement-de-langue-ou-de-direction">Changement de langue ou de direction</h2>
-<ul>
-<li>Lorsque une portion de texte est écrite dans une langue différente de celle déclarée en entête de page (déclaration <code>&lt;html lang=&quot;fr&quot;&gt;</code>, par exemple), il faudra mentionner le changement de langue avec l&rsquo;attribut <code>lang</code>.<br>
-Exemple :</li>
-</ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Nous allons maintenant aborder des notions de <span class="p">&lt;</span><span class="nt">span</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>design thinking<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span></code></pre></div><ul>
-<li>De même, en cas de changement de sens de lecture (le document se lit de gauche à droite et une portion de texte se lit de droite à gauche, par exemple) ; ce changement de sens de lecture sera mentionné via l&rsquo;attribut <code>dir</code>.</li>
-</ul>
-<h3 id="règles-daccessibilité-à-vérifier-sur-le-texte">Règles d&rsquo;accessibilité à vérifier sur le texte</h3>
-<ul>
-<li><strong>Le texte doit rester visible</strong> en cas de :
-<ul>
-<li><strong>Fort grossissement</strong> :  l’augmentation de la taille des caractères jusqu’à 200%, au moins, ne doit pas provoquer de perte d’information.   <em>Dans votre navigateur utiliser le zoom ou appuyer sur les touches <code>Ctrl</code> et <code>+</code> à 6 reprises ou la loupe de Windows</em>.</li>
-<li><strong>Changement d&rsquo;orientation de l&rsquo;écran</strong> (site responsive)<br>
-<em>Dans Firefox, vous pouvez afficher une vue adaptative de votre fenêtre via la combinaison de touches <code>Ctrl</code> + <code>Maj</code> + <code>M</code></em></li>
-<li><strong>Lors de l&rsquo;utilisation du mode contraste élevé de windows</strong>.<br>
-<em>Le mode contraste élevé s&rsquo;active via la combinaison de touches <code>Alt</code> + <code>Maj</code> + <code>Impr écran</code></em>;</li>
-</ul>
-</li>
-<li><strong>Les propriétés d’espacement du texte peuvent être redéfinies par l’utilisateur</strong> sans perte de contenu ou de fonctionnalité</li>
-<li><strong>Une information ne doit pas être donnée uniquement par la forme, la taille ou la position</strong>.</li>
-</ul>
+<h2 id="quest-ce-quune-régionnbsp">Qu&rsquo;est-ce qu&rsquo;une région ?</h2>
+<p>Le HTML 5 a introduit des éléments de région (<span lang="en">landmark</span>, en anglais}). Ces régions sont très utiles aux utilisateurs de logiciels de synthèse vocale car elles leur permettent de passer d&rsquo;un zone à une autre et de mieux comprendre la structure du document.</p>
+<p>Les éléments de régions HTML définissent par défaut des rôles ARIA ([Accessible Rich Internet Applications]{lang=&ldquo;en&rdquo;} - spécification du WCAG pour rendre les applications Internet compatibles avec les technologies d'assistance).</p>
+<h2 id="les-régions-html-et-leur-rôle-spécifique">Les régions HTML et leur rôle spécifique</h2>
+<p>Certaines régions ont un rôle aria bien spécifique qui détermine aussi leur cas d&rsquo;usage. Dans certains cas, il est nécessaire de surchargé la balise sémantique par son rôle aria.</p>
+
+<table class="responsive style2">
+   <caption>Régions HTML et rôle</caption>
+   <thead>
+<tr>
+    <th scope="col">&Eacute;lément HTML</th>
+    <th scope="col">Rôle aria associé</th>
+    <th scope="col">Utilisation</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><code>header</code></td>
+    <td><code>banner</code></td>
+    <td><code>&lt;header role="banner"></code> doit être utilisé pour l'entête principale du site.<br>
+    Lorsque l'élément <code>header</code> est contenu dans des éléments <code>article</code>, <code>aside</code>, <code>main</code>, <code>nav</code>, <code>section</code>, il <b>ne doit pas</b> avoir de rôle aria.</td>
+  </tr>
+  <tr>
+    <td><code>main</code></td>
+    <td><code>main</code></td>
+    <td><code>&lt;main role="main"></code> doit être utilisé pour le contenu principal de la page.<br>
+    Si la balise <code>main</code> peut être utilisée plusieurs fois dans une page web, la balise avec le <code>role="main"</code> ne peut être employée qu’une seule fois.</td>
+  </tr>
+  <tr>
+    <td><code>footer</code></td>
+    <td><code>contentinfo</code></td>
+    <td><code>&lt;footer role="contentinfo"></code> doit être utilisé pour le pied de page de la page.<br>
+   Lorsque l'élément <code>footer</code> est contenu dans des éléments <code>article</code>, <code>aside</code>, <code>main</code>, <code>nav</code>, <code>section</code>, il <b>ne doit pas</b> avoir de rôle aria.</td>
+  </tr>
+   <tr>
+    <td><code>nav</code></td>
+    <td><code>navigation</code></td>
+    <td><code>&lt;nav role="navigation"></code> doit <b>toujours être utilisé tel quel</b> pour identifier un système de <b>navigation interne</b> au site.</td>
+  </tr>
+  <tr>
+    <td><code>search</code></td>
+    <td><code>search</code></td>
+    <td><code>&lt;search role="search"></code> doit <b>toujours être utilisé tel quel</b> pour identifier le formulaire de recherche globale dans le site.<br>
+    Avant mars 2023, cet élément <code>search</code> n'existait pas. Pour identifier un formulaire de recherche sur tout le site, on utilisait <code>&lt;form role="search"></code>.</td>
+  </tr>
+   <tr>
+    <td><code>aside</code></td>
+    <td><code>complementary</code></td>
+    <td><code>&lt;aside></code><br>Le rôle <code>complementary</code> implicite n'a pas besoin d'être renseigné.<br>
+    Il est recommandé de donner un nom à cette région via l'attribut <code>aria-label</code> :<code>&lt;aside aria-label="Catégories"></code>.</td>
+  </tr>
+  <tr>
+    <td><code>section</code></td>
+    <td><code>region</code></td>
+    <td><code>&lt;section></code><br>Le rôle <code>region</code> implicite ne doit pas être renseigné.<br>La balise ouvrante <code>section</code> doit toujours être suivie d'une balise de titraille (<code>h1</code>, <code>h2</code>, ..., <code>h6</code>) ou avoir un attribut de titre (<code>title</code> ou <code>aria-label</code>).<br>
+    <code>&lt;section title="Derniers articles"></code> ou <code>&lt;section>&lt;h3>Derniers articles&lt;/h3>...</code></td>
+  </tr>
+  </tbody>
+</table>
+
+
 
           </section>   
      </div>
@@ -251,7 +251,6 @@ Exemple :</li>
 		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
 	</svg>
 	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/afficherReponse.min.js"></script>
-<script src="/js/clipboard.min.js"></script>
 <script src="/js/search.min.js"></script>
 <script>sandwitch();</script>	
 

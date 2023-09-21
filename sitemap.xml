@@ -32,6 +32,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/coder/structure/code-base/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/multimedia/presentation-video/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -110,6 +116,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/coder/structure/region-html/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/formulaire/semantique-html-formulaire/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -141,12 +153,6 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/coder/structure/code-base/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -237,12 +243,6 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/coder/image-icone/optimisation-image/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/coder/structure/formatage/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

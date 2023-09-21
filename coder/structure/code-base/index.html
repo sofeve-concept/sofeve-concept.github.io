@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Code HTML global - Structure de la page - Coder accessible - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Code HTML de base - Structure de la page - Coder accessible - Sofève Concept</title>
 	
 	<meta name="theme-color" content="#FFFFFF" />
 	<meta name="description" content="Structure de base d&#39;une page HTML valide selon le W3C et les critères d&#39;accessibilité numérique. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
@@ -106,7 +106,7 @@
   
   <li><a href="/coder/structure/">Structure de la page</a></li>
   
-  <li aria-current="page" tabindex="-1">Code HTML global</li>
+  <li aria-current="page" tabindex="-1">Code HTML de base</li>
   </ol>
 </nav>
 <div>
@@ -127,8 +127,8 @@
 	<ul id="sousMenu">
 		<li><a href="/coder">Préambule</a></li><li><a href="https://sofeve-concept.github.io/coder/structure/" aria-current="true" >Structure de la page</a>
 			
-			<ul><li><a href="https://sofeve-concept.github.io/coder/structure/code-base/" aria-current="page" >Code HTML global</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/structure/formatage/">Présentation de l&#39;information</a></li>
+			<ul><li><a href="https://sofeve-concept.github.io/coder/structure/code-base/" aria-current="page" >Code HTML de base</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/structure/region-html/">Régions HTML</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/structure/semantique-html/">Sémantique HTML</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/structure/validite-code/">Validité du code</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/structure/quiz/">Quiz récap&#39;</a></li>
@@ -148,7 +148,7 @@
 
                </aside>
           <section class="item-80 rubCode">
-               <h1 id="contenu">Code HTML global</h1>
+               <h1 id="contenu">Code HTML de base</h1>
                <p>Structure de base d&#39;une page HTML valide selon le W3C et les critères d&#39;accessibilité numérique.</p>
 <button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
     Table des matières
@@ -156,64 +156,58 @@
 <div id="tdm" role="region" tabindex="-1">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#règles-dimplémentation">Règles d&rsquo;implémentation</a>
+    <li><a href="#présentation-générale-dune-page-html">Présentation générale d&rsquo;une page HTML</a>
       <ul>
         <li><a href="#à-propos-de-lattribut-lang">À propos de l&rsquo;attribut <code>lang</code></a></li>
       </ul>
     </li>
-    <li><a href="#règles-daccessibilité">Règles d&rsquo;accessibilité</a>
+    <li><a href="#contenu-de-lentête-html-élément-head">Contenu de l&rsquo;entête HTML (élément <code>head</code>)</a>
       <ul>
-        <li><a href="#contenu-de-lentête-html-élément-head">Contenu de l&rsquo;entête HTML (élément <code>head</code>)</a>
+        <li><a href="#déclaration-de-lencodage-du-document-élément-meta-charset">Déclaration de l&rsquo;encodage du document (élément <code>&lt;meta charset</code>)</a></li>
+        <li><a href="#titre-de-page-élément-title">Titre de page (élément <code>title</code>)</a></li>
+        <li><a href="#déclaration-pour-gérer-laffichage-adaptatif-du-site-élément-meta-nameviewport">Déclaration pour gérer l&rsquo;affichage adaptatif du site (élément <code>&lt;meta name=&quot;viewport&quot;</code>)</a></li>
+        <li><a href="#liens-vers-les-feuilles-de-style-externes">Liens vers les feuilles de style externes</a>
           <ul>
-            <li><a href="#déclaration-de-lencodage-du-document-élément-meta-charset">Déclaration de l&rsquo;encodage du document (élément <code>&lt;meta charset</code>)</a></li>
-            <li><a href="#titre-de-page-élément-title">Titre de page (élément <code>title</code>)</a></li>
-            <li><a href="#déclaration-pour-gérer-laffichage-adaptatif-du-site-élément-meta-nameviewport">Déclaration pour gérer l&rsquo;affichage adaptatif du site (élément <code>&lt;meta name=&quot;viewport&quot;</code>)</a></li>
-            <li><a href="#liens-vers-les-feuilles-de-style-externes">Liens vers les feuilles de style externes</a></li>
-          </ul>
-        </li>
-        <li><a href="#contenu-du-corps-du-document-html-élément-body">Contenu du corps du document HTML (élément <code>body</code>)</a>
-          <ul>
-            <li><a href="#lien-daccès-rapide">Lien d&rsquo;accès rapide</a></li>
-            <li><a href="#zone-dentête-principale-élément-header-avec-le-role-aria-banner">Zone d&rsquo;entête principale (élément <code>header</code> avec le role aria <code>banner</code>)</a></li>
-            <li><a href="#zone-de-navigation-principale--élément-nav-avec-le-role-aria-navigation">Zone de navigation principale  (élément <code>nav</code> avec le role aria <code>navigation</code>)</a></li>
-            <li><a href="#zone-de-contenu-principal--élément-main-avec-le-role-aria-main">Zone de contenu principal  (élément <code>main</code> avec le role aria <code>main</code>)</a></li>
-            <li><a href="#zone-de-pied-de-page-principal--élément-footer-avec-le-role-aria-contentinfo">Zone de pied de page principal  (élément <code>footer</code> avec le role aria <code>contentinfo</code>)</a></li>
+            <li><a href="#règles-daccessibilité-pour-les-feuilles-de-style">Règles d&rsquo;accessibilité pour les feuilles de style</a></li>
+            <li><a href="#bonus--bonne-pratique-décoconception">Bonus : bonne pratique d&rsquo;écoconception</a></li>
           </ul>
         </li>
       </ul>
     </li>
+    <li><a href="#contenu-du-corps-du-document-html-élément-body">Contenu du corps du document HTML (élément <code>body</code>)</a>
+      <ul>
+        <li><a href="#lien-daccès-rapide">Lien d&rsquo;accès rapide</a></li>
+        <li><a href="#région-dentête-principale-élément-header-avec-le-role-aria-banner">Région d&rsquo;entête principale (élément <code>header</code> avec le role aria <code>banner</code>)</a></li>
+        <li><a href="#région-de-navigation-principale--élément-nav-avec-le-role-aria-navigation">Région de navigation principale  (élément <code>nav</code> avec le role aria <code>navigation</code>)</a></li>
+        <li><a href="#région-de-contenu-principal--élément-main-avec-le-role-aria-main">Région de contenu principal  (élément <code>main</code> avec le role aria <code>main</code>)</a></li>
+        <li><a href="#région-de-pied-de-page-principal--élément-footer-avec-le-role-aria-contentinfo">Région de pied de page principal  (élément <code>footer</code> avec le role aria <code>contentinfo</code>)</a></li>
+      </ul>
+    </li>
     <li><a href="#en-résumé--structure-de-base-dune-page-html">En résumé : structure de base d&rsquo;une page HTML</a></li>
+    <li><a href="#règles-daccessibilité-à-vérifier-sur-la-présentation-des-pages">Règles d&rsquo;accessibilité à vérifier sur la présentation des pages</a></li>
   </ul>
 </nav>
 </div>
-<p>Une page web doit comporter différents éléments pour être valide :</p>
+<h2 id="présentation-générale-dune-page-html">Présentation générale d&rsquo;une page HTML</h2>
+<p>Une page web HTML comporte plusieurs éléments :</p>
 <ul>
-<li>Un <em>doctype</em> pour indiquer qu&rsquo;il s&rsquo;agit d&rsquo;une page HTML 5 ;</li>
-<li>L&rsquo;élément racine <code>html</code> contenant une déclaration de langue ;</li>
-<li>Une entête contenant des <em>meta informations</em> comme le titre de la page (qui apparaitra dans l&rsquo;onglet du navigateur) et diverses déclarations comme l&rsquo;encodage de la page, les liens vers des feuilles de style&hellip; </li>
-<li>Le corps du document (c&rsquo;est cette partie du code qui sera affichée dans le navigateur) contenant des balises sémantiques permettant de structurer la page.</li>
-</ul>
-<h2 id="règles-dimplémentation">Règles d&rsquo;implémentation</h2>
+<li>Un <em>doctype</em> pour indiquer qu&rsquo;il s&rsquo;agit d&rsquo;une page HTML 5 ; Le doctype HTML 5 s&rsquo;écrit <code>&lt;!DOCTYPE html&gt;</code> ;</li>
+<li>le doctype sera suivi par l&rsquo;élément <code>html</code>. La balise ouvrante <code>html</code> aura un <strong>attribut de langue</strong> pour indiquer la langue principale du document.  L&rsquo;indication de la langue principale du document est au format ISO 639-1 (exemple : <code>&lt;html lang=&quot;fr&quot;&gt;</code>) ;</li>
+<li>Entre les balises <code>html</code>, on trouve :
 <ul>
-<li>Le doctype HTML 5 s&rsquo;écrit <code>&lt;!DOCTYPE html&gt;</code></li>
-<li>il sera suivi par la balise ouvrante <code>html</code> <strong>avec l&rsquo;indication de la langue principale du document</strong> au format ISO 639-1 (exemple : <code>&lt;html lang=&quot;fr&quot;&gt;</code>) qui sera suivie :
-<ul>
-<li>des éléments HTML balisés par <code>&lt;head&gt;...&lt;/head&gt;</code></li>
-<li>des éléments HTML balisés par <code>&lt;body&gt;...&lt;/body&gt;</code></li>
+<li>L&rsquo;élément HTML décrivant l&rsquo;entête du document, balisé par <code>&lt;head&gt;...&lt;/head&gt;</code>. L&rsquo;entête contient des <em>meta informations</em> comme le titre de la page (qui apparaitra dans l&rsquo;onglet du navigateur) et diverses déclarations comme l&rsquo;encodage de la page, les liens vers des feuilles de style&hellip; </li>
+<li>L&rsquo;élément HTML décrivant le corps du document, balisé par <code>&lt;body&gt;...&lt;/body&gt;</code>. C&rsquo;est cette partie du code qui sera affichée dans le navigateur. Le corps du document contient des balises sémantiques qui permettent de structurer la page.</li>
 </ul>
 </li>
-<li>le document HTML se terminera avec la balise fermante <code>&lt;/html&gt;</code>.</li>
 </ul>
 <p>Le code HTML minimum se présentera donc comme suit (pour une page écrite en français):</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;fr&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Titre de la page - Nom du site<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        ...
+</span></span><span class="line"><span class="cl">        [...]
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        ...
+</span></span><span class="line"><span class="cl">       [...]
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h3 id="à-propos-de-lattribut-lang">À propos de l&rsquo;attribut <code>lang</code></h3>
@@ -231,14 +225,11 @@ Dans le cas d'un site multilangue, il faudra bien veiller à mettre à jour le c
 <code>&lt;html lang="en"></code>, pour un site en anglais...
 </p>
 </div>
-<h2 id="règles-daccessibilité">Règles d&rsquo;accessibilité</h2>
-<p>L&rsquo;extrait de code ci-après présente le code minimal pour avoir une page HTML conforme aux principes d&rsquo;accessibilité numérique utilisation des <strong>balises sémantiques HTML 5</strong>, <strong>role aria</strong> et <strong>lien lien d&rsquo;accès rapide</strong> (ou lien d&rsquo;évitement qui permet d&rsquo;accéder directement au contenu de la page).</p>
-<h3 id="contenu-de-lentête-html-élément-head">Contenu de l&rsquo;entête HTML (élément <code>head</code>)</h3>
-<p>Les balises <code>&lt;head&gt;...&lt;/head&gt;</code> doivent contenir :</p>
-<h4 id="déclaration-de-lencodage-du-document-élément-meta-charset">Déclaration de l&rsquo;encodage du document (élément <code>&lt;meta charset</code>)</h4>
+<h2 id="contenu-de-lentête-html-élément-head">Contenu de l&rsquo;entête HTML (élément <code>head</code>)</h2>
+<h3 id="déclaration-de-lencodage-du-document-élément-meta-charset">Déclaration de l&rsquo;encodage du document (élément <code>&lt;meta charset</code>)</h3>
 <p>La norme UTF-8 sera privilégiée afin d&rsquo;éviter les problèmes de caractères accentués. La déclaration de fait de cette manière :<br>
 <code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code></p>
-<h4 id="titre-de-page-élément-title">Titre de page (élément <code>title</code>)</h4>
+<h3 id="titre-de-page-élément-title">Titre de page (élément <code>title</code>)</h3>
 <p>Le titre de page doit :</p>
 <ul>
 <li>Donner a minima le nom de la page en cours et le nom du site </li>
@@ -246,14 +237,14 @@ Dans le cas d'un site multilangue, il faudra bien veiller à mettre à jour le c
 <li>Afficher les informations du plus précis au plus général (nom de la page, nom de la rubrique pour finir par le nom du site)</li>
 <li>S&rsquo;actualiser à chaque modification de page ou de contexte (on entend par changement de contexte lorsque la page affiche un message d&rsquo;erreur, le résultat d&rsquo;un système de pagination&hellip;).</li>
 </ul>
-<h5 id="exemples-">Exemples :</h5>
+<p><strong>Exemples</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Rubrique - Chapitre - Nom du site<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Page en cours - Rubrique - Chapitre - Nom du site<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Erreur - Rubrique - Chapitre - Nom du site<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Confirmation - Nous Contacter - Nom du site<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Résultat de la recherche (page 1/3) - Rechercher dans le site - Nom du site<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Blog (page 2/10) - Nom du site<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h4 id="déclaration-pour-gérer-laffichage-adaptatif-du-site-élément-meta-nameviewport">Déclaration pour gérer l&rsquo;affichage adaptatif du site (élément <code>&lt;meta name=&quot;viewport&quot;</code>)</h4>
+</span></span></code></pre></div><h3 id="déclaration-pour-gérer-laffichage-adaptatif-du-site-élément-meta-nameviewport">Déclaration pour gérer l&rsquo;affichage adaptatif du site (élément <code>&lt;meta name=&quot;viewport&quot;</code>)</h3>
 <p>La déclaration d&rsquo;affichage adaptatif permet de concevoir un site &ldquo;responsive&rdquo; qui s&rsquo;adaptera au différentes configurations d&rsquo;écran et périphériques de sorties prévus en CSS.<br>
 On insérera donc la balise <code>meta name=&quot;viewport&quot;</code> avec l&rsquo;attribut <code>content</code> pour lequel on déclarera les propriétés :</p>
 <ul>
@@ -261,30 +252,38 @@ On insérera donc la balise <code>meta name=&quot;viewport&quot;</code> avec l&r
 <li><code>initial-scale</code> : niveau de zoom initial  la valeur &ldquo;1&rdquo; correspond à un zoom de départ de 100%  valeur à privilégier.</li>
 <li><code>user-scalable</code> : zoomer dans la page (valeur &ldquo;yes&rdquo; par défaut  il n&rsquo;est donc pas nécessaire de le préciser et c&rsquo;est cette valeur qui sera choisie) ou non (no).</li>
 </ul>
-<h5 id="exemple-">Exemple :</h5>
+<p><strong>Exemple</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1&#34;</span><span class="p">&gt;</span> 
-</span></span></code></pre></div><h4 id="liens-vers-les-feuilles-de-style-externes">Liens vers les feuilles de style externes</h4>
-<p>C&rsquo;est dans cette partie du document HTML, qu&rsquo;on posera les liens vers les feuilles de style externes du site qui permettront d&rsquo;homogénéiser la présentation des différentes pages.<br>
-Une bonne pratique web d&rsquo;écoconception consiste à proposer une feuille de style spécifique pour l&rsquo;impression, bien souvent nommée <code>print.css</code>. L&rsquo;idée est que, lorsque l&rsquo;utilisateur voudra imprimer cette page, les éléments non pertinents (la plupart du temps, le bandeau général du site, le menu de navigation&hellip;) ne seront pas imprimés.</p>
-<h5 id="exemple--1">Exemple :</h5>
+</span></span></code></pre></div><h3 id="liens-vers-les-feuilles-de-style-externes">Liens vers les feuilles de style externes</h3>
+<p>C&rsquo;est dans cette partie du document HTML, qu&rsquo;on posera les liens vers les feuilles de style externes du site qui permettront d&rsquo;homogénéiser la présentation des différentes pages.</p>
+<h4 id="règles-daccessibilité-pour-les-feuilles-de-style">Règles d&rsquo;accessibilité pour les feuilles de style</h4>
+<p>Les règles d&rsquo;accessibilité sont les suivantes :</p>
+<ul>
+<li><strong>Les feuilles de styles CSS sont utilisées pour contrôler la présentation de l’information</strong>.</li>
+<li><strong>L&rsquo;information doit rester compréhensible quand les feuilles de style CSS sont désactivées</strong> :<br>
+Pour cela, utiliser l&rsquo;extension &ldquo;<span lang="en">Web Developper</span>&rdquo; préalablement ajoutée à votre navigateur et choisissez &ldquo;<span lang="en">Disabled All Styles</span>&rdquo; dans l&rsquo;onglet &ldquo;styles&rdquo;.<br>
+<img src="/images/web-developper-css.jpg" alt="Web developper - onglet CSS"></li>
+<li><strong>Les déclarations CSS de couleurs de fond d’élément et de police sont bien déclarées</strong> : chaque déclaration CSS de couleurs de police (<code>color</code>) ou d’un élément susceptible de contenir du texte est accompagnée d’une déclaration de couleur de fond (<code>background</code>, <code>background-color</code>) de l&rsquo;élément qui le reçoit. Autrement dit, une bonne pratique consiste à toujours déclarer les valeurs des deux propriétés <code>color</code> et <code>background-color</code> dans une même déclaration.</li>
+</ul>
+<h4 id="bonus--bonne-pratique-décoconception">Bonus : bonne pratique d&rsquo;écoconception</h4>
+<p>Il existe plusieurs bonnes pratiques d&rsquo;écoconception web relatives aux styles :</p>
+<ol>
+<li><strong>Proposer une feuille de style spécifique pour l&rsquo;impression.</strong> Le plus souvent, cette feuille de style est nommée <code>print.css</code>. L&rsquo;idée est que, lorsque l&rsquo;utilisateur voudra imprimer cette page, les éléments non pertinents (la plupart du temps, le bandeau général du site, le menu de navigation&hellip;) ne seront pas imprimés.</li>
+<li><strong>Développer son site en version « <span lang="en">Mobile first</span> »</strong>. Il s&rsquo;agit de prévoir la mise en forme de son site pour un affichage sur smartphone, puis d&rsquo;adapter la feuille de style pour un affichage sur des supports plus grands (tablettes, écrans d&rsquo;ordinateur).</li>
+<li><strong>Minifier les feuilles de style.</strong> La minification consiste à supprimer les espaces et les sauts de ligne dans la feuille de style. Par convention, la feuille de style aura alors l&rsquo;extension <code>.min.css</code>.</li>
+</ol>
+<p><strong>Exemple</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/css/print.min.css&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;print&#34;</span><span class="p">&gt;</span>
-</span></span></code></pre></div><div class="notice remarque" >   
-     <p> remarque </p>
-     <p>
-Une autre bonne pratique d'écoconception web consiste à développer son site en version « <span lang="en">Mobile first</span> » ; c'est à dire à prévoir la mise en forme de son site pour un affichage sur smartphone, puis d'adapter la feuille de style pour un affichage sur des supports plus grands (tablettes, écrans d'ordinateur).
-</p>
-</div>
-<h3 id="contenu-du-corps-du-document-html-élément-body">Contenu du corps du document HTML (élément <code>body</code>)</h3>
-<p>Les balises <code>&lt;body&gt;...&lt;/body&gt;</code> doivent contenir :</p>
-<h4 id="lien-daccès-rapide">Lien d&rsquo;accès rapide</h4>
-<p>Un lien  d&rsquo;accès rapide (ou lien d&rsquo;évitement) sera proposé immédiatement après la balise <code>&lt;body&gt;</code> afin de permettre à une personne naviguant au clavier d&rsquo;atteindre dès le chargement d&rsquo;une nouvelle page le contenu de celle-ci.<br>
-<em>Pour comprendre l&rsquo;intérêt d&rsquo;un tel lien d&rsquo;accès rapide, ouvrez une page dans votre navigateur et déplacez-vous dans cette page sans utiliser la souris mais uniquement en utilisant les touches du clavier (les déplacements se réalisent avec la touche &ldquo;tabulation&rdquo; du clavier). Vous comprendrez rapidement la plus-value que représente l&rsquo;implémentation d&rsquo;un lien d&rsquo;accès rapide.</em><br>
+</span></span></code></pre></div><h2 id="contenu-du-corps-du-document-html-élément-body">Contenu du corps du document HTML (élément <code>body</code>)</h2>
+<h3 id="lien-daccès-rapide">Lien d&rsquo;accès rapide</h3>
+<p>Une règle obligatoire d&rsquo;accessibilité numérique consiste à proposer au minimum un lien d&rsquo;accès rapide au contenu. Ce lien doit être le premier élément atteignable au clavier.</p>
+<p>Dan le cas où le lien d&rsquo;accès rapide est caché visuellement, une bonne pratique consiste à le proposer immédiatement après la balise <code>&lt;body&gt;</code>. <br>
 Pour plus d&rsquo;informations, voir la rubrique <a href="/coder/navigation/lien-acces-rapide/">Coder accessible - Navigation - Lien d&rsquo;accès rapide</a>.</p>
-<h4 id="zone-dentête-principale-élément-header-avec-le-role-aria-banner">Zone d&rsquo;entête principale (élément <code>header</code> avec le role aria <code>banner</code>)</h4>
-<p>La zone d’entête principale sera balisée avec : <code>&lt;header role=&quot;banner&quot;&gt;...&lt;/header&gt;</code>.<br>
+<h3 id="région-dentête-principale-élément-header-avec-le-role-aria-banner">Région d&rsquo;entête principale (élément <code>header</code> avec le role aria <code>banner</code>)</h3>
+<p>La région d’entête principale sera balisée avec : <code>&lt;header role=&quot;banner&quot;&gt;...&lt;/header&gt;</code>.<br>
 Si la balise <code>&lt;header&gt;</code> peut être utilisée plusieurs fois dans une page web, la balise avec le <code>role=&quot;banner&quot;</code> ne doit être employée qu’une seule fois.
-Cette zone d&rsquo;entête principale propose la pluplart du temps le logo du site, le menu de navigation principale et parfois la zone de recherche dans tout le site.</p>
-<h4 id="zone-de-navigation-principale--élément-nav-avec-le-role-aria-navigation">Zone de navigation principale  (élément <code>nav</code> avec le role aria <code>navigation</code>)</h4>
+Cette région d&rsquo;entête principale propose la pluplart du temps le logo du site, le menu de navigation principale et parfois la région de recherche dans tout le site.</p>
+<h3 id="région-de-navigation-principale--élément-nav-avec-le-role-aria-navigation">Région de navigation principale  (élément <code>nav</code> avec le role aria <code>navigation</code>)</h3>
 <p>Le menu de navigation principal permettatn de naviguer de pages en pages dans le site doit être balisés avec <code>&lt;nav role=&quot;navigation&quot;&gt;...&lt;/nav&gt;</code>.</p>
 <div class="notice remarque" >   
      <p> remarque </p>
@@ -293,13 +292,13 @@ La balise <code>&lt;nav role="navigation"></code> sert uniquement pour proposer 
 De même, les liens proposés dans la région <code>&lt;footer role="contentinfo">...&lt;/footer></code> <b>ne seront pas encapsulés</b> dans un élément <code>&lt;nav role="navigation">...&lt;/nav></code>
 </p>
 </div>
-<h4 id="zone-de-contenu-principal--élément-main-avec-le-role-aria-main">Zone de contenu principal  (élément <code>main</code> avec le role aria <code>main</code>)</h4>
-<p>La zone de contenu principal des pages sera balisée avec <code>&lt;main role=&quot;main&quot;&gt;...&lt;/main&gt;</code>. <br>
+<h3 id="région-de-contenu-principal--élément-main-avec-le-role-aria-main">Région de contenu principal  (élément <code>main</code> avec le role aria <code>main</code>)</h3>
+<p>La région de contenu principal des pages sera balisée avec <code>&lt;main role=&quot;main&quot;&gt;...&lt;/main&gt;</code>. <br>
 Si la balise <code>&lt;main&gt;</code> peut être utilisée plusieurs fois dans une page web, la balise avec le <code>role=&quot;main&quot;</code> ne doit être employée qu’une seule fois.</p>
-<h4 id="zone-de-pied-de-page-principal--élément-footer-avec-le-role-aria-contentinfo">Zone de pied de page principal  (élément <code>footer</code> avec le role aria <code>contentinfo</code>)</h4>
-<p>La zone de pied de page principal des pages sera balisée avec <code>&lt;footer role=&quot;contentinfo&quot;&gt;...&lt;/footer&gt;</code>.<br>
+<h3 id="région-de-pied-de-page-principal--élément-footer-avec-le-role-aria-contentinfo">Région de pied de page principal  (élément <code>footer</code> avec le role aria <code>contentinfo</code>)</h3>
+<p>La région de pied de page principal des pages sera balisée avec <code>&lt;footer role=&quot;contentinfo&quot;&gt;...&lt;/footer&gt;</code>.<br>
 Si la balise <code>&lt;footer&gt;</code> peut être utilisée plusieurs fois dans une page web, la balise avec le <code>role=&quot;contentinfo&quot;</code> ne doit être employée qu’une seule fois.<br>
-La plupart du temps, cette zone recevra les informations relatives au site (copyright, Mentions légales, Crédits, Condition Générales d&rsquo;Utilisation, Accessibilité, version de l&rsquo;application&hellip;).</p>
+La plupart du temps, cette région recevra les informations relatives au site (copyright, Mentions légales, Crédits, Condition Générales d&rsquo;Utilisation, Accessibilité, version de l&rsquo;application&hellip;).</p>
 <div class="notice attention" >   
      <p> attention </p>
      <p>
@@ -307,29 +306,49 @@ Dans le cas où une liste de liens est proposé dans le <code>footer</code>, ceu
 </p>
 </div>
 <h2 id="en-résumé--structure-de-base-dune-page-html">En résumé : structure de base d&rsquo;une page HTML</h2>
-<p>Une page web devra donc avoir comme structure HTML minimale celle indiquée ci-après (certains éléments tel que la navigation est expliquée dans la rubrique <a href="/coder/navigation/">Coder accessible - Navigation</a>) :</p>
+<p>Une page web aura une structure HTML similaire à celle indiquée ci-après :</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;fr&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Titre de la page - Nom du site<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/css/print.min.css&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;print&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/css/monStyle.min.css&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;screen&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">        [...]
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    [Liens d&#39;accès rapide - Voir Coder / Navigation / Lien d&#39;accès rapide]
+</span></span><span class="line"><span class="cl">	[Lien(s) d&#39;accès rapide]
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">header</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;banner&#34;</span><span class="p">&gt;</span> 
 </span></span><span class="line"><span class="cl">    [La bannière d&#39;entête]
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">nav</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;navigation&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;navigation principale&#34;</span><span class="p">&gt;</span>[La navigation dans le site]<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">nav</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;navigation&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;navigation&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;navigation principale&#34;</span><span class="p">&gt;</span>[Le menu de navigation principale du site]<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">main</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;main&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;contenu&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    [Le corps de la page]
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">footer</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;contentinfo&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">footer</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;contentinfo&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;piedDePage&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    [Le pied de page]
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><h2 id="règles-daccessibilité-à-vérifier-sur-la-présentation-des-pages">Règles d&rsquo;accessibilité à vérifier sur la présentation des pages</h2>
+<ul>
+<li><strong>La présentation des pages</strong> (menu de navigation, contenu) <strong>doit rester cohérente</strong> d&rsquo;une page à l&rsquo;autre.</li>
+<li><strong>Les pages sont bien structurées</strong>
+<ul>
+<li>La zone d’en-tête de la page est structurée via une balise <code>header role=&quot;banner&quot;</code> ;</li>
+<li>Les zones de navigation principale et secondaire sont structurées via une balise <code>nav role=&quot;navigation&quot;</code> ;</li>
+<li>La balise <code>nav</code> est réservée à la structuration des zones de navigation principales et secondaires ;</li>
+<li>La zone de contenu principal est structurée via une balise <code>main role=&quot;main&quot;</code>, visible et unique ;</li>
+<li>La zone de pied de page est structurée via une balise <code>footer role=&quot;contentinfo&quot;</code>.</li>
+</ul>
+</li>
+<li><strong>Les contenus sont visibles sans avoir recours à un défilement horizontal pour une fenêtre ayant une largeur de 320px</strong> ou à un défilement vertical pour une fenêtre ayant une hauteur de 256px.</li>
+<li><strong>Les contenus cachés</strong> (via l’attribut <code>hidden</code> ou l’attribut aria <code>aria-hidden=&quot;true&quot;</code> ) <strong>sont bien ignorés par les logiciels de synthèse vocale</strong>.</li>
+</ul>
+
           </section>   
      </div>
 </main>

@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Sémantique HTML - Structure de la page - Coder accessible - Sofève Concept</title>
 	
 	<meta name="theme-color" content="#FFFFFF" />
-	<meta name="description" content="Le HTML est un langage sémantique ; chaque élément a sa signification et ne peut pas être utilisé à des fins de présentatin. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	<meta name="description" content="Le HTML est un langage sémantique ; chaque élément a sa signification et ne peut pas être utilisé à des fins de présentation. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -127,8 +127,8 @@
 	<ul id="sousMenu">
 		<li><a href="/coder">Préambule</a></li><li><a href="https://sofeve-concept.github.io/coder/structure/" aria-current="true" >Structure de la page</a>
 			
-			<ul><li><a href="https://sofeve-concept.github.io/coder/structure/code-base/">Code HTML global</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/structure/formatage/">Présentation de l&#39;information</a></li>
+			<ul><li><a href="https://sofeve-concept.github.io/coder/structure/code-base/">Code HTML de base</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/structure/region-html/">Régions HTML</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/structure/semantique-html/" aria-current="page" >Sémantique HTML</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/structure/validite-code/">Validité du code</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/structure/quiz/">Quiz récap&#39;</a></li>
@@ -149,7 +149,7 @@
                </aside>
           <section class="item-80 rubCode">
                <h1 id="contenu">Sémantique HTML</h1>
-               <p>Le HTML est un langage sémantique ; chaque élément a sa signification et ne peut pas être utilisé à des fins de présentatin.</p>
+               <p>Le HTML est un langage sémantique ; chaque élément a sa signification et ne peut pas être utilisé à des fins de présentation.</p>
 <button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
     Table des matières
 </button>
@@ -168,7 +168,7 @@
 </nav>
 </div>
 <h2 id="halte-au-détournement-de-code-">Halte au détournement de code !</h2>
-<p>Certains éléments HTML sont détournés de leur usage sémantique  cela est bien entendu proscrit. Voivi les cas de &ldquo;détournement de code&rdquo; les plus fréquents.</p>
+<p>Certains éléments HTML sont détournés de leur usage sémantique ; cela est bien entendu proscrit. Voici les cas de &ldquo;détournement de code&rdquo; les plus fréquents.</p>
 <h3 id="confusion-entre-liens-et-boutons">Confusion entre liens et boutons</h3>
 <p>Il existe deux types de détournement de code :</p>
 <ul>
@@ -176,7 +176,7 @@
 <li>Utilisation d&rsquo;un lien au lieu d&rsquo;un bouton : <code>&lt;a href=&quot;#&quot; onClick=&quot;...&quot;&gt;...&lt;/a&gt;</code>.<br>
 Ici, une action javascript a été posé sur le lien via un <code>onClick</code>. Un lien sur lequel on pose un <code>onClick</code> n&rsquo;est pas un lien, c&rsquo;est un bouton. La bonne façon de faire sera : <code>&lt;button onClick=&quot;...&quot;&gt;...&lt;/button&gt;</code>, quitte à donner ensuite à son bouton l&rsquo;allure d&rsquo;un lien hypertexte via du CSS.</li>
 </ul>
-<p>Pour plus d&rsquo;informations sur la différences entre liens et boutons, <a href="/code/lien-bouton/">se référer à la rubrique Liens et boutons</a></p>
+<p>Pour plus d&rsquo;informations sur la différences entre liens et boutons, <a href="/coder/lien-bouton/">se référer à la rubrique Liens et boutons</a></p>
 <h3 id="utiliser-la-balise-hr-pour-créer-une-ligne-horizontale-de-séparation">Utiliser la balise <code>&lt;hr&gt;</code> pour créer une ligne horizontale de séparation.</h3>
 <p>La balise <code>&lt;hr&gt;</code> ne peut être utilisée qu&rsquo;entre deux balises de type paragraphe <code>&lt;p&gt;...&lt;/p&gt;</code> et sert à représenter un changement thématique entre deux paragraphes. On ne pourra donc utiliser <code>&lt;hr /&gt;</code> que dans le contexte suivant :</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Quand je mange du chocolat, tout va.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
@@ -203,10 +203,10 @@ Les balises <code>&lt;fieldset&gt;...&lt;/fieldset&gt;</code> ne doivent être u
 </span></span><span class="line"><span class="cl">               <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;nom2&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;nom2&#34;</span> <span class="p">/&gt;</span>
 </span></span><span class="line"><span class="cl">     <span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
-</span></span></code></pre></div><p>Pour plus d&rsquo;informations sur les formulaires, <a href="/code/formulaire/">se référer à la rubrique Formulaire</a>.</p>
+</span></span></code></pre></div><p>Pour plus d&rsquo;informations sur les formulaires, <a href="/coder/formulaire/">se référer à la rubrique Formulaire</a>.</p>
 <h3 id="utiliser-des-éléments-html-à-des-fins-de-mise-en-forme">Utiliser des éléments HTML à des fins de mise en forme</h3>
 <p>Les balises <code>&lt;q&gt;...&lt;/q&gt;</code> sont parfois utilisées pour obtenir un texte entre guillemets (mise en forme par défaut des navigateurs).<br>
-Comme vu au début de cette page, les balises <code>&lt;q&gt;...&lt;/q&gt;</code> servent à indiquer une citation courte à l&rsquo;intérieur d&rsquo;un paragraphe.</p>
+Les balises <code>&lt;q&gt;...&lt;/q&gt;</code> servent uniquement à indiquer une citation courte à l&rsquo;intérieur d&rsquo;un paragraphe.</p>
 
           </section>   
      </div>
