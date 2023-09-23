@@ -494,6 +494,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/coder/contenu/element-cliquable/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/formulaire/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
