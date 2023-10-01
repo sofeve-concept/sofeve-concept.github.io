@@ -78,7 +78,7 @@
 	<form action="/rechercher" method="GET" role="search" class="search">
 	    <div class="champs">
     <label for="search-query">Rechercher</label>
-    <input type="search" name="q" id="search-query" >
+    <input type="search" name="q" id="search-query" minlength="3" required >
     </div>
     <button type="reset">
         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" fill="#19003C" aria-hidden="true" focusable="false" role="presentation"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
@@ -136,8 +136,9 @@
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/">Libellé de champ</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/">Regroupement de champs</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/">Liste déroulante</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/">Saisie et contrôle du formulaire</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/">Formulaire à étapes multiples</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/formulaire/controle-formulaire/">Contrôle de la saisie</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/formulaire/aide-saisie/">Aide à la saisie</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/securite-formulaire/">Sécurité des formulaires</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/quiz/">Quiz récap&#39;</a></li>
 				</ul>
@@ -190,19 +191,28 @@
 
 	
 		<article class="summary">
-	<h2><a href="https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/">Saisie et contrôle du formulaire</a></h2>
+	<h2><a href="https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/">Formulaire à étapes multiples</a></h2>
 	<div class="extrait">
-		<p>La mise en place d&#39;aide à la saisie et la gestion des erreurs doivent respecter des règles d&#39;accessibilité.</p>	
-			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/" class="btn" title="Lire la suite de l'article Saisie et contrôle du formulaire">Lire la suite...</a></p>
+		<p>Les formulaires longs seront découpés en plusieurs formulaires plus petits, chacun repésentant une étape du formulaire complet. Cela permet de rendre les formulaires longs plus faciles à comprendre et d&#39;alléger la charge cognitive liée à son remplissage, en particulier pour les personnes qui ont moins d&#39;expérience en informatique ou qui ont divers troubles cognitifs.</p>	
+			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/" class="btn" title="Lire la suite de l'article Formulaire à étapes multiples">Lire la suite...</a></p>
 	</div>
 </article>
 
 	
 		<article class="summary">
-	<h2><a href="https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/">Formulaire à étapes multiples</a></h2>
+	<h2><a href="https://sofeve-concept.github.io/coder/formulaire/controle-formulaire/">Contrôle de la saisie</a></h2>
 	<div class="extrait">
-		<p>Les formulaires longs seront découpés en plusieurs formulaires plus petits, chacun repésentant une étape du formulaire complet. Cela permet de rendre les formulaires longs plus faciles à comprendre et d&#39;alléger la charge cognitive liée à son remplissage, en particulier pour les personnes qui ont moins d&#39;expérience en informatique ou qui ont divers troubles cognitifs.</p>	
-			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/" class="btn" title="Lire la suite de l'article Formulaire à étapes multiples">Lire la suite...</a></p>
+		<p>La mise en place d&#39;un contrôle de ce qui est saisi dans un champs de formulaire favorise l&#39;accessibilité du formulaire. Cela n&#39;empêchera pas ensuite de vérifier que la saisie de l&#39;utilisteur est conforme à l&#39;attendu en effectuant ensuite des vérifications côté serveur.</p>	
+			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/coder/formulaire/controle-formulaire/" class="btn" title="Lire la suite de l'article Contrôle de la saisie">Lire la suite...</a></p>
+	</div>
+</article>
+
+	
+		<article class="summary">
+	<h2><a href="https://sofeve-concept.github.io/coder/formulaire/aide-saisie/">Aide à la saisie</a></h2>
+	<div class="extrait">
+		<p>La mise en place d&#39;aide à la saisie doit respecter des règles d&#39;accessibilité.</p>	
+			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/coder/formulaire/aide-saisie/" class="btn" title="Lire la suite de l'article Aide à la saisie">Lire la suite...</a></p>
 	</div>
 </article>
 

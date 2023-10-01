@@ -404,6 +404,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -434,19 +440,13 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://sofeve-concept.github.io/coder/contenu/citations/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/</loc>
+    <loc>https://sofeve-concept.github.io/coder/formulaire/controle-formulaire/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -464,6 +464,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/coder/formulaire/aide-saisie/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/contenu/cadre/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -471,12 +477,6 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/finaliser/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/coder/formulaire/securite-formulaire/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -519,6 +519,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/coder/multimedia/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/coder/formulaire/securite-formulaire/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

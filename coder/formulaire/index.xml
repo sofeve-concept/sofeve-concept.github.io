@@ -44,22 +44,31 @@ zones de texte (sur une seule ligne ou plusieurs lignes), liste de sélection d�
     </item>
     
     <item>
-      <title>Saisie et contrôle du formulaire</title>
-      <link>https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/</guid>
-      <description>Champ obligatoire Si un des champs du formulaire est obligatoire :
-la mention de la présence de champs obligatoires dans le formulaire sera signalée au début du formulaire ; on signalera pour chaque champ obligatoire que celui-ci l&amp;rsquo;est, soit en l&amp;rsquo;écrivant entre les balises &amp;lt;label&amp;gt; ; exemple : &amp;lt;label&amp;gt;.</description>
-    </item>
-    
-    <item>
       <title>Formulaire à étapes multiples</title>
       <link>https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/</guid>
       <description>Pour découper un formulaire en étapes multiples, chaque étape devra proposer les éléments présentés ci-après.</description>
+    </item>
+    
+    <item>
+      <title>Contrôle de la saisie</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/controle-formulaire/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/controle-formulaire/</guid>
+      <description>Contrôle simple de la saisie des champs Selon le type de champs déclaré, le navigateur effectuera un contrôle de la saisie et affichera une infobulle informative en cas d&amp;rsquo;erreur de saisie.</description>
+    </item>
+    
+    <item>
+      <title>Aide à la saisie</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/aide-saisie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/aide-saisie/</guid>
+      <description>Champ obligatoire Si un des champs du formulaire est obligatoire :
+la mention de la présence de champs obligatoires dans le formulaire sera signalée au début du formulaire ; on signalera pour chaque champ obligatoire que celui-ci l&amp;rsquo;est, soit en l&amp;rsquo;écrivant entre les balises &amp;lt;label&amp;gt; ; exemple : &amp;lt;label&amp;gt;.</description>
     </item>
     
     <item>

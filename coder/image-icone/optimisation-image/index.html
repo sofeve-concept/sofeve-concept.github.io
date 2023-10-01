@@ -78,7 +78,7 @@
 	<form action="/rechercher" method="GET" role="search" class="search">
 	    <div class="champs">
     <label for="search-query">Rechercher</label>
-    <input type="search" name="q" id="search-query" >
+    <input type="search" name="q" id="search-query" minlength="3" required >
     </div>
     <button type="reset">
         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" fill="#19003C" aria-hidden="true" focusable="false" role="presentation"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
@@ -183,9 +183,7 @@
 </ul>
 <div class="notice attention" >   
      <p> attention </p>
-     <p>
-Les images animées peuvent provoquer un inconfort et des désagréments forts chez les personnes en situation de handicap comme celles porteuses d'un trouble du spectre autistique ou les personnes épileptiques.
-</p>
+<p>Les images animées peuvent provoquer un inconfort et des désagréments forts chez les personnes en situation de handicap comme celles porteuses d'un trouble du spectre autistique ou les personnes épileptiques.</p>
 </div>
 <p>Il existe un autre format d&rsquo;image, très spécifique, le format <strong>ICO</strong>. Ce format est utilisé pour afficher une icône de favori sur son site (l&rsquo;icône qui apparaît dans l&rsquo;onglet du navigateur). Cette image porte le nom de <strong>favicon.ico</strong>. Elle s&rsquo;implémente dans le code entre les balises <code>head</code> de la manière suivante :</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
@@ -195,19 +193,15 @@ Les images animées peuvent provoquer un inconfort et des désagréments forts c
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 </span></span></code></pre></div><div class="notice remarque" >   
      <p> remarque </p>
-     <p>
-Les navigateurs modernes acceptent aussi comme icône de favori le format PNG. Dans ce cas, l'icône de favori, qui pourra porter n'importe quel nom, sera implémenté de la manière suivante : <br>  
-<code>&lt;link rel="icon" type="image/png" href="favori.png"></code>
-</p>
+<p>Les navigateurs modernes acceptent aussi comme icône de favori le format PNG. Dans ce cas, l'icône de favori, qui pourra porter n'importe quel nom, sera implémenté de la manière suivante : <br>  
+<code>&lt;link rel="icon" type="image/png" href="favori.png"></code></p>
 </div>
 <h2 id="taille-et-poids-des-images">Taille et poids des images</h2>
 <p>Sur le web, la taille (ou résolution) d&rsquo;une image se définit en pixels. Plus une image est grande, plus son poids est important ; une image dont la poids est important mettra du temps à se charger, autrement dit à s&rsquo;afficher dans la page.<br>
 <em>Pour connaître le poids de son image, il suffit d&rsquo;afficher les propriétés de l&rsquo;image dans l&rsquo;explorateur de fichiers.</em></p>
 <div class="notice attention" >   
      <p> attention </p>
-     <p>
-Le fait de redimensionner une image dans une page en indiquant une hauteur et une largeur inférieure à ses dimensions d'origine n'influe absolument pas sur le poids de l'image ; celui-ci reste le même.
-</p>
+<p>Le fait de redimensionner une image dans une page en indiquant une hauteur et une largeur inférieure à ses dimensions d'origine n'influe absolument pas sur le poids de l'image ; celui-ci reste le même.</p>
 </div>
 <h3 id="taille-de-limage">Taille de l&rsquo;image</h3>
 <p>La taille de l&rsquo;image dépendra de l&rsquo;utilisation ce celle-ci. Les tailles suivantes sont données à titre indicatif ; lorsqu&rsquo;une seule valeur est spécifiée, c&rsquo;est la valeur pour la largeur de l&rsquo;image, la hauteur étant alors à calculer en fonction des dimensions de l&rsquo;image d&rsquo;origine.</p>
@@ -291,9 +285,7 @@ Parmi tous les logiciels de traitements d&rsquo;image disponibles sur le marché
 </ul>
 <div class="notice astuce" >   
      <p> astuce </p>
-     <p>
-Pour optimiser encore plus la vitesse de chargement de la page web, on pourra recourir au moment de l'implémentation de l'image dans la page à la technique du « <span lang="en">lazy loading</span> », une technique de chargement qui permet de ne charger les images que lorsqu'elles sont visibles sur l'écran de l'utilisateur.<br>  
-</p>
+<p>Pour optimiser encore plus la vitesse de chargement de la page web, on pourra recourir au moment de l'implémentation de l'image dans la page à la technique du « <span lang="en">lazy loading</span> », une technique de chargement qui permet de ne charger les images que lorsqu'elles sont visibles sur l'écran de l'utilisateur.</p>  
 </div>
 <p><strong>Exemple d&rsquo;implémentation HTML</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/images/handicap-moteur.webp&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;Pictogramme handicap moteur&#34;</span> <span class="na">loading</span><span class="o">=</span><span class="s">&#34;lazy&#34;</span><span class="p">&gt;</span>

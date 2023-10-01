@@ -78,7 +78,7 @@
 	<form action="/rechercher" method="GET" role="search" class="search">
 	    <div class="champs">
     <label for="search-query">Rechercher</label>
-    <input type="search" name="q" id="search-query" >
+    <input type="search" name="q" id="search-query" minlength="3" required >
     </div>
     <button type="reset">
         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" fill="#19003C" aria-hidden="true" focusable="false" role="presentation"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
@@ -138,8 +138,9 @@
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/">Libellé de champ</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/" aria-current="page" >Regroupement de champs</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/">Liste déroulante</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/">Saisie et contrôle du formulaire</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/">Formulaire à étapes multiples</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/formulaire/controle-formulaire/">Contrôle de la saisie</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/formulaire/aide-saisie/">Aide à la saisie</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/securite-formulaire/">Sécurité des formulaires</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/quiz/">Quiz récap&#39;</a></li>
 				</ul>
@@ -174,49 +175,41 @@
 <strong>Pour la conformité du code HTML, l&rsquo;élément <code>legend</code> doit impérativement suivre la balise <code>&lt;fieldset&gt;</code>.</strong></p>
 <p><strong>Code HTML</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">fieldset</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Joueur 1<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;nom-1&#34;</span><span class="p">&gt;</span>Nom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;nom-1&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;nom-1&#34;</span> <span class="p">/&gt;</span>
-</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;prenom-1&#34;</span><span class="p">&gt;</span>Prénom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;prenom-1&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;prenom-1&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Joueur 1<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;nom-1&#34;</span><span class="p">&gt;</span>Nom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;nom-1&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;nom-1&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;prenom-1&#34;</span><span class="p">&gt;</span>Prénom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;prenom-1&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;prenom-1&#34;</span> <span class="p">/&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">fieldset</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Joueur 2<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;nom-2&#34;</span><span class="p">&gt;</span>Nom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;nom-2&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;nom-2&#34;</span> <span class="p">/&gt;</span>
-</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;prenom-2&#34;</span><span class="p">&gt;</span>Prénom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;prenom-2&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;prenom-2&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Joueur 2<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;nom-2&#34;</span><span class="p">&gt;</span>Nom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;nom-2&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;nom-2&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;prenom-2&#34;</span><span class="p">&gt;</span>Prénom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;prenom-2&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;prenom-2&#34;</span> <span class="p">/&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
 </span></span></code></pre></div><p><strong>Visuel</strong></p>
 
 <form class="exempleForm">
 <fieldset>
 	<legend>Joueur 1</legend>
-    <div class="flex justify-content-start mb-1">
-<div class="item-20 text-right">
+    <div class="exempleFormChamps">
 <label for="nom"1 class="mr-1">Nom</label>
-</div>
 <input type="text" name="nom1" id="nom1" class="exempleCodeInput" class="item-50">
 </div>
-<div class="flex justify-content-start mb-1">
-<div class="item-20 text-right">
+<div class="exempleFormChamps">
 <label for="prenom1" class="mr-1">Prénom</label>
-</div>
 <input type="text" name="prenom1" id="prenom1" class="exempleCodeInput">
 </div>
 </fieldset>
 <fieldset class="mb-3">
 	<legend>Joueur 2</legend>
- <div class="flex justify-content-start mb-1">
-<div class="item-20 text-right">
+ <div class="exempleFormChamps">
 <label for="nom2" class="mr-1">Nom</label>
-</div>
 <input type="text" name="nom2" id="nom2" class="exempleCodeInput" class="item-50">
 </div>
-<div class="flex justify-content-start mb-1">
-<div class="item-20 text-right">
+<div class="exempleFormChamps">
 <label for="prenom2" class="mr-1">Prénom</label>
-</div>
 <input type="text" name="prenom2" id="prenom2" class="exempleCodeInput">
 </div>
 </fieldset>
@@ -226,19 +219,25 @@
 <p>Les boutons radios et les cases à cocher seront présentés à l&rsquo;aide d&rsquo;une liste.</p>
 <h3 id="exemple-avec-des-cases-à-cocher">Exemple avec des cases à cocher</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">fieldset</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Activités préférées<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;matin&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;activites&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Grasse-matinée&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;matin&#34;</span><span class="p">&gt;</span>Grasse-matinée<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;sieste&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;activites&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;sieste&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;sieste&#34;</span><span class="p">&gt;</span>Sieste<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Activités préférées<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">input</span>
+</span></span><span class="line"><span class="cl">        <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">id</span><span class="o">=</span><span class="s">&#34;matin&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">name</span><span class="o">=</span><span class="s">&#34;activites&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">value</span><span class="o">=</span><span class="s">&#34;Grasse-matinée&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;matin&#34;</span><span class="p">&gt;</span>Grasse-matinée<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;sieste&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;activites&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;sieste&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;sieste&#34;</span><span class="p">&gt;</span>Sieste<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
 </span></span></code></pre></div>
+
 <form class="exempleForm mb-3">
 <fieldset>
     <legend>Activités préférées</legend>
@@ -257,20 +256,21 @@
 
 <h3 id="exemple-avec-des-boutons-radios">Exemple avec des boutons radios</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">fieldset</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Aimez-vous le chocolat ?<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;oui&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;oui&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;chocolat&#34;</span> <span class="p">/&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;oui&#34;</span><span class="p">&gt;</span>Oui<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">           <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;non&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;non&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;chocolat&#34;</span> <span class="p">/&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;non&#34;</span><span class="p">&gt;</span>Non<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Aimez-vous le chocolat ?<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;oui&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;oui&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;chocolat&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;oui&#34;</span><span class="p">&gt;</span>Oui<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;non&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;non&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;chocolat&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;non&#34;</span><span class="p">&gt;</span>Non<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
 </span></span></code></pre></div>
 <formm class="exempleForm">
+
 <fieldset>
     <legend>Aimez-vous le chocolat&nbsp;?</legend>
 	<ul class="no-liste">

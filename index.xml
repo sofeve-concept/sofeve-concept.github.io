@@ -535,6 +535,15 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
     </item>
     
     <item>
+      <title>Formulaire à étapes multiples</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/</guid>
+      <description>Pour découper un formulaire en étapes multiples, chaque étape devra proposer les éléments présentés ci-après.</description>
+    </item>
+    
+    <item>
       <title>Images légendées (FIGURE)</title>
       <link>https://sofeve-concept.github.io/coder/image-icone/images-avec-legende/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -572,16 +581,6 @@ La balise &amp;lt;figure role=&amp;quot;figure&amp;quot;&amp;gt; doit :</descrip
     </item>
     
     <item>
-      <title>Saisie et contrôle du formulaire</title>
-      <link>https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/coder/formulaire/saisie-et-controle/</guid>
-      <description>Champ obligatoire Si un des champs du formulaire est obligatoire :
-la mention de la présence de champs obligatoires dans le formulaire sera signalée au début du formulaire ; on signalera pour chaque champ obligatoire que celui-ci l&amp;rsquo;est, soit en l&amp;rsquo;écrivant entre les balises &amp;lt;label&amp;gt; ; exemple : &amp;lt;label&amp;gt;.</description>
-    </item>
-    
-    <item>
       <title>Citations</title>
       <link>https://sofeve-concept.github.io/coder/contenu/citations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -591,12 +590,12 @@ la mention de la présence de champs obligatoires dans le formulaire sera signal
     </item>
     
     <item>
-      <title>Formulaire à étapes multiples</title>
-      <link>https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/</link>
+      <title>Contrôle de la saisie</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/controle-formulaire/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/</guid>
-      <description>Pour découper un formulaire en étapes multiples, chaque étape devra proposer les éléments présentés ci-après.</description>
+      <guid>https://sofeve-concept.github.io/coder/formulaire/controle-formulaire/</guid>
+      <description>Contrôle simple de la saisie des champs Selon le type de champs déclaré, le navigateur effectuera un contrôle de la saisie et affichera une infobulle informative en cas d&amp;rsquo;erreur de saisie.</description>
     </item>
     
     <item>
@@ -609,21 +608,22 @@ la mention de la présence de champs obligatoires dans le formulaire sera signal
     </item>
     
     <item>
+      <title>Aide à la saisie</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/aide-saisie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/aide-saisie/</guid>
+      <description>Champ obligatoire Si un des champs du formulaire est obligatoire :
+la mention de la présence de champs obligatoires dans le formulaire sera signalée au début du formulaire ; on signalera pour chaque champ obligatoire que celui-ci l&amp;rsquo;est, soit en l&amp;rsquo;écrivant entre les balises &amp;lt;label&amp;gt; ; exemple : &amp;lt;label&amp;gt;.</description>
+    </item>
+    
+    <item>
       <title>Cadre intégré</title>
       <link>https://sofeve-concept.github.io/coder/contenu/cadre/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/contenu/cadre/</guid>
       <description>Règle d&amp;rsquo;implémentation En matière d&amp;rsquo;accessibilité numérique, la seule règle à respecter est de renseigner l&amp;rsquo;attribut title avec un texte pertinent, clair et précis sur le contenu affiché dans le cadre.</description>
-    </item>
-    
-    <item>
-      <title>Sécurité des formulaires</title>
-      <link>https://sofeve-concept.github.io/coder/formulaire/securite-formulaire/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/coder/formulaire/securite-formulaire/</guid>
-      <description>Formulaire gérant des données sensibles Les données sensibles concernent des données à caractère financier, juridique ou personnel.</description>
     </item>
     
     <item>
@@ -642,6 +642,15 @@ la mention de la présence de champs obligatoires dans le formulaire sera signal
       
       <guid>https://sofeve-concept.github.io/coder/image-icone/police-icone/</guid>
       <description>Polices d&amp;rsquo;icônes et de symboles Il existe des polices de caractères qui, lorsqu&amp;rsquo;elles sont implémentées dans le site permettent d&amp;rsquo;afficher des icônes ou des symboles.</description>
+    </item>
+    
+    <item>
+      <title>Sécurité des formulaires</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/securite-formulaire/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/coder/formulaire/securite-formulaire/</guid>
+      <description>Formulaire gérant des données sensibles Les données sensibles concernent des données à caractère financier, juridique ou personnel.</description>
     </item>
     
     <item>
