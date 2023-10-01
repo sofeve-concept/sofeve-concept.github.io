@@ -163,8 +163,9 @@
     <li><a href="#contrôle-simple-de-la-saisie-des-champs">Contrôle simple de la saisie des champs</a>
       <ul>
         <li><a href="#champ-obligatoire">Champ obligatoire</a></li>
-        <li><a href="#champ-date">Champ date</a></li>
         <li><a href="#champ-dadresse-électronique">Champ d&rsquo;adresse électronique</a></li>
+        <li><a href="#champ-date">Champ date</a></li>
+        <li><a href="#champ-nbspfichiernbsp">Champ « fichier »</a></li>
         <li><a href="#champ-nbspmot-de-passenbsp">Champ « mot de passe »</a></li>
         <li><a href="#champ-numérique">Champ numérique</a></li>
         <li><a href="#champ-nbspnuméro-de-téléphonenbsp">Champ « numéro de téléphone »</a></li>
@@ -176,6 +177,7 @@
         <li><a href="#taille-minimum-et-maximum-de-la-valeur-saisie">Taille minimum et maximum de la valeur saisie</a></li>
         <li><a href="#valeur-minimale-maximale-et-incrémentation-dun-nombre">Valeur minimale, maximale et incrémentation d&rsquo;un nombre</a></li>
         <li><a href="#motif-de-saisie">Motif de saisie</a></li>
+        <li><a href="#formats-de-fichier-acceptés">Formats de fichier acceptés</a></li>
       </ul>
     </li>
   </ul>
@@ -191,27 +193,6 @@
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;nom&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;nom&#34;</span> <span class="na">required</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">[...]
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h3 id="champ-date">Champ date</h3>
-<p>Le champ de type date sera codé avec avec l&rsquo;attribut <code>type=&quot;date&quot;</code>.<br>
-La zone de saisie propose de manière native le format (jj/mm/aaaa) et utilise la calendrier cliquable natif du navigateur  plus besoin d&rsquo;avoir recours à une librairie javascript comme c&rsquo;était le cas en HTML 4.<br>
-Ces deux interactions natives font que ce champ est accessible.</p>
-<p><strong>Visuel</strong><br>
-<em>Renseigner une date ou cliquer sur l&rsquo;icône en forme de calendrier. Pour les besoins de la démonstration, le champ a été rendu obligatoire.</em><br>
-
-<form action="./" method="GET" class="exempleForm2">
-<fieldset>
-<legend>Exemple de date</legend>
-<div>
-<label for="dateNaissance">Date de naissance <small>(au format jj/mm/aaa)</small></label>
-<input type="date" name="dateNaissance" id="dateNaissance" required>
-</div>
-<button>Tester</button>
-</fieldset>
-</form>
-</p>
-<p><strong>Code HTML</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;dateNaissance&#34;</span><span class="p">&gt;</span>Date de naissance *<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;date&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;dateNaissance&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;dateNaissance&#34;</span> <span class="na">required</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h3 id="champ-dadresse-électronique">Champ d&rsquo;adresse électronique</h3>
 <p>Le champ d&rsquo;adresse électronique sera codé avec l&rsquo;attribut <code>type=&quot;email&quot;</code>.<br>
 Par défaut, la saisie doit respecter la forme <em>nom@domaine.ext</em>.</p>
@@ -232,6 +213,45 @@ Par défaut, la saisie doit respecter la forme <em>nom@domaine.ext</em>.</p>
 <p><strong>Code HTML</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;mail&#34;</span><span class="p">&gt;</span>Votre adresse électronique <span class="p">&lt;</span><span class="nt">small</span><span class="p">&gt;</span>(de la forme nom@domaine.com)<span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;mail&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;mail&#34;</span> <span class="na">required</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h3 id="champ-date">Champ date</h3>
+<p>Le champ de type date sera codé avec l&rsquo;attribut <code>type=&quot;date&quot;</code>.<br>
+La zone de saisie propose de manière native le format (jj/mm/aaaa) et utilise la calendrier cliquable natif du navigateur  plus besoin d&rsquo;avoir recours à une librairie javascript comme c&rsquo;était le cas en HTML 4.<br>
+Ces deux interactions natives font que ce champ est accessible.</p>
+<p><strong>Visuel</strong><br>
+<em>Renseigner une date ou cliquer sur l&rsquo;icône en forme de calendrier. Pour les besoins de la démonstration, le champ a été rendu obligatoire.</em><br>
+
+<form action="./" method="GET" class="exempleForm2">
+<fieldset>
+<legend>Exemple de date</legend>
+<div>
+<label for="dateNaissance">Date de naissance <small>(au format jj/mm/aaa)</small></label>
+<input type="date" name="dateNaissance" id="dateNaissance" required>
+</div>
+<button>Tester</button>
+</fieldset>
+</form>
+</p>
+<p><strong>Code HTML</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;dateNaissance&#34;</span><span class="p">&gt;</span>Date de naissance *<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;date&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;dateNaissance&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;dateNaissance&#34;</span> <span class="na">required</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h3 id="champ-nbspfichiernbsp">Champ « fichier »</h3>
+<p>Le champ de type « fichier » sera codé avec l&rsquo;attribut <code>type=&quot;file&quot;</code>.<br>
+Il permet de charger un fichier de puis son ordinateur.</p>
+<p><strong>Visuel</strong><br>
+
+<form action="./" method="GET" class="exempleForm2">
+<fieldset>
+<legend>Exemple de chargement de fichier</legend>
+<div>
+<label for="fichier">Choisissez un fichier</label>
+<input type="file" name="fichier" id="fichier">
+</div>
+</fieldset>
+</form>
+</p>
+<p><strong>Code HTML</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;fichier&#34;</span><span class="p">&gt;</span>Choisissez un fichier<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;file&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;fichier&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;fichier&#34;</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h3 id="champ-nbspmot-de-passenbsp">Champ « mot de passe »</h3>
 <p>Le champ « mot de passe » sera codé avec l&rsquo;attribut <code>type=&quot;password&quot;</code>.<br>
 Le texte saisi sera masqué par des ronds ou des étoiles selon le type de navigateur.</p>
@@ -391,7 +411,14 @@ La saisie est libre ; par défaut, la valeur saisie doit respecter la forme <em>
      <li><a href="https://regexr.com/" target="_blank" rel="noopener noreferrer" lang="en" title="regexr.com (nouvelle fenêtre)">regexr.com</a>, site de documentation et de test des expressions régulières.</li>
 </ul>
 </div>
-
+<h3 id="formats-de-fichier-acceptés">Formats de fichier acceptés</h3>
+<p>Pour imposer un format de fihcier à charger, on aura recours à l&rsquo;attribut <code>accept</code>.</p>
+<p><strong>Exemple HTML</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span>
+</span></span><span class="line"><span class="cl">  <span class="na">type</span><span class="o">=</span><span class="s">&#34;file&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">id</span><span class="o">=</span><span class="s">&#34;docMicrosoft&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">accept</span><span class="o">=</span><span class="s">&#34;.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document&#34;</span> <span class="p">/&gt;</span>
+</span></span></code></pre></div>
           </section>   
      </div>
 </main>
