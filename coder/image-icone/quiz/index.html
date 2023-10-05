@@ -208,7 +208,7 @@
                 <ol>
                     <li>À utiliser l'attribut aria <code>aria-describedby</code> faisant référence à un id posé sur l’élément qui décrira l’image.</li>
                     <li>À utiliser l'attribut <code>longdesc</code> avec tout le contenu descriptif de l'image.</li>
-                    <li>À proposer le texte descriptif à côté de l’image, quitte à la masquer via CSS au départ et à proposer un mécanise dynamique pour le rendre apparant.</li>
+                    <li>À proposer le texte descriptif à côté de l’image, quitte à le masquer via CSS au départ et à proposer un mécanise dynamique pour le rendre apparent.</li>
                     </ol>
                </td>
             <td><input type="text" class="soluce" id="q4" name="reponse4"></td>
@@ -234,9 +234,9 @@
             <th scope="row">6</td>
             <td><label for="q6">Dans le cas d'une image SVG utilisée avec du texte et servant de lien, quell est la bonne syntaxe&nbsp;?</label> <br>
                 <ol>        
-                     <li><code>&nbsp;a href="/" title="Accueil">&nbsp;svg aria-hidden="true" focusable="false" role="presentation">[...]&nbsp;/svg>&nbsp;span>Accueil&nbsp;/span>&nbsp;/a></code></li>
-                     <li><code>&nbsp;a href="/">&nbsp;svg aria-label="Accueil">[...]&nbsp;/svg>&nbsp;span>Accueil&nbsp;/span>&nbsp;/a></code></li>
-                     <li><code>&nbsp;a href="/">&nbsp;svg aria-hidden="true" focusable="false" role="presentation">[...]&nbsp;/svg>&nbsp;span>Accueil&nbsp;/span>&nbsp;/a></code></li>
+                     <li><code>&lt;a href="/" title="Accueil">&lt;svg aria-hidden="true" focusable="false" role="presentation">[...]&lt;/svg>&lt;span>Accueil&lt;/span>&lt;/a></code></li>
+                     <li><code>&lt;a href="/">&lt;svg aria-label="Accueil">[...]&lt;/svg>&lt;span>Accueil&lt;/span>&lt;/a></code></li>
+                     <li><code>&lt;a href="/">&lt;svg aria-hidden="true" focusable="false" role="presentation">[...]&lt;/svg>&lt;span>Accueil&lt;/span>&lt;/a></code></li>
                     </ol>
                </td>
             <td><input type="text" class="soluce" id="q6" name="reponse6"></td>
@@ -289,7 +289,7 @@
                </td>
             <td><input type="text" class="soluce" id="q10" name="reponse10"></td>
             <td><b>Réponse b</b><br>
-            Les caractères unicode sont interprétés par les logiciels de synthèse vocale comme des caractères mathématiques ; mieux vaut donc éviter leur vocalisation.
+            Les caractères unicode sont interprétés par les logiciels de synthèse vocale comme des caractères mathématiques ; mieux vaut donc éviter leur vocalisation. De plus, tout ce qui est contenu dans la propriété <code>content</code> en CSS est vocalisé.
             </td>
             </tr>
             </tbody>

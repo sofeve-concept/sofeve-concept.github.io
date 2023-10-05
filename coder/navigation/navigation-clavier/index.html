@@ -163,6 +163,7 @@
     <li><a href="#gestion-du-focus-clavier">Gestion du focus clavier</a>
       <ul>
         <li><a href="#un-focus-clavier-toujours-visible">Un focus clavier toujours visible</a></li>
+        <li><a href="#un-script-javascript-pour-gérer-le-clavier">Un script javascript pour gérer le clavier</a></li>
       </ul>
     </li>
   </ul>
@@ -174,19 +175,19 @@
 <li>Touche <code>Tab</code> (<code>Tabulation</code>) : pour passer au lien, élément de formulaire ou bouton suivant.</li>
 <li>Touches <code>Maj</code> +  <code>Tab</code> : pour passer au lien, élément de formulaire ou bouton précédent.</li>
 <li>Touche <code>Entrée</code> : pour activer le lien ou le bouton.</li>
-<li>Touche <code>Espace</code>  : pour cocher / décocher une case à cocher.</li>
-<li>Touche <code>Echap</code> : pour retourner à l&rsquo;état précédent (reprise de focus).</li>
+<li>Touche <code>Espace</code>  : pour cocher / décocher une case à cocher ou pour déployer une liste déroulante.</li>
 <li>Touches <code>Flèche droite</code>, <code>Flèche gauche</code>, <code>Flèche bas</code>, <code>Flèche haut</code> : pour faire défiler un affichage (ascenseur), pour modifier la valeur d&rsquo;un bouton radio, pour se déplacer dans une liste (menu, liste d&rsquo;option d&rsquo;un liste de sélection déroulante&hellip;)</li>
+<li>Touche <code>Echap</code> : pour retourner à l&rsquo;état précédent (reprise de focus).</li>
 </ul>
 <p>Lorsqu&rsquo;un utilisateur se déplace dans la page web en utilisant le clavier, on parle alors de « focus clavier » pour désigner l&rsquo;élément sur lequel le curseur est positionné.</p>
 <h2 id="règles-à-respecter-pour-la-navigation-clavier">Règles à respecter pour la navigation clavier</h2>
 <p>Les règles suivantes doivent être respectées pour l&rsquo;accessibilité de la page :</p>
 <ul>
+<li><strong>Le focus clavier est toujours visible</strong>.</li>
 <li>L&rsquo;ordre de tabulation est cohérent avec le visuel ;</li>
 <li>Tous les éléments interactifs (boutons, liens, champs de formulaire, fenêtre modale&hellip;) sont accessibles et fonctionnels au clavier ;</li>
 <li>Les éléments HTML natifs sont privilégiés car prévus pour recevoir le focus (éléments <code>a</code>, <code>button</code>&hellip;) ;</li>
 <li>Les raccourcis clavier utilisant une seule touche peuvent être modifiés ou désactivés par l&rsquo;utilisateur ;</li>
-<li><strong>Le focus clavier est toujours visible</strong>.</li>
 </ul>
 <h2 id="gestion-du-focus-clavier">Gestion du focus clavier</h2>
 <h3 id="un-focus-clavier-toujours-visible">Un focus clavier toujours visible</h3>
@@ -204,6 +205,139 @@ On veillera donc à ce que le focus clavier respecte les règles suivantes :</p>
 </span></span><span class="line"><span class="cl">    <span class="k">outline</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">white</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">6</span><span class="kt">px</span> <span class="kc">black</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="un-script-javascript-pour-gérer-le-clavier">Un script javascript pour gérer le clavier</h3>
+<p>Le W3C met à disposion un script javascript qui permet de s&rsquo;assurer des bonnes interactions au clavier. Le voici tel que trouvé sur leur site.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="s1">&#39;use strict&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * @namespace aria
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">aria</span> <span class="o">=</span> <span class="nx">aria</span> <span class="o">||</span> <span class="p">{};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * @description
+</span></span></span><span class="line"><span class="cl"><span class="cm"> *  Key code constants
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="nx">aria</span><span class="p">.</span><span class="nx">KeyCode</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">BACKSPACE</span><span class="o">:</span> <span class="mi">8</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">TAB</span><span class="o">:</span> <span class="mi">9</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">RETURN</span><span class="o">:</span> <span class="mi">13</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">SHIFT</span><span class="o">:</span> <span class="mi">16</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">ESC</span><span class="o">:</span> <span class="mi">27</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">SPACE</span><span class="o">:</span> <span class="mi">32</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">PAGE_UP</span><span class="o">:</span> <span class="mi">33</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">PAGE_DOWN</span><span class="o">:</span> <span class="mi">34</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">END</span><span class="o">:</span> <span class="mi">35</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">HOME</span><span class="o">:</span> <span class="mi">36</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">LEFT</span><span class="o">:</span> <span class="mi">37</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">UP</span><span class="o">:</span> <span class="mi">38</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">RIGHT</span><span class="o">:</span> <span class="mi">39</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">DOWN</span><span class="o">:</span> <span class="mi">40</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">DELETE</span><span class="o">:</span> <span class="mi">46</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">aria</span><span class="p">.</span><span class="nx">Utils</span> <span class="o">=</span> <span class="nx">aria</span><span class="p">.</span><span class="nx">Utils</span> <span class="o">||</span> <span class="p">{};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Polyfill src https://developer.mozilla.org/en-US/docs/Web/API/Element/matches
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">aria</span><span class="p">.</span><span class="nx">Utils</span><span class="p">.</span><span class="nx">matches</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nx">selector</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">Element</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">matches</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">Element</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">matches</span> <span class="o">=</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">Element</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">matchesSelector</span> <span class="o">||</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">Element</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">mozMatchesSelector</span> <span class="o">||</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">Element</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">msMatchesSelector</span> <span class="o">||</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">Element</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">oMatchesSelector</span> <span class="o">||</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">Element</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">webkitMatchesSelector</span> <span class="o">||</span>
+</span></span><span class="line"><span class="cl">      <span class="kd">function</span> <span class="p">(</span><span class="nx">s</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nx">matches</span> <span class="o">=</span> <span class="nx">element</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="nx">matches</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="p">(</span><span class="o">--</span><span class="nx">i</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="nx">matches</span><span class="p">.</span><span class="nx">item</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span> <span class="o">!==</span> <span class="k">this</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="c1">// empty
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nx">i</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">};</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">element</span><span class="p">.</span><span class="nx">matches</span><span class="p">(</span><span class="nx">selector</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">aria</span><span class="p">.</span><span class="nx">Utils</span><span class="p">.</span><span class="nx">remove</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">item</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">item</span><span class="p">.</span><span class="nx">remove</span> <span class="o">&amp;&amp;</span> <span class="k">typeof</span> <span class="nx">item</span><span class="p">.</span><span class="nx">remove</span> <span class="o">===</span> <span class="s1">&#39;function&#39;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">item</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">item</span><span class="p">.</span><span class="nx">parentNode</span> <span class="o">&amp;&amp;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">item</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">removeChild</span> <span class="o">&amp;&amp;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">typeof</span> <span class="nx">item</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">removeChild</span> <span class="o">===</span> <span class="s1">&#39;function&#39;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">item</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">removeChild</span><span class="p">(</span><span class="nx">item</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">aria</span><span class="p">.</span><span class="nx">Utils</span><span class="p">.</span><span class="nx">isFocusable</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">element</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">tabIndex</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">disabled</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">switch</span> <span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">nodeName</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="s1">&#39;A&#39;</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="o">!!</span><span class="nx">element</span><span class="p">.</span><span class="nx">href</span> <span class="o">&amp;&amp;</span> <span class="nx">element</span><span class="p">.</span><span class="nx">rel</span> <span class="o">!=</span> <span class="s1">&#39;ignore&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="s1">&#39;INPUT&#39;</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="nx">element</span><span class="p">.</span><span class="nx">type</span> <span class="o">!=</span> <span class="s1">&#39;hidden&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="s1">&#39;BUTTON&#39;</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="s1">&#39;SELECT&#39;</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="s1">&#39;TEXTAREA&#39;</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">default</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">aria</span><span class="p">.</span><span class="nx">Utils</span><span class="p">.</span><span class="nx">getAncestorBySelector</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nx">selector</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">aria</span><span class="p">.</span><span class="nx">Utils</span><span class="p">.</span><span class="nx">matches</span><span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nx">selector</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="nx">element</span><span class="p">.</span><span class="nx">tagName</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Element is not inside an element that matches selector
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// Move up the DOM tree until a parent matching the selector is found
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kd">var</span> <span class="nx">currentNode</span> <span class="o">=</span> <span class="nx">element</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">var</span> <span class="nx">ancestor</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">while</span> <span class="p">(</span><span class="nx">ancestor</span> <span class="o">===</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">aria</span><span class="p">.</span><span class="nx">Utils</span><span class="p">.</span><span class="nx">matches</span><span class="p">(</span><span class="nx">currentNode</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">,</span> <span class="nx">selector</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">ancestor</span> <span class="o">=</span> <span class="nx">currentNode</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">currentNode</span> <span class="o">=</span> <span class="nx">currentNode</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">ancestor</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">aria</span><span class="p">.</span><span class="nx">Utils</span><span class="p">.</span><span class="nx">hasClass</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nx">className</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="k">new</span> <span class="nb">RegExp</span><span class="p">(</span><span class="s1">&#39;(\\s|^)&#39;</span> <span class="o">+</span> <span class="nx">className</span> <span class="o">+</span> <span class="s1">&#39;(\\s|$)&#39;</span><span class="p">).</span><span class="nx">test</span><span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">className</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">aria</span><span class="p">.</span><span class="nx">Utils</span><span class="p">.</span><span class="nx">addClass</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nx">className</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">aria</span><span class="p">.</span><span class="nx">Utils</span><span class="p">.</span><span class="nx">hasClass</span><span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nx">className</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">element</span><span class="p">.</span><span class="nx">className</span> <span class="o">+=</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="nx">className</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">aria</span><span class="p">.</span><span class="nx">Utils</span><span class="p">.</span><span class="nx">removeClass</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nx">className</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">var</span> <span class="nx">classRegex</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">RegExp</span><span class="p">(</span><span class="s1">&#39;(\\s|^)&#39;</span> <span class="o">+</span> <span class="nx">className</span> <span class="o">+</span> <span class="s1">&#39;(\\s|$)&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">element</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="nx">element</span><span class="p">.</span><span class="nx">className</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">classRegex</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">).</span><span class="nx">trim</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">aria</span><span class="p">.</span><span class="nx">Utils</span><span class="p">.</span><span class="nx">bindMethods</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">object</span> <span class="cm">/* , ...methodNames */</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">var</span> <span class="nx">methodNames</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">arguments</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">methodNames</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">method</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">object</span><span class="p">[</span><span class="nx">method</span><span class="p">]</span> <span class="o">=</span> <span class="nx">object</span><span class="p">[</span><span class="nx">method</span><span class="p">].</span><span class="nx">bind</span><span class="p">(</span><span class="nx">object</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
 </span></span></code></pre></div>
           </section>   
      </div>

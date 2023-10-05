@@ -205,18 +205,20 @@ En cas d&rsquo;implémentation d&rsquo;un captcha, il faudra donc prévoir :</p>
 </ul>
 <h4 id="exemple">Exemple</h4>
 <p><strong>Visuel</strong><br>
+Dans l&rsquo;exemple qui suit, on a volontairement écrit un mot avec une lettre majuscule et des accents.
 
 <form action="./" method="GET" class="exempleForm2">
 <fieldset>
 <legend>Question de sécurité</legend>
-<p>Cette question permet de nous assurer que vous être bien un être humain.</p>
+<p>Cette question permet de nous assurer que vous êtes bien un être humain.</p>
 <div>
-<label for="bur">Merci de recopier le mot «&nbsp;Bureau&nbsp;»</label>
-<input type="text" id="bur" name="bur" pattern="Bureau" required>
+<label for="bur">Merci de recopier le mot «&nbsp;Télévision&nbsp;»</label>
+<input type="text" id="bur" name="bur" pattern="Télévision" required>
 </div>
 <button>Tester</button>
 </fieldset>
 </form>
+<p>Dans l'exemple suivant, on a volontairement mis le mot «&nbsp;non&nbsp;» en premier, un robot ira en effet cocher le premier item (qui n'est pas le bon). De même, la question est posée à la forme positive pour être comprise par les personnes ayant des difficultés de compréhension ; les question à la forme négative étant toujours plus difficile à comprendre.
 <form action="./" method="GET" class="exempleForm2">
 <fieldset>
   <legend>Question de sécurité</legend>
