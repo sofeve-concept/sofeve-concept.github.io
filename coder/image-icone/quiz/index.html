@@ -159,12 +159,12 @@
                 <th scope="col">N°</th>
                 <th scope="col">Question</th>
                 <th scope="col">Votre réponse</th>
-                <th><button onclick="afficherReponse();">Afficher les réponses</button></th>
+                <th scope="col"><button onclick="afficherReponse();">Afficher les réponses</button></th>
               </tr>
             </thead>
             <tbody>
             <tr>
-            <td scope="row">1</td>
+            <th scope="row">1</td>
             <td><label for="q1">Pour implémenter une image <code>img</code> purement décorative, on écrira&nbsp;:</label>
                 <br>
                 <ol>
@@ -178,7 +178,7 @@
             </td>
             </tr>
             <tr>
-            <td scope="row">2</td>
+            <th scope="row">2</td>
             <td><label for="q2">Pour implémenter une image <code>svg</code> purement décorative, on écrira&nbsp;:</label> <br>
                 <ol>
                     <li><code>&lt;svg aria-hidden="true" focusable="false" role="presentation"></code></li>
@@ -190,7 +190,7 @@
             <td><b>Réponse a</b></td>
             </tr>
             <tr>
-            <td scope="row">3</td>
+            <th scope="row">3</td>
             <td><label for="q3">Dans le cas d'une image informative simple, on écrira : </label>
             <br>
                 <ol>
@@ -203,7 +203,7 @@
             Dans l'attribut alt, on écrit normalement en français. Veillez notamment à finir la phrase avec un point « . » pour favoriser la fluidité de lecture par les logiciels de synthèse vocale.</td>
             </tr>
             <tr>
-            <td scope="row">4</td>
+            <th scope="row">4</td>
             <td><label for="q4">Une implémentation 100% compatible avec les synthétiseurs vocaux d'une image complexe consiste&nbsp;:</label> <br>
                 <ol>
                     <li>À utiliser l'attribut aria <code>aria-describedby</code> faisant référence à un id posé sur l’élément qui décrira l’image.</li>
@@ -217,7 +217,7 @@
           </td>
             </tr>
             <tr>
-            <td scope="row">5</td>
+            <th scope="row">5</td>
             <td><label for="q5">Pour implémenter une image svg informative dans le code HTML, on écrira&nbsp;:</label> <br>
                <ol>
                     <li><code>&lt;svg aria-describedby="libelleImage" role="img">&lt;title id="libelleImage">[...]&lt;</title></code></li>
@@ -231,7 +231,7 @@
             on utilisera l’attribut <code>aria-labelledby</code> (et non pas <code>aria-describedby</code>) et l'élément HTML <code>&lt;title>[...]&lt;/title></code> et non pas l'attribut <code>title</code>.</td>
             </tr>
             <tr>
-            <td scope="row">6</td>
+            <th scope="row">6</td>
             <td><label for="q6">Dans le cas d'une image SVG utilisée avec du texte et servant de lien, quell est la bonne syntaxe&nbsp;?</label> <br>
                 <ol>        
                      <li><code>&nbsp;a href="/" title="Accueil">&nbsp;svg aria-hidden="true" focusable="false" role="presentation">[...]&nbsp;/svg>&nbsp;span>Accueil&nbsp;/span>&nbsp;/a></code></li>
@@ -244,7 +244,7 @@
             L'image SVG est considérée comme décorative ; elle sera donc implémentée comme telle. Le libellé du lien étant visible et explicite, il n'y a pas besoin de rajouter un attribut <code>title</code> sur le lien.</td>
             </tr>
             <tr>
-            <td scope="row">7</td>
+            <th scope="row">7</td>
             <td><label for="q7">Pour ne image légendée implémentée avec <code>&lt;figure role="figure"&gt;</code> l'élément HTML <code>&lt;figcaption&gt;</code> est facultatif.</label> <br>
                 <ol>
                      <li>Vrai</li>
@@ -256,7 +256,7 @@
           <code>&lt;figcaption&gt;</code> est obligatoire dans ce cas et doit être innséré dans le code HTML immédiatement après la balise ouvrante <code>&lt;figure [...]&gt;</code>.</td>
             </tr>
             <tr>
-            <td scope="row">8</td>
+            <th scope="row">8</td>
             <td><label for="q8">Pour implémenter un symbole purement décoratif via une police de caractère, on utilisera&nbsp;:</label> <br>
                 <ol>
                    <li><code>&lt;i class="fas fa-gift" class="invisible"></code>, avec en CSS <code>.invisible { visibility: hidden }</code></li>
@@ -267,7 +267,7 @@
             <td><b>Réponse b</b></td>
             </tr>
             <tr>
-            <td scope="row">9</td>
+            <th scope="row">9</td>
             <td><label for="q9">Pour implémenter un symbole porteur d'information via une police de caractère, on utilisera&nbsp;:</label> <br>
                 <ol>
                     <li><code>&lt;p>&lt;span class="fas fa-search" aria-hidden="true">&lt;/span>&lt;span class="visuellement-masque">Rechercher&lt;/span>&lt;/p></code>, où la classe de style « visuellement-masque » masque le contenu via CSS.</li>
@@ -280,7 +280,7 @@
 .            </td>
             </tr>
             <tr>
-            <td scope="row">10</td>
+            <th scope="row">10</td>
             <td><label for="q10">Pour implémenter un symbole via un caractère unicode, on utilisera&nbsp;:</label> <br>
                 <ol>
                     <li>Une classe de style du type <code>.fleche-droite::after {content: "→ ";}</code>.</li>

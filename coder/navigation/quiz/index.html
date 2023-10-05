@@ -159,12 +159,12 @@
                 <th scope="col">N°</th>
                 <th scope="col">Question</th>
                 <th scope="col">Votre réponse</th>
-                <th><button onclick="afficherReponse();">Afficher les réponses</button></th>
+                <th scope="col"><button onclick="afficherReponse();">Afficher les réponses</button></th>
               </tr>
             </thead>
             <tbody>
             <tr>
-            <td scope="row">1</td>
+            <th scope="row">1</td>
             <td><label for="q1">Un site doit proposer au moins 2 systèmes de navigation parmi un menu de navigation et un plan du site ou un menu de navigation et un moteur de recherche. Cette règle s'applique lorsque le site propose au moins combien de page différentes (sans compter les pages de déclaration légale type mentions légales, page de contact)&nbsp;?
 </label>
                 <br>
@@ -179,7 +179,7 @@
             </td>
             </tr>
             <tr>
-            <td scope="row">2</td>
+            <th scope="row">2</td>
             <td><label for="q2">L’élément <code>nav</code> peut-il être utilisé pour présenter une collection de liens pointant sur d'autres sites&nbsp;?</label> <br>
                 <ol>
                     <li>Oui</li>
@@ -190,7 +190,7 @@
             <td><b>Réponse b</b></td>
             </tr>
             <tr>
-            <td scope="row">3</td>
+            <th scope="row">3</td>
             <td><label for="q3">L’élément <code>nav</code> peut-il être utilisé pour présenter une collection de liens pointant sur d'autres pages du site et placée entre les balises <code>&lt;footer role="contentinfo">...&lt;/footer></code>&nbsp;?</label>
             <br>
                 <ol>
@@ -202,7 +202,7 @@
             <td><b>Réponse b</b></td>
             </tr>
             <tr>
-            <td scope="row">4</td>
+            <th scope="row">4</td>
             <td><label for="q4">L’élément <code>nav</code> peut-il être utilisé pour présenter une table des matières dans la page&nbsp;?</label> <br>
                 <ol>
                     <li>Oui</li>
@@ -214,7 +214,7 @@
            Oui. Une table des matières est considérée comme un menu de navigation secondaire.</td>
             </tr>
             <tr>
-            <td scope="row">5</td>
+            <th scope="row">5</td>
             <td><label for="q5">Un lien d'accès rapide au contenu identifié par l’élément <code>&lt;main role="main"></code> doit toujours être proposé.</label> <br>
                 <ol>
                     <li>Oui</li>
@@ -226,7 +226,7 @@
            </td>
             </tr>
             <tr>
-            <td scope="row">6</td>
+            <th scope="row">6</td>
             <td><label for="q6">Un fil d'ariane doit être proposé sur toutes les pages y compris la page d'accueil.</label> <br>
                 <ol>
                     <li>Vrai</li>
@@ -238,7 +238,7 @@
             Faux. Le fil d'ariane ne doit être proposé que sur les pages « filles » d'un site web et doit présenter tout le chemin à parcourir pour arriver sur la page affichée ainsi que le nom de la page affichée. Une bonne pratique consiste à rendre cliquable les différents items du fil d'ariane sauf le dernier correspondant à la page en cours.</td>
             </tr>
             <tr>
-            <td scope="row">7</td>
+            <th scope="row">7</td>
             <td><label for="q7">Dans un fil d'ariane, le dernier item (représentant la page en cours) doit avoir pour attribut aria</label> <br>
                 <ol>
                     <li><code>aria-current="true"</code></li>
@@ -250,7 +250,7 @@
             <td><b>Réponse b</b></td>
             </tr>
             <tr>
-            <td scope="row">8</td>
+            <th scope="row">8</td>
             <td><label for="q8">Les différentes étapes d'un processus par étapes seront balisés avec une liste ordonnée (<code>&lt;ol></code>) </label> <br>
                 <ol>
                     <li>Vrai</li>
@@ -262,7 +262,7 @@
             Les différentes étapes du processus seront balisées par un liste ordonnée car l’ordre des items a de l’importance. La numérotation automatique de la liste ordonnée pourra être supprimée via CSS.</td>
             </tr>
             <tr>
-            <td scope="row">9</td>
+            <th scope="row">9</td>
             <td><label for="q9">Dans un processus par étape, l’étape en cours sera balisée avec l’attribut aria</label> <br>
                 <ol>
                     <li><code>aria-current="true"</code></li>
@@ -275,7 +275,7 @@
             </td>
             </tr>
             <tr>
-            <td scope="row">10</td>
+            <th scope="row">10</td>
             <td><label for="q10">Dans un menu de navigation déroulant, l'item parent de la page en cours (page en cours atteignable via le sous-menu) sera balisé : </label> <br>
                 <ol>
                     <li><code>&lt;a [...] aria-current="true"></code></li>

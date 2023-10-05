@@ -160,12 +160,12 @@
                 <th scope="col">N°</th>
                 <th scope="col">Question</th>
                 <th scope="col">Votre réponse</th>
-                <th><button onclick="afficherReponse();">Afficher les réponses</button></th>
+                <th scope="col"><button onclick="afficherReponse();">Afficher les réponses</button></th>
               </tr>
             </thead>
             <tbody>
             <tr>
-            <td scope="row">1</td>
+            <th scope="row">1</th>
             <td><label for="q1">La taille de base de la police de caractère sur le web est&nbsp:</label>
                 <br>
                 <ol>
@@ -180,7 +180,7 @@
             </td>
             </tr>
             <tr>
-            <td scope="row">2</td>
+            <th scope="row">2</th>
             <td><label for="q2">Pour rendre la lecture d'un article agréable, le texte est justifié.</label> <br>
                 <ol>
                     <li>Vrai</li>
@@ -192,7 +192,7 @@
             Faux ; avec du texte justifé, le lecteur dyslexique perd visuellement son emplacement de lecture.</td>
             </tr>
             <tr>
-            <td scope="row">3</td>
+            <th scope="row">3</th>
             <td><label for="q3">Pour afficher un titre en majuscules, on utilisera une déclaration de style du type <code>text-transform: "uppercase";</code> plutôt que d'écrire directement en majuscules.</label>
             <br>
                 <ol>
@@ -206,7 +206,7 @@
             Le texte écrit tout en majuscules est réservée aux textes très courts comme les titres, sigles...</td>
             </tr>
             <tr>
-            <td scope="row">4</td>
+            <th scope="row">4</th>
             <td><label for="q4">La hiérarchisation du texte se fait à l'aide de balises de titraille <code>&lt;h1>, &lt;h2>...</code></label> <br>
                 <ol>
                     <li>Oui</li>
@@ -218,7 +218,7 @@
            Oui. Le contenu du document est hiérarchisé à l’aide déléments de titraille (balises allant de &lt;h1>...&lt;/h1> à &lt;h6>...&lt;/h6>); S’il est possible d’aller au delà du niveau 6, mieux vaut repenser la hériarchisation de sa page.</td>
             </tr>
             <tr>
-            <td scope="row">5</td>
+            <th scope="row">5</th>
             <td><label for="q5">On peut trouver plusieurs fois une balise &lt;h1> dans une page web ; ce n'est pas une erreur HTML.</label> <br>
                 <ol>
                     <li>Oui</li>
@@ -230,7 +230,7 @@
             Oui, même si une bonne pratique consiste à n'en proposer qu'une seule par page, le plus souvent identique au titre de la page (balise &lt;title> du document HTML).</td>
             </tr>
             <tr>
-            <td scope="row">6</td>
+            <th scope="row">6</th>
             <td><label for="q6">Dans une page, une bonne pratique consiste à ne pas avoir de « trou » dans la hiérarchie de numérotation des titres (on évite de passer de &lt;h2> à &lt;h4>, par exemple, sans proposer de &lt;h3>.</label> <br>
                 <ol>
                     <li>Vrai</li>
@@ -242,7 +242,7 @@
             Oui. Même si des « trous » dans la numérotation n'est pas une erreur au sens du RGAA, elle déconcerte beaucoup l'utilisateur qui a recours à des logiciels de synthèse vocale.</td>
             </tr>
             <tr>
-            <td scope="row">7</td>
+            <th scope="row">7</th>
             <td><label for="q7">Une liste ordonnée est utilisée pour présenter un fil d'ariane.</label> <br>
                 <ol>
                      <li>Vrai</li>
@@ -254,7 +254,7 @@
            Les balises de liste ordonnée sont utilisées pour présenter un fil d’ariane, un processus par étape, un système de pagination et toute sorte de liste dont l'ordre des items a de l'importance.</td>
             </tr>
             <tr>
-            <td scope="row">8</td>
+            <th scope="row">8</th>
             <td><label for="q8">Pour chaque élément de texte, l'interligne (<code>line-height</code>) doit être de</label> <br>
                 <ol>
                     <li>1</li>
@@ -266,7 +266,7 @@
             1.5. la déclaration css est <code>line-height: 1.5;</code></td>
             </tr>
             <tr>
-            <td scope="row">9</td>
+            <th scope="row">9</th>
             <td><label for="q9">Dans une liste de définitions (balises <code>dl, dt et dd</code>)</label> <br>
                 <ol>
                     <li>On peut avoir plusieurs <code>dt</code> pour un seul <code>dd</code> </li>
@@ -280,7 +280,7 @@
 .            </td>
             </tr>
             <tr>
-            <td scope="row">10</td>
+            <th scope="row">10</th>
             <td><label for="q10">Quels éléments HTML utilise-t-on pour typer les citations ?</label> <br>
                 <ol>
                     <li><code>span</code>, auquel on rajoute une classe de style qui insére des guillements, pour une citation à l'intérieur d'un paragraphe, <code>p</code>, auquel on rajoute une classe de style qui insére des guillements, pour une citation complète.</li>

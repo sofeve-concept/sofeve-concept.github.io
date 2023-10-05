@@ -157,12 +157,12 @@
                 <th scope="col">N°</th>
                 <th scope="col">Question</th>
                 <th scope="col">Votre réponse</th>
-                <th><button onclick="afficherReponse();">Afficher les réponses</button></th>
+                <th scope="col"><button onclick="afficherReponse();">Afficher les réponses</button></th>
               </tr>
             </thead>
             <tbody>
             <tr>
-            <td scope="row">1</td>
+            <th scope="row">1</td>
             <td><label for="q1">Le titre d'un tableau est facultatif&nbsp;:</label>
                 <br>
                 <ol>
@@ -174,7 +174,7 @@
             <td><b>Réponse b</b></td>
             </tr>
             <tr>
-            <td scope="row">2</td>
+            <th scope="row">2</td>
             <td><label for="q2">Pour donner un titre à un tableau, on écrira&nbsp;:</label>
                 <br>
                 <ol>
@@ -188,7 +188,7 @@
             L'élément <code>caption</code> sera écrit dans le code HTML immédiatement après la balise ouvrante <code>&lt;table></td>
             </tr>
             <tr>
-            <td scope="row">3</td>
+            <th scope="row">3</td>
             <td><label for="q3">Dans le cas d'un tableau servant uniquement à la présentation, on écrira&nbsp;: </label>
             <br>
                 <ol>
@@ -201,7 +201,7 @@
             On rajoute le rôle aria « presentation » et on n'utilisera aucune des techniques de codage spécifiques aux tableaux simples ou complexes.</td>
             </tr>
             <tr>
-            <td scope="row">4</td>
+            <th scope="row">4</td>
             <td><label for="q4">Dans un tableau, les lignes d’entête seront encadrées par les balises&nbsp;:</label> <br>
                 <ol>
                     <li><code>&lt;thead&gt;...&lt;/thead&gt;</code></li>
@@ -215,7 +215,7 @@
           </td>
             </tr>
             <tr>
-            <td scope="row">5</td>
+            <th scope="row">5</td>
             <td><label for="q5">Pour indiquer qu'une cellule porte sur une ligne complète, on écrira&nbsp;:</label> <br>
                <ol>
                     <li><code>&lt;td scope="col">[...]&lt;/td></code></li>
@@ -229,7 +229,7 @@
             <code>scope="row"</code> précise la portée de l'information sur la ligne ; l'attribut <code>scope</code>ne peut se poser que sur une balise <code>th</code>.</td>
             </tr>
             <tr>
-            <td scope="row">6</td>
+            <th scope="row">6</td>
             <td><label for="q6">Pour qu'un tableau soit considéré comme accessible, il doit respecter la règle suivante&nbsp;?</label> <br>
                 <ol>        
                      <li>Le tableau doit faire une largeur de 100% quelque soit la taille de l'écran.</li>
@@ -241,7 +241,7 @@
             Pour vérifier la compréhension du contenu du tableau dans ce cas, vous pouvez utiliser l&rsquo;extension de navigateur <span lang="en">«&nbsp;web developper&nbsp;»</span> et choisir <span lang="en">«&nbsp;Misceallanous&nbsp;»</span> - <span lang="en">«&nbsp;Linearize page&nbsp;»</span>.</td>
             </tr>
             <tr>
-            <td scope="row">7</td>
+            <th scope="row">7</td>
             <td><label for="q7">Dans le cas d'un tableau de données complexe, le titre de tableau peut fournir le résumé qui décrit la composition du tableau</label> <br>
                 <ol>
                      <li>Vrai</li>
@@ -252,7 +252,7 @@
             <td><b>Réponse a</b></td>
             </tr>
             <tr>
-            <td scope="row">8</td>
+            <th scope="row">8</td>
             <td><label for="q8">Dans le cas d'un tableau de données complexe, pour associer les colonnes à leurs entêtes, on peut utiliser <code>&lt;th scope="colgroup"></code> et/ou <code>&lt;th scope="rowgroup"></code>&nbsp;:</label> <br>
                 <ol>
                    <li>Vrai</li>
@@ -263,7 +263,7 @@
             <td><b>Réponse a</b></td>
             </tr>
             <tr>
-            <td scope="row">9</td>
+            <th scope="row">9</td>
             <td><label for="q9"><code>colgroup</code> et <code>col</code> peuvent être utilisé pour grouper et identifier des lignes au sein d’un tableau.</label> <br>
                 <ol>
                    <li>Vrai</li>
@@ -276,7 +276,7 @@
             </td>
             </tr>
             <tr>
-            <td scope="row">10</td>
+            <th scope="row">10</td>
             <td><label for="q10">Un élément <code>colgroup</code></label> peut être posé n'imprte où dans le code du tableau.</label>
                 <ol>
                     <li>Vrai</li>
