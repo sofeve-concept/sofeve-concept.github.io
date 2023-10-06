@@ -169,21 +169,17 @@
 </nav>
 </div>
 <h2 id="implémentation-html">Implémentation HTML</h2>
-<p>Les images légendées doivent être balisées avec <code>&lt;figure role=&quot;figure&quot;&gt;</code> et <code>&lt;figcaption&gt;</code>.</p>
-<p>La balise <code>&lt;figure role=&quot;figure&quot;&gt;</code> doit :</p>
-<ul>
-<li>Englober l’image ainsi que la légende, qui doit de son côté être balisée avec <code>&lt;figcaption&gt;</code>.</li>
-<li>Posséder un attribut aria-label dont le contenu doit correspondre à celui de la balise <code>&lt;figcaption&gt;</code>.</li>
-</ul>
+<p>Les images légendées doivent être balisées avec <code>&lt;figure&gt;</code> ; cette balise comporte le rôle aria implicite <code>role=&quot;figure&quot;</code>. La balise <code>&lt;figure&gt;</code> peut englober une légende qui sera alors implémentée avec l&rsquo;élément HTML <code>&lt;figcaption&gt;[...]&lt;/figcaption&gt;</code>.<br>
+Si la balise <code>&lt;figure&gt;</code> possède un attribut <code>aria-label</code> et une légende <code>figcaption</code> alors le contenu de <code>aria-label</code> doit correspondre à celui de la balise <code>&lt;figcaption&gt;</code>.</p>
 <h2 id="code-et-rendu">Code et rendu</h2>
 <h3 id="code-html">Code HTML</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">figure</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;figure&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Clavier permettant de lire et d&#39;écrire en braille&#34;</span><span class="p">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">figure</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Clavier TACT-BRAILLE permettant de lire et d&#39;écrire en braille.&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;images/clavier.jpg&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;Clavier Tact-braille&#34;</span> <span class="p">/&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">figcaption</span><span class="p">&gt;</span>Clavier TACT-BRAILLE permettant de lire et d&#39;écrire en braille.<span class="p">&lt;/</span><span class="nt">figcaption</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">figure</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h3 id="rendu-visuel">Rendu visuel</h3>
 
-<figure role="figure" aria-label="Clavier Tact-braille permettant de lire et d'écrire en braille">
+<figure aria-label="Clavier Tact-braille permettant de lire et d'écrire en braille">
 <img src="/images/tact-braille.jpg" alt="Clavier Tact-braille" />
     <figcaption class="text-left">Clavier Tact-braille permettant de lire et d'écrire en braille.</figcaption>
 </figure>
