@@ -268,8 +268,7 @@ zones de texte (sur une seule ligne ou plusieurs lignes), liste de sélection d�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/coder/multimedia/lecteur-video/</guid>
-      <description>Règles à respecter sur le lecteur audio/vidéo Le lecteur vidéo (ou audio) :
-ne doit pas démarrer automatiquement ; doit prendre en charge les sous-titres et l&amp;rsquo;audiodescription de la vidéo ; doit permette à l&amp;rsquo;utilisateur de contrôler la lecture de la vidéo avec des boutons d&amp;rsquo;action du type : pause/lecture, avancer/reculer, arrêter/monter/baisser le son, afficher ou non les sous-titres et l&amp;rsquo;audiodescription.</description>
+      <description>Règles à respecter sur les lecteurs audio et vidéo Le lecteur vidéo (ou audio) :</description>
     </item>
     
     <item>

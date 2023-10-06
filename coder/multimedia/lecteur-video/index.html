@@ -153,11 +153,20 @@
 <div id="tdm" role="region" tabindex="-1">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#règles-à-respecter-sur-le-lecteur-audiovidéo">Règles à respecter sur le lecteur audio/vidéo</a></li>
+    <li><a href="#règles-à-respecter-sur-les-lecteurs-audio-et-vidéo">Règles à respecter sur les lecteurs audio et vidéo</a>
+      <ul>
+        <li><a href="#exemple-dimplémentation">Exemple d&rsquo;implémentation</a>
+          <ul>
+            <li><a href="#vidéo">Vidéo</a></li>
+          </ul>
+        </li>
+        <li><a href="#audio">Audio</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 </div>
-<h2 id="règles-à-respecter-sur-le-lecteur-audiovidéo">Règles à respecter sur le lecteur audio/vidéo</h2>
+<h2 id="règles-à-respecter-sur-les-lecteurs-audio-et-vidéo">Règles à respecter sur les lecteurs audio et vidéo</h2>
 <p>Le lecteur vidéo (ou audio) :</p>
 <ul>
 <li>ne doit pas démarrer automatiquement ;</li>
@@ -172,8 +181,61 @@
 </li>
 </ul>
 <p>Idéalement, le lecteur permet aussi de paramétrer l&rsquo;affichage des sous-titres (taille du texte, couleur de l&rsquo;arrière plan et de la police de caractère).</p>
-<p>Exemple de <a href="http://paypal.github.io/accessible-html5-video-player/"  target="_blank" rel="noopener noreferrer" title="player vidéo répondant aux critères d&#39;accessibilité (nouvelle fenêtre)">player vidéo répondant aux critères d&rsquo;accessibilité</a> (le lien vers le code source se trouve dans la page d&rsquo;exemple).</p>
-
+<h3 id="exemple-dimplémentation">Exemple d&rsquo;implémentation</h3>
+<h4 id="vidéo">Vidéo</h4>
+<p>Dans cet exemple de la documentation « Développeur de Mozilla », trois sources différentes pour la vidéo sont fournies. Si le premier format de la source (webm) n&rsquo;est pas lisible pour le navigateur, c&rsquo;est la vidéo au format suivant (mp4) qui sera lue et, si celle-ci n&rsquo;est pas lisible non plus, ce sera le fichier suivant (ogv) qui sera lu.</p>
+<ul>
+<li>L&rsquo;élément HTML <code>video</code> doit comporter a minima les deux attributs suivants :
+<ul>
+<li>L&rsquo;attribut <code>poster</code> ; il permet de proposer une vignette à afficher avant de lancer la vidéo ;</li>
+<li>L&rsquo;attribut <code>controls</code> ; il permet d&rsquo;afficher les boutons de contrôle de la lecture de la vidéo, du volume et de la mise sur pause.</li>
+</ul>
+</li>
+<li>L&rsquo;élément <code>source</code> permet de déclarer plusieurs formats de vidéo ;</li>
+<li>L&rsquo;élément <code>track</code> permet d&rsquo;implémenter un sous-titrage à sa vidéo.</li>
+</ul>
+<p><strong>Code HTML</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">figure</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">figcaption</span><span class="p">&gt;</span>Cohérence cardiaque (Vidéo de 3 minutes)<span class="p">&lt;/</span><span class="nt">figcaption</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">video</span>
+</span></span><span class="line"><span class="cl">  <span class="na">class</span><span class="o">=</span><span class="s">&#34;video&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">controls</span>
+</span></span><span class="line"><span class="cl">  <span class="na">poster</span><span class="o">=</span><span class="s">&#34;images/vignette.jpg&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">source</span>
+</span></span><span class="line"><span class="cl">    <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://archive.org/download/WebmVp8Vorbis/webmvp8.webm&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">type</span><span class="o">=</span><span class="s">&#34;video/webm&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">source</span>
+</span></span><span class="line"><span class="cl">    <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://archive.org/download/WebmVp8Vorbis/webmvp8_512kb.mp4&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">type</span><span class="o">=</span><span class="s">&#34;video/mp4&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">source</span>
+</span></span><span class="line"><span class="cl">    <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">type</span><span class="o">=</span><span class="s">&#34;video/ogg&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">track</span> <span class="na">default</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;sousTitrage.vtt&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Votre navigateur ne prend pas en charge le lecteur vidéo. Vous pouvez toutefois <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;relaxation.mp3&#34;</span><span class="p">&gt;</span>télécharger la vidéo<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> ou <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;transcription.html&#34;</span><span class="p">&gt;</span>accéder à la transcription textuelle de la vidéo.<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">video</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">figure</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p><strong>Code CSS</strong><br>
+On veillera à ce que le contraste de couleur entre l&rsquo;arrière plan et le texte du sous-titrage respecte le ratio de contraste de 4.5:1. Par exemple en déclarant ceci (le pseudo-élément CSS <code>::cue</code> permet de cibler les indications textuelles WebVTT d&rsquo;un élément.) :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">::</span><span class="nd">cue</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background-color</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div class="notice astuce" >   
+     <p> astuce </p>
+<p>Voir aussi un exemple de <a href="http://paypal.github.io/accessible-html5-video-player/" target="_blank" rel="noopener noreferrer">player vidéo répondant aux critères d'accessibilité</a> (le lien vers le code source se trouve dans la page d'exemple).</p>
+</div>
+<h3 id="audio">Audio</h3>
+<p>Les fichiers audio seront implémentés avec l&rsquo;élément HTML <code>audio</code>. Comme pour les fichiers vidéos, cet élément possède un attribut <code>controls</code> qui permet d&rsquo;afficher les boutons de contrôle de la lecture du fichier audio, du volume et de la mise sur pause.</p>
+<p>Pour implémenter un fichier audio, on pourra recourir au code suivant :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">figure</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">figcaption</span><span class="p">&gt;</span>Séance de relaxation (3 minutes)<span class="p">&lt;/</span><span class="nt">figcaption</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">audio</span> <span class="na">controls</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">source</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;relaxation.mp3&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;audio/mpeg&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">source</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;relaxation.ogg&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;audio/ogg&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Votre navigateur ne prend pas en charge le lecteur audio. Vous pouvez toutefois<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;relaxation.mp3&#34;</span><span class="p">&gt;</span>télécharger le fichier audio<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> ou <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;transcription.html&#34;</span><span class="p">&gt;</span>accéder à la transcription textuelle de l&#39;enregistrement.<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">audio</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">figure</span><span class="p">&gt;</span>
+</span></span></code></pre></div>
           </section>   
      </div>
 </main>
@@ -202,6 +264,7 @@
 		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
 	</svg>
 	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/afficherReponse.min.js"></script>
+<script src="/js/clipboard.min.js"></script>
 <script src="/js/search.min.js"></script>
 <script>sandwitch();</script>	
 
