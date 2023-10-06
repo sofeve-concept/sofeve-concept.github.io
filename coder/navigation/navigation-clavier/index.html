@@ -191,12 +191,16 @@
 </ul>
 <h2 id="gestion-du-focus-clavier">Gestion du focus clavier</h2>
 <h3 id="un-focus-clavier-toujours-visible">Un focus clavier toujours visible</h3>
-<p>Le focus clavier doit toujours être visible. Une <strong>très mauvaise pratique</strong> consiste à le rendre invisible avec le code CSS suivant : <code>:focus { outline: none; }</code>.
+<p>Le focus clavier doit toujours être visible. Une très mauvaise pratique consiste à le rendre invisible avec le code CSS suivant : <em>:focus { outline: none;}</em>.
 On veillera donc à ce que le focus clavier respecte les règles suivantes :</p>
 <ul>
-<li>Sa couleur a un contraste minimum de 3:1 par rapport à l&rsquo;élément d&rsquo;arrière-plan.</li>
-<li>Sa taille est suffisamment grande pour être perçue par l&rsquo;utilisateur. Si toute la zone est entourée d&rsquo;une bordure au focus, alors la taille minimum de la bordure sera de 1px.</li>
+<li><strong>Couleur</strong> : sa couleur a un <strong>contraste minimum de 3:1</strong> par rapport à l&rsquo;élément d&rsquo;arrière-plan.</li>
+<li><strong>Taille</strong> : sa taille doit faire minimum 2 fois le périmètre de la zone focusable. Ainsi, on déclarera une taille minimum de bordure de 2px.</li>
 </ul>
+<div class="notice remarque" >   
+     <p> remarque </p>
+<p><b>La taille de la zone cliquable doit faire minimum 24px * 24px</b> sauf si la zone cliquable se trouve dans un paragraphe (comme un lien à l'intérieur d'un bloc de texte).<br>Le critère AAA du WCAG va même jusquà demander une taille minimum de 44px * 44px.</p>
+</div>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">:</span><span class="nd">focus</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl"><span class="k">outline</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">black</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
