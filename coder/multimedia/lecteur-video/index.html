@@ -153,14 +153,11 @@
 <div id="tdm" role="region" tabindex="-1">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#règles-à-respecter-sur-les-lecteurs-audio-et-vidéo">Règles à respecter sur les lecteurs audio et vidéo</a>
+    <li><a href="#règles-à-respecter-sur-les-lecteurs-audio-et-vidéo">Règles à respecter sur les lecteurs audio et vidéo</a></li>
+    <li><a href="#exemples-dimplémentation">Exemples d&rsquo;implémentation</a>
       <ul>
-        <li><a href="#exemple-dimplémentation">Exemple d&rsquo;implémentation</a>
-          <ul>
-            <li><a href="#vidéo">Vidéo</a></li>
-            <li><a href="#audio">Audio</a></li>
-          </ul>
-        </li>
+        <li><a href="#vidéo">Vidéo</a></li>
+        <li><a href="#audio">Audio</a></li>
       </ul>
     </li>
   </ul>
@@ -181,8 +178,8 @@
 </li>
 </ul>
 <p>Idéalement, le lecteur permet aussi de paramétrer l&rsquo;affichage des sous-titres (taille du texte, couleur de l&rsquo;arrière plan et de la police de caractère).</p>
-<h3 id="exemple-dimplémentation">Exemple d&rsquo;implémentation</h3>
-<h4 id="vidéo">Vidéo</h4>
+<h2 id="exemples-dimplémentation">Exemples d&rsquo;implémentation</h2>
+<h3 id="vidéo">Vidéo</h3>
 <p>Dans cet exemple de la documentation « Développeur de Mozilla », trois sources différentes pour la vidéo sont fournies. Si le premier format de la source (webm) n&rsquo;est pas lisible pour le navigateur, c&rsquo;est la vidéo au format suivant (mp4) qui sera lue et, si celle-ci n&rsquo;est pas lisible non plus, ce sera le fichier suivant (ogv) qui sera lu.</p>
 <ul>
 <li>L&rsquo;élément HTML <code>video</code> doit comporter a minima les deux attributs suivants :
@@ -224,7 +221,7 @@ On veillera à ce que le contraste de couleur entre l&rsquo;arrière plan et le 
      <p> astuce </p>
 <p>Voir aussi un exemple de <a href="http://paypal.github.io/accessible-html5-video-player/" target="_blank" rel="noopener noreferrer">player vidéo répondant aux critères d'accessibilité</a> (le lien vers le code source se trouve dans la page d'exemple).</p>
 </div>
-<h4 id="audio">Audio</h4>
+<h3 id="audio">Audio</h3>
 <p>Les fichiers audio seront implémentés avec l&rsquo;élément HTML <code>audio</code>. Comme pour les fichiers vidéos, cet élément possède un attribut <code>controls</code> qui permet d&rsquo;afficher les boutons de contrôle de la lecture du fichier audio, du volume et de la mise sur pause.</p>
 <p>Pour implémenter un fichier audio, on pourra recourir au code suivant :</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">figure</span><span class="p">&gt;</span>
