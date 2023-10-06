@@ -169,12 +169,14 @@
         </li>
       </ul>
     </li>
+    <li><a href="#implémenter-des-images-adaptatives">Implémenter des images adaptatives</a></li>
   </ul>
 </nav>
 </div>
 <h2 id="format-dimage-les-plus-courants">Format d&rsquo;image les plus courants</h2>
 <p>Les formats d&rsquo;image (extension du fichier image) recommandés et pris en charge en HTML sont les suivants :</p>
 <ul>
+<li><strong>AVIF</strong> (AV1 <span lang="en">Image File Format</span>) est un format d&rsquo;images qui a la particularité de proposer un meilleur taucx de compression sans perte des images par rapport aux formats JPG et Webp. Ce format étant récent, tous les navigateurs web ne prennent pas encore en charge ce format.</li>
 <li><strong>GIF</strong> (<span lang="en">Graphics Interchange Format</span>) pour les images et animations simples. Ce format peut supporter les fonds transparents ;</li>
 <li><strong>JPEG</strong> ou <strong>JPG</strong> (<span lang="en">Joint Photographic Expert Group image</span>), le format le plus utilisé notamment pour les photographies. Ce format a l&rsquo;avantage de proposé un fort taux de compression de l&rsquo;image et donc « d&rsquo;alléger » le poids de l&rsquo;image. Ce format ne supporte pas la transparence ;</li>
 <li><strong>PNG</strong> (<span lang="en">Portable Network Graphics</span>), ce format supporte les fonds transparents et est particulièrement adapté pour les logos, les images incrustées&hellip; Son taux de compression est bien moindre que celui du format JPEG.</li>
@@ -289,6 +291,75 @@ Parmi tous les logiciels de traitements d&rsquo;image disponibles sur le marché
 </div>
 <p><strong>Exemple d&rsquo;implémentation HTML</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/images/handicap-moteur.webp&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;Pictogramme handicap moteur&#34;</span> <span class="na">loading</span><span class="o">=</span><span class="s">&#34;lazy&#34;</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h2 id="implémenter-des-images-adaptatives">Implémenter des images adaptatives</h2>
+<p>L&rsquo;élément HTML <code>picture</code> permet de définir plusieurs formats et tailles d&rsquo;images qui seront affichées selon la résolution de l&rsquo;écran. En utilisant cet élément HTML, il est donc possible de proposer</p>
+<ul>
+<li>différents formats d&rsquo;image (par exemple un format Avif puis un format Webp si le format Avif n&rsquo;est pas reconnu&hellip;)</li>
+<li>différentes tailles d&rsquo;images ; l&rsquo;image affichée sera alors celle correspondant à la résolution d&rsquo;écran de l&rsquo;utilisateur. Plus une image est petite, moins son poids est important.</li>
+</ul>
+<p><strong>Exemple d&rsquo;implémentation HTML</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">picture</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">source</span>
+</span></span><span class="line"><span class="cl">          <span class="na">srcset</span><span class="o">=</span><span class="s">&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">               /images/monImage-Small.avif 300w,
+</span></span></span><span class="line"><span class="cl"><span class="s">               /images/monImage-Medium.avif 700w,
+</span></span></span><span class="line"><span class="cl"><span class="s">               /images/monImage-Large.avif 900w,
+</span></span></span><span class="line"><span class="cl"><span class="s">               /images/monImage-ExtraLarge.avif 1024w&#34;</span>
+</span></span><span class="line"><span class="cl">          <span class="na">sizes</span><span class="o">=</span><span class="s">&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">               (max-width: 350px) 300px,
+</span></span></span><span class="line"><span class="cl"><span class="s">               (max-width: 780px) 700px,
+</span></span></span><span class="line"><span class="cl"><span class="s">               (max-width: 960px) 900px,
+</span></span></span><span class="line"><span class="cl"><span class="s">               1024px&#34;</span>
+</span></span><span class="line"><span class="cl">          <span class="na">type</span><span class="o">=</span><span class="s">&#34;image/avif&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">source</span> 
+</span></span><span class="line"><span class="cl">          <span class="na">srcset</span><span class="o">=</span><span class="s">&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">               /images/monImage-Small.webp 320w,
+</span></span></span><span class="line"><span class="cl"><span class="s">               /images/monImage-Medium.webp 700w,
+</span></span></span><span class="line"><span class="cl"><span class="s">               /images/monImage-Large.webp 900w,
+</span></span></span><span class="line"><span class="cl"><span class="s">               /images/monImage-ExtraLarge.webp 1024w&#34;</span>
+</span></span><span class="line"><span class="cl">          <span class="na">sizes</span><span class="o">=</span><span class="s">&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">               (max-width: 350px) 300px,
+</span></span></span><span class="line"><span class="cl"><span class="s">               (max-width: 780px) 700px,
+</span></span></span><span class="line"><span class="cl"><span class="s">               (max-width: 960px) 900px,
+</span></span></span><span class="line"><span class="cl"><span class="s">               1024px&#34;</span>
+</span></span><span class="line"><span class="cl">          <span class="na">type</span><span class="o">=</span><span class="s">&#34;image/webp&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">source</span> 
+</span></span><span class="line"><span class="cl">          <span class="na">srcset</span><span class="o">=</span><span class="s">&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">               /images/monImage-Small.jpg 320w,
+</span></span></span><span class="line"><span class="cl"><span class="s">               /images/monImage-Medium.jpg 400w,
+</span></span></span><span class="line"><span class="cl"><span class="s">               /images/monImage-Large.jpg 500w,
+</span></span></span><span class="line"><span class="cl"><span class="s">               /images/monImage-ExtraLarge.jpg 600w&#34;</span>
+</span></span><span class="line"><span class="cl">          <span class="na">sizes</span><span class="o">=</span><span class="s">&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">               (max-width: 350px) 300px,
+</span></span></span><span class="line"><span class="cl"><span class="s">               (max-width: 780px) 700px,
+</span></span></span><span class="line"><span class="cl"><span class="s">               (max-width: 960px) 900px,
+</span></span></span><span class="line"><span class="cl"><span class="s">               1024px&#34;</span>
+</span></span><span class="line"><span class="cl">          <span class="na">type</span><span class="o">=</span><span class="s">&#34;image/jpg&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">img</span>
+</span></span><span class="line"><span class="cl">          <span class="na">src</span><span class="o">=</span><span class="s">&#34;/images/monImage-Medium.jpg&#34;</span> 
+</span></span><span class="line"><span class="cl">          <span class="na">alt</span><span class="o">=</span><span class="s">&#34;Mon image adaptative selon la résolution d&#39;écran et la capacité du navigateur à reconnaître les formats d&#39;image.&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">picture</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p><strong>Autre exemple d&rsquo;implémentation HTML</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">picture</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">&#34;/images/monImage-Small.avif&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;(max-width: 350px)&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">&#34;/images/monImage-Medium.avif&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;(max-width: 780px)&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">&#34;/images/monImage-Large.avif&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;(max-width: 960px)&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">&#34;/images/monImage-ExtraLarge.avif&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">&#34;/images/monImage-Small.webp&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;(max-width: 350px)&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">&#34;/images/monImage-Medium.webp&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;(max-width: 780px)&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">&#34;/images/monImage-Large.webp&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;(max-width: 960px)&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">&#34;/images/monImage-ExtraLarge.webp&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">&#34;/images/monImage-Small.jpg&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;(max-width: 350px)&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">&#34;/images/monImage-Medium.jpg&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;(max-width: 780px)&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">&#34;/images/monImage-Large.jpg&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;(max-width: 960px)&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">&#34;/images/monImage-ExtraLarge.jpg&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">img</span>
+</span></span><span class="line"><span class="cl">          <span class="na">src</span><span class="o">=</span><span class="s">&#34;/images/monImage-Medium.jpg&#34;</span> 
+</span></span><span class="line"><span class="cl">          <span class="na">alt</span><span class="o">=</span><span class="s">&#34;Mon image adaptative selon la résolution d&#39;écran et la capacité du navigateur à reconnaître les formats d&#39;image.&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">picture</span><span class="p">&gt;</span>
 </span></span></code></pre></div>
           </section>   
      </div>
