@@ -196,21 +196,13 @@
 <ul role="menubar" id="menuliste" class="mb-3">
      <li role="menuitem"><a href="#">Accueil</a></li>
 	<li role="menuitem" aria-haspopup="true">
-		Coder accessible
+		Liste
 		<ul role="menu">
 			<li role="menuitem"><a href="#">Contenu</a></li>
 			<li role="menuitem"><a href="#">Couleurs</a></li>
 			<li role="menuitem"><a href="#">Navigation</a></li>
 		</ul>
 	</li>
-	<li role="menuitem" aria-haspopup="true">
-		Ressources
-		<ul role="menu">
-               <li role="menuitem"><a href="#">Accessibilité bureautique</a></li>
-			<li role="menuitem"><a href="#">Accessibilité web</a></li>
-		</ul>
-	</li>
-	<li role="menuitem"><a href="#">Contact</a></li>
 </ul>
 
 <h2 id="extraits-de-code">Extraits de code</h2>
@@ -321,156 +313,156 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">appsMenuItems</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;#menuliste &gt; li&#39;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">subMenuItems</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;#menuliste &gt; li li&#39;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">keys</span> <span class="o">=</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">tab</span><span class="o">:</span>    <span class="mi">9</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">enter</span><span class="o">:</span>  <span class="mi">13</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">esc</span><span class="o">:</span>    <span class="mi">27</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">space</span><span class="o">:</span>  <span class="mi">32</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">left</span><span class="o">:</span>   <span class="mi">37</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">up</span><span class="o">:</span>     <span class="mi">38</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">right</span><span class="o">:</span>  <span class="mi">39</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">down</span><span class="o">:</span>   <span class="mi">40</span>
+</span></span><span class="line"><span class="cl"><span class="nx">tab</span><span class="o">:</span>    <span class="mi">9</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nx">enter</span><span class="o">:</span>  <span class="mi">13</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nx">esc</span><span class="o">:</span>    <span class="mi">27</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nx">space</span><span class="o">:</span>  <span class="mi">32</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nx">left</span><span class="o">:</span>   <span class="mi">37</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nx">up</span><span class="o">:</span>     <span class="mi">38</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nx">right</span><span class="o">:</span>  <span class="mi">39</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nx">down</span><span class="o">:</span>   <span class="mi">40</span>
 </span></span><span class="line"><span class="cl"><span class="p">};</span>
 </span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">currentIndex</span><span class="p">,</span> <span class="nx">subIndex</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">gotoIndex</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">idx</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="p">(</span><span class="nx">idx</span> <span class="o">==</span> <span class="nx">appsMenuItems</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">		<span class="nx">idx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">idx</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">		<span class="nx">idx</span> <span class="o">=</span> <span class="nx">appsMenuItems</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">	<span class="p">}</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">appsMenuItems</span><span class="p">[</span><span class="nx">idx</span><span class="p">].</span><span class="nx">focus</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">currentIndex</span> <span class="o">=</span> <span class="nx">idx</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">idx</span> <span class="o">==</span> <span class="nx">appsMenuItems</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nx">idx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">idx</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nx">idx</span> <span class="o">=</span> <span class="nx">appsMenuItems</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">appsMenuItems</span><span class="p">[</span><span class="nx">idx</span><span class="p">].</span><span class="nx">focus</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">currentIndex</span> <span class="o">=</span> <span class="nx">idx</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">};</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">gotoSubIndex</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">menu</span><span class="p">,</span> <span class="nx">idx</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="kd">var</span> <span class="nx">items</span> <span class="o">=</span> <span class="nx">menu</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="p">(</span><span class="nx">idx</span> <span class="o">==</span> <span class="nx">items</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">		<span class="nx">idx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">idx</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">		<span class="nx">idx</span> <span class="o">=</span> <span class="nx">items</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">	<span class="p">}</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">items</span><span class="p">[</span><span class="nx">idx</span><span class="p">].</span><span class="nx">focus</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">subIndex</span> <span class="o">=</span> <span class="nx">idx</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">items</span> <span class="o">=</span> <span class="nx">menu</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">idx</span> <span class="o">==</span> <span class="nx">items</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nx">idx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">idx</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nx">idx</span> <span class="o">=</span> <span class="nx">items</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">items</span><span class="p">[</span><span class="nx">idx</span><span class="p">].</span><span class="nx">focus</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">subIndex</span> <span class="o">=</span> <span class="nx">idx</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">forEach</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">appsMenuItems</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="nx">i</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="p">(</span><span class="mi">0</span> <span class="o">==</span> <span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">			<span class="nx">el</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;tabindex&#39;</span><span class="p">,</span> <span class="s1">&#39;0&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">			<span class="nx">el</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;focus&#34;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">				<span class="nx">currentIndex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">			<span class="p">});</span>
-</span></span><span class="line"><span class="cl">		<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">			<span class="nx">el</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;tabindex&#39;</span><span class="p">,</span> <span class="s1">&#39;-1&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">		<span class="p">}</span>
-</span></span><span class="line"><span class="cl">		<span class="nx">el</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;focus&#34;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">			<span class="nx">subIndex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">			<span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">forEach</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">appsMenuItems</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="nx">i</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">				<span class="nx">el</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;aria-expanded&#39;</span><span class="p">,</span> <span class="s2">&#34;false&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">			<span class="p">});</span>
-</span></span><span class="line"><span class="cl">		<span class="p">});</span>
-</span></span><span class="line"><span class="cl">		<span class="nx">el</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;click&#34;</span><span class="p">,</span>  <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">			<span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s1">&#39;aria-expanded&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;false&#39;</span> <span class="o">||</span> <span class="k">this</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s1">&#39;aria-expanded&#39;</span><span class="p">)</span> <span class="o">==</span>  <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">				<span class="k">this</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;aria-expanded&#39;</span><span class="p">,</span> <span class="s2">&#34;true&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">			<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">				<span class="k">this</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;aria-expanded&#39;</span><span class="p">,</span> <span class="s2">&#34;false&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">			<span class="p">}</span>
-</span></span><span class="line"><span class="cl">			<span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">		<span class="p">});</span>
-</span></span><span class="line"><span class="cl">		<span class="nx">el</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;keydown&#34;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">			<span class="kd">var</span> <span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">			<span class="k">switch</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">keyCode</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">right</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">					<span class="k">break</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">left</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">					<span class="k">break</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">tab</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">					<span class="k">if</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">shiftKey</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">						<span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">					<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">						<span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">					<span class="p">}</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">					<span class="k">break</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">enter</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">down</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">					<span class="k">this</span><span class="p">.</span><span class="nx">click</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">subindex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">gotoSubIndex</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;ul&#39;</span><span class="p">),</span> <span class="mi">0</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">					<span class="k">break</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">up</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">					<span class="k">this</span><span class="p">.</span><span class="nx">click</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">					<span class="kd">var</span> <span class="nx">submenu</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;ul&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">subindex</span> <span class="o">=</span> <span class="nx">submenu</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">).</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">gotoSubIndex</span><span class="p">(</span><span class="nx">submenu</span><span class="p">,</span> <span class="nx">subindex</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">					<span class="k">break</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">esc</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">					<span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#escape&#39;</span><span class="p">).</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;tabindex&#39;</span><span class="p">,</span> <span class="s1">&#39;-1&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">					<span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#escape&#39;</span><span class="p">).</span><span class="nx">focus</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">			<span class="p">}</span>
-</span></span><span class="line"><span class="cl">			<span class="k">if</span> <span class="p">(</span><span class="nx">prevdef</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">				<span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">			<span class="p">}</span>
-</span></span><span class="line"><span class="cl">		<span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="mi">0</span> <span class="o">==</span> <span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nx">el</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;tabindex&#39;</span><span class="p">,</span> <span class="s1">&#39;0&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">el</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;focus&#34;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nx">currentIndex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nx">el</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;tabindex&#39;</span><span class="p">,</span> <span class="s1">&#39;-1&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">el</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;focus&#34;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nx">subIndex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">forEach</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">appsMenuItems</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="nx">i</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl"><span class="nx">el</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;aria-expanded&#39;</span><span class="p">,</span> <span class="s2">&#34;false&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="nx">el</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;click&#34;</span><span class="p">,</span>  <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s1">&#39;aria-expanded&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;false&#39;</span> <span class="o">||</span> <span class="k">this</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s1">&#39;aria-expanded&#39;</span><span class="p">)</span> <span class="o">==</span>  <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">this</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;aria-expanded&#39;</span><span class="p">,</span> <span class="s2">&#34;true&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">this</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;aria-expanded&#39;</span><span class="p">,</span> <span class="s2">&#34;false&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="nx">el</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;keydown&#34;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">switch</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">keyCode</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">right</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">left</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">tab</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">shiftKey</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">enter</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">down</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">this</span><span class="p">.</span><span class="nx">click</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">subindex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">gotoSubIndex</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;ul&#39;</span><span class="p">),</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">up</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">this</span><span class="p">.</span><span class="nx">click</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">submenu</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;ul&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">subindex</span> <span class="o">=</span> <span class="nx">submenu</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">).</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">gotoSubIndex</span><span class="p">(</span><span class="nx">submenu</span><span class="p">,</span> <span class="nx">subindex</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">esc</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#escape&#39;</span><span class="p">).</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;tabindex&#39;</span><span class="p">,</span> <span class="s1">&#39;-1&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#escape&#39;</span><span class="p">).</span><span class="nx">focus</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">prevdef</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
 </span></span><span class="line"><span class="cl"><span class="p">});</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">forEach</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">subMenuItems</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="nx">i</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">el</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;tabindex&#39;</span><span class="p">,</span> <span class="s1">&#39;-1&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">el</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;keydown&#34;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">			<span class="k">switch</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">keyCode</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">tab</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">					<span class="k">if</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">shiftKey</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">						<span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">					<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">						<span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">					<span class="p">}</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">					<span class="k">break</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">right</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">					<span class="k">break</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">left</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">					<span class="k">break</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">esc</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">					<span class="k">break</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">down</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">gotoSubIndex</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">,</span> <span class="nx">subIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">					<span class="k">break</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">up</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">gotoSubIndex</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">,</span> <span class="nx">subIndex</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">					<span class="k">break</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">enter</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">space</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">innerText</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">					<span class="k">break</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">			<span class="p">}</span>
-</span></span><span class="line"><span class="cl">			<span class="k">if</span> <span class="p">(</span><span class="nx">prevdef</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">				<span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">				<span class="nx">event</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">			<span class="p">}</span>
-</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">		<span class="p">});</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">el</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;click&#34;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">			<span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">innerHTML</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">			<span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">			<span class="nx">event</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">		<span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="nx">el</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;tabindex&#39;</span><span class="p">,</span> <span class="s1">&#39;-1&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">el</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;keydown&#34;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">switch</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">keyCode</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">tab</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">shiftKey</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">right</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">left</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">esc</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">down</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="nx">gotoSubIndex</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">,</span> <span class="nx">subIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">up</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="nx">gotoSubIndex</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">,</span> <span class="nx">subIndex</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">enter</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">space</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">innerText</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">prevdef</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">event</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="nx">el</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;click&#34;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">innerHTML</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">event</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
 </span></span><span class="line"><span class="cl"><span class="p">});</span>
 </span></span></code></pre></div>
           </section>
@@ -502,8 +494,6 @@
 	</svg>
 	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/clipboard.min.js"></script>
 <script src="/js/search.min.js"></script>
-<script src="/js/menuListe.min.js"></script>
-<script>sandwitch();</script>	
-
+<script src="/js/menuListe.min.js"></script><script>sandwitch();</script>	
 </body>
 </html>

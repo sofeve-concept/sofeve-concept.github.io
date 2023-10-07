@@ -192,16 +192,13 @@
             <h3>Liste d'onglets activables au clavier</h3>
             <div role="tablist" aria-labelledby="tablist-1" class="manual">
                 <button id="tab-1" type="button" role="tab" aria-selected="true" aria-controls="tabpanel-1">
-                    <span>Premier onglet</span>
+                    Premier<span> onglet</span>
                 </button>
                 <button id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-2">
-                    <span>Deuxième onglet</span>
+                    Deuxième<span> onglet</span>
                 </button>
                 <button id="tab-3" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-3">
-                    <span>Troisième onglet</span>
-                </button>
-                <button id="tab-4" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-4">
-                    <span>Quatrième onglet</span>
+                    Troisième<span> onglet</span>
                 </button>
             </div>
             <div id="tabpanel-1" role="tabpanel" aria-labelledby="tab-1">
@@ -239,174 +236,153 @@
                     Laboris ad culpa laboris culpa dolore nostrud laboris est. Eu ipsum laborum magna irure duis et in
                     nulla et in velit est ut.</p>
             </div>
-            <div id="tabpanel-4" role="tabpanel" aria-labelledby="tab-4" class="is-hidden">
-                <p>
-                    Quis quis ut duis voluptate cupidatat in ullamco dolor dolor dolore anim sit cupidatat esse. Velit
-                    tempor quis Lorem voluptate anim consequat cupidatat nostrud dolor culpa. Id laboris velit pariatur
-                    et quis labore incididunt adipisicing. Laboris fugiat velit esse fugiat nisi irure sit anim minim
-                    anim ipsum nostrud duis ullamco. Consectetur duis veniam tempor proident consectetur qui cupidatat
-                    sint cillum laboris nisi laboris excepteur exercitation.
-                </p>
-                <p>Sunt laboris id magna irure pariatur tempor nostrud Lorem sunt anim duis esse fugiat. Cillum sunt
-                    reprehenderit consequat tempor dolor duis dolor aliqua mollit ea. Cillum ea exercitation laborum
-                    elit ad ipsum incididunt Lorem amet eiusmod consequat sunt. Id consequat exercitation mollit aute
-                    fugiat mollit. Cupidatat sint cillum reprehenderit elit ex sint eu deserunt dolore culpa laborum.
-                </p>
-            </div>
         </div>
 
 <h2 id="extraits-de-code">Extraits de code</h2>
 <h3 id="code-html">Code HTML</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;tabs&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Liste d&#39;onglets activables au clavier<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tablist&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;tablist-1&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;manual&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tab-1&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tab&#34;</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;tabpanel-1&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Premier onglet<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tab-2&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tab&#34;</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;tabpanel-2&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Deuxième onglet<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tab-3&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tab&#34;</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;tabpanel-3&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Troisième onglet<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tab-4&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tab&#34;</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;tabpanel-4&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Quatrième onglet<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tabpanel-1&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tabpanel&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;tab-1&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                    Sunt veniam ad reprehenderit exercitation non dolore exercitation labore deserunt laboris deserunt.
-</span></span><span class="line"><span class="cl">                    Amet irure nulla eu nisi esse. Voluptate incididunt in Lorem cillum ut dolore enim qui magna. Dolore
-</span></span><span class="line"><span class="cl">                    reprehenderit enim amet eu magna duis.
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                    Aute dolore culpa minim id in est dolore officia enim adipisicing. Elit deserunt reprehenderit
-</span></span><span class="line"><span class="cl">                    dolore aute duis ex. Culpa tempor esse non nostrud fugiat nisi deserunt magna amet.
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Commodo ex id non consectetur laboris excepteur reprehenderit excepteur in velit veniam ex culpa.
-</span></span><span class="line"><span class="cl">                    Occaecat excepteur in magna tempor. Et exercitation incididunt culpa reprehenderit irure.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tabpanel-2&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tabpanel&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;tab-2&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;is-hidden&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                    Laboris esse id id consequat cillum eiusmod esse dolore. Dolor non ullamco aliqua cupidatat fugiat
-</span></span><span class="line"><span class="cl">                    non. Amet enim aliquip veniam cillum consequat reprehenderit pariatur velit magna consectetur
-</span></span><span class="line"><span class="cl">                    ullamco fugiat deserunt. Aliquip in pariatur veniam eiusmod magna laboris deserunt ea adipisicing
-</span></span><span class="line"><span class="cl">                    proident laborum. Eiusmod consequat esse occaecat mollit. Commodo quis ea aute aliquip.
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Excepteur pariatur ut velit in do occaecat consectetur adipisicing labore ex. Reprehenderit qui non
-</span></span><span class="line"><span class="cl">                    ipsum irure exercitation magna amet pariatur consectetur pariatur tempor ut ex. Sint dolore sit
-</span></span><span class="line"><span class="cl">                    dolore ut eu sit dolor irure adipisicing pariatur elit dolore aliqua adipisicing. Non veniam magna
-</span></span><span class="line"><span class="cl">                    eu irure ad non qui labore reprehenderit est. Occaecat veniam consequat velit Lorem ad aliqua
-</span></span><span class="line"><span class="cl">                    excepteur labore mollit in.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tabpanel-3&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tabpanel&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;tab-3&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;is-hidden&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                    Ad laborum est minim est anim ea nisi sit. Duis fugiat mollit labore culpa duis. Sint Lorem mollit
-</span></span><span class="line"><span class="cl">                    non ut sit reprehenderit proident cupidatat.
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Excepteur pariatur irure nulla anim laboris. Labore anim cupidatat veniam adipisicing cupidatat.
-</span></span><span class="line"><span class="cl">                    Laboris ad culpa laboris culpa dolore nostrud laboris est. Eu ipsum laborum magna irure duis et in
-</span></span><span class="line"><span class="cl">                    nulla et in velit est ut.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tabpanel-4&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tabpanel&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;tab-4&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;is-hidden&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                    Quis quis ut duis voluptate cupidatat in ullamco dolor dolor dolore anim sit cupidatat esse. Velit
-</span></span><span class="line"><span class="cl">                    tempor quis Lorem voluptate anim consequat cupidatat nostrud dolor culpa. Id laboris velit pariatur
-</span></span><span class="line"><span class="cl">                    et quis labore incididunt adipisicing. Laboris fugiat velit esse fugiat nisi irure sit anim minim
-</span></span><span class="line"><span class="cl">                    anim ipsum nostrud duis ullamco. Consectetur duis veniam tempor proident consectetur qui cupidatat
-</span></span><span class="line"><span class="cl">                    sint cillum laboris nisi laboris excepteur exercitation.
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Sunt laboris id magna irure pariatur tempor nostrud Lorem sunt anim duis esse fugiat. Cillum sunt
-</span></span><span class="line"><span class="cl">                    reprehenderit consequat tempor dolor duis dolor aliqua mollit ea. Cillum ea exercitation laborum
-</span></span><span class="line"><span class="cl">                    elit ad ipsum incididunt Lorem amet eiusmod consequat sunt. Id consequat exercitation mollit aute
-</span></span><span class="line"><span class="cl">                    fugiat mollit. Cupidatat sint cillum reprehenderit elit ex sint eu deserunt dolore culpa laborum.
-</span></span><span class="line"><span class="cl">                <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Liste d&#39;onglets activables au clavier<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tablist&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;tablist-1&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;manual&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tab-1&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tab&#34;</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;tabpanel-1&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Premier onglet<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tab-2&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tab&#34;</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;tabpanel-2&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Deuxième onglet<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tab-3&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tab&#34;</span> <span class="na">aria-selected</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;tabpanel-3&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Troisième onglet<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tabpanel-1&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tabpanel&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;tab-1&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          Sunt veniam ad reprehenderit exercitation non dolore exercitation labore deserunt laboris deserunt.
+</span></span><span class="line"><span class="cl">          Amet irure nulla eu nisi esse. Voluptate incididunt in Lorem cillum ut dolore enim qui magna. Dolore
+</span></span><span class="line"><span class="cl">          reprehenderit enim amet eu magna duis.
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          Aute dolore culpa minim id in est dolore officia enim adipisicing. Elit deserunt reprehenderit
+</span></span><span class="line"><span class="cl">          dolore aute duis ex. Culpa tempor esse non nostrud fugiat nisi deserunt magna amet.
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Commodo ex id non consectetur laboris excepteur reprehenderit excepteur in velit veniam ex culpa.
+</span></span><span class="line"><span class="cl">          Occaecat excepteur in magna tempor. Et exercitation incididunt culpa reprehenderit irure.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tabpanel-2&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tabpanel&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;tab-2&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;is-hidden&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          Laboris esse id id consequat cillum eiusmod esse dolore. Dolor non ullamco aliqua cupidatat fugiat
+</span></span><span class="line"><span class="cl">          non. Amet enim aliquip veniam cillum consequat reprehenderit pariatur velit magna consectetur
+</span></span><span class="line"><span class="cl">          ullamco fugiat deserunt. Aliquip in pariatur veniam eiusmod magna laboris deserunt ea adipisicing
+</span></span><span class="line"><span class="cl">          proident laborum. Eiusmod consequat esse occaecat mollit. Commodo quis ea aute aliquip.
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Excepteur pariatur ut velit in do occaecat consectetur adipisicing labore ex. Reprehenderit qui non
+</span></span><span class="line"><span class="cl">          ipsum irure exercitation magna amet pariatur consectetur pariatur tempor ut ex. Sint dolore sit
+</span></span><span class="line"><span class="cl">          dolore ut eu sit dolor irure adipisicing pariatur elit dolore aliqua adipisicing. Non veniam magna
+</span></span><span class="line"><span class="cl">          eu irure ad non qui labore reprehenderit est. Occaecat veniam consequat velit Lorem ad aliqua
+</span></span><span class="line"><span class="cl">          excepteur labore mollit in.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tabpanel-3&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;tabpanel&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;tab-3&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;is-hidden&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          Ad laborum est minim est anim ea nisi sit. Duis fugiat mollit labore culpa duis. Sint Lorem mollit
+</span></span><span class="line"><span class="cl">          non ut sit reprehenderit proident cupidatat.
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Excepteur pariatur irure nulla anim laboris. Labore anim cupidatat veniam adipisicing cupidatat.
+</span></span><span class="line"><span class="cl">          Laboris ad culpa laboris culpa dolore nostrud laboris est. Eu ipsum laborum magna irure duis et in
+</span></span><span class="line"><span class="cl">          nulla et in velit est ut.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h3 id="code-css">Code CSS</h3>
 <p>Pour adapter la couleur de la barre de navigation et des liens, modifier les codes couleurs dans la déclaration <code>:root</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">:</span><span class="nd">root</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--min-width</span><span class="p">:</span> <span class="mi">640</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--max-height</span><span class="p">:</span> <span class="mi">640</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--items-padding</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--text-padding</span><span class="p">:</span> <span class="mi">1</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">--min-width</span><span class="p">:</span> <span class="mi">640</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">--max-height</span><span class="p">:</span> <span class="mi">640</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">--items-padding</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">--text-padding</span><span class="p">:</span> <span class="mi">1</span><span class="kt">em</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="nv">--border-color</span><span class="p">:</span> <span class="mh">#b7b7b8</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--background-color</span><span class="p">:</span> <span class="mh">#edeff3</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--background-selected-color</span><span class="p">:</span> <span class="mh">#fbfcfe</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">--border-selected-color</span><span class="p">:</span> <span class="mh">#C83737</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">tabs</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">font-family</span><span class="p">:</span> <span class="n">Arial</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">--border-color</span><span class="p">:</span> <span class="mh">#b7b7b8</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">--background-color</span><span class="p">:</span> <span class="mh">#edeff3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">--background-selected-color</span><span class="p">:</span> <span class="mh">#fbfcfe</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">--border-selected-color</span><span class="p">:</span> <span class="mh">#320075</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;tablist&#34;</span><span class="o">]</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">min-width</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">min</span><span class="o">-</span><span class="n">width</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">min-width</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">min</span><span class="o">-</span><span class="n">width</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;tablist&#34;</span><span class="o">]</span> <span class="nt">button</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">padding</span><span class="p">:</span> <span class="mf">0.25</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;tab&#34;</span><span class="o">],</span>
 </span></span><span class="line"><span class="cl"><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;tab&#34;</span><span class="o">]</span><span class="p">:</span><span class="nd">focus</span><span class="o">,</span>
 </span></span><span class="line"><span class="cl"><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;tab&#34;</span><span class="o">]</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">z-index</span><span class="p">:</span> <span class="mi">2</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">top</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">margin-top</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">padding</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">border</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">border</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border-radius</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span> <span class="mi">5</span><span class="kt">px</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">overflow</span><span class="p">:</span> <span class="kc">visible</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">background</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">background</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">outline</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">z-index</span><span class="p">:</span> <span class="mi">2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">top</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">margin-top</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">border</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">border</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span> <span class="mi">5</span><span class="kt">px</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">overflow</span><span class="p">:</span> <span class="kc">visible</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">background</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">outline</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;tab&#34;</span><span class="o">]</span><span class="p">:</span><span class="nd">focus</span><span class="o">,</span>
 </span></span><span class="line"><span class="cl"><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;tab&#34;</span><span class="o">]</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border-top-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">border</span><span class="o">-</span><span class="n">selected</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border-bottom-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">background</span><span class="o">-</span><span class="n">selected</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">background</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">background</span><span class="o">-</span><span class="n">selected</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">box-shadow</span><span class="p">:</span> <span class="kc">inset</span> <span class="mi">0</span> <span class="mf">.25</span><span class="kt">em</span> <span class="mf">.15</span><span class="kt">em</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">border</span><span class="o">-</span><span class="n">selected</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border-top-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">border</span><span class="o">-</span><span class="n">selected</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border-bottom-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">background</span><span class="o">-</span><span class="n">selected</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">background</span><span class="o">-</span><span class="n">selected</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">box-shadow</span><span class="p">:</span> <span class="kc">inset</span> <span class="mi">0</span> <span class="mf">0.25</span><span class="kt">em</span> <span class="mf">0.15</span><span class="kt">em</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">border</span><span class="o">-</span><span class="n">selected</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;tab&#34;</span><span class="o">][</span><span class="nt">aria-selected</span><span class="o">=</span><span class="s2">&#34;true&#34;</span><span class="o">]</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">padding</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="mi">2</span><span class="kt">px</span> <span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">margin-top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border-width</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border-top-width</span><span class="p">:</span> <span class="mi">6</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border-top-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">border</span><span class="o">-</span><span class="n">selected</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border-bottom-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">background</span><span class="o">-</span><span class="n">selected</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">background</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">background</span><span class="o">-</span><span class="n">selected</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">margin-top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border-width</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border-top-width</span><span class="p">:</span> <span class="mi">6</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border-top-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">border</span><span class="o">-</span><span class="n">selected</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border-bottom-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">background</span><span class="o">-</span><span class="n">selected</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">background</span><span class="o">-</span><span class="n">selected</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">text-transform</span><span class="p">:</span> <span class="kc">uppercase</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;tab&#34;</span><span class="o">][</span><span class="nt">aria-selected</span><span class="o">=</span><span class="s2">&#34;false&#34;</span><span class="o">]</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">border</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;tab&#34;</span><span class="o">]</span> <span class="nt">span</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">margin</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">padding</span><span class="p">:</span> <span class="mi">4</span><span class="kt">px</span> <span class="mi">6</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">border</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;tabpanel&#34;</span><span class="o">]</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">padding</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="kc">text</span><span class="o">-</span><span class="n">padding</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">border</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">border-radius</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">5</span><span class="kt">px</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">background</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">background</span><span class="o">-</span><span class="n">selected</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">min-height</span><span class="p">:</span> <span class="mi">10</span><span class="kt">em</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">min-width</span><span class="p">:</span> <span class="mi">550</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">overflow</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">padding</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="kc">text</span><span class="o">-</span><span class="n">padding</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">border</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">5</span><span class="kt">px</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">background</span><span class="o">-</span><span class="n">selected</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">min-height</span><span class="p">:</span> <span class="mi">10</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">min-width</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">min</span><span class="o">-</span><span class="n">width</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">overflow</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;tabpanel&#34;</span><span class="o">]</span><span class="p">.</span><span class="nc">is-hidden</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;tabpanel&#34;</span><span class="o">]</span> <span class="nt">p</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">@</span><span class="k">media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">width</span> <span class="o">&lt;=</span><span class="nt">768px</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;tab&#34;</span><span class="o">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">font-size</span><span class="p">:</span> <span class="mf">0.9</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">@</span><span class="k">media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">width</span> <span class="o">&lt;=</span><span class="nt">576px</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="p">:</span><span class="nd">root</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">--min-width</span><span class="p">:</span> <span class="mi">500</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">@</span><span class="k">media</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">width</span> <span class="o">&lt;=</span><span class="nt">576px</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="p">:</span><span class="nd">root</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">--min-width</span><span class="p">:</span> <span class="mi">300</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;tablist&#34;</span><span class="o">]</span> <span class="nt">button</span> <span class="nt">span</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><h3 id="code-javascript">Code javascript</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl">
@@ -567,8 +543,6 @@
 	</svg>
 	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/clipboard.min.js"></script>
 <script src="/js/search.min.js"></script>
-<script src="/js/onglets.min.js"></script>
-<script>sandwitch();</script>	
-
+<script src="/js/onglets.min.js"></script><script>sandwitch();</script>	
 </body>
 </html>
