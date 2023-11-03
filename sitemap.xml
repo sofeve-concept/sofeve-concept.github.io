@@ -622,6 +622,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/accessibilite/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/motifs/accordeon/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -671,6 +677,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/ressources/sites/design-system/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/ecoconception/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
