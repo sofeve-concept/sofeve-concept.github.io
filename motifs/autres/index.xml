@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Les moins classiques on Sofève Concept</title>
+    <link>https://sofeve-concept.github.io/motifs/autres/</link>
+    <description>Recent content in Les moins classiques on Sofève Concept</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/motifs/autres/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bordure de texte</title>
+      <link>https://sofeve-concept.github.io/motifs/autres/bordure-texte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/autres/bordure-texte/</guid>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Cette technique de bordure de texte en css permet de rendre le contraste entre le texte et l&amp;rsquo;image conforme aux critères d&amp;rsquo;accessibilité.</description>
+    </item>
+    
+    <item>
+      <title>Menu latéral glissant</title>
+      <link>https://sofeve-concept.github.io/motifs/autres/menu-lateral-glissant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/autres/menu-lateral-glissant/</guid>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le menu latéral de navigation suit les mêmes règles que le menu navigation déroulant.</description>
+    </item>
+    
+    <item>
+      <title>Bannière collante</title>
+      <link>https://sofeve-concept.github.io/motifs/autres/bandeau-collant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/autres/bandeau-collant/</guid>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Les règles d&amp;rsquo;implémentation de la bannière sont celles appliquées à une zone recevant l&amp;rsquo;entête et le menu principal de la page, à savoir :</description>
+    </item>
+    
+    <item>
+      <title>Formulaire de recherche</title>
+      <link>https://sofeve-concept.github.io/motifs/autres/formulaire-recherche/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/autres/formulaire-recherche/</guid>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le formulaire de recherche sur tout le site sera identifié avec le rôle aria role=&amp;quot;search&amp;quot;.</description>
+    </item>
+    
+    <item>
+      <title>Infobulle</title>
+      <link>https://sofeve-concept.github.io/motifs/autres/infobulle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/autres/infobulle/</guid>
+      <description>Règles d’implémentation pour l’accessibilité Les infobulles (tooltip en anglais) créées nativement via l&amp;rsquo;attribut title ne sont pas accessibles au clavier.</description>
+    </item>
+    
+    <item>
+      <title>Menu déroulant `menubar`</title>
+      <link>https://sofeve-concept.github.io/motifs/autres/menu-deroulant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/autres/menu-deroulant/</guid>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;exemple proposé ici utilise uniquement des listes imbriquées ; les rôles aria suivants sont utilisés pour fournir la sémantique nécessaire d&amp;rsquo;un menu d&amp;rsquo;application : role=&amp;quot;menubar&amp;quot; : Représente une barre de menus (généralement horizontale).</description>
+    </item>
+    
+    <item>
+      <title>Retour en haut</title>
+      <link>https://sofeve-concept.github.io/motifs/autres/retour-en-haut/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/autres/retour-en-haut/</guid>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le &amp;ldquo;bouton&amp;rdquo; de retour en haut est en fait un lien travaillé en CSS.</description>
+    </item>
+    
+    <item>
+      <title>Tableau adaptatif</title>
+      <link>https://sofeve-concept.github.io/motifs/autres/tableau-responsive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/autres/tableau-responsive/</guid>
+      <description>Visuel Répartition en pourcentage des animaux selon la &#34;classification chinoise des Animaux&#34;.AnimauxConfusianistesConfusAppartenant à l’Empereur125Embaumés7545Apprivoisés524Cochons de lait8914Sirènes689Fabuleux9645Chiens en liberté7538Inclus dans la présente classification1006Qui s’agitent comme des fous3228Innombrables119Dessinés avec un pinceau très fin en poils de chameau4298Et cætera2167Qui viennent de casser la cruche462Qui de loin semblent des mouches.</description>
+    </item>
+    
+  </channel>
+</rss>

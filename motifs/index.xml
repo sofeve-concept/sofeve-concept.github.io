@@ -6,203 +6,5 @@
     <description>Recent content in Motifs de conception on Sofève Concept</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/motifs/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title> Code de base</title>
-      <link>https://sofeve-concept.github.io/motifs/code-de-base/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/code-de-base/</guid>
-      <description>Le critère 9.2 du référentiel général d’amélioration de l’acccessibilité (RGAA), rend obligatoire la présence de plusieurs balises sémantiques de région (landmark, en anglais) dans la page HTML :</description>
-    </item>
-    
-    <item>
-      <title>Bordure de texte</title>
-      <link>https://sofeve-concept.github.io/motifs/bordure-texte/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/bordure-texte/</guid>
-      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Cette technique de bordure de texte en css permet de rendre le contraste entre le texte et l&amp;rsquo;image conforme aux critères d&amp;rsquo;accessibilité.</description>
-    </item>
-    
-    <item>
-      <title>Fil d&#39;ariane</title>
-      <link>https://sofeve-concept.github.io/motifs/ariane/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/ariane/</guid>
-      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le fil d&amp;rsquo;Ariane est contenu dans un élément HTML nav possédant le rôle role=&amp;quot;navigation.</description>
-    </item>
-    
-    <item>
-      <title>Processus par étape</title>
-      <link>https://sofeve-concept.github.io/motifs/stepper/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/stepper/</guid>
-      <description>Règles d’implémentation pour l’accessibilité Le processus par étape sera balisé avec les balises &amp;lt;nav&amp;gt;...&amp;lt;/nav&amp;gt; on ne posera pas d&amp;rsquo;attribut role=&amp;quot;navigation.</description>
-    </item>
-    
-    <item>
-      <title>Menu de navigation</title>
-      <link>https://sofeve-concept.github.io/motifs/menu-de-navigation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/menu-de-navigation/</guid>
-      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;exemple présenté ici est celui d&amp;rsquo;un menu hamburger avec menu déroulant (rubriques parentes et sous-rubriques).</description>
-    </item>
-    
-    <item>
-      <title>Menu latéral glissant</title>
-      <link>https://sofeve-concept.github.io/motifs/menu-lateral-glissant/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/menu-lateral-glissant/</guid>
-      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le menu latéral de navigation suit les mêmes règles que le menu navigation déroulant.</description>
-    </item>
-    
-    <item>
-      <title>Accordéon</title>
-      <link>https://sofeve-concept.github.io/motifs/accordeon/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/accordeon/</guid>
-      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le titre de chaque en-tête de l&amp;rsquo;accordéon est contenu dans un élément button avec un attribut aria-controls qui fait référence à l&amp;rsquo;id de l&amp;rsquo;élément qu&amp;rsquo;il contrôle et un attribut aria-expanded qui prend la valeur true quand la zone que gère l&amp;rsquo;en-tête de l&amp;rsquo;accordéon est visible et false quand la zone que gère l&amp;rsquo;en-tête de l&amp;rsquo;accordéon est invisible.</description>
-    </item>
-    
-    <item>
-      <title>Bannière collante</title>
-      <link>https://sofeve-concept.github.io/motifs/bandeau-collant/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/bandeau-collant/</guid>
-      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Les règles d&amp;rsquo;implémentation de la bannière sont celles appliquées à une zone recevant l&amp;rsquo;entête et le menu principal de la page, à savoir :</description>
-    </item>
-    
-    <item>
-      <title>Carrousel</title>
-      <link>https://sofeve-concept.github.io/motifs/carrousel/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/carrousel/</guid>
-      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Ce carrousel utilise le modèle d&amp;rsquo;onglets pour fournir aux utilisateurs un moyen de sauter des diapositives dans la séquence en choisissant directement celle à afficher.</description>
-    </item>
-    
-    <item>
-      <title>Carte cliquable</title>
-      <link>https://sofeve-concept.github.io/motifs/carte-cliquable/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/carte-cliquable/</guid>
-      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Une carte cliquable est une zone délimitée par une div qui contient un titre, du texte et un lien.</description>
-    </item>
-    
-    <item>
-      <title>Étiquette de champs</title>
-      <link>https://sofeve-concept.github.io/motifs/placeholder/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/placeholder/</guid>
-      <description>Règles d’implémentation pour l’accessibilité Dans un formulaire, il est possible d&amp;rsquo;afficher un texte par défaut dans un champ via l&amp;rsquo;attribut placeholder.</description>
-    </item>
-    
-    <item>
-      <title>Fenêtre modale</title>
-      <link>https://sofeve-concept.github.io/motifs/modale/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/modale/</guid>
-      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Une fenêtre modale porte le rôle aria role=&amp;quot;dialog&amp;quot;, l&amp;rsquo;attribut aria-modal=&amp;quot;true&amp;quot; et un attribut aria-labelledby qui fait référence à l&amp;rsquo;id de l&amp;rsquo;élément contenant le titre de la boîte de dialogue.</description>
-    </item>
-    
-    <item>
-      <title>Formulaire de recherche</title>
-      <link>https://sofeve-concept.github.io/motifs/formulaire-recherche/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/formulaire-recherche/</guid>
-      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le formulaire de recherche sur tout le site sera identifié avec le rôle aria role=&amp;quot;search&amp;quot;.</description>
-    </item>
-    
-    <item>
-      <title>Infobulle</title>
-      <link>https://sofeve-concept.github.io/motifs/infobulle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/infobulle/</guid>
-      <description>Règles d’implémentation pour l’accessibilité Les infobulles (tooltip en anglais) créées nativement via l&amp;rsquo;attribut title ne sont pas accessibles au clavier.</description>
-    </item>
-    
-    <item>
-      <title>Lien d&#39;accès rapide</title>
-      <link>https://sofeve-concept.github.io/motifs/lien-acces-rapide/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/lien-acces-rapide/</guid>
-      <description>Règles d’implémentation pour l’accessibilité Dans ce motif de conception, le lien d&amp;rsquo;accès rapide, parfois appelé aussi lien d&amp;rsquo;évitement (skip link en anglais) lorsqu&amp;rsquo;il permet de sauter une zone de la page, est invisible par défaut sur la page et n&amp;rsquo;apparaît qu&amp;rsquo;à la prise de focus pour une navigation au clavier.</description>
-    </item>
-    
-    <item>
-      <title>Menu déroulant</title>
-      <link>https://sofeve-concept.github.io/motifs/menu-deroulant/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/menu-deroulant/</guid>
-      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;exemple proposé ici utilise uniquement des listes imbriquées ; les rôles aria suivants sont utilisés pour fournir la sémantique nécessaire d&amp;rsquo;un menu d&amp;rsquo;application : role=&amp;quot;menubar&amp;quot; : Représente une barre de menus (généralement horizontale).</description>
-    </item>
-    
-    <item>
-      <title>Message d&#39;alerte</title>
-      <link>https://sofeve-concept.github.io/motifs/alerte/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/alerte/</guid>
-      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;affichage d&amp;rsquo;un message d&amp;rsquo;alerte ne nécessite pas de rechargement de la page.</description>
-    </item>
-    
-    <item>
-      <title>Notification</title>
-      <link>https://sofeve-concept.github.io/motifs/statut/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/statut/</guid>
-      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;affichage d&amp;rsquo;un message de notification ne nécessite pas de rechargement de la page.</description>
-    </item>
-    
-    <item>
-      <title>Onglets</title>
-      <link>https://sofeve-concept.github.io/motifs/onglets/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/onglets/</guid>
-      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;élément qui sert de conteneur pour l&amp;rsquo;ensemble d&amp;rsquo;onglets a le rôle role=&amp;quot;tablist&amp;quot;.</description>
-    </item>
-    
-    <item>
-      <title>Panneau dépliant</title>
-      <link>https://sofeve-concept.github.io/motifs/panneau-depliant/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/panneau-depliant/</guid>
-      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le titre du panneau dépliant est contenu dans un élément button avec un attribut aria-controls qui fait référence à l&amp;rsquo;id de l&amp;rsquo;élément qu&amp;rsquo;il contrôle et un attribut aria-expanded qui prend la valeur true quand la zone de contenu est visible et false quand la zone de contenu est masquée.</description>
-    </item>
-    
-    <item>
-      <title>Retour en haut</title>
-      <link>https://sofeve-concept.github.io/motifs/retour-en-haut/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/retour-en-haut/</guid>
-      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le &amp;ldquo;bouton&amp;rdquo; de retour en haut est en fait un lien travaillé en CSS.</description>
-    </item>
-    
-    <item>
-      <title>Tableau adaptatif</title>
-      <link>https://sofeve-concept.github.io/motifs/tableau-responsive/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/motifs/tableau-responsive/</guid>
-      <description>Visuel Répartition en pourcentage des animaux selon la &#34;classification chinoise des Animaux&#34;.AnimauxConfusianistesConfusAppartenant à l’Empereur125Embaumés7545Apprivoisés524Cochons de lait8914Sirènes689Fabuleux9645Chiens en liberté7538Inclus dans la présente classification1006Qui s’agitent comme des fous3228Innombrables119Dessinés avec un pinceau très fin en poils de chameau4298Et cætera2167Qui viennent de casser la cruche462Qui de loin semblent des mouches.</description>
-    </item>
-    
   </channel>
 </rss>
