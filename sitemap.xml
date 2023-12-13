@@ -20,12 +20,6 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/outils/outils-page-web/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://sofeve-concept.github.io/motifs/bordure-texte/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -98,6 +92,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/ressources/outils/outils-page-web/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/courriel/parametrage/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -164,12 +164,6 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/outils/outils-couleurs/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/couleur/information/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -230,6 +224,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/ressources/outils/liste-de-verification/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/motifs/menu-de-navigation/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -267,6 +267,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/structure/colonnes/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/ressources/outils/outils-couleurs/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -326,12 +332,6 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/outils/synthese-vocale-nvda/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://sofeve-concept.github.io/coder/contenu/titraille/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -345,12 +345,6 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/ressources/bureautique/structure/citation/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/ressources/outils/liste-de-verification/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -387,6 +381,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-complexes/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/ressources/outils/synthese-vocale-nvda/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

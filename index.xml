@@ -35,15 +35,6 @@
     </item>
     
     <item>
-      <title>Accessibilité des pages web</title>
-      <link>https://sofeve-concept.github.io/ressources/outils/outils-page-web/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/ressources/outils/outils-page-web/</guid>
-      <description>Débogage dans le navigateur Le débogage consiste à rechercher et corriger les erreurs dans son code.</description>
-    </item>
-    
-    <item>
       <title>Bordure de texte</title>
       <link>https://sofeve-concept.github.io/motifs/bordure-texte/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -108,7 +99,7 @@ Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page H
     </item>
     
     <item>
-      <title>Image</title>
+      <title>Image illustrative</title>
       <link>https://sofeve-concept.github.io/ressources/bureautique/images/image/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -150,6 +141,15 @@ Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page H
       
       <guid>https://sofeve-concept.github.io/ressources/bureautique/finaliser/meta/</guid>
       <description>Règles Les métadonnées ou méta-informations fournissent des renseignements à propos d&amp;rsquo;autres données pour en faciliter la gestion et la compréhension du document.</description>
+    </item>
+    
+    <item>
+      <title>Outils d&#39;analyse des pages web</title>
+      <link>https://sofeve-concept.github.io/ressources/outils/outils-page-web/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/ressources/outils/outils-page-web/</guid>
+      <description>Débogage dans le navigateur Le débogage consiste à rechercher et corriger les erreurs dans son code.</description>
     </item>
     
     <item>
@@ -224,15 +224,6 @@ zones de texte (sur une seule ligne ou plusieurs lignes), liste de sélection d�
       
       <guid>https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs/</guid>
       <description>Définition du constraste et du ratio de contraste Le contraste de couleurs est la différence de luminosité entre les couleurs de premier et d&amp;rsquo;arrière-plan.</description>
-    </item>
-    
-    <item>
-      <title>Contraste de couleurs</title>
-      <link>https://sofeve-concept.github.io/ressources/outils/outils-couleurs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/ressources/outils/outils-couleurs/</guid>
-      <description>Vérifier la conformité des contrastes Colour Contrast Analyser L&amp;rsquo;outil gratuit de vérification du contraste des couleurs créé par TPGi permet de déterminer facilement le rapport de contraste de deux couleurs simplement à l&amp;rsquo;aide d&amp;rsquo;un outil pipette.</description>
     </item>
     
     <item>
@@ -327,6 +318,15 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
     </item>
     
     <item>
+      <title>Liste rapide de vérification de l&#39;accessibilité</title>
+      <link>https://sofeve-concept.github.io/ressources/outils/liste-de-verification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/ressources/outils/liste-de-verification/</guid>
+      <description>Un premier test simple Le premier test à réaliser est assez simple : mettez votre souris de côté et naviguez dans vos pages en utilisant uniquement les touches du clavier.</description>
+    </item>
+    
+    <item>
       <title>Menu de navigation</title>
       <link>https://sofeve-concept.github.io/motifs/menu-de-navigation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -378,6 +378,15 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
       
       <guid>https://sofeve-concept.github.io/ressources/bureautique/structure/colonnes/</guid>
       <description>Règles Pour présenter du texte sur plusieurs colonnes, utiliser la fonctionnalité « Colonnes » prévue à cet effet ; ne pas utiliser les tableaux.</description>
+    </item>
+    
+    <item>
+      <title>Contraste de couleurs</title>
+      <link>https://sofeve-concept.github.io/ressources/outils/outils-couleurs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/ressources/outils/outils-couleurs/</guid>
+      <description>Vérifier la conformité des contrastes Colour Contrast Analyser L&amp;rsquo;outil gratuit de vérification du contraste des couleurs créé par TPGi permet de déterminer facilement le rapport de contraste de deux couleurs simplement à l&amp;rsquo;aide d&amp;rsquo;un outil pipette.</description>
     </item>
     
     <item>
@@ -444,15 +453,6 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
     </item>
     
     <item>
-      <title>Tester avec une synthèse vocale</title>
-      <link>https://sofeve-concept.github.io/ressources/outils/synthese-vocale-nvda/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/ressources/outils/synthese-vocale-nvda/</guid>
-      <description>Logiciel de synthèse vocale Pour s&amp;rsquo;assurer de l&amp;rsquo;accessibilité numérique d&amp;rsquo;une page web, il est impératif de réaliser des tests avec un lecteur d&amp;rsquo;écran.</description>
-    </item>
-    
-    <item>
       <title>Titraille</title>
       <link>https://sofeve-concept.github.io/coder/contenu/titraille/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -477,15 +477,6 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
       
       <guid>https://sofeve-concept.github.io/ressources/bureautique/structure/citation/</guid>
       <description>Règles Lorsque des citations sont proposées dans les contenus, utiliser le style « Citations » de Libre Office.</description>
-    </item>
-    
-    <item>
-      <title>Évaluer l&#39;accessibilité de son site</title>
-      <link>https://sofeve-concept.github.io/ressources/outils/liste-de-verification/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sofeve-concept.github.io/ressources/outils/liste-de-verification/</guid>
-      <description>Un premier test simple Le premier test à réaliser est assez simple : mettez votre souris de côté et naviguez dans vos pages en utilisant uniquement les touches du clavier.</description>
     </item>
     
     <item>
@@ -522,6 +513,15 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
       
       <guid>https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-complexes/</guid>
       <description>Structure du tableau de données complexe Les tableaux de données devront respecter les règles d&amp;rsquo;accessibilité suivantes :</description>
+    </item>
+    
+    <item>
+      <title>Tester avec une synthèse vocale</title>
+      <link>https://sofeve-concept.github.io/ressources/outils/synthese-vocale-nvda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/ressources/outils/synthese-vocale-nvda/</guid>
+      <description>Logiciel de synthèse vocale Pour s&amp;rsquo;assurer de l&amp;rsquo;accessibilité numérique d&amp;rsquo;une page web, il est impératif de réaliser des tests avec un lecteur d&amp;rsquo;écran.</description>
     </item>
     
     <item>
