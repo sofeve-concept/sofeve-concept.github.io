@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Motifs pour formulaires on Sofève Concept</title>
+    <link>https://sofeve-concept.github.io/motifs/formulaires/</link>
+    <description>Recent content in Motifs pour formulaires on Sofève Concept</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/motifs/formulaires/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Formulaire de recherche</title>
+      <link>https://sofeve-concept.github.io/motifs/formulaires/formulaire-recherche/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/formulaires/formulaire-recherche/</guid>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le formulaire de recherche sur tout le site sera identifié avec le rôle aria role=&amp;quot;search&amp;quot;.</description>
+    </item>
+    
+    <item>
+      <title>Étiquette de champs</title>
+      <link>https://sofeve-concept.github.io/motifs/formulaires/placeholder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/formulaires/placeholder/</guid>
+      <description>Règles d’implémentation pour l’accessibilité Dans un formulaire, il est possible d&amp;rsquo;afficher un texte par défaut dans un champ via l&amp;rsquo;attribut placeholder.</description>
+    </item>
+    
+    <item>
+      <title>Processus par étape</title>
+      <link>https://sofeve-concept.github.io/motifs/formulaires/stepper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/formulaires/stepper/</guid>
+      <description>Règles d’implémentation pour l’accessibilité Le processus par étape sera balisé avec les balises &amp;lt;nav&amp;gt;...&amp;lt;/nav&amp;gt; on ne posera pas d&amp;rsquo;attribut role=&amp;quot;navigation.</description>
+    </item>
+    
+  </channel>
+</rss>
