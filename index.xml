@@ -525,6 +525,15 @@ Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</
     </item>
     
     <item>
+      <title>Menu multi-déroulant horizontal</title>
+      <link>https://sofeve-concept.github.io/motifs/basiques/menu-navigation-double/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/basiques/menu-navigation-double/</guid>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;exemple présenté ici est celui d&amp;rsquo;un menu avec menu déroulant à double niveau (rubriques parentes, sous-rubriques et sous-sous-rubriques).</description>
+    </item>
+    
+    <item>
       <title>Tableaux complexes</title>
       <link>https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-complexes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

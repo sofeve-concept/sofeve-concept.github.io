@@ -386,6 +386,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/motifs/basiques/menu-navigation-double/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/navigation/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu horizontal multi-niveaux</title>
+    <style>
+        :root {
+            --FONT-FAMILY: Arial, Helvetica, sans-serif;
+
+            --NAVBAR-height: 3;
+            --icon-size: 1.5em;
+
+            --WHITE-color: #fefefe;
+            --WHITE-A-color: #ececec;
+            --WHITE-B-color: #c9c9c9;
+            --BLACK-color: #111111;
+            --GRAY-DEEP-color: #1d1d1d;
+            --GRAY-DARK-color: #3a3a3a;
+            --GRAY-MEDIUM-color: #454545;
+            --GRAY-LIGHT-color: #545454;
+            --GRAY-SWEET-color: #7c7c7c;
+            --GOLD-color: #ffd700;
+
+            --SHADOW-BOX: 0 0 1em gray;
+        }
+
+        body {
+            font-family: var(--FONT-FAMILY);
+            font-size: 1em;
+        }
+        main {
+        min-height: 50vh;
+    }
+        /** navRub */
+        #navRub {
+            background-color: var(--GRAY-DARK-color);
+            height: var(--NAVBAR-height)em;
+        }
+
+        /** Navbar - Barre de navigation horizontale principale et menu déroulant */
+        .navbar {
+            flex: 0 0 100%;
+            margin: 0;
+            padding: 0;
+            color: var(--WHITE-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+
+        .navbar ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            height: var(--NAVBAR-height)em;
+        }
+
+        .navbar ul button[aria-expanded="false"]+ul {
+            display: none;
+        }
+
+        .navbar ul li {
+            border-right: 1px solid var(--WHITE-color);
+           
+        }
+
+        .navbar ul li a,
+        .navbar ul li button {
+            margin: 0;
+            padding: 0 1.5em;
+            font-size: 1em;
+            display: block;
+            height: var(--NAVBAR-height)em;
+            line-height: var(--NAVBAR-height);
+            text-align: left;
+            color: var(--WHITE-color);
+            border-bottom: .25em solid transparent;
+        }
+
+        .navbar ul li a {
+            padding-top: 1px;
+            text-decoration: none;
+        }
+
+        .navbar ul li button {
+            padding-bottom: 1px;
+            padding-right: calc(var(--icon-size) *1.5);
+            border:0;
+            border-bottom: .25em solid transparent;
+            background-color: transparent;
+            cursor: pointer; 
+            position: relative; 
+        }
+
+        .navbar ul li button::after {
+            position: absolute;
+            top: .75em;
+            right: .25em;
+            content: "";
+            background-color: currentColor;
+            display: inline-block;
+            height: var(--icon-size);
+            width: var(--icon-size);
+            mask-size: 100% 100%;
+            vertical-align: middle;
+            -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0ibTEyIDE2LTYtNmgxMmwtNiA2WiIvPjwvc3ZnPg==);
+            mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0ibTEyIDE2LTYtNmgxMmwtNiA2WiIvPjwvc3ZnPg==);
+        }
+
+        .navbar ul li a[aria-current="page"],
+        .navbar ul li button[aria-current="true"] {
+            background: var(--GRAY-LIGHT-color);
+            border-bottom-color: var(--GOLD-color);
+            color: var(--GOLD-color);
+            text-transform: uppercase;
+        }
+
+        .navbar ul li a:hover,
+        .navbar ul li a:focus,
+        .navbar ul li button:hover,
+        .navbar ul li button:focus,
+        .navbar ul li button[aria-expanded="true"] {
+            background: var(--GRAY-LIGHT-color);
+            text-decoration: underline;
+            outline: var(--WHITE-color);
+        }
+
+        .navbar ul li button[aria-expanded="true"]::after {
+            transform: rotate(-180deg);
+        }
+
+        /** style pour les sous-menus */
+        .navbar ul button[aria-expanded="true"]+ul {
+            display: block;
+            box-shadow: var(--SHADOW-BOX);
+            background-color: var(--WHITE-color);
+            position: absolute;
+            margin: 1px 0 0 0;
+            z-index: 1030;
+            padding: 0;
+            background-color: var(--WHITE-A-color);
+        }
+
+        .navbar ul button[aria-expanded="true"]+ul li {
+            padding: 0;
+        }
+
+        .navbar ul button[aria-expanded="true"]+ul li:not(:last-of-type) {
+            border-bottom: 1px dotted var(--GRAY-MEDIUM-color);
+        }
+
+        .navbar ul button[aria-expanded="true"]+ul li a[aria-current="page"],
+        .navbar ul button[aria-expanded="true"]+ul li a {
+            color: var(--GRAY-MEDIUM-color);
+            background: transparent;
+            padding: 0 1rem ;
+        }
+
+        .navbar ul button[aria-expanded="true"]+ul li a:hover,
+        .navbar ul button[aria-expanded="true"]+ul li a:focus {
+            text-decoration: underline;
+            background-color: var(--WHITE-B-color);
+            color: var(--GRAY-DARK-color);
+            outline: 0;
+        }
+
+        .navbar ul button[aria-expanded="true"]+ul li a[aria-current="page"] {
+            font-weight: bold;
+            color: var(--GRAY-DARK-color);
+        }
+
+       
+
+        .navbar ul button[aria-expanded="true"]+ul li a[aria-current="page"]:first-of-type a {
+            padding-top: 0.75em;
+        }
+
+        /** Sous-sous-menu */
+        .navbar ul button[aria-expanded="true"]+ul button {
+            color: var(--GRAY-MEDIUM-color);
+            font-size: 1em;
+            padding: 0 1em;
+            width: 100%;
+        }
+
+        .navbar ul button[aria-expanded="true"]+ul button::after {
+            transform: rotate(-90deg);
+           
+        }
+
+        .navbar ul button[aria-expanded="true"]+ul button:hover,
+        .navbar ul button[aria-expanded="true"]+ul button:focus,
+        .navbar ul button[aria-expanded="true"]+ul button[aria-expanded="true"] {
+            color: var(--GRAY-DARK-color);
+            background-color: var(--WHITE-B-color);
+            border-bottom-color: var(--GRAY-SWEET-color) ;
+        }
+
+        .navbar ul button[aria-expanded="true"]+ul button[aria-expanded="true"] {
+            position: relative;
+        }
+
+        .navbar ul button[aria-expanded="true"]+ul button[aria-expanded="true"]+ul {
+            position: absolute;
+            left: 101%;
+            margin-top: -2.5em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header role="navigation" id="navRub">
+        <nav role="navigation" class="navbar" aria-label="Navigation dans la rubrique Campagne Esane">
+            <ul id="menu">
+                <li class="accueil">
+                    <a href="" aria-current="page">Accueil</a>
+                </li>
+                <li class="item1">
+                    <button aria-haspopup="true" aria-expanded="false" aria-controls="item1">Partie 1</button>
+                    <ul id="item1">
+                        <li><a href="">Aperçu</a></li>
+                        <li><a href="">Lorem ipsum</a></li>
+                        <li><a href="">Sic amet</a></li>
+                        <li><a href="">Ea laboris aliquip</a></li>
+                        <li><a href="">Minim commodo</a></li>
+                    </ul>
+                </li>
+                <li class="item2">
+                    <button aria-haspopup="true" aria-expanded="false"  aria-controls="item2" id="parent2">Partie
+                        2</button>
+                    <ul id="item2">
+                        <li><a href="">Aperçu</a></li>
+                        <li>
+                            <button data-enfant="parent2" aria-haspopup="true" aria-expanded="false" aria-controls="item21">Végétaux</button>
+                            <ul id="item21">
+                                <li><a href="">Fleurs</a></li>
+                                <li><a href="">Arbres</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Ea laboris aliquip</a></li>
+                        <li><button data-enfant="parent2" aria-haspopup="true" aria-expanded="false"
+                                aria-controls="item22">Animaux</button>
+                            <ul id="item22">
+                                <li><a href="">Girafe</a></li>
+                                <li><a href="">Koala</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item3">
+                    <button aria-haspopup="true" aria-expanded="false" aria-controls="item3" id="parent3">Partie
+                        3</button>
+                    <ul id="item3">
+                        <li><a href="">Aperçu</a></li>
+                        <li><a href="">Duis ad culpa laboris</a></li>
+                        <li><a href="">Tempor eiusmod</a></li>
+                        <li>
+                            <button data-enfant="parent3" aria-haspopup="true" aria-expanded="false"
+                                aria-controls="item33">Fruits</button>
+                            <ul id="item33">
+                                <li><a href="">Ananas</a></li>
+                                <li><a href="">Banane</a></li>
+                                <li><a href="">Clémentine</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item4"><a href="">Partie unique</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+<h1>Menu horizontal multi-niveaux</h1>
+    </main>
+
+    <footer role="contentinfo" id="PiedDePage">
+
+
+        <script>
+            function menuDynamique() {
+                const theButtons = document.querySelectorAll(".navbar button[aria-expanded]");
+                const theButtonsEnfant = document.querySelectorAll(".navbar button[data-enfant]");
+
+                for (i = 0; i < theButtons.length; i++) {
+                    // apparition/disparition du sous-menu au clic
+                    theButtons[i].addEventListener("click", function (evt) {
+                        const thisButton = evt.target;
+                        const thisButtonEnfant = thisButton.getAttribute(["data-enfant"]);
+
+                        if (!thisButtonEnfant) {
+                            for (j = 0; j < theButtons.length; j++) {
+                                if (thisButton !== theButtons[j]) theButtons[j].setAttribute("aria-expanded", "false");
+                            }
+                        } else {
+                            for (j = 0; j < theButtonsEnfant.length; j++) {
+                                if (thisButtonEnfant !== theButtonsEnfant[j].getAttribute) theButtonsEnfant[j].setAttribute("aria-expanded", "false");
+                            }
+                        }
+
+                        const stateButton = thisButton.getAttribute("aria-expanded") === "false" ? true : false;
+                        thisButton.setAttribute("aria-expanded", stateButton);
+                    });
+
+                    //disparition des sous-menu quand changement de focus sur bouton
+                    theButtons[i].addEventListener("focus", function (evt) {
+                        const thisButton = evt.target;
+                        const thisButtonEnfant = thisButton.getAttribute(["data-enfant"]);
+
+                        if (!thisButtonEnfant) {
+                            for (j = 0; j < theButtons.length; j++) {
+                                if (thisButton !== theButtons[j]) theButtons[j].setAttribute("aria-expanded", "false");
+                            }
+                        } else {
+                            for (j = 0; j < theButtonsEnfant.length; j++) {
+                                if (thisButtonEnfant !== theButtonsEnfant[j].getAttribute) theButtonsEnfant[j].setAttribute("aria-expanded", "false");
+                            }
+                        }
+                    });
+                }
+
+                //disparition du sous-sous-menu au focus
+                const theLinks = document.querySelectorAll("button:not([data-enfant]) ~ ul li a");
+                for (i = 0; i < theLinks.length; i++) {
+                    theLinks[i].addEventListener("focus", function (e) {
+                        const thisLink = e.target;
+                        const thisButtonparent = thisLink.parentElement.parentElement.previousElementSibling;
+                        for (j = 0; j < theButtonsEnfant.length; j++) {
+                            theButtonsEnfant[j].setAttribute("aria-expanded", "false");
+                        }
+                        thisButtonparent.setAttribute("aria-expanded", "true");
+                    });
+                }
+
+                // disparition du sous-menu et focus sur le bouton correspondant au sous-menu
+                document.addEventListener("keydown", (evt) => {
+                    let isEchap = false;
+                    if ("key" in evt) {
+                        isEchap = evt.key === "Escape" || evt.key === "Esc";
+                    } else {
+                        isEchap = evt.keyCode === 27;
+                    }
+
+                    if (isEchap) {
+                        const thisEvt = evt.target;
+                        const thisButtonParent = thisEvt.parentElement.parentElement.previousElementSibling;
+                        if (thisButtonParent.getAttribute(["data-enfant"])) {
+                            thisButtonParent.setAttribute("aria-expanded", "false");
+                            thisButtonParent.focus();
+                        } else {
+                            for (j = 0; j < theButtons.length; j++) {
+                                if (theButtons[j].getAttribute("aria-expanded") === "true") {
+                                    theButtons[j].setAttribute("aria-expanded", "false");
+                                    theButtons[j].focus();
+                                }
+                            }
+                        }
+                    }
+                });
+
+                // fermeture des tous les sous-menus quand clic dans body
+
+                document.body.addEventListener("click", (evt) => {
+                    if (!evt.target.matches(".navbar button[aria-expanded]")) {
+                        for (i = 0; i < theButtons.length; i++) {
+                            theButtons[i].setAttribute("aria-expanded", "false");
+                        }
+                    }
+                });
+
+                // fermeture des tous les sous-menus quand focus dans lien ou bouton main et autre élément focusable
+                const focusableElements = document.querySelectorAll('main a[href], main button, input, textarea, select, details, [tabindex]:not([tabindex="-1"])');
+                for (i = 0; i < focusableElements.length; i++) {
+                    focusableElements[i].addEventListener("focus", function () {
+                        for (j = 0; j < theButtons.length; j++) {
+                            if (theButtons[j].getAttribute("aria-expanded") === "true") {
+                                theButtons[j].setAttribute("aria-expanded", "false");
+                            }
+                        }
+                    });
+                }
+            }
+            menuDynamique();
+        </script>
+
+    </footer>
+</body>
+
+</html>
