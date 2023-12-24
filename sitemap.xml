@@ -880,6 +880,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/motifs/dynamiques/tabledesmatieres/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/motifs/purcss/tableau-responsive/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -940,6 +940,15 @@ la mention de la présence de champs obligatoires dans le formulaire sera signal
     </item>
     
     <item>
+      <title>Table des matières</title>
+      <link>https://sofeve-concept.github.io/motifs/dynamiques/tabledesmatieres/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/dynamiques/tabledesmatieres/</guid>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité La table des matières est un système de navigation. Par conséquent, elle sera implémentée à l&amp;rsquo;aide de l&amp;rsquo;élément HTML nav.</description>
+    </item>
+    
+    <item>
       <title>Tableau adaptatif</title>
       <link>https://sofeve-concept.github.io/motifs/purcss/tableau-responsive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

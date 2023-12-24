@@ -69,5 +69,14 @@
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le titre du panneau dépliant est contenu dans un élément button avec un attribut aria-controls qui fait référence à l&amp;rsquo;id de l&amp;rsquo;élément qu&amp;rsquo;il contrôle et un attribut aria-expanded qui prend la valeur true quand la zone de contenu est visible et false quand la zone de contenu est masquée.</description>
     </item>
     
+    <item>
+      <title>Table des matières</title>
+      <link>https://sofeve-concept.github.io/motifs/dynamiques/tabledesmatieres/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/dynamiques/tabledesmatieres/</guid>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité La table des matières est un système de navigation. Par conséquent, elle sera implémentée à l&amp;rsquo;aide de l&amp;rsquo;élément HTML nav.</description>
+    </item>
+    
   </channel>
 </rss>

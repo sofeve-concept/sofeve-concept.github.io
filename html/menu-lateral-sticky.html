@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Table des matières latérale collante avec indication de rubrique active</title>
+     <style>
+:root {
+     --FONT-FAMILY : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     --WHITE-color: #fefefe;
+     --HEADER-BACKGROUND-color: #333;
+     --NAVTOC-BACKGROUND-color: #4E545A;
+     --NAVTOC-color: #ccc;
+     --NAVTOC-ACTIVE-BACKGROUND-color: #3F4348;
+     --NAVTOC-ACTIVE-color: gold;
+}
+/** Généralités **/
+
+* {
+     margin: 0;
+     padding: 0;
+}
+
+*,
+*::before,
+*::after {
+     box-sizing: border-box;
+}
+
+html,
+body {
+     background: var(--WHITE-color);
+}
+html {
+     scroll-behavior: smooth;
+}
+body {
+     font-family: var(--FONT-FAMILY);
+     font-size: 1em;
+     line-height: 1.5;
+}
+ul,
+ol {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+
+h1 {
+     font-weight: 300;
+}
+p+section {
+margin-top: 3em;}
+/** page layout **/
+header {
+     margin: 0;
+     height: 7em;
+     background-color: var(--HEADER-BACKGROUND-color);
+     color: var(--WHITE-color);
+     text-align: center;
+     padding: 2em;
+     margin-bottom: 2em;
+}
+
+main {
+     display: grid;
+     grid-template-columns: 1fr 15em;
+     max-width: 100em;
+     width: 90%;
+     margin: 0 auto;
+}
+
+/** Pour la démo - à supprimer lors de la mise en ligne du site **/
+section,
+article {
+     padding-bottom: 50rem;
+     margin-bottom: 3em;
+}
+
+/* Navigation collante*/
+.toc {
+     position: sticky;
+     top: 2rem;
+     align-self: start;
+     padding-left: 0;
+     background-color: var(--NAVTOC-BACKGROUND-color);
+}
+
+.toc li {
+     padding: .5em ;
+     border-left: .25em solid transparent;
+     border-bottom: 1px dotted var(--NAVTOC-color);
+}
+.toc li:last-of-type {
+     border-bottom: 0;
+}
+.toc li.active {
+     border-left: .25em solid var(--NAVTOC-ACTIVE-color);
+     background-color: var(--NAVTOC-ACTIVE-BACKGROUND-color);
+}
+.toc li li.active {
+     border-left-color: transparent;
+}
+.toc li.active>a {
+     color: var(--NAVTOC-ACTIVE-color);
+     font-weight: 500;
+}
+.toc a {
+     text-decoration: none;
+     display: block;
+     padding: .125rem 0;
+     color: var(--NAVTOC-color);
+     transition: all 50ms ease-in-out;
+}
+.toc a:hover,
+.toc a:focus {
+     color: var(--NAVTOC-ACTIVE-color);
+}
+     </style>
+</head>
+
+<body>
+     <header>
+          <h1>Table des matières latérale collante avec indication de rubrique active</h1>
+     </header>
+
+     <main>
+          <div>
+               <p>La table des matières est implémentée avec l'élément HTML <code>nav</code> et le lien «&nbsp;actif&nbsp;» possède l'attribut <code>aria-current="location"</code>
+               </p>
+               <section id="introduction">
+                    <h2>Introduction</h2>
+                    <p>…</p>
+               </section>
+               <section id="partie-1">
+                    <h2>Partie 1</h2>
+                    <p>…</p>
+               </section>
+               <section id="partie-2">
+                    <h2>Partie 2</h2>
+                    <p>…</p>
+               </section>
+               <section id="partie-3">
+                    <h2>Partie 3</h2>
+                    <section id="partie-3-1">
+                         <h3>Sous partie 3.1</h3>
+                         <p>…</p>
+                    </section>
+                    <section id="partie-3-2">
+                         <h3>Sous partie 3.2</h3>
+                         <p>…</p>
+                    </section>
+                    <section id="partie-3-3">
+                         <h3>Sous partie 3.3</h3>
+                         <p>…</p>
+                    </section>
+
+               </section>
+               <section id="partie-4">
+                    <h2>Partie 4</h2>
+                    <p>…</p>
+               </section>
+               <section id="partie-5">
+                    <h2>Partie 5</h2>
+                    <p>…</p>
+               </section>
+               <section id="partie-6">
+                    <h2>Partie 6</h2>
+                    <p>…</p>
+               </section>
+          </div>
+          <nav class="toc">
+               <ol>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#partie-1">Partie 1</a></li>
+                    <li><a href="#partie-2">Partie 2</a></li>
+                    <li><a href="#partie-3">Partie 3</a>
+                         <ul>
+                              <li class=""><a href="#partie-3-1">Sous partie 3.1</a></li>
+                              <li class=""><a href="#partie-3-2">Sous partie 3.2</a></li>
+                              <li class=""><a href="#partie-3-3">Sous partie 3.3</a></li>
+                         </ul>
+                    </li>
+                    <li class=""><a href="#partie-4">Partie 4</a></li>
+                    <li class=""><a href="#partie-5">Partie 5</a></li>
+                    <li class=""><a href="#partie-6">Partie 6</a></li>
+               </ol>
+          </nav>
+     </main>
+
+
+
+     <footer>
+          <p>Cet exemple trouve sa source dans l'article de CSS-Tricks <a href="https://css-tricks.com/sticky-table-of-contents-with-scrolling-active-states/" lang="en">Sticky Table of Contents with Scrolling Active States</a></p>
+          <script>
+
+
+               window.addEventListener('DOMContentLoaded', () => {
+                    const observer = new IntersectionObserver(entries => {
+                         entries.forEach(entry => {
+                              const id = entry.target.getAttribute('id');
+                              if (entry.intersectionRatio > 0) {
+                                   document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
+                                   document.querySelector(`nav li a[href="#${id}"]`).setAttribute('aria-current', 'location');
+                              } else {
+                                   document.querySelector(`nav li a[href="#${id}"]`).parentElement.removeAttribute('class');
+                                   document.querySelector(`nav li a[href="#${id}"]`).removeAttribute('aria-current');
+                              }
+                         });
+                    });
+
+                    // Repère les sections avec un `id`
+                    document.querySelectorAll('section[id]').forEach((section) => {
+                         observer.observe(section);
+                    });
+               });
+
+
+          </script>
+     </footer>
+</body>
+
+</html>
