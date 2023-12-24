@@ -3,10 +3,10 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Motifs pour formulaires - Motifs de conception - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Message de succès - Motifs pour formulaires - Motifs de conception - Sofève Concept</title>
 	
 	<meta name="theme-color" content="#FFFFFF" />
-	<meta name="description" content="Les extraits présentés dans cette rubrique servent pour créer des composants web accessibles pour les formulaires : simulation de « placeholder », processus par étapes en cas de découpage du formulaire, spécificité du formulaire de recherche dans tout le site. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	<meta name="description" content="Lorsque la soumission du formulaire s&#39;est bien passée, une bonne pratique consiste à informer l&#39;utilisateur du bon déroulement de la procédure. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -63,7 +63,7 @@
 				   <ul id="motifs"><li><a href="/motifs/">Aperçu</a></li>
               			<li><a href="/motifs/basiques/">Motifs de base</a></li>
               			<li><a href="/motifs/dynamiques/">Motifs dynamiques</a></li>
-              			<li><a href="/motifs/formulaires/" aria-current="page">Motifs pour formulaire</a></li>
+              			<li><a href="/motifs/formulaires/">Motifs pour formulaire</a></li>
               			<li><a href="/motifs/purcss/"> Motifs en pur CSS</a></li>
               			</ul>
 			    </li>	
@@ -114,13 +114,13 @@
 		<li><a href="/motifs">Motifs de conception - Aperçu</a></li><li><a href="https://sofeve-concept.github.io/motifs/basiques/">Motifs de base</a></li>
 		<li><a href="https://sofeve-concept.github.io/motifs/dynamiques/">Motifs dynamiques</a></li>
 		<li><a href="https://sofeve-concept.github.io/motifs/purcss/">Motifs en pur CSS</a></li>
-		<li><a href="https://sofeve-concept.github.io/motifs/formulaires/" aria-current="page" >Motifs pour formulaires</a>
+		<li><a href="https://sofeve-concept.github.io/motifs/formulaires/" aria-current="true" >Motifs pour formulaires</a>
 			
 			<ul><li><a href="https://sofeve-concept.github.io/motifs/formulaires/formulaire-recherche/">Formulaire de recherche</a></li>
 				<li><a href="https://sofeve-concept.github.io/motifs/formulaires/placeholder/">Étiquette de champs</a></li>
 				<li><a href="https://sofeve-concept.github.io/motifs/formulaires/stepper/">Processus par étape</a></li>
 				<li><a href="https://sofeve-concept.github.io/motifs/formulaires/message-erreur/">Message d&#39;erreur</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/formulaires/message-succes/">Message de succès</a></li>
+				<li><a href="https://sofeve-concept.github.io/motifs/formulaires/message-succes/" aria-current="page" >Message de succès</a></li>
 				</ul>
 			</li>
 		</ul>
@@ -135,7 +135,9 @@
   
   <li><a href="/motifs/">Motifs de conception</a></li>
   
-  <li aria-current="page" tabindex="-1">Motifs pour formulaires</li>
+  <li><a href="/motifs/formulaires/">Motifs pour formulaires</a></li>
+  
+  <li aria-current="page" tabindex="-1">Message de succès</li>
   </ol>
 </nav>
 <div>
@@ -146,103 +148,83 @@
 </div>
 </div>
      <section class="rubCode">
-		<h1 id="contenu">Motifs pour formulaires</h1>
-	<p class="intro">Les extraits présentés dans cette rubrique servent pour créer des composants web accessibles pour les formulaires : simulation de « placeholder », processus par étapes en cas de découpage du formulaire, spécificité du formulaire de recherche dans tout le site.</p>
-	<div class="flex justify-content-start forCard">
-		
-		<div class="item-33 ">
-		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/motifs/formulaires/formulaire-recherche/">Formulaire de recherche</a></h2>
-			<div class="flex flex-column align-items-strech h-100">
-			<p >Le formulaire de recherche est un système de navigation qui permet à l&#39;utilisateur d’accéder rapidement à un contenu du site en utilisant un mot clé ou une expression.</p>
-			
-			<ul class="reference">
-				
-				<li>HTML</li>
-				
-				<li>CSS</li>
-				
-			</ul>
-			
-			</div>
-	</div>
+          <h1 id="contenu">Message de succès</h1>
+               <p>Lorsque la soumission du formulaire s&#39;est bien passée, une bonne pratique consiste à informer l&#39;utilisateur du bon déroulement de la procédure.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier">
+    Table des matières
+</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</a></li>
+    <li><a href="#visuel">Visuel</a></li>
+    <li><a href="#extraits-de-code">Extraits de code</a>
+      <ul>
+        <li><a href="#code-html">Code HTML</a></li>
+        <li><a href="#code-css">Code CSS</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 </div>
-		
-		<div class="item-33 ">
-		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/motifs/formulaires/placeholder/">Étiquette de champs</a></h2>
-			<div class="flex flex-column align-items-strech h-100">
-			<p >Étiquette de champs simulant le visuel du texte affiché par défaut dans un champ de formulaire.</p>
-			
-			<ul class="reference">
-				
-				<li>HTML</li>
-				
-				<li>CSS</li>
-				
-				<li>JS</li>
-				
-			</ul>
-			
-			</div>
-	</div>
+<h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
+<ul>
+<li>Le message de succès est une zone définit par l&rsquo;élément HTML <code>div</code> et porte le rôle aria <code>role=&quot;status&quot;</code>.</li>
+<li>La zone de notification est inplémentée vide dans le code HTML et ne sera peuplée de contenu qu&rsquo;en cas de besoin.</li>
+<li>Il est possible de spécifier la façon dont le logiciel de synthèse vocale restitura l&rsquo;information quand la zone sera peuplée d&rsquo;informations via les attributs aria :
+<ul>
+<li><code>aria-live</code> : permet d&rsquo;indiquer à quel moment le logiciel de synthèse vocale va restituer l&rsquo;information. Par défaut (donc inutile de le spécifier) la valeur est <code>assertive</code>. Les valeurs possibles sont :
+<ul>
+<li><code>aria-live=&quot;assertive&quot;</code> : indique aux technologies d&rsquo;assistance d&rsquo;interrompre d&rsquo;autres processus pour fournir aux utilisateurs une notification immédiate des modifications pertinentes du conteneur d&rsquo;alerte.</li>
+<li><code>aria-live=&quot;polite&quot;</code> : indique aux technologies d&rsquo;assistance que le contenu de la zone d&rsquo;alerte doivent être vocalisée à la prochaine opportunité, comme à la fin de la phrase en cours ou lorsque l&rsquo;utilisateur interrompt sa saisie.</li>
+<li><code>aria-live=&quot;off&quot;</code> : indique aux technologies d&rsquo;assistance que le contenu de la zone d&rsquo;alerte ne doit pas être vocalisé sauf si l&rsquo;utilisateur se positionne sur cette zone.</li>
+</ul>
+</li>
+<li><code>aria-atomic</code> : permet d&rsquo;indiquer si la totalité de la zone d&rsquo;alerte doit être lue ou seulement la partie modifiée. Par défaut (donc inutile de le spécifier) la valeur est <code>false</code>. Les valeurs possibles sont :
+<ul>
+<li><code>aria-atomic=&quot;true&quot;</code> : indique aux technologies d&rsquo;assistance que la totalité de la zone d&rsquo;alerte doit être lue.</li>
+<li><code>aria-atomic=&quot;false&quot;</code> : indique aux technologies d&rsquo;assistance de ne vocaliser que la partie modifée de la zone d&rsquo;alerte.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Le message de succès ne doit pas disparaître automatiquement ; seule une action de l&rsquo;utilisateur peut la faire disparaître (bouton de fermeture, appel à une autre page&hellip;).</li>
+</ul>
+<h2 id="visuel">Visuel</h2>
+
+<div role="status" class="exempleSuccess">
+<p>Succès<p>
+<p>Vos informations ont bien été prises en compte.</p>
 </div>
-		
-		<div class="item-33 ">
-		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/motifs/formulaires/stepper/">Processus par étape</a></h2>
-			<div class="flex flex-column align-items-strech h-100">
-			<p >Un processus par étape affiche la progression d&#39;une séquence en la divisant en plusieurs étapes logiques et numérotées comme lors d&#39;un processus d&#39;achat.</p>
-			
-			<ul class="reference">
-				
-				<li>HTML</li>
-				
-				<li>CSS</li>
-				
-			</ul>
-			
-			</div>
-	</div>
-</div>
-		
-		<div class="item-33 ">
-		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/motifs/formulaires/message-erreur/">Message d&#39;erreur</a></h2>
-			<div class="flex flex-column align-items-strech h-100">
-			<p >Un message d&#39;erreur doit apparaître au niveau de chaque champ de formulaire en erreur et proposer des suggestions de coorection. Dans le cas où plusieurs champs sont en erreur, on pourra implémenter au début du formulaire un message global pour signaler que plusieurs champs sont en erreur.</p>
-			
-			<ul class="reference">
-				
-				<li>HTML</li>
-				
-				<li>CSS</li>
-				
-			</ul>
-			
-			</div>
-	</div>
-</div>
-		
-		<div class="item-33 ">
-		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/motifs/formulaires/message-succes/">Message de succès</a></h2>
-			<div class="flex flex-column align-items-strech h-100">
-			<p >Lorsque la soumission du formulaire s&#39;est bien passée, une bonne pratique consiste à informer l&#39;utilisateur du bon déroulement de la procédure.</p>
-			
-			<ul class="reference">
-				
-				<li>HTML</li>
-				
-				<li>CSS</li>
-				
-			</ul>
-			
-			</div>
-	</div>
-</div>
-		
-	</div>
+
+<h2 id="extraits-de-code">Extraits de code</h2>
+<h3 id="code-html">Code HTML</h3>
+<p>_N.B. : On pourrait aussi implémenter un élément de titraille dans l&rsquo;élément <code>div</code> (à la place du premier <code>p</code>) pour struturer sa page.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;status&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Succès<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Vos informations ont bien été prises en compte.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h3 id="code-css">Code CSS</h3>
+<p>Pour adapter les couleurs, modifier les codes couleurs dans la déclaration <code>:root</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/** Statut **/</span>
+</span></span><span class="line"><span class="cl"><span class="p">:</span><span class="nd">root</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">--TEXT-color</span><span class="p">:</span> <span class="mh">#015c15</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">--BACKGROUND-color</span><span class="p">:</span> <span class="mh">#D9F7DB</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> <span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;status&#34;</span><span class="o">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="k">margin-top</span><span class="p">:</span> <span class="mf">.5</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="k">padding</span><span class="p">:</span> <span class="mf">.5</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="k">border</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">TEXT</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">   <span class="k">border-radius</span><span class="p">:</span> <span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="k">background</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">BACKGROUND</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">   <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">TEXT</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;status&#34;</span><span class="o">]</span> <span class="nt">p</span><span class="p">:</span><span class="nd">first-child</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">font-size</span><span class="p">:</span> <span class="mf">1.5</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>
      </section>
 </main>
 </div>
@@ -286,6 +268,7 @@
 	    <path
 		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
 	</svg>
-	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/search.min.js"></script>
+	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/clipboard.min.js"></script>
+<script src="/js/search.min.js"></script>
 </body>
 </html>

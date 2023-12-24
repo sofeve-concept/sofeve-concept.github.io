@@ -877,12 +877,30 @@ la mention de la présence de champs obligatoires dans le formulaire sera signal
     </item>
     
     <item>
+      <title>Message d&#39;erreur</title>
+      <link>https://sofeve-concept.github.io/motifs/formulaires/message-erreur/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/formulaires/message-erreur/</guid>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Lorsqu&amp;rsquo;au moment de la soumission du formulaire, une erreur est signalée, il faudra messtre à jour le titre de la page en commençant par « Erreur ».</description>
+    </item>
+    
+    <item>
       <title>Message de statut</title>
       <link>https://sofeve-concept.github.io/motifs/dynamiques/statut/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sofeve-concept.github.io/motifs/dynamiques/statut/</guid>
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;affichage d&amp;rsquo;un message de notification ne nécessite pas de rechargement de la page.</description>
+    </item>
+    
+    <item>
+      <title>Message de succès</title>
+      <link>https://sofeve-concept.github.io/motifs/formulaires/message-succes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/formulaires/message-succes/</guid>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le message de succès est une zone définit par l&amp;rsquo;élément HTML div et porte le rôle aria role=&amp;quot;status&amp;quot;.</description>
     </item>
     
     <item>

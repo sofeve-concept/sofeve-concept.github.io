@@ -766,7 +766,19 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/motifs/formulaires/message-erreur/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/motifs/dynamiques/statut/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/motifs/formulaires/message-succes/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
