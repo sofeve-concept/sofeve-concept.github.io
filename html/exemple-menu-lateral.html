@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
@@ -12,6 +12,9 @@
       --MENU-color: #FFF;
       --MENU-FOCUS-color: #FFD700;
       --FOCUS-color: #135784;
+
+      --SIDENAV-OPEN : 250px;
+      --SIDENAV-CLOSE : 0;
     }
 
     * {
@@ -21,6 +24,10 @@
     *:focus {
       outline: 3px solid var(--FOCUS-color);
       outline-offset: 1px;
+    }
+
+    body.opaque {
+    background-color: #00000066;
     }
 
     .sr-only {
@@ -43,9 +50,8 @@
       padding: 0;
     }
 
-    .sidenav {
+    #mySidenav {
       height: 100%;
-      width: 0;
       position: fixed;
       z-index: 1;
       top: 0;
@@ -54,11 +60,10 @@
       overflow-x: hidden;
       transition: 0.5s;
       padding-top: 4em;
-      visibility: hidden;
     }
-
-    .sidenav a,
-    .sidenav button {
+    
+    #mySidenav a,
+    #mySidenav button {
       padding: .5em;
       text-decoration: none;
       font-size: 1.2em;
@@ -66,73 +71,92 @@
       display: block;
     }
 
-    .sidenav button {
+    #mySidenav button {
       padding: 0 .5em;
     }
 
-    .sidenav a:hover,
-    .sidenav a:focus,
-    .sidenav button:hover,
-    .sidenav button:focus {
+    #mySidenav a:hover,
+    #mySidenav a:focus,
+    #mySidenav button:hover,
+    #mySidenav button:focus {
       color: var(--MENU-color);
     }
 
-    .sidenav .closebtn {
+    #mySidenav button#closenav {
       position: absolute;
       top: .35em;
       right: .5em;
-      font-size: 2em;
+      font-size: 1.5em !important;
     }
 
-    .sidenav .closebtn:focus {
+    #closenav:focus,
+    #closenav:hover {
       outline: 3px solid var(--MENU-FOCUS-color);
     }
+    #mySidenav.close {
+      width: var(--SIDENAV-CLOSE);
+      visibility: hidden;
+    }
+    #mySidenav.close + main {
+    margin-left: var(--SIDENAV-CLOSE);
+    }
+    #mySidenav.open {
+      width: var(--SIDENAV-OPEN);
+      visibility: visible;
+    }
+    #mySidenav.open + main {
+      margin-left:var(--SIDENAV-OPEN);
+    }
+    #opennav {
+      padding: .5em;
+    }
+    #opennav:focus,
+    #opennav:hover {
+      outline: 3px solid var(--FOCUS-color);
+    }
 
-    #main {
+    main {
       transition: margin-left .5s;
     }
 
     @media screen and (max-height: 450px) {
-      .sidenav {
+      #mySidenav {
         padding-top: 15px;
       }
 
-      .sidenav a {
+      #mySidenav a {
         font-size: 18px;
       }
     }
 
-    .sidenav ul {
+    #mySidenav ul {
       margin: 2em 0 0 0;
       padding: 0;
       list-style: none;
     }
-    #opennav {
-    color: navy;
-}
+
   </style>
 </head>
 
 <body>
-  <header role="header">
-  <nav id="mySidenav" class="sidenav">
-    <button id="closenav" class="closebtn" onclick="closeNav()" aria-label="Close Navigation Menu">
+  <aside id="mySidenav" class="close">
+  <nav role="navigation">
+    <button id="closenav">
       <span aria-hidden="true">&times;</span>
-      <span class="sr-only">Fermer le menu latéral</span>
+      <span class="sr-only">Fermer le menu de navigation</span>
     </button>
     <ul>
-      <li><a href="#">About</a></li>
+      <li><a href="#">À propos</a></li>
       <li><a href="#">Services</a></li>
-      <li> <a href="#">Clients</a></li>
+      <li><a href="#">Clients</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
-</header>
+</aside>
   <main role="main" id="main">
-
-    <button id="opennav" style="font-size:30px;cursor:pointer" onclick="openNav()" aria-expanded="false">
+    <button id="opennav" aria-expanded="false" aria-controls="mySidenav">
       <span aria-hidden="true">&#9776;</span>
-      <span class="sr-only">Ouvrir le menu latéral</span>
+      <span class="sr-only">Ouvrir le menu de navigation</span>
     </button>
 
     <p>Cliquez sur l'icône hamburger pour ouvrir le menu de navigation latéral et poussez ce contenu vers la droite.</p>
@@ -142,38 +166,45 @@
 
   <script>
     function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
-      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-      document.getElementById("mySidenav").style.visibility = "visible";
+      document.getElementById("mySidenav").classList.remove('close');
+      document.getElementById("mySidenav").classList.add('open');
+      document.querySelector("body").classList.add('opaque');
+      document.getElementById("opennav").setAttribute('aria-expanded', 'true');
       document.getElementById("main").setAttribute('aria-hidden', 'true');
-      var mainLinks = document.getElementById("main").getElementsByTagName("a");
+      var mainLinks = document.querySelector("main").getElementsByTagName("a");
       for (var i = 0; i < mainLinks.length; i++) {
         mainLinks[i].setAttribute('tabindex', '-1');
       }
-      var mainButtons = document.getElementById("main").getElementsByTagName("button");
+      var mainButtons = document.querySelector("main").getElementsByTagName("button");
       for (var i = 0; i < mainButtons.length; i++) {
         mainButtons[i].setAttribute('disabled', 'true');
       }
+      
       setTimeout(function () { document.getElementById("closenav").focus(); }, 500);
     }
 
     function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-      document.getElementById("main").style.marginLeft = "0";
-      document.body.style.backgroundColor = "white";
-      document.getElementById("mySidenav").style.visibility = "hidden";
-      document.getElementById("main").removeAttribute('aria-hidden');
-      var mainLinks = document.getElementById("main").getElementsByTagName("a");
+      document.getElementById("mySidenav").classList.remove('open');
+      document.getElementById("mySidenav").classList.add('close');
+      document.querySelector("body").removeAttribute("class");
+      document.getElementById("opennav").setAttribute('aria-expanded', 'false');
+      document.querySelector("main").removeAttribute('aria-hidden');
+      var mainLinks = document.querySelector("main").getElementsByTagName("a");
       for (var i = 0; i < mainLinks.length; i++) {
         mainLinks[i].removeAttribute('tabindex');
       }
-      var mainButtons = document.getElementById("main").getElementsByTagName("button");
+      var mainButtons = document.querySelector("main").getElementsByTagName("button");
       for (var i = 0; i < mainButtons.length; i++) {
         mainButtons[i].removeAttribute('disabled');
       }
-      document.getElementById("opennav").focus();
+      setTimeout(function () { document.getElementById("opennav").focus(); }, 500);
     }
+
+
+    document.getElementById("opennav").addEventListener("click", openNav );
+    document.getElementById("closenav").addEventListener("click", closeNav );
+
+
   </script>
 
 
