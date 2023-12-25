@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Menu latéral glissant avec icônes et info-bulle</title>
+     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+     <style>
+          :root {
+               --FONT-FAMILY: Arial, Helvetica, sans-serif;
+
+               --WHITE-color: #fefefe;
+               --BLACK-color: #111111;
+               --GRAY-DEEP-color: #1d1d1d;
+               --GRAY-DARK-color: #3A3A3A;
+               --GRAY-MEDIUM-color: #454545;
+               --GRAY-LIGHT-color: #545454;
+               --GRAY-SWEET-color: #7c7c7c;
+               --ACTIVE-color: #ffd700;
+
+               --SIDEBAR-MARGIN-extand: 250px;
+               --SIDEBAR-MARGIN-collapse: 50px;
+
+               --SVG-FILTER-white: invert(100%) sepia(100%) saturate(2%) hue-rotate(110deg) brightness(108%) contrast(101%);;
+               --SVG-FILTER-active:invert(77%) sepia(80%) saturate(1445%) hue-rotate(0deg) brightness(104%) contrast(103%);
+          }
+
+        
+* {
+     margin: 0;
+     padding: 0
+   }
+   
+   *,
+   *::before,
+   *::after {
+     box-sizing: border-box
+   }
+   
+   article,
+   aside,
+   figcaption,
+   figure,
+   footer,
+   header,
+   hgroup,
+   main,
+   nav,
+   section {
+     display: block;
+   }
+   
+   body {
+     margin: 0;
+     font-size: 1em;
+     line-height: 1.5;
+     font-family: var(--FONT-FAMILY);
+     color: var(--BLACK-color);
+   }
+   
+          header {
+          height: 3em;
+          background-color: var(--BLACK-color);
+          color: var(--WHITE-color);
+          text-align: center;
+          }
+          /**Aside Sidenav */
+          #mySidenav {
+               height: 100%;
+               width: 0;
+               position: fixed;
+               z-index: 1200;
+               top: 3em;
+               left: 0;
+               background-color: var(--GRAY-DARK-color);
+               transition: 0.8s;
+          }
+
+          #mySidenav a,
+          #mySidenav button {
+               padding: .75em .5em;
+               text-decoration: none;
+               font-size: 1em;
+               color: var(--WHITE-color);
+               display: block;
+               border: 1px solid transparent !important;
+          }
+          #mySidenav svg {
+          filter:var(--SVG-FILTER-white);
+          margin-left: .25em;
+          }
+          #mySidenav a:hover,
+          #mySidenav a:focus,
+          #mySidenav button:hover,
+          #mySidenav button:focus {
+               background-color: var(--GRAY-LIGHT-color) !important;
+               border: 1px solid var(--WHITE-color) !important;
+               outline: 0;
+               color: var(--ACTIVE-color);
+          }
+
+          #mySidenav a[aria-current="page"],
+          #mySidenav a[aria-current="true"] {
+               background-color: var(--GRAY-LIGHT-color) !important;
+               color: var(--ACTIVE-color)
+          }
+          #mySidenav a:hover svg,
+          #mySidenav a:focus svg,
+          #mySidenav a[aria-current="page"] svg,
+          #mySidenav a[aria-current="true"] svg,
+          #mySidenav button:hover svg,
+          #mySidenav button:focus svg {
+          filter:var(--SVG-FILTER-active)
+          }
+
+
+          #mySidenav .closebtn {
+               position: absolute;
+               top: .35em;
+               right: .5em;
+               font-size: 2em;
+          }
+
+          #contenu,
+          #PiedDePage,
+          #navRub {
+               transition: margin-left .8s;
+          }
+
+          #mySidenav ul {
+               margin: 0;
+               padding: 0;
+               list-style: none;
+          }
+
+          #mySidenav li {
+               padding: 0;
+               border-bottom: 1px dotted var(--GRAY-SWEET-color)
+          }
+
+          #mySidenav li:first-of-type {
+               border-top: 1px dotted var(--GRAY-SWEET-color)
+          }
+
+                  #mySidenav.open {
+               width: var(--SIDEBAR-MARGIN-extand);
+          }
+
+          #mySidenav.open~#contenu,
+          #mySidenav.open~#PiedDePage,
+          #mySidenav.open~#navRub {
+               margin-left: var(--SIDEBAR-MARGIN-extand);
+          }
+
+          #mySidenav.close {
+               width: var(--SIDEBAR-MARGIN-collapse);
+          }
+
+          #mySidenav.close~#contenu,
+          #mySidenav.close~#PiedDePage,
+          #mySidenav.close~#navRub {
+               margin-left: var(--SIDEBAR-MARGIN-collapse);
+          }
+
+          #mySidenav.close a {
+               position: relative;
+               white-space: nowrap;
+          }
+
+          #mySidenav button {
+               position: relative
+          }
+
+          #mySidenav.close button span,
+          #mySidenav.close a>span.lib {
+               position: absolute;
+               left: 60px;
+               top: .2em;
+               min-width: 10em;
+               padding: .5em;
+               background-color: var(--GRAY-MEDIUM-color);
+               color: var(--WHITE-color);
+               text-align: left;
+               white-space: nowrap;
+               display: none;
+               transition: 0.8s;
+          }
+
+          #mySidenav.close button span::after,
+          #mySidenav.close a>span.lib::after {
+               content: "";
+               position: absolute;
+               top: 50%;
+               right: 100%;
+               margin-top: -10px;
+               border-width: 10px;
+               border-style: solid;
+               border-color: transparent var(--GRAY-MEDIUM-color) transparent transparent;
+          }
+
+          #mySidenav.close button:focus span,
+          #mySidenav.close a:focus>span.lib,
+          #mySidenav.close button:hover span,
+          #mySidenav.close a:hover>span.lib {
+               display: block !important;
+          }
+
+          #mySidenav button#btnMenu {
+               background: transparent;
+               border: 0;
+               color: var(--WHITE-color) !important;
+               cursor: pointer;
+               width: 100%;
+               text-align: right;
+          }
+
+          #mySidenav button#btnMenu::before {
+               content: "";
+               --icon-size: 1.5rem;
+               background-color: currentColor;
+               display: inline-block;
+               margin-left: -.125rem;
+               height: var(--icon-size);
+               width: var(--icon-size);
+               -webkit-mask-size: 100% 100%;
+               mask-size: 100% 100%;
+               vertical-align: calc((.75em - var(--icon-size))*.5);
+               -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0ibTEwLjEgMTItNS00LjkgMS40LTEuNCA2LjQgNi40LTYuNCA2LjRMNS4xIDE3bDUtNXptNiAwLTUtNC45IDEuNC0xLjQgNi40IDYuNC02LjQgNi40LTEuNC0xLjUgNS01eiIvPjwvc3ZnPg==);
+               mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0ibTEwLjEgMTItNS00LjkgMS40LTEuNCA2LjQgNi40LTYuNCA2LjRMNS4xIDE3bDUtNXptNiAwLTUtNC45IDEuNC0xLjQgNi40IDYuNC02LjQgNi40LTEuNC0xLjUgNS01eiIvPjwvc3ZnPg==);
+          }
+
+          #mySidenav button#btnMenu[aria-expanded="true"]::before {
+               transform: rotate(180deg);
+          }
+
+          main {
+               height: 400px;
+               padding: 1em 2em;
+          }
+          footer {
+          background-color: var(--BLACK-color);
+          color: var(--WHITE-color);
+          height: 50px
+     }
+     </style>
+</head>
+
+<body>
+<header role="banner">
+     <h1>Menu latéral glissant avec icônes et info-bulle</h1>
+</header>
+
+     <aside id="mySidenav" class="close">
+          <nav role="navigation" aria-label="navigation du site">
+               <button id="btnMenu" aria-expanded="false" aria-controls="mySidenav">
+                    <span>Ouvrir le menu latéral</span>
+               </button>
+               <ul>
+                    <li><a href="#">
+                         <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512" aria-hidden="true" role="presentation"><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
+                         <span class="lib">Accueil</span></a></li>
+                    <li><a href="#">
+                         <svg xmlns="http://www.w3.org/2000/svg" height="16" width="20" viewBox="0 0 640 512" aria-hidden="true" role="presentation"><path d="M72 88a56 56 0 1 1 112 0A56 56 0 1 1 72 88zM64 245.7C54 256.9 48 271.8 48 288s6 31.1 16 42.3V245.7zm144.4-49.3C178.7 222.7 160 261.2 160 304c0 34.3 12 65.8 32 90.5V416c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V389.2C26.2 371.2 0 332.7 0 288c0-61.9 50.1-112 112-112h32c24 0 46.2 7.5 64.4 20.3zM448 416V394.5c20-24.7 32-56.2 32-90.5c0-42.8-18.7-81.3-48.4-107.7C449.8 183.5 472 176 496 176h32c61.9 0 112 50.1 112 112c0 44.7-26.2 83.2-64 101.2V416c0 17.7-14.3 32-32 32H480c-17.7 0-32-14.3-32-32zm8-328a56 56 0 1 1 112 0A56 56 0 1 1 456 88zM576 245.7v84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM320 32a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM240 304c0 16.2 6 31 16 42.3V261.7c-10 11.3-16 26.1-16 42.3zm144-42.3v84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM448 304c0 44.7-26.2 83.2-64 101.2V448c0 17.7-14.3 32-32 32H288c-17.7 0-32-14.3-32-32V405.2c-37.8-18-64-56.5-64-101.2c0-61.9 50.1-112 112-112h32c61.9 0 112 50.1 112 112z"/></svg>
+                              <span class="lib">&Eacute;quipe</span></a></li>
+                    <li><a href="#">
+                         <svg xmlns="http://www.w3.org/2000/svg" height="16" width="20" viewBox="0 0 640 512" aria-hidden="true" role="presentation"><path d="M323.4 85.2l-96.8 78.4c-16.1 13-19.2 36.4-7 53.1c12.9 17.8 38 21.3 55.3 7.8l99.3-77.2c7-5.4 17-4.2 22.5 2.8s4.2 17-2.8 22.5l-20.9 16.2L512 316.8V128h-.7l-3.9-2.5L434.8 79c-15.3-9.8-33.2-15-51.4-15c-21.8 0-43 7.5-60 21.2zm22.8 124.4l-51.7 40.2C263 274.4 217.3 268 193.7 235.6c-22.2-30.5-16.6-73.1 12.7-96.8l83.2-67.3c-11.6-4.9-24.1-7.4-36.8-7.4C234 64 215.7 69.6 200 80l-72 48V352h28.2l91.4 83.4c19.6 17.9 49.9 16.5 67.8-3.1c5.5-6.1 9.2-13.2 11.1-20.6l17 15.6c19.5 17.9 49.9 16.6 67.8-2.9c4.5-4.9 7.8-10.6 9.9-16.5c19.4 13 45.8 10.3 62.1-7.5c17.9-19.5 16.6-49.9-2.9-67.8l-134.2-123zM16 128c-8.8 0-16 7.2-16 16V352c0 17.7 14.3 32 32 32H64c17.7 0 32-14.3 32-32V128H16zM48 320a16 16 0 1 1 0 32 16 16 0 1 1 0-32zM544 128V352c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V144c0-8.8-7.2-16-16-16H544zm32 208a16 16 0 1 1 32 0 16 16 0 1 1 -32 0z"/></svg>
+                              <span class="lib">Services</span></a></li>
+                    <li><a href="#">
+                         <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" aria-hidden="true" role="presentation"><path d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"/></svg>
+                              <span class="lib">Contact</span></a></li>
+               </ul>
+
+          </nav>
+     </aside>
+     <main role="main" id="contenu">
+         <h2>Contenu principal</h2>
+
+     </main>
+
+     <footer role="contentinfo" id="PiedDePage">
+          <p>Pied de page</p>
+         
+     </footer>
+
+
+     <script>
+          function openNav() {
+               document.getElementById("mySidenav").classList.remove("close");
+               document.getElementById("mySidenav").classList.add("open");
+               document.getElementById("btnMenu").setAttribute('aria-expanded', 'true');
+               document.getElementById("btnMenu").innerHTML = "<span>Réduire le menu latéral</span>";
+               setTimeout(function () { document.getElementById("btnMenu").focus(); }, 500);
+             }
+           
+             function closeNav() {
+               document.getElementById("mySidenav").classList.remove("open");
+               document.getElementById("mySidenav").classList.add("close");
+               document.getElementById("btnMenu").setAttribute('aria-expanded', 'false');
+               document.getElementById("btnMenu").innerHTML = "<span>Ouvrir le menu latéral</span>";
+               setTimeout(function () { document.getElementById("btnMenu").focus(); }, 500);
+             }
+           
+             const btnMenu = document.getElementById("btnMenu");
+             btnMenu.addEventListener("click", () => {
+               btnMenu.getAttribute('aria-expanded') === "false" ? openNav():  closeNav()
+             });
+     </script>
+</body>
+
+</html>

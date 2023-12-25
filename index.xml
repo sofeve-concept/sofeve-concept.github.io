@@ -670,6 +670,15 @@ la mention de la présence de champs obligatoires dans le formulaire sera signal
     </item>
     
     <item>
+      <title>Menu latéral glissant avec icônes</title>
+      <link>https://sofeve-concept.github.io/motifs/basiques/menu-lateral-glissant-icones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sofeve-concept.github.io/motifs/basiques/menu-lateral-glissant-icones/</guid>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le menu latéral de navigation suit les mêmes règles que le menu navigation déroulant.</description>
+    </item>
+    
+    <item>
       <title>Éléments cliquables</title>
       <link>https://sofeve-concept.github.io/coder/contenu/element-cliquable/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
