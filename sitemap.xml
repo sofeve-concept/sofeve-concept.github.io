@@ -856,12 +856,6 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/remerciements/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://sofeve-concept.github.io/ressources/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
