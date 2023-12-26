@@ -40,13 +40,12 @@
 		<button aria-expanded="false" id="hamburger" aria-controls="menu">
 		     <span class="sr-only">Menu</span>
 		</button>
-		<ul id="menu">
-			<li class="accueil">
-				<a href="/">Accueil</a></li>	
-			<li class="coder">
+		<ul id="menu">	
+			<li>
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="coder">Coder accessible</button>
-				   <ul id="coder"><li><a href="/coder/">Préambule</a></li>
-              			<li><a href="/coder/structure/">Structure de la page</a></li>
+				   <ul id="coder">
+					
+					<li><a href="/coder/">Aperçu</a></li><li><a href="/coder/structure/">Structure de la page</a></li>
               			<li><a href="/coder/contenu/">Contenu</a></li>
               			<li><a href="/coder/couleurs/">Couleurs</a></li>
               			<li><a href="/coder/navigation/">Navigation</a></li>
@@ -57,30 +56,52 @@
               			<li><a href="/coder/scripts/">Composants d&#39;interface riche</a></li>
               			<li><a href="/coder/multimedia/">Multimédia</a></li>
               			</ul>
-			    </li>	
-			<li class="motifs">
+			    </li>
+				
+			<li>
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="motifs">Motifs de conception</button>
-				   <ul id="motifs"><li><a href="/motifs/">Aperçu</a></li>
-              			<li><a href="/motifs/basiques/">Motifs de base</a></li>
+				   <ul id="motifs">
+					
+					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/">Motifs de base</a></li>
               			<li><a href="/motifs/dynamiques/">Motifs dynamiques</a></li>
               			<li><a href="/motifs/formulaires/">Motifs pour formulaire</a></li>
               			<li><a href="/motifs/purcss/"> Motifs en pur CSS</a></li>
               			</ul>
-			    </li>	
-			<li class="ressources">
+			    </li>
+				
+			<li>
+				<button aria-haspopup="true" aria-expanded="false" aria-controls="bureautique">Bureautique accessible</button>
+				   <ul id="bureautique">
+					
+					<li><a href="/bureautique/">Aperçu</a></li><li><a href="/bureautique/structure/">Structure du document</a></li>
+              			<li><a href="/bureautique/presentation/">Présentation du texte</a></li>
+              			<li><a href="/bureautique/liens/">Lien hypertexte</a></li>
+              			<li><a href="/bureautique/images/">Image</a></li>
+              			<li><a href="/bureautique/couleur/">Couleurs et contrastes</a></li>
+              			<li><a href="/bureautique/export/">Export PDF</a></li>
+              			<li><a href="/bureautique/courriel/">Courrier électronique</a></li>
+              			</ul>
+			    </li>
+				
+			<li>
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="ressources" aria-current="true">Ressources</button>
-				   <ul id="ressources"><li><a href="/ressources/bureautique/">Bureautique accessible</a></li>
-              			<li><a href="/ressources/outils/" aria-current="page">Outils de vérification</a></li>
+				   <ul id="ressources">
+					
+					<li><a href="/ressources/">Aperçu</a></li><li><a href="/ressources/outils/" aria-current="page">Outils de vérification</a></li>
               			<li><a href="/ressources/sites/">Sites sur l&#39;accessibilité</a></li>
               			<li><a href="/ressources/glossaire/">Glossaire</a></li>
               			</ul>
-			    </li>	
-			<li class="a-propos">
+			    </li>
+				
+			<li>
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="a-propos">À propos</button>
-				   <ul id="a-propos"><li><a href="/a-propos/accessibilite-numerique/">De l&#39;accessibilité numérique</a></li>
+				   <ul id="a-propos">
+					<li><a href="/a-propos/accessibilite-numerique/">De l&#39;accessibilité numérique</a></li>
               			<li><a href="/a-propos/qui-est-sofeve/">De Sofève-Concept</a></li>
               			</ul>
-			    </li></ul>
+			    </li>
+			</ul>
+		
 	</nav>	
 	<form action="/rechercher" method="GET" role="search" class="search">
 	    <div class="champs">
@@ -103,8 +124,33 @@
 	 </a></p>
 </header>
 	
-	<main role="main" class="container">
-		<div class="flex ligneHaut">
+<div class="gridContenu">
+<aside>
+      
+
+<nav role="navigation" aria-label="Navigation secondaire Ressources">
+	<button aria-haspopup="true" aria-expanded="false" id="sandwitch" aria-controls="sousMenu">
+		Ressources
+	</button>
+	<ul id="sousMenu">
+		<li><a href="/ressources">Ressources</a></li><li><a href="https://sofeve-concept.github.io/ressources/outils/" aria-current="page" >Outils de vérification</a>
+			
+			
+			<ul><li><a href="https://sofeve-concept.github.io/ressources/outils/outils-page-web/">Outils d&#39;analyse des pages web</a></li>
+				<li><a href="https://sofeve-concept.github.io/ressources/outils/liste-de-verification/">Liste de vérification</a></li>
+				<li><a href="https://sofeve-concept.github.io/ressources/outils/outils-couleurs/">Contraste de couleurs</a></li>
+				<li><a href="https://sofeve-concept.github.io/ressources/outils/synthese-vocale-nvda/">Tester avec une synthèse vocale</a></li>
+				<li><a href="https://sofeve-concept.github.io/ressources/outils/outils-bureautique/">Logiciels bureautiques</a></li>
+				</ul>
+			</li>
+		<li><a href="https://sofeve-concept.github.io/ressources/sites/">Sites sur l&#39;accessibilité</a></li>
+		<li><a href="https://sofeve-concept.github.io/ressources/glossaire/">Glossaire</a></li>
+		</ul>
+</nav>
+
+</aside>
+<main role="main">
+     <div class="flex ligneHaut">
 <nav aria-label="Vous êtes ici" class="ariane">
 <ol>
   <li><a href="/">Accueil</a></li>
@@ -121,58 +167,66 @@
 </button>
 </div>
 </div>
-	<h1 id="contenu">Outils de vérification</h1>
-			<p class="intro">Collection de quelques outils pour vérifier l&#39;accessibilité numérique de ses pages web ou documents bureautiques.</p>
-		
-			<article class="summary">
-	<h2><a href="https://sofeve-concept.github.io/ressources/outils/outils-page-web/">Outils d&#39;analyse des pages web</a></h2>
-	<div class="extrait">
-		<p>Les outils automatiques de vérification de l&#39;accessibilité d&#39;un site ne permettent pas de s&#39;assurer de la conformité totale d&#39;une site web. Toutefois, leur utilisation permet de corriger des erreurs et de guider le développer dans l&#39;amélioration de son site.</p>	
-			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/ressources/outils/outils-page-web/" class="btn" title="Lire la suite de l'article Outils d&#39;analyse des pages web">Lire la suite...</a></p>
-	</div>
-</article>
-
-		
-			<article class="summary">
-	<h2><a href="https://sofeve-concept.github.io/ressources/outils/liste-de-verification/">Liste rapide de vérification de l&#39;accessibilité</a></h2>
-	<div class="extrait">
-		<p>Les listes de vérification proposées dans cette rubrique permettent de corriger les erreurs les plus fréquentes. Ce n&#39;est qu&#39;un fois que toutes les rubriques de ces listes auront été validées qu&#39;un audit complet du site selon le Référentiel Général d&#39;Amélioration de l&#39;Accessibilité pourra être réalisé.</p>	
-			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/ressources/outils/liste-de-verification/" class="btn" title="Lire la suite de l'article Liste rapide de vérification de l&#39;accessibilité">Lire la suite...</a></p>
-	</div>
-</article>
-
-		
-			<article class="summary">
-	<h2><a href="https://sofeve-concept.github.io/ressources/outils/outils-couleurs/">Contraste de couleurs</a></h2>
-	<div class="extrait">
-		<p>Collection de quelques outils pour vérifier le contraste des couleurs et générer une palette de couleurs avec les bons contrastes.</p>	
-			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/ressources/outils/outils-couleurs/" class="btn" title="Lire la suite de l'article Contraste de couleurs">Lire la suite...</a></p>
-	</div>
-</article>
-
-		
-			<article class="summary">
-	<h2><a href="https://sofeve-concept.github.io/ressources/outils/synthese-vocale-nvda/">Tester avec une synthèse vocale</a></h2>
-	<div class="extrait">
-		<p>Un logiciel de synthèse vocale permet un accès aux pages web pour les aveugles et les malvoyants ou pour toute personne ayant des difficultés à lire.</p>	
-			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/ressources/outils/synthese-vocale-nvda/" class="btn" title="Lire la suite de l'article Tester avec une synthèse vocale">Lire la suite...</a></p>
-	</div>
-</article>
-
-		
-			<article class="summary">
-	<h2><a href="https://sofeve-concept.github.io/ressources/outils/outils-bureautique/">Accessibilité bureautique</a></h2>
-	<div class="extrait">
-		<p>Collection de quelques outils pour vérifier l&#39;accessibilité numérique de ses documents bureautiques.</p>	
-			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/ressources/outils/outils-bureautique/" class="btn" title="Lire la suite de l'article Accessibilité bureautique">Lire la suite...</a></p>
-	</div>
-</article>
-
-		
-	</main>
+     <section>
+		<h1 id="contenu">Outils de vérification</h1>
+	<p class="intro">Collection de quelques outils pour vérifier l&#39;accessibilité numérique de ses pages web ou documents bureautiques.</p>
 	
-
+	<div class="flex justify-content-start forCard">
+		
+		<div class="item-33 ">
+		<div class="card">
+			<h2><a href="https://sofeve-concept.github.io/ressources/outils/outils-page-web/">Outils d&#39;analyse des pages web</a></h2>
+			<div class="flex flex-column align-items-strech h-100">
+			<p >Les outils automatiques de vérification de l&#39;accessibilité d&#39;un site ne permettent pas de s&#39;assurer de la conformité totale d&#39;une site web. Toutefois, leur utilisation permet de corriger des erreurs et de guider le développer dans l&#39;amélioration de son site.</p>
+			
+			</div>
+	</div>
+</div>
+		
+		<div class="item-33 ">
+		<div class="card">
+			<h2><a href="https://sofeve-concept.github.io/ressources/outils/liste-de-verification/">Liste de vérification</a></h2>
+			<div class="flex flex-column align-items-strech h-100">
+			<p >Les listes de vérification proposées dans cette rubrique permettent de corriger les erreurs les plus fréquentes. Ce n&#39;est qu&#39;un fois que toutes les rubriques de ces listes auront été validées qu&#39;un audit complet du site selon le Référentiel Général d&#39;Amélioration de l&#39;Accessibilité pourra être réalisé.</p>
+			
+			</div>
+	</div>
+</div>
+		
+		<div class="item-33 ">
+		<div class="card">
+			<h2><a href="https://sofeve-concept.github.io/ressources/outils/outils-couleurs/">Contraste de couleurs</a></h2>
+			<div class="flex flex-column align-items-strech h-100">
+			<p >Collection de quelques outils pour vérifier le contraste des couleurs et générer une palette de couleurs avec les bons contrastes.</p>
+			
+			</div>
+	</div>
+</div>
+		
+		<div class="item-33 ">
+		<div class="card">
+			<h2><a href="https://sofeve-concept.github.io/ressources/outils/synthese-vocale-nvda/">Tester avec une synthèse vocale</a></h2>
+			<div class="flex flex-column align-items-strech h-100">
+			<p >Un logiciel de synthèse vocale permet un accès aux pages web pour les aveugles et les malvoyants ou pour toute personne ayant des difficultés à lire.</p>
+			
+			</div>
+	</div>
+</div>
+		
+		<div class="item-33 ">
+		<div class="card">
+			<h2><a href="https://sofeve-concept.github.io/ressources/outils/outils-bureautique/">Logiciels bureautiques</a></h2>
+			<div class="flex flex-column align-items-strech h-100">
+			<p >Collection de quelques outils pour vérifier l&#39;accessibilité numérique de ses documents bureautiques.</p>
+			
+			</div>
+	</div>
+</div>
+		
+	</div>
+     </section>
 </main>
+</div>
 
 	<footer role="contentinfo" id="piedDePage">
 	<div class="pied">

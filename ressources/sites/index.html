@@ -3,10 +3,10 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Sites web ressources - Ressources - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Sites sur l&#39;accessibilité - Ressources - Sofève Concept</title>
 	
 	<meta name="theme-color" content="#FFFFFF" />
-	<meta name="description" content="Liste de quelques sites web inspirants. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	<meta name="description" content="Liste de quelques sites web inspirants de sociétés qui œuvrent pour l&#39;accessibilité numérique. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -40,13 +40,12 @@
 		<button aria-expanded="false" id="hamburger" aria-controls="menu">
 		     <span class="sr-only">Menu</span>
 		</button>
-		<ul id="menu">
-			<li class="accueil">
-				<a href="/">Accueil</a></li>	
-			<li class="coder">
+		<ul id="menu">	
+			<li>
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="coder">Coder accessible</button>
-				   <ul id="coder"><li><a href="/coder/">Préambule</a></li>
-              			<li><a href="/coder/structure/">Structure de la page</a></li>
+				   <ul id="coder">
+					
+					<li><a href="/coder/">Aperçu</a></li><li><a href="/coder/structure/">Structure de la page</a></li>
               			<li><a href="/coder/contenu/">Contenu</a></li>
               			<li><a href="/coder/couleurs/">Couleurs</a></li>
               			<li><a href="/coder/navigation/">Navigation</a></li>
@@ -57,30 +56,52 @@
               			<li><a href="/coder/scripts/">Composants d&#39;interface riche</a></li>
               			<li><a href="/coder/multimedia/">Multimédia</a></li>
               			</ul>
-			    </li>	
-			<li class="motifs">
+			    </li>
+				
+			<li>
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="motifs">Motifs de conception</button>
-				   <ul id="motifs"><li><a href="/motifs/">Aperçu</a></li>
-              			<li><a href="/motifs/basiques/">Motifs de base</a></li>
+				   <ul id="motifs">
+					
+					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/">Motifs de base</a></li>
               			<li><a href="/motifs/dynamiques/">Motifs dynamiques</a></li>
               			<li><a href="/motifs/formulaires/">Motifs pour formulaire</a></li>
               			<li><a href="/motifs/purcss/"> Motifs en pur CSS</a></li>
               			</ul>
-			    </li>	
-			<li class="ressources">
+			    </li>
+				
+			<li>
+				<button aria-haspopup="true" aria-expanded="false" aria-controls="bureautique">Bureautique accessible</button>
+				   <ul id="bureautique">
+					
+					<li><a href="/bureautique/">Aperçu</a></li><li><a href="/bureautique/structure/">Structure du document</a></li>
+              			<li><a href="/bureautique/presentation/">Présentation du texte</a></li>
+              			<li><a href="/bureautique/liens/">Lien hypertexte</a></li>
+              			<li><a href="/bureautique/images/">Image</a></li>
+              			<li><a href="/bureautique/couleur/">Couleurs et contrastes</a></li>
+              			<li><a href="/bureautique/export/">Export PDF</a></li>
+              			<li><a href="/bureautique/courriel/">Courrier électronique</a></li>
+              			</ul>
+			    </li>
+				
+			<li>
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="ressources" aria-current="true">Ressources</button>
-				   <ul id="ressources"><li><a href="/ressources/bureautique/">Bureautique accessible</a></li>
-              			<li><a href="/ressources/outils/">Outils de vérification</a></li>
+				   <ul id="ressources">
+					
+					<li><a href="/ressources/">Aperçu</a></li><li><a href="/ressources/outils/">Outils de vérification</a></li>
               			<li><a href="/ressources/sites/" aria-current="page">Sites sur l&#39;accessibilité</a></li>
               			<li><a href="/ressources/glossaire/">Glossaire</a></li>
               			</ul>
-			    </li>	
-			<li class="a-propos">
+			    </li>
+				
+			<li>
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="a-propos">À propos</button>
-				   <ul id="a-propos"><li><a href="/a-propos/accessibilite-numerique/">De l&#39;accessibilité numérique</a></li>
+				   <ul id="a-propos">
+					<li><a href="/a-propos/accessibilite-numerique/">De l&#39;accessibilité numérique</a></li>
               			<li><a href="/a-propos/qui-est-sofeve/">De Sofève-Concept</a></li>
               			</ul>
-			    </li></ul>
+			    </li>
+			</ul>
+		
 	</nav>	
 	<form action="/rechercher" method="GET" role="search" class="search">
 	    <div class="champs">
@@ -103,15 +124,33 @@
 	 </a></p>
 </header>
 	
-	<main role="main" class="container">
-		<div class="flex ligneHaut">
+<div class="gridContenu">
+<aside>
+      
+
+<nav role="navigation" aria-label="Navigation secondaire Ressources">
+	<button aria-haspopup="true" aria-expanded="false" id="sandwitch" aria-controls="sousMenu">
+		Ressources
+	</button>
+	<ul id="sousMenu">
+		<li><a href="/ressources">Ressources</a></li><li><a href="https://sofeve-concept.github.io/ressources/outils/">Outils de vérification</a></li>
+		<li><a href="https://sofeve-concept.github.io/ressources/sites/" aria-current="page" >Sites sur l&#39;accessibilité</a>
+			
+			</li>
+		<li><a href="https://sofeve-concept.github.io/ressources/glossaire/">Glossaire</a></li>
+		</ul>
+</nav>
+
+</aside>
+<main role="main">
+     <div class="flex ligneHaut">
 <nav aria-label="Vous êtes ici" class="ariane">
 <ol>
   <li><a href="/">Accueil</a></li>
   
   <li><a href="/ressources/">Ressources</a></li>
   
-  <li aria-current="page" tabindex="-1">Sites web ressources</li>
+  <li aria-current="page" tabindex="-1">Sites sur l&#39;accessibilité</li>
   </ol>
 </nav>
 <div>
@@ -121,31 +160,81 @@
 </button>
 </div>
 </div>
-	<h1 id="contenu">Sites web ressources</h1>
-			<p class="intro">Liste de quelques sites web inspirants.</p>
+     <section>
+		<h1 id="contenu">Sites sur l&#39;accessibilité</h1>
+	<p class="intro">Liste de quelques sites web inspirants de sociétés qui œuvrent pour l&#39;accessibilité numérique.</p>
+	<h2 id="sociétés-œuvrant-pour-laccessibilité-numérique">Sociétés œuvrant pour l&rsquo;accessibilité numérique</h2>
+<h3 id="access42">Access42</h3>
+<p>Access42 est un cabinet de conseil expert en accessibilité numérique. La société propose entre autre :</p>
+<ul>
+<li><a href="https://access42.net/blog/" title="Access42 - le blog (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">Access42 - le blog</a></li>
+<li><a href="https://access42.net/ressources/accesslide/" title="AccesSlide (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">AccesSlide</a> est un framework JavaScript qui vous permet de produire des diaporamas accessibles, facilement utilisables et personnalisables.</li>
+</ul>
+<h3 id="atalan">Atalan</h3>
+<p>Spécialisée dans l&rsquo;accessibilité numérique depuis 2002, la société Atalan intervient en tant qu&rsquo;expert indépendant.
+Elle propose plusieurs sites d&rsquo;information :</p>
+<ul>
+<li><a href="https://www.accede-web.com/" title="AcceDe Web (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">AcceDe Web</a>, AcceDe Web propose des notices qui s&rsquo;’adressent de façon spécifique à chaque intervenant d’un projet web et sont adaptées aux différentes étapes de conception et de développement. Elles sont issues d’un travail collaboratif de professionnels de terrain (entreprises, associations, agences web…) et mises à jour de manière régulière.</li>
+<li><a href="https://www.pdf-accessible.com/" title="AcceDe PDF (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">AcceDe PDF</a>. Les documents PDF peuvent ne pas être accessibles à certains utilisateurs en situation de handicap. Le projet AcceDe PDF, mené en partenariat avec de nombreuses entreprises, vous propose ici les ressources nécessaires pour concevoir, rédiger et créer des documents PDF accessibles à tous.</li>
+</ul>
+<h3 id="empreinte-digitale">Empreinte digitale</h3>
+<p>Empreinte Digitale est une entreprise coopérative, créatrice de solutions numériques sur mesure. Empreinte Digitale œuvre pour l’accessibilité numérique depuis plus de 15 ans.</p>
+<ul>
+<li><a href="https://accessibilitenumerique.empreintedigitale.fr/" title="Empreinte digitale (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">Empreinte digitale</a></li>
+<li><a href="https://accessibilitenumerique.empreintedigitale.fr/nos-outils/" title="Empreinte digitale - les outils (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">Empreinte digitale - les outils</a></li>
+</ul>
+<h3 id="ideance">Ideance</h3>
+<p>La société Ideance est une société d&rsquo;expertise en accessibilité numérique. Elle met à disposition sur son site des ressources d’accessibilité numérique et des articles relatifs à l&rsquo;accessibilité numérique.</p>
+<ul>
+<li><a href="https://ideance.net/fr/ressources-accessibilite-numerique/#section-03-01" title="Ressources d’accessibilité numérique - Ideance (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">Ressources d’accessibilité numérique - Ideance</a>.</li>
+<li><a href="https://ideance.net/blog/" title="Ideance, le blog - Partage de connaissance et retours d’expérience à propos de l’accessibilité numérique (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">Ideance, le blog - Partage de connaissance et retours d’expérience à propos de l’accessibilité numérique</a>.</li>
+</ul>
+<h3 id="ipedis">Ipedis</h3>
+<p>La société Ipedis a créé une fresque de l&rsquo;accessibilité numérique, un atelier collaboratif pour comprendre les enjeux de la prise en compte du handicap dans notre environnement digital.</p>
+<ul>
+<li><a href="https://blog.ipedis.com/fr/fresque_accessibilite_numerique" title="Fresque de l'accessibilité numérique proposé par Ipedis (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">Fresque de l&rsquo;accessibilité numérique proposé par Ipedis</a></li>
+</ul>
+<h3 id="koena">Koena</h3>
+<p>La société Koena a été créée par Armony ALTINIER en septembre 2016. Au-delà de la technique et de l’accessibilité numérique, c’est l’inclusion par le numérique qui est au cœur du projet de Koena.</p>
+<ul>
+<li><a href="https://koena.net/" title="Koena (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">Koena</a></li>
+</ul>
+<h3 id="orange">Orange</h3>
+<p>La société Orange propose de nombreux articles didactiques sur l&rsquo;accessibilité numérique.</p>
+<ul>
+<li><a href="https://a11y-guidelines.orange.com/fr/articles/" title="Orange (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">Orange</a></li>
+</ul>
+<h3 id="temesis">Temesis</h3>
+<p>Temesis est une société d&rsquo;expertes et experts pour vous accompagner dans l’accessibilité, l’écoconception et la conformité RGPD de vos services numériques.</p>
+<ul>
+<li><a href="https://www.temesis.com/" title="Temesis (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">Temesis</a></li>
+</ul>
+<h3 id="w3c---wai">W3C - WAI</h3>
+<p><strong>La référence !</strong>
+Le <span lang="en">World Wide Web Consortium</span> (W3C) développe des standards internationaux pour le Web : HTML, CSS, et bien d&rsquo;autres.</p>
+<ul>
+<li><a href="https://www.w3.org/" lang="en" title="W3C (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">W3C</a>
+L&rsquo;initiative W3C <span lang="en">Web Accessibility Initiative</span> (WAI) développe des normes et des supports pour vous aider à comprendre et à mettre en œuvre l&rsquo;accessibilité.</li>
+<li><a href="https://www.w3.org/WAI/" lang="en" title="WAI (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">WAI</a>
+Le WAI met aussi à disposition des composants accessibles :</li>
+<li><a href="https://www.w3.org/WAI/ARIA/apg/patterns/" lang="en" title="Patterns WAI (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer"><span lang="en">Patterns WAI</span></a></li>
+</ul>
+<h3 id="webaim">WebAIM</h3>
+<p><a href="https://webaim.org/" title="WebAIM  (nouvelle fenêtre)" lang="en" target="_blank" rel="noopener noreferrer"><span lang="en">WebAIM </span></a> est une organisation à but non lucratif, fournisseur de solutions en matière d&rsquo;accessibilité du Web depuis 1999. Elle édite depuis 2019 une évaluation de 1 million de pages d&rsquo;accueil de sites web à travers le monde, sous le nom de <span lang="en">The WebAIM Million</span>.</p>
+<h2 id="sites-de-design">Sites de design</h2>
+<h3 id="design-éthique">Design éthique</h3>
+<p>Designers Éthiques est une association qui explore les pratiques de conception numérique. Elle travaille à la capacitation des designers et des professionnels du numérique pour produire un numérique émancipateur, durable et désirable.<br>
+<a href="https://beta.designersethiques.org/"  target="_blank" rel="noopener noreferrer" title="Designers Éthiques (nouvelle fenêtre)">Designers Éthiques</a></p>
+<h3 id="design-system">Design system</h3>
+<p>Un <span lang="en">design system</span> rassemble tous les éléments graphiques et visuels liés à une charte de présentation dans un seul et même système standardisé. Il a pour objectif de standardiser et faciliter la conception d&rsquo;un produit digital.</p>
+<p>Le site <a href="https://designsystems.fr/"  target="_blank" rel="noopener noreferrer" title="Design Systems France (nouvelle fenêtre)">Design Systems France</a> recense plus de 85 Design Systems conçus par des équipes ou des entreprises françaises.</p>
+
+	<div class="flex justify-content-start forCard">
 		
-			<article class="summary">
-	<h2><a href="https://sofeve-concept.github.io/ressources/sites/design-system/">Design Systems Français</a></h2>
-	<div class="extrait">
-		<p>Liste des systèmes de design conçus et maintenus en France.</p>	
-			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/ressources/sites/design-system/" class="btn" title="Lire la suite de l'article Design Systems Français">Lire la suite...</a></p>
 	</div>
-</article>
-
-		
-			<article class="summary">
-	<h2><a href="https://sofeve-concept.github.io/ressources/sites/sites/">Sociétés qui œuvrent pour l&#39;accessibilité numérique</a></h2>
-	<div class="extrait">
-		<p>Liste de quelques sites web inspirants de sociétés qui œuvrent pour l&#39;accessibilité numérique.</p>	
-			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/ressources/sites/sites/" class="btn" title="Lire la suite de l'article Sociétés qui œuvrent pour l&#39;accessibilité numérique">Lire la suite...</a></p>
-	</div>
-</article>
-
-		
-	</main>
-	
-
+     </section>
 </main>
+</div>
 
 	<footer role="contentinfo" id="piedDePage">
 	<div class="pied">

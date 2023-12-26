@@ -40,13 +40,12 @@
 		<button aria-expanded="false" id="hamburger" aria-controls="menu">
 		     <span class="sr-only">Menu</span>
 		</button>
-		<ul id="menu">
-			<li class="accueil">
-				<a href="/">Accueil</a></li>	
-			<li class="coder">
+		<ul id="menu">	
+			<li>
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="coder" aria-current="true">Coder accessible</button>
-				   <ul id="coder"><li><a href="/coder/">Préambule</a></li>
-              			<li><a href="/coder/structure/">Structure de la page</a></li>
+				   <ul id="coder">
+					
+					<li><a href="/coder/">Aperçu</a></li><li><a href="/coder/structure/">Structure de la page</a></li>
               			<li><a href="/coder/contenu/">Contenu</a></li>
               			<li><a href="/coder/couleurs/">Couleurs</a></li>
               			<li><a href="/coder/navigation/">Navigation</a></li>
@@ -57,30 +56,52 @@
               			<li><a href="/coder/scripts/">Composants d&#39;interface riche</a></li>
               			<li><a href="/coder/multimedia/">Multimédia</a></li>
               			</ul>
-			    </li>	
-			<li class="motifs">
+			    </li>
+				
+			<li>
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="motifs">Motifs de conception</button>
-				   <ul id="motifs"><li><a href="/motifs/">Aperçu</a></li>
-              			<li><a href="/motifs/basiques/">Motifs de base</a></li>
+				   <ul id="motifs">
+					
+					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/">Motifs de base</a></li>
               			<li><a href="/motifs/dynamiques/">Motifs dynamiques</a></li>
               			<li><a href="/motifs/formulaires/">Motifs pour formulaire</a></li>
               			<li><a href="/motifs/purcss/"> Motifs en pur CSS</a></li>
               			</ul>
-			    </li>	
-			<li class="ressources">
+			    </li>
+				
+			<li>
+				<button aria-haspopup="true" aria-expanded="false" aria-controls="bureautique">Bureautique accessible</button>
+				   <ul id="bureautique">
+					
+					<li><a href="/bureautique/">Aperçu</a></li><li><a href="/bureautique/structure/">Structure du document</a></li>
+              			<li><a href="/bureautique/presentation/">Présentation du texte</a></li>
+              			<li><a href="/bureautique/liens/">Lien hypertexte</a></li>
+              			<li><a href="/bureautique/images/">Image</a></li>
+              			<li><a href="/bureautique/couleur/">Couleurs et contrastes</a></li>
+              			<li><a href="/bureautique/export/">Export PDF</a></li>
+              			<li><a href="/bureautique/courriel/">Courrier électronique</a></li>
+              			</ul>
+			    </li>
+				
+			<li>
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="ressources">Ressources</button>
-				   <ul id="ressources"><li><a href="/ressources/bureautique/">Bureautique accessible</a></li>
-              			<li><a href="/ressources/outils/">Outils de vérification</a></li>
+				   <ul id="ressources">
+					
+					<li><a href="/ressources/">Aperçu</a></li><li><a href="/ressources/outils/">Outils de vérification</a></li>
               			<li><a href="/ressources/sites/">Sites sur l&#39;accessibilité</a></li>
               			<li><a href="/ressources/glossaire/">Glossaire</a></li>
               			</ul>
-			    </li>	
-			<li class="a-propos">
+			    </li>
+				
+			<li>
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="a-propos">À propos</button>
-				   <ul id="a-propos"><li><a href="/a-propos/accessibilite-numerique/">De l&#39;accessibilité numérique</a></li>
+				   <ul id="a-propos">
+					<li><a href="/a-propos/accessibilite-numerique/">De l&#39;accessibilité numérique</a></li>
               			<li><a href="/a-propos/qui-est-sofeve/">De Sofève-Concept</a></li>
               			</ul>
-			    </li></ul>
+			    </li>
+			</ul>
+		
 	</nav>	
 	<form action="/rechercher" method="GET" role="search" class="search">
 	    <div class="champs">
@@ -112,7 +133,7 @@
 		Coder accessible
 	</button>
 	<ul id="sousMenu">
-		<li><a href="/coder">Coder accessible - Aperçu</a></li><li><a href="https://sofeve-concept.github.io/coder/structure/">Structure de la page</a></li>
+		<li><a href="/coder">Coder accessible</a></li><li><a href="https://sofeve-concept.github.io/coder/structure/">Structure de la page</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/contenu/">Contenu</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/couleurs/">Couleurs</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/navigation/">Navigation</a></li>
@@ -155,54 +176,61 @@
 </div>
      <section>
 		<h1 id="contenu">Tableaux</h1>
-		<p class="intro">Les tableaux de données doivent respecter des règles d&#39;implémentation pour être accessibles.</p>
+	<p class="intro">Les tableaux de données doivent respecter des règles d&#39;implémentation pour être accessibles.</p>
+	
+	<div class="flex justify-content-start forCard">
 		
-	
-		<article class="summary">
-	<h2><a href="https://sofeve-concept.github.io/coder/tableaux/semantique-html-tableaux/">Sémantique HTML</a></h2>
-	<div class="extrait">
-		<p>Un tableau HTML permet de présenter des données de manière organisée.</p>	
-			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/coder/tableaux/semantique-html-tableaux/" class="btn" title="Lire la suite de l'article Sémantique HTML">Lire la suite...</a></p>
+		<div class="item-33 ">
+		<div class="card">
+			<h2><a href="https://sofeve-concept.github.io/coder/tableaux/semantique-html-tableaux/">Sémantique HTML</a></h2>
+			<div class="flex flex-column align-items-strech h-100">
+			<p >Un tableau HTML permet de présenter des données de manière organisée.</p>
+			
+			</div>
 	</div>
-</article>
-
-	
-		<article class="summary">
-	<h2><a href="https://sofeve-concept.github.io/coder/tableaux/tableaux-presentation/">Tableaux de mise en forme</a></h2>
-	<div class="extrait">
-		<p>Un tableau de mise en forme ou de présentation sert, comme son nom l&#39;indique, uniquement à présenter le contenu de la page.</p>	
-			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/coder/tableaux/tableaux-presentation/" class="btn" title="Lire la suite de l'article Tableaux de mise en forme">Lire la suite...</a></p>
+</div>
+		
+		<div class="item-33 ">
+		<div class="card">
+			<h2><a href="https://sofeve-concept.github.io/coder/tableaux/tableaux-presentation/">Tableaux de mise en forme</a></h2>
+			<div class="flex flex-column align-items-strech h-100">
+			<p >Un tableau de mise en forme ou de présentation sert, comme son nom l&#39;indique, uniquement à présenter le contenu de la page.</p>
+			
+			</div>
 	</div>
-</article>
-
-	
-		<article class="summary">
-	<h2><a href="https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-simples/">Tableaux simples</a></h2>
-	<div class="extrait">
-		<p>Un tableau de données simple comporte une seule ligne d&#39;entête, une seule colonne d&#39;entête ou une double entête (ligne et colonne).</p>	
-			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-simples/" class="btn" title="Lire la suite de l'article Tableaux simples">Lire la suite...</a></p>
+</div>
+		
+		<div class="item-33 ">
+		<div class="card">
+			<h2><a href="https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-simples/">Tableaux simples</a></h2>
+			<div class="flex flex-column align-items-strech h-100">
+			<p >Un tableau de données simple comporte une seule ligne d&#39;entête, une seule colonne d&#39;entête ou une double entête (ligne et colonne).</p>
+			
+			</div>
 	</div>
-</article>
-
-	
-		<article class="summary">
-	<h2><a href="https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-complexes/">Tableaux complexes</a></h2>
-	<div class="extrait">
-		<p>Un tableau de données complexe est un tableau dont les cellules d&#39;entête s&#39;étendent sur plusieurs colonnes et/ou lignes. Plusieurs éléments et attributs peuvent être utilisés pour définir la structure et les relations de l&#39;entête et des cellules de données.</p>	
-			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-complexes/" class="btn" title="Lire la suite de l'article Tableaux complexes">Lire la suite...</a></p>
+</div>
+		
+		<div class="item-33 ">
+		<div class="card">
+			<h2><a href="https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-complexes/">Tableaux complexes</a></h2>
+			<div class="flex flex-column align-items-strech h-100">
+			<p >Un tableau de données complexe est un tableau dont les cellules d&#39;entête s&#39;étendent sur plusieurs colonnes et/ou lignes. Plusieurs éléments et attributs peuvent être utilisés pour définir la structure et les relations de l&#39;entête et des cellules de données.</p>
+			
+			</div>
 	</div>
-</article>
-
-	
-		<article class="summary">
-	<h2><a href="https://sofeve-concept.github.io/coder/tableaux/quiz/">Quiz récap&#39;</a></h2>
-	<div class="extrait">
-		<p>Quiz récap&#39; sur les tableaux.</p>	
-			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/coder/tableaux/quiz/" class="btn" title="Lire la suite de l'article Quiz récap&#39;">Lire la suite...</a></p>
+</div>
+		
+		<div class="item-33 ">
+		<div class="card">
+			<h2><a href="https://sofeve-concept.github.io/coder/tableaux/quiz/">Quiz récap&#39;</a></h2>
+			<div class="flex flex-column align-items-strech h-100">
+			<p >Quiz récap&#39; sur les tableaux.</p>
+			
+			</div>
 	</div>
-</article>
-
-	
+</div>
+		
+	</div>
      </section>
 </main>
 </div>

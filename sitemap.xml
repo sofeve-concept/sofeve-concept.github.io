@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/couleur/contraste/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/couleur/contraste/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -62,7 +62,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/images/image/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/images/image/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -80,13 +80,13 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/liens/libelle/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/liens/libelle/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/finaliser/meta/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/export/meta/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -98,13 +98,19 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/courriel/parametrage/</loc>
+    <loc>https://sofeve-concept.github.io/ressources/outils/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/presentation/police-caractere/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/courriel/parametrage/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/bureautique/presentation/police-caractere/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -134,13 +140,13 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/structure/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/structure/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/structure/titraille/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/structure/titraille/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -158,7 +164,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/couleur/information/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/couleur/information/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -170,7 +176,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/finaliser/export/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/export/export/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -194,7 +200,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/presentation/capitales-sigles/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/presentation/capitales-sigles/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -218,13 +224,13 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/liens/telechargement/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/liens/telechargement/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/structure/listes/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/structure/listes/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -242,13 +248,19 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/presentation/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/presentation/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/courriel/courriel/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/courriel/courriel/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/ressources/sites/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -266,7 +278,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/structure/colonnes/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/structure/colonnes/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -284,13 +296,19 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/ressources/glossaire/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/image-icone/images-img/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/liens/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/liens/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -326,7 +344,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/presentation/saut-ligne/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/presentation/saut-ligne/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -350,13 +368,13 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/presentation/alignement/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/presentation/alignement/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/structure/citation/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/structure/citation/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -368,7 +386,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/images/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/images/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -416,7 +434,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/couleur/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/couleur/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -434,7 +452,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/structure/langue/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/structure/langue/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -506,7 +524,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/finaliser/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/export/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -524,7 +542,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/courriel/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/courriel/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -682,7 +700,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/bureautique/</loc>
+    <loc>https://sofeve-concept.github.io/bureautique/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -718,12 +736,6 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/sites/design-system/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://sofeve-concept.github.io/ecoconception/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -731,12 +743,6 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/motifs/dynamiques/modale/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/ressources/glossaire/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -832,12 +838,6 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/outils/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://sofeve-concept.github.io/motifs/dynamiques/panneau-depliant/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -863,18 +863,6 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/ressources/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/ressources/sites/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/ressources/sites/sites/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

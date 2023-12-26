@@ -40,13 +40,12 @@
 		<button aria-expanded="false" id="hamburger" aria-controls="menu">
 		     <span class="sr-only">Menu</span>
 		</button>
-		<ul id="menu">
-			<li class="accueil">
-				<a href="/">Accueil</a></li>	
-			<li class="coder">
+		<ul id="menu">	
+			<li>
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="coder" aria-current="true">Coder accessible</button>
-				   <ul id="coder"><li><a href="/coder/">Préambule</a></li>
-              			<li><a href="/coder/structure/">Structure de la page</a></li>
+				   <ul id="coder">
+					
+					<li><a href="/coder/">Aperçu</a></li><li><a href="/coder/structure/">Structure de la page</a></li>
               			<li><a href="/coder/contenu/">Contenu</a></li>
               			<li><a href="/coder/couleurs/" aria-current="page">Couleurs</a></li>
               			<li><a href="/coder/navigation/">Navigation</a></li>
@@ -57,30 +56,52 @@
               			<li><a href="/coder/scripts/">Composants d&#39;interface riche</a></li>
               			<li><a href="/coder/multimedia/">Multimédia</a></li>
               			</ul>
-			    </li>	
-			<li class="motifs">
+			    </li>
+				
+			<li>
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="motifs">Motifs de conception</button>
-				   <ul id="motifs"><li><a href="/motifs/">Aperçu</a></li>
-              			<li><a href="/motifs/basiques/">Motifs de base</a></li>
+				   <ul id="motifs">
+					
+					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/">Motifs de base</a></li>
               			<li><a href="/motifs/dynamiques/">Motifs dynamiques</a></li>
               			<li><a href="/motifs/formulaires/">Motifs pour formulaire</a></li>
               			<li><a href="/motifs/purcss/"> Motifs en pur CSS</a></li>
               			</ul>
-			    </li>	
-			<li class="ressources">
+			    </li>
+				
+			<li>
+				<button aria-haspopup="true" aria-expanded="false" aria-controls="bureautique">Bureautique accessible</button>
+				   <ul id="bureautique">
+					
+					<li><a href="/bureautique/">Aperçu</a></li><li><a href="/bureautique/structure/">Structure du document</a></li>
+              			<li><a href="/bureautique/presentation/">Présentation du texte</a></li>
+              			<li><a href="/bureautique/liens/">Lien hypertexte</a></li>
+              			<li><a href="/bureautique/images/">Image</a></li>
+              			<li><a href="/bureautique/couleur/">Couleurs et contrastes</a></li>
+              			<li><a href="/bureautique/export/">Export PDF</a></li>
+              			<li><a href="/bureautique/courriel/">Courrier électronique</a></li>
+              			</ul>
+			    </li>
+				
+			<li>
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="ressources">Ressources</button>
-				   <ul id="ressources"><li><a href="/ressources/bureautique/">Bureautique accessible</a></li>
-              			<li><a href="/ressources/outils/">Outils de vérification</a></li>
+				   <ul id="ressources">
+					
+					<li><a href="/ressources/">Aperçu</a></li><li><a href="/ressources/outils/">Outils de vérification</a></li>
               			<li><a href="/ressources/sites/">Sites sur l&#39;accessibilité</a></li>
               			<li><a href="/ressources/glossaire/">Glossaire</a></li>
               			</ul>
-			    </li>	
-			<li class="a-propos">
+			    </li>
+				
+			<li>
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="a-propos">À propos</button>
-				   <ul id="a-propos"><li><a href="/a-propos/accessibilite-numerique/">De l&#39;accessibilité numérique</a></li>
+				   <ul id="a-propos">
+					<li><a href="/a-propos/accessibilite-numerique/">De l&#39;accessibilité numérique</a></li>
               			<li><a href="/a-propos/qui-est-sofeve/">De Sofève-Concept</a></li>
               			</ul>
-			    </li></ul>
+			    </li>
+			</ul>
+		
 	</nav>	
 	<form action="/rechercher" method="GET" role="search" class="search">
 	    <div class="champs">
@@ -112,7 +133,7 @@
 		Coder accessible
 	</button>
 	<ul id="sousMenu">
-		<li><a href="/coder">Coder accessible - Aperçu</a></li><li><a href="https://sofeve-concept.github.io/coder/structure/">Structure de la page</a></li>
+		<li><a href="/coder">Coder accessible</a></li><li><a href="https://sofeve-concept.github.io/coder/structure/">Structure de la page</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/contenu/">Contenu</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/couleurs/" aria-current="page" >Couleurs</a>
 			
@@ -153,36 +174,41 @@
 </div>
      <section>
 		<h1 id="contenu">Couleurs</h1>
-		<p class="intro">Le faible contraste de couleurs entre le premier et l&#39;arrière-plan est un des défaut majeur en accessibilité numérique. Découvrez comment respecter les principes d&#39;accessibilité numérique en lien avec les couleurs.</p>
+	<p class="intro">Le faible contraste de couleurs entre le premier et l&#39;arrière-plan est un des défaut majeur en accessibilité numérique. Découvrez comment respecter les principes d&#39;accessibilité numérique en lien avec les couleurs.</p>
+	
+	<div class="flex justify-content-start forCard">
 		
-	
-		<article class="summary">
-	<h2><a href="https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs-accessible/">Accessibilité des couleurs</a></h2>
-	<div class="extrait">
-		<p>Il existe deux grandes règles concernant l&#39;accessibilité des couleurs. La première est que la couleur ne doit pas être le seul moyen de véhiculer de l&#39;information. La deuxième concerne le contraste des couleurs entre l&#39;avant-plan et l&#39;arrière-plan qui doit être suffisamment accentué pour permettre une bonne lisibilité du contenu.</p>	
-			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs-accessible/" class="btn" title="Lire la suite de l'article Accessibilité des couleurs">Lire la suite...</a></p>
+		<div class="item-33 ">
+		<div class="card">
+			<h2><a href="https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs-accessible/">Accessibilité des couleurs</a></h2>
+			<div class="flex flex-column align-items-strech h-100">
+			<p >Il existe deux grandes règles concernant l&#39;accessibilité des couleurs. La première est que la couleur ne doit pas être le seul moyen de véhiculer de l&#39;information. La deuxième concerne le contraste des couleurs entre l&#39;avant-plan et l&#39;arrière-plan qui doit être suffisamment accentué pour permettre une bonne lisibilité du contenu.</p>
+			
+			</div>
 	</div>
-</article>
-
-	
-		<article class="summary">
-	<h2><a href="https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs/">Calcul du contraste</a></h2>
-	<div class="extrait">
-		<p>Le contraste de couleurs est la différence de luminosité entre les couleurs de premier et d&#39;arrière-plan. Il se calcule à partir de la luminance de la couleur. À partir de là, il est possible de calculer le ratio de contraste.</p>	
-			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs/" class="btn" title="Lire la suite de l'article Calcul du contraste">Lire la suite...</a></p>
+</div>
+		
+		<div class="item-33 ">
+		<div class="card">
+			<h2><a href="https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs/">Calcul du contraste</a></h2>
+			<div class="flex flex-column align-items-strech h-100">
+			<p >Le contraste de couleurs est la différence de luminosité entre les couleurs de premier et d&#39;arrière-plan. Il se calcule à partir de la luminance de la couleur. À partir de là, il est possible de calculer le ratio de contraste.</p>
+			
+			</div>
 	</div>
-</article>
-
-	
-		<article class="summary">
-	<h2><a href="https://sofeve-concept.github.io/coder/couleurs/quiz/">Quiz récap&#39;</a></h2>
-	<div class="extrait">
-		<p>Quiz récap&#39; sur les couleurs</p>	
-			<p class="lire-la-suite"><a href="https://sofeve-concept.github.io/coder/couleurs/quiz/" class="btn" title="Lire la suite de l'article Quiz récap&#39;">Lire la suite...</a></p>
+</div>
+		
+		<div class="item-33 ">
+		<div class="card">
+			<h2><a href="https://sofeve-concept.github.io/coder/couleurs/quiz/">Quiz récap&#39;</a></h2>
+			<div class="flex flex-column align-items-strech h-100">
+			<p >Quiz récap&#39; sur les couleurs</p>
+			
+			</div>
 	</div>
-</article>
-
-	
+</div>
+		
+	</div>
      </section>
 </main>
 </div>
