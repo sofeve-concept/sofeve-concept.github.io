@@ -146,7 +146,7 @@
 				<li><a href="https://sofeve-concept.github.io/motifs/dynamiques/statut/">Message de statut</a></li>
 				<li><a href="https://sofeve-concept.github.io/motifs/dynamiques/onglets/">Onglets</a></li>
 				<li><a href="https://sofeve-concept.github.io/motifs/dynamiques/panneau-depliant/">Panneau dépliant</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/dynamiques/tabledesmatieres/">Table des matières</a></li>
+				<li><a href="https://sofeve-concept.github.io/motifs/dynamiques/tabledesmatieres/">Table des matières collante</a></li>
 				</ul>
 			</li>
 		<li><a href="https://sofeve-concept.github.io/motifs/purcss/">Motifs en pur CSS</a></li>
@@ -204,6 +204,7 @@
 <li>À l&rsquo;ouverture de la fenêtre modale, le focus sera positionné sur le premier élément pouvant recevoir le focus.</li>
 <li>La fenêtre modale pourra être fermée en appuyant sur la touche [Echap] du clavier.</li>
 <li>Après la fermeture de la fenêtre modale, le focus clavier se repositionne sur le bouton qui a provoqué l&rsquo;ouverture de la fenêtre modale.</li>
+<li>Pour relier le bouton qui ouvre la modale à la fenêtre modale, le bouton d&rsquo;ouverture aura pour attribut <code>aria-controls</code> avec comme valeur l&rsquo;<code>id</code> de la fenêtre modale.</li>
 </ul>
 <h2 id="visuel">Visuel</h2>
 
@@ -216,7 +217,7 @@
          aria-modal="true"
          class="none">
          <div class="dialog-header">
-      <h1 id="dialog1_label">Titre de la fenêtre modale</h1>
+      <h1 id="dialog1_label">Titre de niveau 1 de la modale</h1>
       <button type="button" aria-label="Fermer" title="Fermer la fenêtre modale" class="closeModale">&times;</button>
     </div>
       <div class="dialog-body">
