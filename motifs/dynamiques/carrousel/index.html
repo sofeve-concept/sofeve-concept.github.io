@@ -1168,60 +1168,9 @@
 </span></span><span class="line"><span class="cl">  <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">carouselEls</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s2">&#34;.carousel-tablist&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">carousels</span> <span class="o">=</span> <span class="p">[];</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">// exemple de comportement basé sur le réglage par défaut des cases à cocher
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">var</span> <span class="nx">checkboxes</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">      <span class="s2">&#34;.carousel-options input[type=checkbox]&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">urlParams</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">URLSearchParams</span><span class="p">(</span><span class="nx">location</span><span class="p">.</span><span class="nx">search</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">carouselOptions</span> <span class="o">=</span> <span class="p">{};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">// exemples de fonctionnalités en fonction du réglage par défaut des cases à cocher
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">checkboxes</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">checkbox</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">      <span class="kd">var</span> <span class="nx">checked</span> <span class="o">=</span> <span class="nx">checkbox</span><span class="p">.</span><span class="nx">checked</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="k">if</span> <span class="p">(</span><span class="nx">urlParams</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="nx">checkbox</span><span class="p">.</span><span class="nx">value</span><span class="p">))</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nx">urlParam</span> <span class="o">=</span> <span class="nx">urlParams</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">checkbox</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">urlParam</span> <span class="o">===</span> <span class="s2">&#34;string&#34;</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">          <span class="nx">checked</span> <span class="o">=</span> <span class="nx">urlParam</span> <span class="o">===</span> <span class="s2">&#34;true&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">          <span class="nx">checkbox</span><span class="p">.</span><span class="nx">checked</span> <span class="o">=</span> <span class="nx">checked</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">      <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="nx">carouselOptions</span><span class="p">[</span><span class="nx">checkbox</span><span class="p">.</span><span class="nx">value</span><span class="p">]</span> <span class="o">=</span> <span class="nx">checkbox</span><span class="p">.</span><span class="nx">checked</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">});</span>
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="nx">carouselEls</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">node</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">      <span class="nx">carousels</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="k">new</span> <span class="nx">CarouselTablist</span><span class="p">(</span><span class="nx">node</span><span class="p">,</span> <span class="nx">carouselOptions</span><span class="p">));</span>
-</span></span><span class="line"><span class="cl">    <span class="p">});</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">// événement de changement des cases à cocher
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">checkboxes</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">checkbox</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">      <span class="kd">var</span> <span class="nx">updateEvent</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">      <span class="k">switch</span> <span class="p">(</span><span class="nx">checkbox</span><span class="p">.</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">case</span> <span class="s2">&#34;moreaccessible&#34;</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">          <span class="nx">updateEvent</span> <span class="o">=</span> <span class="s2">&#34;setAccessibleStyling&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">          <span class="k">break</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="k">case</span> <span class="s2">&#34;norotate&#34;</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">          <span class="nx">updateEvent</span> <span class="o">=</span> <span class="s2">&#34;enableOrDisableAutoRotation&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">          <span class="k">break</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="c1">// mise à jour du comportement quand l&#39;état de case à cocher change
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="nx">checkbox</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;change&#34;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="nx">urlParams</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">,</span> <span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">checked</span> <span class="o">+</span> <span class="s2">&#34;&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="nb">window</span><span class="p">.</span><span class="nx">history</span><span class="p">.</span><span class="nx">replaceState</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">          <span class="kc">null</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">          <span class="s2">&#34;&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">          <span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">pathname</span> <span class="o">+</span> <span class="s2">&#34;?&#34;</span> <span class="o">+</span> <span class="nx">urlParams</span>
-</span></span><span class="line"><span class="cl">        <span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="nx">updateEvent</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">          <span class="nx">carousels</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">carousel</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="nx">carousel</span><span class="p">[</span><span class="nx">updateEvent</span><span class="p">](</span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">checked</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">          <span class="p">});</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">      <span class="p">});</span>
 </span></span><span class="line"><span class="cl">    <span class="p">});</span>
 </span></span><span class="line"><span class="cl">  <span class="p">},</span>
 </span></span><span class="line"><span class="cl">  <span class="kc">false</span>
