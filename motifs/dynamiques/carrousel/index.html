@@ -207,6 +207,7 @@
 <li>Le nom accessible de chaque onglet indique la diapositive qu&rsquo;il affichera en incluant le nom ou le numéro de la diapositive, par exemple, &ldquo;Diapositive 3&rdquo; ; les noms de diapositives sont préférables si chaque diapositive a un nom unique.</li>
 <li>L&rsquo;ensemble de contrôles est regroupé dans un élément tablist avec un nom accessible fourni par la valeur de aria-label qui identifie l&rsquo;objectif des onglets, par exemple, « Choisir la diapositive à afficher ».</li>
 </ul>
+<p><em>L&rsquo;exemple ci-après provient des <span lang="en">patterns</span> du W3C.</em></p>
 <h2 id="visuel">Visuel</h2>
 
 <div id="myCarousel" class="carousel-tablist" aria-roledescription="carousel"
@@ -854,32 +855,25 @@
 </span></span><span class="line"><span class="cl">    <span class="k">z-index</span><span class="p">:</span> <span class="mi">20</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><h3 id="code-javascript">Code javascript</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="cm">/*
-</span></span></span><span class="line"><span class="cl"><span class="cm"> *   File:   carousel-tablist.js
-</span></span></span><span class="line"><span class="cl"><span class="cm"> *
-</span></span></span><span class="line"><span class="cl"><span class="cm"> *   Desc:   Carousel Tablist widget that implements ARIA Authoring Practices
-</span></span></span><span class="line"><span class="cl"><span class="cm"> *
-</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="s2">&#34;use strict&#34;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="s2">&#34;use strict&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// takes options object: { accessibleCaptions: boolean, autoplay: boolean, playButton: boolean }
-</span></span></span><span class="line"><span class="cl"><span class="c1">// defaults are: { accessibleCaptions: true, autoplay: false, playButton: true }
+</span></span><span class="line"><span class="cl"><span class="c1">// options : { accessibleCaptions: boolean, autoplay: boolean, playButton: boolean }
+</span></span></span><span class="line"><span class="cl"><span class="c1">// option par défaut : { accessibleCaptions: true, autoplay: false, playButton: true }
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>
 </span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">CarouselTablist</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">node</span><span class="p">,</span> <span class="nx">options</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="c1">// merge passed options with defaults
+</span></span><span class="line"><span class="cl">  <span class="c1">// on récupère les options s&#39;il y en a
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">options</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">    <span class="p">{</span> <span class="nx">moreaccessible</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="nx">paused</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="nx">norotate</span><span class="o">:</span> <span class="kc">false</span> <span class="p">},</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">options</span> <span class="o">||</span> <span class="p">{}</span>
 </span></span><span class="line"><span class="cl">  <span class="p">);</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="c1">// a prefers-reduced-motion user setting must always override autoplay
+</span></span><span class="line"><span class="cl">  <span class="c1">// le paramètre de préférence &#34;reduce&#34; doit toujours remplacer la lecture automatique
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kd">var</span> <span class="nx">hasReducedMotion</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">matchMedia</span><span class="p">(</span><span class="s2">&#34;(prefers-reduced-motion: reduce)&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">hasReducedMotion</span><span class="p">.</span><span class="nx">matches</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">options</span><span class="p">.</span><span class="nx">paused</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="cm">/* DOM properties */</span>
+</span></span><span class="line"><span class="cl">  <span class="cm">/* Propriétés du DOM */</span>
 </span></span><span class="line"><span class="cl">  <span class="k">this</span><span class="p">.</span><span class="nx">domNode</span> <span class="o">=</span> <span class="nx">node</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="k">this</span><span class="p">.</span><span class="nx">tablistNode</span> <span class="o">=</span> <span class="nx">node</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&#34;[role=tablist]&#34;</span><span class="p">);</span>
@@ -896,7 +890,7 @@
 </span></span><span class="line"><span class="cl">  <span class="k">this</span><span class="p">.</span><span class="nx">playLabel</span> <span class="o">=</span> <span class="s2">&#34;Lecture automatique&#34;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="k">this</span><span class="p">.</span><span class="nx">pauseLabel</span> <span class="o">=</span> <span class="s2">&#34;Arrêt du défilement automatique&#34;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="cm">/* State properties */</span>
+</span></span><span class="line"><span class="cl">  <span class="cm">/* Les statuts */</span>
 </span></span><span class="line"><span class="cl">  <span class="k">this</span><span class="p">.</span><span class="nx">hasUserActivatedPlay</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span> <span class="c1">// set when the user activates the play/pause button
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">this</span><span class="p">.</span><span class="nx">isAutoRotationDisabled</span> <span class="o">=</span> <span class="nx">options</span><span class="p">.</span><span class="nx">norotate</span><span class="p">;</span> <span class="c1">// This property for disabling auto rotation
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">this</span><span class="p">.</span><span class="nx">isPlayingEnabled</span> <span class="o">=</span> <span class="o">!</span><span class="nx">options</span><span class="p">.</span><span class="nx">paused</span><span class="p">;</span> <span class="c1">// This property is also set in updatePlaying method
@@ -904,7 +898,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">this</span><span class="p">.</span><span class="nx">currentIndex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// index of current slide
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">this</span><span class="p">.</span><span class="nx">slideTimeout</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span> <span class="c1">// save reference to setTimeout
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl">  <span class="c1">// initialize tabs
+</span></span><span class="line"><span class="cl">  <span class="c1">// initialisation du système d&#39;onglets
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">this</span><span class="p">.</span><span class="nx">tablistNode</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;focusin&#34;</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleTabFocus</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">));</span>
 </span></span><span class="line"><span class="cl">  <span class="k">this</span><span class="p">.</span><span class="nx">tablistNode</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;focusout&#34;</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleTabBlur</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">));</span>
 </span></span><span class="line"><span class="cl">
@@ -918,14 +912,13 @@
 </span></span><span class="line"><span class="cl">    <span class="nx">n</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;keydown&#34;</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleTabKeydown</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">));</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">n</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;click&#34;</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleTabClick</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">));</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">// initialize tabpanels
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">tabpanelNode</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">n</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s2">&#34;aria-controls&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// initialisation de chacun des onglets
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">var</span> <span class="nx">tabpanelNode</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">n</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s2">&#34;aria-controls&#34;</span><span class="p">));</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">tabpanelNode</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">      <span class="k">this</span><span class="p">.</span><span class="nx">tabpanelNodes</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">tabpanelNode</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="c1">// support stopping rotation when any element receives focus in the tabpanel
+</span></span><span class="line"><span class="cl">      <span class="c1">// Arrêt de la rotation lorsqu&#39;un élément reçoit le focus dans le panneau d&#39;onglets
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="nx">tabpanelNode</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">        <span class="s2">&#34;focusin&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="p">.</span><span class="nx">handleTabpanelFocusIn</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
@@ -949,7 +942,7 @@
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="c1">// Pause Button
+</span></span><span class="line"><span class="cl">  <span class="c1">// Bouton Pause 
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">pausePlayButtonNode</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">pausePlayButtonNode</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">      <span class="s2">&#34;click&#34;</span><span class="p">,</span>
@@ -957,25 +950,24 @@
 </span></span><span class="line"><span class="cl">    <span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="c1">// Handle hover events
+</span></span><span class="line"><span class="cl">  <span class="c1">// Gestion des éléments au survol de la souris
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">this</span><span class="p">.</span><span class="nx">domNode</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;mouseover&#34;</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleMouseOver</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">));</span>
 </span></span><span class="line"><span class="cl">  <span class="k">this</span><span class="p">.</span><span class="nx">domNode</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;mouseout&#34;</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleMouseOut</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">));</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="c1">// initialize behavior based on options
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl">  <span class="k">this</span><span class="p">.</span><span class="nx">enableOrDisableAutoRotation</span><span class="p">(</span><span class="nx">options</span><span class="p">.</span><span class="nx">norotate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// Initialisation des comportements passés en options
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">this</span><span class="p">.</span><span class="nx">enableOrDisableAutoRotation</span><span class="p">(</span><span class="nx">options</span><span class="p">.</span><span class="nx">norotate</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="k">this</span><span class="p">.</span><span class="nx">updatePlaying</span><span class="p">(</span><span class="o">!</span><span class="nx">options</span><span class="p">.</span><span class="nx">paused</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nx">options</span><span class="p">.</span><span class="nx">norotate</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="k">this</span><span class="p">.</span><span class="nx">setAccessibleStyling</span><span class="p">(</span><span class="nx">options</span><span class="p">.</span><span class="nx">moreaccessible</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="k">this</span><span class="p">.</span><span class="nx">rotateSlides</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl"><span class="p">};</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cm">/* Public function to disable/enable rotation and if false, hide pause/play button*/</span>
+</span></span><span class="line"><span class="cl"><span class="cm">/* désactiver/activer la rotation - masquer le bouton pause/lecture */</span>
 </span></span><span class="line"><span class="cl"><span class="nx">CarouselTablist</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">enableOrDisableAutoRotation</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">disable</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="k">this</span><span class="p">.</span><span class="nx">isAutoRotationDisabled</span> <span class="o">=</span> <span class="nx">disable</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="k">this</span><span class="p">.</span><span class="nx">pausePlayButtonNode</span><span class="p">.</span><span class="nx">hidden</span> <span class="o">=</span> <span class="nx">disable</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">};</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cm">/* Public function to update controls/caption styling */</span>
+</span></span><span class="line"><span class="cl"><span class="cm">/* Mises à jour du style des boutons de contrôle */</span>
 </span></span><span class="line"><span class="cl"><span class="nx">CarouselTablist</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">setAccessibleStyling</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">accessible</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">accessible</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="nx">domNode</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&#34;carousel-tablist-moreaccessible&#34;</span><span class="p">);</span>
@@ -1077,7 +1069,7 @@
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">};</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cm">/* Event Handlers */</span>
+</span></span><span class="line"><span class="cl"><span class="cm">/* Gestion des événements */</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">CarouselTablist</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">handleImageLinkFocus</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="k">this</span><span class="p">.</span><span class="nx">liveRegionNode</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&#34;focus&#34;</span><span class="p">);</span>
@@ -1097,14 +1089,13 @@
 </span></span><span class="line"><span class="cl">  <span class="k">this</span><span class="p">.</span><span class="nx">hasHover</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">};</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cm">/* EVENT HANDLERS */</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">CarouselTablist</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">handlePausePlayButtonClick</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="k">this</span><span class="p">.</span><span class="nx">hasUserActivatedPlay</span> <span class="o">=</span> <span class="o">!</span><span class="k">this</span><span class="p">.</span><span class="nx">isPlayingEnabled</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="k">this</span><span class="p">.</span><span class="nx">updatePlaying</span><span class="p">(</span><span class="o">!</span><span class="k">this</span><span class="p">.</span><span class="nx">isPlayingEnabled</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">};</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cm">/* Event Handlers for Tabs*/</span>
+</span></span><span class="line"><span class="cl"><span class="cm">/* Evénements sur le système d&#39;onglets*/</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">CarouselTablist</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">handleTabKeydown</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="kd">var</span> <span class="nx">flag</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
@@ -1160,7 +1151,7 @@
 </span></span><span class="line"><span class="cl">  <span class="k">this</span><span class="p">.</span><span class="nx">hasFocus</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">};</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cm">/* Event Handlers for Tabpanels*/</span>
+</span></span><span class="line"><span class="cl"><span class="cm">/* Evénements sur les onglets*/</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">CarouselTablist</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">handleTabpanelFocusIn</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="k">this</span><span class="p">.</span><span class="nx">hasFocus</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
@@ -1170,7 +1161,7 @@
 </span></span><span class="line"><span class="cl">  <span class="k">this</span><span class="p">.</span><span class="nx">hasFocus</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">};</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cm">/* Initialize Carousel Tablists and options */</span>
+</span></span><span class="line"><span class="cl"><span class="cm">/* Initialisation du carrousel */</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">  <span class="s2">&#34;load&#34;</span><span class="p">,</span>
@@ -1178,18 +1169,14 @@
 </span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">carouselEls</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s2">&#34;.carousel-tablist&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">carousels</span> <span class="o">=</span> <span class="p">[];</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">// set example behavior based on
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// default setting of the checkboxes and the parameters in the URL
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// update checkboxes based on any corresponding URL parameters
+</span></span><span class="line"><span class="cl">    <span class="c1">// exemple de comportement basé sur le réglage par défaut des cases à cocher
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">var</span> <span class="nx">checkboxes</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">      <span class="s2">&#34;.carousel-options input[type=checkbox]&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">urlParams</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">URLSearchParams</span><span class="p">(</span><span class="nx">location</span><span class="p">.</span><span class="nx">search</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">carouselOptions</span> <span class="o">=</span> <span class="p">{};</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">// initialize example features based on
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// default setting of the checkboxes and the parameters in the URL
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// update checkboxes based on any corresponding URL parameters
+</span></span><span class="line"><span class="cl">    <span class="c1">// exemples de fonctionnalités en fonction du réglage par défaut des cases à cocher
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">checkboxes</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">checkbox</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">      <span class="kd">var</span> <span class="nx">checked</span> <span class="o">=</span> <span class="nx">checkbox</span><span class="p">.</span><span class="nx">checked</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
@@ -1208,7 +1195,7 @@
 </span></span><span class="line"><span class="cl">      <span class="nx">carousels</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="k">new</span> <span class="nx">CarouselTablist</span><span class="p">(</span><span class="nx">node</span><span class="p">,</span> <span class="nx">carouselOptions</span><span class="p">));</span>
 </span></span><span class="line"><span class="cl">    <span class="p">});</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">// add change event to checkboxes
+</span></span><span class="line"><span class="cl">    <span class="c1">// événement de changement des cases à cocher
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">checkboxes</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">checkbox</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">      <span class="kd">var</span> <span class="nx">updateEvent</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">      <span class="k">switch</span> <span class="p">(</span><span class="nx">checkbox</span><span class="p">.</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
@@ -1220,7 +1207,7 @@
 </span></span><span class="line"><span class="cl">          <span class="k">break</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">      <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">      <span class="c1">// update the carousel behavior and URL when a checkbox state changes
+</span></span><span class="line"><span class="cl">      <span class="c1">// mise à jour du comportement quand l&#39;état de case à cocher change
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="nx">checkbox</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;change&#34;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">        <span class="nx">urlParams</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">,</span> <span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">checked</span> <span class="o">+</span> <span class="s2">&#34;&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">        <span class="nb">window</span><span class="p">.</span><span class="nx">history</span><span class="p">.</span><span class="nx">replaceState</span><span class="p">(</span>
