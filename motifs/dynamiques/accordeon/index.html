@@ -196,10 +196,22 @@
 </div>
 <h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
 <ul>
-<li>Le titre de chaque en-tête de l&rsquo;accordéon est contenu dans un élément <code>button</code> avec un attribut <code>aria-controls</code> qui fait référence à l&rsquo;<code>id</code> de l&rsquo;élément qu&rsquo;il contrôle et un attribut <code>aria-expanded</code> qui prend la valeur <code>true</code> quand la zone que gère l&rsquo;en-tête de l&rsquo;accordéon est visible et <code>false</code> quand la zone que gère l&rsquo;en-tête de l&rsquo;accordéon est invisible.</li>
-<li>L&rsquo;élément bouton est le seul élément à l&rsquo;intérieur de l&rsquo;élément titre. Autrement dit, s&rsquo;il existe d&rsquo;autres éléments visuellement persistants, ils ne sont pas inclus dans l&rsquo;élément d&rsquo;en-tête.</li>
-<li>Si le panneau d&rsquo;accordéon associé à un en-tête d&rsquo;accordéon est visible, et si l&rsquo;accordéon ne permet pas de réduire le panneau, l&rsquo;élément du bouton d&rsquo;en-tête a <code>aria-disabled</code> défini sur <code>true</code>.</li>
-<li>Chaque élément qui sert de conteneur pour le contenu du panneau a le rôle <code>region</code> et un <code>id</code> avec une valeur qui fait référence au bouton qui contrôle l&rsquo;affichage du panneau. La région de rôle est particulièrement utile pour la perception de la structure par les utilisateurs de lecteurs d&rsquo;écran lorsque les panneaux contiennent des éléments d&rsquo;en-tête ou un accordéon imbriqué.</li>
+<li>Chaque en-tête de l&rsquo;accordéon est codé avec une titraille. En fonction de la struture de sa page, le niveau de titre sera adpaté pour conserver l&rsquo;ordre logique de numérotation.</li>
+<li>Le titre de chaque en-tête de l&rsquo;accordéon contient un élément <code>button</code>. L&rsquo;élément bouton est le seul élément à l&rsquo;intérieur de l&rsquo;élément titre. Autrement dit, s&rsquo;il existe d&rsquo;autres éléments visibles, ils ne sont pas inclus dans l&rsquo;élément d&rsquo;en-tête.</li>
+<li>L&rsquo;élément <code>button</code> a les caractériqtiques suivantes :
+<ul>
+<li>un attribut <code>aria-controls</code> qui fait référence à l&rsquo;<code>id</code> de l&rsquo;élément qu&rsquo;il contrôle (dit « panneau ») ;</li>
+<li>un attribut <code>aria-expanded</code> qui prend la valeur :
+<ul>
+<li><code>true</code> quand le panneau géré par le bouton d&rsquo;en-tête de l&rsquo;accordéon est visible ;</li>
+<li><code>false</code> quand le panneau géré par le bouton d&rsquo;en-tête de l&rsquo;accordéon est invisible.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Si le panneau d&rsquo;accordéon géré par le bouton d&rsquo;en-tête de l&rsquo;accordéon est visible, et bouton d&rsquo;en-tête de l&rsquo;accordéon ne permet pas de réduire le panneau, l&rsquo;élément du bouton d&rsquo;en-tête a <code>aria-disabled</code> défini sur <code>true</code> (<code>&lt;button aria-disabled=&quot;true...&gt;</code>).</li>
+<li>Chaque panneau a le rôle <code>region</code> et un <code>id</code> avec une valeur qui fait référence au bouton qui en contrôle l&rsquo;affichage.<br>
+La région de rôle est particulièrement utile pour la perception de la structure par les utilisateurs de lecteurs d&rsquo;écran lorsque les panneaux contiennent des éléments d&rsquo;en-tête ou un accordéon imbriqué.</li>
 </ul>
 <h2 id="visuel">Visuel</h2>
 
