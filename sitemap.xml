@@ -676,18 +676,6 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/a-propos/qui-est-sofeve/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://sofeve-concept.github.io/accessibilite/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -731,6 +719,18 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/tags/css/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/a-propos/qui-est-sofeve/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
