@@ -5,24 +5,21 @@
     <link>https://sofeve-concept.github.io/coder/multimedia/</link>
     <description>Recent content in Multimédia on Sofève Concept</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/coder/multimedia/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr-FR</language>
+    <atom:link href="https://sofeve-concept.github.io/coder/multimedia/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contenu du multimédia</title>
       <link>https://sofeve-concept.github.io/coder/multimedia/presentation-video/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/coder/multimedia/presentation-video/</guid>
       <description>Transcription textuelle La transcription textuelle est indispensable pour les contenus uniquement audio. Elle doit restituer le contenu de la vidéo ou de l&amp;rsquo;audio le plus fidèlement possible.</description>
     </item>
-    
     <item>
       <title>Lecteur audio ou vidéo</title>
       <link>https://sofeve-concept.github.io/coder/multimedia/lecteur-video/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/coder/multimedia/lecteur-video/</guid>
       <description>Règles à respecter sur les lecteurs audio et vidéo Le lecteur vidéo (ou audio) :</description>
     </item>
-    
   </channel>
 </rss>

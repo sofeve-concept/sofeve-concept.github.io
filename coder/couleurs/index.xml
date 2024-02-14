@@ -5,33 +5,28 @@
     <link>https://sofeve-concept.github.io/coder/couleurs/</link>
     <description>Recent content in Couleurs on Sofève Concept</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/coder/couleurs/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr-FR</language>
+    <atom:link href="https://sofeve-concept.github.io/coder/couleurs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Accessibilité des couleurs</title>
       <link>https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs-accessible/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs-accessible/</guid>
       <description>Ce qu’il faut retenir Veiller à ce que l&amp;rsquo;information soit compréhensible même en l’absence de couleurs.</description>
     </item>
-    
     <item>
       <title>Calcul du contraste</title>
       <link>https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs/</guid>
       <description>Définition du constraste et du ratio de contraste Le contraste de couleurs est la différence de luminosité entre les couleurs de premier et d&amp;rsquo;arrière-plan.</description>
     </item>
-    
     <item>
       <title>Quiz récap&#39;</title>
       <link>https://sofeve-concept.github.io/coder/couleurs/quiz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/coder/couleurs/quiz/</guid>
-      <description>N°QuestionVotre réponseAfficher les réponses1« Cliquez sur le bouton rouge » est une bonne pratique d&#39;accessibilité.</description>
+      <description>N°&#xD;Question&#xD;Votre réponse&#xD;Afficher les réponses&#xD;1&#xD;« Cliquez sur le bouton rouge » est une bonne pratique d&#39;accessibilité.</description>
     </item>
-    
   </channel>
 </rss>

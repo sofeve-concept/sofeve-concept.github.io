@@ -5,44 +5,35 @@
     <link>https://sofeve-concept.github.io/bureautique/presentation/</link>
     <description>Recent content in Présentation du texte on Sofève Concept</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/bureautique/presentation/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr-FR</language>
+    <atom:link href="https://sofeve-concept.github.io/bureautique/presentation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Police de caractère</title>
       <link>https://sofeve-concept.github.io/bureautique/presentation/police-caractere/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/bureautique/presentation/police-caractere/</guid>
-      <description>Il existe 5 grandes catégories de police de caractères :
-les polices sérif (avec empattements) – exemple : times new roman, open sans ; les polices sans-sérif (linéales) – exemple arial, roboto ; les polices scriptes (ou cursives) – exemple segoe script ; les polices monospaces (dont la largeur de chaque caractère est identique) ; les polices symboliques ou décoratives – exemple webdings, wingdings.</description>
+      <description>Il existe 5 grandes catégories de police de caractères :&#xA;les polices sérif (avec empattements) – exemple : times new roman, open sans ; les polices sans-sérif (linéales) – exemple arial, roboto ; les polices scriptes (ou cursives) – exemple segoe script ; les polices monospaces (dont la largeur de chaque caractère est identique) ; les polices symboliques ou décoratives – exemple webdings, wingdings.</description>
     </item>
-    
     <item>
       <title>Lettres capitales et sigles</title>
       <link>https://sofeve-concept.github.io/bureautique/presentation/capitales-sigles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/bureautique/presentation/capitales-sigles/</guid>
-      <description>Règles Le texte en lettres capitales sera réservé aux titres et aux sigles.
-Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</description>
+      <description>Règles Le texte en lettres capitales sera réservé aux titres et aux sigles.&#xA;Même lorsqu’elles sont en capitales, les lettres doivent être accentuées.</description>
     </item>
-    
     <item>
       <title>Saut de ligne</title>
       <link>https://sofeve-concept.github.io/bureautique/presentation/saut-ligne/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/bureautique/presentation/saut-ligne/</guid>
       <description>Règles Pour espacer des paragraphes, ne pas utiliser des sauts de ligne multiple mais utiliser les propriétés d’espacement des paragraphes.</description>
     </item>
-    
     <item>
       <title>Alignement et indentation</title>
       <link>https://sofeve-concept.github.io/bureautique/presentation/alignement/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/bureautique/presentation/alignement/</guid>
       <description>Règles Pour aligner des paragraphes ou effectuer des retraits, ne pas utiliser les touches « Entrée », « Tabulation » ou « Espace » mais utiliser les propriétés de formatage du paragraphe.</description>
     </item>
-    
   </channel>
 </rss>

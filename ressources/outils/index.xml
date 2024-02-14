@@ -5,51 +5,42 @@
     <link>https://sofeve-concept.github.io/ressources/outils/</link>
     <description>Recent content in Outils de vérification on Sofève Concept</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/ressources/outils/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr-FR</language>
+    <atom:link href="https://sofeve-concept.github.io/ressources/outils/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Outils d&#39;analyse des pages web</title>
       <link>https://sofeve-concept.github.io/ressources/outils/outils-page-web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/ressources/outils/outils-page-web/</guid>
       <description>Débogage dans le navigateur Le débogage consiste à rechercher et corriger les erreurs dans son code.</description>
     </item>
-    
     <item>
       <title>Liste de vérification</title>
       <link>https://sofeve-concept.github.io/ressources/outils/liste-de-verification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/ressources/outils/liste-de-verification/</guid>
       <description>Un premier test simple Le premier test à réaliser est assez simple : mettez votre souris de côté et naviguez dans vos pages en utilisant uniquement les touches du clavier.</description>
     </item>
-    
     <item>
       <title>Contraste de couleurs</title>
       <link>https://sofeve-concept.github.io/ressources/outils/outils-couleurs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/ressources/outils/outils-couleurs/</guid>
       <description>Vérifier la conformité des contrastes Colour Contrast Analyser L&amp;rsquo;outil gratuit de vérification du contraste des couleurs créé par TPGi permet de déterminer facilement le rapport de contraste de deux couleurs simplement à l&amp;rsquo;aide d&amp;rsquo;un outil pipette.</description>
     </item>
-    
     <item>
       <title>Tester avec une synthèse vocale</title>
       <link>https://sofeve-concept.github.io/ressources/outils/synthese-vocale-nvda/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/ressources/outils/synthese-vocale-nvda/</guid>
       <description>Logiciel de synthèse vocale Pour s&amp;rsquo;assurer de l&amp;rsquo;accessibilité numérique d&amp;rsquo;une page web, il est impératif de réaliser des tests avec un lecteur d&amp;rsquo;écran.</description>
     </item>
-    
     <item>
       <title>Logiciels bureautiques</title>
       <link>https://sofeve-concept.github.io/ressources/outils/outils-bureautique/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/ressources/outils/outils-bureautique/</guid>
       <description>Vérificateur du logiciel bureautique Outre Colour Contrast Analyser, les logiciels bureautiques possèdent un outil de vérification de l&amp;rsquo;accessibilité atteignable depuis leur menu.</description>
     </item>
-    
   </channel>
 </rss>

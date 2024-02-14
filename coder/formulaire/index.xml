@@ -5,89 +5,70 @@
     <link>https://sofeve-concept.github.io/coder/formulaire/</link>
     <description>Recent content in Formulaires on Sofève Concept</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/coder/formulaire/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr-FR</language>
+    <atom:link href="https://sofeve-concept.github.io/coder/formulaire/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sémantique HTML</title>
       <link>https://sofeve-concept.github.io/coder/formulaire/semantique-html-formulaire/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/coder/formulaire/semantique-html-formulaire/</guid>
-      <description>Ce qu&amp;rsquo;il faut retenir Un formulaire HTML peut être composé de plusieurs éléments :
-zones de texte (sur une seule ligne ou plusieurs lignes), liste de sélection déroulante, cases à cocher, boutons radio et boutons d&amp;rsquo;action (soumission du formulaire ou effacement des champs).</description>
+      <description>Ce qu&amp;rsquo;il faut retenir Un formulaire HTML peut être composé de plusieurs éléments :&#xA;zones de texte (sur une seule ligne ou plusieurs lignes), liste de sélection déroulante, cases à cocher, boutons radio et boutons d&amp;rsquo;action (soumission du formulaire ou effacement des champs).</description>
     </item>
-    
     <item>
       <title>Libellé de champ</title>
       <link>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/coder/formulaire/label-etiquette-champ/</guid>
       <description>remarque Pour présenter l&#39;étiquette de champ, les exemples de cette page associent l&#39;étiquette à un champ de type `input`.</description>
     </item>
-    
     <item>
       <title>Regroupement de champs</title>
       <link>https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/</guid>
       <description>Implémentation HTML Les champs de même nature sont regroupés avec fieldset et titrés avec legend.</description>
     </item>
-    
     <item>
       <title>Liste déroulante</title>
       <link>https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/</guid>
       <description>Règles générales Les options proposées dans une liste déroulante doivent être ordonnées de manière logique :</description>
     </item>
-    
     <item>
       <title>Formulaire à étapes multiples</title>
       <link>https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/</guid>
       <description>Pour découper un formulaire en étapes multiples, chaque étape devra proposer les éléments présentés ci-après.</description>
     </item>
-    
     <item>
       <title>Contrôle de la saisie</title>
       <link>https://sofeve-concept.github.io/coder/formulaire/controle-formulaire/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/coder/formulaire/controle-formulaire/</guid>
       <description>Contrôle simple de la saisie des champs Selon le type de champs déclaré, le navigateur effectuera un contrôle de la saisie et affichera une infobulle informative en cas d&amp;rsquo;erreur de saisie.</description>
     </item>
-    
     <item>
       <title>Aide à la saisie</title>
       <link>https://sofeve-concept.github.io/coder/formulaire/aide-saisie/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/coder/formulaire/aide-saisie/</guid>
-      <description>Champ obligatoire Si un des champs du formulaire est obligatoire :
-la mention de la présence de champs obligatoires dans le formulaire sera signalée au début du formulaire ; on signalera pour chaque champ obligatoire que celui-ci l&amp;rsquo;est, soit en l&amp;rsquo;écrivant entre les balises &amp;lt;label&amp;gt; ; exemple : &amp;lt;label&amp;gt;.</description>
+      <description>Champ obligatoire Si un des champs du formulaire est obligatoire :&#xA;la mention de la présence de champs obligatoires dans le formulaire sera signalée au début du formulaire ; on signalera pour chaque champ obligatoire que celui-ci l&amp;rsquo;est, soit en l&amp;rsquo;écrivant entre les balises &amp;lt;label&amp;gt; ; exemple : &amp;lt;label&amp;gt;.</description>
     </item>
-    
     <item>
       <title>Sécurité des formulaires</title>
       <link>https://sofeve-concept.github.io/coder/formulaire/securite-formulaire/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/coder/formulaire/securite-formulaire/</guid>
       <description>Formulaire gérant des données sensibles Les données sensibles concernent des données à caractère financier, juridique ou personnel.</description>
     </item>
-    
     <item>
       <title>Quiz récap&#39;</title>
       <link>https://sofeve-concept.github.io/coder/formulaire/quiz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/coder/formulaire/quiz/</guid>
-      <description>N°QuestionVotre réponseAfficher les réponses1L&#39;élément fieldset sert à&amp;nbsp;:Mettre une bordure autour des champs de formulaire.</description>
+      <description>N°&#xD;Question&#xD;Votre réponse&#xD;Afficher les réponses&#xD;1&#xD;L&#39;élément fieldset sert à&amp;nbsp;:&#xD;Mettre une bordure autour des champs de formulaire.</description>
     </item>
-    
   </channel>
 </rss>

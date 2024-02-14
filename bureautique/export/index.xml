@@ -5,24 +5,21 @@
     <link>https://sofeve-concept.github.io/bureautique/export/</link>
     <description>Recent content in Export PDF on Sofève Concept</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/bureautique/export/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr-FR</language>
+    <atom:link href="https://sofeve-concept.github.io/bureautique/export/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Métadonnées et méta-informations</title>
       <link>https://sofeve-concept.github.io/bureautique/export/meta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/bureautique/export/meta/</guid>
       <description>Règles Les métadonnées ou méta-informations fournissent des renseignements à propos d&amp;rsquo;autres données pour en faciliter la gestion et la compréhension du document.</description>
     </item>
-    
     <item>
       <title>Export au format PDF</title>
       <link>https://sofeve-concept.github.io/bureautique/export/export/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/bureautique/export/export/</guid>
       <description>Règles Les documents au format PDF doivent pouvoir être lus par un logiciel de synthèse vocale au même titre qu’un document bureautique.</description>
     </item>
-    
   </channel>
 </rss>

@@ -5,24 +5,21 @@
     <link>https://sofeve-concept.github.io/bureautique/couleur/</link>
     <description>Recent content in Couleurs et contrastes on Sofève Concept</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/bureautique/couleur/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr-FR</language>
+    <atom:link href="https://sofeve-concept.github.io/bureautique/couleur/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contraste de couleur</title>
       <link>https://sofeve-concept.github.io/bureautique/couleur/contraste/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/bureautique/couleur/contraste/</guid>
       <description>Règles Le contraste entre le texte et la couleur de fond doit être suffisamment élevée. Le ratio de couleur minimum est de 4.</description>
     </item>
-    
     <item>
       <title>Couleur et information</title>
       <link>https://sofeve-concept.github.io/bureautique/couleur/information/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/bureautique/couleur/information/</guid>
       <description>Règles Il faut veiller à ce que les couleurs ne soient pas le seul moyen de véhiculer de l’information.</description>
     </item>
-    
   </channel>
 </rss>

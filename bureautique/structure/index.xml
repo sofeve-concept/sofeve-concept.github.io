@@ -5,51 +5,42 @@
     <link>https://sofeve-concept.github.io/bureautique/structure/</link>
     <description>Recent content in Structure du document on Sofève Concept</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-FR</language><atom:link href="https://sofeve-concept.github.io/bureautique/structure/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr-FR</language>
+    <atom:link href="https://sofeve-concept.github.io/bureautique/structure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Titraille</title>
       <link>https://sofeve-concept.github.io/bureautique/structure/titraille/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/bureautique/structure/titraille/</guid>
       <description>Règles Le contenu doit être structuré à l’aide des titres de niveau 1 à 6. La hiérarchie des titres doit être conservée ; il faut donc éviter de passer directement d’un titre 2 à un titre 4, par exemple.</description>
     </item>
-    
     <item>
       <title>Liste à puces et liste numérotée</title>
       <link>https://sofeve-concept.github.io/bureautique/structure/listes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/bureautique/structure/listes/</guid>
       <description>Règles Les mises en forme « Liste à puces » et « Listes numérotées » doivent être utilisées pour mettre en avant une énumération.</description>
     </item>
-    
     <item>
       <title>Colonnes</title>
       <link>https://sofeve-concept.github.io/bureautique/structure/colonnes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/bureautique/structure/colonnes/</guid>
       <description>Règles Pour présenter du texte sur plusieurs colonnes, utiliser la fonctionnalité « Colonnes » prévue à cet effet ; ne pas utiliser les tableaux.</description>
     </item>
-    
     <item>
       <title>Citations</title>
       <link>https://sofeve-concept.github.io/bureautique/structure/citation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/bureautique/structure/citation/</guid>
       <description>Règles Lorsque des citations sont proposées dans les contenus, utiliser le style « Citations » de Libre Office.</description>
     </item>
-    
     <item>
       <title>Langue</title>
       <link>https://sofeve-concept.github.io/bureautique/structure/langue/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://sofeve-concept.github.io/bureautique/structure/langue/</guid>
       <description>Règles Tout document doit avoir une langue principale déclarée. Si des paragraphes ou des portions de texte sont écrits dans une autre langue, il faudra veiller à déclarer le changement de langue.</description>
     </item>
-    
   </channel>
 </rss>
