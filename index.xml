@@ -191,6 +191,13 @@
       <description>Règles Les documents au format PDF doivent pouvoir être lus par un logiciel de synthèse vocale au même titre qu’un document bureautique.</description>
     </item>
     <item>
+      <title>Image décorative</title>
+      <link>https://sofeve-concept.github.io/bureautique/images/imagedeco/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/bureautique/images/imagedeco/</guid>
+      <description>Règles Lorsque des images sont insérées dans le document, selon leur fonction (informatives, décoratives ou lien hypertexte), une alternative textuelle sera éventuellement proposée.</description>
+    </item>
+    <item>
       <title>Le cadre légal de l&#39;accessibilité numérique</title>
       <link>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/cadre-legal-accessibilite-numerique/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
