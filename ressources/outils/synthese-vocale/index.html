@@ -3,10 +3,10 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Contraste de couleurs - Outils de vérification - Ressources - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Tester avec une synthèse vocale - Outils de vérification - Ressources - Sofève Concept</title>
 	
 	<meta name="theme-color" content="#FFFFFF" />
-	<meta name="description" content="Collection de quelques outils pour vérifier le contraste des couleurs et générer une palette de couleurs avec les bons contrastes. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	<meta name="description" content="Un logiciel de synthèse vocale permet un accès aux pages web pour les aveugles et les malvoyants ou pour toute personne ayant des difficultés à lire. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -139,8 +139,8 @@
 			
 			<ul><li><a href="https://sofeve-concept.github.io/ressources/outils/outils-page-web/">Outils d&#39;analyse des pages web</a></li>
 				<li><a href="https://sofeve-concept.github.io/ressources/outils/liste-de-verification/">Liste de vérification</a></li>
-				<li><a href="https://sofeve-concept.github.io/ressources/outils/outils-couleurs/" aria-current="page" >Contraste de couleurs</a></li>
-				<li><a href="https://sofeve-concept.github.io/ressources/outils/synthese-vocale/">Tester avec une synthèse vocale</a></li>
+				<li><a href="https://sofeve-concept.github.io/ressources/outils/outils-couleurs/">Contraste de couleurs</a></li>
+				<li><a href="https://sofeve-concept.github.io/ressources/outils/synthese-vocale/" aria-current="page" >Tester avec une synthèse vocale</a></li>
 				<li><a href="https://sofeve-concept.github.io/ressources/outils/outils-bureautique/">Logiciels bureautiques</a></li>
 				</ul>
 			</li>
@@ -160,7 +160,7 @@
   
   <li><a href="/ressources/outils/">Outils de vérification</a></li>
   
-  <li aria-current="page" tabindex="-1">Contraste de couleurs</li>
+  <li aria-current="page" tabindex="-1">Tester avec une synthèse vocale</li>
   </ol>
 </nav>
 <div>
@@ -171,66 +171,292 @@
 </div>
 </div>
      <section>
-		<h1 id="contenu">Contraste de couleurs</h1>
-               <p>Collection de quelques outils pour vérifier le contraste des couleurs et générer une palette de couleurs avec les bons contrastes.</p>
+		<h1 id="contenu">Tester avec une synthèse vocale</h1>
+               <p>Un logiciel de synthèse vocale permet un accès aux pages web pour les aveugles et les malvoyants ou pour toute personne ayant des difficultés à lire.</p>
 <button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier Table des matières">
     Table des matières
 </button>
 <div id="tdm" role="region" tabindex="-1">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#vérifier-la-conformité-des-contrastes">Vérifier la conformité des contrastes</a>
+    <li><a href="#logiciels-de-synthèse-vocale">Logiciels de synthèse vocale</a></li>
+    <li><a href="#nvda">NVDA</a>
       <ul>
-        <li><a href="#colour-contrast-analyser">Colour Contrast Analyser</a></li>
-        <li><a href="#extensions-de-navigateur">Extensions de navigateur</a>
+        <li><a href="#télécharger-le-lecteur-décran-nvda">Télécharger le lecteur d&rsquo;écran NVDA</a></li>
+        <li><a href="#prise-en-main-rapide-de-nvda">Prise en main rapide de NVDA</a></li>
+        <li><a href="#paramètrages">Paramètrages</a></li>
+        <li><a href="#touches-de-base">Touches de base</a></li>
+        <li><a href="#navigation">Navigation</a>
           <ul>
-            <li><a href="#wcag-color-contrast-checker">WCAG Color Contrast Checker</a></li>
-            <li><a href="#nocoffee">NoCoffee</a></li>
+            <li><a href="#navigation-générale">Navigation générale</a></li>
+            <li><a href="#navigation-rapide">Navigation rapide</a></li>
+            <li><a href="#navigation-dans-les-tableaux">Navigation dans les tableaux</a></li>
+            <li><a href="#navigation-dans-les-formulaires">Navigation dans les formulaires</a></li>
           </ul>
         </li>
       </ul>
     </li>
-    <li><a href="#générer-une-palette-de-couleurs-accessibles">Générer une palette de couleurs accessibles</a></li>
+    <li><a href="#orca">Orca</a>
+      <ul>
+        <li><a href="#installer-orca">Installer Orca</a></li>
+        <li><a href="#prise-en-main-dorca">Prise en main d&rsquo;Orca</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 </div>
-<h2 id="vérifier-la-conformité-des-contrastes">Vérifier la conformité des contrastes</h2>
-<h3 id="colour-contrast-analyser">Colour Contrast Analyser</h3>
-<p>L&rsquo;outil gratuit de vérification du contraste des couleurs créé par TPGi permet de déterminer facilement le rapport de contraste de deux couleurs simplement à l&rsquo;aide d&rsquo;un outil pipette. <span lang="en">Colour Contrast Analyser</span> (CCA) permet d&rsquo;optimiser son contenu, y compris le texte et les éléments visuels, pour les personnes ayant une déficience visuelle comme le daltonisme et les malvoyants.</p>
-<p>Ses principales fonctionnalités :</p>
+<h2 id="logiciels-de-synthèse-vocale">Logiciels de synthèse vocale</h2>
+<p>Pour s&rsquo;assurer de l&rsquo;accessibilité numérique d&rsquo;une page web, il est impératif de réaliser des tests avec une synthèse vocale. Les principaux logiciels de synthèse vocale sont :</p>
 <ul>
-<li>Vérifie les combinaisons de couleurs de premier plan et d&rsquo;arrière-plan pour déterminer si elles donnent une bonne visibilité de couleurs.</li>
-<li>Basé sur les algorithmes proposés par le W3C.</li>
+<li>NVDA, logiciel open source pour Windows ;</li>
+<li>Orca, logiciel open source pour Linux ;</li>
+<li>Jaws, logiciel payant édité par Microsoft ;</li>
+<li>VoiceOver, logiciel intégré au système d&rsquo;exploitation Apple.</li>
 </ul>
-<p><a href="https://www.tpgi.com/color-contrast-checker/" lang="en" hreflang="en" title="Télécharger le logiciel CCA (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">Télécharger le logiciel CCA</a></p>
-<h3 id="extensions-de-navigateur">Extensions de navigateur</h3>
-<h4 id="wcag-color-contrast-checker">WCAG Color Contrast Checker</h4>
-<p>L&rsquo;extension vérifie le contraste des couleurs entre le premier plan et l&rsquo;arrière-plan des éléments qui se trouvent dans la page selon les WCAG 2.1.<br>
-Il évalue le contraste sur tous les éléments de la page en tenant compte de leur style calculé pour les propriétés CSS color et background-color.<br>
-Dans le cas où ces couleurs sont définies avec des valeurs RGBA, il considère également l&rsquo;opacité pour en déduire la couleur réelle qui est finalement affichée.<br>
-Il peut simuler le daltonisme et évaluer le contraste pour les simulations. De cette façon, les développeurs peuvent voir à quoi ressemblent les pages pour les utilisateurs daltoniens.<br>
-L&rsquo;outil comprend également deux champs dans lesquels les couleurs peuvent être introduites manuellement pour être testées. Il permet également de choisir la couleur directement à partir des documents par l&rsquo;intermédiaire d&rsquo;une pipette.</p>
-<h4 id="nocoffee">NoCoffee</h4>
-<p>NoCoffee peut être utile pour comprendre les problèmes rencontrés par les personnes ayant des problèmes de vision légers à extrêmes, tels que :</p>
+<h2 id="nvda">NVDA</h2>
+<h3 id="télécharger-le-lecteur-décran-nvda">Télécharger le lecteur d&rsquo;écran NVDA</h3>
+<p>NVDA, signifie « Non Visual Desktop Access ». C’est donc un lecteur d’écran open source pour Windows créé en 2006 par Michael Curran et James Teh pour proposer une alternative aux lecteurs d’écran propriétaires dont le prix limite fortement l’accès à l’informatique aux personnes déficientes visuelles. Le logiciel est disponible en téléchargement <a href="https://www.nvda-fr.org/c2"  target="_blank" rel="noopener noreferrer" title="sur le site de NVDA (nouvelle fenêtre)">sur le site de NVDA</a>.</p>
+<h3 id="prise-en-main-rapide-de-nvda">Prise en main rapide de NVDA</h3>
+<p>NVDA dispose d&rsquo;une touche dédiée, qui, combinée avec d&rsquo;autres touches, permettent d&rsquo;exécuter les actions propres au lecteur d&rsquo;écran. La touche [MAJ] de verrouillage des majuscules est cette touche dédiée. Pour la suite, elle sera appelée &ldquo;touche NVDA&rdquo;.</p>
+<h3 id="paramètrages">Paramètrages</h3>
+<p>Pour changer la vitesse de lecture, la langue de la voix, montrer la Visionneuse de Parole, activer la visualisation des focus et curseur de NVDA, aller dans le menu NVDA en appuyant simultanément sur NVDA + n, aller dans « Préférences », puis « Paramètres vocaux ». Effectuer les réglages et confirmer avec « OK ».</p>
+<h3 id="touches-de-base">Touches de base</h3>
+
+<table class="responsive style2">
+       <thead>
+          <tr>
+            <th scope="col">Commandes</th>
+            <th scope="col">Touches de raccourci</th>
+          </tr>
+          </thead>
+           <tbody>
+          <tr>
+            <td>Activer NVDA</td>
+            <td data-label="Touches : ">Ctrl + alt + n</td>
+          </tr>
+          <tr>
+            <td>Quitter NVDA</td>
+            <td data-label="Touches : ">NVDA + q</td>
+          </tr>
+          <tr>
+            <td>Mode de parole (successivement : parole, bip, silence)</td>
+            <td data-label="Touches : ">NVDA + s</td>
+          </tr>
+          <tr>
+            <td>Mode veille (permet de désactiver NVDA dans une application)</td>
+            <td data-label="Touches : ">NVDA + maj + s</td>
+          </tr>
+          <tr>
+            <td>Arrêt de la parole</td>
+            <td data-label="Touche : ">Ctrl</td>
+          </tr>
+        </tbody>
+      </table>
+
+<h3 id="navigation">Navigation</h3>
+<h4 id="navigation-générale">Navigation générale</h4>
+
+<table class="responsive style2">
+        <thead>
+          <tr>
+            <th scope="col">Commandes</th>
+            <th scope="col">Touches de raccourci</th>
+          </tr>
+          </thead>
+           <tbody>
+          <tr>
+            <td>Élément suivant</td>
+            <td data-label="Touche : ">Flèche bas</td>
+          </tr>
+          <tr>
+            <td>Élément précédent</td>
+            <td data-label="Touche : ">Flèche haut</td>
+          </tr>
+          <tr>
+            <td>Élément focusable suivant</td>
+            <td data-label="Touche : ">Tab</td>
+          </tr>
+          <tr>
+            <td>Élément focusable précédent</td>
+            <td data-label="Touches : ">Maj + tab</td>
+          </tr>
+          <tr>
+            <td>Activer un lien</td>
+            <td data-label="Touche : ">Entrée</td>
+          </tr>
+          <tr>
+            <td>Activer un bouton</td>
+            <td data-label="Touche : ">Entrée ou Espace</td>
+          </tr>
+        </tbody>
+      </table>
+
+<h4 id="navigation-rapide">Navigation rapide</h4>
+<p>L’utilisation la touche Maj additionnée au raccourcis suivants permet d’accéder à  l’élément correspondant précédent (exemple maj + h permet d’accéder au titre précédent).</p>
+
+<table class="responsive style2">
+        <thead>
+          <tr>
+            <th scope="col">Commandes</th>
+            <th scope="col">Touches de raccourci</th>
+          </tr>
+           </thead>
+           <tbody>
+          <tr>
+            <td>Titre de niveau suivant</td>
+            <td data-label="Touche : ">h</td>
+          </tr>
+          <tr>
+            <td>Titre de niveau [1 à 6] suivant</td>
+            <td data-label="Touche : ">1 à 6</td>
+          </tr>
+          <tr>
+            <td>Liste suivante</td>
+            <td data-label="Touche : ">l</td>
+          </tr>
+          <tr>
+            <td>Élément de liste suivant</td>
+            <td data-label="Touche : ">i</td>
+          </tr>
+          <tr>
+            <td>Tableau suivant</td>
+            <td data-label="Touche : ">t</td>
+          </tr>
+          <tr>
+            <td>Lien suivant</td>
+            <td data-label="Touche : ">k</td>
+          </tr>
+          <tr>
+            <td>Champ de formulaire suivant</td>
+            <td data-label="Touche : ">f</td>
+          </tr>
+          <tr>
+            <td>Bouton suivant</td>
+            <td data-label="Touche : ">b</td>
+          </tr>
+          <tr>
+            <td>Case à Cocher</td>
+            <td data-label="Touche : ">x</td>
+          </tr>
+          <tr>
+            <td>Liste déroulante</td>
+            <td data-label="Touche : ">c</td>
+          </tr>
+          <tr>
+            <td>Bouton radio</td>
+            <td data-label="Touche : ">r</td>
+          </tr>
+          <tr>
+            <td>Balise de citation</td>
+            <td data-label="Touche : ">q</td>
+          </tr>
+          <tr>
+            <td>Région suivante</td>
+            <td data-label="Touche : ">d</td>
+          </tr>
+          <tr>
+            <td>Cadre suivant</td>
+            <td data-label="Touche : ">m</td>
+          </tr>
+          <tr>
+            <td>Aller à l’élément suivant immédiatement un tableau ou une liste</td>
+            <td data-label="Touche : ">, (virgule)</td>
+          </tr>
+        </tbody>
+      </table>
+
+<h4 id="navigation-dans-les-tableaux">Navigation dans les tableaux</h4>
+<p>L’utilisation la touche Maj additionnée au raccourcis suivants permet d’accéder à  l’élément correspondant précédent (exemple maj + t permet d’accéder au tableau précédent).</p>
+
+<table class="responsive style2">
+        <thead>
+          <tr>
+            <th scope="col">Commandes</th>
+            <th scope="col">Touches de raccourci</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Tableau suivant</td>
+            <td data-label="Touche : ">t</td>
+          </tr>
+          <tr>
+            <td>Cellule à droite</td>
+            <td data-label="Touches : ">Ctrl + Alt + flèche droite</td>
+          </tr>
+          <tr>
+            <td>Cellule à gauche</td>
+            <td data-label="Touches : ">Ctrl + Alt + flèche gauche</td>
+          </tr>
+          <tr>
+            <td>Cellule au-dessous</td>
+            <td data-label="Touches : ">Ctrl + Alt + flèche bas</td>
+          </tr>
+          <tr>
+            <td>Cellule au-dessus</td>
+            <td data-label="Touches : ">Ctrl + Alt + flèche haut</td>
+          </tr>
+          <tr>
+            <td>Aller à l’élément suivant immédiatement un tableau</td>
+            <td data-label="Touche : ">, (virgule)</td>
+          </tr>
+        </tbody>
+      </table>
+
+<h4 id="navigation-dans-les-formulaires">Navigation dans les formulaires</h4>
+<p>L’utilisation la touche Maj additionnée au raccourcis suivants permet d’accéder à  l’élément correspondant précédent (exemple maj + c permet d’accéder au bouton radio précédent).</p>
+
+<table class="responsive style2">
+        <thead>
+          <tr>
+            <th scope="col">Commandes</th>
+            <th scope="col">Touches de raccourci</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Liste des champs de formulaires</td>
+            <td data-label="Touches : ">Inser + F7</td>
+          </tr>
+          <tr>
+            <td>Champ de formulaire suivant</td>
+            <td data-label="Touche : ">f</td>
+          </tr>
+          <tr>
+            <td>Bouton suivant</td>
+            <td data-label="Touche : ">b</td>
+          </tr>
+          <tr>
+            <td>Case à cocher suivante</td>
+            <td data-label="Touche : ">x</td>
+          </tr>
+          <tr>
+            <td>Sélectionner ou désélectionner la case à cocher</td>
+            <td data-label="Touche : ">Espace</td>
+          </tr>
+          <tr>
+            <td>Bouton radio suivant</td>
+            <td data-label="Touche : ">c</td>
+          </tr>
+          <tr>
+            <td>Sélectionner le bouton radio</td>
+            <td data-label="Touches : ">Flèche haut et flèche bas</td>
+            </tr>
+            </tbody>
+            </table>
+
+<h2 id="orca">Orca</h2>
+<h3 id="installer-orca">Installer Orca</h3>
+<p>Orca est la solution d’accessibilité pour Linux. Orca gère toute la partie accessibilité visuelle de Linux et intègre lecteur d’écran, loupe …<br>
+Le logiciel est intégré à Linux et au bureau, il est juste nécessaire de l’activer et de le configurer. Pour cela :</p>
 <ul>
-<li><strong>Faible acuité</strong> : certaines pages Web utilisent un texte très petit ou des cibles de clics. S&rsquo;il est vrai que les utilisateurs utilisent un zoom de navigateur intégré ou des loupes d&rsquo;écran comme ZoomText, de nombreux utilisateurs non techniques ne savent pas comment.</li>
-<li><strong>Sensibilité au contraste faible</strong> : de nombreux concepteurs utilisent du texte avec un contraste très faible, par ex. texte gris clair sur blanc.</li>
-<li><strong>Daltonisme</strong> : bien que l&rsquo;utilisation de la couleur dans le design soit définitivement une bonne chose, il est important de se rappeler que l&rsquo;information ne doit pas être uniquement portée par la couleur. Ainsi 8% des hommes sont daltoniens et 0,5% ds femmes sont daltionniennes.</li>
-<li><strong>Neige visuelle</strong>, <strong>éblouissement</strong>, <strong>images fantômes</strong> et <strong>cataractes</strong>.</li>
-<li><strong>Nystagmus</strong> (mouvement oscillatoire rapide, involontaire des yeux).</li>
-<li><strong>Champ visuel obstrué</strong> : corps flottants, obstruction d&rsquo;un côté (décollement de la rétine ou hémanopie), vision centrale obstruée (glaucome), vision tachetée (rétinopathie diabétique) ou vision périphérique obstruée (rétinite pigmentaire ou dégénérescence maculaire). Remarque : les simulations de champs visuels partiels ne peuvent pas suivre votre regard comme elles le feraient dans le monde réel.</li>
+<li>Passer par le menu « Système / Applications préférées » ,</li>
+<li>Choisir l&rsquo;onglet « accessibilité »,</li>
+<li>Sélectionner dans la liste déroulante la configuration choisie : lecture d’écran seule, lecture d’écran et loupe, loupe sans lecture.</li>
+<li>Cliquer sur la case à cocher « Exécuter à l’ouverture de session » pour que le logiciel soit lancé au démarrage.</li>
 </ul>
-<h2 id="générer-une-palette-de-couleurs-accessibles">Générer une palette de couleurs accessibles</h2>
-<ul>
-<li>
-<p><strong><span lang="en">A11y Color Palette</span></strong> : Cet outil vous aide à visualiser une palette entière de toutes les combinaisons de couleurs en gardant l&rsquo;accessibilité à l&rsquo;esprit. Les combinaisons sont classées par rapport de contraste des couleurs.<br>
-<a href="http://a11yrocks.com/colorPalette/" lang="en" hreflang="en" title="A11y Color Palette (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">A11y Color Palette</a></p>
-</li>
-<li>
-<p><strong><span lang="en">Tanaguru contrast finder</span></strong> : Cet outil vous aide à paramétrer le ratio de contraste, choisir de modifier soit la couleur du texte soit la couleur du fond et choisir des couleurs valides et très proches de la couleur initiale ou une palette de couleurs valides.<br>
-<a href="https://contrast-finder.tanaguru.com/" lang="en" hreflang="en" title="Tanaguru contrast finder (nouvelle fenêtre)" target="_blank" rel="noopener noreferrer">Tanaguru contrast finder</a></p>
-</li>
-</ul>
+<h3 id="prise-en-main-dorca">Prise en main d&rsquo;Orca</h3>
+<p>Pour connaître toutes les fonctionnalités d&rsquo;Orca, vous pouvez vous référer à la documentation en ligne <a href="https://help.gnome.org/users/orca/stable/"  target="_blank" rel="noopener noreferrer" title="Lecteur d’écran Orca - Gnome Help (nouvelle fenêtre)">Lecteur d’écran Orca - Gnome Help</a>.</p>
 
      </section>
 </main>
