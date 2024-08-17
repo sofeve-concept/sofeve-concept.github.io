@@ -214,8 +214,7 @@
 </span></span><span class="line"><span class="cl">    <span class="k">background-repeat</span><span class="p">:</span> <span class="kc">no-repeat</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="k">background-size</span><span class="p">:</span> <span class="kc">cover</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="k">background-color</span><span class="p">:</span> <span class="mh">#C9C8C6</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="c">/** choisir l&#39;image de fond */</span>
-</span></span><span class="line"><span class="cl">    <span class="k">background-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s1">&#39;/images/cherry-blossom.jpg&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">background-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s1">&#39;/images/cherry-blossom.jpg&#39;</span><span class="p">);</span> <span class="c">/** choisir l&#39;image de fond */</span>
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl">  
 </span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nc">text-border</span> <span class="p">{</span>
@@ -224,11 +223,17 @@
 </span></span><span class="line"><span class="cl">    <span class="k">font-family</span><span class="p">:</span> <span class="n">Arial</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="k">font-size</span><span class="p">:</span> <span class="mi">3</span><span class="kt">em</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="c">/**
-</span></span></span><span class="line"><span class="cl"><span class="c">     * Default border around text with text-shadow
-</span></span></span><span class="line"><span class="cl"><span class="c">     * Source: https://openclassrooms.com/forum/sujet/contour-police-de-caractere-css#message-91713580
-</span></span></span><span class="line"><span class="cl"><span class="c">    */</span>
-</span></span><span class="line"><span class="cl">    <span class="k">text-shadow</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mh">#000000</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">   <span class="kp">-webkit-</span><span class="n">text-stroke</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="mh">#000000</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  <span class="c">/**
+</span></span></span><span class="line"><span class="cl"><span class="c">   * Si la propriété -webkit-text-stroke property n&#39;est pas supportée par les navigateurs
+</span></span></span><span class="line"><span class="cl"><span class="c">   * Voir: https://caniuse.com/#search=-webkit-text-stroke
+</span></span></span><span class="line"><span class="cl"><span class="c">  */</span>
+</span></span><span class="line"><span class="cl">  <span class="p">@</span><span class="k">supports</span> <span class="nt">not</span> <span class="o">(</span><span class="nt">-webkit-text-stroke</span><span class="o">:</span> <span class="nt">2px</span> <span class="nt">red</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">text-border</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="k">text-shadow</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mh">#000000</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">                 <span class="mi">0</span> <span class="mi">2</span><span class="kt">px</span> <span class="mi">0</span> <span class="mh">#000000</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">                 <span class="mi">0</span> <span class="mi">-2</span><span class="kt">px</span> <span class="mi">0</span> <span class="mh">#000000</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">                 <span class="mi">-2</span><span class="kt">px</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mh">#000000</span><span class="p">,</span>
@@ -236,20 +241,8 @@
 </span></span><span class="line"><span class="cl">                 <span class="mi">2</span><span class="kt">px</span> <span class="mi">-2</span><span class="kt">px</span> <span class="mi">0</span> <span class="mh">#000000</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">                 <span class="mi">-2</span><span class="kt">px</span> <span class="mi">2</span><span class="kt">px</span> <span class="mi">0</span> <span class="mh">#000000</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">                 <span class="mi">-2</span><span class="kt">px</span> <span class="mi">-2</span><span class="kt">px</span> <span class="mi">0</span> <span class="mh">#000000</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">}</span>
-</span></span><span class="line"><span class="cl">  
-</span></span><span class="line"><span class="cl">  <span class="c">/**
-</span></span></span><span class="line"><span class="cl"><span class="c">   * If -webkit-text-stroke property is supported, use it and remove text-shadow
-</span></span></span><span class="line"><span class="cl"><span class="c">   * Support: https://caniuse.com/#search=-webkit-text-stroke
-</span></span></span><span class="line"><span class="cl"><span class="c">  */</span>
-</span></span><span class="line"><span class="cl">  <span class="p">@</span><span class="k">supports</span> <span class="o">(</span><span class="nt">-webkit-text-stroke</span><span class="o">:</span> <span class="nt">2px</span> <span class="nt">red</span><span class="o">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">text-border</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">      <span class="k">text-shadow</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">      <span class="kp">-webkit-</span><span class="n">text-stroke</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="mh">#000000</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
-</span></span><span class="line"><span class="cl">  
 </span></span></code></pre></div>
      </section>
 </main>
