@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Code valide on Sofève Concept</title>
+    <link>https://sofeve-concept.github.io/tags/code-valide/</link>
+    <description>Recent content in Code valide on Sofève Concept</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <atom:link href="https://sofeve-concept.github.io/tags/code-valide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code HTML de base</title>
+      <link>https://sofeve-concept.github.io/coder/structure/code-base/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/coder/structure/code-base/</guid>
+      <description>Présentation générale d&amp;rsquo;une page HTML Une page web HTML comporte plusieurs éléments :&#xA;Un doctype pour indiquer qu&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;une page HTML 5 ; Le doctype HTML 5 s&amp;rsquo;écrit &amp;lt;!</description>
+    </item>
+    <item>
+      <title>Sémantique HTML</title>
+      <link>https://sofeve-concept.github.io/coder/structure/semantique-html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/coder/structure/semantique-html/</guid>
+      <description>Halte au détournement de code ! Certains éléments HTML sont détournés de leur usage sémantique ; cela est bien entendu proscrit.</description>
+    </item>
+    <item>
+      <title>Validité du code</title>
+      <link>https://sofeve-concept.github.io/coder/structure/validite-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/coder/structure/validite-code/</guid>
+      <description>Code HTML de base d&amp;rsquo;une page web Une page web HTML doit comporter a minima les éléments suivants pour être valide :</description>
+    </item>
+  </channel>
+</rss>
