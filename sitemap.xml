@@ -332,6 +332,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/coder/couleurs/perception-couleur/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/motifs/formulaires/stepper/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -369,12 +375,6 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/coder/contenu/titraille/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/coder/couleurs/vision-couleur/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
