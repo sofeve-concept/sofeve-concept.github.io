@@ -374,6 +374,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/coder/couleurs/vision-couleur/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/bureautique/presentation/alignement/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
