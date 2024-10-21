@@ -8,21 +8,21 @@
     <language>fr-FR</language>
     <atom:link href="https://sofeve-concept.github.io/ressources/outils/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Outils d&#39;analyse des pages web</title>
+      <title>Outils d&#39;analyse web</title>
       <link>https://sofeve-concept.github.io/ressources/outils/outils-page-web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/ressources/outils/outils-page-web/</guid>
       <description>Débogage dans le navigateur Le débogage consiste à rechercher et corriger les erreurs dans son code.</description>
     </item>
     <item>
-      <title>Liste de vérification</title>
+      <title>Liste de vérification web</title>
       <link>https://sofeve-concept.github.io/ressources/outils/liste-de-verification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/ressources/outils/liste-de-verification/</guid>
       <description>Un premier test simple Le premier test à réaliser est assez simple : mettez votre souris de côté et naviguez dans vos pages en utilisant uniquement les touches du clavier.</description>
     </item>
     <item>
-      <title>Contraste de couleurs</title>
+      <title>Tester le contraste de couleurs</title>
       <link>https://sofeve-concept.github.io/ressources/outils/outils-couleurs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/ressources/outils/outils-couleurs/</guid>
@@ -36,7 +36,7 @@
       <description>Logiciels de synthèse vocale Pour s&amp;rsquo;assurer de l&amp;rsquo;accessibilité numérique d&amp;rsquo;une page web, il est impératif de réaliser des tests avec une synthèse vocale.</description>
     </item>
     <item>
-      <title>Logiciels bureautiques</title>
+      <title>Tester un document bureautique</title>
       <link>https://sofeve-concept.github.io/ressources/outils/outils-bureautique/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/ressources/outils/outils-bureautique/</guid>

@@ -44,7 +44,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/definition-accessibilite-numerique/</loc>
+    <loc>https://sofeve-concept.github.io/ressources/accessibilite-numerique/definition-accessibilite-numerique/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -74,6 +74,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/ressources/accessibilite-numerique/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/lien-bouton/liens/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -93,12 +99,6 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/ressources/outils/outils-page-web/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/ressources/outils/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -152,6 +152,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/ressources/accessibilite-numerique/cadre-legal-accessibilite-numerique/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -183,12 +189,6 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/bureautique/images/imagedeco/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/cadre-legal-accessibilite-numerique/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -254,6 +254,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/ressources/outils/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/bureautique/presentation/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -261,12 +267,6 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/bureautique/courriel/courriel/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/ressources/sites/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -290,19 +290,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/outils/outils-couleurs/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://sofeve-concept.github.io/coder/couleurs/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/ressources/glossaire/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -344,7 +332,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/referentiels-accessibilite-numerique/</loc>
+    <loc>https://sofeve-concept.github.io/ressources/accessibilite-numerique/referentiels-accessibilite-numerique/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -368,7 +356,19 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/ressources/sites/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-simples/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/ressources/outils/outils-couleurs/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -393,6 +393,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/coder/navigation/fil-ariane/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/ressources/glossaire/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -620,12 +626,6 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/ressources/outils/outils-bureautique/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://sofeve-concept.github.io/coder/contenu/quiz/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -674,6 +674,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/ressources/outils/outils-bureautique/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/</loc>
     <lastmod>2020-04-06T11:00:27+02:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -683,12 +689,6 @@
   <url>
     <loc>https://sofeve-concept.github.io/services/</loc>
     <lastmod>2020-04-06T11:00:27+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/a-propos/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -737,18 +737,6 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/tags/css/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/a-propos/qui-est-sofeve/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -863,6 +851,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/plan/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/a-propos/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

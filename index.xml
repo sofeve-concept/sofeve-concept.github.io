@@ -58,10 +58,10 @@
       <description>Règles Le contraste entre le texte et la couleur de fond doit être suffisamment élevée. Le ratio de couleur minimum est de 4.</description>
     </item>
     <item>
-      <title>Définition de l&#39;accessibilité numérique</title>
-      <link>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/definition-accessibilite-numerique/</link>
+      <title>Définition</title>
+      <link>https://sofeve-concept.github.io/ressources/accessibilite-numerique/definition-accessibilite-numerique/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/definition-accessibilite-numerique/</guid>
+      <guid>https://sofeve-concept.github.io/ressources/accessibilite-numerique/definition-accessibilite-numerique/</guid>
       <description>Mettre le Web et ses services, à la disposition de tous les individus, quel que soit leur matériel ou logiciel, leur infrastructure réseau, leur langue maternelle, leur culture, leur localisation géographique, ou leurs aptitudes physiques ou mentales.</description>
     </item>
     <item>
@@ -114,7 +114,7 @@
       <description>Règles Les métadonnées ou méta-informations fournissent des renseignements à propos d&amp;rsquo;autres données pour en faciliter la gestion et la compréhension du document.</description>
     </item>
     <item>
-      <title>Outils d&#39;analyse des pages web</title>
+      <title>Outils d&#39;analyse web</title>
       <link>https://sofeve-concept.github.io/ressources/outils/outils-page-web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/ressources/outils/outils-page-web/</guid>
@@ -163,6 +163,13 @@
       <description>Règles Le contenu doit être structuré à l’aide des titres de niveau 1 à 6. La hiérarchie des titres doit être conservée ; il faut donc éviter de passer directement d’un titre 2 à un titre 4, par exemple.</description>
     </item>
     <item>
+      <title>Cadre légal</title>
+      <link>https://sofeve-concept.github.io/ressources/accessibilite-numerique/cadre-legal-accessibilite-numerique/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/ressources/accessibilite-numerique/cadre-legal-accessibilite-numerique/</guid>
+      <description>Que dit la loi&amp;nbsp;?&#xD;En France, l’article 47 de la loi du 11 février 2005 pour l’égalité des droits et des chances, la participation et la citoyenneté des personnes handicapées, fixe les obligations en matière d’accessibilité numérique&amp;nbsp;: Les services de communication publics en ligne des services de l’État, des collectivités territoriales et des établissements publics qui en dépendent doivent être accessibles aux personnes handicapées.</description>
+    </item>
+    <item>
       <title>Calcul du contraste</title>
       <link>https://sofeve-concept.github.io/coder/couleurs/contraste-couleurs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -196,13 +203,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/bureautique/images/imagedeco/</guid>
       <description>Règles Lorsque des images sont insérées dans le document, selon leur fonction (informatives, décoratives ou lien hypertexte), une alternative textuelle sera éventuellement proposée.</description>
-    </item>
-    <item>
-      <title>Le cadre légal de l&#39;accessibilité numérique</title>
-      <link>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/cadre-legal-accessibilite-numerique/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/cadre-legal-accessibilite-numerique/</guid>
-      <description>Que dit la loi&amp;nbsp;?&#xD;En France, l’article 47 de la loi du 11 février 2005 pour l’égalité des droits et des chances, la participation et la citoyenneté des personnes handicapées, fixe les obligations en matière d’accessibilité numérique&amp;nbsp;: Les services de communication publics en ligne des services de l’État, des collectivités territoriales et des établissements publics qui en dépendent doivent être accessibles aux personnes handicapées.</description>
     </item>
     <item>
       <title>Lecteur audio ou vidéo</title>
@@ -261,7 +261,7 @@
       <description>Règles Les mises en forme « Liste à puces » et « Listes numérotées » doivent être utilisées pour mettre en avant une énumération.</description>
     </item>
     <item>
-      <title>Liste de vérification</title>
+      <title>Liste de vérification web</title>
       <link>https://sofeve-concept.github.io/ressources/outils/liste-de-verification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/ressources/outils/liste-de-verification/</guid>
@@ -303,13 +303,6 @@
       <description>Règles Pour présenter du texte sur plusieurs colonnes, utiliser la fonctionnalité « Colonnes » prévue à cet effet ; ne pas utiliser les tableaux.</description>
     </item>
     <item>
-      <title>Contraste de couleurs</title>
-      <link>https://sofeve-concept.github.io/ressources/outils/outils-couleurs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/ressources/outils/outils-couleurs/</guid>
-      <description>Vérifier la conformité des contrastes Colour Contrast Analyser L&amp;rsquo;outil gratuit de vérification du contraste des couleurs créé par TPGi permet de déterminer facilement le rapport de contraste de deux couleurs simplement à l&amp;rsquo;aide d&amp;rsquo;un outil pipette.</description>
-    </item>
-    <item>
       <title>Images IMG</title>
       <link>https://sofeve-concept.github.io/coder/image-icone/images-img/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -345,10 +338,10 @@
       <description>Règles d’implémentation pour l’accessibilité Le processus par étape sera balisé avec les balises &amp;lt;nav&amp;gt;...&amp;lt;/nav&amp;gt; on ne posera pas d&amp;rsquo;attribut role=&amp;quot;navigation.</description>
     </item>
     <item>
-      <title>Référentiels pour l&#39;accessibilité numérique</title>
-      <link>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/referentiels-accessibilite-numerique/</link>
+      <title>Référentiels</title>
+      <link>https://sofeve-concept.github.io/ressources/accessibilite-numerique/referentiels-accessibilite-numerique/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/a-propos/accessibilite-numerique/referentiels-accessibilite-numerique/</guid>
+      <guid>https://sofeve-concept.github.io/ressources/accessibilite-numerique/referentiels-accessibilite-numerique/</guid>
       <description>Les normes internationales Les normes internationales pour rendre ses supports numériques accessibles sont émises par la Web Accessibility Initiative (WAI) du W3C à travers plusieurs guides :</description>
     </item>
     <item>
@@ -378,6 +371,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-simples/</guid>
       <description>Structure du tableau de données simple Les tableaux de données devront respecter les règles d&amp;rsquo;accessibilité suivantes :</description>
+    </item>
+    <item>
+      <title>Tester le contraste de couleurs</title>
+      <link>https://sofeve-concept.github.io/ressources/outils/outils-couleurs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/ressources/outils/outils-couleurs/</guid>
+      <description>Vérifier la conformité des contrastes Colour Contrast Analyser L&amp;rsquo;outil gratuit de vérification du contraste des couleurs créé par TPGi permet de déterminer facilement le rapport de contraste de deux couleurs simplement à l&amp;rsquo;aide d&amp;rsquo;un outil pipette.</description>
     </item>
     <item>
       <title>Titraille</title>
@@ -583,13 +583,6 @@
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le &amp;ldquo;bouton&amp;rdquo; de retour en haut est en fait un lien travaillé en CSS.</description>
     </item>
     <item>
-      <title>Logiciels bureautiques</title>
-      <link>https://sofeve-concept.github.io/ressources/outils/outils-bureautique/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/ressources/outils/outils-bureautique/</guid>
-      <description>Vérificateur du logiciel bureautique Outre Colour Contrast Analyser, les logiciels bureautiques possèdent un outil de vérification de l&amp;rsquo;accessibilité atteignable depuis leur menu.</description>
-    </item>
-    <item>
       <title>Quiz récap&#39;</title>
       <link>https://sofeve-concept.github.io/coder/contenu/quiz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -644,6 +637,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/coder/tableaux/quiz/</guid>
       <description>N°&#xD;Question&#xD;Votre réponse&#xD;Afficher les réponses&#xD;1&#xD;Le titre d&#39;un tableau est facultatif&amp;nbsp;:&#xD;Vrai&#xD;Faux&#xD;Réponse b&#xD;2&#xD;Pour donner un titre à un tableau, on écrira&amp;nbsp;:&#xD;&amp;lt;table title=&#34;</description>
+    </item>
+    <item>
+      <title>Tester un document bureautique</title>
+      <link>https://sofeve-concept.github.io/ressources/outils/outils-bureautique/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/ressources/outils/outils-bureautique/</guid>
+      <description>Vérificateur du logiciel bureautique Outre Colour Contrast Analyser, les logiciels bureautiques possèdent un outil de vérification de l&amp;rsquo;accessibilité atteignable depuis leur menu.</description>
     </item>
     <item>
       <title>Accordéon</title>
