@@ -176,12 +176,6 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/motifs/formulaires/placeholder/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://sofeve-concept.github.io/bureautique/export/export/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -260,6 +254,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/motifs/formulaires/placeholder/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/bureautique/presentation/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -326,12 +326,6 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/motifs/formulaires/stepper/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://sofeve-concept.github.io/ressources/accessibilite-numerique/referentiels-accessibilite-numerique/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -357,6 +351,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/ressources/sites/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/motifs/formulaires/autocomplete/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -434,6 +434,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/motifs/formulaires/stepper/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-complexes/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -494,6 +500,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/motifs/formulaires/message-erreur/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/navigation/processus-etapes/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -519,6 +531,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/motifs/basiques/menu-lateral-glissant/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/motifs/formulaires/message-succes/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -777,19 +795,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/motifs/formulaires/message-erreur/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://sofeve-concept.github.io/motifs/dynamiques/statut/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/motifs/formulaires/message-succes/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

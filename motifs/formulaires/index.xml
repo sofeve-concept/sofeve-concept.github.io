@@ -15,11 +15,18 @@
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le formulaire de recherche sur tout le site sera identifié avec le rôle aria role=&amp;quot;search&amp;quot;.</description>
     </item>
     <item>
-      <title>Étiquette de champs</title>
+      <title>Placeholder simulé</title>
       <link>https://sofeve-concept.github.io/motifs/formulaires/placeholder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/motifs/formulaires/placeholder/</guid>
       <description>Règles d’implémentation pour l’accessibilité Dans un formulaire, il est possible d&amp;rsquo;afficher un texte par défaut dans un champ via l&amp;rsquo;attribut placeholder.</description>
+    </item>
+    <item>
+      <title>Suggestion de remplissage</title>
+      <link>https://sofeve-concept.github.io/motifs/formulaires/autocomplete/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/motifs/formulaires/autocomplete/</guid>
+      <description>Présentation Code HTML L&amp;rsquo;autocomplétion doit pouvoir fonctionner sans javascript. On va donc utiliser les éléments natifs du HTML pour proposer une liste de choix avec l&amp;rsquo;élément HTML datalist.</description>
     </item>
     <item>
       <title>Processus par étape</title>

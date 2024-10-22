@@ -184,13 +184,6 @@
       <description>Règles Il faut veiller à ce que les couleurs ne soient pas le seul moyen de véhiculer de l’information.</description>
     </item>
     <item>
-      <title>Étiquette de champs</title>
-      <link>https://sofeve-concept.github.io/motifs/formulaires/placeholder/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/motifs/formulaires/placeholder/</guid>
-      <description>Règles d’implémentation pour l’accessibilité Dans un formulaire, il est possible d&amp;rsquo;afficher un texte par défaut dans un champ via l&amp;rsquo;attribut placeholder.</description>
-    </item>
-    <item>
       <title>Export au format PDF</title>
       <link>https://sofeve-concept.github.io/bureautique/export/export/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -275,6 +268,13 @@
       <description>Format d&amp;rsquo;image les plus courants Les formats d&amp;rsquo;image (extension du fichier image) recommandés et pris en charge en HTML sont les suivants :</description>
     </item>
     <item>
+      <title>Placeholder simulé</title>
+      <link>https://sofeve-concept.github.io/motifs/formulaires/placeholder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/motifs/formulaires/placeholder/</guid>
+      <description>Règles d’implémentation pour l’accessibilité Dans un formulaire, il est possible d&amp;rsquo;afficher un texte par défaut dans un champ via l&amp;rsquo;attribut placeholder.</description>
+    </item>
+    <item>
       <title>Rédaction de courriels</title>
       <link>https://sofeve-concept.github.io/bureautique/courriel/courriel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -331,13 +331,6 @@
       <description>Altération de la perception des couleurs La perception des couleurs peut être altérée par un dysfonctionnement dont l’origine est soit:</description>
     </item>
     <item>
-      <title>Processus par étape</title>
-      <link>https://sofeve-concept.github.io/motifs/formulaires/stepper/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/motifs/formulaires/stepper/</guid>
-      <description>Règles d’implémentation pour l’accessibilité Le processus par étape sera balisé avec les balises &amp;lt;nav&amp;gt;...&amp;lt;/nav&amp;gt; on ne posera pas d&amp;rsquo;attribut role=&amp;quot;navigation.</description>
-    </item>
-    <item>
       <title>Référentiels</title>
       <link>https://sofeve-concept.github.io/ressources/accessibilite-numerique/referentiels-accessibilite-numerique/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -364,6 +357,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/coder/structure/semantique-html/</guid>
       <description>Halte au détournement de code ! Certains éléments HTML sont détournés de leur usage sémantique ; cela est bien entendu proscrit.</description>
+    </item>
+    <item>
+      <title>Suggestion de remplissage</title>
+      <link>https://sofeve-concept.github.io/motifs/formulaires/autocomplete/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/motifs/formulaires/autocomplete/</guid>
+      <description>Présentation Code HTML L&amp;rsquo;autocomplétion doit pouvoir fonctionner sans javascript. On va donc utiliser les éléments natifs du HTML pour proposer une liste de choix avec l&amp;rsquo;élément HTML datalist.</description>
     </item>
     <item>
       <title>Tableaux simples</title>
@@ -429,6 +429,13 @@
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;exemple présenté ici est celui d&amp;rsquo;un menu avec menu déroulant à double niveau (rubriques parentes, sous-rubriques et sous-sous-rubriques).</description>
     </item>
     <item>
+      <title>Processus par étape</title>
+      <link>https://sofeve-concept.github.io/motifs/formulaires/stepper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/motifs/formulaires/stepper/</guid>
+      <description>Règles d’implémentation pour l’accessibilité Le processus par étape sera balisé avec les balises &amp;lt;nav&amp;gt;...&amp;lt;/nav&amp;gt; on ne posera pas d&amp;rsquo;attribut role=&amp;quot;navigation.</description>
+    </item>
+    <item>
       <title>Tableaux complexes</title>
       <link>https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-complexes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -485,6 +492,13 @@
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;exemple proposé ici utilise uniquement des listes imbriquées ; les rôles aria suivants sont utilisés pour fournir la sémantique nécessaire d&amp;rsquo;un menu d&amp;rsquo;application : role=&amp;quot;menubar&amp;quot; : Représente une barre de menus (généralement horizontale).</description>
     </item>
     <item>
+      <title>Message d&#39;erreur</title>
+      <link>https://sofeve-concept.github.io/motifs/formulaires/message-erreur/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/motifs/formulaires/message-erreur/</guid>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Lorsqu&amp;rsquo;au moment de la soumission du formulaire, une erreur est signalée, il faudra messtre à jour le titre de la page en commençant par « Erreur ».</description>
+    </item>
+    <item>
       <title>Processus par étapes</title>
       <link>https://sofeve-concept.github.io/coder/navigation/processus-etapes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -511,6 +525,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/motifs/basiques/menu-lateral-glissant/</guid>
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le menu latéral de navigation suit les mêmes règles que le menu navigation déroulant.</description>
+    </item>
+    <item>
+      <title>Message de succès</title>
+      <link>https://sofeve-concept.github.io/motifs/formulaires/message-succes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/motifs/formulaires/message-succes/</guid>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le message de succès est une zone définit par l&amp;rsquo;élément HTML div et porte le rôle aria role=&amp;quot;status&amp;quot;.</description>
     </item>
     <item>
       <title>Navigation au clavier</title>
@@ -688,25 +709,11 @@
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;affichage d&amp;rsquo;un message d&amp;rsquo;alerte ne nécessite pas de rechargement de la page.</description>
     </item>
     <item>
-      <title>Message d&#39;erreur</title>
-      <link>https://sofeve-concept.github.io/motifs/formulaires/message-erreur/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/motifs/formulaires/message-erreur/</guid>
-      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Lorsqu&amp;rsquo;au moment de la soumission du formulaire, une erreur est signalée, il faudra messtre à jour le titre de la page en commençant par « Erreur ».</description>
-    </item>
-    <item>
       <title>Message de statut</title>
       <link>https://sofeve-concept.github.io/motifs/dynamiques/statut/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/motifs/dynamiques/statut/</guid>
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;affichage d&amp;rsquo;un message de notification ne nécessite pas de rechargement de la page.</description>
-    </item>
-    <item>
-      <title>Message de succès</title>
-      <link>https://sofeve-concept.github.io/motifs/formulaires/message-succes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/motifs/formulaires/message-succes/</guid>
-      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le message de succès est une zone définit par l&amp;rsquo;élément HTML div et porte le rôle aria role=&amp;quot;status&amp;quot;.</description>
     </item>
     <item>
       <title>Onglets</title>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Suggestion de remplissage - Motifs pour formulaires - Motifs de conception - Sofève Concept</title>
+	
+	<meta name="theme-color" content="#FFFFFF" />
+	<meta name="description" content="La suggestion de remplissage d&#39;un champ se fait avec l&#39;attribut autocomplete. L&#39;utilisation de cet attribut permet d&#39;afficher des suggestions qui correspondent à une chaîne de caractères saisis en temps réel. Elle permet ensuite de sélectionner une suggestion pour terminer sa saisie rapidement avec une valeur exacte, ou alors de continuer à saisir des caractères pour affiner les options proposées. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	
+	<meta name="author" content="Sophie Gounon">
+	<meta property="og:locale" content="fr_FR" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Sofève Concept" />
+	<meta property="og:description" content="Sofève Concept est un site web de conseil et de documentation pour créer des sites web et des documents bureautiques accessibles" />
+	<meta property="og:url" content="https://sofeve-concept.github.io" />
+	<meta property="og:site_name" content="Sofève Concept" />
+	<meta property="og:image" content="https://sofeve-concept.github.io/images/sofeve-concept.jpg" />
+	<link href="/images/favicon.ico" rel="icon"><link href="/css/print.min.css" rel="stylesheet" media="print"><link href="/css/sofeve.min.css" rel="stylesheet" media="screen">
+	<link href="/css/monokai.min.css" rel="stylesheet" media="screen">
+	
+	<link href="/css/autoCompleteApi.min.css" rel="stylesheet" media="screen">
+	</head>
+<body>
+	<div class="evitement">
+	<nav role="navigation" aria-label="Accès rapide">
+		<ul>
+			<li><a href="#contenu">Contenu</a></li>
+			<li><a href="#navigation">Menu</a></li> 
+			<li><a href="#piedDePage">Pied de page</a></li>
+		</ul>
+	</nav>
+</div>
+<header role="banner" id="banner" class="noSticky">
+	<div class="logo">
+		<a href="https://sofeve-concept.github.io">
+			<img src="/images/logo-sofeve-concept-small.svg" alt="Sofève Concept" class="big-logo">
+			<img src="/images/mini-logo.webp" alt="Sofève Concept" class="mini-logo">
+		</a>
+	</div>
+	<nav role='navigation' class="navbar" id="navigation" aria-label="Menu principal">
+		<button aria-expanded="false" id="hamburger" aria-controls="menu">
+		     <span class="sr-only">Menu</span>
+		</button>
+		<ul id="menu">
+			<li><a href="https://sofeve-concept.github.io">Accueil</a></li>	
+			<li>
+				<button aria-haspopup="true" aria-expanded="false" aria-controls="coder">Coder accessible</button>
+				   <ul id="coder">
+					
+					<li><a href="/coder/">Aperçu</a></li><li><a href="/coder/structure/">Structure de la page</a></li>
+              			<li><a href="/coder/contenu/">Contenu</a></li>
+              			<li><a href="/coder/couleurs/">Couleurs</a></li>
+              			<li><a href="/coder/navigation/">Navigation</a></li>
+              			<li><a href="/coder/lien-bouton/">Liens et boutons</a></li>
+              			<li><a href="/coder/image-icone/">Images et icônes</a></li>
+              			<li><a href="/coder/tableaux/">Tableaux</a></li>
+              			<li><a href="/coder/formulaire/">Formulaires</a></li>
+              			<li><a href="/coder/scripts/">Composants d&#39;interface riche</a></li>
+              			<li><a href="/coder/multimedia/">Multimédia</a></li>
+              			</ul>
+			    </li>
+				
+			<li>
+				<button aria-haspopup="true" aria-expanded="false" aria-controls="motifs" aria-current="true">Motifs de conception</button>
+				   <ul id="motifs">
+					
+					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/">Motifs de base</a></li>
+              			<li><a href="/motifs/dynamiques/">Motifs dynamiques</a></li>
+              			<li><a href="/motifs/formulaires/" aria-current="location" >Motifs pour formulaires</a></li>
+              			<li><a href="/motifs/purcss/">Motifs en pur CSS</a></li>
+              			</ul>
+			    </li>
+				
+			<li>
+				<button aria-haspopup="true" aria-expanded="false" aria-controls="bureautique">Bureautique accessible</button>
+				   <ul id="bureautique">
+					
+					<li><a href="/bureautique/">Aperçu</a></li><li><a href="/bureautique/structure/">Structure du document</a></li>
+              			<li><a href="/bureautique/presentation/">Présentation du texte</a></li>
+              			<li><a href="/bureautique/liens/">Lien hypertexte</a></li>
+              			<li><a href="/bureautique/images/">Image</a></li>
+              			<li><a href="/bureautique/couleur/">Couleurs et contrastes</a></li>
+              			<li><a href="/bureautique/export/">Export PDF</a></li>
+              			<li><a href="/bureautique/courriel/">Courrier électronique</a></li>
+              			<li><a href="/bureautique/entrainement/">Entrainement !</a></li>
+              			</ul>
+			    </li>
+				
+			<li>
+				<button aria-haspopup="true" aria-expanded="false" aria-controls="ressources">Ressources</button>
+				   <ul id="ressources">
+					
+					<li><a href="/ressources/">Aperçu</a></li><li><a href="/ressources/accessibilite-numerique/">L&#39;accessibilité numérique</a></li>
+              			<li><a href="/ressources/outils/">Outils de vérification</a></li>
+              			<li><a href="/ressources/sites/">Sites sur l&#39;accessibilité</a></li>
+              			<li><a href="/ressources/glossaire/">Glossaire</a></li>
+              			</ul>
+			    </li>
+			</ul>
+		
+	</nav>	
+	<form action="/rechercher" method="GET" role="search" class="search">
+	    <div class="champs">
+    <label for="search-query">Rechercher</label>
+    <input type="search" name="q" id="search-query" minlength="3" required >
+    </div>
+    <button type="reset">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" fill="#19003C" aria-hidden="true" focusable="false" role="presentation"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+        <span class="sr-only">Effacer</span>
+    </button>
+    <button type="submit">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#19003C" aria-hidden="true" focusable="false" role="presentation"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+        <span class="sr-only">Rechercher</span>
+    </button>
+
+	</form>
+	<p class="toSearch"><a href="/rechercher">
+		<span class="search-loupe" aria-hidden="true"></span>
+		<span class="sr-only">Aller à la page de recherche sur le site</span></a>
+	 </a></p>
+</header>
+	
+<div class="gridContenu">
+<aside>
+      
+
+<nav role="navigation" aria-label="Menu de la rubrique Motifs de conception">
+	<button aria-haspopup="true" aria-expanded="false" id="sandwitch" aria-controls="sousMenu">
+		Motifs de conception
+	</button>
+	<ul id="sousMenu">
+		<li><a href="/motifs">Motifs de conception</a></li><li><a href="https://sofeve-concept.github.io/motifs/basiques/">Motifs de base</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/dynamiques/">Motifs dynamiques</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/purcss/">Motifs en pur CSS</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/formulaires/" aria-current="location" >Motifs pour formulaires</a>
+			
+			
+			<ul><li><a href="https://sofeve-concept.github.io/motifs/formulaires/formulaire-recherche/">Formulaire de recherche</a></li>
+				<li><a href="https://sofeve-concept.github.io/motifs/formulaires/placeholder/">Placeholder simulé</a></li>
+				<li><a href="https://sofeve-concept.github.io/motifs/formulaires/autocomplete/" aria-current="page" >Suggestion de remplissage</a></li>
+				<li><a href="https://sofeve-concept.github.io/motifs/formulaires/stepper/">Processus par étape</a></li>
+				<li><a href="https://sofeve-concept.github.io/motifs/formulaires/message-erreur/">Message d&#39;erreur</a></li>
+				<li><a href="https://sofeve-concept.github.io/motifs/formulaires/message-succes/">Message de succès</a></li>
+				</ul>
+			</li>
+		</ul>
+</nav>
+
+</aside>
+<main role="main">
+     <div class="flex ligneHaut">
+<nav aria-label="Vous êtes ici" class="ariane">
+<ol>
+  <li><a href="/">Accueil</a></li>
+  
+  <li><a href="/motifs/">Motifs de conception</a></li>
+  
+  <li><a href="/motifs/formulaires/">Motifs pour formulaires</a></li>
+  
+  <li aria-current="page" tabindex="-1">Suggestion de remplissage</li>
+  </ol>
+</nav>
+<div>
+<button onclick="window.print();">
+  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#2E006C" aria-hidden="true" focusable="false" role="presentation"><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zM432 248a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
+  Imprimer
+</button>
+</div>
+</div>
+     <section>
+		<h1 id="contenu">Suggestion de remplissage</h1>
+               <p>La suggestion de remplissage d&#39;un champ se fait avec l&#39;attribut autocomplete. L&#39;utilisation de cet attribut permet d&#39;afficher des suggestions qui correspondent à une chaîne de caractères saisis en temps réel. Elle permet ensuite de sélectionner une suggestion pour terminer sa saisie rapidement avec une valeur exacte, ou alors de continuer à saisir des caractères pour affiner les options proposées.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm">
+Table des matières</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#présentation">Présentation</a>
+      <ul>
+        <li><a href="#code-html">Code HTML</a></li>
+        <li><a href="#code-javascript">Code javascript</a></li>
+      </ul>
+    </li>
+    <li><a href="#exemple-avec-appel-à-une-api">Exemple avec appel à une API</a>
+      <ul>
+        <li><a href="#visuel">Visuel</a></li>
+        <li><a href="#code-html-1">Code HTML</a></li>
+        <li><a href="#code-javascript-1">Code javascript</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+<h2 id="présentation">Présentation</h2>
+<h3 id="code-html">Code HTML</h3>
+<p>L&rsquo;autocomplétion doit pouvoir fonctionner sans javascript. On va donc utiliser les éléments natifs du HTML pour proposer une liste de choix avec l&rsquo;élément HTML <code>datalist</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;pays&#34;</span><span class="p">&gt;</span>Pays<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-control&#34;</span> <span class="na">list</span><span class="o">=</span><span class="s">&#34;datalistOptions&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;pays&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;Rechercher un pays...&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">datalist</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;datalistOptions&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Allemagne&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Espagne&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;France&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Italie&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Portugal&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">datalist</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>L&rsquo;élément HTML <code>datalist</code> est de mieux en mieux supporté par les navigateurs (pour peu qu&rsquo;il ne soit pas utilisé pour des champs de type <code>time</code> ou <code>date</code>).<br>
+Si on ne veut pas utiliser l&rsquo;élément HTML <code>datalist</code>,  on pourra utiliser alors l&rsquo;élément <code>select</code> et du javascript. l&rsquo;élément <code>select</code> aura alors les options suivantes <em>Pour masquer cette liste déroulante sans empêcher l’envoi de sa valeur au serveur</em> :</p>
+<ul>
+<li><code>sr-only</code> pour rendre la liste déroulante invisible aux personnes voyantes - elle sera pour autant lisible pour les synthèses vocales et va donc rajouter l&rsquo;attribut qui suit ;</li>
+<li><code>aria-hidden=&quot;true&quot;</code> pour la rendre invisible pour les personnes qui utilisent un lecteur d’écran ;</li>
+<li><code>tabindex=&quot;-1&quot;</code> pour empêcher les personnes naviguant au clavier de positionner le focus dessus.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"> <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;pays&#34;</span><span class="p">&gt;</span>Pays<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">&lt;</span><span class="nt">select</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;pays&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;pays&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sr-only&#34;</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">tabindex</span><span class="o">=</span><span class="s">&#34;-1&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">&gt;</span>Sélectionner<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Allemagne&#34;</span><span class="p">&gt;</span>Allemagne<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Espagne&#34;</span><span class="p">&gt;</span>Espagne<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;France&#34;</span><span class="p">&gt;</span>France<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Italie&#34;</span><span class="p">&gt;</span>Italie<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Portugal&#34;</span><span class="p">&gt;</span>Portugal<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h3 id="code-javascript">Code javascript</h3>
+<p>Le javascript recommandé est celui du <a href="https://github.com/alphagov/accessible-autocomplete"  target="_blank" rel="noopener noreferrer" title="composant « autocomplete » accessible du gouvernement britannique (nouvelle fenêtre)">composant « autocomplete » accessible du gouvernement britannique</a>.</p>
+<h2 id="exemple-avec-appel-à-une-api">Exemple avec appel à une API</h2>
+<h3 id="visuel">Visuel</h3>
+
+<p>Pour faciliter le remplissage de champs d'adresse, on peut aussi recourir à <a href="https://api.gouv.fr/guides/autocompleter-adresse">l'api d'adresse de l'État français</a>.</p>
+<form action="./" method="GET">
+<h4>Rechercher une adresse</h4>       
+<div class="autoComplete_wrapper">
+<label for="autoComplete">Rechercher une adresse</label>
+<div>
+<input id="autoComplete" type="search" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off" autocapitalize="off">
+<button type="reset" class="autoReset">Effacer</button>
+</div>
+</div>
+<h4 class="formresult">Résultat de la recherche</h4>
+<div class="resultat">
+<div>
+<label for="adress">Adresse</label><input id="adress">
+<label for="postcode">Code postal</label><input id="postcode">
+<label for="city">Commune</label><input id="city"> 
+</div>
+<div>
+<label for="housenumber">Numéro</label><input id="housenumber">
+<label for="street">Rue</label><input id="street">  
+<label for="citycode">Code INSEE de la commune</label><input id="citycode">
+</div> 
+<div>
+<label for="context">Département et région</label><input id="context">
+<label for="lon">Longitude</label><input id="lon">  
+<label for="lat">Latitude</label><input id="lat">
+</div> 
+</div>
+</form>
+
+<h3 id="code-html-1">Code HTML</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&#34;./&#34;</span> <span class="na">method</span><span class="o">=</span><span class="s">&#34;GET&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>Rechercher une adresse<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>       
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;autoComplete_wrapper&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;autoComplete&#34;</span><span class="p">&gt;</span>Rechercher une adresse<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;autoComplete&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;search&#34;</span> <span class="na">dir</span><span class="o">=</span><span class="s">&#34;ltr&#34;</span> <span class="na">spellcheck</span><span class="o">=</span><span class="s">false</span> <span class="na">autocorrect</span><span class="o">=</span><span class="s">&#34;off&#34;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;off&#34;</span> <span class="na">autocapitalize</span><span class="o">=</span><span class="s">&#34;off&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;reset&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;autoReset&#34;</span><span class="p">&gt;</span>Effacer<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h4</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;formresult&#34;</span><span class="p">&gt;</span>Résultat de la recherche<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;resultat&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;adress&#34;</span><span class="p">&gt;</span>Adresse<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;adress&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;postcode&#34;</span><span class="p">&gt;</span>Code postal<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;postcode&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;city&#34;</span><span class="p">&gt;</span>Commune<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;city&#34;</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;housenumber&#34;</span><span class="p">&gt;</span>Numéro<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;housenumber&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;street&#34;</span><span class="p">&gt;</span>Rue<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;street&#34;</span><span class="p">&gt;</span>  
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;citycode&#34;</span><span class="p">&gt;</span>Code INSEE de la commune<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;citycode&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;context&#34;</span><span class="p">&gt;</span>Département et région<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;context&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;lon&#34;</span><span class="p">&gt;</span>Longitude<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;lon&#34;</span><span class="p">&gt;</span>  
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;lat&#34;</span><span class="p">&gt;</span>Latitude<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;lat&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h3 id="code-javascript-1">Code javascript</h3>
+<p>Le code présenté est celui permettant de récupérer les informations de l&rsquo;API et de remplir les champs concernés.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">myobject</span> <span class="o">=</span> <span class="p">[];</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">adress</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&#34;#adress&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">postcode</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&#34;#postcode&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">citycode</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&#34;#citycode&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">city</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&#34;#city&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">housenumber</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&#34;#housenumber&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">street</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&#34;#street&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">context</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&#34;#context&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">lon</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&#34;#lon&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">lat</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&#34;#lat&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">autoCompleteJS</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">autoComplete</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">selector</span><span class="o">:</span> <span class="s2">&#34;#autoComplete&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">placeHolder</span><span class="o">:</span> <span class="s2">&#34;Recherche adresse...&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">data</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">src</span><span class="o">:</span> <span class="kr">async</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="kr">const</span> <span class="nx">term</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&#34;#autoComplete&#34;</span><span class="p">).</span><span class="nx">value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">if</span> <span class="p">(</span><span class="nx">term</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="nx">response</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">fetch</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">          <span class="sb">`https://api-adresse.data.gouv.fr/search/?q=</span><span class="si">${</span><span class="nx">term</span><span class="si">}</span><span class="sb">`</span>
+</span></span><span class="line"><span class="cl">        <span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="nx">json</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">myobject</span> <span class="o">=</span> <span class="nx">json</span><span class="p">.</span><span class="nx">features</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">el</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="k">return</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">label</span><span class="o">:</span> <span class="nx">el</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">label</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">value</span><span class="o">:</span> <span class="nx">el</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">label</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">housenumber</span><span class="o">:</span> <span class="nx">el</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">housenumber</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">name</span><span class="o">:</span> <span class="nx">el</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">postcode</span><span class="o">:</span> <span class="nx">el</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">postcode</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">citycode</span><span class="o">:</span> <span class="nx">el</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">citycode</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">city</span><span class="o">:</span> <span class="nx">el</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">city</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">context</span><span class="o">:</span> <span class="nx">el</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">context</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">type</span><span class="o">:</span> <span class="nx">el</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">type</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">street</span><span class="o">:</span> <span class="nx">el</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">street</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">lat</span><span class="o">:</span> <span class="nx">el</span><span class="p">.</span><span class="nx">geometry</span><span class="p">.</span><span class="nx">coordinates</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">lon</span><span class="o">:</span> <span class="nx">el</span><span class="p">.</span><span class="nx">geometry</span><span class="p">.</span><span class="nx">coordinates</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">boundingbox</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="p">};</span>
+</span></span><span class="line"><span class="cl">        <span class="p">});</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">adresses</span> <span class="o">=</span> <span class="nx">myobject</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">el</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">el</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">adresses</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">adresses</span> <span class="o">=</span> <span class="p">[];</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="c1">// ... other code
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="k">return</span> <span class="nx">adresses</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// src: [&#34;Sauce - Thousand Island&#34;, &#34;Wild Boar - Tenderloin&#34;, &#34;Goat - Whole Cut&#34;],
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">cache</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">resultsList</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">element</span><span class="o">:</span> <span class="p">(</span><span class="nx">list</span><span class="p">,</span> <span class="nx">data</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">data</span><span class="p">.</span><span class="nx">results</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Create &#34;No Results&#34; message element
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kr">const</span> <span class="nx">message</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&#34;div&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Add class to the created element
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">message</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&#34;class&#34;</span><span class="p">,</span> <span class="s2">&#34;no_result&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Add message text content
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">message</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="sb">`&lt;span&gt;Aucun résultat trouvé pour &#34;</span><span class="si">${</span><span class="nx">data</span><span class="p">.</span><span class="nx">query</span><span class="si">}</span><span class="sb">&#34;&lt;/span&gt;`</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Append message element to the results list
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">list</span><span class="p">.</span><span class="nx">prepend</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">noResults</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">resultItem</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">highlight</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">events</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">input</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">selection</span><span class="o">:</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="nx">selection</span> <span class="o">=</span> <span class="nx">event</span><span class="p">.</span><span class="nx">detail</span><span class="p">.</span><span class="nx">selection</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">autoCompleteJS</span><span class="p">.</span><span class="nx">input</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">selection</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">myobject</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="nx">el</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">el</span><span class="p">.</span><span class="nx">value</span> <span class="o">==</span> <span class="nx">event</span><span class="p">.</span><span class="nx">detail</span><span class="p">.</span><span class="nx">selection</span><span class="p">.</span><span class="nx">value</span>
+</span></span><span class="line"><span class="cl">        <span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">adress</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">result</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">postcode</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">result</span><span class="p">.</span><span class="nx">postcode</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">citycode</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">result</span><span class="p">.</span><span class="nx">citycode</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">city</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">result</span><span class="p">.</span><span class="nx">city</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">housenumber</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">result</span><span class="p">.</span><span class="nx">housenumber</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">street</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">result</span><span class="p">.</span><span class="nx">street</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">context</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">result</span><span class="p">.</span><span class="nx">context</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">lon</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">result</span><span class="p">.</span><span class="nx">lon</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">lat</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">result</span><span class="p">.</span><span class="nx">lat</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">adress</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">postcode</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">citycode</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">city</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">housenumber</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">street</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">context</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">lon</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">lat</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div>
+     </section>
+</main>
+</div>
+
+	<footer role="contentinfo" id="piedDePage">
+	<div class="pied">
+		<div class="slogan">
+			<img src="/images/logo-sofeve-concept-small.svg" alt="Sofève Concept" class="big-logo">
+			<p>Conseil & formation<br>pour des sites web accessibles.</p>
+		</div>
+		<div>
+		<p class="footerTitre">Mes dépôts</p>
+		<ul class="clicIcon">
+			<li><a href="https://codepen.io/Sophie-Gounon-the-looper/"  target="_blank" rel="noopener noreferrer" title="CodePen (nouvelle fenêtre)"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" class="icon" aria-hidden="true"><path d="M502.3 159.7l-234-156c-8-4.9-16.5-5-24.6 0l-234 156C3.7 163.7 0 170.8 0 178v156c0 7.1 3.7 14.3 9.7 18.3l234 156c8 4.9 16.5 5 24.6 0l234-156c6-4 9.7-11.1 9.7-18.3V178c0-7.1-3.7-14.3-9.7-18.3zM278 63.1l172.3 114.9-76.9 51.4L278 165.7V63.1zm-44 0v102.6l-95.4 63.7-76.9-51.4L234 63.1zM44 219.1l55.1 36.9L44 292.8v-73.7zm190 229.7L61.7 334l76.9-51.4L234 346.3v102.6zm22-140.9l-77.7-52 77.7-52 77.7 52-77.7 52zm22 140.9V346.3l95.4-63.7 76.9 51.4L278 448.8zm190-156l-55.1-36.9L468 219.1v73.7z"/></svg><span>CodePen</span></a></li>
+			
+			<li><a href="https://github.com/sofeve-concept"  target="_blank" rel="noopener noreferrer" title="GitHub (nouvelle fenêtre)"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512" class="icon" aria-hidden="true"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg><span>GitHub</span></a></li>
+			</ul>
+		</div>
+		<div>
+		<p class="footerTitre">À propos de moi</p>
+		<ul class="clicIcon">
+			<li><a href="/a-propos/"  target="_blank" rel="noopener noreferrer" title="Qui suis-je ? (nouvelle fenêtre)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" height="1em"  class="icon" aria-hidden="true"><path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm80 256l64 0c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16L80 384c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zm256-32l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg><span>Qui suis-je ?</span></a></li>
+			
+			<li><a href="https://www.linkedin.com/in/sophie-gounon/"  target="_blank" rel="noopener noreferrer" title="Mon compte LinkedIn (nouvelle fenêtre)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  class="icon" aria-hidden="true"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg><span>Mon compte LinkedIn</span></a></li>
+			<li><button role="button" onclick="envoiCourriel();" tabindex="0" class="mymail" title="Envoyer un courriel">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" aria-hidden="true" viewBox="0 0 16 16" focusable="false" role="presentation" >
+					<path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+					<path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+				   </svg>
+				<span>Me contacter</span></button></li>	
+		</ul>
+	</div>	
+	 </div>
+	
+	 <div class="bas">
+		<ul class="infoleg">
+		    <li><a href="/plan" >Plan du site</a></li>
+		    <li><a href="/mentions-legales" >Mentions légales et crédits</a></li>
+		    <li><a href="/accessibilite" >Accessibilité</a></li>
+		    <li><a href="/ecoconception" >Éco-conception</a></li></ul>	
+		<ul class="copyright">
+		<li>ÉcoIndex <span class="A">A</span></li>
+		<li>&copy; 2024 Sofève Concept</li>
+		<li><span>By</span> Sofève Concept</li>
+	</ul>		
+	</div>
+</footer>
+<a id="RetourEnHaut" class="cInvisible" href="#top">
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"
+	    aria-hidden="true">
+	    <path
+		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+	</svg>
+	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/clipboard.min.js"></script>
+<script src="/js/search.min.js"></script>
+
+
+<script src="/js/autoCompleteApi.min.js"></script>
+</body>
+</html>
