@@ -500,13 +500,13 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/coder/contenu/citations/</loc>
+    <loc>https://sofeve-concept.github.io/coder/formulaire/aide-saisie/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/coder/formulaire/controle-formulaire/</loc>
+    <loc>https://sofeve-concept.github.io/coder/contenu/citations/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -530,13 +530,13 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/coder/formulaire/aide-saisie/</loc>
+    <loc>https://sofeve-concept.github.io/coder/contenu/cadre/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/coder/contenu/cadre/</loc>
+    <loc>https://sofeve-concept.github.io/coder/formulaire/controle-formulaire/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

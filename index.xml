@@ -492,18 +492,18 @@
       <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;un processus par étapes ? Les processus par étapes (stepper, en anglais) affichent la progression à travers une séquence d&amp;rsquo;étapes logiques et numérotées.</description>
     </item>
     <item>
+      <title>Aide à la saisie</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/aide-saisie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/coder/formulaire/aide-saisie/</guid>
+      <description>Information textuelle d&amp;rsquo;aide à la saisie Information simple Les aides à la saisie :&#xA;sont intégrées directement entre les éléments label ; permettent de connaître le format de saisie attendu (ex: 25/11/1987) ; permettent de connaître le type et le poids maximal autorisé pour l’envoi de fichiers.</description>
+    </item>
+    <item>
       <title>Citations</title>
       <link>https://sofeve-concept.github.io/coder/contenu/citations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/coder/contenu/citations/</guid>
       <description>Bloc de citation Chaque bloc de citation doit être structuré au moyen d’un élément blockquote. Un bloc de citation est un paragraphe (ou plusieurs) complet d&amp;rsquo;une citation d&amp;rsquo;un auteur.</description>
-    </item>
-    <item>
-      <title>Contrôle de la saisie</title>
-      <link>https://sofeve-concept.github.io/coder/formulaire/controle-formulaire/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/coder/formulaire/controle-formulaire/</guid>
-      <description>Contrôle simple de la saisie des champs Selon le type de champs déclaré, le navigateur effectuera un contrôle de la saisie et affichera une infobulle informative en cas d&amp;rsquo;erreur de saisie.</description>
     </item>
     <item>
       <title>Menu latéral glissant</title>
@@ -520,18 +520,18 @@
       <description>Utilisation des touches du clavier pour la navigation Pour naviguer au clavier, les touches suivantes sont utilisées :</description>
     </item>
     <item>
-      <title>Aide à la saisie</title>
-      <link>https://sofeve-concept.github.io/coder/formulaire/aide-saisie/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/coder/formulaire/aide-saisie/</guid>
-      <description>Champ obligatoire Si un des champs du formulaire est obligatoire :&#xA;la mention de la présence de champs obligatoires dans le formulaire sera signalée au début du formulaire ; on signalera pour chaque champ obligatoire que celui-ci l&amp;rsquo;est, soit en l&amp;rsquo;écrivant entre les balises &amp;lt;label&amp;gt; ; exemple : &amp;lt;label&amp;gt;.</description>
-    </item>
-    <item>
       <title>Cadre intégré</title>
       <link>https://sofeve-concept.github.io/coder/contenu/cadre/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/coder/contenu/cadre/</guid>
       <description>Règle d&amp;rsquo;implémentation En matière d&amp;rsquo;accessibilité numérique, la seule règle à respecter est de renseigner l&amp;rsquo;attribut title avec un texte pertinent, clair et précis sur le contenu affiché dans le cadre.</description>
+    </item>
+    <item>
+      <title>Contrôle de la saisie</title>
+      <link>https://sofeve-concept.github.io/coder/formulaire/controle-formulaire/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/coder/formulaire/controle-formulaire/</guid>
+      <description>Contrôle simple de la saisie des champs Selon le type de champs déclaré, le navigateur effectuera un contrôle de la saisie et affichera une infobulle informative en cas d&amp;rsquo;erreur de saisie.</description>
     </item>
     <item>
       <title>Menu latéral glissant avec icônes</title>

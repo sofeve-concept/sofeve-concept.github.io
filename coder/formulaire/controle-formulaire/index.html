@@ -143,8 +143,8 @@
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/">Regroupement de champs</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/">Liste déroulante</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/">Formulaire à étapes multiples</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/formulaire/controle-formulaire/" aria-current="page" >Contrôle de la saisie</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/aide-saisie/">Aide à la saisie</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/formulaire/controle-formulaire/" aria-current="page" >Contrôle de la saisie</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/securite-formulaire/">Sécurité des formulaires</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/quiz/">Quiz récap&#39;</a></li>
 				</ul>
@@ -178,9 +178,8 @@
      <section>
 		<h1 id="contenu">Contrôle de la saisie</h1>
                <p>La mise en place d&#39;un contrôle de ce qui est saisi dans un champs de formulaire favorise l&#39;accessibilité du formulaire. Cela n&#39;empêchera pas ensuite de vérifier que la saisie de l&#39;utilisteur est conforme à l&#39;attendu en effectuant ensuite des vérifications côté serveur.</p>
-<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier la table des matières">
-    Table des matières
-</button>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm">
+Table des matières</button>
 <div id="tdm" role="region" tabindex="-1">
     <nav id="TableOfContents">
   <ul>
@@ -204,6 +203,14 @@
         <li><a href="#formats-de-fichier-acceptés">Formats de fichier acceptés</a></li>
       </ul>
     </li>
+    <li><a href="#gestion-des-erreurs">Gestion des erreurs</a>
+      <ul>
+        <li><a href="#titre-de-la-page">Titre de la page</a></li>
+        <li><a href="#message-derreur-global">Message d&rsquo;erreur global</a></li>
+        <li><a href="#message-derreur-contextuel-associé-au-champ-en-erreur">Message d&rsquo;erreur contextuel (associé au champ en erreur)</a></li>
+      </ul>
+    </li>
+    <li><a href="#gestion-du-succès">Gestion du succès</a></li>
   </ul>
 </nav>
 </div>
@@ -260,7 +267,7 @@ Ces deux interactions natives font que ce champ est accessible.</p>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;date&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;dateNaissance&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;dateNaissance&#34;</span> <span class="na">required</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h3 id="champ-nbspfichiernbsp">Champ « fichier »</h3>
 <p>Le champ de type « fichier » sera codé avec l&rsquo;attribut <code>type=&quot;file&quot;</code>.<br>
-Il permet de charger un fichier de puis son ordinateur.</p>
+Il permet de charger un fichier depuis son ordinateur.</p>
 <p><strong>Visuel</strong><br>
 
 <form action="./" method="GET" class="exempleForm2">
@@ -370,7 +377,7 @@ La saisie est libre ; par défaut, la valeur saisie doit respecter la forme <em>
 </fieldset>
 </form>
 </p>
-<p><strong>Exemple HTML</strong></p>
+<p><strong>Code HTML</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;prenom&#34;</span><span class="p">&gt;</span>Votre prénom <span class="p">&lt;</span><span class="nt">small</span><span class="p">&gt;</span>(de 3 à 50 caractères)<span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;prenom&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;prenom&#34;</span> <span class="na">minlength</span><span class="o">=</span><span class="s">&#34;3&#34;</span> <span class="na">maxlength</span><span class="o">=</span><span class="s">&#34;50&#34;</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h3 id="valeur-minimale-maximale-et-incrémentation-dun-nombre">Valeur minimale, maximale et incrémentation d&rsquo;un nombre</h3>
@@ -424,7 +431,7 @@ La saisie est libre ; par défaut, la valeur saisie doit respecter la forme <em>
 </fieldset>
 </form>
 
-<p><strong>Exemple HTML</strong></p>
+<p><strong>Code HTML</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;mdpMotif&#34;</span><span class="p">&gt;</span>Votre mot de passe <span class="p">&lt;</span><span class="nt">small</span><span class="p">&gt;</span>(12 à 30 caractères contenant au moins une lettre majuscule, une lettre minuscule, un chiffre et un caractère spécial parmi @$!%?<span class="err">&amp;</span>)<span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;mdpMotif&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;mdpMotif&#34;</span> <span class="na">pattern</span><span class="o">=</span><span class="s">&#34;^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%?&amp;amp;])[A-Za-z\d@$!%?&amp;amp;]{12,30}$&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Un mot de passe de 12 à 30 caractères contenant au moins une lettre majuscule, une lettre minuscule, un chiffre et un caractère spécial parmi @$!%?&amp;&#34;</span><span class="p">&gt;</span>
 </span></span></code></pre></div><div class="notice astuce" >   
@@ -436,12 +443,55 @@ La saisie est libre ; par défaut, la valeur saisie doit respecter la forme <em>
 </ul>
 </div>
 <h3 id="formats-de-fichier-acceptés">Formats de fichier acceptés</h3>
-<p>Pour imposer un format de fihcier à charger, on aura recours à l&rsquo;attribut <code>accept</code>.</p>
-<p><strong>Exemple HTML</strong></p>
+<p>Pour imposer un format de fichier à charger, on aura recours à l&rsquo;attribut <code>accept</code>.</p>
+<p><strong>Code HTML</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span>
 </span></span><span class="line"><span class="cl">  <span class="na">type</span><span class="o">=</span><span class="s">&#34;file&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="na">id</span><span class="o">=</span><span class="s">&#34;docMicrosoft&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="na">accept</span><span class="o">=</span><span class="s">&#34;.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document&#34;</span> <span class="p">/&gt;</span>
+</span></span></code></pre></div><h2 id="gestion-des-erreurs">Gestion des erreurs</h2>
+<h3 id="titre-de-la-page">Titre de la page</h3>
+<p>En cas d&rsquo;erreur, le titre de la page HTML sera modifiée en conséquence.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Erreur - Formulaire d&#39;envoi de votre commande<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h3 id="message-derreur-global">Message d&rsquo;erreur global</h3>
+<p>Un message d&rsquo;erreur global peut être implémenté au début du formulaire  il aura alors le rôle <code>role=&quot;alert&quot;</code>.<br>
+<strong>Cette zone prévue pour recevoir le message d&rsquo;alerte global sera implémentée à vide dans la formulaire puis peuplée au moment du retour d&rsquo;erreur</strong>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;alert&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span></code></pre></div><div class="notice astuce" >   
+     <p> astuce </p>
+<p>Dans la rubrique <a href="/motifs/alerte/">Motifs de conception - Message d'alerte</a>, des informations supplémentaires sont proposées sur l'implémentation d'un élément portant le rôle <code>alert</code>.</p>
+</div>
+<h3 id="message-derreur-contextuel-associé-au-champ-en-erreur">Message d&rsquo;erreur contextuel (associé au champ en erreur)</h3>
+<p>La gestion des erreurs doit suivre les règles suivantes :</p>
+<ul>
+<li>Le message d&rsquo;erreur est implémenté accolé au champ en erreur ;</li>
+<li>Le message d&rsquo;erreur explique les raisons de l&rsquo;erreur de manière claire et sans ambiguïté ;</li>
+<li>Le message d&rsquo;erreur rappelle ce qui est attendu dans le champ et donne des suggestions de correction (exemple : Veuillez renseigner un email valide du type <a href="mailto:nom@domaine.fr">nom@domaine.fr</a>) ;</li>
+<li>Le message d&rsquo;erreur est relié au champ grâce à l&rsquo;attribut <code>aria-labelledby</code> pour pouvoir être restitué par les logiciels de synthèse vocale </li>
+<li>Le focus clavier est mis sur le premier champ en erreur afin de pouvoir parcourir tout le formulaire ;</li>
+<li>Le champ en erreur (et/ou son label) <strong>n&rsquo;est pas signalé uniquement par la couleur</strong> (le champ en erreur pourra alors avoir une bordure plus grosse par exemple et son libellé écrit en gras) ;</li>
+<li>Le champ en erreur possède l&rsquo;attribut <code>aria-invalid=&quot;true&quot; </code> ;</li>
+<li>Le message d&rsquo;erreur pour un champ obligatoire qui n&rsquo;est pas renseigné est contextualisé et unique (exemple : Le champ &ldquo;Nom&rdquo; est obligatoire).</li>
+</ul>
+<p><strong>Exemple de code HTML</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;email&#34;</span><span class="p">&gt;</span>Adresse e-mail<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">required</span> <span class="na">aria-invalid</span><span class="o">=</span><span class="s">&#34;true&#34;</span>  <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;erreurEmail&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;erreurEmail&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;emailObligatoire&#34;</span><span class="p">&gt;</span>Le champ email est obligatoire.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;emailFormatage&#34;</span><span class="p">&gt;</span>Veuillez renseigner un email valide (prenom.nom@domaine.com)<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h2 id="gestion-du-succès">Gestion du succès</h2>
+<p>À l&rsquo;issue de la soumission du formulaire, si celle-ci s&rsquo;est bien passée, il faut afficher un message de notification pour en informer l&rsquo;utilisateur. Ce message peut reprendre une partie des données renseignées dans le formulaire. Ce message de succès / confirmation s&rsquo;implémente via le rôle aria <code>role=&quot;status&quot;</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;status&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Succès<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Votre demande a bien été envoyée ; vous recevrez bientôt un mail de confirmation à l&#39;adresse suivante : martin@gmail.com.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span></code></pre></div>
      </section>
 </main>

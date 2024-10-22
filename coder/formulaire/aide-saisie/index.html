@@ -143,8 +143,8 @@
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/">Regroupement de champs</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/liste-deroulante/">Liste déroulante</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/">Formulaire à étapes multiples</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/formulaire/controle-formulaire/">Contrôle de la saisie</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/aide-saisie/" aria-current="page" >Aide à la saisie</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/formulaire/controle-formulaire/">Contrôle de la saisie</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/securite-formulaire/">Sécurité des formulaires</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/formulaire/quiz/">Quiz récap&#39;</a></li>
 				</ul>
@@ -178,41 +178,65 @@
      <section>
 		<h1 id="contenu">Aide à la saisie</h1>
                <p>La mise en place d&#39;aide à la saisie doit respecter des règles d&#39;accessibilité.</p>
-<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm" aria-label="Déplier la table des matières">
-    Table des matières
-</button>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm">
+Table des matières</button>
 <div id="tdm" role="region" tabindex="-1">
     <nav id="TableOfContents">
   <ul>
+    <li><a href="#information-textuelle-daide-à-la-saisie">Information textuelle d&rsquo;aide à la saisie</a>
+      <ul>
+        <li><a href="#information-simple">Information simple</a></li>
+        <li><a href="#information-complexe">Information complexe</a></li>
+      </ul>
+    </li>
     <li><a href="#champ-obligatoire">Champ obligatoire</a></li>
-    <li><a href="#aide-à-la-saisie">Aide à la saisie</a>
+    <li><a href="#autocomplétion">Autocomplétion</a>
       <ul>
-        <li><a href="#information-textuelle-daide-à-la-saisie">Information textuelle d&rsquo;aide à la saisie</a>
+        <li><a href="#autocomplétion-sur-le-formulaire">Autocomplétion sur le formulaire</a></li>
+        <li><a href="#autocomplétion-pour-les-adresses">Autocomplétion pour les adresses</a>
           <ul>
-            <li><a href="#information-simple">Information simple</a></li>
-            <li><a href="#information-complexe">Information complexe</a></li>
+            <li><a href="#recueil-de-ladresse-en-un-seul-champ">Recueil de l&rsquo;adresse en un seul champ</a></li>
+            <li><a href="#recueil-de-ladresse-sur-plusieurs-champs">Recueil de l&rsquo;adresse sur plusieurs champs</a></li>
           </ul>
         </li>
-        <li><a href="#autocomplétion">Autocomplétion</a>
-          <ul>
-            <li><a href="#proposition-de-pré-remplissage-avec-lattribut-autocomplete">Proposition de pré-remplissage avec l&rsquo;attribut <code>autocomplete</code></a></li>
-            <li><a href="#suggestion-de-saisie-de-valeur">Suggestion de saisie de valeur</a></li>
-          </ul>
-        </li>
+        <li><a href="#autocomplétion-pour-le-numéro-de-téléphone">Autocomplétion pour le numéro de téléphone</a></li>
+        <li><a href="#autocomplétion-pour-les-informations-de-connexion">Autocomplétion pour les informations de connexion</a></li>
       </ul>
     </li>
-    <li><a href="#gestion-des-erreurs">Gestion des erreurs</a>
-      <ul>
-        <li><a href="#titre-de-la-page">Titre de la page</a></li>
-        <li><a href="#message-derreur-global">Message d&rsquo;erreur global</a></li>
-        <li><a href="#message-derreur-contextuel-associé-au-champ-en-erreur">Message d&rsquo;erreur contextuel (associé au champ en erreur)</a></li>
-      </ul>
-    </li>
-    <li><a href="#gestion-du-succès">Gestion du succès</a></li>
+    <li><a href="#suggestion-de-saisie-de-valeur">Suggestion de saisie de valeur</a></li>
   </ul>
 </nav>
 </div>
-<h2 id="champ-obligatoire">Champ obligatoire</h2>
+<h2 id="information-textuelle-daide-à-la-saisie">Information textuelle d&rsquo;aide à la saisie</h2>
+<h3 id="information-simple">Information simple</h3>
+<p>Les aides à la saisie :</p>
+<ul>
+<li>sont intégrées directement entre les éléments <code>label</code> ;</li>
+<li>permettent de connaître le format de saisie attendu (ex: 25/11/1987) ;</li>
+<li>permettent de connaître le type et le poids maximal autorisé pour l’envoi de fichiers.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;numero&#34;</span><span class="p">&gt;</span>Numéro d&#39;immatriculation de votre véhicule (Format attendu : AB-123-CD)
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;numero&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;numero&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;photo&#34;</span><span class="p">&gt;</span>Photo de profil
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;file&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;photo&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;photo&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Format autorisé : .jpg, .gif, .png - Poids maximum 100 ko.<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h3 id="information-complexe">Information complexe</h3>
+<p>Les informations à délivrer pour remplir un champ peuvent nécessiter une zone plus importante. Elles seront alors implémentées à l&rsquo;aide de l&rsquo;attribut <code>aria-describedby</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;mdp&#34;</span><span class="p">&gt;</span>Mot de passe<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;mdp&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;mdp&#34;</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&#34;quoi&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;quoi&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Votre mot de passe doit contenir : <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>au moins 12 caractères<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>des lettres en majuscule et en minuscule<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>au moins un chiffre<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>au moins un signe parmi : <span class="ni">&amp;*-,;</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Vous ne pouvez pas utiliser les trois derniers mots de passe déjà renseignés.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h2 id="champ-obligatoire">Champ obligatoire</h2>
 <p>Si un des champs du formulaire est obligatoire :</p>
 <ul>
 <li>la mention de la présence de champs obligatoires dans le formulaire sera signalée <strong>au début</strong> du formulaire ;</li>
@@ -231,39 +255,7 @@
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;nom&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;nom&#34;</span> <span class="na">required</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">[...]
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h2 id="aide-à-la-saisie">Aide à la saisie</h2>
-<h3 id="information-textuelle-daide-à-la-saisie">Information textuelle d&rsquo;aide à la saisie</h3>
-<h4 id="information-simple">Information simple</h4>
-<p>Les aides à la saisie :</p>
-<ul>
-<li>sont intégrées directement entre les éléments <code>label</code> ;</li>
-<li>permettent de connaître le format de saisie attendu (ex: 25/11/1987) ;</li>
-<li>permettent de connaître le type et le poids maximal autorisé pour l’envoi de fichiers.</li>
-</ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;numero&#34;</span><span class="p">&gt;</span>Numéro d&#39;immatriculation de votre véhicule (Format attendu : AB-123-CD)
-</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;numero&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;numero&#34;</span> <span class="p">/&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;photo&#34;</span><span class="p">&gt;</span>Photo de profil
-</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;file&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;photo&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;photo&#34;</span> <span class="p">/&gt;</span>
-</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Format autorisé : .jpg, .gif, .png - Poids maximum 100 ko.<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h4 id="information-complexe">Information complexe</h4>
-<p>Les informations à délivrer pour remplir un champ peuvent nécessiter une zone plus importante. Elles seront alors implémentées à l&rsquo;aide de l&rsquo;attribut <code>aria-describedby</code>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;mdp&#34;</span><span class="p">&gt;</span>Mot de passe<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"> <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;mdp&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;mdp&#34;</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&#34;quoi&#34;</span> <span class="p">/&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;quoi&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"> <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Votre mot de passe doit contenir : <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"> <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>au moins 12 caractères<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>des lettres en majuscule et en minuscule<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>au moins un chiffre<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>au moins un signe parmi : <span class="ni">&amp;*-,;</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"> <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Vous ne pouvez pas utiliser les trois derniers mots de passe déjà renseignés.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h3 id="autocomplétion">Autocomplétion</h3>
-<p>L&rsquo;autocomplétion permet de faciliter le remplissage des champs en proposant des valeurs pré-renseignées ou des suggestions de saisie.</p>
-<h4 id="proposition-de-pré-remplissage-avec-lattribut-autocomplete">Proposition de pré-remplissage avec l&rsquo;attribut <code>autocomplete</code></h4>
+</span></span></code></pre></div><h2 id="autocomplétion">Autocomplétion</h2>
 <p>L&rsquo;attribut <code>autocomplete</code> permet de faciliter le remplissage des champs qui contiennent <strong>une information personnelle enregistrée au préalable</strong> par l&rsquo;utilisateur.<br>
 Voici les attributs les plus courants :</p>
 <ul>
@@ -274,9 +266,175 @@ Voici les attributs les plus courants :</p>
 <li>Identifiant (nom d&rsquo;utilisateur) : <code>&lt;input type=&quot;text&quot; auto-complete=&quot;username &quot; ...&gt;</code></li>
 <li>Mot de passe (associé à l&rsquo;identifiant) : <code>&lt;input type=&quot;password&quot; auto-complete=&quot;current-password&quot; ...&gt;</code></li>
 </ul>
-<p>Pour voir la liste complète, <a href="https://www.w3.org/TR/WCAG21/#input-purposes"  target="_blank" rel="noopener noreferrer" title="consulter la page &#34;input-purpose&#34; du W3C (nouvelle fenêtre)">consulter la page &ldquo;input-purpose&rdquo; du W3C</a>.</p>
-<h4 id="suggestion-de-saisie-de-valeur">Suggestion de saisie de valeur</h4>
-<p>Cette implémentation permet de proposer des valeurs pré-définies à l&rsquo;utilisteur. Pour autant, celui-ci pourra tout de même renseigner une valeur qui n&rsquo;est pas proposée au moment où il commence à remplir le champs.<br>
+<p><strong>Voir aussi</strong></p>
+<ul>
+<li><a href="https://www.w3.org/TR/WCAG21/#input-purposes"  target="_blank" rel="noopener noreferrer" title="La page &#34;input-purpose&#34; du W3C (nouvelle fenêtre)">La page &ldquo;input-purpose&rdquo; du W3C</a>.</li>
+<li><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Attributes/autocomplete"  target="_blank" rel="noopener noreferrer" title="La documentation MDN que l&#39;autocomplétion (nouvelle fenêtre)">La documentation MDN que l&rsquo;autocomplétion</a>.</li>
+</ul>
+<h3 id="autocomplétion-sur-le-formulaire">Autocomplétion sur le formulaire</h3>
+<p>Posé directement sur l&rsquo;élément <code>form</code>, c&rsquo;est la navigateur qui se chargera de faire des suggestions en fontion du type de champ que le formulaire comporte (texte, nombre&hellip;). L&rsquo;autocomplétion sera implémentée de la manière suivante :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">form</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;on&#34;</span> <span class="err">[...]</span> <span class="p">&gt;</span>
+</span></span></code></pre></div><h3 id="autocomplétion-pour-les-adresses">Autocomplétion pour les adresses</h3>
+<h4 id="recueil-de-ladresse-en-un-seul-champ">Recueil de l&rsquo;adresse en un seul champ</h4>
+<p>Une adresse est parfois composée de plusieurs lignes : adresse, complément d&rsquo;adresse (bâteiment, escalier&hellip;). On peut proposer de recueillir ces informations dans un seul champ. Pour cela, on utilisera un champ de type <code>textarea</code>.</p>
+<p><strong>Visuel</strong></p>
+
+<form action="./" method="GET" class="exempleForm2">
+<div>
+<label for="adresse">Adresse</label> 
+<textarea id="adresse" autocomplete="street-address" rows="3"></textarea>
+</div>
+<div class="grid2col">
+<div>
+<label for="code-postal">Code postal</label>
+<input type="text" id="code-postal" autocomplete="postal-code">
+</div>
+
+<div>
+<label for="ville">Ville</label> 
+<input type="text" id="ville" autocomplete="address-level2">
+</div>
+
+</div>
+</form>
+
+<p><strong>Code HTML</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;adresse&#34;</span><span class="p">&gt;</span>Adresse<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">textarea</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;adresse&#34;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;street-address&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">textarea</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;code-postal&#34;</span><span class="p">&gt;</span>Code postal<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;code-postal&#34;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;postal-code&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;ville&#34;</span><span class="p">&gt;</span>Ville<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;ville&#34;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;address-level2&#34;</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h4 id="recueil-de-ladresse-sur-plusieurs-champs">Recueil de l&rsquo;adresse sur plusieurs champs</h4>
+<p>Plutôt que de recueillir l&rsquo;adresse en un seul champ, on va demander l&rsquo;adresse et le complément d&rsquo;adresse.</p>
+<p><strong>Visuel</strong></p>
+
+<form action="./" method="GET" class="exempleForm2">
+<div class="force">
+<label for="numero-voie2">Numéro et voie</label> 
+<input type="text" id="numero-voie2" autocomplete="address-line1">
+
+<label for="complement-adresse2">Complément d'adresse</label> 
+<input type="text" id="complement-adresse2" autocomplete="address-line2">
+</div>
+<div class="grid2col">
+<div>
+<label for="code-postal2">Code postal</label>
+<input type="text" id="code-postal2" autocomplete="postal-code">
+</div>
+
+<div>
+<label for="ville2">Ville</label> 
+<input type="text" id="ville2" autocomplete="address-level2">
+</div>
+
+</div>
+</form>
+
+<p><strong>Code HTML</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;numero-voie&#34;</span><span class="p">&gt;</span>Numéro et voie<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;numero-voie&#34;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;address-line1&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;complement-adresse&#34;</span><span class="p">&gt;</span>Complément d&#39;adresse<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;complement-adresse&#34;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;address-line2&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;code-postal&#34;</span><span class="p">&gt;</span>Code postal<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;code-postal&#34;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;postal-code&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;ville&#34;</span><span class="p">&gt;</span>Ville<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;ville&#34;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;address-level2&#34;</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h3 id="autocomplétion-pour-le-numéro-de-téléphone">Autocomplétion pour le numéro de téléphone</h3>
+<p>Il y a plusieurs façons de recueillir le numéro de téléphone de l&rsquo;utilisateur selon qu&rsquo;on veuille récolter l&rsquo;indicatif du pays ou non.</p>
+<p><strong>Visuel</strong></p>
+
+<form action="./" method="GET" class="exempleForm2">
+<div>
+<label for="tel1">Numéro de téléphone simple</label> 
+<input type="tel" id="tel1" autocomplete="tel">
+</div>
+
+<div class="grid2col indicatif">
+<div>
+<label for="indicatif">Indicatif</label>
+<input type="text" id="indicatif" autocomplete="tel-country-code">
+</div>
+<div>
+<label for="tel2">Numéro de téléphone</label>
+<input type="text" id="tel2" autocomplete="tel-national">
+</div>
+</div>
+
+<div class="grid2col indicatif">
+<div>
+<label for="indicatif3">Indicatif</label>
+<select id="indicatif3" autocomplete="tel-country-code">
+     <option value="+332">+32</option>
+     <option value="+33">+33</option>
+     <option value="+34">+34</option>
+</select>    
+</div>
+<div>
+<label for="tel3">Numéro de téléphone</label>
+<input type="text" id="tel3" autocomplete="tel-national">
+</div>
+</div>
+
+</form>
+
+<p><strong>Code HTML</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!-- Numéro simple --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;tel&#34;</span><span class="p">&gt;</span>Numéro de téléphone simple<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;tel&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tel&#34;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;tel&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- Numéro avec indicatif dans une zone de texte --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;indicatif&#34;</span><span class="p">&gt;</span>Indicatif<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;indicatif&#34;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;tel-country-code&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;tel&#34;</span><span class="p">&gt;</span>Numéro de téléphone<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tel&#34;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;tel-national&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- Numéro avec indicatif dans une zone déroulante --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;indicatif&#34;</span><span class="p">&gt;</span>Indicatif<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">select</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;indicatif&#34;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;tel-country-code&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;+332&#34;</span><span class="p">&gt;</span>+32<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;+33&#34;</span><span class="p">&gt;</span>+33<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;+34&#34;</span><span class="p">&gt;</span>+34<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>    
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;tel&#34;</span><span class="p">&gt;</span>Numéro de téléphone<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tel&#34;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;tel-national&#34;</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h3 id="autocomplétion-pour-les-informations-de-connexion">Autocomplétion pour les informations de connexion</h3>
+<p>Dans un formulaire de connexion, il peut être intéressant de proposer des champs d&rsquo;autocomplétion pour le nom d&rsquo;utilisateur et le mot de passe.</p>
+<p><strong>Visuel</strong></p>
+
+<form action="./" method="GET" class="exempleForm2">
+<div>
+<label for="login">Votre identifiant <span>(adresse e-mail, numéro de téléphone ou nom d’utilisateur)</span></label> 
+<input type="text" id="login" autocomplete="username">
+</div>
+<div>
+    <label for="mot-de-passe">Votre mot de passe</label> 
+    <input type="password" id="mot-de-passe" autocomplete="current-password">
+</div>
+</form>
+
+<p><strong>Code HTML</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;login&#34;</span><span class="p">&gt;</span>Votre identifiant <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>(adresse e-mail, numéro de téléphone ou nom d’utilisateur)<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;login&#34;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;username&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;mot-de-passe&#34;</span><span class="p">&gt;</span>Votre mot de passe<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;mot-de-passe&#34;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;current-password&#34;</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Si le nom d&rsquo;utilisateur est une adresse mail, on peut forcer le type du champ <code>input</code> à <code>email</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;login&#34;</span><span class="p">&gt;</span>Votre identifiant <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>(adresse e-mail, numéro de téléphone ou nom d’utilisateur)<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;login&#34;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;username&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;mot-de-passe&#34;</span><span class="p">&gt;</span>Votre mot de passe<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;mot-de-passe&#34;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;current-password&#34;</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h2 id="suggestion-de-saisie-de-valeur">Suggestion de saisie de valeur</h2>
+<p>Cette implémentation permet de proposer des valeurs pré-définies à l&rsquo;utilisateur. Pour autant, celui-ci pourra tout de même renseigner une valeur qui n&rsquo;est pas proposée au moment où il commence à remplir le champs.<br>
 Cette implémentation de fait de la manière suivante :</p>
 <ul>
 <li>un attribut <code>list</code> posé sur le champs <code>input</code> et faisant référence à l&rsquo;<code>id</code> de l&rsquo;élément <code>datalist</code> ;</li>
@@ -311,49 +469,6 @@ Cette implémentation de fait de la manière suivante :</p>
 </span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>Vert<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>Violet<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">datalist</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h2 id="gestion-des-erreurs">Gestion des erreurs</h2>
-<h3 id="titre-de-la-page">Titre de la page</h3>
-<p>En cas d&rsquo;erreur, le titre de la page HTML sera modifiée en conséquence.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Erreur - Formulaire d&#39;envoi de votre commande<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">...
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h3 id="message-derreur-global">Message d&rsquo;erreur global</h3>
-<p>Un message d&rsquo;erreur global peut être implémenté au début du formulaire  il aura alors le rôle <code>role=&quot;alert&quot;</code>.<br>
-<strong>Cette zone prévue pour recevoir le message d&rsquo;alerte global sera implémentée à vide dans la formulaire puis peuplée au moment du retour d&rsquo;erreur</strong>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;alert&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">...
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
-</span></span></code></pre></div><div class="notice astuce" >   
-     <p> astuce </p>
-<p>Dans la rubrique <a href="/motifs/alerte/">Motifs de conception - Message d'alerte</a>, des informations supplémentaires sont proposées sur l'implémentation d'un élément portant le rôle <code>alert</code>.</p>
-</div>
-<h3 id="message-derreur-contextuel-associé-au-champ-en-erreur">Message d&rsquo;erreur contextuel (associé au champ en erreur)</h3>
-<p>La gestion des erreurs doit suivre les règles suivantes :</p>
-<ul>
-<li>Le message d&rsquo;erreur est implémenté accolé au champ en erreur ;</li>
-<li>Le message d&rsquo;erreur explique les raisons de l&rsquo;erreur de manière claire et sans ambiguïté ;</li>
-<li>Le message d&rsquo;erreur rappelle ce qui est attendu dans le champ et donne des suggestions de correction (exemple : Veuillez renseigner un email valide du type <a href="mailto:nom@domaine.fr">nom@domaine.fr</a>) ;</li>
-<li>Le message d&rsquo;erreur est relié au champ grâce à l&rsquo;attribut <code>aria-labelledby</code> pour pouvoir être restitué par les logiciels de synthèse vocale </li>
-<li>Le focus clavier est mis sur le premier champ en erreur afin de pouvoir parcourir tout le formulaire ;</li>
-<li>Le champ en erreur (et/ou son label) <strong>n&rsquo;est pas signalé uniquement par la couleur</strong> (le champ en erreur pourra alors avoir une bordure plus grosse par exemple et son libellé écrit en gras) ;</li>
-<li>Le champ en erreur possède l&rsquo;attribut <code>aria-invalid=&quot;true&quot; </code> ;</li>
-<li>Le message d&rsquo;erreur pour un champ obligatoire qui n&rsquo;est pas renseigné est contextualisé et unique (exemple : Le champ &ldquo;Nom&rdquo; est obligatoire).</li>
-</ul>
-<p><strong>Exemple de code HTML</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;email&#34;</span><span class="p">&gt;</span>Adresse e-mail<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">required</span> <span class="na">aria-invalid</span><span class="o">=</span><span class="s">&#34;true&#34;</span>  <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;erreurEmail&#34;</span> <span class="p">/&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;erreurEmail&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;emailObligatoire&#34;</span><span class="p">&gt;</span>Le champ email est obligatoire.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;emailFormatage&#34;</span><span class="p">&gt;</span>Veuillez renseigner un email valide (prenom.nom@domaine.com)<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span></code></pre></div><h2 id="gestion-du-succès">Gestion du succès</h2>
-<p>À l&rsquo;issue de la soumission du formulaire, si celle-ci s&rsquo;est bien passée, il faut afficher un message de notification pour en informer l&rsquo;utilisateur. Ce message peut reprendre une partie des données renseignées dans le formulaire. Ce message de succès / confirmation s&rsquo;implémente via le rôle aria <code>role=&quot;status&quot;</code></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;status&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Succès<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Votre demande a bien été envoyée ; vous recevrez bientôt un mail de confirmation à l&#39;adresse suivante : martin@gmail.com.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span></code></pre></div>
      </section>
 </main>
