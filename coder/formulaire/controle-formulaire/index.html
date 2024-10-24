@@ -208,9 +208,14 @@ Table des matières</button>
         <li><a href="#titre-de-la-page">Titre de la page</a></li>
         <li><a href="#message-derreur-global">Message d&rsquo;erreur global</a></li>
         <li><a href="#message-derreur-contextuel-associé-au-champ-en-erreur">Message d&rsquo;erreur contextuel (associé au champ en erreur)</a></li>
+        <li><a href="#exemple">Exemple</a></li>
       </ul>
     </li>
-    <li><a href="#gestion-du-succès">Gestion du succès</a></li>
+    <li><a href="#gestion-du-succès">Gestion du succès</a>
+      <ul>
+        <li><a href="#exemple-1">Exemple</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 </div>
@@ -470,28 +475,123 @@ La saisie est libre ; par défaut, la valeur saisie doit respecter la forme <em>
 <h3 id="message-derreur-contextuel-associé-au-champ-en-erreur">Message d&rsquo;erreur contextuel (associé au champ en erreur)</h3>
 <p>La gestion des erreurs doit suivre les règles suivantes :</p>
 <ul>
-<li>Le message d&rsquo;erreur est implémenté accolé au champ en erreur ;</li>
-<li>Le message d&rsquo;erreur explique les raisons de l&rsquo;erreur de manière claire et sans ambiguïté ;</li>
-<li>Le message d&rsquo;erreur rappelle ce qui est attendu dans le champ et donne des suggestions de correction (exemple : Veuillez renseigner un email valide du type <a href="mailto:nom@domaine.fr">nom@domaine.fr</a>) ;</li>
-<li>Le message d&rsquo;erreur est relié au champ grâce à l&rsquo;attribut <code>aria-labelledby</code> pour pouvoir être restitué par les logiciels de synthèse vocale </li>
+<li><strong>Pour le champ en erreur</strong> :
+<ul>
+<li>Il est relié au message d&rsquo;erreur grâce à l&rsquo;attribut <code>aria-describedby</code> pour pouvoir être restitué par les logiciels de synthèse vocale </li>
+<li>Il (et/ou son label) <strong>n&rsquo;est pas signalé uniquement par la couleur</strong> (le champ en erreur pourra alors avoir une bordure plus grosse par exemple et son libellé écrit en gras) ;</li>
+<li>Il possède l&rsquo;attribut <code>aria-invalid=&quot;true&quot; </code> ;</li>
 <li>Le focus clavier est mis sur le premier champ en erreur afin de pouvoir parcourir tout le formulaire ;</li>
-<li>Le champ en erreur (et/ou son label) <strong>n&rsquo;est pas signalé uniquement par la couleur</strong> (le champ en erreur pourra alors avoir une bordure plus grosse par exemple et son libellé écrit en gras) ;</li>
-<li>Le champ en erreur possède l&rsquo;attribut <code>aria-invalid=&quot;true&quot; </code> ;</li>
-<li>Le message d&rsquo;erreur pour un champ obligatoire qui n&rsquo;est pas renseigné est contextualisé et unique (exemple : Le champ &ldquo;Nom&rdquo; est obligatoire).</li>
+</ul>
+</li>
+<li><strong>Pour le message d&rsquo;erreur</strong> :</li>
+<li>Il est accolé au champ en erreur ;</li>
+<li>Il explique les raisons de l&rsquo;erreur de manière claire et sans ambiguïté ;</li>
+<li>Il rappelle ce qui est attendu dans le champ et donne des suggestions de correction (<em>exemple : Veuillez renseigner un email valide du type nom@domaine.fr</em>) ;</li>
+<li>Le message d&rsquo;erreur pour un champ obligatoire est contextualisé et unique (exemple : Le champ &ldquo;Nom&rdquo; est obligatoire) ;</li>
+<li>Il est inséré dans une zone (élément HTML <code>div</code>) portant l&rsquo;attribut <code>id</code> le reliant au champ ;</li>
+<li>Pour maximiser la compatibilité avec les logiciels de synthèse vocale (même si cette redondance occasionne un problème de double restitution orale dans VoiceOver sur iOS.), la zone du message d&rsquo;erreur  (élément HTML <code>div</code>) aura l&rsquo;attribut <code>aria-live=&quot;assertive&quot;</code>.</li>
 </ul>
 <p><strong>Exemple de code HTML</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;email&#34;</span><span class="p">&gt;</span>Adresse e-mail<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">required</span> <span class="na">aria-invalid</span><span class="o">=</span><span class="s">&#34;true&#34;</span>  <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;erreurEmail&#34;</span> <span class="p">/&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;erreurEmail&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">required</span> <span class="na">aria-invalid</span><span class="o">=</span><span class="s">&#34;true&#34;</span>  <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&#34;erreurEmail&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;erreurEmail&#34;</span> <span class="na">aria-live</span><span class="o">=</span><span class="s">&#34;assertive&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;emailObligatoire&#34;</span><span class="p">&gt;</span>Le champ email est obligatoire.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;emailFormatage&#34;</span><span class="p">&gt;</span>Veuillez renseigner un email valide (prenom.nom@domaine.com)<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;emailFormatage&#34;</span><span class="p">&gt;</span>Veuillez renseigner un email valide (prenom.nom@domaine.fr)<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Il est fortement recommandé de positionner <strong>dès le chargement de la page</strong> l&rsquo;attribut <code>aria-live</code> pour maximiser la compatibilité avec les différents couples navigateurs et lecteurs d&rsquo;écran. Par conséquent ces zones seront prévues dès le chargement de la page et peuplées uniquement en cas d&rsquo;erreur.</p>
+<h3 id="exemple">Exemple</h3>
+<p><strong>Visuel</strong></p>
+
+<form class="formcontrole">
+<label for="email">Adresse e-mail
+<input type="email" id="email" name="email" autocomplete="email" required aria-invalid="true"  aria-describedby="erreurEmail" />
+</label>
+<div id="erreurEmail" aria-live="assertive" class="erreurContexte">
+<p>Veuillez renseigner un email valide (prenom.nom@domaine.fr)</p></div>
+</form>
+
+<p><strong>Code HTML de l&rsquo;exemple</strong><br>
+Remarquez dans le code ci-dessous que l&rsquo;élément <code>input</code> se trouve dans l&rsquo;élément <code>label</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;email&#34;</span><span class="p">&gt;</span>Adresse e-mail
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">autocomplete</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">required</span> <span class="na">aria-invalid</span><span class="o">=</span><span class="s">&#34;true&#34;</span>  <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&#34;erreurEmail&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;erreurEmail&#34;</span> <span class="na">aria-live</span><span class="o">=</span><span class="s">&#34;assertive&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;erreurContexte&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p><strong>Code CSS de l&rsquo;exemple</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">label</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nt">label</span><span class="p">:</span><span class="nd">has</span><span class="o">([</span><span class="nt">aria-invalid</span><span class="o">=</span><span class="s2">&#34;true&#34;</span><span class="o">])</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">color</span><span class="p">:</span> <span class="kc">darkred</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nt">input</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">width</span><span class="p">:</span> <span class="mi">300</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">padding</span><span class="p">:</span> <span class="mf">0.5</span><span class="kt">em</span> <span class="mf">0.75</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nt">input</span><span class="o">[</span><span class="nt">aria-invalid</span><span class="o">=</span><span class="s2">&#34;true&#34;</span><span class="o">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">darkred</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nt">div</span><span class="o">[</span><span class="nt">aria-live</span><span class="o">=</span><span class="s2">&#34;assertive&#34;</span><span class="o">]</span><span class="p">:</span><span class="nd">empty</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">erreurContexte</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">color</span><span class="p">:</span> <span class="kc">darkred</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">erreurContexte</span> <span class="nt">p</span><span class="p">:</span><span class="nd">first-child</span><span class="p">::</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="nv">--icon-size</span><span class="p">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">content</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background-color</span><span class="p">:</span> <span class="kc">currentColor</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">height</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="kc">icon</span><span class="o">-</span><span class="n">size</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">width</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="kc">icon</span><span class="o">-</span><span class="n">size</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">vertical-align</span><span class="p">:</span> <span class="nb">calc</span><span class="p">((</span><span class="mf">.75</span><span class="kt">em</span> <span class="o">-</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="kc">icon</span><span class="o">-</span><span class="n">size</span><span class="p">))</span><span class="o">*</span><span class="mf">.5</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">margin-right</span><span class="p">:</span> <span class="nb">calc</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="kc">icon</span><span class="o">-</span><span class="n">size</span><span class="p">)</span><span class="o">*</span><span class="mf">0.25</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="kp">-webkit-</span><span class="k">mask-size</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">mask-size</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kp">-webkit-</span><span class="k">mask-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s1">&#39;data:image/svg+xml,&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;path d=&#34;M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z&#34;/&gt;&lt;/svg&gt;&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">mask-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s1">&#39;data:image/svg+xml,&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;path d=&#34;M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z&#34;/&gt;&lt;/svg&gt;&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><h2 id="gestion-du-succès">Gestion du succès</h2>
-<p>À l&rsquo;issue de la soumission du formulaire, si celle-ci s&rsquo;est bien passée, il faut afficher un message de notification pour en informer l&rsquo;utilisateur. Ce message peut reprendre une partie des données renseignées dans le formulaire. Ce message de succès / confirmation s&rsquo;implémente via le rôle aria <code>role=&quot;status&quot;</code></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;status&#34;</span><span class="p">&gt;</span>
+<p>À l&rsquo;issue de la soumission du formulaire, si celle-ci s&rsquo;est bien passée, il faut afficher un message de notification pour en informer l&rsquo;utilisateur. Ce message peut reprendre une partie des données renseignées dans le formulaire.</p>
+<ul>
+<li>Ce message de succès / confirmation s&rsquo;implémente via le rôle aria <code>role=&quot;status&quot;</code>.</li>
+<li>Pour maximiser la compatibilité avec les logiciels de synthèse vocale, ajouter un <code>aria-live=&quot;polite&quot;</code> même s&rsquo;il est redondant lorsque vous utiliserez ce rôle.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;status&#34;</span> <span class="na">aria-live</span><span class="o">=</span><span class="s">&#34;polite&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Succès<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Votre demande a bien été envoyée ; vous recevrez bientôt un mail de confirmation à l&#39;adresse suivante : martin@gmail.com.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Il est fortement recommandé de positionner <strong>dès le chargement de la page</strong> l&rsquo;attribut <code>aria-live</code> pour maximiser la compatibilité avec les différents couples navigateurs et lecteurs d&rsquo;écran. Par conséquent cette zone sera prévue dès le chargement de la page et peuplée en cas de succès.</p>
+<h3 id="exemple-1">Exemple</h3>
+<p><strong>Visuel</strong></p>
+
+<div role="status" aria-live="polite" class="exep">
+  <p>Succès</p>
+<p>Votre message a bien été envoyé.</p>
+</div>
+
+<p><strong>Code HTML de l&rsquo;exemple</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;status&#34;</span> <span class="na">aria-live</span><span class="o">=</span><span class="s">&#34;polite&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Succès<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Votre message a bien été envoyé.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p><strong>Code CSS de l&rsquo;exemple</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">div</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;status&#34;</span><span class="o">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">padding</span><span class="p">:</span> <span class="mf">1.25</span><span class="kt">rem</span> <span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">margin-top</span><span class="p">:</span> <span class="mf">1.25</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">margin-bottom</span><span class="p">:</span> <span class="mf">1.25</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">color</span><span class="p">:</span> <span class="kc">darkgreen</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#CCFFCC</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border-left</span><span class="p">:</span> <span class="mf">0.75</span><span class="kt">rem</span> <span class="kc">solid</span> <span class="kc">darkgreen</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nt">div</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;status&#34;</span><span class="o">]</span> <span class="nt">h2</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">font-variant</span><span class="p">:</span> <span class="kc">small-caps</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">font-size</span><span class="p">:</span> <span class="mf">1.75</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nt">div</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;status&#34;</span><span class="o">]</span> <span class="nt">p</span><span class="p">:</span><span class="nd">last-of-type</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
      </section>
 </main>
