@@ -207,13 +207,14 @@ Table des matières</button>
       <ul>
         <li><a href="#titre-de-la-page">Titre de la page</a></li>
         <li><a href="#message-derreur-global">Message d&rsquo;erreur global</a></li>
-        <li><a href="#message-derreur-contextuel-associé-au-champ-en-erreur">Message d&rsquo;erreur contextuel (associé au champ en erreur)</a></li>
         <li><a href="#exemple">Exemple</a></li>
+        <li><a href="#message-derreur-contextuel-associé-au-champ-en-erreur">Message d&rsquo;erreur contextuel (associé au champ en erreur)</a></li>
+        <li><a href="#exemple-1">Exemple</a></li>
       </ul>
     </li>
     <li><a href="#gestion-du-succès">Gestion du succès</a>
       <ul>
-        <li><a href="#exemple-1">Exemple</a></li>
+        <li><a href="#exemple-2">Exemple</a></li>
       </ul>
     </li>
   </ul>
@@ -464,10 +465,41 @@ La saisie est libre ; par défaut, la valeur saisie doit respecter la forme <em>
 </span></span></code></pre></div><h3 id="message-derreur-global">Message d&rsquo;erreur global</h3>
 <p>Un message d&rsquo;erreur global peut être implémenté au début du formulaire  il aura alors le rôle <code>role=&quot;alert&quot;</code>.<br>
 <strong>Cette zone prévue pour recevoir le message d&rsquo;alerte global sera implémentée à vide dans la formulaire puis peuplée au moment du retour d&rsquo;erreur</strong>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;alert&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">...
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+<p>Il est fortement recommandé de positionner <strong>dès le chargement de la page</strong> l&rsquo;attribut <code>aria-live</code> pour maximiser la compatibilité avec les différents couples navigateurs et lecteurs d&rsquo;écran. Par conséquent cette zone sera prévue dès le chargement de la page et peuplée en cas de succès.</p>
+<h3 id="exemple">Exemple</h3>
+<p><strong>Visuel</strong></p>
+
+<div class="exep">
+  <p>Erreur</p>
+  <p>Il y a 2 erreurs dans le formulaire.</p>
+</div>
+
+<p><strong>Code HTML de l&rsquo;exemple</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;alert&#34;</span> <span class="na">aria-live</span><span class="o">=</span><span class="s">&#34;assertive&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Erreur<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Il y a 2 erreurs dans le formulaire.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p><strong>Code CSS de l&rsquo;exemple</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">div</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;alert&#34;</span><span class="o">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">padding</span><span class="p">:</span> <span class="mf">1.25</span><span class="kt">rem</span> <span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">margin-top</span><span class="p">:</span> <span class="mf">1.25</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">margin-bottom</span><span class="p">:</span> <span class="mf">1.25</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">color</span><span class="p">:</span> <span class="kc">darkred</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#FFD6D6</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border-left</span><span class="p">:</span> <span class="mf">0.75</span><span class="kt">rem</span> <span class="kc">solid</span> <span class="kc">darkred</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nt">div</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;alert&#34;</span><span class="o">]</span> <span class="nt">h2</span>  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">font-variant</span><span class="p">:</span> <span class="kc">small-caps</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">font-size</span><span class="p">:</span> <span class="mf">1.75</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nt">div</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;alert&#34;</span><span class="o">]</span> <span class="nt">p</span><span class="p">:</span><span class="nd">last-of-type</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nt">div</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;alert&#34;</span><span class="o">]</span><span class="p">:</span><span class="nd">empty</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><div class="notice astuce" >   
      <p> astuce </p>
 <p>Dans la rubrique <a href="/motifs/alerte/">Motifs de conception - Message d'alerte</a>, des informations supplémentaires sont proposées sur l'implémentation d'un élément portant le rôle <code>alert</code>.</p>
@@ -499,7 +531,7 @@ La saisie est libre ; par défaut, la valeur saisie doit respecter la forme <em>
 </span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;emailFormatage&#34;</span><span class="p">&gt;</span>Veuillez renseigner un email valide (prenom.nom@domaine.fr)<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span></code></pre></div><p>Il est fortement recommandé de positionner <strong>dès le chargement de la page</strong> l&rsquo;attribut <code>aria-live</code> pour maximiser la compatibilité avec les différents couples navigateurs et lecteurs d&rsquo;écran. Par conséquent ces zones seront prévues dès le chargement de la page et peuplées uniquement en cas d&rsquo;erreur.</p>
-<h3 id="exemple">Exemple</h3>
+<h3 id="exemple-1">Exemple</h3>
 <p><strong>Visuel</strong></p>
 
 <form class="formcontrole">
@@ -562,10 +594,10 @@ Remarquez dans le code ci-dessous que l&rsquo;élément <code>input</code> se tr
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Votre demande a bien été envoyée ; vous recevrez bientôt un mail de confirmation à l&#39;adresse suivante : martin@gmail.com.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span></code></pre></div><p>Il est fortement recommandé de positionner <strong>dès le chargement de la page</strong> l&rsquo;attribut <code>aria-live</code> pour maximiser la compatibilité avec les différents couples navigateurs et lecteurs d&rsquo;écran. Par conséquent cette zone sera prévue dès le chargement de la page et peuplée en cas de succès.</p>
-<h3 id="exemple-1">Exemple</h3>
+<h3 id="exemple-2">Exemple</h3>
 <p><strong>Visuel</strong></p>
 
-<div role="status" aria-live="polite" class="exep">
+<div class="sexep">
   <p>Succès</p>
 <p>Votre message a bien été envoyé.</p>
 </div>
