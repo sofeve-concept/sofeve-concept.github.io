@@ -208,39 +208,39 @@ Table des matières</button>
 </li>
 <li>Le message de succès ne doit pas disparaître automatiquement ; seule une action de l&rsquo;utilisateur peut la faire disparaître (bouton de fermeture, appel à une autre page&hellip;).</li>
 </ul>
+<div class="notice remarque" >   
+     <p> remarque </p>
+<p>Il est fortement recommandé de positionner <strong>dès le chargement de la page</strong> l&rsquo;attribut <code>aria-live</code> pour maximiser la compatibilité avec les différents couples navigateurs et lecteurs d&rsquo;écran. Par conséquent ces zones seront prévues dès le chargement de la page et peuplées uniquement en cas d&rsquo;erreur.</p>
+</div>    
 <h2 id="visuel">Visuel</h2>
 
-<div role="status" class="exempleSuccess">
+<div role="status" class="sexep">
 <p>Succès<p>
 <p>Vos informations ont bien été prises en compte.</p>
 </div>
 
 <h2 id="extraits-de-code">Extraits de code</h2>
 <h3 id="code-html">Code HTML</h3>
-<p><em>N.B. : On pourrait aussi implémenter un élément de titraille dans l&rsquo;élément <code>div</code> (à la place du premier <code>p</code>) pour structurer sa page.</em></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;status&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Succès<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;status&#34;</span> <span class="na">aria-live</span><span class="o">=</span><span class="s">&#34;polite&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Succès<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Vos informations ont bien été prises en compte.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h3 id="code-css">Code CSS</h3>
-<p>Pour adapter les couleurs, modifier les codes couleurs dans la déclaration <code>:root</code>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/** Statut **/</span>
-</span></span><span class="line"><span class="cl"><span class="p">:</span><span class="nd">root</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">     <span class="nv">--TEXT-color</span><span class="p">:</span> <span class="mh">#015c15</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">     <span class="nv">--BACKGROUND-color</span><span class="p">:</span> <span class="mh">#D9F7DB</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"> <span class="p">}</span>
-</span></span><span class="line"><span class="cl"> <span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;status&#34;</span><span class="o">]</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">   <span class="k">margin-top</span><span class="p">:</span> <span class="mf">.5</span><span class="kt">em</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">   <span class="k">padding</span><span class="p">:</span> <span class="mf">.5</span><span class="kt">em</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">   <span class="k">border</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">TEXT</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">   <span class="k">border-radius</span><span class="p">:</span> <span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">   <span class="k">background</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">BACKGROUND</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">   <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">TEXT</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"> <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"> <span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;status&#34;</span><span class="o">]</span> <span class="nt">p</span><span class="p">:</span><span class="nd">first-child</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="k">font-size</span><span class="p">:</span> <span class="mf">1.5</span><span class="kt">em</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">div</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;status&#34;</span><span class="o">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">padding</span><span class="p">:</span> <span class="mf">1.25</span><span class="kt">rem</span> <span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">margin-top</span><span class="p">:</span> <span class="mf">1.25</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">margin-bottom</span><span class="p">:</span> <span class="mf">1.25</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">color</span><span class="p">:</span> <span class="kc">darkgreen</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#d0f7d0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border-left</span><span class="p">:</span> <span class="mf">0.75</span><span class="kt">rem</span> <span class="kc">solid</span> <span class="kc">darkgreen</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nt">div</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;status&#34;</span><span class="o">]</span> <span class="nt">h2</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">font-variant</span><span class="p">:</span> <span class="kc">small-caps</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">font-size</span><span class="p">:</span> <span class="mf">1.75</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nt">div</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;status&#34;</span><span class="o">]</span> <span class="nt">p</span><span class="p">:</span><span class="nd">last-of-type</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
      </section>
