@@ -25,6 +25,7 @@
 		<ul>
 			<li><a href="#contenu">Contenu</a></li>
 			<li><a href="#navigation">Menu</a></li> 
+			<li><a href="#recherche">Recherche</a></li>
 			<li><a href="#piedDePage">Pied de page</a></li>
 		</ul>
 	</nav>
@@ -63,10 +64,10 @@
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="motifs">Motifs de conception</button>
 				   <ul id="motifs">
 					
-					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/">Motifs de base</a></li>
-              			<li><a href="/motifs/dynamiques/">Motifs dynamiques</a></li>
-              			<li><a href="/motifs/formulaires/">Motifs pour formulaires</a></li>
-              			<li><a href="/motifs/purcss/">Motifs en pur CSS</a></li>
+					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/">Structure de base</a></li>
+              			<li><a href="/motifs/navigations/">Systèmes de navigation</a></li>
+              			<li><a href="/motifs/formulaires/">Formulaire</a></li>
+              			<li><a href="/motifs/purcss/">En pur CSS</a></li>
               			</ul>
 			    </li>
 				
@@ -98,7 +99,7 @@
 			</ul>
 		
 	</nav>	
-	<form action="/rechercher" method="GET" role="search" class="search">
+	<form action="/rechercher" method="GET" role="search" class="search" id="recherche">
 	    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" minlength="3" required >
@@ -480,7 +481,7 @@ La saisie est libre ; par défaut, la valeur saisie doit respecter la forme <em>
 <p><strong>Code HTML de l&rsquo;exemple</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;alert&#34;</span> <span class="na">aria-live</span><span class="o">=</span><span class="s">&#34;assertive&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Erreur<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Il y a 2 erreurs dans le formulaire.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Il y a 2 erreurs dans le formulaire. Veuillez vérifier et réessayer.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span></code></pre></div><p><strong>Code CSS de l&rsquo;exemple</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">div</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;alert&#34;</span><span class="o">]</span> <span class="p">{</span>

@@ -25,6 +25,7 @@
 		<ul>
 			<li><a href="#contenu">Contenu</a></li>
 			<li><a href="#navigation">Menu</a></li> 
+			<li><a href="#recherche">Recherche</a></li>
 			<li><a href="#piedDePage">Pied de page</a></li>
 		</ul>
 	</nav>
@@ -63,10 +64,10 @@
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="motifs" aria-current="true">Motifs de conception</button>
 				   <ul id="motifs">
 					
-					<li><a href="/motifs/" aria-current="page">Aperçu</a></li><li><a href="/motifs/basiques/">Motifs de base</a></li>
-              			<li><a href="/motifs/dynamiques/">Motifs dynamiques</a></li>
-              			<li><a href="/motifs/formulaires/">Motifs pour formulaires</a></li>
-              			<li><a href="/motifs/purcss/">Motifs en pur CSS</a></li>
+					<li><a href="/motifs/" aria-current="page">Aperçu</a></li><li><a href="/motifs/basiques/">Structure de base</a></li>
+              			<li><a href="/motifs/navigations/">Systèmes de navigation</a></li>
+              			<li><a href="/motifs/formulaires/">Formulaire</a></li>
+              			<li><a href="/motifs/purcss/">En pur CSS</a></li>
               			</ul>
 			    </li>
 				
@@ -98,7 +99,7 @@
 			</ul>
 		
 	</nav>	
-	<form action="/rechercher" method="GET" role="search" class="search">
+	<form action="/rechercher" method="GET" role="search" class="search" id="recherche">
 	    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" minlength="3" required >
@@ -128,10 +129,11 @@
 		Motifs de conception
 	</button>
 	<ul id="sousMenu">
-		<li><a href="/motifs" aria-current="page" >Motifs de conception</a></li><li><a href="https://sofeve-concept.github.io/motifs/basiques/">Motifs de base</a></li>
-		<li><a href="https://sofeve-concept.github.io/motifs/dynamiques/">Motifs dynamiques</a></li>
-		<li><a href="https://sofeve-concept.github.io/motifs/purcss/">Motifs en pur CSS</a></li>
-		<li><a href="https://sofeve-concept.github.io/motifs/formulaires/">Motifs pour formulaires</a></li>
+		<li><a href="/motifs" aria-current="page" >Motifs de conception</a></li><li><a href="https://sofeve-concept.github.io/motifs/basiques/">Structure de base</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/navigations/">Systèmes de navigation</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/formulaires/">Formulaire</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/dynamiques/">Composants d&#39;interface riche</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/purcss/">En pur CSS</a></li>
 		</ul>
 </nav>
 
@@ -160,9 +162,9 @@
 		
 		<div class="item-33 ">
 		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/motifs/basiques/">Motifs de base</a></h2>
+			<h2><a href="https://sofeve-concept.github.io/motifs/basiques/">Structure de base</a></h2>
 			<div class="flex flex-column align-items-strech h-100">
-			<p >Les extraits de code présentés dans cette rubrique rassemble les composants les plus coutants utilisés dans une page web : bannière, menu, fil d&#39;ariane et liens d&#39;accès rapide et de retour en haut.</p>
+			<p >Structure de base d&#39;une page web utilisant les régions HTML 5, bannière collante et lien de retour en haut de page.</p>
 			
 			</div>
 	</div>
@@ -170,9 +172,9 @@
 		
 		<div class="item-33 ">
 		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/motifs/dynamiques/">Motifs dynamiques</a></h2>
+			<h2><a href="https://sofeve-concept.github.io/motifs/navigations/">Systèmes de navigation</a></h2>
 			<div class="flex flex-column align-items-strech h-100">
-			<p >Les extraits de code présentés dans cette rubrique nécessitent tous le recours à des scripts javascript pour donner du dynamisme aux composants.</p>
+			<p >Tous les extraits de code présentés ici s&#39;implémente dans une zone HTML 5 de type nav.</p>
 			
 			</div>
 	</div>
@@ -180,9 +182,9 @@
 		
 		<div class="item-33 ">
 		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/motifs/purcss/">Motifs en pur CSS</a></h2>
+			<h2><a href="https://sofeve-concept.github.io/motifs/formulaires/">Formulaire</a></h2>
 			<div class="flex flex-column align-items-strech h-100">
-			<p >Les extraits de code présentés dans cette rubrique sont composés uniquement en CSS et permettent de créer des composants web accessibles.</p>
+			<p >Extraits de code pour créer des composants web accessibles pour les formulaires.</p>
 			
 			</div>
 	</div>
@@ -190,9 +192,19 @@
 		
 		<div class="item-33 ">
 		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/motifs/formulaires/">Motifs pour formulaires</a></h2>
+			<h2><a href="https://sofeve-concept.github.io/motifs/dynamiques/">Composants d&#39;interface riche</a></h2>
 			<div class="flex flex-column align-items-strech h-100">
-			<p >Les extraits présentés dans cette rubrique servent pour créer des composants web accessibles pour les formulaires : simulation de « placeholder », processus par étapes en cas de découpage du formulaire, spécificité du formulaire de recherche dans tout le site.</p>
+			<p >Extraits de code pour des composants d&#39;interface riches, nécessitent le recours à des scripts javascript pour leur donner du dynamisme.</p>
+			
+			</div>
+	</div>
+</div>
+		
+		<div class="item-33 ">
+		<div class="card">
+			<h2><a href="https://sofeve-concept.github.io/motifs/purcss/">En pur CSS</a></h2>
+			<div class="flex flex-column align-items-strech h-100">
+			<p >Extraits de code composés uniquement en CSS permettant de créer des composants web accessibles.</p>
 			
 			</div>
 	</div>

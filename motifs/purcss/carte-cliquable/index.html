@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Carte cliquable - Motifs en pur CSS - Motifs de conception - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Carte cliquable - En pur CSS - Motifs de conception - Sofève Concept</title>
 	
 	<meta name="theme-color" content="#FFFFFF" />
 	<meta name="description" content="Une carte est une zone de contenu proposant généralement un titre, une phrase de résumé et un lien menant vers des informations complémentaires. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
@@ -27,6 +27,7 @@
 		<ul>
 			<li><a href="#contenu">Contenu</a></li>
 			<li><a href="#navigation">Menu</a></li> 
+			<li><a href="#recherche">Recherche</a></li>
 			<li><a href="#piedDePage">Pied de page</a></li>
 		</ul>
 	</nav>
@@ -65,10 +66,10 @@
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="motifs" aria-current="true">Motifs de conception</button>
 				   <ul id="motifs">
 					
-					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/">Motifs de base</a></li>
-              			<li><a href="/motifs/dynamiques/">Motifs dynamiques</a></li>
-              			<li><a href="/motifs/formulaires/">Motifs pour formulaires</a></li>
-              			<li><a href="/motifs/purcss/" aria-current="location" >Motifs en pur CSS</a></li>
+					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/">Structure de base</a></li>
+              			<li><a href="/motifs/navigations/">Systèmes de navigation</a></li>
+              			<li><a href="/motifs/formulaires/">Formulaire</a></li>
+              			<li><a href="/motifs/purcss/" aria-current="location" >En pur CSS</a></li>
               			</ul>
 			    </li>
 				
@@ -100,7 +101,7 @@
 			</ul>
 		
 	</nav>	
-	<form action="/rechercher" method="GET" role="search" class="search">
+	<form action="/rechercher" method="GET" role="search" class="search" id="recherche">
 	    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" minlength="3" required >
@@ -130,9 +131,11 @@
 		Motifs de conception
 	</button>
 	<ul id="sousMenu">
-		<li><a href="/motifs">Motifs de conception</a></li><li><a href="https://sofeve-concept.github.io/motifs/basiques/">Motifs de base</a></li>
-		<li><a href="https://sofeve-concept.github.io/motifs/dynamiques/">Motifs dynamiques</a></li>
-		<li><a href="https://sofeve-concept.github.io/motifs/purcss/" aria-current="location" >Motifs en pur CSS</a>
+		<li><a href="/motifs">Motifs de conception</a></li><li><a href="https://sofeve-concept.github.io/motifs/basiques/">Structure de base</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/navigations/">Systèmes de navigation</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/formulaires/">Formulaire</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/dynamiques/">Composants d&#39;interface riche</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/purcss/" aria-current="location" >En pur CSS</a>
 			
 			
 			<ul><li><a href="https://sofeve-concept.github.io/motifs/purcss/bordure-texte/">Bordure de texte</a></li>
@@ -141,7 +144,6 @@
 				<li><a href="https://sofeve-concept.github.io/motifs/purcss/tableau-responsive/">Tableau adaptatif</a></li>
 				</ul>
 			</li>
-		<li><a href="https://sofeve-concept.github.io/motifs/formulaires/">Motifs pour formulaires</a></li>
 		</ul>
 </nav>
 
@@ -154,7 +156,7 @@
   
   <li><a href="/motifs/">Motifs de conception</a></li>
   
-  <li><a href="/motifs/purcss/">Motifs en pur CSS</a></li>
+  <li><a href="/motifs/purcss/">En pur CSS</a></li>
   
   <li aria-current="page" tabindex="-1">Carte cliquable</li>
   </ol>

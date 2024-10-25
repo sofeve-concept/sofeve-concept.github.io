@@ -23,9 +23,9 @@
     </item>
     <item>
       <title>Menu déroulant horizontal</title>
-      <link>https://sofeve-concept.github.io/motifs/basiques/menu-navigation/</link>
+      <link>https://sofeve-concept.github.io/motifs/navigations/menu-navigation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/motifs/basiques/menu-navigation/</guid>
+      <guid>https://sofeve-concept.github.io/motifs/navigations/menu-navigation/</guid>
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;exemple présenté ici est celui d&amp;rsquo;un menu hamburger avec menu déroulant (rubriques parentes et sous-rubriques).</description>
     </item>
     <item>
@@ -37,34 +37,34 @@
     </item>
     <item>
       <title>Menu multi-déroulant horizontal</title>
-      <link>https://sofeve-concept.github.io/motifs/basiques/menu-navigation-double/</link>
+      <link>https://sofeve-concept.github.io/motifs/navigations/menu-navigation-double/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/motifs/basiques/menu-navigation-double/</guid>
+      <guid>https://sofeve-concept.github.io/motifs/navigations/menu-navigation-double/</guid>
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;exemple présenté ici est celui d&amp;rsquo;un menu avec menu déroulant à double niveau (rubriques parentes, sous-rubriques et sous-sous-rubriques).</description>
     </item>
     <item>
       <title>Menu type « menubar »</title>
-      <link>https://sofeve-concept.github.io/motifs/basiques/menu-menubar/</link>
+      <link>https://sofeve-concept.github.io/motifs/navigations/menu-menubar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/motifs/basiques/menu-menubar/</guid>
+      <guid>https://sofeve-concept.github.io/motifs/navigations/menu-menubar/</guid>
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;exemple proposé ici utilise uniquement des listes imbriquées ; les rôles aria suivants sont utilisés pour fournir la sémantique nécessaire d&amp;rsquo;un menu d&amp;rsquo;application : role=&amp;quot;menubar&amp;quot; : Représente une barre de menus (généralement horizontale).</description>
     </item>
     <item>
       <title>Menu latéral glissant</title>
-      <link>https://sofeve-concept.github.io/motifs/basiques/menu-lateral-glissant/</link>
+      <link>https://sofeve-concept.github.io/motifs/navigations/menu-lateral-glissant/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/motifs/basiques/menu-lateral-glissant/</guid>
+      <guid>https://sofeve-concept.github.io/motifs/navigations/menu-lateral-glissant/</guid>
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le menu latéral de navigation suit les mêmes règles que le menu navigation déroulant.</description>
     </item>
     <item>
       <title>Menu latéral glissant avec icônes</title>
-      <link>https://sofeve-concept.github.io/motifs/basiques/menu-lateral-glissant-icones/</link>
+      <link>https://sofeve-concept.github.io/motifs/navigations/menu-lateral-glissant-icones/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/motifs/basiques/menu-lateral-glissant-icones/</guid>
+      <guid>https://sofeve-concept.github.io/motifs/navigations/menu-lateral-glissant-icones/</guid>
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le menu latéral de navigation suit les mêmes règles que le menu navigation déroulant.</description>
     </item>
     <item>
-      <title>Retour en haut</title>
+      <title>Lien de retour en haut</title>
       <link>https://sofeve-concept.github.io/motifs/basiques/retour-en-haut/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/motifs/basiques/retour-en-haut/</guid>

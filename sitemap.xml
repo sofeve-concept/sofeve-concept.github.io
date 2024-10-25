@@ -134,6 +134,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/motifs/basiques/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/structure/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -218,7 +224,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/motifs/basiques/lien-acces-rapide/</loc>
+    <loc>https://sofeve-concept.github.io/motifs/navigations/lien-acces-rapide/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -272,6 +278,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/motifs/navigations/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/tableaux/tableaux-presentation/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -296,6 +308,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/motifs/formulaires/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/image-icone/images-img/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -314,7 +332,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/motifs/basiques/menu-navigation/</loc>
+    <loc>https://sofeve-concept.github.io/motifs/navigations/menu-navigation/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -392,6 +410,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/motifs/dynamiques/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/navigation/fil-ariane/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -422,7 +446,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/motifs/basiques/menu-navigation-double/</loc>
+    <loc>https://sofeve-concept.github.io/motifs/navigations/menu-navigation-double/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -464,6 +488,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/motifs/purcss/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/formulaire/formulaire-etapes-multiples/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -494,7 +524,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/motifs/basiques/menu-menubar/</loc>
+    <loc>https://sofeve-concept.github.io/motifs/navigations/menu-menubar/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -530,7 +560,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/motifs/basiques/menu-lateral-glissant/</loc>
+    <loc>https://sofeve-concept.github.io/motifs/navigations/menu-lateral-glissant/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -566,7 +596,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/motifs/basiques/menu-lateral-glissant-icones/</loc>
+    <loc>https://sofeve-concept.github.io/motifs/navigations/menu-lateral-glissant-icones/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -632,7 +662,13 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/motifs/basiques/ariane/</loc>
+    <loc>https://sofeve-concept.github.io/motifs/navigations/ariane/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/motifs/navigations/pagination/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -801,31 +837,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/motifs/basiques/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://sofeve-concept.github.io/motifs/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/motifs/dynamiques/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/motifs/purcss/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sofeve-concept.github.io/motifs/formulaires/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

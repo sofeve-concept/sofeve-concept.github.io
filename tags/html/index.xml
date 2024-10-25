@@ -8,11 +8,11 @@
     <language>fr-FR</language>
     <atom:link href="https://sofeve-concept.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title> Code de base</title>
+      <title> Zones obligatoires</title>
       <link>https://sofeve-concept.github.io/motifs/basiques/code-de-base/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/motifs/basiques/code-de-base/</guid>
-      <description>Le critère 9.2 du référentiel général d’amélioration de l’acccessibilité (RGAA), rend obligatoire la présence de plusieurs balises sémantiques de région (landmark, en anglais) dans la page HTML :</description>
+      <description>Règles d’implémentation pour l’accessibilité Le critère 9.2 du référentiel général d’amélioration de l’acccessibilité (RGAA), rend obligatoire la présence de plusieurs balises sémantiques de région (landmark, en anglais) dans la page HTML :</description>
     </item>
     <item>
       <title>Bordure de texte</title>
@@ -30,10 +30,10 @@
     </item>
     <item>
       <title>Lien d&#39;accès rapide</title>
-      <link>https://sofeve-concept.github.io/motifs/basiques/lien-acces-rapide/</link>
+      <link>https://sofeve-concept.github.io/motifs/navigations/lien-acces-rapide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/motifs/basiques/lien-acces-rapide/</guid>
-      <description>Règles d’implémentation pour l’accessibilité Dans ce motif de conception, le lien d&amp;rsquo;accès rapide, parfois appelé aussi lien d&amp;rsquo;évitement (skip link en anglais) lorsqu&amp;rsquo;il permet de sauter une zone de la page, est invisible par défaut sur la page et n&amp;rsquo;apparaît qu&amp;rsquo;à la prise de focus pour une navigation au clavier.</description>
+      <guid>https://sofeve-concept.github.io/motifs/navigations/lien-acces-rapide/</guid>
+      <description>Règles d’implémentation pour l’accessibilité Les critères 12.6 et 12.7 du RGAA requièrent la présence de liens d&amp;rsquo;évitement ou d&amp;rsquo;accès rapide aux zones de regroupement de contenus présentes dans plusieurs pages web, à savoir :</description>
     </item>
     <item>
       <title>Placeholder simulé</title>
@@ -51,9 +51,9 @@
     </item>
     <item>
       <title>Menu déroulant horizontal</title>
-      <link>https://sofeve-concept.github.io/motifs/basiques/menu-navigation/</link>
+      <link>https://sofeve-concept.github.io/motifs/navigations/menu-navigation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/motifs/basiques/menu-navigation/</guid>
+      <guid>https://sofeve-concept.github.io/motifs/navigations/menu-navigation/</guid>
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;exemple présenté ici est celui d&amp;rsquo;un menu hamburger avec menu déroulant (rubriques parentes et sous-rubriques).</description>
     </item>
     <item>
@@ -65,9 +65,9 @@
     </item>
     <item>
       <title>Menu multi-déroulant horizontal</title>
-      <link>https://sofeve-concept.github.io/motifs/basiques/menu-navigation-double/</link>
+      <link>https://sofeve-concept.github.io/motifs/navigations/menu-navigation-double/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/motifs/basiques/menu-navigation-double/</guid>
+      <guid>https://sofeve-concept.github.io/motifs/navigations/menu-navigation-double/</guid>
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;exemple présenté ici est celui d&amp;rsquo;un menu avec menu déroulant à double niveau (rubriques parentes, sous-rubriques et sous-sous-rubriques).</description>
     </item>
     <item>
@@ -79,9 +79,9 @@
     </item>
     <item>
       <title>Menu type « menubar »</title>
-      <link>https://sofeve-concept.github.io/motifs/basiques/menu-menubar/</link>
+      <link>https://sofeve-concept.github.io/motifs/navigations/menu-menubar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/motifs/basiques/menu-menubar/</guid>
+      <guid>https://sofeve-concept.github.io/motifs/navigations/menu-menubar/</guid>
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;exemple proposé ici utilise uniquement des listes imbriquées ; les rôles aria suivants sont utilisés pour fournir la sémantique nécessaire d&amp;rsquo;un menu d&amp;rsquo;application : role=&amp;quot;menubar&amp;quot; : Représente une barre de menus (généralement horizontale).</description>
     </item>
     <item>
@@ -93,9 +93,9 @@
     </item>
     <item>
       <title>Menu latéral glissant</title>
-      <link>https://sofeve-concept.github.io/motifs/basiques/menu-lateral-glissant/</link>
+      <link>https://sofeve-concept.github.io/motifs/navigations/menu-lateral-glissant/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/motifs/basiques/menu-lateral-glissant/</guid>
+      <guid>https://sofeve-concept.github.io/motifs/navigations/menu-lateral-glissant/</guid>
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le menu latéral de navigation suit les mêmes règles que le menu navigation déroulant.</description>
     </item>
     <item>
@@ -107,20 +107,27 @@
     </item>
     <item>
       <title>Menu latéral glissant avec icônes</title>
-      <link>https://sofeve-concept.github.io/motifs/basiques/menu-lateral-glissant-icones/</link>
+      <link>https://sofeve-concept.github.io/motifs/navigations/menu-lateral-glissant-icones/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/motifs/basiques/menu-lateral-glissant-icones/</guid>
+      <guid>https://sofeve-concept.github.io/motifs/navigations/menu-lateral-glissant-icones/</guid>
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le menu latéral de navigation suit les mêmes règles que le menu navigation déroulant.</description>
     </item>
     <item>
       <title>Fil d&#39;ariane</title>
-      <link>https://sofeve-concept.github.io/motifs/basiques/ariane/</link>
+      <link>https://sofeve-concept.github.io/motifs/navigations/ariane/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/motifs/basiques/ariane/</guid>
+      <guid>https://sofeve-concept.github.io/motifs/navigations/ariane/</guid>
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le fil d&amp;rsquo;Ariane est contenu dans un élément HTML nav possédant le rôle role=&amp;quot;navigation.</description>
     </item>
     <item>
-      <title>Retour en haut</title>
+      <title>Pagination</title>
+      <link>https://sofeve-concept.github.io/motifs/navigations/pagination/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/motifs/navigations/pagination/</guid>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Titre du document HTML Le titre de la page HTML (élément title du document HTML) sera mis à jour avec le numéro de page.</description>
+    </item>
+    <item>
+      <title>Lien de retour en haut</title>
       <link>https://sofeve-concept.github.io/motifs/basiques/retour-en-haut/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/motifs/basiques/retour-en-haut/</guid>

@@ -24,6 +24,7 @@
 		<ul>
 			<li><a href="#contenu">Contenu</a></li>
 			<li><a href="#navigation">Menu</a></li> 
+			<li><a href="#recherche">Recherche</a></li>
 			<li><a href="#piedDePage">Pied de page</a></li>
 		</ul>
 	</nav>
@@ -62,10 +63,10 @@
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="motifs">Motifs de conception</button>
 				   <ul id="motifs">
 					
-					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/">Motifs de base</a></li>
-              			<li><a href="/motifs/dynamiques/">Motifs dynamiques</a></li>
-              			<li><a href="/motifs/formulaires/">Motifs pour formulaires</a></li>
-              			<li><a href="/motifs/purcss/">Motifs en pur CSS</a></li>
+					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/">Structure de base</a></li>
+              			<li><a href="/motifs/navigations/">Systèmes de navigation</a></li>
+              			<li><a href="/motifs/formulaires/">Formulaire</a></li>
+              			<li><a href="/motifs/purcss/">En pur CSS</a></li>
               			</ul>
 			    </li>
 				
@@ -97,7 +98,7 @@
 			</ul>
 		
 	</nav>	
-	<form action="/rechercher" method="GET" role="search" class="search">
+	<form action="/rechercher" method="GET" role="search" class="search" id="recherche">
 	    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" minlength="3" required >

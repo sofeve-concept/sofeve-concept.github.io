@@ -3,10 +3,10 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Retour en haut - Motifs de base - Motifs de conception - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Lien de retour en haut - Structure de base - Motifs de conception - Sofève Concept</title>
 	
 	<meta name="theme-color" content="#FFFFFF" />
-	<meta name="description" content="Extrait de code pour un lien de retour en haut de page apparaissant lors du défilement de la page. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	<meta name="description" content="Lorsque la page est longue, une bonne pratique consiste à proposer un lien de retour en haut de page. Celui-ci apparaîtra au défilement de la page. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -25,6 +25,7 @@
 		<ul>
 			<li><a href="#contenu">Contenu</a></li>
 			<li><a href="#navigation">Menu</a></li> 
+			<li><a href="#recherche">Recherche</a></li>
 			<li><a href="#piedDePage">Pied de page</a></li>
 		</ul>
 	</nav>
@@ -63,10 +64,10 @@
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="motifs" aria-current="true">Motifs de conception</button>
 				   <ul id="motifs">
 					
-					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/" aria-current="location" >Motifs de base</a></li>
-              			<li><a href="/motifs/dynamiques/">Motifs dynamiques</a></li>
-              			<li><a href="/motifs/formulaires/">Motifs pour formulaires</a></li>
-              			<li><a href="/motifs/purcss/">Motifs en pur CSS</a></li>
+					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/" aria-current="location" >Structure de base</a></li>
+              			<li><a href="/motifs/navigations/">Systèmes de navigation</a></li>
+              			<li><a href="/motifs/formulaires/">Formulaire</a></li>
+              			<li><a href="/motifs/purcss/">En pur CSS</a></li>
               			</ul>
 			    </li>
 				
@@ -98,7 +99,7 @@
 			</ul>
 		
 	</nav>	
-	<form action="/rechercher" method="GET" role="search" class="search">
+	<form action="/rechercher" method="GET" role="search" class="search" id="recherche">
 	    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" minlength="3" required >
@@ -128,24 +129,18 @@
 		Motifs de conception
 	</button>
 	<ul id="sousMenu">
-		<li><a href="/motifs">Motifs de conception</a></li><li><a href="https://sofeve-concept.github.io/motifs/basiques/" aria-current="location" >Motifs de base</a>
+		<li><a href="/motifs">Motifs de conception</a></li><li><a href="https://sofeve-concept.github.io/motifs/basiques/" aria-current="location" >Structure de base</a>
 			
 			
-			<ul><li><a href="https://sofeve-concept.github.io/motifs/basiques/code-de-base/"> Code de base</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/lien-acces-rapide/">Lien d&#39;accès rapide</a></li>
+			<ul><li><a href="https://sofeve-concept.github.io/motifs/basiques/code-de-base/"> Zones obligatoires</a></li>
 				<li><a href="https://sofeve-concept.github.io/motifs/basiques/bandeau-collant/">Bannière collante</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/menu-navigation/">Menu déroulant horizontal</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/menu-navigation-double/">Menu multi-déroulant horizontal</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/menu-menubar/">Menu type « menubar »</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/menu-lateral-glissant/">Menu latéral glissant</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/menu-lateral-glissant-icones/">Menu latéral glissant avec icônes</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/ariane/">Fil d&#39;ariane</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/retour-en-haut/" aria-current="page" >Retour en haut</a></li>
+				<li><a href="https://sofeve-concept.github.io/motifs/basiques/retour-en-haut/" aria-current="page" >Lien de retour en haut</a></li>
 				</ul>
 			</li>
-		<li><a href="https://sofeve-concept.github.io/motifs/dynamiques/">Motifs dynamiques</a></li>
-		<li><a href="https://sofeve-concept.github.io/motifs/purcss/">Motifs en pur CSS</a></li>
-		<li><a href="https://sofeve-concept.github.io/motifs/formulaires/">Motifs pour formulaires</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/navigations/">Systèmes de navigation</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/formulaires/">Formulaire</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/dynamiques/">Composants d&#39;interface riche</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/purcss/">En pur CSS</a></li>
 		</ul>
 </nav>
 
@@ -158,9 +153,9 @@
   
   <li><a href="/motifs/">Motifs de conception</a></li>
   
-  <li><a href="/motifs/basiques/">Motifs de base</a></li>
+  <li><a href="/motifs/basiques/">Structure de base</a></li>
   
-  <li aria-current="page" tabindex="-1">Retour en haut</li>
+  <li aria-current="page" tabindex="-1">Lien de retour en haut</li>
   </ol>
 </nav>
 <div>
@@ -171,8 +166,8 @@
 </div>
 </div>
      <section>
-		<h1 id="contenu">Retour en haut</h1>
-               <p>Extrait de code pour un lien de retour en haut de page apparaissant lors du défilement de la page.</p>
+		<h1 id="contenu">Lien de retour en haut</h1>
+               <p>Lorsque la page est longue, une bonne pratique consiste à proposer un lien de retour en haut de page. Celui-ci apparaîtra au défilement de la page.</p>
 <button type="button" class="depliant" aria-expanded="false" aria-controls="tdm">
 Table des matières</button>
 <div id="tdm" role="region" tabindex="-1">
@@ -201,7 +196,7 @@ Table des matières</button>
 <h2 id="extraits-de-code">Extraits de code</h2>
 <h3 id="code-html">Code HTML</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;RetourEnHaut&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;cInvisible&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#top&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">xmlns</span><span class="o">=</span><span class="s">&#34;http://www.w3.org/2000/svg&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;16&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;16&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span> <span class="na">viewBox</span><span class="o">=</span><span class="s">&#34;0 0 16 16&#34;</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">xmlns</span><span class="o">=</span><span class="s">&#34;http://www.w3.org/2000/svg&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;16&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;16&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span> <span class="na">viewBox</span><span class="o">=</span><span class="s">&#34;0 0 16 16&#34;</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">focusable</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;presentation&#34;</span> <span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">path</span> <span class="na">d</span><span class="o">=</span><span class="s">&#34;m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z&#34;</span> <span class="p">/&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sr-only&#34;</span><span class="p">&gt;</span>Retour en haut de la page<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>

@@ -21,6 +21,7 @@
 		<ul>
 			<li><a href="#contenu">Contenu</a></li>
 			<li><a href="#navigation">Menu</a></li> 
+			<li><a href="#recherche">Recherche</a></li>
 			<li><a href="#piedDePage">Pied de page</a></li>
 		</ul>
 	</nav>
@@ -59,10 +60,10 @@
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="motifs">Motifs de conception</button>
 				   <ul id="motifs">
 					
-					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/">Motifs de base</a></li>
-              			<li><a href="/motifs/dynamiques/">Motifs dynamiques</a></li>
-              			<li><a href="/motifs/formulaires/">Motifs pour formulaires</a></li>
-              			<li><a href="/motifs/purcss/">Motifs en pur CSS</a></li>
+					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/">Structure de base</a></li>
+              			<li><a href="/motifs/navigations/">Systèmes de navigation</a></li>
+              			<li><a href="/motifs/formulaires/">Formulaire</a></li>
+              			<li><a href="/motifs/purcss/">En pur CSS</a></li>
               			</ul>
 			    </li>
 				
@@ -94,7 +95,7 @@
 			</ul>
 		
 	</nav>	
-	<form action="/rechercher" method="GET" role="search" class="search">
+	<form action="/rechercher" method="GET" role="search" class="search" id="recherche">
 	    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" minlength="3" required >
@@ -154,7 +155,7 @@
 		
 		<div class="item-33 ">
 		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/motifs/basiques/code-de-base/"> Code de base</a></h2>
+			<h2><a href="https://sofeve-concept.github.io/motifs/basiques/code-de-base/"> Zones obligatoires</a></h2>
 			<div class="flex flex-column align-items-strech h-100">
 			<p >La structure de base d&#39;un document HTML doit comporter impérativement plusieurs balises sémantiques appelées aussi régions.</p>
 			
@@ -208,7 +209,7 @@
 		
 		<div class="item-33 ">
 		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/motifs/basiques/lien-acces-rapide/">Lien d&#39;accès rapide</a></h2>
+			<h2><a href="https://sofeve-concept.github.io/motifs/navigations/lien-acces-rapide/">Lien d&#39;accès rapide</a></h2>
 			<div class="flex flex-column align-items-strech h-100">
 			<p >Un lien d&#39;accès rapide permet d&#39;accéder rapidement à une zone de contenu de la page ou de sauter une zone dans la page.</p>
 			
@@ -266,7 +267,7 @@
 		
 		<div class="item-33 ">
 		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/motifs/basiques/menu-navigation/">Menu déroulant horizontal</a></h2>
+			<h2><a href="https://sofeve-concept.github.io/motifs/navigations/menu-navigation/">Menu déroulant horizontal</a></h2>
 			<div class="flex flex-column align-items-strech h-100">
 			<p >Extrait de code pour un menu déroulant, horizontal et adaptatif avec bouton dit « hamburger ».</p>
 			
@@ -306,7 +307,7 @@
 		
 		<div class="item-33 ">
 		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/motifs/basiques/menu-navigation-double/">Menu multi-déroulant horizontal</a></h2>
+			<h2><a href="https://sofeve-concept.github.io/motifs/navigations/menu-navigation-double/">Menu multi-déroulant horizontal</a></h2>
 			<div class="flex flex-column align-items-strech h-100">
 			<p >Extrait de code pour un menu déroulant, horizontal et adaptatif avec bouton dit « hamburger ».</p>
 			
@@ -344,7 +345,7 @@
 		
 		<div class="item-33 ">
 		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/motifs/basiques/menu-menubar/">Menu type « menubar »</a></h2>
+			<h2><a href="https://sofeve-concept.github.io/motifs/navigations/menu-menubar/">Menu type « menubar »</a></h2>
 			<div class="flex flex-column align-items-strech h-100">
 			<p >Extrait de code pour un menu déroulant horizontal utilisant les rôles aria &#39;menubar&#39;, &#39;menu&#39; et &#39;menuitem&#39;.</p>
 			
@@ -382,7 +383,7 @@
 		
 		<div class="item-33 ">
 		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/motifs/basiques/menu-lateral-glissant/">Menu latéral glissant</a></h2>
+			<h2><a href="https://sofeve-concept.github.io/motifs/navigations/menu-lateral-glissant/">Menu latéral glissant</a></h2>
 			<div class="flex flex-column align-items-strech h-100">
 			<p >Extrait de code pour un menu latéral qui s&#39;ouvre et se ferme avec un focus clavier accessible.</p>
 			
@@ -420,7 +421,7 @@
 		
 		<div class="item-33 ">
 		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/motifs/basiques/menu-lateral-glissant-icones/">Menu latéral glissant avec icônes</a></h2>
+			<h2><a href="https://sofeve-concept.github.io/motifs/navigations/menu-lateral-glissant-icones/">Menu latéral glissant avec icônes</a></h2>
 			<div class="flex flex-column align-items-strech h-100">
 			<p >Extrait de code pour un menu latéral qui s&#39;ouvre et se ferme avec un focus clavier accessible. Le menu sous sa forme résuite présente des icônes et leur signification dans une info-bulle.</p>
 			
@@ -440,7 +441,7 @@
 		
 		<div class="item-33 ">
 		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/motifs/basiques/ariane/">Fil d&#39;ariane</a></h2>
+			<h2><a href="https://sofeve-concept.github.io/motifs/navigations/ariane/">Fil d&#39;ariane</a></h2>
 			<div class="flex flex-column align-items-strech h-100">
 			<p >Un fil d&#39;ariane est un système de navigation qui fournit une aide visuelle pour indiquer à l&#39;utilisateur où il se trouve dans la hiérarchie du site.</p>
 			
@@ -458,9 +459,27 @@
 		
 		<div class="item-33 ">
 		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/motifs/basiques/retour-en-haut/">Retour en haut</a></h2>
+			<h2><a href="https://sofeve-concept.github.io/motifs/navigations/pagination/">Pagination</a></h2>
 			<div class="flex flex-column align-items-strech h-100">
-			<p >Extrait de code pour un lien de retour en haut de page apparaissant lors du défilement de la page.</p>
+			<p >La pagination est un système de navigation où l&#39;utilisateur peut passer d&#39;une page à une autre pour un ensemble donné via les numéros de ces pages (généralement affichés en bas de page).</p>
+			
+			<ul class="reference">
+				
+				<li>HTML</li>
+				
+				<li>CSS</li>
+				
+			</ul>
+			
+			</div>
+	</div>
+</div>
+		
+		<div class="item-33 ">
+		<div class="card">
+			<h2><a href="https://sofeve-concept.github.io/motifs/basiques/retour-en-haut/">Lien de retour en haut</a></h2>
+			<div class="flex flex-column align-items-strech h-100">
+			<p >Lorsque la page est longue, une bonne pratique consiste à proposer un lien de retour en haut de page. Celui-ci apparaîtra au défilement de la page.</p>
 			
 			<ul class="reference">
 				

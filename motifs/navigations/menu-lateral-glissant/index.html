@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Menu latéral glissant - Motifs de base - Motifs de conception - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Menu latéral glissant - Systèmes de navigation - Motifs de conception - Sofève Concept</title>
 	
 	<meta name="theme-color" content="#FFFFFF" />
 	<meta name="description" content="Extrait de code pour un menu latéral qui s&#39;ouvre et se ferme avec un focus clavier accessible. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
@@ -25,6 +25,7 @@
 		<ul>
 			<li><a href="#contenu">Contenu</a></li>
 			<li><a href="#navigation">Menu</a></li> 
+			<li><a href="#recherche">Recherche</a></li>
 			<li><a href="#piedDePage">Pied de page</a></li>
 		</ul>
 	</nav>
@@ -63,10 +64,10 @@
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="motifs" aria-current="true">Motifs de conception</button>
 				   <ul id="motifs">
 					
-					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/" aria-current="location" >Motifs de base</a></li>
-              			<li><a href="/motifs/dynamiques/">Motifs dynamiques</a></li>
-              			<li><a href="/motifs/formulaires/">Motifs pour formulaires</a></li>
-              			<li><a href="/motifs/purcss/">Motifs en pur CSS</a></li>
+					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/">Structure de base</a></li>
+              			<li><a href="/motifs/navigations/" aria-current="location" >Systèmes de navigation</a></li>
+              			<li><a href="/motifs/formulaires/">Formulaire</a></li>
+              			<li><a href="/motifs/purcss/">En pur CSS</a></li>
               			</ul>
 			    </li>
 				
@@ -98,7 +99,7 @@
 			</ul>
 		
 	</nav>	
-	<form action="/rechercher" method="GET" role="search" class="search">
+	<form action="/rechercher" method="GET" role="search" class="search" id="recherche">
 	    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" minlength="3" required >
@@ -128,24 +129,23 @@
 		Motifs de conception
 	</button>
 	<ul id="sousMenu">
-		<li><a href="/motifs">Motifs de conception</a></li><li><a href="https://sofeve-concept.github.io/motifs/basiques/" aria-current="location" >Motifs de base</a>
+		<li><a href="/motifs">Motifs de conception</a></li><li><a href="https://sofeve-concept.github.io/motifs/basiques/">Structure de base</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/navigations/" aria-current="location" >Systèmes de navigation</a>
 			
 			
-			<ul><li><a href="https://sofeve-concept.github.io/motifs/basiques/code-de-base/"> Code de base</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/lien-acces-rapide/">Lien d&#39;accès rapide</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/bandeau-collant/">Bannière collante</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/menu-navigation/">Menu déroulant horizontal</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/menu-navigation-double/">Menu multi-déroulant horizontal</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/menu-menubar/">Menu type « menubar »</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/menu-lateral-glissant/" aria-current="page" >Menu latéral glissant</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/menu-lateral-glissant-icones/">Menu latéral glissant avec icônes</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/ariane/">Fil d&#39;ariane</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/retour-en-haut/">Retour en haut</a></li>
+			<ul><li><a href="https://sofeve-concept.github.io/motifs/navigations/lien-acces-rapide/">Lien d&#39;accès rapide</a></li>
+				<li><a href="https://sofeve-concept.github.io/motifs/navigations/menu-navigation/">Menu déroulant horizontal</a></li>
+				<li><a href="https://sofeve-concept.github.io/motifs/navigations/menu-navigation-double/">Menu multi-déroulant horizontal</a></li>
+				<li><a href="https://sofeve-concept.github.io/motifs/navigations/menu-menubar/">Menu type « menubar »</a></li>
+				<li><a href="https://sofeve-concept.github.io/motifs/navigations/menu-lateral-glissant/" aria-current="page" >Menu latéral glissant</a></li>
+				<li><a href="https://sofeve-concept.github.io/motifs/navigations/menu-lateral-glissant-icones/">Menu latéral glissant avec icônes</a></li>
+				<li><a href="https://sofeve-concept.github.io/motifs/navigations/ariane/">Fil d&#39;ariane</a></li>
+				<li><a href="https://sofeve-concept.github.io/motifs/navigations/pagination/">Pagination</a></li>
 				</ul>
 			</li>
-		<li><a href="https://sofeve-concept.github.io/motifs/dynamiques/">Motifs dynamiques</a></li>
-		<li><a href="https://sofeve-concept.github.io/motifs/purcss/">Motifs en pur CSS</a></li>
-		<li><a href="https://sofeve-concept.github.io/motifs/formulaires/">Motifs pour formulaires</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/formulaires/">Formulaire</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/dynamiques/">Composants d&#39;interface riche</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/purcss/">En pur CSS</a></li>
 		</ul>
 </nav>
 
@@ -158,7 +158,7 @@
   
   <li><a href="/motifs/">Motifs de conception</a></li>
   
-  <li><a href="/motifs/basiques/">Motifs de base</a></li>
+  <li><a href="/motifs/navigations/">Systèmes de navigation</a></li>
   
   <li aria-current="page" tabindex="-1">Menu latéral glissant</li>
   </ol>

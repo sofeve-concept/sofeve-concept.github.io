@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title> Code de base - Motifs de base - Motifs de conception - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title> Zones obligatoires - Structure de base - Motifs de conception - Sofève Concept</title>
 	
 	<meta name="theme-color" content="#FFFFFF" />
 	<meta name="description" content="La structure de base d&#39;un document HTML doit comporter impérativement plusieurs balises sémantiques appelées aussi régions. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
@@ -25,6 +25,7 @@
 		<ul>
 			<li><a href="#contenu">Contenu</a></li>
 			<li><a href="#navigation">Menu</a></li> 
+			<li><a href="#recherche">Recherche</a></li>
 			<li><a href="#piedDePage">Pied de page</a></li>
 		</ul>
 	</nav>
@@ -63,10 +64,10 @@
 				<button aria-haspopup="true" aria-expanded="false" aria-controls="motifs" aria-current="true">Motifs de conception</button>
 				   <ul id="motifs">
 					
-					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/" aria-current="location" >Motifs de base</a></li>
-              			<li><a href="/motifs/dynamiques/">Motifs dynamiques</a></li>
-              			<li><a href="/motifs/formulaires/">Motifs pour formulaires</a></li>
-              			<li><a href="/motifs/purcss/">Motifs en pur CSS</a></li>
+					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/" aria-current="location" >Structure de base</a></li>
+              			<li><a href="/motifs/navigations/">Systèmes de navigation</a></li>
+              			<li><a href="/motifs/formulaires/">Formulaire</a></li>
+              			<li><a href="/motifs/purcss/">En pur CSS</a></li>
               			</ul>
 			    </li>
 				
@@ -98,7 +99,7 @@
 			</ul>
 		
 	</nav>	
-	<form action="/rechercher" method="GET" role="search" class="search">
+	<form action="/rechercher" method="GET" role="search" class="search" id="recherche">
 	    <div class="champs">
     <label for="search-query">Rechercher</label>
     <input type="search" name="q" id="search-query" minlength="3" required >
@@ -128,24 +129,18 @@
 		Motifs de conception
 	</button>
 	<ul id="sousMenu">
-		<li><a href="/motifs">Motifs de conception</a></li><li><a href="https://sofeve-concept.github.io/motifs/basiques/" aria-current="location" >Motifs de base</a>
+		<li><a href="/motifs">Motifs de conception</a></li><li><a href="https://sofeve-concept.github.io/motifs/basiques/" aria-current="location" >Structure de base</a>
 			
 			
-			<ul><li><a href="https://sofeve-concept.github.io/motifs/basiques/code-de-base/" aria-current="page" > Code de base</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/lien-acces-rapide/">Lien d&#39;accès rapide</a></li>
+			<ul><li><a href="https://sofeve-concept.github.io/motifs/basiques/code-de-base/" aria-current="page" > Zones obligatoires</a></li>
 				<li><a href="https://sofeve-concept.github.io/motifs/basiques/bandeau-collant/">Bannière collante</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/menu-navigation/">Menu déroulant horizontal</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/menu-navigation-double/">Menu multi-déroulant horizontal</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/menu-menubar/">Menu type « menubar »</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/menu-lateral-glissant/">Menu latéral glissant</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/menu-lateral-glissant-icones/">Menu latéral glissant avec icônes</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/ariane/">Fil d&#39;ariane</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/basiques/retour-en-haut/">Retour en haut</a></li>
+				<li><a href="https://sofeve-concept.github.io/motifs/basiques/retour-en-haut/">Lien de retour en haut</a></li>
 				</ul>
 			</li>
-		<li><a href="https://sofeve-concept.github.io/motifs/dynamiques/">Motifs dynamiques</a></li>
-		<li><a href="https://sofeve-concept.github.io/motifs/purcss/">Motifs en pur CSS</a></li>
-		<li><a href="https://sofeve-concept.github.io/motifs/formulaires/">Motifs pour formulaires</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/navigations/">Systèmes de navigation</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/formulaires/">Formulaire</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/dynamiques/">Composants d&#39;interface riche</a></li>
+		<li><a href="https://sofeve-concept.github.io/motifs/purcss/">En pur CSS</a></li>
 		</ul>
 </nav>
 
@@ -158,9 +153,9 @@
   
   <li><a href="/motifs/">Motifs de conception</a></li>
   
-  <li><a href="/motifs/basiques/">Motifs de base</a></li>
+  <li><a href="/motifs/basiques/">Structure de base</a></li>
   
-  <li aria-current="page" tabindex="-1"> Code de base</li>
+  <li aria-current="page" tabindex="-1"> Zones obligatoires</li>
   </ol>
 </nav>
 <div>
@@ -171,13 +166,14 @@
 </div>
 </div>
      <section>
-		<h1 id="contenu"> Code de base</h1>
+		<h1 id="contenu"> Zones obligatoires</h1>
                <p>La structure de base d&#39;un document HTML doit comporter impérativement plusieurs balises sémantiques appelées aussi régions.</p>
 <button type="button" class="depliant" aria-expanded="false" aria-controls="tdm">
 Table des matières</button>
 <div id="tdm" role="region" tabindex="-1">
     <nav id="TableOfContents">
   <ul>
+    <li><a href="#règles-dimplémentation-pour-laccessibilité">Règles d’implémentation pour l’accessibilité</a></li>
     <li><a href="#extraits-de-code">Extraits de code</a>
       <ul>
         <li><a href="#code-html-commenté">Code HTML commenté</a></li>
@@ -188,6 +184,7 @@ Table des matières</button>
   </ul>
 </nav>
 </div>
+<h2 id="règles-dimplémentation-pour-laccessibilité">Règles d’implémentation pour l’accessibilité</h2>
 <p>Le critère 9.2 du référentiel général d’amélioration de l’acccessibilité (RGAA), rend obligatoire la présence de plusieurs balises sémantiques de région (<span lang="en">landmark</span>, en anglais) dans la page HTML :</p>
 <ul>
 <li><code>header</code> pour la zone d&rsquo;entête principale avec le rôle aria <code>role=&quot;banner&quot;</code> ;</li>
@@ -195,7 +192,9 @@ Table des matières</button>
 <li><code>footer</code> pour la zone de pied de page avec le rôle aria <code>role=&quot;contentinfo&quot;</code> ;</li>
 <li><code>nav</code> pour les zones de navigations principales et secondaires, chacune avec le rôle aria <code>role=&quot;navigation&quot;</code>.</li>
 </ul>
-<p>Deux extraits de code sont présentés. Le premier est commenté  le deuxième ne l&rsquo;est pas et est suivi du code CSS pour le lien d&rsquo;accès rapide ; la présence du lien d&rsquo;accès rapide est rendu obligatoire par le critère 12.7 du RGAA.</p>
+<p>Deux extraits de code sont présentés. Le premier est commenté, le deuxième ne l&rsquo;est pas et est suivi du code CSS pour le lien d&rsquo;accès rapide.<br>
+La présence du lien d&rsquo;accès rapide est rendu obligatoire par le critère 12.7 du RGAA. Ce lien se pose juste après la balise <code>&lt;body&gt;</code>.</p>
+<p>Un autre exemple d&rsquo;implémentations de liens d&rsquo;accès rapide est proposé dans la rubrique <a href="/motifs/navigation/">Navigation</a></p>
 <h2 id="extraits-de-code">Extraits de code</h2>
 <h3 id="code-html-commenté">Code HTML commenté</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
@@ -227,11 +226,7 @@ Table des matières</button>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">header</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;banner&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;mon-logo.png&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;Logo de mon site&#34;</span> <span class="p">/&gt;</span>
 </span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">nav</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;navigation&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;navbar&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Menu principal&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>Menu 1<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>Menu 2<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>Menu 3<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">		<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">		<span class="c">&lt;!-- Le menu de navigation principal du site - Voir la rubrique « Navigation » --&gt;</span>
 </span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- zone de contenu de la page --&gt;</span>
@@ -267,11 +262,7 @@ Table des matières</button>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;evitement&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#contenu&#34;</span><span class="p">&gt;</span>Aller au contenu<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> 
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">header</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;banner&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;mon-logo.png&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;Logo de mon site&#34;</span> <span class="p">/&gt;</span>
-</span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">nav</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;navigation&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;navbar&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Menu principal&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">		<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">nav</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;navigation&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;navbar&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Menu principal&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">main</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;main&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;contenu&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
