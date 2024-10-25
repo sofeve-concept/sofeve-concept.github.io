@@ -67,6 +67,7 @@
 					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/">Structure de base</a></li>
               			<li><a href="/motifs/navigations/">Systèmes de navigation</a></li>
               			<li><a href="/motifs/formulaires/">Formulaire</a></li>
+              			<li><a href="/motifs/dynamiques/">Composants javascript</a></li>
               			<li><a href="/motifs/purcss/">En pur CSS</a></li>
               			</ul>
 			    </li>
@@ -179,15 +180,25 @@ Table des matières</button>
 <div id="tdm" role="region" tabindex="-1">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#ce-quil-faut-retenir">Ce qu’il faut retenir</a></li>
-    <li><a href="#contraste-requis-entre-les-textes-et-larrière-plan">Contraste requis entre les textes et l’arrière-plan</a>
+    <li><a href="#ce-quil-faut-retenir">Ce qu’il faut retenir</a>
       <ul>
-        <li><a href="#contraste-minimal-requis-niveau-aa-du-wcag">Contraste minimal requis (niveau AA du WCAG)</a></li>
-        <li><a href="#contraste-augmenté-niveau-aaa-du-wcag">Contraste augmenté (niveau AAA du WCAG)</a></li>
-        <li><a href="#cas-de-non-application-de-ces-critères-de-contraste">Cas de non application de ces critères de contraste</a></li>
+        <li><a href="#application-des-critères-de-contraste">Application des critères de contraste</a></li>
+        <li><a href="#non-application-des-critères-de-contraste">Non application des critères de contraste</a></li>
       </ul>
     </li>
-    <li><a href="#contraste-minimal-entre-les-éléments-graphiques-informatifs-et-interactifs-et-larrière-plan">Contraste minimal entre les éléments graphiques informatifs et interactifs et l&rsquo;arrière-plan</a></li>
+    <li><a href="#contraste-minimal-requis-pour-du-texte-rgaa---niveau-aa-du-wcag">Contraste minimal requis pour du texte (RGAA - niveau AA du WCAG)</a>
+      <ul>
+        <li><a href="#contraste-de-45-pour-1">Contraste de 4.5 pour 1</a></li>
+        <li><a href="#contraste-de-3-pour-1">Contraste de 3 pour 1</a></li>
+      </ul>
+    </li>
+    <li><a href="#contraste-augmenté-pour-du-texte-niveau-aaa-du-wcag">Contraste augmenté pour du texte (niveau AAA du WCAG)</a>
+      <ul>
+        <li><a href="#contraste-de-7-pour-1">Contraste de 7 pour 1</a></li>
+        <li><a href="#contraste-de-45-pour-1-1">Contraste de 4.5 pour 1</a></li>
+      </ul>
+    </li>
+    <li><a href="#contraste-pour-les-éléments-graphiques-informatifs-et-interactifs">Contraste pour les éléments graphiques informatifs et interactifs</a></li>
     <li><a href="#tableau-récapitulatif-du-ratio-de-contraste-attendu">Tableau récapitulatif du ratio de contraste attendu</a></li>
   </ul>
 </nav>
@@ -207,7 +218,7 @@ Les personnes astigmates ou les personnes âgées, par exemple, perçoivent moin
 </li>
 <li>
 <p><strong>Le contour du focus doit être suffisemment contrasté avec l&rsquo;arrière-plan</strong>.
-Si une bonne pratique consiste à conserver le contour du focus, celui-ci doit aussi être sufisemment contrasté avec l&rsquo;arrière-plan.<br>
+Si une bonne pratique consiste à conserver le contour du focus, celui-ci doit aussi être suffisemment contrasté avec l&rsquo;arrière-plan.<br>
 Une astuce consiste à implémenter en CSS un contour de focus faisant appel au noir pur (Code hexadécimal : #000000) et au blanc pur (code hexadécimal #FFFFFF).</p>
 </li>
 </ol>
@@ -215,25 +226,16 @@ Une astuce consiste à implémenter en CSS un contour de focus faisant appel au 
 </span></span><span class="line"><span class="cl">    <span class="k">outline</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">white</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">6</span><span class="kt">px</span> <span class="kc">black</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><h2 id="contraste-requis-entre-les-textes-et-larrière-plan">Contraste requis entre les textes et l’arrière-plan</h2>
-<p>Le <abbr title="Référentiel général d&#39;amélioration de l&#39;accessibilité">RGAA</abbr> impose seulement le respect du critère de contraste du niveau AA du WCAG.</p>
-<h3 id="contraste-minimal-requis-niveau-aa-du-wcag">Contraste minimal requis (niveau AA du WCAG)</h3>
-<p>Le rapport de constraste à respecter est le suivant :</p>
+</span></span></code></pre></div><h3 id="application-des-critères-de-contraste">Application des critères de contraste</h3>
+<p>Les contrastes de couleurs concernent le rapport de contraste entre la couleur d’écriture d’un texte et sa couleur d’arrière-plan.
+Le <abbr title="Référentiel général d&#39;amélioration de l&#39;accessibilité">RGAA</abbr> impose seulement le respect du critère de contraste du niveau AA du WCAG.</p>
+<p>Ces contrastes concernent :</p>
 <ul>
-<li>Texte normal non gras inférieur à 18pt : rapport de <strong>4.5</strong> pour 1</li>
-<li>Texte normal gras inférieur à 14pt : rapport de <strong>4.5</strong> pour 1</li>
-<li>Grand texte non gras inférieur à 18pt : rapport de <strong>3</strong> pour 1</li>
-<li>Grand texte gras inférieur à 14pt : rapport de <strong>3</strong> pour 1</li>
+<li>les textes HTML ;</li>
+<li>les textes présents dans les images ;</li>
+<li>les textes incrustés dans les vidéos.</li>
 </ul>
-<h3 id="contraste-augmenté-niveau-aaa-du-wcag">Contraste augmenté (niveau AAA du WCAG)</h3>
-<p>Le rapport de constraste à respecter est le suivant :</p>
-<ul>
-<li>Texte normal non gras inférieur à 18pt : rapport de <strong>7</strong> pour 1</li>
-<li>Texte normal gras inférieur à 14pt : rapport de <strong>7</strong> pour 1</li>
-<li>Grand texte non gras inférieur à 18pt : rapport de <strong>4.5</strong> pour 1</li>
-<li>Grand texte gras inférieur à 14pt : rapport de <strong>4.5</strong> pour 1</li>
-</ul>
-<h3 id="cas-de-non-application-de-ces-critères-de-contraste">Cas de non application de ces critères de contraste</h3>
+<h3 id="non-application-des-critères-de-contraste">Non application des critères de contraste</h3>
 <p>Les critères sont non applicables dans les cas suivants :</p>
 <ul>
 <li>Le texte fait partie d’un <strong>logo ou d’un nom de marque</strong> d’un organisme ou d’une société ;</li>
@@ -242,16 +244,44 @@ Une astuce consiste à implémenter en CSS un contour de focus faisant appel au 
 <li>Le texte ou l’image de texte fait partie d’un <strong>élément d’interface sur lequel aucune action n’est possible</strong><br>
 (par exemple un bouton avec l’attribut <code>disabled</code>).</li>
 </ul>
-<h2 id="contraste-minimal-entre-les-éléments-graphiques-informatifs-et-interactifs-et-larrière-plan">Contraste minimal entre les éléments graphiques informatifs et interactifs et l&rsquo;arrière-plan</h2>
+<h2 id="contraste-minimal-requis-pour-du-texte-rgaa---niveau-aa-du-wcag">Contraste minimal requis pour du texte (RGAA - niveau AA du WCAG)</h2>
+<h3 id="contraste-de-45-pour-1">Contraste de 4.5 pour 1</h3>
+<p>Le rapport de constraste entre la couleur de premier-plan et la couleur d&rsquo;arrière-plan doit être de <strong>4.5 pour 1</strong> dans les cas suivants :</p>
+<ul>
+<li>Texte normal (non gras) dont la taille est strictement inférieure à 150% de la taille de police par défaut (soit 1.5em ou 18pt ou 24px).</li>
+<li>Texte en gras dont la taille est strictement inférieure à 120% de la taille de police par défaut (soit 1.2em ou 14pt ou 18.5px).</li>
+</ul>
+<h3 id="contraste-de-3-pour-1">Contraste de 3 pour 1</h3>
+<p>Le rapport de constraste entre la couleur de premier-plan et la couleur d&rsquo;arrière-plan doit être de <strong>3 pour 1</strong> dans les cas suivants :</p>
+<ul>
+<li>Texte normal (non gras) dont la taille est supérieure ou égale à 150% de la taille de police par défaut (soit 1.5em ou 18pt ou 24px).</li>
+<li>Texte en gras dont la taille est supérieure ou égale à 120% de la taille de police par défaut (soit 1.2em ou 14pt ou 18.5px).</li>
+</ul>
+<h2 id="contraste-augmenté-pour-du-texte-niveau-aaa-du-wcag">Contraste augmenté pour du texte (niveau AAA du WCAG)</h2>
+<p>Il est possible d’améliorer encore ces contrastes grâce aux rapports de niveau AAA.</p>
+<h3 id="contraste-de-7-pour-1">Contraste de 7 pour 1</h3>
+<p>Le rapport de constraste entre la couleur de premier-plan et la couleur d&rsquo;arrière-plan doit être de <strong>7 pour 1</strong> dans les cas suivants :</p>
+<ul>
+<li>Texte normal (non gras) dont la taille est strictement inférieure à 150% de la taille de police par défaut (soit 1.5em ou 18pt ou 24px).</li>
+<li>Texte en gras dont la taille est strictement inférieure à 120% de la taille de police par défaut (soit 1.2em ou 14pt ou 18.5px).</li>
+</ul>
+<h3 id="contraste-de-45-pour-1-1">Contraste de 4.5 pour 1</h3>
+<p>Le rapport de constraste entre la couleur de premier-plan et la couleur d&rsquo;arrière-plan doit être de <strong>4.5 pour 1</strong> dans les cas suivants :</p>
+<ul>
+<li>Texte normal (non gras) dont la taille est supérieure ou égale à 150% de la taille de police par défaut (soit 1.5em ou 18pt ou 24px).</li>
+<li>Texte en gras dont la taille est supérieure ou égale à 120% de la taille de police par défaut (soit 1.2em ou 14pt ou 18.5px).</li>
+</ul>
+<h2 id="contraste-pour-les-éléments-graphiques-informatifs-et-interactifs">Contraste pour les éléments graphiques informatifs et interactifs</h2>
 <p>Les éléments graphiques sont :</p>
 <ul>
 <li>des pictogrammes informatifs  ;</li>
 <li>des pictogrammes interactifs seuls, lorsqu’ils ne sont pas accompagnés d’un texte  ;</li>
 <li>des bordures de champs de formulaire  ;</li>
-<li>des onglets.</li>
+<li>des onglets ;</li>
+<li>toute représentation de l&rsquo;état d&rsquo;un composant d&rsquo;interface utilisateur (focus, frontière&hellip;)</li>
 </ul>
 <p>Ce critère de contraste minimum s&rsquo;applique aussi à deux éléments juxtaposés. Ainsi, si vous voulez ne pas souligner par défaut les liens mais les rendre repérable par la couleur (et un élément visuel supplémentaire comme le gras par exemple - n&rsquo;oubliez pas : l&rsquo;information de doit pas être véhiculée uniquement par la couleur), vous devez veiller à ce que <strong>le contraste de couleur entre le texte et le lien soit conforme à ce critère</strong>.</p>
-<p>Pour ces éléments, le rapport de contraste minimum à atteindre est de <strong>3</strong> pour 1, quel que soit le niveau du WCAG visé (AA ou AAA).</p>
+<p>Pour ces éléments, <strong>le rapport de contraste minimum à atteindre est de 3 pour 1</strong>.</p>
 <h2 id="tableau-récapitulatif-du-ratio-de-contraste-attendu">Tableau récapitulatif du ratio de contraste attendu</h2>
 
 <table class="responsive style2">
@@ -265,12 +295,12 @@ Une astuce consiste à implémenter en CSS un contour de focus faisant appel au 
   </thead>
   <tbody>
   <tr>
-    <td>Petit texte : <br>Texte non gras inférieur à 18pt (ou 24px ou 1.5em)<br>Texte gras inférieur à 14pt (ou 18.5px ou 1.15em)</td>
+    <td>Petit texte : <br>Texte non gras inférieur à 18pt (ou 24px ou 1.5em)<br>Texte gras inférieur à 14pt (ou 18.5px ou 1.2em)</td>
     <td>4.5 : 1</td>
     <td>7 : 1</td>
   </tr>
   <tr>
-     <td>Grand texte : <br>Texte non gras supérieur à 18pt (ou 24px ou 1.5em)<br>Texte gras supérieur à 14pt (ou 18.5px ou 1.15em)</td>
+     <td>Grand texte : <br>Texte non gras supérieur à 18pt (ou 24px ou 1.5em)<br>Texte gras supérieur à 14pt (ou 18.5px ou 1.2em)</td>
      <td>3 : 1</td>
     <td>4.5 : 1</td>
   </tr>
@@ -339,8 +369,7 @@ Une astuce consiste à implémenter en CSS un contour de focus faisant appel au 
 	    <path
 		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
 	</svg>
-	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/afficherReponse.min.js"></script>
-<script src="/js/clipboard.min.js"></script>
+	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/clipboard.min.js"></script>
 <script src="/js/search.min.js"></script>
 </body>
 </html>

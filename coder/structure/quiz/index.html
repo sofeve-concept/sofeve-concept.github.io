@@ -67,6 +67,7 @@
 					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/">Structure de base</a></li>
               			<li><a href="/motifs/navigations/">Systèmes de navigation</a></li>
               			<li><a href="/motifs/formulaires/">Formulaire</a></li>
+              			<li><a href="/motifs/dynamiques/">Composants javascript</a></li>
               			<li><a href="/motifs/purcss/">En pur CSS</a></li>
               			</ul>
 			    </li>
@@ -176,138 +177,192 @@
 		<h1 id="contenu">Quiz récap&#39;</h1>
                <p>Quiz récap&#39; sur la structure d&#39;une page HTML</p>
 
-<table id="quiz">
-            <thead>
-              <tr>
-                <th scope="col">N°</th>
-                <th scope="col">Question</th>
-                <th scope="col">Votre réponse</th>
-                <th scope="col"><button onclick="afficherReponse();">Afficher les réponses</button></th>
-              </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <th scope="row">1</td>
-            <td><label for="q1">Combien de fois puis-je trouver le role="banner" dans mon code&nbsp;?</label>
-                <br>
-                <ol>
-                    <li>1 fois</li>
-                    <li>Plusieurs fois</li>
-                </ol>
-            </td>
-            <td><input type="text" class="soluce" id="q1" name="reponse1"></td>
-            <td><b>Réponse a</b><br>1 seule fois<br>On peut trouver plusieurs fois l'élement <code>header</code> mais une seule fois la balise  <code>&lt;header role="banner"></code> qui identifie l'entête du site.</td>
-            </tr>
-            <tr>
-            <th scope="row">2</td>
-            <td><label for="q2">Sur quel élément HTML se pose le role="banner"&nbsp;?</label> <br>
-                <ol>
-                    <li>&lt;head&gt;</li>
-                    <li>&lt;header&gt;</li>
-                    </ol>
-                </td>
-            <td><input type="text" class="soluce" id="q2" name="reponse2"></td>
-            <td><b>Réponse b</b><br>
-            &lt;header&gt; ; il peut y avoir plusieurs éléments &lt;header&gt; dans la page mais un seul peut posséder ce rôle.</td>
-            </tr>
-            <tr>
-            <th scope="row">3</td>
-            <td><label for="q3">Combien de fois puis-je trouver le role="navigation" dans mon code&nbsp;?</label>
-            <br>
-                <ol>
-                    <li>1 fois</li>
-                    <li>Plusieurs fois</li>
-                </ol>
-            </td>
-            <td><input type="text" class="soluce" id="q3" name="reponse3"></td>
-            <td><b>Réponse b</b><br>
-            Plusieurs fois : navigation principale, fil d'ariane, pagination...</td>
-            </tr>
-            <tr>
-            <th scope="row">4</td>
-            <td><label for="q4">Sur quel élément HTML se pose le role="navigation"&nbsp;? </label> <br>
-                <ol>
-                    <li>&lt;header&gt;</li>
-                    <li>&lt;nav&gt;</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q4" name="reponse4"></td>
-            <td><b>Réponse b</b><br>
-            &lt;nav&gt;</td>
-            </tr>
-            <tr>
-            <th scope="row">5</td>
-            <td><label for="q5">Puis-je poser une role="navigation" pour une liste de liens externes au site&nbsp;?</label> <br>
-                <ol>
-                    <li>Oui</li>
-                    <li>Non</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q5" name="reponse5"></td>
-            <td><b>Réponse b</b><br>
-            Non ; ce rôle est réservé aux liens internes du site.</td>
-            </tr>
-            <tr>
-            <th scope="row">6</td>
-            <td><label for="q6">Puis-je avoir plusieurs &lt; main role="main"&gt; dans ma page&nbsp;?</label> <br>
-                <ol>
-                    <li>Oui</li>
-                    <li>Non</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q6" name="reponse6"></td>
-            <td><b>Réponse b</b><br>
-            Non. On peut avoir plusieurs main mais un seul avec ce rôle.</td>
-            </tr>
-            <tr>
-            <th scope="row">7</td>
-            <td><label for="q7">Quelle est la bonne écriture&nbsp;?</label> <br>
-                <ol>
-                    <li>&lt;footer role="footer"&gt;</li>
-                    <li>&lt;footer role="contentinfo"&gt;</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q7" name="reponse7"></td>
-            <td><b>Réponse b</b><br>
-            &lt;footer role="contentinfo"&gt; ; le rôle "footer" n'existe pas.</td>
-            </tr>
-            <tr>
-            <th scope="row">8</td>
-            <td><label for="q8">Puis-je poser l'élément &lt;nav> dans une région &lt;footer>&nbsp;?</label> <br>
-                <ol>
-                      <li>Oui</li>
-                    <li>Non</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q8" name="reponse8"></td>
-            <td><b>Réponse b</b><br>
-            Non ; les liens présents dans le footer ne servent pas à la navigation principale du site.</td>
-            </tr>
-            <tr>
-            <th scope="row">9</td>
-            <td><label for="q9">La balise <code>&lt;html lang="fr"></code></label> <br>
-                <ol>
-                    <li>Est facultative</li>
-                    <li>Permet d’indiquer la langue principale du document</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q9" name="reponse9"></td>
-            <td><b>Réponse b</b><br>Permet d’indiquer la langue principale du document. Elle est utilisé par les moteurs de recherche pour le référencement et les logiciels de synthèse vocale pour la lecture du texte.</td>
-            </tr>
-            <tr>
-            <th scope="row">10</td>
-            <td><label for="q10">La balise <code>&lt;hr></code> sert pour créer une ligne horizontale de séparation.</label> <br>
-                <ol>
-                    <li>Vrai</li>
-                    <li>Faux</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q10" name="reponse10"></td>
-            <td><b>Réponse b</b><br>Faux ; La balise &lt;hr> ne peut être utilisée qu’entre deux balises de type paragraphe &lt;p>...&lt;/p> et sert à représenter un changement thématique entre deux paragraphes. Pour créer une ligne de séparation, on utilisera un style CSS.</td>
-            </tr>
-            </tbody>
-            </table>
- 
+<div id="quiz">  
+    
+    <div class="quiz">
+    
+       <h2>Combien de fois puis-je trouver le role banner dans mon code ?</h2>
+        <div>
+            <ol>
+<li>1 fois</li>
+<li>Plusieurs fois</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i1" aria-label="Déplier Afficher la réponse à la question ">
+     Afficher la réponse à la question 
+</button>
+<div id="i1" role="region" tabindex="-1">
+<p><b>Réponse a - 1 seule fois</b><br>
+Le rôle <code>banner</code> ne peut se présenter qu'un seule fois dans la page. Il identifie la bannière du site.</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Sur quel élément HTML se pose le role &#39;banner&#39; ?</h2>
+        <div>
+            <ol>
+<li><code>head</code></li>
+<li><code>header</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i2" aria-label="Déplier Afficher la réponse à la question ">
+     Afficher la réponse à la question 
+</button>
+<div id="i2" role="region" tabindex="-1">
+<p><b>Réponse b - <code>header</code></b><br>
+Il peut y avoir plusieurs éléments <code>header</code> dans la page mais un seul <code>header</code> peut posséder ce rôle.</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Combien de fois puis-je trouver le role &#39;navigation&#39; dans mon code ?</h2>
+        <div>
+            <ol>
+<li>1 fois</li>
+<li>Plusieurs fois</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i3" aria-label="Déplier Afficher la réponse à la question ">
+     Afficher la réponse à la question 
+</button>
+<div id="i3" role="region" tabindex="-1">
+<p><b>Réponse b - Plusieurs fois</b><br>
+Plusieurs fois : navigation principale, fil d'ariane, table des matières...</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Sur quel élément HTML se pose le role &#39;navigation&#39; ?</h2>
+        <div>
+            <ol>
+<li><code>header</code></li>
+<li><code>nav</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i4" aria-label="Déplier Afficher la réponse à la question ">
+     Afficher la réponse à la question 
+</button>
+<div id="i4" role="region" tabindex="-1">
+<p><b>Réponse b - <code>nav</code></b></p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Pour présenter une collection de liens externes au site, j&#39;utilise l&#39;élément nav.</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i5" aria-label="Déplier Afficher la réponse à la question ">
+     Afficher la réponse à la question 
+</button>
+<div id="i5" role="region" tabindex="-1">
+<p><b>Réponse b - Faux</b><br>
+Ce rôle est réservé aux liens internes au site ; les liens qui permettent de naviguer d'une page à l'autre.
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Je peux avoir plusieurs éléments main avec le role main dans ma page web.</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i6" aria-label="Déplier Afficher la réponse à la question ">
+     Afficher la réponse à la question 
+</button>
+<div id="i6" role="region" tabindex="-1">
+<p><b>Réponse b - Faux</b><br>
+Si on peut avoir plusieurs éléments <code>main</code> dans sa page, un seul peut porter ce rôle. La zone identifiée par <code>main role="main"</code> identifie ainsi le contenu principal de la page.
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Quelle est la bonne écriture ?</h2>
+        <div>
+            <ol>
+<li><code>footer role=&quot;footer&quot;</code></li>
+<li><code>footer role=&quot;contentinfo&quot;</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i7" aria-label="Déplier Afficher la réponse à la question ">
+     Afficher la réponse à la question 
+</button>
+<div id="i7" role="region" tabindex="-1">
+<p><b>Réponse a - <code>footer role="contentinfo"</code></b><br>
+Le rôle "footer" n'existe pas.
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Pour présenter les liens internes au site posés dans ma zone footer avec le rôle contentinfo, j&#39;utilise l&#39;élément HTML nav</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i8" aria-label="Déplier Afficher la réponse à la question ">
+     Afficher la réponse à la question 
+</button>
+<div id="i8" role="region" tabindex="-1">
+<p><b>Réponse b - Faux</b><br>
+Sémantiquement, un footer n'est pas fait pour proposer des liens utiles à la navigation dans le site. Le rôle "contentinfo" signifie en plus qu'il s'agit de contenu annexe.</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Le code de langue du document HTML est obligatoire.</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i9" aria-label="Déplier Afficher la réponse à la question ">
+     Afficher la réponse à la question 
+</button>
+<div id="i9" role="region" tabindex="-1">
+<p><b>Réponse a - Vrai</b><br>
+L'attribut <code>lang="fr"></code> permet d’indiquer la langue principale du document. Elle est utilisé par les moteurs de recherche pour le référencement et les logiciels de synthèse vocale pour la lecture du texte. </p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>L&#39;élément HTML hr sert pour créer une ligne horizontale de séparation.</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i10" aria-label="Déplier Afficher la réponse à la question ">
+     Afficher la réponse à la question 
+</button>
+<div id="i10" role="region" tabindex="-1">
+<p><b>Réponse b - Faux</b><br>
+La balise &lt;hr> ne peut être utilisée qu’entre deux balises de type paragraphe &lt;p>...&lt;/p> et sert à représenter un changement thématique entre deux paragraphes. Pour créer une ligne de séparation, on utilisera un style CSS.
+</p>
+</div> 
+        </div>
+    </div>
+    
+</div>
 
      </section>
 </main>
@@ -362,7 +417,6 @@
 	    <path
 		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
 	</svg>
-	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/afficherReponse.min.js"></script>
-<script src="/js/search.min.js"></script>
+	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/search.min.js"></script>
 </body>
 </html>

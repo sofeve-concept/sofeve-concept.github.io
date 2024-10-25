@@ -67,6 +67,7 @@
 					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/">Structure de base</a></li>
               			<li><a href="/motifs/navigations/">Systèmes de navigation</a></li>
               			<li><a href="/motifs/formulaires/">Formulaire</a></li>
+              			<li><a href="/motifs/dynamiques/">Composants javascript</a></li>
               			<li><a href="/motifs/purcss/">En pur CSS</a></li>
               			</ul>
 			    </li>
@@ -175,136 +176,192 @@
 		<h1 id="contenu">Quiz récap&#39;</h1>
                <p>Quiz récap&#39; sur les couleurs</p>
 
-<table id="quiz" class="quiz">
-            <thead>
-              <tr>
-                <th scope="col">N°</th>
-                <th scope="col">Question</th>
-                <th scope="col">Votre réponse</th>
-                <th><button onclick="afficherReponse();">Afficher les réponses</button></th>
-              </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <td scope="row">1</td>
-            <td><label for="q1">« Cliquez sur le bouton rouge » est une bonne pratique d'accessibilité.</label>
-                <br>
-                <ol>
-                    <li>Oui</li>
-                    <li>Non</li>
-                </ol>
-            </td>
-            <td><input type="text" class="soluce" id="q1" name="reponse1"></td>
-            <td><b>Réponse b</b><br>Non. Une information ne doit pas être portée uniquement sur la taille, la position ou la couleur.
-            </td>
-            </tr>
-            <tr>
-            <td scope="row">2</td>
-            <td><label for="q2">Pour un texte normal sans effet de graisse (taille restituée inférieure à 18pt / 24px), quel est le ratio de contraste minimum à avoir entre le texte et l’arrière-plan&nbsp;?</label> <br>
-                <ol>
-                    <li>3:1</li>
-                    <li>4.5:1</li>
-                    </ol>
-                </td>
-            <td><input type="text" class="soluce" id="q2" name="reponse2"></td>
-            <td><b>Réponse b</b></td>
-            </tr>
-            <tr>
-            <td scope="row">3</td>
-            <td><label for="q3">Pour un texte normal en gras (taille restituée inférieure à 14pt / 18.5px), quel est le ratio de contraste minimum à avoir entre le texte et l’arrière-plan&nbsp;?</label>
-            <br>
-                <ol>
-                    <li>3:1</li>
-                    <li>4.5:1</li>
-                </ol>
-            </td>
-            <td><input type="text" class="soluce" id="q3" name="reponse3"></td>
-            <td><b>Réponse b</b></td>
-            </tr>
-            <tr>
-            <td scope="row">4</td>
-            <td><label for="q4">Pour les composants d’interface ou les éléments graphiques porteurs d’informations, quel est le ratio de contraste minimum à avoir entre ces éléments et l’arrière-plan&nbsp;?</label> <br>
-                <ol>
-                    <li>3:1</li>
-                    <li>4.5:1</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q4" name="reponse4"></td>
-            <td><b>Réponse a</b></td>
-            </tr>
-            <tr>
-            <td scope="row">5</td>
-            <td><label for="q5">Un bouton avec l’attribut <code>disabled</code> doit avoir un ratio de contraste avec l'arrière-plan de minimum 3:1</label> <br>
-                <ol>
-                    <li>Vrai</li>
-                    <li>Faux</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q5" name="reponse5"></td>
-            <td><b>Réponse b</b><br>
-           Ce cas fait partie des cas pour lesquels le calcul du ratio de contraste ne s'applique pas.</td>
-            </tr>
-            <tr>
-            <td scope="row">6</td>
-            <td><label for="q6">Dans le cas d'un logo qui ne respecte pas le ratio de contraste minimum, doit-on en modifier les couleurs ?</label> <br>
-                <ol>
-                    <li>Oui</li>
-                    <li>Non</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q6" name="reponse6"></td>
-            <td><b>Réponse a</b><br>
-            Non. Un logo est une marque déposée et ne doit en aucun cas être modifié. C'est pourquoi les critères de contraste ne s'appliquent pas aux logos.</td>
-            </tr>
-            <tr>
-            <td scope="row">7</td>
-            <td><label for="q7">Dans un paragraphe comportant un lien qui se différencie du reste du texte par sa couleur (cas des liens non soulignés), quel est le ratio minimum à respecter entre le lien et le texte environnant&nbsp;?</label> <br>
-                <ol>
-                    <li>3:1</li>
-                    <li>4.5:1</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q7" name="reponse7"></td>
-            <td><b>Réponse a</b></td>
-            </tr>
-            <tr>
-            <td scope="row">8</td>
-            <td><label for="q8">Pour un graphique avec différentes couleurs, l'utilisation des motifs est une bonne pratique d'accessibilité.</label> <br>
-                <ol>
-                    <li>Vrai</li>
-                    <li>Faux</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q8" name="reponse8"></td>
-            <td><b>Réponse a</b>. C'est d'autant plus une bonne pratique pour garantir un bon affichage en "noir et blanc" (personne ne percevant pas les couleurs ou impression en noir et blanc de la page).</td>
-            </tr>
-            <tr>
-            <td scope="row">9</td>
-            <td><label for="q9">On peut utiliser le vert et le rouge entre le premier plan et l’arrière plan pour peu que le ratio de contraste minimum entre les deux couleurs soit de 3:1</label> <br>
-                <ol>
-                   <li>Vrai</li>
-                    <li>Faux</li>
-                </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q9" name="reponse9"></td>
-            <td><b>Réponse b</b><br>
-           Faux. Certains daltoniens ne percevront pas la différence entre les 2 couleurs.</td>
-            </tr>
-            <tr>
-            <td scope="row">10</td>
-            <td><label for="q10">Un mécanisme qui permet d’afficher un rapport de contraste conforme (exemple un lien ou un bouton « Contraste élevé »), doit respecter un ration de contraste minimum avec l'arrière-plan&nbsp;?</label> <br>
-                <ol>
-                    <li>Oui</li>
-                    <li>Non</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q10" name="reponse10"></td>
-            <td><b>Réponse a</b>
-            </td>
-            </tr>
-            </tbody>
-            </table>
- 
+<div id="quiz">  
+    
+    <div class="quiz">
+    
+       <h2>« Cliquez sur le bouton rouge » est une bonne pratique d’accessibilité.</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i1" aria-label="Déplier Afficher la réponse à la question 1">
+     Afficher la réponse à la question 1
+</button>
+<div id="i1" role="region" tabindex="-1">
+<p><b>Réponse b - Faux</b><br>
+Une information ne doit pas être portée uniquement sur la taille, la position ou la couleur.</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Pour un texte normal, sans effet de graisse, dont la taille est de 1em, quel est le ratio de contraste minimum à avoir entre le texte et l’arrière-plan ?</h2>
+        <div>
+            <ol>
+<li>3:1</li>
+<li>4.5:1</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i2" aria-label="Déplier Afficher la réponse à la question 2">
+     Afficher la réponse à la question 2
+</button>
+<div id="i2" role="region" tabindex="-1">
+<p><b>Réponse b - 4.5 pour 1</b></p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Pour un texte en gras dont la taille est de 1em, quel est le ratio de contraste minimum à avoir entre le texte et l’arrière-plan ?</h2>
+        <div>
+            <ol>
+<li>3:1</li>
+<li>4.5:1</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i3" aria-label="Déplier Afficher la réponse à la question 3">
+     Afficher la réponse à la question 3
+</button>
+<div id="i3" role="region" tabindex="-1">
+<p><b>Réponse b - 4.5 pour 1</b></p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Pour les composants d’interface ou les éléments graphiques porteurs d’informations, quel est le ratio de contraste minimum à avoir entre ces éléments et l’arrière-plan ?</h2>
+        <div>
+            <ol>
+<li>3:1</li>
+<li>4.5:1</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i4" aria-label="Déplier Afficher la réponse à la question 4">
+     Afficher la réponse à la question 4
+</button>
+<div id="i4" role="region" tabindex="-1">
+<p><b>Réponse a - 3 pour 1</b></p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Un bouton avec l’attribut « disabled » doit avoir un ratio de contraste avec l&#39;arrière-plan de minimum 3:1.</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i5" aria-label="Déplier Afficher la réponse à la question 5">
+     Afficher la réponse à la question 5
+</button>
+<div id="i5" role="region" tabindex="-1">
+<p><b>Réponse b - faux</b><br>
+Ce cas fait partie des cas pour lesquels le calcul du ratio de contraste ne s'applique pas.
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Dans le cas d&#39;un logo qui ne respecte pas le ratio de contraste minimum, doit-on en modifier les couleurs ?</h2>
+        <div>
+            <ol>
+<li>Oui</li>
+<li>Non</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i6" aria-label="Déplier Afficher la réponse à la question 6">
+     Afficher la réponse à la question 6
+</button>
+<div id="i6" role="region" tabindex="-1">
+<p><b>Réponse b - Non</b><br>
+Un logo est une marque déposée et ne doit en aucun cas être modifié. C'est pourquoi les critères de contraste ne s'appliquent pas aux logos.
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Dans un paragraphe comportant un lien qui se différencie du reste du texte par sa couleur (cas des liens non soulignés), quel est le ratio minimum à respecter entre le lien et le texte environnant ?</h2>
+        <div>
+            <ol>
+<li>3:1</li>
+<li>4.5:1</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i7" aria-label="Déplier Afficher la réponse à la question 7">
+     Afficher la réponse à la question 7
+</button>
+<div id="i7" role="region" tabindex="-1">
+<p><b>Réponse a - 3:1</b><br>
+Ceci étant, rappelez-vous la règle qui dit «On ne fait pas porter l'information uniquement par la couleur ». Ne pas souligner les liens dans un texte de la page n'est donc pas une bonne pratique d'accessibilité...
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Pour un graphique avec différentes couleurs, l&#39;utilisation de différents motifs est une bonne pratique d&#39;accessibilité.</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i8" aria-label="Déplier Afficher la réponse à la question 8">
+     Afficher la réponse à la question 8
+</button>
+<div id="i8" role="region" tabindex="-1">
+<p><b>Réponse a - Vrai</b><br>
+C'est d'autant plus une bonne pratique car elle garantit un bon affichage en "noir et blanc" (personne ne percevant pas les couleurs ou impression en noir et blanc de la page).
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Pour un graphique avec différentes couleurs, l&#39;utilisation de différents motifs est une bonne pratique d&#39;accessibilité.</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i9" aria-label="Déplier Afficher la réponse à la question 9">
+     Afficher la réponse à la question 9
+</button>
+<div id="i9" role="region" tabindex="-1">
+<p><b>Réponse a - Vrai</b><br>
+C'est d'autant plus une bonne pratique car elle garantit un bon affichage en "noir et blanc" (personne ne percevant pas les couleurs ou impression en noir et blanc de la page).
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Un mécanisme qui permet d’afficher un rapport de contraste conforme (exemple un bouton « Contraste élevé » ou « Mode sombre »), doit respecter un ratio de contraste minimum avec l&#39;arrière-plan.</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i10" aria-label="Déplier Afficher la réponse à la question 10">
+     Afficher la réponse à la question 10
+</button>
+<div id="i10" role="region" tabindex="-1">
+<p><b>Réponse a - Vrai</b><br>
+Il s'agit d'un composant d’interface utilisateur ; le ratio de contraste doit être respecté. Dans ce cas, il devra être de minimum 3:1.
+</p>
+</div> 
+        </div>
+    </div>
+    
+</div>
 
      </section>
 </main>
@@ -359,7 +416,6 @@
 	    <path
 		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
 	</svg>
-	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/afficherReponse.min.js"></script>
-<script src="/js/search.min.js"></script>
+	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/search.min.js"></script>
 </body>
 </html>

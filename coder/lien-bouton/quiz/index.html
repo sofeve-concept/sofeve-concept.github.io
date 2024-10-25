@@ -67,6 +67,7 @@
 					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/">Structure de base</a></li>
               			<li><a href="/motifs/navigations/">Systèmes de navigation</a></li>
               			<li><a href="/motifs/formulaires/">Formulaire</a></li>
+              			<li><a href="/motifs/dynamiques/">Composants javascript</a></li>
               			<li><a href="/motifs/purcss/">En pur CSS</a></li>
               			</ul>
 			    </li>
@@ -174,146 +175,207 @@
 		<h1 id="contenu">Quiz récap&#39;</h1>
                <p>Quiz récap&#39; sur les liens et les boutons.</p>
 
-<table id="quiz" class="quiz">
-            <thead>
-              <tr>
-                <th scope="col">N°</th>
-                <th scope="col">Question</th>
-                <th scope="col">Votre réponse</th>
-                <th scope="col"><button onclick="afficherReponse();">Afficher les réponses</button></th>
-              </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <th scope="row">1</td>
-            <td><label for="q1">Un lien <code>&lt;a></code> doit être utilisé pour télécharger un fichier&nbsp;: </label>
-                <br>
-                <ol>
-                    <li>Vrai</li>
-                    <li>Faux</li>
-                </ol>
-            </td>
-            <td><input type="text" class="soluce" id="q1" name="reponse1"></td>
-            <td><b>Réponse a</b><br>Dans le cas d'un téléchargement de fichier une bonne pratique consiste aussi à indiquer le format du fichier (pdf, jpg...) ainsi que son poids.
-            </td>
-            </tr>
-            <tr>
-            <th scope="row">2</td>
-            <td><label for="q2">Quelle est la bonne syntaxe&nbsp;?</label> <br>
-                <ol>
-                <li><code>&lt;a href="navigation.html">Lire la suite&lt;/a></code></li>
-                <li><code>&lt;a href="navigation.html" title="Système de navigation">Lire la suite&lt;/a></code></li>
-                <li><code>&lt;a href="navigation.html" title="Lire la suite sur le système de navigation">Lire la suite&lt;/a></code></li>
-                <li><code>&lt;a href="navigation.html" title="Système de navigation - Lire la suite">Lire la suite&lt;/a></code></li>
-                </ol>
-                </td>
-            <td><input type="text" class="soluce" id="q2" name="reponse2"></td>
-            <td><b>Réponse c</b><br>Le libellé du lien n’est pas suffisamment explicite, on rajoute donc l’attribut title sur le lien. L'attribut title doit <strong>toujours</strong> reprendre en premier le libellé du lien.</td>
-            </tr>
-            <tr>
-            <th scope="row">3</td>
-            <td><label for="q3">Quelle est la bonne syntaxe&nbsp;?</label>
-            <br>
-                <ol>
-                <li><code>&lt;a href="index.html" title="Mon Site Web - Accueil du site">&lt;img src="images/logo.png" alt="">&lt;/a></code></li>
-                   <li><code>&lt;a href="index.html">&lt;img src="images/logo.png" alt="Mon Site Web - Accueil du site">&lt;/a></code></li>
-                   <li><code>&lt;a href="index.html" title="Mon Site Web - Accueil du site">&lt;img src="images/logo.png" alt="Mon Site Web - Accueil du site">&lt;/a></code></li>
-                </ol>
-            </td>
-            <td><input type="text" class="soluce" id="q3" name="reponse3"></td>
-            <td><b>Réponse b</b><br>Lorsque le lien est posé sur une image, on ne renseignera pas l’attribut title du lien et mais on renseignera l’attribut alt de l’image.</td>
-            </tr>
-            <tr>
-            <th scope="row">4</td>
-            <td><label for="q4">Quelle est la bonne syntaxe pour un lien image et texte&nbsp;?</label> <br>
-                <ol>
-                    <li><code>&lt;a href="#" class="image-accueil">&lt;span class="lu-uniquement-par-lecteur-ecran">Accueil&lt;/span>&lt;/a></code></li>
-                    <li><code>&lt;a href="#" class="image-accueil" title="Accueil">&lt;/a></code></li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q4" name="reponse4"></td>
-            <td><b>Réponse a</b><br>
-           L’image est insérée via CSS et le texte est caché via CSS. <br>
-           Le deuxième exemple n'est pas conforme car le lien est considéré comme vide.
-           </td>
-            </tr>
-            <tr>
-            <th scope="row">5</td>
-            <td><label for="q5">Dans un menu déroulant, un bouton doit être utilisé sur la rubrique parente (celle qui permet d'afficher le sous-menu)</label> <br>
-                <ol>
-                    <li>Oui</li>
-                    <li>Non</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q5" name="reponse5"></td>
-            <td><b>Réponse a</b>
-           </td>
-            </tr>
-            <tr>
-            <th scope="row">6</td>
-            <td><label for="q6">Pour afficher l’élément suivant ou précédent dans un carrousel, on utilise</label> <br>
-                <ol>
-                    <li>Un lien</li>
-                    <li>Un bouton</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q6" name="reponse6"></td>
-            <td><b>Réponse b</b></td>
-            </tr>
-            <tr>
-            <th scope="row">7</td>
-            <td><label for="q7">Quelle est la bonne syntaxe pour ouvrir un lien, par défaut, dans un nouvel onglet du navigateur&nbsp;?</label> <br>
-                <ol>
-                    <li><code>&nbsp;a href="https://sofeve-concept.github.io" target="_blank">sofeve-concept.github.io&nbsp;/a></code></li>
-                    <li><code>&nbsp;a href="https://sofeve-concept.github.io" target="_blank" rel="noopener noreferrer" title="Ouvrir dans une nouvelle fenêtre">sofeve-concept.github.io&nbsp;/a></code></li>
-                    <li><code>&nbsp;a href="https://sofeve-concept.github.io" target="_blank" title="sofeve-concept.github.io - nouvelle fenêtre">sofeve-concept.github.io&nbsp;/a></code></li>
-                    <li><code>&nbsp;a href="https://sofeve-concept.github.io" target="_blank" rel="noopener noreferrer" title="sofeve-concept.github.io - nouvelle fenêtre">sofeve-concept.github.io&nbsp;/a></code></li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q7" name="reponse7"></td>
-            <td><b>Réponse d</b><br>Comme le lien ouvre par défaut dans une nouvelle fenêtre, il est considéré comme non explicite. Il faut donc lui rajouter l'attribut title. L'attribut title doit <b>toujours</b> reprendre en premier le libellé du lien.<br>
-            L'attribut rel="noopener noreferrer" sert à sécuriser le lien notamment des attaques de phishing. 
-            </td>
-            </tr>
-            <tr>
-            <th scope="row">8</td>
-            <td><label for="q8">Pour valider une inscription via un formulaire, on utilise</label> <br>
-                <ol>
-                    <li>Un bouton</li>
-                    <li>Un lien</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q8" name="reponse8"></td>
-            <td><b>Réponse a</b></td>
-            </tr>
-            <tr>
-            <th scope="row">9</td>
-            <td><label for="q9">Quel est le bon libellé pour identifier une action permettant de s'incrire via un formulaire&nbsp;?</label> <br>
-                <ol>
-                    <li>OK</li>
-                    <li>Valider</li>
-                    <li>Confirmer l’inscription</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q9" name="reponse9"></td>
-            <td><b>Réponse c</b>
-            </td>
-            </tr>
-            <tr>
-            <th scope="row">10</td>
-            <td><label for="q10">Qu'appelle-t-on lien composite&nbsp;?</label> <br>
-                <ol>
-                    <li>Un lien composé avec un bouton</li>
-                    <li>Un lien composé d'une image et d'un texte</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q10" name="reponse10"></td>
-            <td><b>Réponse b</b>
-            </td>
-            </tr>
-            </tbody>
-            </table>
+<div id="quiz">  
+    
+    <div class="quiz">
+    
+       <h2>Je dois proposer le téléchargement d&#39;un fichier avec l&#39;élément HTML a.</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i1" aria-label="Déplier Afficher la réponse à la question 1">
+     Afficher la réponse à la question 1
+</button>
+<div id="i1" role="region" tabindex="-1">
+<p><b>Réponse a - Vrai</b><br>
+Dans le cas d'un téléchargement de fichier une bonne pratique consiste aussi à indiquer le format du fichier (pdf, jpg...) ainsi que son poids.</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Dans le cas d&#39;une collection de liens « Lire la suite », quelle est la bonne syntaxe ?</h2>
+        <div>
+            <ol>
+<li><code>&lt;a href=&quot;navigation.html&quot;&gt;Lire la suite&lt;/a&gt;</code></li>
+<li><code>&lt;a href=&quot;navigation.html&quot; title=&quot;La recette du gâteau à l'orange&quot;&gt;Lire la suite&lt;/a&gt;</code></li>
+<li><code>&lt;a href=&quot;navigation.html&quot; title=&quot;Lire la suite - La recette du gâteau à l'orange&quot;&gt;Lire la suite&lt;/a&gt;</code></li>
+<li><code>&lt;a href=&quot;navigation.html&quot; title=&quot;La recette du gâteau à l'orange - Lire la suite&quot;&gt;Lire la suite&lt;/a&gt;</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i2" aria-label="Déplier Afficher la réponse à la question 2">
+     Afficher la réponse à la question 2
+</button>
+<div id="i2" role="region" tabindex="-1">
+<p><b>Réponse c - <code>&lt;a href="navigation.html" title="Lire la suite - La recette du gâteau à l'orange"&gt;Lire la suite&lt;/a&gt;</code></b><br>
+Le libellé du lien n’est pas suffisamment explicite, on rajoute donc l’attribut title sur le lien. L'attribut title doit <b>toujours reprendre en premier le libellé du lien</b>.</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Dans le cas d&#39;un logo de site qui sert de lien vers la page d&#39;accueil, quelle est la bonne syntaxe ?</h2>
+        <div>
+            <ol>
+<li><code>&lt;a href=&quot;index.html&quot; title=&quot;Mon Site Web - Accueil du site&quot;&gt;&lt;img src=&quot;images/logo.png&quot; alt=&quot;&quot;&gt;&lt;/a&gt;</code></li>
+<li><code>&lt;a href=&quot;index.html&quot;&gt;&lt;img src=&quot;images/logo.png&quot; alt=&quot;Mon Site Web - Accueil du site&quot;&gt;&lt;/a&gt;</code></li>
+<li><code>&lt;a href=&quot;index.html&quot; title=&quot;Mon Site Web - Accueil du site&quot;&gt;&lt;img src=&quot;images/logo.png&quot; alt=&quot;Mon Site Web - Accueil du site&quot;&gt;&lt;/a&gt;</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i3" aria-label="Déplier Afficher la réponse à la question 3">
+     Afficher la réponse à la question 3
+</button>
+<div id="i3" role="region" tabindex="-1">
+<p><b>Réponse b - <code>&lt;a href="index.html"&gt;&lt;img src="images/logo.png" alt="Mon Site Web - Accueil du site"&gt;&lt;/a&gt;</code></b><br>
+Lorsque le lien est posé sur une image seule, c'est l’attribut alt de l’image qui sert d'intitulé au lien.</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Dans le cas d&#39;un lien posé sur une icône (exemple, un petit maison pour symboliser le retour à l&#39;accueil), quelle est la bonne syntaxe ?</h2>
+        <div>
+            <p>La classe de style <code>maison</code> implémente une icône en forme de maison.<br>
+La classe <code>sr-only</code> rend le texte invisible à l&rsquo;oeil nu et vocalisable par un logiciel de synthèse vocale.</p>
+<ol>
+<li><code>&lt;a href=&quot;#&quot; class=&quot;maison&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Accueil&lt;/span&gt;&lt;/a&gt;</code></li>
+<li><code>&lt;a href=&quot;#&quot; class=&quot;maison&quot; title=&quot;Accueil&quot;&gt;&lt;/a&gt;</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i4" aria-label="Déplier Afficher la réponse à la question 4">
+     Afficher la réponse à la question 4
+</button>
+<div id="i4" role="region" tabindex="-1">
+<p><b>Réponse a - <code>&lt;a href="#" class="maison"&gt;&lt;span class="sr-only"&gt;Accueil&lt;/span&gt;&lt;/a&gt;</code></b><br>
+Le deuxième exemple n'est pas conforme car le lien est considéré comme vide.</p>
+</div>
  
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Dans un menu déroulant, un bouton doit être utilisé sur la rubrique parente (celle qui permet d&#39;afficher le sous-menu).</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i5" aria-label="Déplier Afficher la réponse à la question 5">
+     Afficher la réponse à la question 5
+</button>
+<div id="i5" role="region" tabindex="-1">
+<p><b>Réponse a - Vrai</b><br>
+Le bouton affiche un sous-menu. Il s'agit donc d'un composant interactif qui ne pointe pas vers une autre page.
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Pour afficher l’élément suivant ou précédent dans un carrousel, on utilise :</h2>
+        <div>
+            <ol>
+<li>un lien</li>
+<li>un bouton</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i6" aria-label="Déplier Afficher la réponse à la question 6">
+     Afficher la réponse à la question 6
+</button>
+<div id="i6" role="region" tabindex="-1">
+<p><b>Réponse b - <code>un bouton</code></b><br>
+Le bouton est composant interactif qui ne pointe pas vers une autre page.
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Pour ouvrir un lien par défaut dans un nouvel onglet du navigateur, quelle est la bonne syntaxe ?</h2>
+        <div>
+            <ol>
+<li><code>&lt;a href=&quot;https://sofeve-concept.github.io&quot; target=&quot;_blank&quot;&gt;sofeve-concept.github.io&lt;/a&gt;</code></li>
+<li><code>&lt;a href=&quot;https://sofeve-concept.github.io&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Ouvrir dans une nouvelle fenêtre&quot;&gt;sofeve-concept.github.io&lt;/a&gt;</code></li>
+<li><code>&lt;a href=&quot;https://sofeve-concept.github.io&quot; target=&quot;_blank rel=&quot;noopener noreferrer&quot; title=&quot;Ouvrir dans une nouvelle fenêtre - sofeve-concept.github.io&quot;&gt;sofeve-concept.github.io&lt;/a&gt;</code></li>
+<li><code>&lt;a href=&quot;https://sofeve-concept.github.io&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;sofeve-concept.github.io (nouvelle fenêtre)&quot;&gt;sofeve-concept.github.io&lt;/a&gt;</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i7" aria-label="Déplier Afficher la réponse à la question 7">
+     Afficher la réponse à la question 7
+</button>
+<div id="i7" role="region" tabindex="-1">
+<p><b>Réponse d - <code>&lt;a href="https://sofeve-concept.github.io" target="_blank" rel="noopener noreferrer" title="sofeve-concept.github.io  (nouvelle fenêtre)"&gt;sofeve-concept.github.io&lt;;/a&gt;</code></b><br>
+Comme le lien ouvre par défaut dans une nouvelle fenêtre, il est considéré comme non explicite. Il faut donc lui rajouter l'attribut title.<br>L'attribut title doit toujours reprendre en premier le libellé du lien.<br>
+Enfin, l'attribut rel="noopener noreferrer" sert à sécuriser le lien notamment contre des attaques de phishing. 
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Pour valider une inscription via un formulaire, on utilise</h2>
+        <div>
+            <ol>
+<li>un lien</li>
+<li>un bouton</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i8" aria-label="Déplier Afficher la réponse à la question 8">
+     Afficher la réponse à la question 8
+</button>
+<div id="i8" role="region" tabindex="-1">
+<p><b>Réponse b - un bouton</b><br>
+La soumission du formulaire est un composant interactif ; en effet, un traitement des informations renseignées est réalisé.
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Quel est le bon libellé pour identifier une action permettant de s&#39;incrire via un formulaire ?</h2>
+        <div>
+            <ol>
+<li>OK</li>
+<li>Valider</li>
+<li>Confirmer l’inscription</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i9" aria-label="Déplier Afficher la réponse à la question 9">
+     Afficher la réponse à la question 9
+</button>
+<div id="i9" role="region" tabindex="-1">
+<p><b>Réponse c - Confirmer l’inscription</b><br>
+Il s'agit d'être le plus précis possible dans l'action qui est réalisée.
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Dans le cas d&#39;un lien composite (image et texte), quelle est la bonne syntaxe ?</h2>
+        <div>
+            <ol>
+<li><code>&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;img/home.png&quot; alt=&quot;&quot; /&gt;Accueil&lt;/a&gt;</code></li>
+<li><code>&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;img/home.png&quot; alt=&quot;Accueil&quot; /&gt;Accueil&lt;/a&gt;</code></li>
+<li><code>&lt;a href=&quot;#&quot; title=&quot;Accueil&quot;&gt;&lt;img src=&quot;img/home.png&quot; alt=&quot;Accueil&quot; /&gt;Accueil&lt;/a&gt;</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i10" aria-label="Déplier Afficher la réponse à la question 10">
+     Afficher la réponse à la question 10
+</button>
+<div id="i10" role="region" tabindex="-1">
+<p><b>Réponse a - <code>&lt;a href="#">&lt;img src="img/home.png" alt="" />Accueil</code></b><br>
+L'intitulé du lien sera vocalisé. Il n'y a donc pas besoin de rajouter de l'information.<br>
+Dans le cas b, « Accueil » sera vocalisé 2 fois avec un synthèse vocale ; dans le cas c, 3 fois !
+</p>
+</div> 
+        </div>
+    </div>
+    
+</div>
 
      </section>
 </main>
@@ -368,7 +430,6 @@
 	    <path
 		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
 	</svg>
-	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/afficherReponse.min.js"></script>
-<script src="/js/search.min.js"></script>
+	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/search.min.js"></script>
 </body>
 </html>

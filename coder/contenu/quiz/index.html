@@ -67,6 +67,7 @@
 					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/">Structure de base</a></li>
               			<li><a href="/motifs/navigations/">Systèmes de navigation</a></li>
               			<li><a href="/motifs/formulaires/">Formulaire</a></li>
+              			<li><a href="/motifs/dynamiques/">Composants javascript</a></li>
               			<li><a href="/motifs/purcss/">En pur CSS</a></li>
               			</ul>
 			    </li>
@@ -179,148 +180,216 @@
 		<h1 id="contenu">Quiz récap&#39;</h1>
                <p>Quiz récap&#39; sur le contenu d&#39;une page HTML</p>
 
-<table id="quiz" class="responsive style2">
-            <thead>
-              <tr>
-                <th scope="col">N°</th>
-                <th scope="col">Question</th>
-                <th scope="col">Votre réponse</th>
-                <th scope="col"><button onclick="afficherReponse();">Afficher les réponses</button></th>
-              </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <th scope="row">1</th>
-            <td><label for="q1">La taille de base de la police de caractère sur le web est&nbsp:</label>
-                <br>
-                <ol>
-                    <li>10pt</li>
-                    <li>12px</li>
-                    <li>1em</li>
-                </ol>
-            </td>
-            <td><input type="text" class="soluce" id="q1" name="reponse1"></td>
-            <td><b>Réponse c</b><br>1em (cadratin) (= 12pt = 16px)<br>
-             Avec la multiplication des tailles d’écran et de types d’appareils sur lesquels l’utilisateur affiche une page web au 21ème siècle (écran d’ordinateur de bureau, écran d’ordinateur portable, smartphone, tablette), la taille de base de la police de caractère sur le web est de 1em.
-            </td>
-            </tr>
-            <tr>
-            <th scope="row">2</th>
-            <td><label for="q2">Pour rendre la lecture d'un article agréable, le texte est justifié.</label> <br>
-                <ol>
-                    <li>Vrai</li>
-                    <li>Faux</li>
-                    </ol>
-                </td>
-            <td><input type="text" class="soluce" id="q2" name="reponse2"></td>
-            <td><b>Réponse b</b><br>
-            Faux ; avec du texte justifé, le lecteur dyslexique perd visuellement son emplacement de lecture.</td>
-            </tr>
-            <tr>
-            <th scope="row">3</th>
-            <td><label for="q3">Pour afficher un titre en majuscules, on utilisera une déclaration de style du type <code>text-transform: "uppercase";</code> plutôt que d'écrire directement en majuscules.</label>
-            <br>
-                <ol>
-                    <li>Vrai</li>
-                    <li>Faux</li>
-                </ol>
-            </td>
-            <td><input type="text" class="soluce" id="q3" name="reponse3"></td>
-            <td><b>Réponse a</b><br>
-            Cela a l'avantage de conserver les lettres accentuées et, en cas de désactivation des feuilles de styles, de faciliter la lecture du texte.<br>
-            Le texte écrit tout en majuscules est réservée aux textes très courts comme les titres, sigles...</td>
-            </tr>
-            <tr>
-            <th scope="row">4</th>
-            <td><label for="q4">La hiérarchisation du texte se fait à l'aide de balises de titraille <code>&lt;h1>, &lt;h2>...</code></label> <br>
-                <ol>
-                    <li>Oui</li>
-                    <li>Non</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q4" name="reponse4"></td>
-            <td><b>Réponse a</b><br>
-           Oui. Le contenu du document est hiérarchisé à l’aide déléments de titraille (balises allant de &lt;h1>...&lt;/h1> à &lt;h6>...&lt;/h6>); S’il est possible d’aller au delà du niveau 6, mieux vaut repenser la hériarchisation de sa page.</td>
-            </tr>
-            <tr>
-            <th scope="row">5</th>
-            <td><label for="q5">On peut trouver plusieurs fois une balise &lt;h1> dans une page web ; ce n'est pas une erreur HTML.</label> <br>
-                <ol>
-                    <li>Oui</li>
-                    <li>Non</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q5" name="reponse5"></td>
-            <td><b>Réponse a</b><br>
-            Oui, même si une bonne pratique consiste à n'en proposer qu'une seule par page, le plus souvent identique au titre de la page (balise &lt;title> du document HTML).</td>
-            </tr>
-            <tr>
-            <th scope="row">6</th>
-            <td><label for="q6">Dans une page, une bonne pratique consiste à ne pas avoir de « trou » dans la hiérarchie de numérotation des titres (on évite de passer de &lt;h2> à &lt;h4>, par exemple, sans proposer de &lt;h3>) même si cela n'est pas invalidé par le RGAA .</label> <br>
-                <ol>
-                    <li>Vrai</li>
-                    <li>Faux</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q6" name="reponse6"></td>
-            <td><b>Réponse a</b><br>
-            Oui. Même si des « trous » dans la numérotation n'est pas une erreur au sens du RGAA, elle déconcerte beaucoup l'utilisateur qui a recours à des logiciels de synthèse vocale.</td>
-            </tr>
-            <tr>
-            <th scope="row">7</th>
-            <td><label for="q7">Une liste ordonnée est utilisée pour présenter un fil d'ariane.</label> <br>
-                <ol>
-                     <li>Vrai</li>
-                    <li>Faux</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q7" name="reponse7"></td>
-            <td><b>Réponse a</b><br>
-           Les balises de liste ordonnée sont utilisées pour présenter un fil d’ariane, un processus par étape, un système de pagination et toute sorte de liste dont l'ordre des items a de l'importance.</td>
-            </tr>
-            <tr>
-            <th scope="row">8</th>
-            <td><label for="q8">Pour chaque élément de texte, l'interligne (<code>line-height</code>) doit être de</label> <br>
-                <ol>
-                    <li>1</li>
-                    <li>1.5</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q8" name="reponse8"></td>
-            <td><b>Réponse b</b><br>
-            1.5. la déclaration css est <code>line-height: 1.5;</code></td>
-            </tr>
-            <tr>
-            <th scope="row">9</th>
-            <td><label for="q9">Dans une liste de définitions (balises <code>dl, dt et dd</code>)</label> <br>
-                <ol>
-                    <li>On peut avoir plusieurs <code>dt</code> pour un seul <code>dd</code> </li>
-                    <li>On peut avoir plusieurs <code>dd</code> pour un seul <code>dt</code></li>
-                    <li>On peut avoir plusieurs <code>dt</code> pour plusieurs <code>dd</code></li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q9" name="reponse9"></td>
-            <td><b>Réponse c</b><br>
-            Il est possible d’associer plusieurs éléments <code>&lt;dt&gt;...&lt;/dt&gt;</code> (terme à définir) pour plusieurs éléments <code>&lt;dd&gt;...&lt;/dd&gt;</code> (définition du terme)
-.            </td>
-            </tr>
-            <tr>
-            <th scope="row">10</th>
-            <td><label for="q10">Quels éléments HTML utilise-t-on pour typer les citations ?</label> <br>
-                <ol>
-                    <li><code>span</code>, auquel on rajoute une classe de style qui insére des guillements, pour une citation à l'intérieur d'un paragraphe, <code>p</code>, auquel on rajoute une classe de style qui insére des guillements, pour une citation complète.</li>
-                    <li><code>q</code> pour une citation à l'intérieur d'un paragraphe, <code>blockquote</code> pour une citation complète.</li>
-                    <li><code>blockquote</code> pour une citation à l'intérieur d'un paragraphe, <code>q</code> pour une citation complète.</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q10" name="reponse10"></td>
-            <td><b>Réponse b</b><br>
-            Chaque bloc de citation doit être structuré au moyen d’un élément <code>blockquote</code> ; Une citation courte insérée dans un paragraphe doit être structurée au moyen d’un élément <code>q</code>.
-            </td>
-            </tr>
-            </tbody>
-            </table>
- 
+<div id="quiz">  
+    
+    <div class="quiz">
+    
+       <h2>La taille de base de la police de caractère sur le web est :</h2>
+        <div>
+            <ol>
+<li>10pt</li>
+<li>12px</li>
+<li>1em</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i1" aria-label="Déplier Afficher la réponse à la question 1">
+     Afficher la réponse à la question 1
+</button>
+<div id="i1" role="region" tabindex="-1">
+<p><b>Réponse c - 1em</b><br>
+1em (cadratin) (1em = 12pt = 16px)<br>
+Avec la multiplication des tailles d’écran et de types d’appareils sur lesquels l’utilisateur affiche une page web au 21ème siècle (écran d’ordinateur de bureau, écran d’ordinateur portable, smartphone, tablette), la taille de base de la police de caractère sur le web est de 1em.</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Pour rendre la lecture d&#39;un article agréable, le texte peut être justifié.</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i2" aria-label="Déplier Afficher la réponse à la question 2">
+     Afficher la réponse à la question 2
+</button>
+<div id="i2" role="region" tabindex="-1">
+<p><b>Réponse b - Faux</b><br>
+Avec du texte justifé, le lecteur présentant des troubles cognitifs ou un handicap type dyslexie perd visuellement son emplacement de lecture.</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Pour afficher un titre en majuscules, on utilisera une déclaration de style du type text-transform: &#39;uppercase&#39; plutôt que d&#39;écrire directement en majuscules.</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i3" aria-label="Déplier Afficher la réponse à la question 3">
+     Afficher la réponse à la question 3
+</button>
+<div id="i3" role="region" tabindex="-1">
+<p><b>Réponse a - Vrai</b><br>
+Cela présente l'avantage de conserver les lettres accentuées et, en cas de désactivation des feuilles de styles, de faciliter la lecture du texte.<br>
+N.B. Le texte écrit tout en majuscules est réservée aux textes très courts comme les titres, sigles...</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>La hiérarchisation du texte se fait à l&#39;aide de balises de titraille &amp;lt;h1&gt;, &amp;lt;h2&gt;...</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i4" aria-label="Déplier Afficher la réponse à la question 4">
+     Afficher la réponse à la question 4
+</button>
+<div id="i4" role="region" tabindex="-1">
+<p><b>Réponse a - Vrai</b><br>
+Le contenu du document est hiérarchisé à l’aide déléments de titraille (balises allant de &lt;h1>...&lt;/h1> à &lt;h6>...&lt;/h6>); S’il est possible d’aller au delà du niveau 6, mieux vaut repenser la hériarchisation de sa page.</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>On peut trouver plusieurs fois une balise &amp;lt;h1&gt; dans une page web ; ce n&#39;est pas une erreur HTML.</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i5" aria-label="Déplier Afficher la réponse à la question 4">
+     Afficher la réponse à la question 4
+</button>
+<div id="i5" role="region" tabindex="-1">
+<p><b>Réponse a - Vrai</b><br>
+Même si une bonne pratique consiste à n'en proposer qu'une seule par page, le plus souvent identique au titre de la page (balise &lt;title> du document HTML). Cette pratique est utile pour le SEO (référencement naturel des pages).
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Dans une page, une bonne pratique consiste à ne pas avoir de « trou » dans la hiérarchie de numérotation des titres (on évite de passer de &amp;lt;h2&gt; à &amp;lt;h4&gt;, par exemple, sans proposer de &amp;lt;h3&gt;).</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i6" aria-label="Déplier Afficher la réponse à la question 6">
+     Afficher la réponse à la question 6
+</button>
+<div id="i6" role="region" tabindex="-1">
+<p><b>Réponse a - Vrai</b><br>
+Même si avoir des « trous » dans la numérotation n'est pas une erreur au sens du RGAA, elle déconcerte beaucoup l'utilisateur qui a recours à des logiciels de synthèse vocale. Hors, nous écrivons pour ête lu et compris...
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Une liste ordonnée est utilisée pour présenter un fil d&#39;ariane.</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i7" aria-label="Déplier Afficher la réponse à la question 7">
+     Afficher la réponse à la question 7
+</button>
+<div id="i7" role="region" tabindex="-1">
+<p><b>Réponse a - Vrai</b><br>
+Les balises de liste ordonnée sont utilisées pour présenter un fil d’ariane, un processus par étape et toute sorte de liste dont l'ordre des items a de l'importance.
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Pour chaque élément de texte, l&#39;interligne (line-height) doit être de :</h2>
+        <div>
+            <ol>
+<li>1</li>
+<li>1.5</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i8" aria-label="Déplier Afficher la réponse à la question 8">
+     Afficher la réponse à la question 8
+</button>
+<div id="i8" role="region" tabindex="-1">
+<p><b>Réponse b - 1.5</b><br>
+1.5. la déclaration css est <code>line-height: 1.5;</code>
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Dans une liste de définitions (balises dl, dt et dd)</h2>
+        <div>
+            <ol>
+<li>On peut avoir plusieurs <code>dt</code> pour un seul <code>dd</code></li>
+<li>On peut avoir plusieurs <code>dd</code> pour un seul <code>dt</code></li>
+<li>On peut avoir plusieurs <code>dt</code> et plusieurs <code>dd</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i9" aria-label="Déplier Afficher la réponse à la question 9">
+     Afficher la réponse à la question 9
+</button>
+<div id="i9" role="region" tabindex="-1">
+<p><b>Réponse c</b><br>
+Il est possible d’associer plusieurs éléments <code>&lt;dt&gt;...&lt;/dt&gt;</code> (terme à définir) pour plusieurs éléments <code>&lt;dd&gt;...&lt;/dd&gt;</code> (définition du terme)
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Quels éléments HTML utilise-t-on pour typer les citations ?</h2>
+        <div>
+            <ol>
+<li>Pour un citation :
+<ul>
+<li>à l&rsquo;intérieur d&rsquo;un paragraphe : <code>span</code></li>
+<li>citation complète : <code>p</code></li>
+</ul>
+</li>
+<li>Pour un citation :
+<ul>
+<li>à l&rsquo;intérieur d&rsquo;un paragraphe : <code>q</code></li>
+<li>citation complète : <code>blockquote</code></li>
+</ul>
+</li>
+<li>Pour un citation :
+<ul>
+<li>à l&rsquo;intérieur d&rsquo;un paragraphe : <code>blockquote</code></li>
+<li>citation complète : <code>q</code></li>
+</ul>
+</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i10" aria-label="Déplier Afficher la réponse à la question 10">
+     Afficher la réponse à la question 10
+</button>
+<div id="i10" role="region" tabindex="-1">
+<p><b>Réponse b</b><br>
+Chaque bloc de citation doit être structuré au moyen d’un élément <code>blockquote</code> qui marquera un bloc de citation (<em>block</em>quote comme <em>bloc</em> de citation) ;<br>
+La citation courte insérée dans un paragraphe doit être structurée au moyen d’un élément <code>q</code> (<em>q</em> est un élément « court»).
+</p>
+</div> 
+        </div>
+    </div>
+    
+</div>
 
      </section>
 </main>
@@ -375,7 +444,6 @@
 	    <path
 		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
 	</svg>
-	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/afficherReponse.min.js"></script>
-<script src="/js/search.min.js"></script>
+	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/search.min.js"></script>
 </body>
 </html>

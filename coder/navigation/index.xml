@@ -12,7 +12,7 @@
       <link>https://sofeve-concept.github.io/coder/navigation/a-propos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/coder/navigation/a-propos/</guid>
-      <description>Ce qu&amp;rsquo;il faut retenir Pour un site qui comporte plus de 5 pages différentes, il faut veiller à prévoir au moins 2 systèmes de navigation parmi :</description>
+      <description>Ce qu&amp;rsquo;il faut retenir Apparence et positionnement L&amp;rsquo;apparence et le positionnement du menu principal doit être cohérent sur toutes les pages du site (le menu est placé au même endroit sur toutes les pages, le visuel est identique).</description>
     </item>
     <item>
       <title>Lien d&#39;accès rapide</title>
@@ -54,7 +54,7 @@
       <link>https://sofeve-concept.github.io/coder/navigation/quiz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/coder/navigation/quiz/</guid>
-      <description>N°&#xD;Question&#xD;Votre réponse&#xD;Afficher les réponses&#xD;1&#xD;Un site doit proposer au moins 2 systèmes de navigation parmi un menu de navigation et un plan du site ou un menu de navigation et un moteur de recherche.</description>
+      <description>Dans quels cas dois-je proposer au moins deux systèmes de navigation différents dans mon site ?</description>
     </item>
   </channel>
 </rss>

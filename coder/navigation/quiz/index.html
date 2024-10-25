@@ -67,6 +67,7 @@
 					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/">Structure de base</a></li>
               			<li><a href="/motifs/navigations/">Systèmes de navigation</a></li>
               			<li><a href="/motifs/formulaires/">Formulaire</a></li>
+              			<li><a href="/motifs/dynamiques/">Composants javascript</a></li>
               			<li><a href="/motifs/purcss/">En pur CSS</a></li>
               			</ul>
 			    </li>
@@ -178,144 +179,213 @@
 		<h1 id="contenu">Quiz récap&#39;</h1>
                <p>Quiz récap&#39; sur la navigation.</p>
 
-<table id="quiz" class="responsive style2">
-            <thead>
-              <tr>
-                <th scope="col">N°</th>
-                <th scope="col">Question</th>
-                <th scope="col">Votre réponse</th>
-                <th scope="col"><button onclick="afficherReponse();">Afficher les réponses</button></th>
-              </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <th scope="row">1</td>
-            <td><label for="q1">Un site doit proposer au moins 2 systèmes de navigation parmi un menu de navigation et un plan du site ou un menu de navigation et un moteur de recherche. Cette règle s'applique lorsque le site propose au moins combien de page différentes (sans compter les pages de déclaration légale type mentions légales, page de contact)&nbsp;?
-</label>
-                <br>
-                <ol>
-                    <li>1 page</li>
-                    <li>3 pages</li>
-                    <li>5 pages</li>
-                </ol>
-            </td>
-            <td><input type="text" class="soluce" id="q1" name="reponse1"></td>
-            <td><b>Réponse c</b>
-            </td>
-            </tr>
-            <tr>
-            <th scope="row">2</td>
-            <td><label for="q2">L’élément <code>nav</code> peut-il être utilisé pour présenter une collection de liens pointant sur d'autres sites&nbsp;?</label> <br>
-                <ol>
-                    <li>Oui</li>
-                    <li>Non</li>
-                    </ol>
-                </td>
-            <td><input type="text" class="soluce" id="q2" name="reponse2"></td>
-            <td><b>Réponse b</b></td>
-            </tr>
-            <tr>
-            <th scope="row">3</td>
-            <td><label for="q3">L’élément <code>nav</code> peut-il être utilisé pour présenter une collection de liens pointant sur d'autres pages du site et placée entre les balises <code>&lt;footer role="contentinfo">...&lt;/footer></code>&nbsp;?</label>
-            <br>
-                <ol>
-                   <li>Oui</li>
-                    <li>Non</li>
-                </ol>
-            </td>
-            <td><input type="text" class="soluce" id="q3" name="reponse3"></td>
-            <td><b>Réponse b</b></td>
-            </tr>
-            <tr>
-            <th scope="row">4</td>
-            <td><label for="q4">L’élément <code>nav</code> peut-il être utilisé pour présenter une table des matières dans la page&nbsp;?</label> <br>
-                <ol>
-                    <li>Oui</li>
-                    <li>Non</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q4" name="reponse4"></td>
-            <td><b>Réponse a</b><br>
-           Oui. Une table des matières est considérée comme un menu de navigation secondaire.</td>
-            </tr>
-            <tr>
-            <th scope="row">5</td>
-            <td><label for="q5">Un lien d'accès rapide au contenu identifié par l’élément <code>&lt;main role="main"></code> doit toujours être proposé.</label> <br>
-                <ol>
-                    <li>Oui</li>
-                    <li>Non</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q5" name="reponse5"></td>
-            <td><b>Réponse a</b>
-           </td>
-            </tr>
-            <tr>
-            <th scope="row">6</td>
-            <td><label for="q6">Un fil d'ariane doit être proposé sur toutes les pages y compris la page d'accueil.</label> <br>
-                <ol>
-                    <li>Vrai</li>
-                    <li>Faux</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q6" name="reponse6"></td>
-            <td><b>Réponse b</b><br>
-            Faux. Le fil d'ariane ne doit être proposé que sur les pages « filles » d'un site web et doit présenter tout le chemin à parcourir pour arriver sur la page affichée ainsi que le nom de la page affichée. Une bonne pratique consiste à rendre cliquable les différents items du fil d'ariane sauf le dernier correspondant à la page en cours.</td>
-            </tr>
-            <tr>
-            <th scope="row">7</td>
-            <td><label for="q7">Dans un fil d'ariane, le dernier item (représentant la page en cours) doit avoir pour attribut aria</label> <br>
-                <ol>
-                    <li><code>aria-current="true"</code></li>
-                    <li><code>aria-current="page"</code></li>
-                    <li><code>aria-current="step"</code></li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q7" name="reponse7"></td>
-            <td><b>Réponse b</b></td>
-            </tr>
-            <tr>
-            <th scope="row">8</td>
-            <td><label for="q8">Les différentes étapes d'un processus par étapes seront balisés avec une liste ordonnée (<code>&lt;ol></code>) </label> <br>
-                <ol>
-                    <li>Vrai</li>
-                    <li>Faux</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q8" name="reponse8"></td>
-            <td><b>Réponse a</b><br>
-            Les différentes étapes du processus seront balisées par un liste ordonnée car l’ordre des items a de l’importance. La numérotation automatique de la liste ordonnée pourra être supprimée via CSS.</td>
-            </tr>
-            <tr>
-            <th scope="row">9</td>
-            <td><label for="q9">Dans un processus par étape, l’étape en cours sera balisée avec l’attribut aria</label> <br>
-                <ol>
-                    <li><code>aria-current="true"</code></li>
-                    <li><code>aria-current="page"</code></li>
-                    <li><code>aria-current="step"</code></li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q9" name="reponse9"></td>
-            <td><b>Réponse c</b>
-            </td>
-            </tr>
-            <tr>
-            <th scope="row">10</td>
-            <td><label for="q10">Dans un menu de navigation déroulant, l'item parent de la page en cours (page en cours atteignable via le sous-menu) sera balisé : </label> <br>
-                <ol>
-                    <li><code>&lt;a [...] aria-current="true"></code></li>
-                    <li><code>&lt;a [...] aria-current="page"></code></li>
-                    <li><code>&lt;button [...] aria-current="true"></code></li>
-                    <li><code>&lt;button [...] aria-current="page"></code></li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q10" name="reponse10"></td>
-            <td><b>Réponse c</b>
-            </td>
-            </tr>
-            </tbody>
-            </table>
+<div id="quiz">  
+    
+    <div class="quiz">
+    
+       <h2>Dans quels cas dois-je proposer au moins deux systèmes de navigation différents dans mon site ?</h2>
+        <div>
+            <ol>
+<li>Dans tous les cas</li>
+<li>Lorsque le site proposent des pages de contenu non atteignables depuis la page d&rsquo;accueil en excluant les pages résultant d&rsquo;un processus type formulaire à étapes multiples.</li>
+<li>Lorsque le site proposent des pages de contenu non atteignables depuis la page d&rsquo;accueil même celles qui résultent d&rsquo;un processus type formulaire à étapes multiples.</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i1" aria-label="Déplier Afficher la réponse à la question 1">
+     Afficher la réponse à la question 1
+</button>
+<div id="i1" role="region" tabindex="-1">
+<p><b>Réponse 3</b><br>
+Un site doit proposer au moins 2 systèmes de navigation parmi un menu de navigation et un plan du site ou un menu de navigation et un moteur de recherche dès qu'il comporte des pages non atteignables depuis la page d'accueil. Les pages d’un ensemble de pages qui sont le résultat ou une partie d’un processus (un processus de paiement ou de prise de commande, par exemple) ne sont pas à prendre en compte pour l'évaluation de ce critère..</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>L’élément nav peut être utilisé pour présenter une collection de liens pointant sur d&#39;autres sites</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i2" aria-label="Déplier Afficher la réponse à la question 2">
+     Afficher la réponse à la question 2
+</button>
+<div id="i2" role="region" tabindex="-1">
+<p><b>Réponse b - Faux</b><br>
+L'élément <code>nav</code> identifie uniquement les liens utiles à la navigation <b>dans</b> le site.</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>L’élément nav peut être utilisé pour présenter une table des matières de la page en cours.</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i3" aria-label="Déplier Afficher la réponse à la question 3">
+     Afficher la réponse à la question 3
+</button>
+<div id="i3" role="region" tabindex="-1">
+<p><b>Réponse a - Vrai</b><br>
+Une table des matières est considérée comme un menu de navigation secondaire.</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Un lien d&#39;accès rapide au contenu identifié par l’élément main portant le rôle main doit toujours être proposé.</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i4" aria-label="Déplier Afficher la réponse à la question 4">
+     Afficher la réponse à la question 4
+</button>
+<div id="i4" role="region" tabindex="-1">
+<p><b>Réponse a - Vrai</b><br>
+Les critères 12.6 et 12.7 du RGAA requièrent la présence de liens d’évitement ou d’accès rapide aux zones de regroupement de contenus présentes dans plusieurs pages web, à savoir :</p>
+<ul>
+<li>zone d’en-tête (implémenté avec <code>&lt;header role="banner"&gt;</code>) ;</li>
+<li>zone de navigation principale (implémenté avec <code>&lt;nav role="navigation"&gt;</code>) ;</li>
+<li>zone de contenu principal (implémenté avec <code>&lt;main role="main"&gt;</code>) ;</li>
+<li>zone de pied de page (implémenté avec <code>&lt;footer role="contentinfo"&gt;</code>) ;</li>
+<li>et zone de moteur de recherche (implémenté avec <code>&lt;form role="search"&gt;</code>).</li>
+</ul>
+<p>Le critère 12.7 se concentre plus particulièrement sur le lien d’évitement ou d’accès rapide au contenu principal (implémenté avec <code>&lt;main role="main"&gt;</code>).</p>
+</div>
  
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Un fil d&#39;ariane doit être proposé sur toutes les pages y compris la page d&#39;accueil.</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i5" aria-label="Déplier Afficher la réponse à la question 5">
+     Afficher la réponse à la question 5
+</button>
+<div id="i5" role="region" tabindex="-1">
+<p><b>Réponse b - Faux</b><br>
+Le fil d'ariane ne doit être proposé que sur les pages « filles » d'un site web et doit présenter tout le chemin à parcourir pour arriver sur la page affichée ainsi que le nom de la page affichée. Une bonne pratique consiste à rendre cliquable les différents items du fil d'ariane sauf le dernier correspondant à la page en cours.
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Dans un fil d&#39;ariane, le dernier item (représentant la page en cours) doit avoir pour attribut aria :</h2>
+        <div>
+            <ol>
+<li><code>aria-current=&quot;true&quot;</code></li>
+<li><code>aria-current=&quot;page&quot;</code></li>
+<li><code>aria-current=&quot;step&quot;</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i6" aria-label="Déplier Afficher la réponse à la question 6">
+     Afficher la réponse à la question 6
+</button>
+<div id="i6" role="region" tabindex="-1">
+<p><b>Réponse b - <code>aria-current="page"</code></b><br>
+Le dernier lien correspondant à la page en cours sera codé de cette manière : <br>
+<code>&lt;li>&lt;a href="/chapitre/rubrique/page/" aria-current="page">Page en cours&lt;/a>&lt;/li></code>.<br>
+Une bonne pratique consiste à désactiver le lien en CSS avec le code suivant : <br>
+<code>[aria-current="page"] { pointer-events: none; }</code>
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Les différentes étapes d&#39;un processus par étapes seront balisés avec une liste ordonnée élément HTML ol.</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i7" aria-label="Déplier Afficher la réponse à la question 7">
+     Afficher la réponse à la question 7
+</button>
+<div id="i7" role="region" tabindex="-1">
+<p><b>Réponse a - Vrai</b><br>
+Les différentes étapes du processus seront balisées par un liste ordonnée car l’ordre des items a de l’importance. La numérotation automatique de la liste ordonnée pourra être supprimée via CSS.
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Dans un processus par étape, l’étape en cours sera balisée avec l’attribut aria :</h2>
+        <div>
+            <ol>
+<li><code>aria-current=&quot;true&quot;</code></li>
+<li><code>aria-current=&quot;page&quot;</code></li>
+<li><code>aria-current=&quot;step&quot;</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i8" aria-label="Déplier Afficher la réponse à la question 8">
+     Afficher la réponse à la question 8
+</button>
+<div id="i8" role="region" tabindex="-1">
+<p><b>Réponse 3 - <code>aria-current="step"</code></b><br>
+La valeur « step » indique l'étape du processus sur laquelle 'utilisateur se situe.
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Dans un menu de navigation déroulant, l&#39;item parent de la page en cours (page en cours atteignable via le sous-menu) sera balisé :</h2>
+        <div>
+            <ol>
+<li><code>&lt;a aria-current=&quot;true&quot; ...&gt;</code></li>
+<li><code>&lt;a aria-current=&quot;page&quot; ...&gt;</code></li>
+<li><code>&lt;button aria-current=&quot;true&quot;...&gt;</code></li>
+<li><code>&lt;button aria-current=&quot;page&quot;...&gt;</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i9" aria-label="Déplier Afficher la réponse à la question 9">
+     Afficher la réponse à la question 9
+</button>
+<div id="i9" role="region" tabindex="-1">
+<p><b>Réponse c - <code>&lt;button aria-current="true"...></code></b><br>
+On utilisera d'abord un bouton (élément <code>button</code> car il s'agit d'un élément interactif sans changement de contexte (on reste sur la page en cours)<br>
+La valeur <code>true</code> indique l'élément en cours dans un ensemble d'éléments alors que <code>page</code> indique la page en cours dans un ensemble de pages.
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Je peux désactiver la visibilité du focus dans un menu de navigation</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i10" aria-label="Déplier Afficher la réponse à la question 10">
+     Afficher la réponse à la question 10
+</button>
+<div id="i10" role="region" tabindex="-1">
+<p><b>Réponse b - Faux</b><br>
+La prise de focus doit toujours être visible.
+</p>
+</div> 
+        </div>
+    </div>
+    
+</div>
 
      </section>
 </main>
@@ -370,7 +440,6 @@
 	    <path
 		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
 	</svg>
-	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/afficherReponse.min.js"></script>
-<script src="/js/search.min.js"></script>
+	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/search.min.js"></script>
 </body>
 </html>

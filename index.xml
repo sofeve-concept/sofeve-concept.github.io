@@ -20,7 +20,7 @@
       <link>https://sofeve-concept.github.io/coder/navigation/a-propos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/coder/navigation/a-propos/</guid>
-      <description>Ce qu&amp;rsquo;il faut retenir Pour un site qui comporte plus de 5 pages différentes, il faut veiller à prévoir au moins 2 systèmes de navigation parmi :</description>
+      <description>Ce qu&amp;rsquo;il faut retenir Apparence et positionnement L&amp;rsquo;apparence et le positionnement du menu principal doit être cohérent sur toutes les pages du site (le menu est placé au même endroit sur toutes les pages, le visuel est identique).</description>
     </item>
     <item>
       <title>Accessibilité des couleurs</title>
@@ -615,56 +615,56 @@
       <link>https://sofeve-concept.github.io/coder/contenu/quiz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/coder/contenu/quiz/</guid>
-      <description>N°&#xD;Question&#xD;Votre réponse&#xD;Afficher les réponses&#xD;1&#xD;La taille de base de la police de caractère sur le web est&amp;nbsp:&#xD;10pt&#xD;12px&#xD;1em&#xD;Réponse c</description>
+      <description>La taille de base de la police de caractère sur le web est :&#xD;10pt 12px 1em Afficher la réponse à la question 1&#xD;Réponse c - 1em</description>
     </item>
     <item>
       <title>Quiz récap&#39;</title>
       <link>https://sofeve-concept.github.io/coder/couleurs/quiz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/coder/couleurs/quiz/</guid>
-      <description>N°&#xD;Question&#xD;Votre réponse&#xD;Afficher les réponses&#xD;1&#xD;« Cliquez sur le bouton rouge » est une bonne pratique d&#39;accessibilité.</description>
+      <description>« Cliquez sur le bouton rouge » est une bonne pratique d’accessibilité.&#xD;Vrai Faux Afficher la réponse à la question 1&#xD;Réponse b - Faux</description>
     </item>
     <item>
       <title>Quiz récap&#39;</title>
       <link>https://sofeve-concept.github.io/coder/formulaire/quiz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/coder/formulaire/quiz/</guid>
-      <description>N°&#xD;Question&#xD;Votre réponse&#xD;Afficher les réponses&#xD;1&#xD;L&#39;élément fieldset sert à&amp;nbsp;:&#xD;Mettre une bordure autour des champs de formulaire.</description>
+      <description>Dans un formulaire, l&amp;#39;élément fieldset sert à :&#xD;Mettre une bordure autour des champs de formulaire.</description>
     </item>
     <item>
       <title>Quiz récap&#39;</title>
       <link>https://sofeve-concept.github.io/coder/image-icone/quiz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/coder/image-icone/quiz/</guid>
-      <description>N°&#xD;Question&#xD;Votre réponse&#xD;Afficher les réponses&#xD;1&#xD;Pour implémenter une image img purement décorative, on écrira&amp;nbsp;:&#xD;&amp;lt;img src=&#34;</description>
+      <description>Pour implémenter une image purement décorative avec l&amp;#39;élément HTML img, on écrira :&#xD;&amp;lt;img src=&amp;quot;mon_image_decorative.</description>
     </item>
     <item>
       <title>Quiz récap&#39;</title>
       <link>https://sofeve-concept.github.io/coder/lien-bouton/quiz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/coder/lien-bouton/quiz/</guid>
-      <description>N°&#xD;Question&#xD;Votre réponse&#xD;Afficher les réponses&#xD;1&#xD;Un lien &amp;lt;a&gt; doit être utilisé pour télécharger un fichier&amp;nbsp;: Vrai&#xD;Faux&#xD;Réponse a</description>
+      <description>Je dois proposer le téléchargement d&amp;#39;un fichier avec l&amp;#39;élément HTML a.&#xD;Vrai Faux Afficher la réponse à la question 1&#xD;Réponse a - Vrai</description>
     </item>
     <item>
       <title>Quiz récap&#39;</title>
       <link>https://sofeve-concept.github.io/coder/navigation/quiz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/coder/navigation/quiz/</guid>
-      <description>N°&#xD;Question&#xD;Votre réponse&#xD;Afficher les réponses&#xD;1&#xD;Un site doit proposer au moins 2 systèmes de navigation parmi un menu de navigation et un plan du site ou un menu de navigation et un moteur de recherche.</description>
+      <description>Dans quels cas dois-je proposer au moins deux systèmes de navigation différents dans mon site ?</description>
     </item>
     <item>
       <title>Quiz récap&#39;</title>
       <link>https://sofeve-concept.github.io/coder/structure/quiz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/coder/structure/quiz/</guid>
-      <description>N°&#xD;Question&#xD;Votre réponse&#xD;Afficher les réponses&#xD;1&#xD;Combien de fois puis-je trouver le role=&#34;</description>
+      <description>Combien de fois puis-je trouver le role banner dans mon code ?&#xD;1 fois Plusieurs fois Afficher la réponse à la question Réponse a - 1 seule fois</description>
     </item>
     <item>
       <title>Quiz récap&#39;</title>
       <link>https://sofeve-concept.github.io/coder/tableaux/quiz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/coder/tableaux/quiz/</guid>
-      <description>N°&#xD;Question&#xD;Votre réponse&#xD;Afficher les réponses&#xD;1&#xD;Le titre d&#39;un tableau est facultatif&amp;nbsp;:&#xD;Vrai&#xD;Faux&#xD;Réponse b&#xD;2&#xD;Pour donner un titre à un tableau, on écrira&amp;nbsp;:&#xD;&amp;lt;table title=&#34;</description>
+      <description>Le titre d&amp;#39;un tableau est obligatoire.&#xD;Vrai Faux Afficher la réponse à la question 1&#xD;Réponse a - Vrai</description>
     </item>
     <item>
       <title>Tester un document bureautique</title>

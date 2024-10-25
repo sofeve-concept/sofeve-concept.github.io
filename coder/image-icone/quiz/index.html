@@ -67,6 +67,7 @@
 					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/">Structure de base</a></li>
               			<li><a href="/motifs/navigations/">Systèmes de navigation</a></li>
               			<li><a href="/motifs/formulaires/">Formulaire</a></li>
+              			<li><a href="/motifs/dynamiques/">Composants javascript</a></li>
               			<li><a href="/motifs/purcss/">En pur CSS</a></li>
               			</ul>
 			    </li>
@@ -178,148 +179,202 @@
 		<h1 id="contenu">Quiz récap&#39;</h1>
                <p>Quiz récap&#39; sur les images.</p>
 
-<table id="quiz" class="responsive style2">
-            <thead>
-              <tr>
-                <th scope="col">N°</th>
-                <th scope="col">Question</th>
-                <th scope="col">Votre réponse</th>
-                <th scope="col"><button onclick="afficherReponse();">Afficher les réponses</button></th>
-              </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <th scope="row">1</td>
-            <td><label for="q1">Pour implémenter une image <code>img</code> purement décorative, on écrira&nbsp;:</label>
-                <br>
-                <ol>
-                    <li><code>&lt;img src="mon_image_decorative.png"></code></li>
-                    <li><code>&lt;img src="mon_image_decorative.png" alt=""></code></li>
-                    <li><code>&lt;img src="mon_image_decorative.png" alt="mon_image_decorative.png"></code></li>
-                </ol>
-            </td>
-            <td><input type="text" class="soluce" id="q1" name="reponse1"></td>
-            <td><b>Réponse b</b>L'attribut <code>alt</code> doit être présent ET vide.
-            </td>
-            </tr>
-            <tr>
-            <th scope="row">2</td>
-            <td><label for="q2">Pour implémenter une image <code>svg</code> purement décorative, on écrira&nbsp;:</label> <br>
-                <ol>
-                    <li><code>&lt;svg aria-hidden="true" focusable="false" role="presentation"></code></li>
-                    <li><code>&lt;svg title="" role="presentation"></code></li>
-                    <li><code>&lt;svg hidden="true"></code></li>
-                </ol>
-                </td>
-            <td><input type="text" class="soluce" id="q2" name="reponse2"></td>
-            <td><b>Réponse a</b></td>
-            </tr>
-            <tr>
-            <th scope="row">3</td>
-            <td><label for="q3">Dans le cas d'une image informative simple, on écrira : </label>
-            <br>
-                <ol>
-                   <li><code>&lt;img src="pictogramme_handicap_visuel.png" alt="pictogramme_handicap_visuel"></code></li>
-                    <li><code>&lt;img src="pictogramme_handicap_visuel.png" alt="Pictogramme pour le handicap visuel."></code></li>
-                </ol>
-            </td>
-            <td><input type="text" class="soluce" id="q3" name="reponse3"></td>
-            <td><b>Réponse b</b><br>
-            Dans l'attribut alt, on écrit normalement en français. Veillez notamment à finir la phrase avec un point « . » pour favoriser la fluidité de lecture par les logiciels de synthèse vocale.</td>
-            </tr>
-            <tr>
-            <th scope="row">4</td>
-            <td><label for="q4">Une implémentation 100% compatible avec les synthétiseurs vocaux d'une image complexe consiste&nbsp;:</label> <br>
-                <ol>
-                    <li>À utiliser l'attribut aria <code>aria-describedby</code> faisant référence à un id posé sur l’élément qui décrira l’image.</li>
-                    <li>À utiliser l'attribut <code>longdesc</code> avec tout le contenu descriptif de l'image.</li>
-                    <li>À proposer le texte descriptif à côté de l’image, quitte à le masquer via CSS au départ et à proposer un mécanise dynamique pour le rendre apparent.</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q4" name="reponse4"></td>
-            <td><b>Réponse c</b><br>
-            Les attributs <code>aria-describedby</code> et <code>longdesc</code>
-          </td>
-            </tr>
-            <tr>
-            <th scope="row">5</td>
-            <td><label for="q5">Pour implémenter une image svg informative dans le code HTML, on écrira&nbsp;:</label> <br>
-               <ol>
-                    <li><code>&lt;svg aria-describedby="libelleImage" role="img">&lt;title id="libelleImage">[...]&lt;</title></code></li>
-                    <li><code>&lt;svg aria-labelledby="libelleImage" role="img">&lt;title id="libelleImage">[...]&lt;</title></code></li>
-                    <li><code>&lt;svg title="Libellé de mon image" role="img"></code></li>
-                    <li><code>&lt;svg hidden="true"></code></li>
-                </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q5" name="reponse5"></td>
-            <td><b>Réponse b</b><br>
-            on utilisera l’attribut <code>aria-labelledby</code> (et non pas <code>aria-describedby</code>) et l'élément HTML <code>&lt;title>[...]&lt;/title></code> et non pas l'attribut <code>title</code>.</td>
-            </tr>
-            <tr>
-            <th scope="row">6</td>
-            <td><label for="q6">Dans le cas d'une image SVG utilisée avec du texte et servant de lien, quell est la bonne syntaxe&nbsp;?</label> <br>
-                <ol>        
-                     <li><code>&lt;a href="/" title="Accueil">&lt;svg aria-hidden="true" focusable="false" role="presentation">[...]&lt;/svg>&lt;span>Accueil&lt;/span>&lt;/a></code></li>
-                     <li><code>&lt;a href="/">&lt;svg aria-label="Accueil">[...]&lt;/svg>&lt;span>Accueil&lt;/span>&lt;/a></code></li>
-                     <li><code>&lt;a href="/">&lt;svg aria-hidden="true" focusable="false" role="presentation">[...]&lt;/svg>&lt;span>Accueil&lt;/span>&lt;/a></code></li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q6" name="reponse6"></td>
-            <td><b>Réponse c</b><br>
-            L'image SVG est considérée comme décorative ; elle sera donc implémentée comme telle. Le libellé du lien étant visible et explicite, il n'y a pas besoin de rajouter un attribut <code>title</code> sur le lien.</td>
-            </tr>
-            <tr>
-            <th scope="row">7</td>
-            <td><label for="q7">Pour une image légendée implémentée avec <code>&lt;figure role="figure"&gt;</code> l'élément HTML <code>&lt;figcaption&gt;</code> est facultatif.</label> <br>
-                <ol>
-                     <li>Vrai</li>
-                    <li>Faux</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q7" name="reponse7"></td>
-            <td><b>Réponse a</b><br>
-           <code>&lt;figcaption&gt;</code> est facultatif.</td>
-            </tr>
-            <tr>
-            <th scope="row">8</td>
-            <td><label for="q8">Pour implémenter un symbole purement décoratif via une police de caractère, on utilisera&nbsp;:</label> <br>
-                <ol>
-                   <li><code>&lt;i class="fas fa-gift" class="invisible"></code>, avec en CSS <code>.invisible { visibility: hidden }</code></li>
-                   <li><code>&lt;i class="fas fa-gift" aria-hidden="true">&lt;/i></code></li>
-                </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q8" name="reponse8"></td>
-            <td><b>Réponse b</b></td>
-            </tr>
-            <tr>
-            <th scope="row">9</td>
-            <td><label for="q9">Pour implémenter un symbole porteur d'information via une police de caractère et compatble avec toutes les technologies d'assistance, on utilisera&nbsp;:</label> <br>
-                <ol>
-                    <li><code>&lt;p>&lt;span class="fas fa-search" aria-hidden="true">&lt;/span>&lt;span class="visuellement-masque">Rechercher&lt;/span>&lt;/p></code>, où la classe de style « visuellement-masque » masque le contenu via CSS.</li>
-                    <li><code>&lt;p>&lt;span class="fas fa-search" aria-label="Rechercher">&lt;/span>&lt;/p></code></li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q9" name="reponse9"></td>
-            <td><b>Réponse a</b><br>
-            Cette implémentation est compatble avec toutes les technologies d'assistance.
-            </td>
-            </tr>
-            <tr>
-            <th scope="row">10</td>
-            <td><label for="q10">Pour implémenter un symbole via un caractère unicode, on utilisera&nbsp;:</label> <br>
-                <ol>
-                    <li>Une classe de style du type <code>.fleche-droite::after {content: "→ ";}</code>.</li>
-                    <li>Un symbole masqué dans le code HTML <code>&lt;a href="..." title="En savoir plus sur....">En savoir plus&lt;span aria-hidden="true"> →&lt;/span>&lt;/a></code>.</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q10" name="reponse10"></td>
-            <td><b>Réponse b</b><br>
-            Les caractères unicode sont interprétés par les logiciels de synthèse vocale comme des caractères mathématiques ; mieux vaut donc éviter leur vocalisation. De plus, tout ce qui est contenu dans la propriété <code>content</code> en CSS est vocalisé.
-            </td>
-            </tr>
-            </tbody>
-            </table>
- 
+<div id="quiz">  
+    
+    <div class="quiz">
+    
+       <h2>Pour implémenter une image purement décorative avec l&#39;élément HTML img, on écrira :</h2>
+        <div>
+            <ol>
+<li><code>&lt;img src=&quot;mon_image_decorative.png&quot;&gt;</code></li>
+<li><code>&lt;img src=&quot;mon_image_decorative.png&quot; alt=&quot;&quot;&gt;</code></li>
+<li><code>&lt;img src=&quot;mon_image_decorative.png&quot; alt=&quot;Image décorative&quot;&gt;</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i1" aria-label="Déplier Afficher la réponse à la question 1">
+     Afficher la réponse à la question 1
+</button>
+<div id="i1" role="region" tabindex="-1">
+<p><b>Réponse b - <code>&lt;img src="mon_image_decorative.png" alt=""&gt;</code></b><br>
+L'attribut <code>alt</code> doit être présent <b>et</b> vide. </p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Pour implémenter une image purement décorative avec l&#39;élément HTML svg, on écrira :</h2>
+        <div>
+            <ol>
+<li><code>&lt;svg role=&quot;presentation&quot; ...&gt;</code></li>
+<li><code>&lt;svg title=&quot;&quot; role=&quot;presentation&quot; ...&gt;</code></li>
+<li><code>&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; role=&quot;presentation&quot; ...&gt;</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i2" aria-label="Déplier Afficher la réponse à la question 2">
+     Afficher la réponse à la question 2
+</button>
+<div id="i2" role="region" tabindex="-1">
+<p><b>Réponse c - <code>&lt;svg aria-hidden="true" focusable="false" role="presentation"&gt;</code></b><br>
+On pourrait aussi n'utiliser que <code>aria-hidden="true"</code>.</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Dans le cas d&#39;une image informative simple, implémentée avec l&#39;élément HTML img, on écrira :</h2>
+        <div>
+            <ol>
+<li><code>&lt;img src=&quot;pictogramme_handicap_visuel.png&quot; alt=&quot;pictogramme_handicap_visuel.png&quot;&gt;</code></li>
+<li><code>&lt;img src=&quot;pictogramme_handicap_visuel.png&quot; alt=&quot;Pictogramme pour le handicap visuel.&quot;&gt;</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i3" aria-label="Déplier Afficher la réponse à la question 3">
+     Afficher la réponse à la question 3
+</button>
+<div id="i3" role="region" tabindex="-1">
+<p><b>Réponse b - <code>&lt;img src="pictogramme_handicap_visuel.png" alt="Pictogramme pour le handicap visuel."&gt;</code></b><br>
+Dans l'attribut alt, on écrit du texte. Pensez à finir la phrase avec un point « . » pour favoriser la fluidité de lecture par les logiciels de synthèse vocale.</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Une implémentation 100% compatible avec les synthétiseurs vocaux d&#39;une image complexe consiste à :</h2>
+        <div>
+            <ol>
+<li>Utiliser l&rsquo;attribut aria <code>aria-describedby</code> faisant référence à un <code>id</code> posé sur l’élément qui décrira l’image.</li>
+<li>Utiliser l&rsquo;attribut <code>longdesc</code> avec tout le contenu descriptif de l&rsquo;image.</li>
+<li>Proposer le texte descriptif à côté de l’image, quitte à le masquer via CSS au départ et à proposer un mécanise dynamique pour le rendre apparent.</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i4" aria-label="Déplier Afficher la réponse à la question 4">
+     Afficher la réponse à la question 4
+</button>
+<div id="i4" role="region" tabindex="-1">
+<p><b>Réponse c</b><br>
+Le mieux est de rajouter un bouton proche de l'image intitulé par exemple "Description de l'image" qui fera apparâitre la description détaillée de l'image.<br>
+Voir un exemple de panneau dépliant dans la rubrique <a href="/motifs/dynamiques/panneau-depliant/">Motifs de conception - Composants javascript - Panneau dépliant</a>.</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Pour implémenter une image informative avec l&#39;élément svg, on écrira</h2>
+        <div>
+            <ol>
+<li><code>&lt;svg title=&quot;Libellé de mon image&quot; role=&quot;img&quot; ...&gt;[...]&lt;/svg&gt;</code></li>
+<li><code>&lt;svg aria-describedby=&quot;libelleImage&quot; role=&quot;img&quot; ...&gt;&lt;title id=&quot;libelleImage&quot;&gt;[...]&lt;/svg&gt;</code></li>
+<li><code>&lt;svg aria-labelledby=&quot;libelleImage&quot; role=&quot;img&quot; ...&gt;&lt;title id=&quot;libelleImage&quot;&gt;[...]&lt;/svg&gt;</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i5" aria-label="Déplier Afficher la réponse à la question 5">
+     Afficher la réponse à la question 5
+</button>
+<div id="i5" role="region" tabindex="-1">
+<p><b>Réponse c - <code>&lt;svg aria-labelledby="libelleImage" role="img" ...&gt;&lt;title id="libelleImage"&gt;[...]&lt;/svg></code></b><br>
+On utilisera l’attribut <code>aria-labelledby</code> (et non pas aria-describedby) et l'élément HTML <code>&lt;title>...&lt;/title></code> (à ne pas confondre avec l'attribut title.)
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Dans le cas d&#39;une image implémentée avec l&#39;élément svg, utilisée avec du texte et servant de lien, quelle est la bonne syntaxe ?</h2>
+        <div>
+            <ol>
+<li><code>&lt;a href=&quot;/&quot;&gt;&lt;svg aria-label=&quot;Accueil&quot;&gt;[...]&lt;/svg&gt;&lt;span&gt;Accueil&lt;/span&gt;&lt;/a&gt;</code></li>
+<li><code>&lt;a href=&quot;/&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; role=&quot;presentation&quot;&gt;[...]&lt;/svg&gt;&lt;span&gt;Accueil&lt;/span&gt;&lt;/a&gt;</code></li>
+<li><code>&lt;a href=&quot;/&quot; title=&quot;Accueil&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; role=&quot;presentation&quot;&gt;[...]&lt;/svg&gt;&lt;span&gt;Accueil&lt;/span&gt;&lt;/a&gt;</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i6" aria-label="Déplier Afficher la réponse à la question 6">
+     Afficher la réponse à la question 6
+</button>
+<div id="i6" role="region" tabindex="-1">
+<p><b>Réponse b - <code>&lt;a href="/" title="Accueil"&gt;&lt;svg aria-hidden="true" focusable="false" role="presentation"&gt;[...]&lt;/svg&gt;&lt;span&gt;Accueil&lt;/span&gt;&lt;/a&gt;</code></b><br>
+On cache l'image SVG aux synthèses vocales, l'intitulé du lien est bien situé entre les balises <code>a</code> ; il n'y a donc pas besoin de rajouter un attribut <code>title="Accueil"</code> sur le lien.
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Pour une image légendée implémentée avec figure, l&#39;élément HTML figcaption est obligatoire.</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i7" aria-label="Déplier Afficher la réponse à la question 7">
+     Afficher la réponse à la question 7
+</button>
+<div id="i7" role="region" tabindex="-1">
+<p><b>Réponse b - Faux</b><br>
+L'élément <code>figcaption</code> est facultatif.
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Pour implémenter un symbole purement décoratif via une classe de style (comme pour les polices symboliques), on utilisera :</h2>
+        <div>
+            <ol>
+<li><code>&lt;i class=&quot;fas fa-gift&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;</code></li>
+<li><code>&lt;i class=&quot;fas fa-gift&quot; class=&quot;invisible&quot;&gt;</code>, où la classe invisible correspond en CSS à <code>.invisible {visibility: hidden}</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i8" aria-label="Déplier Afficher la réponse à la question 8">
+     Afficher la réponse à la question 8
+</button>
+<div id="i8" role="region" tabindex="-1">
+<p><b>Réponse a - <code>&lt;i class="fas fa-gift" aria-hidden="true"&gt;&lt;/i&gt;</code></b><br>
+Pour cacher l'icône aux synthèses vocales, on utilisera l'attribut aria <code>aria-hidden="true"</code>.
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Pour implémenter un symbole porteur d&#39;information via une police de caractère et compatble avec toutes les technologies d&#39;assistance, on utilisera :</h2>
+        <div>
+            <ol>
+<li><code>&lt;p&gt;&lt;span class=&quot;fas fa-search&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sr-only&quot;&gt;Rechercher&lt;/span&gt;&lt;/p&gt;</code> , où la classe de style « visuellement-masque » masque le contenu via CSS.</li>
+<li><code>&lt;p&gt;&lt;span class=&quot;fas fa-search&quot; aria-label=&quot;Rechercher&quot;&gt;&lt;/span&gt;&lt;/p&gt;</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i9" aria-label="Déplier Afficher la réponse à la question 9">
+     Afficher la réponse à la question 9
+</button>
+<div id="i9" role="region" tabindex="-1">
+<p><b>Réponse a- <code>&lt;p&gt;&lt;span class="fas fa-search" aria-hidden="true"&gt;&lt;/span&gt;&lt;span class="visuellement-masque"&gt;Rechercher&lt;/span&gt;&lt;/p&gt;</code></b><br>
+Dans le cas b, on se retrouve avec une non conformité HTML puisque le paragraphe est vide (aucun texte n'est écrit.).
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Pour implémenter un symbole via un caractère unicode, on utilisera :</h2>
+        <div>
+            <ol>
+<li>Une classe de style du type <code>.fleche-droite::after {content: &quot;→ &quot;;}</code></li>
+<li>Du code HTML <code>&lt;span aria-hidden=&quot;true&quot;&gt; →&lt;/span&gt;</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i10" aria-label="Déplier Afficher la réponse à la question 10">
+     Afficher la réponse à la question 10
+</button>
+<div id="i10" role="region" tabindex="-1">
+<p><b>Réponse b - <code>&lt;span aria-hidden="true"> →&lt;/span></code></b><br>
+Les caractères unicode sont interprétés par les logiciels de synthèse vocale comme des caractères mathématiques ; mieux vaut donc éviter leur vocalisation.<br>
+De plus, tout ce qui est contenu dans une déclaration CSS dans la propriété content est vocalisé.
+</p>
+</div> 
+        </div>
+    </div>
+    
+</div>
 
      </section>
 </main>
@@ -374,7 +429,6 @@
 	    <path
 		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
 	</svg>
-	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/afficherReponse.min.js"></script>
-<script src="/js/search.min.js"></script>
+	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/search.min.js"></script>
 </body>
 </html>

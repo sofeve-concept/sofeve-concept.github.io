@@ -67,6 +67,7 @@
 					<li><a href="/motifs/">Aperçu</a></li><li><a href="/motifs/basiques/">Structure de base</a></li>
               			<li><a href="/motifs/navigations/">Systèmes de navigation</a></li>
               			<li><a href="/motifs/formulaires/">Formulaire</a></li>
+              			<li><a href="/motifs/dynamiques/">Composants javascript</a></li>
               			<li><a href="/motifs/purcss/">En pur CSS</a></li>
               			</ul>
 			    </li>
@@ -176,146 +177,212 @@
 		<h1 id="contenu">Quiz récap&#39;</h1>
                <p>Quiz récap&#39; sur les tableaux.</p>
 
-<table id="quiz" class="responsive style2">
-            <thead>
-              <tr>
-                <th scope="col">N°</th>
-                <th scope="col">Question</th>
-                <th scope="col">Votre réponse</th>
-                <th scope="col"><button onclick="afficherReponse();">Afficher les réponses</button></th>
-              </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <th scope="row">1</td>
-            <td><label for="q1">Le titre d'un tableau est facultatif&nbsp;:</label>
-                <br>
-                <ol>
-                    <li>Vrai</li>
-                    <li>Faux</li>
-                </ol>
-            </td>
-            <td><input type="text" class="soluce" id="q1" name="reponse1"></td>
-            <td><b>Réponse b</b></td>
-            </tr>
-            <tr>
-            <th scope="row">2</td>
-            <td><label for="q2">Pour donner un titre à un tableau, on écrira&nbsp;:</label>
-                <br>
-                <ol>
-                    <li><code>&lt;table title="Titre de mon tableau">[...]&lt;/table></code></li>
-                    <li><code>&lt;table>&lt;caption>Titre de mon tableau&lt;/caption>[...]&lt;/table></code></li>
-                    <li><code>&lt;table>&lt;tabcaption>Titre de mon tableau&lt;/tabcaption>[...]&lt;/table></code></li>
-                </ol>
-                </td>
-            <td><input type="text" class="soluce" id="q2" name="reponse2"></td>
-            <td><b>Réponse b</b><br>
-            L'élément <code>caption</code> sera écrit dans le code HTML immédiatement après la balise ouvrante <code>&lt;table></td>
-            </tr>
-            <tr>
-            <th scope="row">3</td>
-            <td><label for="q3">Dans le cas d'un tableau servant uniquement à la présentation, on écrira&nbsp;: </label>
-            <br>
-                <ol>
-                   <li><code>&lt;table role="presentation"></code></li>
-                   <li><code>&lt;table></code></li>
-                </ol>
-            </td>
-            <td><input type="text" class="soluce" id="q3" name="reponse3"></td>
-            <td><b>Réponse a</b><br>
-            On rajoute le rôle aria « presentation » et on n'utilisera aucune des techniques de codage spécifiques aux tableaux simples ou complexes.</td>
-            </tr>
-            <tr>
-            <th scope="row">4</td>
-            <td><label for="q4">Dans un tableau, les lignes d’entête seront encadrées par les balises&nbsp;:</label> <br>
-                <ol>
-                    <li><code>&lt;thead&gt;...&lt;/thead&gt;</code></li>
-                    <li><code>&lt;tbody&gt;...&lt;/tbody&gt;</code></li>
-                    <li><code>&lt;tfoot&gt;...&lt;/tfoot&gt;</code></li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q4" name="reponse4"></td>
-            <td><b>Réponse a</b><br>
-           <code>&lt;tbody&gt;...&lt;/tbody&gt;</code> encadre les balises du contenu du tableau et <code>&lt;tfoot&gt;...&lt;/tfoot&gt;</code> encadre les balises du pied du tableau.
-          </td>
-            </tr>
-            <tr>
-            <th scope="row">5</td>
-            <td><label for="q5">Pour indiquer qu'une cellule porte sur une ligne complète, on écrira&nbsp;:</label> <br>
-               <ol>
-                    <li><code>&lt;td scope="col">[...]&lt;/td></code></li>
-                    <li><code>&lt;td scope="row">[...]&lt;/td></code></li>
-                    <li><code>&lt;th scope="row">[...]&lt;/th></code></li>
-                    <li><code>&lt;tr scope="row">[...]&lt;/tr></code></li>
-                </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q5" name="reponse5"></td>
-            <td><b>Réponse c</b><br>
-            <code>scope="row"</code> précise la portée de l'information sur la ligne ; l'attribut <code>scope</code>ne peut se poser que sur une balise <code>th</code>.</td>
-            </tr>
-            <tr>
-            <th scope="row">6</td>
-            <td><label for="q6">Pour qu'un tableau soit considéré comme accessible, il doit respecter la règle suivante&nbsp;?</label> <br>
-                <ol>        
-                     <li>Le tableau doit faire une largeur de 100% quelque soit la taille de l'écran.</li>
-                     <li>Lorsque le contenu du tableau est linéarisé, le contenu reste compréhensible.</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q6" name="reponse6"></td>
-            <td><b>Réponse b</b><br>
-            Pour vérifier la compréhension du contenu du tableau dans ce cas, vous pouvez utiliser l&rsquo;extension de navigateur <span lang="en">«&nbsp;web developper&nbsp;»</span> et choisir <span lang="en">«&nbsp;Misceallanous&nbsp;»</span> - <span lang="en">«&nbsp;Linearize page&nbsp;»</span>.</td>
-            </tr>
-            <tr>
-            <th scope="row">7</td>
-            <td><label for="q7">Dans le cas d'un tableau de données complexe, le titre de tableau peut fournir le résumé qui décrit la composition du tableau</label> <br>
-                <ol>
-                     <li>Vrai</li>
-                    <li>Faux</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q7" name="reponse7"></td>
-            <td><b>Réponse a</b></td>
-            </tr>
-            <tr>
-            <th scope="row">8</td>
-            <td><label for="q8">Dans le cas d'un tableau de données complexe, pour associer les colonnes à leurs entêtes, on peut utiliser <code>&lt;th scope="colgroup"></code> et/ou <code>&lt;th scope="rowgroup"></code>&nbsp;:</label> <br>
-                <ol>
-                   <li>Vrai</li>
-                   <li>Faux</li>
-                </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q8" name="reponse8"></td>
-            <td><b>Réponse a</b></td>
-            </tr>
-            <tr>
-            <th scope="row">9</td>
-            <td><label for="q9"><code>colgroup</code> et <code>col</code> peuvent être utilisé pour grouper et identifier des lignes au sein d’un tableau.</label> <br>
-                <ol>
-                   <li>Vrai</li>
-                   <li>Faux</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q9" name="reponse9"></td>
-            <td><b>Réponse b</b><br>
-            <code>colgroup</code> et <code>col</code> peuvent être utilisé pour grouper et identifier des <b>colonnes</b>.
-            </td>
-            </tr>
-            <tr>
-            <th scope="row">10</td>
-            <td><label for="q10">Un élément <code>colgroup</code></label> peut être posé n'imprte où dans le code du tableau.</label>
-                <ol>
-                    <li>Vrai</li>
-                   <li>Faux</li>
-                    </ol>
-               </td>
-            <td><input type="text" class="soluce" id="q10" name="reponse10"></td>
-            <td><b>Réponse b</b><br>
-           Un élément <code>colgroup</code> doit apparaître immédiatement après tout élément <code>caption</code> et avant tout élément <code>thead</code>, <code>th</code>, <code>tbody</code>, <code>tfoot</code> et <code>tr</code>.
-            </td>
-            </tr>
-            </tbody>
-            </table>
+<div id="quiz">  
+    
+    <div class="quiz">
+    
+       <h2>Le titre d&#39;un tableau est obligatoire.</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i1" aria-label="Déplier Afficher la réponse à la question 1">
+     Afficher la réponse à la question 1
+</button>
+<div id="i1" role="region" tabindex="-1">
+<p><b>Réponse a - Vrai</b><br>
+Un tableau doit avoir un titre</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Pour donner un titre à un tableau, on écrira :</h2>
+        <div>
+            <ol>
+<li><code>&lt;table title=&quot;Titre de mon tableau&quot;&gt;[...]&lt;/table&gt;</code></li>
+<li><code>&lt;table&gt;&lt;caption&gt;Titre de mon tableau&lt;/caption&gt;[...]&lt;/table&gt;</code></li>
+<li><code>&lt;table&gt;&lt;tabcaption&gt;Titre de mon tableau&lt;/tabcaption&gt;[...]&lt;/table&gt;</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i2" aria-label="Déplier Afficher la réponse à la question 2">
+     Afficher la réponse à la question 2
+</button>
+<div id="i2" role="region" tabindex="-1">
+<p><b>Réponse b - <code>&lt;table&gt;&lt;caption&gt;Titre de mon tableau&lt;/caption&gt;[...]&lt;/table&gt;</code></b><br>
+<b>Important : </b>L'élément <code>caption</code> sera écrit dans le code HTML immédiatement après la balise ouvrante <code>&lt;table&gt;</code></p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Dans le cas d&#39;un tableau servant uniquement à la mise en forme du texte, on écrira :</h2>
+        <div>
+            <ol>
+<li><code>&lt;table role=&quot;presentation&quot; ...&gt;</code></li>
+<li><code>&lt;table ...&gt;</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i3" aria-label="Déplier Afficher la réponse à la question 3">
+     Afficher la réponse à la question 3
+</button>
+<div id="i3" role="region" tabindex="-1">
+<p><b>Réponse a - <code>&lt;table role="presentation"&gt;</code></b><br>
+On rajoute le rôle aria « presentation » et on n'utilisera aucune des techniques de codage spécifiques aux tableaux simples ou complexes.</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Dans un tableau, les lignes d’entête sont implémentées dans l&#39;élément HTML :</h2>
+        <div>
+            <ol>
+<li><code>thead</code></li>
+<li><code>theader</code></li>
+<li><code>tbody</code></li>
+<li><code>tfoot</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i4" aria-label="Déplier Afficher la réponse à la question 4">
+     Afficher la réponse à la question 4
+</button>
+<div id="i4" role="region" tabindex="-1">
+<p><b>Réponse a - <code>thead</code></b><br>
+<code>theader</code> n'existe pas ;<br>
+<code>tbody</code> encadre les balises du contenu du tableau ;<br>
+<code>tfoot</code> encadre les balises du pied du tableau.</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Pour indiquer qu&#39;une cellule porte sur une ligne complète, on écrira :</h2>
+        <div>
+            <ol>
+<li><code>&lt;td scope=&quot;col&quot;&gt;[...]&lt;/td&gt;</code></li>
+<li><code>&lt;td scope=&quot;row&quot;&gt;[...]&lt;/td&gt;</code></li>
+<li><code>&lt;th scope=&quot;col&quot;&gt;[...]&lt;/th&gt;</code></li>
+<li><code>&lt;th scope=&quot;row&quot;&gt;[...]&lt;/th&gt;</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i5" aria-label="Déplier Afficher la réponse à la question 5">
+     Afficher la réponse à la question 5
+</button>
+<div id="i5" role="region" tabindex="-1">
+<p><b>Réponse c - <code>th scope="col"</code></b><br>
+l'attribut <code>scope</code>ne peut se poser que sur une balise <code>th</code> ;<br>
+<code>scope="row"</code> précise la portée de l'information sur la ligne et non pas sur la colonne.
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Pour qu&#39;un tableau soit considéré comme accessible, il doit respecter la règle suivante :</h2>
+        <div>
+            <ol>
+<li>Le tableau doit faire une largeur de 100% quelque soit la taille de l&rsquo;écran.</li>
+<li>Lorsque le contenu du tableau est linéarisé, le contenu reste compréhensible.</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i6" aria-label="Déplier Afficher la réponse à la question 6">
+     Afficher la réponse à la question 6
+</button>
+<div id="i6" role="region" tabindex="-1">
+<p><b>Réponse b</b><br>
+Pour vérifier la compréhension du contenu du tableau dans ce cas, vous pouvez utiliser l’extension de navigateur « web developper » et choisir « Misceallanous » - « Linearize page ».
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Dans le cas d&#39;un tableau de données complexe, le titre de tableau doit fournir un résumé qui décrit la composition du tableau</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i7" aria-label="Déplier Afficher la réponse à la question 7">
+     Afficher la réponse à la question 7
+</button>
+<div id="i7" role="region" tabindex="-1">
+<p><b>Réponse b - Faux</b><br>
+Un résumé du tableau sera bien proposé mais il ne sera proposé dans le titre du tableau (élément <code>caption</code>). Son résumé se fera d'une autre manière, en utilisant une zone spécifique à laquelle le tableau fera référence vie l'attribut <code>aria-describedby</code>.</p>
+<p>Exemple : </p>
+<pre><code>&lt;p id="description">La première colonne indique le nombre de chambre, les autres colonnes indiquent le type de logement et le nombre de logement disponible.</p>
+&lt;table aria-describedby="description">&lt;caption>Type et nombre de logements disponibles&lt;/cpation>...
+</code>
+</pre>
+</div>
  
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Dans le cas d&#39;un tableau de données complexe, pour associer les colonnes à leurs entêtes, on peut utiliser :</h2>
+        <div>
+            <ol>
+<li><code>&lt;th scope=&quot;colgroup&quot;&gt;</code></li>
+<li><code>&lt;th scope=&quot;rowgroup&quot;&gt;</code></li>
+<li><code>&lt;th scope=&quot;colgroup&quot;&gt;</code> et <code>&lt;th scope=&quot;rowgroup&quot;&gt;</code></li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i8" aria-label="Déplier Afficher la réponse à la question 8">
+     Afficher la réponse à la question 8
+</button>
+<div id="i8" role="region" tabindex="-1">
+<p><b>Réponse c</b><br>
+Selon ce sur quoi porte la cellule, on utilisera </p>
+<ul>
+<li>soit <oce>&lt;th scope="colgroup"></code>, si la cellule porte que un groupe de colonnes.</li>
+<li>soit <oce>&lt;th scope="rowgroup"></code>, si la cellule porte que un groupe de lignes.</li>
+</ul>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Un élément HTML colgroup peut être posé n&#39;importe où dans le code du tableau.</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i9" aria-label="Déplier Afficher la réponse à la question 9">
+     Afficher la réponse à la question 9
+</button>
+<div id="i9" role="region" tabindex="-1">
+<p><b>Réponse b - Faux</b><br>
+Un élément HTML <code>colgroup</code> doit apparaître immédiatement après l'élément <code>caption</code>.
+</p>
+</div> 
+        </div>
+    </div>
+    
+    <div class="quiz">
+    
+       <h2>Les éléments HTML colgroup et col sont utilisés pour grouper et identifier des lignes au sein d’un tableau</h2>
+        <div>
+            <ol>
+<li>Vrai</li>
+<li>Faux</li>
+</ol>
+<button type="button" class="depliant soluce" aria-expanded="false" aria-controls="i9" aria-label="Déplier Afficher la réponse à la question 10">
+     Afficher la réponse à la question 10
+</button>
+<div id="i9" role="region" tabindex="-1">
+<p><b>Réponse b - Faux</b><br>
+<code>colgroup</code> et <code>col</code> peuvent être utilisé pour grouper et identifier des <b>colonnes</b>, pas des lignes.
+</p>
+</div> 
+        </div>
+    </div>
+    
+</div>
 
      </section>
 </main>
@@ -370,7 +437,7 @@
 	    <path
 		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
 	</svg>
-	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/afficherReponse.min.js"></script>
+	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/clipboard.min.js"></script>
 <script src="/js/search.min.js"></script>
 </body>
 </html>
