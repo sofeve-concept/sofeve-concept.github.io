@@ -458,12 +458,6 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/motifs/formulaires/stepper/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-complexes/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -675,6 +669,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/motifs/basiques/retour-en-haut/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/motifs/formulaires/stepper/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

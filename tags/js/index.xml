@@ -33,7 +33,7 @@
       <link>https://sofeve-concept.github.io/motifs/formulaires/autocomplete/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/motifs/formulaires/autocomplete/</guid>
-      <description>Présentation Code HTML L&amp;rsquo;autocomplétion doit pouvoir fonctionner sans javascript. On va donc utiliser les éléments natifs du HTML pour proposer une liste de choix avec l&amp;rsquo;élément HTML datalist.</description>
+      <description>Présentation Le système de suggestion de remplissage réduit le temps et la charge cognitive de remplissage de champs.</description>
     </item>
     <item>
       <title>Menu multi-déroulant horizontal</title>

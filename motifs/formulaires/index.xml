@@ -26,21 +26,14 @@
       <link>https://sofeve-concept.github.io/motifs/formulaires/autocomplete/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/motifs/formulaires/autocomplete/</guid>
-      <description>Présentation Code HTML L&amp;rsquo;autocomplétion doit pouvoir fonctionner sans javascript. On va donc utiliser les éléments natifs du HTML pour proposer une liste de choix avec l&amp;rsquo;élément HTML datalist.</description>
-    </item>
-    <item>
-      <title>Processus par étape</title>
-      <link>https://sofeve-concept.github.io/motifs/formulaires/stepper/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/motifs/formulaires/stepper/</guid>
-      <description>Règles d’implémentation pour l’accessibilité Le processus par étape sera balisé avec les balises &amp;lt;nav&amp;gt;...&amp;lt;/nav&amp;gt; on ne posera pas d&amp;rsquo;attribut role=&amp;quot;navigation.</description>
+      <description>Présentation Le système de suggestion de remplissage réduit le temps et la charge cognitive de remplissage de champs.</description>
     </item>
     <item>
       <title>Message d&#39;erreur</title>
       <link>https://sofeve-concept.github.io/motifs/formulaires/message-erreur/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/motifs/formulaires/message-erreur/</guid>
-      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Lorsqu&amp;rsquo;au moment de la soumission du formulaire, une erreur est signalée, il faudra mesttre à jour le titre de la page en commençant par « Erreur ».</description>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Au moment de la soumission du formulaire, si un ou plusieurs champs sont en erreur, il faudra :</description>
     </item>
     <item>
       <title>Message de succès</title>
@@ -48,6 +41,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/motifs/formulaires/message-succes/</guid>
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le message de succès est une zone définit par l&amp;rsquo;élément HTML div et porte le rôle aria role=&amp;quot;status&amp;quot;.</description>
+    </item>
+    <item>
+      <title>Processus par étape</title>
+      <link>https://sofeve-concept.github.io/motifs/formulaires/stepper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/motifs/formulaires/stepper/</guid>
+      <description>Règles d’implémentation pour l’accessibilité Le processus par étape sera balisé avec les balises &amp;lt;nav&amp;gt;...&amp;lt;/nav&amp;gt; on ne posera pas d&amp;rsquo;attribut role=&amp;quot;navigation.</description>
     </item>
   </channel>
 </rss>

@@ -363,7 +363,7 @@
       <link>https://sofeve-concept.github.io/motifs/formulaires/autocomplete/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/motifs/formulaires/autocomplete/</guid>
-      <description>Présentation Code HTML L&amp;rsquo;autocomplétion doit pouvoir fonctionner sans javascript. On va donc utiliser les éléments natifs du HTML pour proposer une liste de choix avec l&amp;rsquo;élément HTML datalist.</description>
+      <description>Présentation Le système de suggestion de remplissage réduit le temps et la charge cognitive de remplissage de champs.</description>
     </item>
     <item>
       <title>Tableaux simples</title>
@@ -429,13 +429,6 @@
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité L&amp;rsquo;exemple présenté ici est celui d&amp;rsquo;un menu avec menu déroulant à double niveau (rubriques parentes, sous-rubriques et sous-sous-rubriques).</description>
     </item>
     <item>
-      <title>Processus par étape</title>
-      <link>https://sofeve-concept.github.io/motifs/formulaires/stepper/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sofeve-concept.github.io/motifs/formulaires/stepper/</guid>
-      <description>Règles d’implémentation pour l’accessibilité Le processus par étape sera balisé avec les balises &amp;lt;nav&amp;gt;...&amp;lt;/nav&amp;gt; on ne posera pas d&amp;rsquo;attribut role=&amp;quot;navigation.</description>
-    </item>
-    <item>
       <title>Tableaux complexes</title>
       <link>https://sofeve-concept.github.io/coder/tableaux/tableaux-donnees-complexes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -496,7 +489,7 @@
       <link>https://sofeve-concept.github.io/motifs/formulaires/message-erreur/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/motifs/formulaires/message-erreur/</guid>
-      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Lorsqu&amp;rsquo;au moment de la soumission du formulaire, une erreur est signalée, il faudra mesttre à jour le titre de la page en commençant par « Erreur ».</description>
+      <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Au moment de la soumission du formulaire, si un ou plusieurs champs sont en erreur, il faudra :</description>
     </item>
     <item>
       <title>Processus par étapes</title>
@@ -609,6 +602,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/motifs/basiques/retour-en-haut/</guid>
       <description>Règles d&amp;rsquo;implémentation pour l&amp;rsquo;accessibilité Le &amp;ldquo;bouton&amp;rdquo; de retour en haut est en fait un lien travaillé en CSS.</description>
+    </item>
+    <item>
+      <title>Processus par étape</title>
+      <link>https://sofeve-concept.github.io/motifs/formulaires/stepper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/motifs/formulaires/stepper/</guid>
+      <description>Règles d’implémentation pour l’accessibilité Le processus par étape sera balisé avec les balises &amp;lt;nav&amp;gt;...&amp;lt;/nav&amp;gt; on ne posera pas d&amp;rsquo;attribut role=&amp;quot;navigation.</description>
     </item>
     <item>
       <title>Quiz récap&#39;</title>

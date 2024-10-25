@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Message d&#39;erreur - Formulaire - Motifs de conception - Sofève Concept</title>
 	
 	<meta name="theme-color" content="#FFFFFF" />
-	<meta name="description" content="Un message d&#39;erreur doit apparaître au niveau de chaque champ de formulaire en erreur et proposer des suggestions de coorection. Dans le cas où plusieurs champs sont en erreur, on pourra implémenter au début du formulaire un message global pour signaler que plusieurs champs sont en erreur. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	<meta name="description" content="Chaque erreur doit être signalée et proposer des suggestions de correction tant lors de la saisie (cas vérification native au champ de formulaire) qu&#39;après la soumission du formulaire. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -137,9 +137,9 @@
 			<ul><li><a href="https://sofeve-concept.github.io/motifs/formulaires/formulaire-recherche/">Formulaire de recherche</a></li>
 				<li><a href="https://sofeve-concept.github.io/motifs/formulaires/placeholder/">Placeholder simulé</a></li>
 				<li><a href="https://sofeve-concept.github.io/motifs/formulaires/autocomplete/">Suggestion de remplissage</a></li>
-				<li><a href="https://sofeve-concept.github.io/motifs/formulaires/stepper/">Processus par étape</a></li>
 				<li><a href="https://sofeve-concept.github.io/motifs/formulaires/message-erreur/" aria-current="page" >Message d&#39;erreur</a></li>
 				<li><a href="https://sofeve-concept.github.io/motifs/formulaires/message-succes/">Message de succès</a></li>
+				<li><a href="https://sofeve-concept.github.io/motifs/formulaires/stepper/">Processus par étape</a></li>
 				</ul>
 			</li>
 		<li><a href="https://sofeve-concept.github.io/motifs/dynamiques/">Composants d&#39;interface riche</a></li>
@@ -170,7 +170,7 @@
 </div>
      <section>
 		<h1 id="contenu">Message d&#39;erreur</h1>
-               <p>Un message d&#39;erreur doit apparaître au niveau de chaque champ de formulaire en erreur et proposer des suggestions de coorection. Dans le cas où plusieurs champs sont en erreur, on pourra implémenter au début du formulaire un message global pour signaler que plusieurs champs sont en erreur.</p>
+               <p>Chaque erreur doit être signalée et proposer des suggestions de correction tant lors de la saisie (cas vérification native au champ de formulaire) qu&#39;après la soumission du formulaire.</p>
 <button type="button" class="depliant" aria-expanded="false" aria-controls="tdm">
 Table des matières</button>
 <div id="tdm" role="region" tabindex="-1">
@@ -178,6 +178,7 @@ Table des matières</button>
   <ul>
     <li><a href="#règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</a>
       <ul>
+        <li><a href="#titre-du-document-html">Titre du document HTML</a></li>
         <li><a href="#message-derreur-global">Message d&rsquo;erreur global</a></li>
         <li><a href="#message-derreur-contextuel">Message d&rsquo;erreur contextuel</a></li>
       </ul>
@@ -200,7 +201,14 @@ Table des matières</button>
 </nav>
 </div>
 <h2 id="règles-dimplémentation-pour-laccessibilité">Règles d&rsquo;implémentation pour l&rsquo;accessibilité</h2>
-<p>Lorsqu&rsquo;au moment de la soumission du formulaire, une erreur est signalée, il faudra mesttre à jour le titre de la page en commençant par « Erreur ».</p>
+<p>Au moment de la soumission du formulaire, si un ou plusieurs champs sont en erreur, il faudra :</p>
+<ul>
+<li>mettre à jour le titre de la page en commençant par « Erreur » ;</li>
+<li>implémenter au début du formulaire un message global pour signaler que un ou plusieurs champs sont en erreur ;</li>
+<li>signaler chaque champ en erreur et apporter des informations de correction de l&rsquo;erreur.</li>
+</ul>
+<h3 id="titre-du-document-html">Titre du document HTML</h3>
+<p>Le titre du document HTML sera mis à jour en commençant par « Erreur ».</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  [...]
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Erreur - ...<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
