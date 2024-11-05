@@ -203,16 +203,21 @@ Table des matières</button>
 </ul>
 <h2 id="règles-daccessibilité-du-fil-dariane">Règles d&rsquo;accessibilité du fil d&rsquo;Ariane</h2>
 <ul>
-<li>Le fil d&rsquo;Ariane est implémenté à l&rsquo;intérieur de l&rsquo;élément HTML sémantique <code>nav</code> portant le <code>role=&quot;navigation&quot;</code><br>
-On pourra rajouter un attribut <code>aria-label</code> pour préciser qu&rsquo;il s&rsquo;agit d&rsquo;un fil d&rsquo;ariane.</li>
+<li>Élement HTML <code>nav</code>
+<ul>
+<li>Le processus par étape sera balisé avec les balises <code>&lt;nav&gt;...&lt;/nav&gt;</code> ; l&rsquo;attribut <code>role=&quot;navigation</code> est optionnel.</li>
+<li>L&rsquo;attribut aria-label est ajouté à l&rsquo;élément <code>nav</code> avec une valeur unique. Exemple : <code>&lt;nav role=&quot;navigation&quot; aria-label=&quot;Vous êtes ici : &quot;&gt;</code>.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;navigation&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Vous êtes ici&#34;</span><span class="p">&gt;</span>[…]<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
-</span></span></code></pre></div><ul>
+</li>
+<li>Liste ordonnée et liens
+<ul>
 <li>Les différents items du fil d&rsquo;Ariane seront proposés sous forme de liste ordonnée <code>ol</code> (puisque l&rsquo;ordre des items a de l&rsquo;importance).</li>
 <li>La position courante (page sur laquelle l&rsquo;internaute se trouve) sera identifée par l&rsquo;attribut <code>aria-current=&quot;page&quot;</code>  :
 <ul>
 <li>de préférence sans lien posé sur l&rsquo;item ;</li>
-<li>si le lien est conservé, alors il sera inactivé en CSS.</li>
+<li>sinon, si le lien est conservé, il pourra alors être inactivé en CSS (<code>pointer-events: none; cursor: default;</code>).</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

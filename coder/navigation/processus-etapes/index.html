@@ -192,6 +192,8 @@ Table des matières</button>
     <li><a href="#règles-dimplémentation-dun-processus-par-étapes">Règles d&rsquo;implémentation d&rsquo;un processus par étapes</a></li>
     <li><a href="#règles-daccessibilité-du-processus-par-étapes">Règles d&rsquo;accessibilité du processus par étapes</a>
       <ul>
+        <li><a href="#mise-à-jour-du-titre-de-la-page-html">Mise à jour du titre de la page HTML</a></li>
+        <li><a href="#implémentation-du-processus-par-étape-sous-forme-de-liste-ordonnée">Implémentation du processus par étape sous forme de liste ordonnée</a></li>
         <li><a href="#exemple-html">Exemple HTML</a></li>
       </ul>
     </li>
@@ -205,15 +207,26 @@ Table des matières</button>
 <h2 id="règles-dimplémentation-dun-processus-par-étapes">Règles d&rsquo;implémentation d&rsquo;un processus par étapes</h2>
 <ul>
 <li>Un processus par étapes sera proposé dès lors que plusieurs étapes doivent être impérativement réalisées pour parvenir à une action ultime.</li>
-<li>La plupart du temps, il sera intégré dans un formulaire.</li>
+<li>La plupart du temps, le processus par étape est proposé avec un formulaire.</li>
 </ul>
 <h2 id="règles-daccessibilité-du-processus-par-étapes">Règles d&rsquo;accessibilité du processus par étapes</h2>
+<h3 id="mise-à-jour-du-titre-de-la-page-html">Mise à jour du titre de la page HTML</h3>
+<p>Le titre de la page (balises <code>&lt;title&gt;...&lt;/title&gt;</code> dans la partie <code>head</code> de la page HTML) sera mis à jour pour indiquer la page en cours.</p>
+<h3 id="implémentation-du-processus-par-étape-sous-forme-de-liste-ordonnée">Implémentation du processus par étape sous forme de liste ordonnée</h3>
 <ul>
-<li>Le processus par étape sera balisé avec les balises <code>&lt;nav&gt;...&lt;/nav&gt;</code>  <strong>on ne posera pas d&rsquo;attribut</strong> <code>role=&quot;navigation</code>.</li>
+<li>Élement HTML <code>nav</code>
+<ul>
+<li>Le processus par étape sera balisé avec les balises <code>&lt;nav&gt;...&lt;/nav&gt;</code> ; l&rsquo;attribut <code>role=&quot;navigation</code> est optionnel.</li>
+<li>L&rsquo;attribut aria-label est ajouté à l&rsquo;élément <code>nav</code> avec une valeur unique. Exemple : <code>&lt;nav role=&quot;navigation&quot; aria-label=&quot;Étapes de la démarche&quot;&gt;</code>.</li>
+</ul>
+</li>
+<li>Liste ordonnée et liens
+<ul>
 <li>Les différentes étapes du processus seront balisées par un liste ordonnée (l&rsquo;ordre ayant de l&rsquo;importance) <code>&lt;ol&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ol&gt;</code></li>
-<li>L&rsquo;étape en cours sera balisée avec l&rsquo;attribut <code>aria-current=&quot;step&quot;</code></li>
-<li>Un retour arrière sera proposé via un lien sur les étapes précédentes</li>
-<li>Le titre de la page (balises <code>&lt;title&gt;...&lt;/title&gt;</code> dans la partie <code>head</code> de la page HTML) sera mis à jour pour indiquer la page en cours.</li>
+<li>L&rsquo;étape en cours sera identifiée avec l&rsquo;attribut <code>aria-current=&quot;step&quot;</code></li>
+<li>Des liens (élément HTML <code>a</code>) vers les étapes précédant celle en cours seront proposés.</li>
+</ul>
+</li>
 </ul>
 <h3 id="exemple-html">Exemple HTML</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
@@ -224,7 +237,7 @@ Table des matières</button>
 </span></span><span class="line"><span class="cl">[...]
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;navigation&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Étapes de votre démarche&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">&gt;</span>Identité<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;path/to/pageIdentite&#34;</span><span class="p">&gt;</span>Identité<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">li</span> <span class="na">aria-current</span><span class="o">=</span><span class="s">&#34;step&#34;</span><span class="p">&gt;</span>Adresse<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Confirmation<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">	<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
