@@ -3,10 +3,10 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Composants d&#39;interface riche - Coder accessible - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Rôles dynamiques - Composants d&#39;interface riche - Coder accessible - Sofève Concept</title>
 	
 	<meta name="theme-color" content="#FFFFFF" />
-	<meta name="description" content="Les composants d’interface riche sont des éléments dynamiques implémentés avec du javascript. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	<meta name="description" content="Les rôles dynamiques (live region) sont utilisés pour définir des éléments dont le contenu sera modifié dynamiquement. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -55,7 +55,7 @@
               			<li><a href="/coder/image-icone/">Images et icônes</a></li>
               			<li><a href="/coder/tableaux/">Tableaux</a></li>
               			<li><a href="/coder/formulaire/">Formulaires</a></li>
-              			<li><a href="/coder/scripts/" aria-current="page" >Composants d&#39;interface riche</a></li>
+              			<li><a href="/coder/scripts/" aria-current="location" >Composants d&#39;interface riche</a></li>
               			<li><a href="/coder/multimedia/">Multimédia</a></li>
               			</ul>
 			    </li>
@@ -138,11 +138,11 @@
 		<li><a href="https://sofeve-concept.github.io/coder/image-icone/">Images et icônes</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/tableaux/">Tableaux</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/formulaire/">Formulaires</a></li>
-		<li><a href="https://sofeve-concept.github.io/coder/scripts/" aria-current="page" >Composants d&#39;interface riche</a>
+		<li><a href="https://sofeve-concept.github.io/coder/scripts/" aria-current="location" >Composants d&#39;interface riche</a>
 			
 			
 			<ul><li><a href="https://sofeve-concept.github.io/coder/scripts/presentation-cir/">Présentation des composants</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/scripts/live-regions/">Rôles dynamiques</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/scripts/live-regions/" aria-current="page" >Rôles dynamiques</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/scripts/role-modale/">Rôles de fenêtre modale</a></li>
 				</ul>
 			</li>
@@ -159,7 +159,9 @@
   
   <li><a href="/coder/">Coder accessible</a></li>
   
-  <li aria-current="page" tabindex="-1">Composants d&#39;interface riche</li>
+  <li><a href="/coder/scripts/">Composants d&#39;interface riche</a></li>
+  
+  <li aria-current="page" tabindex="-1">Rôles dynamiques</li>
   </ol>
 </nav>
 <div>
@@ -170,42 +172,102 @@
 </div>
 </div>
      <section>
-		<h1 id="contenu">Composants d&#39;interface riche</h1>
-	<p class="intro">Les composants d’interface riche sont des éléments dynamiques implémentés avec du javascript.</p>
-	
-	<div class="flex justify-content-start forCard">
-		
-		<div class="item-33 ">
-		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/coder/scripts/presentation-cir/">Présentation des composants</a></h2>
-			<div class="flex flex-column align-items-strech h-100">
-			<p >L&#39;accessibilité au clavier des composants d’interface riche ne doit pas être négligée ni même leur vocalisation par les logiciels de synthèse vocale.</p>
-			
-			</div>
-	</div>
+		<h1 id="contenu">Rôles dynamiques</h1>
+               <p>Les rôles dynamiques (live region) sont utilisés pour définir des éléments dont le contenu sera modifié dynamiquement.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm">
+Table des matières</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#le-rôle-alert">Le rôle alert</a>
+      <ul>
+        <li><a href="#exemple-de-code">Exemple de code</a></li>
+      </ul>
+    </li>
+    <li><a href="#le-rôle-log">Le rôle log</a></li>
+    <li><a href="#le-rôle-marquee">Le rôle marquee</a>
+      <ul>
+        <li><a href="#exemple-de-code-html">Exemple de code HTML</a></li>
+      </ul>
+    </li>
+    <li><a href="#rôle-status">Rôle status</a>
+      <ul>
+        <li><a href="#exemple-de-code-1">Exemple de code</a></li>
+      </ul>
+    </li>
+    <li><a href="#rôle-timer">Rôle timer</a></li>
+  </ul>
+</nav>
 </div>
-		
-		<div class="item-33 ">
-		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/coder/scripts/live-regions/">Rôles dynamiques</a></h2>
-			<div class="flex flex-column align-items-strech h-100">
-			<p >Les rôles dynamiques (live region) sont utilisés pour définir des éléments dont le contenu sera modifié dynamiquement.</p>
-			
-			</div>
-	</div>
+<p>Les utilisateurs voyants peuvent voir les changements dynamiques lorsqu&rsquo;ils sont visuellement perceptibles.<br>
+Les rôles « Live Region » aident les utilisateurs malvoyants et aveugles à savoir si le contenu a été mis à jour. Les technologies d&rsquo;assistance, comme les lecteurs d&rsquo;écran, peuvent être conçues pour annoncer des modifications dynamiques du contenu.</p>
+<p>Ces « Live Region » comprennent les rôles aria (attribut <code>role</code>) :</p>
+<ul>
+<li>alert</li>
+<li>log</li>
+<li>marquee</li>
+<li>status</li>
+<li>timer</li>
+</ul>
+<h2 id="le-rôle-alert">Le rôle alert</h2>
+<p>Le rôle <code>alert</code> est utilisé pour communiquer un message important, et généralement urgent, à la personne. Lorsque ce rôle est ajouté à un élément, le navigateur enverra un évènement d&rsquo;alerte accessible aux outils d&rsquo;assistance qui pourront alors notifier la personne.</p>
+<ul>
+<li>Le rôle <code>alert</code> doit uniquement être utilisé pour le contenu texte et pas pour les éléments interactifs comme les liens ou les boutons.</li>
+<li>Le rôle <code>alert</code> est destiné au contenu affiché dynamiquement. Il ne doit pas être utilisé pour du contenu qui apparaît au chargement initial de la page.</li>
+<li>Les alertes doivent uniquement être annoncées lorsque le contenu de l&rsquo;élément ayant <code>role=&quot;alert&quot;</code> est mis à jour. Par conséquent, il est nécessaire que l&rsquo;élément avec le rôle <code>alert</code> soit initialement présent dans le balisage de la page, cela permettra d&rsquo;amorcer le navigateur et le lecteur d&rsquo;écran qui surveilleront alors les changements sur l&rsquo;élément.</li>
+<li>Il n&rsquo;est pas nécessaire que les éléments avec le rôle <code>alert</code> puissent recevoir le focus, les outils d&rsquo;assistance annonceront le contenu mis à jour lorsque le rôle est ajouté, quel que soit l&rsquo;état du focus.</li>
+</ul>
+<div class="notice remarque" >   
+     <p> remarque </p>
+<p>Lorsque le rôle alert est présent, chaque changement apporté au contenu est annoncé, et il faut donc l'utiliser avec parcimonie. Par définition, les alertes sont perturbantes. S'il y a plusieurs alertes simultanées ou des alertes inutiles, l'expérience utilisateur sera médiocre.</p>
 </div>
-		
-		<div class="item-33 ">
-		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/coder/scripts/role-modale/">Rôles de fenêtre modale</a></h2>
-			<div class="flex flex-column align-items-strech h-100">
-			<p >Les rôles de fenêtre modale définissent des sous-fenêtres de la page principale du document, au sein même de cette page.</p>
-			
-			</div>
-	</div>
-</div>
-		
-	</div>
+<h3 id="exemple-de-code">Exemple de code</h3>
+<p><strong>HTML</strong><br>
+Code au chargement de la page. La zone sera ensuite peuplée dynamiquement selon les interactions de l&rsquo;utilisateur avec la page.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;alert&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p><strong>CSS</strong><br>
+Cette déclaration permet de ne pas afficher la zone à l&rsquo;écran lorsqu&rsquo;elle est vide.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">div</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;alert&#34;</span><span class="o">]</span><span class="p">:</span><span class="nd">empty</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="le-rôle-log">Le rôle log</h2>
+<p>Le rôle <code>log</code> est utilisé pour identifier un élément qui crée une zone où de nouvelles informations sont ajoutées dans un ordre significatif et où les anciennes informations peuvent être supprimées. Par exemple,</p>
+<ul>
+<li>un journal de salon de discussion ;</li>
+<li>l&rsquo;historique d&rsquo;une messagerie ;</li>
+<li>l&rsquo;historique d&rsquo;un fichier d&rsquo;erreurs.</li>
+</ul>
+<p>Contrairement aux autres types de « live region », ce rôle est ordonné de façon séquentielle et les nouvelles informations sont uniquement ajoutées à la fin de l&rsquo;enregistrement. Lorsque ce rôle est ajouté à un élément, le navigateur émettra un événement log accessible aux produits de technologie d&rsquo;assistance qui pourront alors le notifier à l&rsquo;utilisateur.</p>
+<h2 id="le-rôle-marquee">Le rôle marquee</h2>
+<p>Le rôle <code>marquee</code> définit une zone comme un type de région en direct qui présente des informations non essentielles qui changent fréquemment. Des exemples de rôle <code>marquee</code> incluent les téléscripteurs boursiers et les bannières publicitaires ; des informations qui ne sont pas nécessairement recherchées par l&rsquo;utilisateur et qui peuvent être présentées dans n&rsquo;importe quel ordre.</p>
+<p>Une zone de type  <code>marquee</code> doit avoir un nom accessible. On utilsera <code>aria-labelledby</code> si une étiquette visible est présente, sinon on utilisera <code>aria-label</code>.</p>
+<h3 id="exemple-de-code-html">Exemple de code HTML</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;marquee&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Publicité&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;marquee&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;promotions&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">h3</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;promotions&#34;</span><span class="p">&gt;</span>Nos offres du moment<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     [...]
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h2 id="rôle-status">Rôle status</h2>
+<p>Le rôle <code>status</code> est une zone dont le contenu est un message d&rsquo;informations destiné à l&rsquo;utilisateur. Ce message n&rsquo;est pas assez important pour justifier une alerte.<br>
+Lorsque le rôle est ajouté à un élément, le navigateur émettra un événement status accessible aux produits de technologies d&rsquo;assistance qui pourront alors le notifier à l&rsquo;utilisateur.<br>
+Le contenu des informations d&rsquo;état doit être fourni dans un objet d&rsquo;état et il faut s&rsquo;assurer que cet objet ne reçoive pas le focus. Si une autre partie de la page contrôle ce qui s&rsquo;affiche dans l&rsquo;objet d&rsquo;état, la relation doit être explicitement définie à l&rsquo;aide de l&rsquo;attribut aria-controls.</p>
+<h3 id="exemple-de-code-1">Exemple de code</h3>
+<p><strong>HTML</strong><br>
+Code au chargement de la page. La zone sera ensuite peuplée dynamiquement selon les interactions de l&rsquo;utilisateur avec la page.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;status&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- Avec un bouton de contrôle --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;monStatut&#34;</span><span class="p">&gt;</span>Ya quelqu&#39;un ?<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;status&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;monStatut&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p><strong>CSS</strong><br>
+Cette déclaration permet de ne pas afficher la zone à l&rsquo;écran lorsqu&rsquo;elle est vide.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">div</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;status&#34;</span><span class="o">]</span><span class="p">:</span><span class="nd">empty</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="rôle-timer">Rôle timer</h2>
+<p>Le rôle <code>timer</code> (minuterie) indique aux technologies d&rsquo;assistance que cette partie du contenu Web est une région dynamique contenant une minuterie répertoriant le temps restant ou le temps écoulé. Le texte intérieur d’un minuteur doit être une mesure du temps actuel mise à jour. Bien que la valeur ne doive pas nécessairement être analysable par la machine, elle doit être mise à jour en permanence à intervalles réguliers, à moins que le minuteur ne soit mis en pause ou n&rsquo;atteigne son point final.</p>
+
      </section>
 </main>
 </div>
@@ -259,6 +321,7 @@
 	    <path
 		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
 	</svg>
-	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/search.min.js"></script>
+	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/clipboard.min.js"></script>
+<script src="/js/search.min.js"></script>
 </body>
 </html>

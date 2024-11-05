@@ -3,10 +3,10 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Composants d&#39;interface riche - Coder accessible - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Rôles de fenêtre modale - Composants d&#39;interface riche - Coder accessible - Sofève Concept</title>
 	
 	<meta name="theme-color" content="#FFFFFF" />
-	<meta name="description" content="Les composants d’interface riche sont des éléments dynamiques implémentés avec du javascript. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	<meta name="description" content="Les rôles de fenêtre modale définissent des sous-fenêtres de la page principale du document, au sein même de cette page. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -55,7 +55,7 @@
               			<li><a href="/coder/image-icone/">Images et icônes</a></li>
               			<li><a href="/coder/tableaux/">Tableaux</a></li>
               			<li><a href="/coder/formulaire/">Formulaires</a></li>
-              			<li><a href="/coder/scripts/" aria-current="page" >Composants d&#39;interface riche</a></li>
+              			<li><a href="/coder/scripts/" aria-current="location" >Composants d&#39;interface riche</a></li>
               			<li><a href="/coder/multimedia/">Multimédia</a></li>
               			</ul>
 			    </li>
@@ -138,12 +138,12 @@
 		<li><a href="https://sofeve-concept.github.io/coder/image-icone/">Images et icônes</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/tableaux/">Tableaux</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/formulaire/">Formulaires</a></li>
-		<li><a href="https://sofeve-concept.github.io/coder/scripts/" aria-current="page" >Composants d&#39;interface riche</a>
+		<li><a href="https://sofeve-concept.github.io/coder/scripts/" aria-current="location" >Composants d&#39;interface riche</a>
 			
 			
 			<ul><li><a href="https://sofeve-concept.github.io/coder/scripts/presentation-cir/">Présentation des composants</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/scripts/live-regions/">Rôles dynamiques</a></li>
-				<li><a href="https://sofeve-concept.github.io/coder/scripts/role-modale/">Rôles de fenêtre modale</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/scripts/role-modale/" aria-current="page" >Rôles de fenêtre modale</a></li>
 				</ul>
 			</li>
 		<li><a href="https://sofeve-concept.github.io/coder/multimedia/">Multimédia</a></li>
@@ -159,7 +159,9 @@
   
   <li><a href="/coder/">Coder accessible</a></li>
   
-  <li aria-current="page" tabindex="-1">Composants d&#39;interface riche</li>
+  <li><a href="/coder/scripts/">Composants d&#39;interface riche</a></li>
+  
+  <li aria-current="page" tabindex="-1">Rôles de fenêtre modale</li>
   </ol>
 </nav>
 <div>
@@ -170,42 +172,60 @@
 </div>
 </div>
      <section>
-		<h1 id="contenu">Composants d&#39;interface riche</h1>
-	<p class="intro">Les composants d’interface riche sont des éléments dynamiques implémentés avec du javascript.</p>
-	
-	<div class="flex justify-content-start forCard">
-		
-		<div class="item-33 ">
-		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/coder/scripts/presentation-cir/">Présentation des composants</a></h2>
-			<div class="flex flex-column align-items-strech h-100">
-			<p >L&#39;accessibilité au clavier des composants d’interface riche ne doit pas être négligée ni même leur vocalisation par les logiciels de synthèse vocale.</p>
-			
-			</div>
-	</div>
+		<h1 id="contenu">Rôles de fenêtre modale</h1>
+               <p>Les rôles de fenêtre modale définissent des sous-fenêtres de la page principale du document, au sein même de cette page.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm">
+Table des matières</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#rôle-dialog">Rôle dialog</a></li>
+    <li><a href="#rôle-alertdialog">Rôle alertdialog</a>
+      <ul>
+        <li><a href="#exemple-de-code-html">Exemple de code HTML</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 </div>
-		
-		<div class="item-33 ">
-		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/coder/scripts/live-regions/">Rôles dynamiques</a></h2>
-			<div class="flex flex-column align-items-strech h-100">
-			<p >Les rôles dynamiques (live region) sont utilisés pour définir des éléments dont le contenu sera modifié dynamiquement.</p>
-			
-			</div>
-	</div>
+<p>Ces rôles vont permettrent de déterminer des fenêtres modales, appelées aussi pop-up.<br>
+Pour l&rsquo;implémentation compléte d&rsquo;une fenêtre modale, voir la rubrique <a href="/motifs/dynamiques/modale/">Motifs de conception - Composants javascript - Fenêtre modale</a>.</p>
+<p>Il existe deux rôles pour implémenter une fenêtre modale :</p>
+<ul>
+<li>dialog</li>
+<li>alertdialog</li>
+</ul>
+<h2 id="rôle-dialog">Rôle dialog</h2>
+<p>Le rôle <code>dialog</code> est utilisé pour marquer une fenêtre ou une boîte de dialogue d&rsquo;application web qui sépare le contenu ou l&rsquo;interface du reste de l&rsquo;application web ou de la page. Visuellement, les boîtes de dialogues sont généralement placées par dessus le contenu de la page ; le fond sera opacifié. Les boîtes de dialogue peuvent être non-modales (ce qui signifie qu&rsquo;il est toujours possible d&rsquo;interagir avec le contenu situé hors de la boîte de dialogue) ou modales (ce qui signifie qu&rsquo;on ne peut interagir qu&rsquo;avec le contenu de la boîte de dialogue). On ne verra ici que le cas des fenêtres modales.</p>
+<p>Marquer un élément de dialogue avec le rôle <code>dialog</code> aide les technologies d&rsquo;assistance à identifier le contenu des boîtes de dialogue comme étant regroupé et séparé du reste du contenu de la page. Cependant, le seul ajout de <code>role=&quot;dialog&quot;</code> n&rsquo;est pas suffisant pour rendre une boîte de dialogue accessible. Il faut, en effet, veiller à ce que :</p>
+<ul>
+<li>La boîte de dialogue doit être correctement labélisée à l&rsquo;aide de <code>aria-labelledby</code> qui fera référence à l&rsquo;<code>id</code> du titre de niveau 1 de la boîte de dialogue;</li>
+<li>La boîte de dialogue présente un titre de niveau 1 (<code>h1</code>) puisqu&rsquo;on considère qu&rsquo;il y a eu un changement de contexte (un peu comme s&rsquo;il s&rsquo;agissait d&rsquo;une nouvelle page).</li>
+<li>Le focus clavier ne sort pas de la boîte de dialogue ; il doit « boucler ».</li>
+<li>La fenêtre modale se ferme avec la touche <kbd>Echap</kbd>.</li>
+</ul>
+<div class="notice astuce" >   
+     <p> astuce </p>
+<p>Un exemple de fenêtre modale est disponible dans la rubrique <a href="/motifs/dynamiques/modale/">Motifs de conception - 
+Composants javascript - Fenêtre modale</a>.</p>
 </div>
-		
-		<div class="item-33 ">
-		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/coder/scripts/role-modale/">Rôles de fenêtre modale</a></h2>
-			<div class="flex flex-column align-items-strech h-100">
-			<p >Les rôles de fenêtre modale définissent des sous-fenêtres de la page principale du document, au sein même de cette page.</p>
-			
-			</div>
-	</div>
-</div>
-		
-	</div>
+<h2 id="rôle-alertdialog">Rôle alertdialog</h2>
+<p>Le rôle <code>alertdialog</code> est sensiblement similaire au rôle <code>dialog</code>.<br>
+La différence avec les boîtes de dialogues de type <code>dialog</code> réside dans le fait que le rôle <code>alertdialog</code> devrait uniquement être utilisé lorsque des alertes, des erreurs ou des avertissements ont lieu. En d&rsquo;autres termes, lorsque les informations et les contrôles d&rsquo;une boîte de dialogue nécessitent l&rsquo;attention immédiate de l&rsquo;utilisateur il est préférable d&rsquo;utiliser le rôle <code>alertdialog</code> plutôt que <code>dialog</code>. Il revient au développeur de faire la distinction entre les deux.<br>
+<em>Ce rôle ne devrait être utilisé que pour des messages d&rsquo;alertes associés à des contrôles interactifs. Si une boîte de dialogue d&rsquo;alerte ne comporte que du contenu statique et qu&rsquo;elle ne possède absolument aucun contrôle interactif, <code>alertdialog</code> n&rsquo;est probablement pas le rôle le plus judicieux à utiliser.</em></p>
+<p>Du fait de sa <strong>nature urgente</strong>, les boîtes de dialogues d&rsquo;alertes de type <code>alertdialog</code> <strong>doivent toujours être modales</strong>.</p>
+<h3 id="exemple-de-code-html">Exemple de code HTML</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span>
+</span></span><span class="line"><span class="cl">  <span class="na">role</span><span class="o">=</span><span class="s">&#34;alertdialog&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;dialogTitre&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&#34;dialogDesc&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;document&#34;</span> <span class="na">tabindex</span><span class="o">=</span><span class="s">&#34;0&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;dialogTitre&#34;</span><span class="p">&gt;</span>Votre session est sur le point d’expirer<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;dialogDesc&#34;</span><span class="p">&gt;</span>Pour prolonger votre session, cliquez sur le bouton OK<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;</span>OK<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div>
      </section>
 </main>
 </div>
@@ -259,6 +279,7 @@
 	    <path
 		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
 	</svg>
-	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/search.min.js"></script>
+	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/clipboard.min.js"></script>
+<script src="/js/search.min.js"></script>
 </body>
 </html>

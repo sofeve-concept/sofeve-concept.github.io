@@ -7,5 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <atom:link href="https://sofeve-concept.github.io/coder/scripts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Présentation des composants</title>
+      <link>https://sofeve-concept.github.io/coder/scripts/presentation-cir/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/coder/scripts/presentation-cir/</guid>
+      <description>Les composants d&amp;rsquo;interface riche regroupent les éléments dynamiques proposées dans une page tel que les onglets, les accordéons, les carrousels, les fenêtres modales&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Rôles dynamiques</title>
+      <link>https://sofeve-concept.github.io/coder/scripts/live-regions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/coder/scripts/live-regions/</guid>
+      <description>Les utilisateurs voyants peuvent voir les changements dynamiques lorsqu&amp;rsquo;ils sont visuellement perceptibles.&#xA;Les rôles « Live Region » aident les utilisateurs malvoyants et aveugles à savoir si le contenu a été mis à jour.</description>
+    </item>
+    <item>
+      <title>Rôles de fenêtre modale</title>
+      <link>https://sofeve-concept.github.io/coder/scripts/role-modale/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/coder/scripts/role-modale/</guid>
+      <description>Ces rôles vont permettrent de déterminer des fenêtres modales, appelées aussi pop-up.&#xA;Pour l&amp;rsquo;implémentation compléte d&amp;rsquo;une fenêtre modale, voir la rubrique Motifs de conception - Composants javascript - Fenêtre modale.</description>
+    </item>
   </channel>
 </rss>

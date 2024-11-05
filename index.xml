@@ -135,6 +135,13 @@
       <description>Il existe 5 grandes catégories de police de caractères :&#xA;les polices sérif (avec empattements) – exemple : times new roman, open sans ; les polices sans-sérif (linéales) – exemple arial, roboto ; les polices scriptes (ou cursives) – exemple segoe script ; les polices monospaces (dont la largeur de chaque caractère est identique) ; les polices symboliques ou décoratives – exemple webdings, wingdings.</description>
     </item>
     <item>
+      <title>Présentation des composants</title>
+      <link>https://sofeve-concept.github.io/coder/scripts/presentation-cir/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/coder/scripts/presentation-cir/</guid>
+      <description>Les composants d&amp;rsquo;interface riche regroupent les éléments dynamiques proposées dans une page tel que les onglets, les accordéons, les carrousels, les fenêtres modales&amp;hellip;</description>
+    </item>
+    <item>
       <title>Régions HTML</title>
       <link>https://sofeve-concept.github.io/coder/structure/region-html/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -282,6 +289,13 @@
       <description>Règles Comme pour un document bureautique, le corps du message doit répondre aux règles d&amp;rsquo;accessibilié numérique.</description>
     </item>
     <item>
+      <title>Rôles dynamiques</title>
+      <link>https://sofeve-concept.github.io/coder/scripts/live-regions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/coder/scripts/live-regions/</guid>
+      <description>Les utilisateurs voyants peuvent voir les changements dynamiques lorsqu&amp;rsquo;ils sont visuellement perceptibles.&#xA;Les rôles « Live Region » aident les utilisateurs malvoyants et aveugles à savoir si le contenu a été mis à jour.</description>
+    </item>
+    <item>
       <title>Tableaux de mise en forme</title>
       <link>https://sofeve-concept.github.io/coder/tableaux/tableaux-presentation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -343,6 +357,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/</guid>
       <description>Implémentation HTML Les champs de même nature sont regroupés avec fieldset et titrés avec legend.</description>
+    </item>
+    <item>
+      <title>Rôles de fenêtre modale</title>
+      <link>https://sofeve-concept.github.io/coder/scripts/role-modale/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/coder/scripts/role-modale/</guid>
+      <description>Ces rôles vont permettrent de déterminer des fenêtres modales, appelées aussi pop-up.&#xA;Pour l&amp;rsquo;implémentation compléte d&amp;rsquo;une fenêtre modale, voir la rubrique Motifs de conception - Composants javascript - Fenêtre modale.</description>
     </item>
     <item>
       <title>Saut de ligne</title>

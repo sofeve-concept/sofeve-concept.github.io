@@ -3,10 +3,10 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Composants d&#39;interface riche - Coder accessible - Sofève Concept</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Présentation des composants - Composants d&#39;interface riche - Coder accessible - Sofève Concept</title>
 	
 	<meta name="theme-color" content="#FFFFFF" />
-	<meta name="description" content="Les composants d’interface riche sont des éléments dynamiques implémentés avec du javascript. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
+	<meta name="description" content="L&#39;accessibilité au clavier des composants d’interface riche ne doit pas être négligée ni même leur vocalisation par les logiciels de synthèse vocale. par Sofève Concept, le site de conseil et formation pour des sites web accessibles">
 	
 	<meta name="author" content="Sophie Gounon">
 	<meta property="og:locale" content="fr_FR" />
@@ -55,7 +55,7 @@
               			<li><a href="/coder/image-icone/">Images et icônes</a></li>
               			<li><a href="/coder/tableaux/">Tableaux</a></li>
               			<li><a href="/coder/formulaire/">Formulaires</a></li>
-              			<li><a href="/coder/scripts/" aria-current="page" >Composants d&#39;interface riche</a></li>
+              			<li><a href="/coder/scripts/" aria-current="location" >Composants d&#39;interface riche</a></li>
               			<li><a href="/coder/multimedia/">Multimédia</a></li>
               			</ul>
 			    </li>
@@ -138,10 +138,10 @@
 		<li><a href="https://sofeve-concept.github.io/coder/image-icone/">Images et icônes</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/tableaux/">Tableaux</a></li>
 		<li><a href="https://sofeve-concept.github.io/coder/formulaire/">Formulaires</a></li>
-		<li><a href="https://sofeve-concept.github.io/coder/scripts/" aria-current="page" >Composants d&#39;interface riche</a>
+		<li><a href="https://sofeve-concept.github.io/coder/scripts/" aria-current="location" >Composants d&#39;interface riche</a>
 			
 			
-			<ul><li><a href="https://sofeve-concept.github.io/coder/scripts/presentation-cir/">Présentation des composants</a></li>
+			<ul><li><a href="https://sofeve-concept.github.io/coder/scripts/presentation-cir/" aria-current="page" >Présentation des composants</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/scripts/live-regions/">Rôles dynamiques</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/scripts/role-modale/">Rôles de fenêtre modale</a></li>
 				</ul>
@@ -159,7 +159,9 @@
   
   <li><a href="/coder/">Coder accessible</a></li>
   
-  <li aria-current="page" tabindex="-1">Composants d&#39;interface riche</li>
+  <li><a href="/coder/scripts/">Composants d&#39;interface riche</a></li>
+  
+  <li aria-current="page" tabindex="-1">Présentation des composants</li>
   </ol>
 </nav>
 <div>
@@ -170,42 +172,40 @@
 </div>
 </div>
      <section>
-		<h1 id="contenu">Composants d&#39;interface riche</h1>
-	<p class="intro">Les composants d’interface riche sont des éléments dynamiques implémentés avec du javascript.</p>
-	
-	<div class="flex justify-content-start forCard">
-		
-		<div class="item-33 ">
-		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/coder/scripts/presentation-cir/">Présentation des composants</a></h2>
-			<div class="flex flex-column align-items-strech h-100">
-			<p >L&#39;accessibilité au clavier des composants d’interface riche ne doit pas être négligée ni même leur vocalisation par les logiciels de synthèse vocale.</p>
-			
-			</div>
-	</div>
+		<h1 id="contenu">Présentation des composants</h1>
+               <p>L&#39;accessibilité au clavier des composants d’interface riche ne doit pas être négligée ni même leur vocalisation par les logiciels de synthèse vocale.</p>
+<button type="button" class="depliant" aria-expanded="false" aria-controls="tdm">
+Table des matières</button>
+<div id="tdm" role="region" tabindex="-1">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#règles-daccessibilité-à-vérifier-sur-les-composants-dinterface-riche">Règles d&rsquo;accessibilité à vérifier sur les composants d&rsquo;interface riche</a></li>
+  </ul>
+</nav>
 </div>
-		
-		<div class="item-33 ">
-		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/coder/scripts/live-regions/">Rôles dynamiques</a></h2>
-			<div class="flex flex-column align-items-strech h-100">
-			<p >Les rôles dynamiques (live region) sont utilisés pour définir des éléments dont le contenu sera modifié dynamiquement.</p>
-			
-			</div>
-	</div>
+<p>Les composants d&rsquo;interface riche regroupent les éléments dynamiques proposées dans une page tel que les onglets, les accordéons, les carrousels, les fenêtres modales&hellip;<br>
+Ces composants font appel à du javascript pour fonctionner.</p>
+<p>Il faut donc absolument s&rsquo;assurer que tout script déclenché à la souris :</p>
+<ul>
+<li>est atteignable au clavier </li>
+<li>est contrôlable au clavier une fois le focus placé sur l’élément.</li>
+</ul>
+<p>En cas d&rsquo;impossibilité de contrôle au clavier, il faudra prévoir alors une alternative pou rendre l&rsquo;information accessible.</p>
+<div class="notice astuce" >   
+     <p> astuce </p>
+<p>Des exemples de composants d'interface riche accessibles sont disponibles dans la rubrique <a href="/motifs/dynamiques/">Motifs de conception - 
+Composants javascript</a>.</p>
 </div>
-		
-		<div class="item-33 ">
-		<div class="card">
-			<h2><a href="https://sofeve-concept.github.io/coder/scripts/role-modale/">Rôles de fenêtre modale</a></h2>
-			<div class="flex flex-column align-items-strech h-100">
-			<p >Les rôles de fenêtre modale définissent des sous-fenêtres de la page principale du document, au sein même de cette page.</p>
-			
-			</div>
-	</div>
+<h2 id="règles-daccessibilité-à-vérifier-sur-les-composants-dinterface-riche">Règles d&rsquo;accessibilité à vérifier sur les composants d&rsquo;interface riche</h2>
+<ul>
+<li>Les contenus dynamiques <strong>apparaissant au survol ou au clic</strong> de la souris <strong>apparaissent aussi en utilisant le clavier</strong> ;</li>
+<li>Les composants d&rsquo;interface générés ou contrôlés au moyen de JavaScript <strong>sont contrôlables avec un synthétiseur vocal</strong> ;</li>
+<li>L&rsquo;utilisateur est <strong>averti s&rsquo;il y a un changement de contexte</strong> (ouverture d&rsquo;une fenêtre modale, par exemple).</li>
+</ul>
+<div class="notice remarque" >   
+     <p> remarque </p>
+<p><b>La taille de la zone cliquable doit faire minimum 24px * 24px</b> sauf si la zone cliquable se trouve dans un paragraphe (comme un lien à l'intérieur d'un bloc de texte).<br>Le critère AAA du WCAG va même jusquà demander une taille minimum de 44px * 44px.</p>
 </div>
-		
-	</div>
      </section>
 </main>
 </div>

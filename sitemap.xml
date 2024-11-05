@@ -116,6 +116,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/coder/scripts/presentation-cir/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/coder/structure/region-html/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -278,6 +284,12 @@
   </url>
   
   <url>
+    <loc>https://sofeve-concept.github.io/coder/scripts/live-regions/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://sofeve-concept.github.io/motifs/navigations/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -351,6 +363,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/coder/formulaire/regroupement-champs/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/coder/scripts/role-modale/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
