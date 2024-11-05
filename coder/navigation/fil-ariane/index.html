@@ -140,6 +140,7 @@
 				<li><a href="https://sofeve-concept.github.io/coder/navigation/lien-acces-rapide/">Lien d&#39;accès rapide</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/navigation/menu-navigation/">Menu de navigation</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/navigation/fil-ariane/" aria-current="page" >Fil d&#39;Ariane</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/navigation/pagination/">Pagination</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/navigation/processus-etapes/">Processus par étapes</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/navigation/navigation-clavier/">Navigation au clavier</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/navigation/quiz/">Quiz récap&#39;</a></li>
@@ -208,7 +209,12 @@ On pourra rajouter un attribut <code>aria-label</code> pour préciser qu&rsquo;i
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;navigation&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Vous êtes ici&#34;</span><span class="p">&gt;</span>[…]<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
 </span></span></code></pre></div><ul>
 <li>Les différents items du fil d&rsquo;Ariane seront proposés sous forme de liste ordonnée <code>ol</code> (puisque l&rsquo;ordre des items a de l&rsquo;importance).</li>
-<li>La position courante (page sur laquelle l&rsquo;internaute se trouve) sera identifée par l&rsquo;attribut <code>aria-current=&quot;page&quot;</code>  sans lien posé sur l&rsquo;item.</li>
+<li>La position courante (page sur laquelle l&rsquo;internaute se trouve) sera identifée par l&rsquo;attribut <code>aria-current=&quot;page&quot;</code>  :
+<ul>
+<li>de préférence sans lien posé sur l&rsquo;item ;</li>
+<li>si le lien est conservé, alors il sera inactivé en CSS.</li>
+</ul>
+</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;navigation&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Vous êtes ici&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
@@ -219,7 +225,7 @@ On pourra rajouter un attribut <code>aria-label</code> pour préciser qu&rsquo;i
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
 </span></span></code></pre></div><div class="notice astuce" >   
      <p> astuce </p>
-<p>Un exemple de fil d'ariane est disponible dans la rubrique <a href="/motifs/ariane/">Motifs de conception - Fil d'ariane</a>.</p>
+<p>Un exemple de fil d'ariane est disponible dans la rubrique <a href="/motifs/navigations/ariane/">Motifs de conception - Systèmes de navigation - Fil d'ariane</a>.</p>
 </div>
      </section>
 </main>

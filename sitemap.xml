@@ -530,7 +530,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/coder/navigation/processus-etapes/</loc>
+    <loc>https://sofeve-concept.github.io/coder/navigation/pagination/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -566,7 +566,7 @@
   </url>
   
   <url>
-    <loc>https://sofeve-concept.github.io/coder/navigation/navigation-clavier/</loc>
+    <loc>https://sofeve-concept.github.io/coder/navigation/processus-etapes/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -627,6 +627,12 @@
   
   <url>
     <loc>https://sofeve-concept.github.io/bureautique/entrainement/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sofeve-concept.github.io/coder/navigation/navigation-clavier/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

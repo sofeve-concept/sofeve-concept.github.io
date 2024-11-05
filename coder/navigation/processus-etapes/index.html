@@ -140,6 +140,7 @@
 				<li><a href="https://sofeve-concept.github.io/coder/navigation/lien-acces-rapide/">Lien d&#39;accès rapide</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/navigation/menu-navigation/">Menu de navigation</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/navigation/fil-ariane/">Fil d&#39;Ariane</a></li>
+				<li><a href="https://sofeve-concept.github.io/coder/navigation/pagination/">Pagination</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/navigation/processus-etapes/" aria-current="page" >Processus par étapes</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/navigation/navigation-clavier/">Navigation au clavier</a></li>
 				<li><a href="https://sofeve-concept.github.io/coder/navigation/quiz/">Quiz récap&#39;</a></li>
@@ -189,7 +190,11 @@ Table des matières</button>
       </ul>
     </li>
     <li><a href="#règles-dimplémentation-dun-processus-par-étapes">Règles d&rsquo;implémentation d&rsquo;un processus par étapes</a></li>
-    <li><a href="#règles-daccessibilité-du-processus-par-étapes">Règles d&rsquo;accessibilité du processus par étapes</a></li>
+    <li><a href="#règles-daccessibilité-du-processus-par-étapes">Règles d&rsquo;accessibilité du processus par étapes</a>
+      <ul>
+        <li><a href="#exemple-html">Exemple HTML</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 </div>
@@ -207,11 +212,29 @@ Table des matières</button>
 <li>Le processus par étape sera balisé avec les balises <code>&lt;nav&gt;...&lt;/nav&gt;</code>  <strong>on ne posera pas d&rsquo;attribut</strong> <code>role=&quot;navigation</code>.</li>
 <li>Les différentes étapes du processus seront balisées par un liste ordonnée (l&rsquo;ordre ayant de l&rsquo;importance) <code>&lt;ol&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ol&gt;</code></li>
 <li>L&rsquo;étape en cours sera balisée avec l&rsquo;attribut <code>aria-current=&quot;step&quot;</code></li>
-<li>Un retour arrière sera proposé via un lien sur les étapes précédentes.</li>
+<li>Un retour arrière sera proposé via un lien sur les étapes précédentes</li>
+<li>Le titre de la page (balises <code>&lt;title&gt;...&lt;/title&gt;</code> dans la partie <code>head</code> de la page HTML) sera mis à jour pour indiquer la page en cours.</li>
 </ul>
-<div class="notice astuce" >   
+<h3 id="exemple-html">Exemple HTML</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span> Étape 2/3 - Formulaire d&#39;inscription - Sofève-Concept<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          [...]
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">[...]
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;navigation&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Étapes de votre démarche&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">&gt;</span>Identité<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">li</span> <span class="na">aria-current</span><span class="o">=</span><span class="s">&#34;step&#34;</span><span class="p">&gt;</span>Adresse<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Confirmation<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">[...]
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div><div class="notice astuce" >   
      <p> astuce </p>
-<p>Un exemple de processus par étape est disponible dans la rubrique <a href="/motifs/stepper/">Motifs de conception - Processus par étape</a>.</p>
+<p>Un exemple de processus par étape est disponible dans la rubrique <a href="/motifs/formulaires/stepper/">Motifs de conception - Formulaires - Processus par étape</a>.</p>
 </div>
      </section>
 </main>
@@ -266,6 +289,7 @@ Table des matières</button>
 	    <path
 		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
 	</svg>
-	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/search.min.js"></script>
+	<span class="sr-only">Retour haut de page</span></a><script src="/js/script.min.js"></script><script src="/js/utils.min.js"></script><script src="/js/clipboard.min.js"></script>
+<script src="/js/search.min.js"></script>
 </body>
 </html>

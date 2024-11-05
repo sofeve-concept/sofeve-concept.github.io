@@ -36,6 +36,13 @@
       <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;un fil d&amp;rsquo;Ariane ? Le terme &amp;ldquo;fil d&amp;rsquo;Ariane&amp;rdquo; provient du mythe de l&amp;rsquo;antiquité racontant comment Ariane tendit à son aimé Thésée un fil pour qu&amp;rsquo;il puisse retrouver son chemin après avoir pénétré le labyrinthe dans lequel était enfermé le Minautore.</description>
     </item>
     <item>
+      <title>Pagination</title>
+      <link>https://sofeve-concept.github.io/coder/navigation/pagination/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sofeve-concept.github.io/coder/navigation/pagination/</guid>
+      <description>Règles d&amp;rsquo;implémentation de la pagination Proposer comme premier lien, un lien vers la page précédente ; Proposer comme dernier lien, un lien vers la page suivante ; Différencier visuellement la page en cours des autres pages ; Si les pages sont très nombreuses, proposer « trois petits points » (appelés « ellipse ») entre les numéros de page.</description>
+    </item>
+    <item>
       <title>Processus par étapes</title>
       <link>https://sofeve-concept.github.io/coder/navigation/processus-etapes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
