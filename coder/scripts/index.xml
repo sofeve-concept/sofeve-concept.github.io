@@ -19,14 +19,14 @@
       <link>https://sofeve-concept.github.io/coder/scripts/live-regions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/coder/scripts/live-regions/</guid>
-      <description>Les utilisateurs voyants peuvent voir les changements dynamiques lorsqu&amp;rsquo;ils sont visuellement perceptibles.&#xA;Les rôles « Live Region » aident les utilisateurs malvoyants et aveugles à savoir si le contenu a été mis à jour.</description>
+      <description>Les rôles « Live Region » permettent aux les utilisateurs utilisant des logciels de synthèse vocale d&amp;rsquo;être informé d&amp;rsquo;une mise à jour dynamique du contenu de la page.</description>
     </item>
     <item>
       <title>Rôles de fenêtre modale</title>
       <link>https://sofeve-concept.github.io/coder/scripts/role-modale/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sofeve-concept.github.io/coder/scripts/role-modale/</guid>
-      <description>Ces rôles vont permettrent de déterminer des fenêtres modales, appelées aussi pop-up.&#xA;Pour l&amp;rsquo;implémentation compléte d&amp;rsquo;une fenêtre modale, voir la rubrique Motifs de conception - Composants javascript - Fenêtre modale.</description>
+      <description>Les fenêtres modales sont des fenêtres ou des boîtes de dialogue visuellement placées par dessus le contenu de la page ; le fond est opacifié.</description>
     </item>
   </channel>
 </rss>

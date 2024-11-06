@@ -188,19 +188,12 @@ Table des matières</button>
   </ul>
 </nav>
 </div>
-<p>Ces rôles vont permettrent de déterminer des fenêtres modales, appelées aussi pop-up.<br>
-Pour l&rsquo;implémentation compléte d&rsquo;une fenêtre modale, voir la rubrique <a href="/motifs/dynamiques/modale/">Motifs de conception - Composants javascript - Fenêtre modale</a>.</p>
-<p>Il existe deux rôles pour implémenter une fenêtre modale :</p>
-<ul>
-<li>dialog</li>
-<li>alertdialog</li>
-</ul>
+<p>Les fenêtres modales sont des fenêtres ou des boîtes de dialogue visuellement placées par dessus le contenu de la page ; le fond est  opacifié. Lors de l&rsquo;implémentation d&rsquo;une fenêtre modale, on peut recourir à deux rôles aria spécifiques :  <code>dialog</code> et <code>alertdialog</code>. Pour autant le seul ajout de l&rsquo;un de ces rôles n&rsquo;est pas suffisant pour rendre une boîte de dialogue accessible.</p>
 <h2 id="rôle-dialog">Rôle dialog</h2>
-<p>Le rôle <code>dialog</code> est utilisé pour marquer une fenêtre ou une boîte de dialogue d&rsquo;application web qui sépare le contenu ou l&rsquo;interface du reste de l&rsquo;application web ou de la page. Visuellement, les boîtes de dialogues sont généralement placées par dessus le contenu de la page ; le fond sera opacifié. Les boîtes de dialogue peuvent être non-modales (ce qui signifie qu&rsquo;il est toujours possible d&rsquo;interagir avec le contenu situé hors de la boîte de dialogue) ou modales (ce qui signifie qu&rsquo;on ne peut interagir qu&rsquo;avec le contenu de la boîte de dialogue). On ne verra ici que le cas des fenêtres modales.</p>
-<p>Marquer un élément de dialogue avec le rôle <code>dialog</code> aide les technologies d&rsquo;assistance à identifier le contenu des boîtes de dialogue comme étant regroupé et séparé du reste du contenu de la page. Cependant, le seul ajout de <code>role=&quot;dialog&quot;</code> n&rsquo;est pas suffisant pour rendre une boîte de dialogue accessible. Il faut, en effet, veiller à ce que :</p>
+<p>Pour rendre une fenêtre modale accessible avec le rôle <code>dialog</code>, il faut veiller à ce que que :</p>
 <ul>
-<li>La boîte de dialogue doit être correctement labélisée à l&rsquo;aide de <code>aria-labelledby</code> qui fera référence à l&rsquo;<code>id</code> du titre de niveau 1 de la boîte de dialogue;</li>
 <li>La boîte de dialogue présente un titre de niveau 1 (<code>h1</code>) puisqu&rsquo;on considère qu&rsquo;il y a eu un changement de contexte (un peu comme s&rsquo;il s&rsquo;agissait d&rsquo;une nouvelle page).</li>
+<li>La boîte de dialogue doit être correctement labélisée à l&rsquo;aide de <code>aria-labelledby</code> qui fera référence à l&rsquo;<code>id</code> du titre de niveau 1 de la boîte de dialogue;</li>
 <li>Le focus clavier ne sort pas de la boîte de dialogue ; il doit « boucler ».</li>
 <li>La fenêtre modale se ferme avec la touche <kbd>Echap</kbd>.</li>
 </ul>
@@ -211,8 +204,7 @@ Composants javascript - Fenêtre modale</a>.</p>
 </div>
 <h2 id="rôle-alertdialog">Rôle alertdialog</h2>
 <p>Le rôle <code>alertdialog</code> est sensiblement similaire au rôle <code>dialog</code>.<br>
-La différence avec les boîtes de dialogues de type <code>dialog</code> réside dans le fait que le rôle <code>alertdialog</code> devrait uniquement être utilisé lorsque des alertes, des erreurs ou des avertissements ont lieu. En d&rsquo;autres termes, lorsque les informations et les contrôles d&rsquo;une boîte de dialogue nécessitent l&rsquo;attention immédiate de l&rsquo;utilisateur il est préférable d&rsquo;utiliser le rôle <code>alertdialog</code> plutôt que <code>dialog</code>. Il revient au développeur de faire la distinction entre les deux.<br>
-<em>Ce rôle ne devrait être utilisé que pour des messages d&rsquo;alertes associés à des contrôles interactifs. Si une boîte de dialogue d&rsquo;alerte ne comporte que du contenu statique et qu&rsquo;elle ne possède absolument aucun contrôle interactif, <code>alertdialog</code> n&rsquo;est probablement pas le rôle le plus judicieux à utiliser.</em></p>
+La différence porte sur le caractère urgent du contenu de la fenêtre modale. Le rôle <code>alertdialog</code> doit donc être utilisé pour des alertes, des erreurs ou des avertissements nécessitant une action rapide de l&rsquo;utilisateur.</p>
 <p>Du fait de sa <strong>nature urgente</strong>, les boîtes de dialogues d&rsquo;alertes de type <code>alertdialog</code> <strong>doivent toujours être modales</strong>.</p>
 <h3 id="exemple-de-code-html">Exemple de code HTML</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span>

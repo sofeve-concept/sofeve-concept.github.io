@@ -184,31 +184,15 @@ Table des matières</button>
         <li><a href="#exemple-de-code">Exemple de code</a></li>
       </ul>
     </li>
-    <li><a href="#le-rôle-log">Le rôle log</a></li>
-    <li><a href="#le-rôle-marquee">Le rôle marquee</a>
-      <ul>
-        <li><a href="#exemple-de-code-html">Exemple de code HTML</a></li>
-      </ul>
-    </li>
     <li><a href="#rôle-status">Rôle status</a>
       <ul>
         <li><a href="#exemple-de-code-1">Exemple de code</a></li>
       </ul>
     </li>
-    <li><a href="#rôle-timer">Rôle timer</a></li>
   </ul>
 </nav>
 </div>
-<p>Les utilisateurs voyants peuvent voir les changements dynamiques lorsqu&rsquo;ils sont visuellement perceptibles.<br>
-Les rôles « Live Region » aident les utilisateurs malvoyants et aveugles à savoir si le contenu a été mis à jour. Les technologies d&rsquo;assistance, comme les lecteurs d&rsquo;écran, peuvent être conçues pour annoncer des modifications dynamiques du contenu.</p>
-<p>Ces « Live Region » comprennent les rôles aria (attribut <code>role</code>) :</p>
-<ul>
-<li>alert</li>
-<li>log</li>
-<li>marquee</li>
-<li>status</li>
-<li>timer</li>
-</ul>
+<p>Les rôles « Live Region » permettent aux  les utilisateurs utilisant des logciels de synthèse vocale d&rsquo;être informé d&rsquo;une mise à jour dynamique du contenu de la page. Ces « Live Region » comprennent plusieurs rôles aria (attribut <code>role</code>) dont <code>alert</code> et  <code>status</code>.</p>
 <h2 id="le-rôle-alert">Le rôle alert</h2>
 <p>Le rôle <code>alert</code> est utilisé pour communiquer un message important, et généralement urgent, à la personne. Lorsque ce rôle est ajouté à un élément, le navigateur enverra un évènement d&rsquo;alerte accessible aux outils d&rsquo;assistance qui pourront alors notifier la personne.</p>
 <ul>
@@ -230,24 +214,6 @@ Cette déclaration permet de ne pas afficher la zone à l&rsquo;écran lorsqu&rs
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">div</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;alert&#34;</span><span class="o">]</span><span class="p">:</span><span class="nd">empty</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">     <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><h2 id="le-rôle-log">Le rôle log</h2>
-<p>Le rôle <code>log</code> est utilisé pour identifier un élément qui crée une zone où de nouvelles informations sont ajoutées dans un ordre significatif et où les anciennes informations peuvent être supprimées. Par exemple,</p>
-<ul>
-<li>un journal de salon de discussion ;</li>
-<li>l&rsquo;historique d&rsquo;une messagerie ;</li>
-<li>l&rsquo;historique d&rsquo;un fichier d&rsquo;erreurs.</li>
-</ul>
-<p>Contrairement aux autres types de « live region », ce rôle est ordonné de façon séquentielle et les nouvelles informations sont uniquement ajoutées à la fin de l&rsquo;enregistrement. Lorsque ce rôle est ajouté à un élément, le navigateur émettra un événement log accessible aux produits de technologie d&rsquo;assistance qui pourront alors le notifier à l&rsquo;utilisateur.</p>
-<h2 id="le-rôle-marquee">Le rôle marquee</h2>
-<p>Le rôle <code>marquee</code> définit une zone comme un type de région en direct qui présente des informations non essentielles qui changent fréquemment. Des exemples de rôle <code>marquee</code> incluent les téléscripteurs boursiers et les bannières publicitaires ; des informations qui ne sont pas nécessairement recherchées par l&rsquo;utilisateur et qui peuvent être présentées dans n&rsquo;importe quel ordre.</p>
-<p>Une zone de type  <code>marquee</code> doit avoir un nom accessible. On utilsera <code>aria-labelledby</code> si une étiquette visible est présente, sinon on utilisera <code>aria-label</code>.</p>
-<h3 id="exemple-de-code-html">Exemple de code HTML</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;marquee&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Publicité&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;marquee&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;promotions&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     <span class="p">&lt;</span><span class="nt">h3</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;promotions&#34;</span><span class="p">&gt;</span>Nos offres du moment<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">     [...]
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h2 id="rôle-status">Rôle status</h2>
 <p>Le rôle <code>status</code> est une zone dont le contenu est un message d&rsquo;informations destiné à l&rsquo;utilisateur. Ce message n&rsquo;est pas assez important pour justifier une alerte.<br>
 Lorsque le rôle est ajouté à un élément, le navigateur émettra un événement status accessible aux produits de technologies d&rsquo;assistance qui pourront alors le notifier à l&rsquo;utilisateur.<br>
@@ -265,9 +231,7 @@ Cette déclaration permet de ne pas afficher la zone à l&rsquo;écran lorsqu&rs
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">div</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">&#34;status&#34;</span><span class="o">]</span><span class="p">:</span><span class="nd">empty</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">     <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><h2 id="rôle-timer">Rôle timer</h2>
-<p>Le rôle <code>timer</code> (minuterie) indique aux technologies d&rsquo;assistance que cette partie du contenu Web est une région dynamique contenant une minuterie répertoriant le temps restant ou le temps écoulé. Le texte intérieur d’un minuteur doit être une mesure du temps actuel mise à jour. Bien que la valeur ne doive pas nécessairement être analysable par la machine, elle doit être mise à jour en permanence à intervalles réguliers, à moins que le minuteur ne soit mis en pause ou n&rsquo;atteigne son point final.</p>
-
+</span></span></code></pre></div>
      </section>
 </main>
 </div>
